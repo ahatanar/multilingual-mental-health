@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"D:\\\\Downloads\\\\multilingual-mental-health\" show --stat HEAD)",
+      "Bash(/c/Users/Taha/AppData/Local/Programs/Python/Python311/python.exe:*)",
+      "Bash(python -c:*)",
+      "Bash(where:*)",
+      "Bash(py:*)",
+      "Bash(powershell -Command \"Get-Content ''D:\\\\Downloads\\\\multilingual-mental-health\\\\data\\\\chinese\\\\depressed.jsonl'' -TotalCount 1 | ForEach-Object { $_Substring\\(0, [Math]::Min\\($_Length, 2000\\)\\) }\")"
+    ]
+  }
+}

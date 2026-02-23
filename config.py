@@ -20,6 +20,7 @@ def get_api_key(provider: str) -> str:
         "gemini": "GEMINI_API_KEY",
         "deepseek": "DEEPSEEK_API_KEY",
         "openai": "OPENAI_API_KEY",
+        "claude": "CLAUDE_API_KEY",
     }
 
     env_var = env_map.get(provider.lower())
@@ -40,4 +41,5 @@ DEFAULT_MODELS = {
     "gemini": "gemini-2.0-flash",
     "deepseek": "deepseek-chat",
     "openai": "gpt-4o-mini",
+    "claude": "claude-haiku-4-5-20241022",
 }

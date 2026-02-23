@@ -1,65 +1,86 @@
 """Stratified dataset sampler for evaluation."""
 
-import csv
 import random
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 logger = logging.getLogger(__name__)
 
 # Maximum word count per post — posts exceeding this are excluded
 MAX_WORD_COUNT = 240
+# For CJK languages, use character count instead
+MAX_CHAR_COUNT = 240
+
+# Languages that should use character-level length counting
+CJK_LANGUAGES = {"chinese"}
 
 
 class DatasetSampler:
     """
-    Loads a CSV dataset and performs stratified sampling.
-    
-    Filters out posts exceeding MAX_WORD_COUNT, then samples equally
+    Loads parsed data and performs stratified sampling.
+
+    Filters out posts exceeding the length limit, then samples equally
     from each label class so the evaluation set is balanced.
+
+    For CJK languages (Chinese), length is measured in characters
+    instead of words.
     """
 
-    def __init__(self, csv_path: str, text_col: str = "post", label_col: str = "label",
-                 max_words: int = MAX_WORD_COUNT):
-        self.csv_path = csv_path
-        self.text_col = text_col
-        self.label_col = label_col
-        self.max_words = max_words
-        self.data = self._load_and_filter()
+    def __init__(self, data: List[Dict[str, str]], language: str = "english",
+                 max_words: int = MAX_WORD_COUNT, max_chars: int = MAX_CHAR_COUNT):
+        """
+        Args:
+            data: List of {"post": str, "label": "depression"|"normal"} dicts
+                  (output of a DatasetParser).
+            language: Language identifier — used to pick word vs char counting.
+            max_words: Maximum word count (for non-CJK languages).
+            max_chars: Maximum character count (for CJK languages).
+        """
+        self.language = language.lower()
+        self.is_cjk = self.language in CJK_LANGUAGES
+        self.max_length = max_chars if self.is_cjk else max_words
+        self.data = self._filter(data)
 
-    def _load_and_filter(self) -> List[Dict]:
-        """Load CSV and filter out posts exceeding the word limit."""
-        all_rows = []
-        with open(self.csv_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                post = row.get(self.text_col, "").strip()
-                label = row.get(self.label_col, "").strip().lower()
-                word_count = len(post.split())
+    def _measure_length(self, text: str) -> int:
+        """Return the length of *text* — chars for CJK, words otherwise."""
+        if self.is_cjk:
+            return len(text)
+        return len(text.split())
 
-                if not post or not label:
-                    continue
-                if word_count > self.max_words:
-                    continue
+    def _filter(self, data: List[Dict[str, str]]) -> List[Dict]:
+        """Filter out posts exceeding the length limit."""
+        filtered = []
+        for row in data:
+            post = row.get("post", "").strip()
+            label = row.get("label", "").strip().lower()
+            length = self._measure_length(post)
 
-                all_rows.append({
-                    "post": post,
-                    "label": label,  # ground truth: "depression" or "normal"
-                    "word_count": word_count,
-                    **{k: v for k, v in row.items() if k not in (self.text_col, self.label_col)},
-                })
+            if not post or not label:
+                continue
+            if length > self.max_length:
+                continue
 
-        logger.info(f"Loaded {len(all_rows)} posts from {self.csv_path} (after filtering >{self.max_words} words)")
-        return all_rows
+            filtered.append({
+                "post": post,
+                "label": label,  # ground truth: "depression" or "normal"
+                "word_count": length,
+            })
 
-    def sample(self, n: int = 50, seed: int = 42) -> List[Dict]:
+        unit = "chars" if self.is_cjk else "words"
+        logger.info(
+            f"[{self.language}] Filtered to {len(filtered)} posts "
+            f"(max {self.max_length} {unit}, from {len(data)} total)"
+        )
+        return filtered
+
+    def sample(self, n: int = 500, seed: int = 42) -> List[Dict]:
         """
         Stratified sampling: n/2 from each label class.
-        
+
         Args:
             n: Total number of samples (will be split equally across labels).
             seed: Random seed for reproducibility.
-            
+
         Returns:
             List of sampled data dicts, shuffled.
         """
@@ -98,11 +119,12 @@ class DatasetSampler:
         """Return basic stats about the loaded dataset."""
         from collections import Counter
         label_counts = Counter(row["label"] for row in self.data)
-        word_counts = [row["word_count"] for row in self.data]
+        lengths = [row["word_count"] for row in self.data]
+        unit = "char_count" if self.is_cjk else "word_count"
         return {
             "total_posts": len(self.data),
             "label_distribution": dict(label_counts),
-            "avg_word_count": round(sum(word_counts) / len(word_counts), 1) if word_counts else 0,
-            "max_word_count": max(word_counts) if word_counts else 0,
-            "min_word_count": min(word_counts) if word_counts else 0,
+            f"avg_{unit}": round(sum(lengths) / len(lengths), 1) if lengths else 0,
+            f"max_{unit}": max(lengths) if lengths else 0,
+            f"min_{unit}": min(lengths) if lengths else 0,
         }
