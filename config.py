@@ -21,6 +21,7 @@ def get_api_key(provider: str) -> str:
         "deepseek": "DEEPSEEK_API_KEY",
         "openai": "OPENAI_API_KEY",
         "claude": "CLAUDE_API_KEY",
+        "grok": "GROK_API_KEY",
     }
 
     env_var = env_map.get(provider.lower())
