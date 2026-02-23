@@ -20,6 +20,8 @@ import logging
 import os
 import sys
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from typing import List, Dict
 
@@ -233,13 +235,40 @@ def _remove_partial(model_name: str, language: str):
         os.remove(filepath)
 
 
+def _classify_one(provider, sample: Dict, idx: int, total: int,
+                   model_name: str, language: str) -> Dict:
+    """Classify a single sample. Designed to run in a thread."""
+    logger.info(f"[{model_name}][{language}] Classifying {idx}/{total}...")
+
+    result = provider.classify(
+        post=sample["post"],
+        prompt_template=CLASSIFICATION_PROMPT,
+    )
+
+    return {
+        "index": idx,
+        "post_preview": sample["post"][:100] + ("..." if len(sample["post"]) > 100 else ""),
+        "post_full": sample["post"],
+        "ground_truth": sample["ground_truth"],
+        "prediction": result["prediction"],
+        "raw_response": result["raw_response"],
+        "error": result["error"],
+        "word_count": sample.get("word_count", 0),
+    }
+
+
 def run_evaluation(provider, samples: List[Dict], language: str,
-                   delay: float = 1.0, fresh: bool = False) -> List[Dict]:
+                   delay: float = 1.0, fresh: bool = False,
+                   workers: int = 1) -> List[Dict]:
     """
     Run classification on all samples, with crash-resume support.
 
     Saves partial results every SAVE_EVERY classifications.
     If partial results exist from a previous run, resumes from there.
+
+    Args:
+        workers: Number of concurrent classification threads.
+                 Use 1 for serial execution (default), >1 for parallel.
     """
     model_name = provider.name if hasattr(provider, 'name') else str(provider)
     total = len(samples)
@@ -264,34 +293,71 @@ def run_evaluation(provider, samples: List[Dict], language: str,
             results = []
             start_idx = 0
 
-    for i in range(start_idx, total):
-        sample = samples[i]
-        idx = i + 1
-        logger.info(f"[{model_name}][{language}] Classifying {idx}/{total}...")
+    remaining = list(range(start_idx, total))
 
-        result = provider.classify(
-            post=sample["post"],
-            prompt_template=CLASSIFICATION_PROMPT,
-        )
+    if workers <= 1:
+        # Serial path — same as before
+        for i in remaining:
+            r = _classify_one(provider, samples[i], i + 1, total,
+                              model_name, language)
+            results.append(r)
 
-        results.append({
-            "index": idx,
-            "post_preview": sample["post"][:100] + ("..." if len(sample["post"]) > 100 else ""),
-            "post_full": sample["post"],
-            "ground_truth": sample["ground_truth"],
-            "prediction": result["prediction"],
-            "raw_response": result["raw_response"],
-            "error": result["error"],
-            "word_count": sample.get("word_count", 0),
-        })
+            if len(results) % SAVE_EVERY == 0:
+                _save_partial(results, model_name, language, total)
+                logger.info(f"  💾 Checkpoint: {len(results)}/{total} saved")
 
-        # Save partial results periodically
-        if idx % SAVE_EVERY == 0:
-            _save_partial(results, model_name, language, total)
-            logger.info(f"  💾 Checkpoint: {idx}/{total} saved")
+            if i < total - 1:
+                time.sleep(delay)
+    else:
+        # Parallel path — process in batches of `workers`
+        print(f"  ⚡ Parallel mode: {workers} workers")
+        lock = threading.Lock()
 
-        if idx < total:
-            time.sleep(delay)
+        # Pre-allocate result slots so order is preserved
+        result_slots: Dict[int, Dict] = {}
+
+        for batch_start in range(0, len(remaining), workers):
+            batch_indices = remaining[batch_start:batch_start + workers]
+
+            with ThreadPoolExecutor(max_workers=workers) as executor:
+                futures = {}
+                for i in batch_indices:
+                    f = executor.submit(
+                        _classify_one, provider, samples[i], i + 1,
+                        total, model_name, language,
+                    )
+                    futures[f] = i
+
+                for future in as_completed(futures):
+                    i = futures[future]
+                    try:
+                        result_slots[i] = future.result()
+                    except Exception as e:
+                        logger.error(f"[{model_name}][{language}] "
+                                     f"Worker error on {i+1}: {e}")
+                        result_slots[i] = {
+                            "index": i + 1,
+                            "post_preview": samples[i]["post"][:100],
+                            "post_full": samples[i]["post"],
+                            "ground_truth": samples[i]["ground_truth"],
+                            "prediction": "error",
+                            "raw_response": "",
+                            "error": str(e),
+                            "word_count": samples[i].get("word_count", 0),
+                        }
+
+            # Append batch results in order
+            for i in batch_indices:
+                results.append(result_slots[i])
+
+            # Checkpoint after each batch
+            if len(results) % SAVE_EVERY == 0 or batch_start + workers >= len(remaining):
+                _save_partial(results, model_name, language, total)
+                logger.info(f"  💾 Checkpoint: {len(results)}/{total} saved")
+
+            # Rate limit between batches
+            if batch_start + workers < len(remaining):
+                time.sleep(delay)
 
     # Final save — remove partial file
     _remove_partial(model_name, language)
@@ -338,6 +404,8 @@ def main():
                         help="Ignore partial results and start fresh (overwrite)")
     parser.add_argument("--delay", type=float, default=1.0,
                         help="Seconds between API calls (default 1.0, use 21 for OpenAI free tier)")
+    parser.add_argument("--workers", type=int, default=1,
+                        help="Concurrent API requests per model (default 1, try 5 for speed)")
     args = parser.parse_args()
 
     # If --reparse, run prepare_data first
@@ -382,43 +450,69 @@ def main():
     # 4. Run evaluations
     all_output_files = []
     all_metrics = {}  # (model_name, language) -> metrics
+    print_lock = threading.Lock()
 
-    for model_key in selected_models:
+    def _run_one(model_key: str, lang: str, delay: float, fresh: bool,
+                 workers: int) -> None:
+        """Run a single model+language evaluation (thread target)."""
         info = MODELS[model_key]
-        print(f"\n{'='*60}")
-        print(f"  🚀 Evaluating: {info['name']}")
-        print(f"{'='*60}")
 
         try:
             api_key = get_api_key(model_key)
         except EnvironmentError as e:
-            print(f"  ❌ {e}")
-            print(f"  Skipping {info['name']}.\n")
-            continue
+            with print_lock:
+                print(f"  ❌ [{info['name']}] {e} — skipping")
+            return
 
         provider = info["class"](api_key=api_key, model_name=info["default_model"])
 
-        for lang in selected_languages:
-            print(f"\n  📂 Language: {lang.capitalize()}")
-            try:
-                samples = load_sampled_data(lang)
-            except FileNotFoundError as e:
-                print(f"  ❌ {e}")
-                continue
+        try:
+            samples = load_sampled_data(lang)
+        except FileNotFoundError as e:
+            with print_lock:
+                print(f"  ❌ [{info['name']}][{lang}] {e}")
+            return
 
-            results = run_evaluation(provider, samples, lang,
-                                      delay=args.delay, fresh=args.fresh)
-            metrics = EvaluationMetrics.compute(results)
+        with print_lock:
+            print(f"\n  🚀 Started: {info['name']} × {lang.capitalize()} "
+                  f"({len(samples)} samples, {workers} workers)")
 
-            # Print report
-            report = EvaluationMetrics.format_report(metrics, f"{info['name']} — {lang.capitalize()}")
+        results = run_evaluation(provider, samples, lang,
+                                  delay=delay, fresh=fresh,
+                                  workers=workers)
+        metrics = EvaluationMetrics.compute(results)
+
+        # Print report
+        report = EvaluationMetrics.format_report(
+            metrics, f"{info['name']} — {lang.capitalize()}")
+        with print_lock:
             print(report)
 
-            # Save
-            filepath = save_results(results, metrics, model_key, lang)
+        # Save
+        filepath = save_results(results, metrics, model_key, lang)
+        with print_lock:
             all_output_files.append(filepath)
             all_metrics[(info["name"], lang)] = metrics
             print(f"  💾 Saved: {filepath}")
+
+    # Build list of all (model, language) jobs
+    jobs = [(mk, lang) for mk in selected_models for lang in selected_languages]
+
+    if len(jobs) == 1:
+        # Single job — run directly (no extra threading overhead)
+        _run_one(jobs[0][0], jobs[0][1], args.delay, args.fresh, args.workers)
+    else:
+        # Run all model×language combos in parallel
+        print(f"\n  ⚡ Running {len(jobs)} evaluations in parallel")
+        with ThreadPoolExecutor(max_workers=len(jobs)) as executor:
+            futures = []
+            for model_key, lang in jobs:
+                f = executor.submit(_run_one, model_key, lang,
+                                    args.delay, args.fresh, args.workers)
+                futures.append(f)
+            # Wait for all to complete
+            for f in futures:
+                f.result()
 
     # 5. Cross-lingual comparison (per model, if multiple languages)
     if len(selected_languages) > 1:
