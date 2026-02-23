@@ -60,11 +60,16 @@ class DatasetSampler:
             if length > self.max_length:
                 continue
 
-            filtered.append({
+            entry = {
                 "post": post,
                 "label": label,  # ground truth: "depression" or "normal"
                 "word_count": length,
-            })
+            }
+            # Preserve extra fields (e.g. severity for Urdu)
+            for key in row:
+                if key not in ("post", "label", "word_count"):
+                    entry[key] = row[key]
+            filtered.append(entry)
 
         unit = "chars" if self.is_cjk else "words"
         logger.info(

@@ -6,7 +6,8 @@
       "Bash(python -c:*)",
       "Bash(where:*)",
       "Bash(py:*)",
-      "Bash(powershell -Command \"Get-Content ''D:\\\\Downloads\\\\multilingual-mental-health\\\\data\\\\chinese\\\\depressed.jsonl'' -TotalCount 1 | ForEach-Object { $_Substring\\(0, [Math]::Min\\($_Length, 2000\\)\\) }\")"
+      "Bash(powershell -Command \"Get-Content ''D:\\\\Downloads\\\\multilingual-mental-health\\\\data\\\\chinese\\\\depressed.jsonl'' -TotalCount 1 | ForEach-Object { $_Substring\\(0, [Math]::Min\\($_Length, 2000\\)\\) }\")",
+      "Bash(set:*)"
     ]
   }
 }

@@ -238,6 +238,50 @@ class SpanishParser(DatasetParser):
         return dep + non_dep
 
 
+# ── Urdu ────────────────────────────────────────────────────────────────────
+
+class UrduParser(DatasetParser):
+    """
+    Reads ``data/urdu/Depression.csv``.
+
+    Columns: ``Text``, ``Label``
+    Labels:  mild / moderate / severe → depression, non-depression → normal
+
+    All severity levels are collapsed to binary "depression" for evaluation.
+    The original severity is preserved in a ``severity`` field for analysis.
+    """
+
+    language = "urdu"
+
+    _LABEL_MAP = {
+        "mild": "depression",
+        "moderate": "depression",
+        "severe": "depression",
+        "non-depression": "normal",
+    }
+
+    def __init__(self, data_dir: str):
+        self.csv_path = os.path.join(data_dir, "urdu", "Depression.csv")
+
+    def parse(self) -> List[Dict[str, str]]:
+        rows: List[Dict[str, str]] = []
+        with open(self.csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                post = row.get("Text", "").strip()
+                raw_label = row.get("Label", "").strip().lower()
+                if not post or raw_label not in self._LABEL_MAP:
+                    continue
+                label = self._LABEL_MAP[raw_label]
+                rows.append({
+                    "post": post,
+                    "label": label,
+                    "severity": raw_label,
+                })
+        logger.info(f"[Urdu] Parsed {len(rows)} posts from {self.csv_path}")
+        return rows
+
+
 # ── Registry ─────────────────────────────────────────────────────────────────
 
 PARSERS = {
@@ -245,6 +289,7 @@ PARSERS = {
     "arabic": ArabicParser,
     "chinese": ChineseParser,
     "spanish": SpanishParser,
+    "urdu": UrduParser,
 }
 
 

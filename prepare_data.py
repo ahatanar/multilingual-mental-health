@@ -77,6 +77,7 @@ def prepare_language(language: str, sample_size: int = 500, seed: int = 42,
                 "label": s["label"],
                 "ground_truth": s["ground_truth"],
                 "word_count": s.get("word_count", 0),
+                **({"severity": s["severity"]} if "severity" in s else {}),
             }
             for s in samples
         ],

@@ -7,6 +7,8 @@ Prerequisites:
 Run:
     py runner.py                        # interactive mode
     py runner.py --reparse              # re-parse + re-sample data first
+    py runner.py --fresh                # ignore partial results, start fresh
+    py runner.py --delay 21             # 21s between API calls (OpenAI free tier)
 
 Loads sampled data from data/sampled/<language>.json and runs
 classification with selected LLM provider(s).
@@ -40,7 +42,7 @@ MODELS = {
     "gemini": {"class": GeminiProvider, "name": "Gemini 2.0 Flash", "default_model": "gemini-2.0-flash"},
     "deepseek": {"class": DeepSeekProvider, "name": "DeepSeek Chat", "default_model": "deepseek-chat"},
     "openai": {"class": OpenAIProvider, "name": "ChatGPT (GPT-4o-mini)", "default_model": "gpt-4o-mini"},
-    "claude": {"class": ClaudeProvider, "name": "Claude Haiku 4.5", "default_model": "claude-haiku-4-5-20241022"},
+    "claude": {"class": ClaudeProvider, "name": "Claude Haiku 4.5", "default_model": "claude-haiku-4-5"},
 }
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
@@ -232,7 +234,7 @@ def _remove_partial(model_name: str, language: str):
 
 
 def run_evaluation(provider, samples: List[Dict], language: str,
-                   delay: float = 1.0) -> List[Dict]:
+                   delay: float = 1.0, fresh: bool = False) -> List[Dict]:
     """
     Run classification on all samples, with crash-resume support.
 
@@ -243,18 +245,24 @@ def run_evaluation(provider, samples: List[Dict], language: str,
     total = len(samples)
 
     # Check for partial results to resume from
-    existing = _load_partial(model_name, language)
-    start_idx = len(existing)
-
-    if start_idx > 0 and start_idx < total:
-        print(f"  🔄 Resuming from {start_idx}/{total} (found partial results)")
-        results = existing
-    elif start_idx >= total:
-        print(f"  ✓ Already completed {total}/{total} — skipping")
-        return existing
-    else:
+    if fresh:
+        _remove_partial(model_name, language)
+        print(f"  🔄 Fresh run — ignoring any previous partial results")
         results = []
         start_idx = 0
+    else:
+        existing = _load_partial(model_name, language)
+        start_idx = len(existing)
+
+        if start_idx > 0 and start_idx < total:
+            print(f"  🔄 Resuming from {start_idx}/{total} (found partial results)")
+            results = existing
+        elif start_idx >= total:
+            print(f"  ✓ Already completed {total}/{total} — skipping")
+            return existing
+        else:
+            results = []
+            start_idx = 0
 
     for i in range(start_idx, total):
         sample = samples[i]
@@ -326,6 +334,10 @@ def main():
     )
     parser.add_argument("--reparse", action="store_true",
                         help="Re-run prepare_data.py before evaluation")
+    parser.add_argument("--fresh", action="store_true",
+                        help="Ignore partial results and start fresh (overwrite)")
+    parser.add_argument("--delay", type=float, default=1.0,
+                        help="Seconds between API calls (default 1.0, use 21 for OpenAI free tier)")
     args = parser.parse_args()
 
     # If --reparse, run prepare_data first
@@ -394,7 +406,8 @@ def main():
                 print(f"  ❌ {e}")
                 continue
 
-            results = run_evaluation(provider, samples, lang)
+            results = run_evaluation(provider, samples, lang,
+                                      delay=args.delay, fresh=args.fresh)
             metrics = EvaluationMetrics.compute(results)
 
             # Print report
