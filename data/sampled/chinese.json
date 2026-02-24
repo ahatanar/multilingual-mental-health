@@ -1,0 +1,3022 @@
+{
+  "metadata": {
+    "language": "chinese",
+    "sample_size": 500,
+    "requested_size": 500,
+    "seed": 42,
+    "created": "2026-02-23T02:32:11.927310",
+    "source_total": 3320790,
+    "label_distribution": {
+      "depressed": 250,
+      "not depressed": 250
+    },
+    "labeling_method": "silver_label_consensus",
+    "classifiers": [
+      "xlm-roberta-depression",
+      "grok"
+    ],
+    "agreement_rate": 0.3175
+  },
+  "samples": [
+    {
+      "post": "今天跟妈妈说电话差点哭了，妈妈说得没错，我是一直放不下，一直看不开，也一直过不了自己的那一关，所以现在我都放不开。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 57
+    },
+    {
+      "post": "我大概真的是一个很自私的人吧，我想象不出来我未来的生活是怎样，我也想不出来以后我能和谁一直走下去。我曾经憧憬一个完美的婚礼，可是我现在竟然一点没有期待。没有人能够忍受我这样一个人吧。我脑子里很空白又好像很混乱。我甚至不知道我该干点什么，我是否一次又一次的向生活妥协，我在妥协些什么 ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 146
+    },
+    {
+      "post": "特别特别特别不开心 下午看完感觉心脏都不好了 觉得特闷 然后看了看网上的说法 还是很多人和我遇到一样的问题 什么评论都有 后来选择了大度宽容 也许你自己都忘了这些东西呢 嗯 但是现在自己又好难受 特别特别膈应 怎么有点恶心想吐（这是真的不舒服和事情没关系）讲真 以后 不能再手欠了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 140
+    },
+    {
+      "post": "今天能死掉吗",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "很难受 今年过得很难受 朋友走了 亲人走了 我很想抱着喜欢的人哭 但其实我连这个也实现不了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "抑郁症 在我心情很好很正常的时候我都在想我根本就没有抑郁症 我就是一时难过而已 是我太矫情了。在我陷入抑郁的时候我又觉得我好差劲 我怎么会感到开心呢 我不该感到开心的 我明明也有正常的时候可以开心起来可是我为什么有抑郁症呢。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 112
+    },
+    {
+      "post": "打开网易云听歌  无聊翻着评论 绝大部分轻音乐底下都会有人评论自己抑郁症又有大部分人所得的抑郁是因为'爱而不得'我从未去爱一个人 包括我的父母（呃...可能因为爱是相互的吧？所以我完全不明白因为一个没有任何血缘关系 也不爱自己的人 仅仅披上'爱情'这两个字就让自己魂牵梦萦 情凄意切甚至抑  ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 151
+    },
+    {
+      "post": "跟亲友说出来要a，其实很想哭，觉得对不起她们了，没法在这个江湖，继续陪着她们闯荡了，愿她们未来可以更快乐！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 53
+    },
+    {
+      "post": "上班的时候真的超累。下班却又彷徨，比起上班，我更害怕回家。休假的时候还是出去找房子把，不然会抑郁至死吧。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 52
+    },
+    {
+      "post": "今天手臂酸疼的不行 捏不住伞 我妈妈撑伞 我说我衣服湿了能不能往后撑一点可是她也有关节炎 说撑不住 说我做什么事都是理所当然我是真的很累 我知道你也很累 但是我是真的很累",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 85
+    },
+    {
+      "post": "很难去描述这种感觉，自己好像身处一个深渊中，有一只手从深不见底的黑洞里伸出来抓住我，无法逃离，唯有一齐死亡。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 54
+    },
+    {
+      "post": "人都是自私的，没有谁会毫无保留的去关心另外一个素不相识的旁人，我知道，在我无助，陷入谷底的时候，我始终还是一个人，一个人烦恼，一个人难受，这种感觉就像往气球里面灌气体，总会有爆炸的一天，家庭的压力让我喘不过气，每天睁开眼思考的都是糟糕的过去，真的好累，好累",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 128
+    },
+    {
+      "post": "首先，认清事实:我并不美丽其次，参考一些现实生活中的案例:他们也不是人人都美丽，但他们似乎也没太当回事接下来，反思:为什么同样不美丽的人可以毫不在意自己的不完美？然后，向深挖掘:我到底差在哪里，又好在哪里，到底是什么导致了我的嫉妒自我批评，却不知做出改变继而得出结论:这便是无能狂怒最后考虑，接下来该何去何从？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 155
+    },
+    {
+      "post": "尽管我没有这么强的恨和记仇，但是我记忆力就是特别好，让我忘记那些不管是温暖的还是痛苦的事，那都是不可能的。偶尔也会想着选择沉默背负这么多有毛的意义？谁又会感激你似的……我不恨，但是我也不忘。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 95
+    },
+    {
+      "post": "又两点了，今天也没有人哄我睡觉。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "为什么一直不开心，为什么一直郁郁寡欢，我想我知道为什么我肝不好……",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "自认为嚣张跋扈就能无坚不摧  原来还是脆弱的不堪一击 回回头 我的家已不是我的家  难过的委屈的纵然湿了半面枕头 可还是没有地方哭泣",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 66
+    },
+    {
+      "post": "抑郁  活着有什么意义？我该做些什么才有意义…",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "最近又恢復成原來的樣子 晚上睡不好 早上醒得很早 6點半就清醒了 隨後一直到鬧鐘響都一直睡不著 想很多事情 越想就越煩躁",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 60
+    },
+    {
+      "post": "我在坏死",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "水凉了还可以喝，心凉了连说快乐都显得落寞。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "抑郁 不能哭不能哭不能哭 在上班在别人面前不能哭",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "好累啊，总觉得这个世界不想让我好过",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "想要尽头。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "我会为什么要努力生活",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "并没有变得宽宏大度   只是累了   懒得去计较而已",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "一切尽无语。。结束了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "你的娃娃跟你长的一模一样，就像小版的你，你和你的妻子也很有夫妻相。真好呀，可是我真难过，我被一个人丢在原地呀，你忘记我啦。啊，对不起，你从未记得我。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 74
+    },
+    {
+      "post": "无意义的加班中",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "如果我能回到从前，我会选择不认识你，不是我后悔了，而是我无法面对现在的结局…… 广州·西村",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "回不回，也没感觉了，想不想，也不会哭了。人跟人之间，本来就很脆弱吧。也不能这么说，感情是脆弱的，只有利益会固若金汤。与未来永葆一致调性的利益，是坚固的。可哪有那么多永远呢。所以，只有自私永恒。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 96
+    },
+    {
+      "post": "我现在是不是会失眠了，4、5点钟睡，八点多不得不起，累了一天，现在还是睡不着，这几天都是到了4、5点才睡着的",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 54
+    },
+    {
+      "post": "既然他不死，我死好不好",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "抑郁症没有了活下去的理由",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "发现自己生病的时候真的是，吓尿了，也没人陪我去，有什么办法呢死了怎么办硬着头皮去看了医生，捡了药。回来仔细看了药，又吓尿了不敢用，可是有什么办法呢死了怎么办死了还不是我自己死了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 88
+    },
+    {
+      "post": "不知道活着的意义",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "我完全没有其它意思和想法，如果有那一天，我真的一声不发地走了，不是你的错，是我真的过不了自己的那黑暗而没方向的想法。一直寻找更让对方，一直生活更舒服的方式！为什么我改变不了？看一个人细不细心，由生活上可以看得出。我现在唯一学识的是，不在有人认识的地方发放任何不开心的事件。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 136
+    },
+    {
+      "post": "就像是站在悬崖边上的人还在等待着救赎失去了对事物的兴趣我想还是睡觉比较好 晚安世界",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "你把我变成了残破不堪的女人，然后转身爱别人。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "我从昨晚哭到现在",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "因为疫情被迫在家呆了大半个月，和我妈的关系永远是针锋相对，她依旧无时无刻喜欢对我大吼大叫，对于我和我爸稍有不满便破口大骂，只有在她出去打牌时才能得到些许安宁。很多时候我根本无法控制对她的情绪，我不知道为什么我的妈妈会是这样，我知道我无法选择父母，无法改变这一切，真是没劲透了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 138
+    },
+    {
+      "post": "年初的时候目标是找个兼职能供我日常花销现在的目标是找个兼职能供得起我喝酒就行",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "抑郁症今天没有作业了 适应新药 睡了一天 睡死过去了 一直半梦半醒 感觉脸上的肌肉一直跳动",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "我到底是为什么会变成这个样子？好不容易有一点点改善了，为什么又要像暴风雨一样返回来？也许总有一天我会控制不住自己，变成世人眼中的另类！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 67
+    },
+    {
+      "post": "出门没带打火机找遍了整个排练房都没有就差用电火花点烟了练琴的劲头差了一半",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 36
+    },
+    {
+      "post": "也许是哭太多了 哭不出来了吧 麻木到怀疑自己有没有在活",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "十分钟的回家路一个小时到家浑身麻到发抖跪在地上的样子我再也不想看到抑郁要死不活了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "心里难受，不舒服！肚子又痛！真的好想大哭一场！怎么都开心不起来！ 网页链接",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "抑郁症又想自残了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "抑郁症 因为这种状态这样的病  家里人不了解这些  我这个样子时间长了恶化到现在很严重了自理都弄不好了   可家里人老公不了解这些 已经对我特别失望厌烦不想管我了  我有小孩了  可是严重到小孩都给不了我一点动力了 我对不起所有人  顶不住了顶不住了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 125
+    },
+    {
+      "post": "我一点都不善良 反而很不友善",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "我想改变自己 对自己不能太懒 不能总是不贴面膜 不能老是把时间省下来睡觉 而不愿意花点时间去化个美美的妆 不能因为跟同事们很熟悉了 而不再花时间来搭配衣服 原因只有一个 我怕以后会没人真的爱这样的我。我开始害怕了，@惜小夫 @BIN_Keep-On-Running@谁会默默的关注我 @JACK-捷 @郁郁的大熊",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 156
+    },
+    {
+      "post": "有的时候单身久了也是一种病，不会谈恋爱了，有的时候很想你很想和你在一起，也会克制自己告诉自己不要去想，强迫自己不要去依赖你，其实自己很痛苦，很失落，但还要强迫自己往前走，看来我真是病的不清，这病咋治疗？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 101
+    },
+    {
+      "post": "抑郁症天气越来越冷心情是真的越来越差每天早醒几乎成了惯例中午平躺在床上时心口突然觉得特别空空到我忍不住哭起来了那种感觉真的很可怕就感觉 什么都没了于是我趴在床上蜷缩着用手抱着自己才慢慢好了一点点好害怕这种感觉",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 104
+    },
+    {
+      "post": "可以说是诸事不顺了……",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "我是天上没有脚的小鸟不喜欢被束缚 不想要有牵挂",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "我想要的生活到底是什么。躲起来谁都看不见我吗",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "一直被人宠爱的人当然不会懂我这种流浪狗一样的心情了  不如就不要爱我了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "日子越近越不想结婚了吃喝嫖赌真他妈恶心 坐在这都他妈觉得恶心 真的是太他妈丢脸了 呸老子怎么会这样",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "我是个不会去主动的人 我不太喜欢和完全不认识的人去接触太多 我有说多不多 说少也不少的好朋友 但是我不会告诉她们我的现状 我怕她们会走 我宁愿和以前一样的相处模式 隐藏着自己的难处 我活该孤独 我活该自己一人承受所有 我活该",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 112
+    },
+    {
+      "post": "你凭什么可以幸福？你配吗？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "抑郁症我，边缘性人格障碍，重度抑郁症患者，严重社恐，讨厌人类侯群症现在活的人不像人鬼不像鬼很长时间没照过镜子不想动，就想静静待着，待在黑暗里面，感受自己生命流逝",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 80
+    },
+    {
+      "post": "我到底在紧张什么，为什么对清醒这么执着，明明困得要死又不肯睡觉，明明困得要死又在闹钟响前就醒。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "我曾经拒不认为我会是个凡庸的人，然而，如今的一草一木都在像我证明，我到底还是平庸无能的。我并没什么不同像世界的大多数，一颗跳动的心被淹没。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 69
+    },
+    {
+      "post": "我连说话都觉得好累啊。我太累了。别站在制高点了。我累了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "抑郁症害 我真的好想划自己 可是理智又不允许我这样做 太难受了 一闭上眼全是这件事 根本睡不着",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "我快要把自己活活呕死了，我想把整个胃都抠出来扔马桶里冲掉，太恶心了恶心恶心恶心恶心恶心",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 43
+    },
+    {
+      "post": "没有自制力的人就是个垃圾。我就是",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "我最羡慕20岁时候的我了。有亮丽的外表，动听的歌声，清透的皮肤，聪明机敏的头脑。还有男生追求，还有一群朋友，还有精力熬夜做作业，还有为之疯狂的比赛，还有苦涩的青春。现在这些已经离我远去了。我23岁了，已经被现实压的喘不过气。每天窝在出租屋里故步自封。乘坐两小时公车上班。工作不尽人意。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 142
+    },
+    {
+      "post": "我心里的刺。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "没有办法克制自己每天无端浪费几个小时的时间哭泣，我就是，没有办法生活，没有办法，一点办法都没有，完全没有，像一具行尸走肉，我知道我越来越不正常了，我尽量躲起来哭不打扰别人行吗，我好疼啊，妈妈",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 95
+    },
+    {
+      "post": "说不出的不爽，又穷，想狂吃",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "抑郁症 在近期我想把自己归还于大地，光想睡觉，不愿意面对现实，对于生活我投降了遗言很简单，我好累，心好累，大脑好累！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 58
+    },
+    {
+      "post": "抑郁症本来今天复诊是要和医生说我有暴食倾向的然后我忘了这个脑子就没想让我好",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "或许 曾经说过的那个梦境 会变成现实。可是 还是 有那么一些不甘心啊。或许我更适合一个人吧。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 46
+    },
+    {
+      "post": "叛逆小赵在线更博 上尼玛的班啊老子这辈子都不想再去上班了 在家混吃等死的感觉真好啊没有理想只想睡觉还有吃嘻嘻",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 54
+    },
+    {
+      "post": "一直在感谢，却也一直在失去，那些那样美好的，不如不曾体验过，就像一直只有自己一样",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "抑郁症每一天都在熬",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "成长就是慢慢失去快乐。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "기분이 너무 안 좋아서 이러고 싶지 않아요.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "他掐着我的脖子说我是祸害   把我的头使劲往床头撞   扇了好几个巴掌  然后求我别离开   你跟我说一下什么是爱情#抑郁症##得而不惜# 南宁·江南・香格里拉商业广场",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 84
+    },
+    {
+      "post": "嗯…今天去看病，我爸陪我去的。医生可能说的比较严重点，他一直说没有，不可能。早上我开车去的，一路都在被他骂。回来以后我妈问了情况，又把我骂了一通。真的，我只是想不通一件事，为什么生病这件事，也变成是我的错了呢。我到底做错了什么呢。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 115
+    },
+    {
+      "post": "原生家庭的幸福就从来没感受过",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "睁眼等天亮 四点睡六点醒 不知道是不是因为吃了药 太痛苦了 清醒的 不清醒的 全是指责和不信任 头很晕 我觉得我没有办法站起来 我就这样安安静静的躺着 任由胡思乱想 甚至想在吃一颗药 来满足我 让我获得短暂的快乐",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 106
+    },
+    {
+      "post": "并不是天生就没有爱人的能力 没有爱 我的爱早已在无数个孤立无援的夜晚里消失殆尽",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 39
+    },
+    {
+      "post": "好绝望 睡不着.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "今日吵架：打排位时候，没保住他，被他骂被队友骂，骂到心态打崩了，他说就你这破心态永远打不上去。崩到不想打游戏了，也不想谈恋爱，觉得都在欺负人，委屈的要命还被人数落被人凶。心里发誓再也不跟他玩了，也再也不要玩辅助位了。为啥别人都有男朋友疼，我没有呢…我也想被当成小姑娘宠着，谈恋爱 ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 145
+    },
+    {
+      "post": "那种感觉你能懂吗？做任何事都想方设法自杀",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "隔了好久 又懒得写日记了 啧啧 明天吧 明天再写 最近不仅懒得动笔 还懒得思考 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 70
+    },
+    {
+      "post": "我从来没有假装痴情 你知道的 可是这样却老是害你 我真的好没用 好多余",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "每天强迫性晚睡实在太对不起那些失眠的人了也对不起我的床对不起我的被子对不起我明明已经每天都疼的脑子对不起我每天和朋友说的晚安对不起我爸妈的钱对不起香烟……感觉这条微博我可以编辑一整个晚上",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 93
+    },
+    {
+      "post": "今日记：一个人到底要怎样坚强才能够在一次次被打倒后又站起来可爱的女生真是连发尾弯弯都那么好看没人会喜欢和接受懦弱的我，只会愿意看到坚强的我，现在才醒悟，也是越活越回去了，大概是飘了，以前都好好的撑着 都很好，大半年前自己的病和一些情况被发现，再到后来以为自己以前偷偷地哭和消极 ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 144
+    },
+    {
+      "post": "突然会想自己和别人到底差在哪儿了一样很努力工作努力打扮努力生活的自己怎么就不如别人不如别人挣得多不如别人过得好还是说我有什么问题又或许夜晚不适合思考问题今天看到某网红小三怀孕上位让我难受的不是她是网红或者她是小三而是为什么她可以挣那么多钱她可以解除社会顶层的人群为什么为什么",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 137
+    },
+    {
+      "post": "早晚会有一天，我会穿着漂亮的小裙子，画一个精致的妆容，找一个没有人的地方，安安静静地等待死亡",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 46
+    },
+    {
+      "post": "好不起来了好不起来了，想操全世界，觉得全世界都是傻逼。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "我以为我能平静的接受，没想到还是带着眼泪彻夜失眠了。这种心境，似乎比那个深秋更痛。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "但凡有一点点希望，我也不情愿变成现在浑身带刺儿的样子！以前真的不懂浑身带刺儿的人，其实心里是最没有安全感的人！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 55
+    },
+    {
+      "post": "我已经连续好多天失眠了天啊晚上现在让我恐惧",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "昨晚没忍住又伤害自己了哭到半夜心中满是仇恨却又想做个有光的人什么时候才能真正放下…… 乌鲁木齐",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "每晚从放下手机到我睡着的这段时间是我每天最煎熬的时候，翻来覆去的睡不着，满脑子都是以前发生的我一点儿也不想再想起来的事以及对未来的迷茫。入睡困难真的是一件很难熬的事情，我觉得我要抑郁了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 92
+    },
+    {
+      "post": "越写越觉得烂，改改改，我有种不好的感觉，很怕被看开头就直接Out",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "第13天今天好忙啊小组作业 真的像在带孩子，不明白又想展示拿分又不愿意做事的人咋想的唉生气又悲伤今天开会开会开会开会会",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 59
+    },
+    {
+      "post": "真希望有个人能打乱我孤独终老的计划",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "没人喜欢负能量，我知道我也不喜欢这样的自己",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "倒计时2⃣️1⃣️天。如果一切真的都是命中注定，那奋斗还有还有什么意义？信天 信命 偏偏不信命中注定。最后一次…",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 56
+    },
+    {
+      "post": "我好烦，我又被床封印了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "苦了自己，却想不明白",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "今日日记和朋友聚餐聚的抑郁症都犯了聊的全是钱钱钱怎么挣钱谁谁有钱有钱了怎么样真的好烦无论是新认识的人还是认识许久的人现在聊天的话题基本全是钱钱钱结婚买车买房真的好烦啊大家到底怎么了无论是和谁聊天都是围绕钱这个话题要不就是性的话题没别的真的很令人恶心聊的抑郁症都犯了无意义的聚会还是不参加了有这时间还不如去挣钱以后一切聚会拒绝没有意义的穷人聚会拒绝一直聊钱聊的恶心聊的抑郁症焦虑症都犯了 成都·牛市口",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 199
+    },
+    {
+      "post": "双相情感障碍心态崩了合租的房子 厕所堵了 通了好久好久好久还不行 室友睡了 每次都怕吵醒他们无助且卑微我要疯了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 55
+    },
+    {
+      "post": "难道我本来真的长得很丑吗为什么要说我女大十八变，偷偷变好看",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "大概有半年没这么痛哭了不记得昨天是睡着的还是昏过去的醒过来到现在全身都还在发麻想睡一个不会醒过来的觉",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 50
+    },
+    {
+      "post": "提起精神，假装什么事也没发生，去试探一下，然后，隐晦地道个别吧。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "每一个夜晚 哭得眼睛肿 鼻子不透气 心里很想死 非常相死",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "每周末都在怀疑自己为什么要回家，到底是去做个工具人，提款机，还是情绪垃圾桶？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "有没有不痛的自杀方法？我真的真的很怕痛啊！每天都好煎熬，实在活不下去了。我这仅剩的一点责任心也要慢慢被消耗殆尽了……",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 58
+    },
+    {
+      "post": "自己就是一个麻烦吧不断麻烦别人或者给别人添麻烦还不断让大家失望很抱歉拖累了你们这人间算了吧#抑郁症#",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 50
+    },
+    {
+      "post": "尽管知道一夜不睡的后果，强迫自己快快睡，可就是睡不着啊，心里这么堵，在回忆过去的点滴，现在的状态，真的是恨时间的无情，已经让我们面目全非。检讨了自己，从以前的无话不说，说不完的话到现在的沉默，无话可说，我竟然感觉到了尴尬和拘束，好日子到头了！也许你会敷衍说我想多了，可女人的细腻与敏感你永远不懂。好难受，该怎么办，恨！真的想毁灭一切！真的想解脱，上千上万遍的想法！也许是我的霸道与强势毁了我自己！或许我会逃离，或许我会堕落，或许我会隐忍 包头·青山区",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 225
+    },
+    {
+      "post": "我有什么权利让你等我，请原谅我的无奈，因为我心里也不是那么好过。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "天天三点才睡怕是要猝死吧我",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "走饭zou 我怨恨着所有自己，矛盾压抑却又难以自抑",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "突然很想告诉大家，能坚持下去就努力点吧，不要像我这样被抢救回来后跟废人一样，无法大小便，无法走路，只能喝白粥汤，躺在床上不能翻身，一动就痛到全身发抖。而我所用的方式就是服药自杀，你可能无法想象那种过程，当我一把药一口酒配着吃下去的时候，没几口我就开始恶心想吐，有几次差点吐出来了 ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 145
+    },
+    {
+      "post": "如果问我有什么很想实现的愿望，，大概是不想活着，一了百了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "我是個失敗的人 想要闖才選擇了這一切 不後悔 但是覺得自己很難堅持 想逃避 那既然如此一年前的我為何那麼自信覺得自己一定能度過難關呢",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 66
+    },
+    {
+      "post": "虽然被安慰了很多也快乐了一阵 但明天起床的我还是那个无头苍蝇 哎",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "我给不了我始终给不了对不起对不起啊",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "坐不安，食不乐，寝不眠！我相信他也一样，今天好像天塌下来一样。是不是我做错了什么事情？他这么好人，都有这样的下场。真的很不公平我宁愿代替他承受这一切，他父母只有一个儿子，我不想他有事。请问怎样才能放过他？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 102
+    },
+    {
+      "post": "终于 我不再执着于自己口中所谓的坚持 如今分开已经是不可否认的现实 不想在欺骗自己 不如放过自己也成全了你  就把过去的山盟海誓都当成一个笑话 拜拜 旧情人 我要和你说再见了 我要忘记你了 我不爱你了 真的 不爱你了不爱了 可我真不想委屈自己成全你 #后会无期#已立秋 我说过夏天过去你也就过去了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 148
+    },
+    {
+      "post": "我突然觉得，自己还是对你不够好..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "全世界都让我恶心 都滚滚远远",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "抑郁症  我这两天疯狂还钱 还债 到处东拼七凑 情况非常不好 又看见新闻上隔三差五就有人选择离开这个世界的消息 我觉得自己最可能也会选择离开 房子马上到期了 我也没钱还债也没钱租房 工作也找不到我今天投递一天简历一个音信都没有 太绝望了   上海",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 123
+    },
+    {
+      "post": "有什么比努力活着更伟大的事，就像这样一如既往的坚持。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "下地的酸爽 站起来才想起没穿束腹带 内脏下坠 伤口痛 拔了尿管后尿道痛 各种酸爽加在一起 顾不上小好 也没有进入母亲角色 只有一个字 疼",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 68
+    },
+    {
+      "post": "不想再喜欢上人了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "头痛 闭上眼睛又在想那件事 我是不是一心情不好就会去想 然后睡不着但是头痛的快炸了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "我厌倦这一切",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Needle&amp;pills.没有光源的小黑屋里怎么连童话也变黑了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "是不是我只适合在自己的世界跳舞",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "我现在蜷在被子里 有点冷有点怕",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "抑郁症 我的身体很急切的跟我说我需要睡眠我需要休息。我控制不住我的脑子，他好像要整死我。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 44
+    },
+    {
+      "post": "尚好的青春 最近的新闻都是暴击拳拳打在你心口昨天一天的暴击已让人有些疲累直到刚才看到少女时代的新闻真心觉得心里堵的慌非常堵其实并不是他们的粉只是还蛮喜欢他们的一些歌这样但就是觉得心里很难过青春真的结束了这些年陪我们长大的人一个个离开不能继续陪我们了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 124
+    },
+    {
+      "post": "躺过手术台躺过核磁共振的床上脑子上插过线最后要躺在火化场的炉子里",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "内心已经控制不住想自残自杀的念头，表面上却装得像没事人一样，头疼，恶心，干呕，幻听，又都来了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 46
+    },
+    {
+      "post": "我在这的每一天都是折磨",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "我开始相信真的有前世今生。不然为什么。我这辈子这么短暂什么伤天害理的事情都没做，会得双相，焦虑障碍。终生孤独难以治愈。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 59
+    },
+    {
+      "post": "每一天都在一边痛苦地活一边渴求着死去 每一天都希望自己能鼓起杀死自己的勇气 不需要了解 不需要分担 不需要你们可笑可怜的施舍 人情令人作呕 而我远比人们想象的痛苦的多",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 83
+    },
+    {
+      "post": "#树洞# 是否就这样了，心里很惶恐，最近又开始失眠，不喜欢这样，真的想改变自己，什么时候才能放松自己，满不在乎呢。总是和自己说爱自己就好了，还是做不到，可能还是在期待什么。生于平凡，不甘平庸。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 96
+    },
+    {
+      "post": "此刻的我好难过，有想哭的冲动！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "一种撕心裂肺的疼，对不起，我不奢求你的原谅，只希望以后能好好补偿你，可是我却怕连补偿你的能力都没有。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 50
+    },
+    {
+      "post": "如果有下辈子 我一定要做一个十恶不赦的大恶人 不让自己受一丁点委屈",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "好想就这样快点死掉，好想就这样结束一切。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "对抗抑郁症的第六十一天     又是吃了睡，睡了吃的一天。不知道是不是太闲了的缘故，总觉得事事不顺心，心里特别烦，病又复发了，真的有点被逼疯的感觉！希望国家能早日控制住病情，能早点恢复到以前的平静生活！#抑郁症##抑郁症对人的影响有多大#抑郁症",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 122
+    },
+    {
+      "post": "十三天前的伤痕尚未愈合，我强忍着痛苦与无奈强行摧残着左臂，我压不住内心的魔鬼抗受不住的折磨，我逼迫着自身体与脑行动，可奈何不住，对不起。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 68
+    },
+    {
+      "post": "从心理上说我失恋了。其实我不爱喝酒，只是爱上了喝醉后好睡的自己。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "感觉钱花在哪都不是很开心归根结底就是对什么都不感兴趣....唉为什么快乐总是那么走的那么快。我喜欢吃，但感觉吃的快乐也就那样吧...也不是很开心。再说吃某些贵一点的大餐 可能吃之前期待了很久，吃到一半就索然无味了..我还能找回我对别的东西的兴趣吗",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 123
+    },
+    {
+      "post": "我便是那雾毒孤儿。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "没酒的日子乏味得要命，应酬的酒局又害怕得要死。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "我一个电脑白痴为什么要选apcsp啊我快死了卑微爱丽丝在线连bug都写不出来",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "我也不知道我在不开心个啥，就是不开心",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "生活很糟糕 很无聊就算两个人面对面坐在一起吃饭都无聊",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "做梦做的心里好难过 要死了这会",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "抑郁症我感觉自己好累啊，我不想走，但也不想留，很多人也都是这样吧",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "精神不好，怎么治？我是认真的。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "有时张开嘴巴 却发不出声音",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "我的快乐有小猫的一半就好了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "高三的日子一点一滴的消逝着，一天比一天慌， 一天比一天紧张， 一天比一天差，我该怎么做！！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "抑郁症我想要养一只小仓鼠可是不知道哪里能买到",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "今早起床的时候大概也没预料到今天会面临来势汹汹的装修方一个人在会议室里面对装修方八九个人明明心里怕到颤抖也要做出一副无所畏惧还要据理力争的样子好在最后无惊无险散场 也稍稍平衡了公司的权益到现在还在和对方周旋不休我觉得我不是勇敢或者其它而是成人的生活给我裹上了厚厚的茧还是觉得忐忑又羞耻啊全公司都见证了我泼妇一般的样子呐，好像又丢脸了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 166
+    },
+    {
+      "post": "我真的感觉要死了，我突然发现我对这个世界的恶意这么大，对这个世界的有这么多不满，但是更多的是因为我自己是个精神病人的原因",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 60
+    },
+    {
+      "post": "只有死亡才可以证明一个抑郁症是抑郁症？你又不爱我我需要证明给你看？没见识就别瞎逼逼",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "抑郁症我知道为啥我老是觉得我错了找到根源了那就是我不应该投胎投胎就是最开始的错误",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "有人可以告诉我快乐的方法吗我只有把自己当成虚拟的才会好受一点",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 30
+    },
+    {
+      "post": "换了新药 加了药量虽然那颗烦躁的心镇定了一些胸闷呼吸困难减轻了一丢丢但是副作用真特么难受腹泻、头疼、恶心反胃、四肢无力犯困又睡不着绝望又无助",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 70
+    },
+    {
+      "post": "发冷，头痛，撑不下去了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "10.25我今天看镜子的时候，突然很难过。于是我说，“啊，这居然是我吗。”我已经好久没有和人说话了。更妄论【找人说话】。然而细想并不准确。我是有找人说话的，要么是我喝了酒，要么是我在焦虑。如果那能被称作【找人说话】。夜里时不时的呼吸困难，我也不知道为什么这样。而且没法 ...全文",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 140
+    },
+    {
+      "post": "为什么一到夜晚我就开始难过了呢",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "把眼睑下至画在我经过的每一个地方",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "有没有人可以救救我，我好累，好累...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "在你面前我溃不成军，我不值一提",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "真希望老天睁眼看到我这些磨难还都不够吗？还要我怎么样？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "抑郁今天去学校路上突然很崩溃，不停地哭，只好回来休息一天，休息时一直很平静，现在到了晚上，又要去学校了，又好难受啊 好痛苦啊",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 62
+    },
+    {
+      "post": "其实真的很难过，大家都很你难受。为什么我们家就是和别人家不一样。我自己有问题呢，有吧。我好像不会让人，我好像总是反驳，我好像总是听不清别人讲话，也不是一个两个人这样说，我遇到的每个人都这样，以前的我总是以为我没什么问题，但是现在我开始怀疑了，为什么每次都是这样换了地方还是一样的。我好累",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 143
+    },
+    {
+      "post": "我只是懒得辩解了而已 难道我不说就是没有了吗",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "手术后不能提重物 不能做体力活 不是自己矫情 没有人会想到要帮你弄些什么 只是一味的玩手机 原本这个时期就会更加敏感 但还是没有人",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 65
+    },
+    {
+      "post": "有些人呢。以为自己有。那去打工的那些平凡人。你有钱了不起吗？人家比你更有钱。越发达素质高。入戏太深。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 50
+    },
+    {
+      "post": "越刷越觉得自己无聊，无用",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "一直在埋怨自己为什么这么垃圾。也许这就是那个很恰当的方式。告诉自己，只能靠自己走出来。走不出来就永远被困在死胡同里。今天下雪了，冬天也算是开始了。希望我呢，不要再痛苦，再受折磨了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 90
+    },
+    {
+      "post": "感覺自己沒有容身之所但其實身邊的人都對我不錯甚至可以說是非常非常好我該感到滿足的可我還是感到空虛 我想要全心全意愛著我的人 我真的好貪心",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 68
+    },
+    {
+      "post": "抑郁症 深夜想死 又是负能到极点的一个深夜 怎么办 我好恐慌 下个月的房租还没凑齐 这样朝不保夕的日子马上就要结束了吧 我马上就要去死了吧 上海",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 72
+    },
+    {
+      "post": "想要爱这个世界，真是件无力的事情。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "此生若能得幸福安稳 谁又愿颠沛流离 背井离乡此生若能择一城终老 谁又愿浪迹天涯 独步天下此生若能选一人白首 谁又愿长相别离 孤独终老此生若能得现世安稳 谁又愿居无定所 策马天下此生若能得安然无忧 谁又愿笑里买醉 借酒消愁 台州·商业街 民间贷-阿涛的秒拍视频",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 129
+    },
+    {
+      "post": "抑郁症又失眠了，脑子里闪过好多东西，越不去想就越清晰，哭的好难受，头好痛啊，要疯了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "#抑郁症患者眼中的世界# 睡不着想找人说话，但也不能强迫别人呀，毕竟这个点都睡了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "白天困得要死 晚上舍不得睡觉",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "不公平又怎样呢？ 我自己爱的人 自己选择的路 这个结局也没什么好意外的",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "是不是我再好看一点就能不躲闪",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "今天：感觉被一个做得很难吃的三文字羞辱了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "我不偷不抢不骗不坑不卖，花着自己辛苦赚来的钱，装点着自己的生活，我怎么就成了拜金女了！公车我自己搭，电影我自己看，歌我自己唱，街自己逛，医生自己看……有见过这么孤单的拜金女吗？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 88
+    },
+    {
+      "post": "突然就释怀了什么欺骗的瞒的哄的鬼心思的该有的就是防不住不该有的我想破脑袋也不会发生别人是个什么样的人我管不了 也改变不了防患于未然这句话是叫自己有个准备人心是最叵测的是我的 怎么着都是我的不是我的 好聚好散",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 103
+    },
+    {
+      "post": "总是不怎么爱回家，自打成了年就变着法儿的往外跑，住哪都成就是不想回家，回家就要看我妈脸色，她脸一拉我就赶紧陪着笑脸在心里写检讨。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 64
+    },
+    {
+      "post": "我想了想单身到现在的理由，应该是怕爱上一个人变得卑微，不爱就不会失去尊严",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 36
+    },
+    {
+      "post": "我现在才发现高中同学有多包容，也许不是包容，只是当时大家心思没那么复杂，我甚至可以当着同桌的面在自己手上划伤口也可以上课上到一半突然开始哭，老师和同学都没有对比指指点点。也是我自己也虎。换作现在我是不敢了，甚至上课的时候都要一直提防胳膊有没有露出来。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 125
+    },
+    {
+      "post": "昨天晚上做了梦，今天感觉不太好，生活要回归正轨 就当这个人从来没出现过，好好开始重新生活 我在马桶上做的这个决定没错了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 59
+    },
+    {
+      "post": "总是会遇到一种非常无可奈何的状况 肚子很饿很饿 可是一点都不想出去买东西吃 于是忍着 忍着 忍着 就这样已经从昨天下午忍到现在都没吃饭 所以说 这人简直有病 且懒癌不可治！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 86
+    },
+    {
+      "post": "我没有一天不想",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "你到底为了什么变成这样，我说过我认定你了，我说过你离开我，我就会死的，你为什么会变成这样，还是我自己太过单纯想事情",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 57
+    },
+    {
+      "post": "我在医院的折叠椅上睡了十天我跟他们说我吃的抑郁症药是过敏药我开始觉得我有点撑不住了很累很累很累",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "不要变得更烂了不要向后退了不要再留不住人了不要再拿别人当救赎了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "我大概就是一个小心眼又自私的人吧",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "我现在退行性的生活方式，本质上还是关系的影响。理智和情感的分离，滞后的情绪体验让我没法做好该做的事情。必须要去医院了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 59
+    },
+    {
+      "post": "可悲的是，明知获得幸福的方式多且容易，但自己已早早设定了无法更改、难以幸福的发条。只能远远观望着，自我折磨着，最多的痛苦都源于自己。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 66
+    },
+    {
+      "post": "我把自己活成了一个落难者，着急忙慌的告诉世人我有多不幸。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "十几二十个HR问各种刁钻的问题。后天30号现在还没搞定车票问题。军训完了又怎样。反而更失落。看朋友圈各种晒。深深的无力感。然而这是如此可悲的死循环。突然好想你。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 80
+    },
+    {
+      "post": "淡定淡定淡定 受够了最近关于评优的话语穿破我的耳膜 我虽我虽 挂了个非专业课就和任何评优扯不上边 真是一颗老鼠屎 过程很美有屁用啊 认了认了认了 求这阵风快过去吧 真的不想再被这种事烦了 该领奖学金的人快去领吧！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 106
+    },
+    {
+      "post": "上一秒想什么我忘干净了  似乎是个有点重要的念头。无所谓  这种念头时时有，有点悲桑呢  喵",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 46
+    },
+    {
+      "post": "抑郁症我恨碳酸锂，每回吃都吐的厉害，操，凭啥这病落我头上，每天幽愁暗恨生，同学看我奇奇怪怪总请假",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 48
+    },
+    {
+      "post": "我的父亲，走了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "胃难受了好几个月了真希望是胃癌或者是胃穿孔什么的让我死了也行",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 30
+    },
+    {
+      "post": "他们都谈恋爱了，唯独你，你有在好好等我对吗？还是我想多了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "如果我自杀 他们还会不会骂我",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "想把自己藏在无人岛 也想变小 藏在胳肢窝里",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "我不想活那么久  我也不想继续追随我的梦想  我们家不富裕 所以我只想尽可能赚多点钱给爹妈然后安心的去死  虽然这个世界也有很多快乐的东西  但没有什么让我觉得这个世界值得我继续存活  虽然爱情对我来说也很重要  但我喜欢的男孩子们也不可能接受我的思想",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 126
+    },
+    {
+      "post": "现在不知是胃疼还是啥疼，总之很难过！",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "我没勇气去拿回我自己的开心。我也不知道想喝热水温水还是冰水。想去天边，咬一口月亮，月亮是甜的吗？我想吃甜的，甜的会带来好心情吗？我不想做成年人了，我也不想自己去劈荆斩蔗。我想找一个真正的好朋友，宿醉，然后去我想去的远方。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 110
+    },
+    {
+      "post": "世界上最稳定的关系就是没有关系",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "生而为人  我很抱歉这么久了  从来没有觉得自己真正的活过什么叫生  什么叫活也许  死   是唯一的活路",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 53
+    },
+    {
+      "post": "爸：看来你都没什么用我：对啊本来我就没什么用，干嘛还要用用尽力气去装的很有用，我就是个废材干嘛勉强自己当天才",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 54
+    },
+    {
+      "post": "前几天问我小弟，班里有没有特别漂亮的女生，班花之类的。他说，我们管长得最丑的女生叫班花。当时心里咯噔一下。他这样，跟那些当初欺负我的人又有什么区别呢",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 74
+    },
+    {
+      "post": "纠缠着不放，我真的好蠢，她已经不是那个她了。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "人生来就是受苦难的 这是生命的常态 要么忙着生 要么忙着死",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "我觉得和我这种人在一起挺累的情绪时常不稳定 极端性的没安全感我会紧紧盯住对方的一言一行 不放掉丝毫细节但凡对方 没有做到我所期望的价值  我就已经开始否定他之后的存在 因为他连小举动的回应都做不到  我就不再会奢望他之后能做的多好我太害怕 自己随意的喜欢上一个人 于是又重蹈覆辙与其萌发好感 倒不如将其扼杀在摇篮里这样彼此都平平静静的生活着  什么都没有发生有些人不该拥有感情有些人美好的东西就是和她无关",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 202
+    },
+    {
+      "post": "压力又变得好大……",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "大部分时间我都只是一个人 所有不开心的事跑完步自然会好很多 慢慢的跑步成了一种发泄方式 甚至有些依赖它 介休·城关乡",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 58
+    },
+    {
+      "post": "我喜欢的，终将离我而去。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "#追到喜欢的人是什么体验#这辈子也不会有这种体验因为根本不存在喜欢的人我只想睡美队",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "想在心里下一场雨 晕染岁月的故事  孤馆寒窗风更雨 欲语语还休",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "有些东西能活着就不错了，你还要要求他们应该怎么活，何必呢？",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "又浪费了一天生命，我不配",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "我的爱其实好少好少，我每次只能一点点的给出去，但是如果错过我的那一点点，就已经是错过我的全部了，可惜很多人不能知道",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 57
+    },
+    {
+      "post": "虽然有时候上午会感到恶心但吃饭总归是没有问题了，不吃药就获得那种愉悦的身心感受简直太难了。下辈子想当一只没有思考能力的狗。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 61
+    },
+    {
+      "post": "说实话，我的脸变成这样，我想死的心都有了，本来就丑，现在更丑，真的，丑死了，想死脸都烂了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 44
+    },
+    {
+      "post": "很努力的在活下去，你们却觉得我没事人一样，那是为了不加重你们的罪恶感",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 34
+    },
+    {
+      "post": "怎么能在我最无助的时候问我为什么要这样",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "把记忆腾空，我自己住。把过去填补，我自己疼。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "别人有个好父亲，可惜我没有",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "头很晕 很沉 沉到什么事都想不起来了",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "2019年的最后一个月许愿希望我能和大黑狗和平相处",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "他没有找我 反而是我又找他了 谁来把我打醒",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "抑郁症突然有点不想治下去了不想看医生，不想吃药，就这样，静静地……熬不下去了就走吧",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "我也曾瘦过，想到就心酸",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "我今天被气的心脏疼，情绪越来越不稳定，什么时候才可以摆脱这一切，不知道怎么发泄，就是感觉气的扑腾扑腾想要恼羞成怒挥动翅膀。",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 61
+    },
+    {
+      "post": "今夜大雨拍摄茶叶上新的照片喝盏茶的功夫我家乌龙茶趴在乌龙茶边睡着了这是恩宠😸 香草yuer的秒拍视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 50
+    },
+    {
+      "post": "给大家派送奶皂试用装❗❗1.价值25元的抱枕➕价值30元的奶皂试用装❗2.价值25元的星巴克情侣杯➕奶皂试用装一盒❗25元包邮，任选！还可以进群抽奖送几十款惊喜：现金红包！YSL 口红💄，精美化妆包！护肤品！！每晚9点进群派送礼品！黄晓明同款的洗面奶😍一款让大家兼职创业的产品。私信我，试一试😘 玉林·玉州区",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 154
+    },
+    {
+      "post": "&quot;UFC&quot;张伟丽很D✊🙌 焦作",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "游戏人生",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "我的秒拍作品，一起来看~秒拍视频（使用#秒拍#录制）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "晚安！ 东莞·华南摩尔",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "跳出自己从一个旁观者的角度来看待一些人和一些事你会发现 有很多你不理解的事情仿佛豁然开朗晚安啊",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 47
+    },
+    {
+      "post": "#宝宝自主入睡# 2020.10.24 自主入睡第五天啦粉猴子，晚安，我们一起睡吧❤️ 上海",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 46
+    },
+    {
+      "post": "日常嘻嘻 双十一快乐✌🏻理性 理智 理智 理性 （这个月是吃土少女啦）天冷要多加衣哟～～",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 44
+    },
+    {
+      "post": "🀄️#坚持两周把病毒闷死#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "今日首先就系去吃左一餐寿司，跟住呢就踩左去宏达！晚上，本来霖住去成龙电影到体下d电影咩价钱葛，体体，觉得真系好贵啊，等我同陈淑正准备走人葛时候居然有一个不速之客递左两张电影兑换票比我，我啊姐距以为系黄牛党当场就呆左，我黎手抽左张票就入左场内今日先发觉新塘其实都几靓葛！@XIN-CS",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 141
+    },
+    {
+      "post": "如果你真的愿意去努力 你人生最坏的结果 也不过是大器晚成 [攤手]",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 33
+    },
+    {
+      "post": "【前雾灯】国家法规对此也有规定，根据国标GB4660、GB4785规定，后雾灯是一定要安装的，能见度在100-200M内必须开雾灯，但仅限高速公路。在城区，违规使用雾灯，扣1分罚款50元。不过前雾灯的安装要求仅仅是“选装”，也就很好解释为啥有些车辆或车型没有配置前雾灯。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 135
+    },
+    {
+      "post": "风一样的女孩子👧 青岛·台东商业步行街",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "希望晋院九月份依旧是二级考点然后二级一次过！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "#手机壁纸##小兔子# 可爱的小兔子走一波！！！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "#InstaSize #Ukulele #Bournemouth It really looks lovely! I will try my best to learn it😬 Even though I h 网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 109
+    },
+    {
+      "post": "爱情就是这样，从来不会因为你多么付出，多么不求回报就有结果。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30
+    },
+    {
+      "post": "笑与梦同样温柔，你在心口无人可动 北京·北京吉利大学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "好好吃啊 天津·天津商业大学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "🗓11-02‣ 日语：两篇NHK听写‣ 英语：单词听力和炼句（今天时间不够学得少）‣ 今日阅读：《诗经里的植物》读完了‣ 今日摘抄：补足之前读完的《也是亚当也是夏娃》的摘抄☁️今日打工，依然六个小时。其中一场聚会，来了87个日本人——到后来几乎全员喝醉状态。要知道，喝醉了的霓虹金会变身为另一个国度的人 ∠( ᐛ 」∠)＿所以，今天是亲身经历了87个烂醉狂欢的日本人全部关在一间屋的场景——真·地獄だ(ㅍ_ㅍ)studywithmestudyaccount",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 228
+    },
+    {
+      "post": "#7’s vlog 日常#VLOG#my vlog日常# VLOG | 12 ♡ 中秋节🥮 是个匆忙快速🔜的三天啊☹️ ChooGigi-ii的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 76
+    },
+    {
+      "post": "漂洋过海来看大白菜🥬和好多奇怪动物 台湾·國立故宮博物院",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "當伱在乎TA，心裡越是緊張。。。。。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "#日常#  @生活艺术家委圆会 @三年二班生活委员",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "#我们都爱短视频# #故事红人计划# #音乐红人计划# 愿你出走半生，归来仍是少年！❤加油！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 46
+    },
+    {
+      "post": "来来来",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "喜欢待在家里，听听歌，看看书。累了就出去溜达溜达，跟小屁孩玩玩，去奶奶家拉拉家常。少了在学校时的浮躁与不安，多的是平和与宁静。好不想回学校😔",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 70
+    },
+    {
+      "post": "为了查个单词拿起的手机。刷了半个小时的微博，放下手机。嗯？这单词什么意思来着……我刚拿手机干嘛来着……exm？？？",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 57
+    },
+    {
+      "post": "有人执着的让人心疼",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "第二周over",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "娜渽民邪恶的小jioNCT罗渽民蜜糖少年罗渽民P2来自@赋萝 六盘水",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34
+    },
+    {
+      "post": "我发现我现在买一件短袖都好纠结这个夏天在🍑宝买的S码的短袖都是很宽大又长的所以我干脆在家就直接穿个短袖刚刚下单了两件短袖也是买的S码的我生怕它又是长的但是看了评价大多数人买的都是M＋的至此我还把以前买的短袖的订单翻出来对比size我都下单了现在还是有点纠结",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 128
+    },
+    {
+      "post": "经得起平淡往往生活更有趣。 海口·海甸岛",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "今日推荐～🎵",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "你拥有青春的时候，就要感受它。不要虚掷你的黄金时代，不要去倾听枯燥乏味的东西，不要设法挽留无望的失败，不要把你的生命献给无知、平庸和低俗。这些都是我们时代病态的目标，虚假的理想。活着！把你宝贵的内在生命活出来。什么都别错过。 #为生活奋斗#生活 西宁·桥头镇",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 129
+    },
+    {
+      "post": "#北京美食# #美食# #日常# #不可辜负的美食# 麻故里小面好次!o&gt;_&lt;o心满意足葛优瘫刷手机",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 56
+    },
+    {
+      "post": "#这首歌好温柔#  分享单曲网页链接（@网易云音乐）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "【#绘画# 】继续梳理一下之前画的东西，写了一点微小的说明与大家分享，抛砖引玉。这几张都是关于机械方面的设定，虽然内容比较反智，但我还是会想办法弄下去的。@pk_king_chn @提康德罗加之盾 @技法机器M型 #二次元# #每日一画# #板绘# #wacom#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 132
+    },
+    {
+      "post": "这么唯美做个万人迷",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "#夏季好风光# 安～",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "今晚预感明天告别湿湿漉漉的天气因为天空有星星 广州·广州大学城",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "日常穿搭|夏款西装穿搭2️⃣今天穿搭是夏款西装第2️⃣上下一套泡泡纱面料的套装外套 / ZARAT恤 / GU裤子 / ZARA鞋子 / Shoopen@分享今日穿搭",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 83
+    },
+    {
+      "post": "#海外行动片尾曲MV# 这首歌真的直击泪点，毛阿敏老师唱得真好，吴刚老师这满眼的演技呀#毛阿敏迷雾之光MV#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 54
+    },
+    {
+      "post": "Tsuki月兔冒险铛铛铛铛我成长了！我会拼图了！@喵灰小的爱可",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "🍂🍂丹桂飘香▹",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "还是没忍住...我刚参加了#幸运抽奖#活动，玩赚积分还能抽大奖！机会难得，戳我抽奖&gt;&gt; 雅萌美容仪-Queenx40周年礼盒款",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 69
+    },
+    {
+      "post": "xiaoxiao0205生活不可能像你想象的那么好，但也不会像你想象的那么糟。你的脆弱和坚强往往都超乎自己的想象。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 57
+    },
+    {
+      "post": "从来都没有什么年龄该做什么事把人生的每一个阶段都活成自己喜欢的模样，就是最该做的事情每周五的大写意，老师潇洒一挥笔，一幅牡丹图跃然纸上这就是我接下来的目标了认真做烘焙，好好学画画，加油！#最希望出续集的电影，电视，书##甜品裱花法式翻糖面包烘焙蛋糕培训##减肥，旅游，美容，养颜瘦身##湘西，凤凰，桂林？##南京成都长沙杭州上海广州深圳北京武汉#心灵鸡汤#美食，美味，美好的事物##人活着嘛，开心就好啦！##旅游好不好#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 210
+    },
+    {
+      "post": "日常#日常# 只想做个平平无奇的烘焙小天才 敦化市",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "#摄影##街拍##黑白##blackandwhite##猫##生活##街头摄影#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 40
+    },
+    {
+      "post": "前一秒和后一秒 太真实了🤪🤪 绿洲",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#刘佳琪淘汰#实力摆在这！莫生气！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#娱公移山#💕早安☀️相信梦想是价值的源泉，相信眼光决定未来的一切，相信成功的信念比成功本身更重要，相信人生有挫折没有失败，相信生命的质量来自决不妥协的信念！#早安励志语录# @张杰",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 91
+    },
+    {
+      "post": "#玩得酷，靠得住#火箭加速冲，直达广寒宫！有#水印相机分享#的照片为证，人人都是宇航员；点亮火箭图标，抽取中兴Memo5S等多款幸运大奖，与亿万网友共同祝福登月成功！ @腾讯手机管家 @腾讯电脑管家 网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 104
+    },
+    {
+      "post": "夏天来啦。每次揉面真是太热啦。来做一下免揉面包吧。不需要揉面 只要一个盆和刮刀就可以搞定超简单 做出来又好吃外面脆脆的 里面有嚼头#不可辜负的美食# #美食治愈系# #一人食# #厨艺教程# 柴屋食记的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 105
+    },
+    {
+      "post": "台风天的卑微小祝在线练琴爱上麻花辫了最近！好棒啊！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "#带你玩转台湾# 不一样的台北🌧️☔️台湾·台北 游走在雨中的台北～看西门红楼、品昔日小说中的红楼梦👨💻👯♀️🍰🍣🍝🍱🍹，收获不止一点点2️⃣2️⃣2️⃣",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 77
+    },
+    {
+      "post": "神仙味道鸡爪子 小小小夜嗨的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "日常 /// 023不在微博的日子  都在好好生活",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "3CE本季新品都颜色较浓艳，如果嫌妆容太浓的亲，可以选择咬唇妆哦~一只唇膏两种效果~咬唇妆瞬间变身惹人疼爱的韩剧女主角有木有😚#803    微信wx962582855",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 84
+    },
+    {
+      "post": "#冒个泡# 生活片段7.18 青岛·方特梦幻王国景区",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "@like科毛毛 @lluyeon ❤️",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "我，名副其实射手座. 🏹 武汉·凯德1818",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "祝自己母亲节快乐～#母亲节##日常#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "汤艾超话里的考生姐妹高考加油啊",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "茁壮成长ing……",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "早安   撸铁人  周末愉快呀！加油加油！长春",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "海鲜晚餐……",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "K家P图大神！这张笑喷了，@郑天翔63161",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "【整理】那些字眼让我成为了跟风狗  文章分为三部分：1.成分的诱惑 2.效果的诱惑（划分了五种皮肤性质） 3.热门的诱惑。图片与长微博内容一样列出这些词帮助大家更好识别护肤品！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 88
+    },
+    {
+      "post": "摄影博主上线🌸 昆明·云南农业大学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#男生如何对付林有有#这个时候需要不解风情的男人了，怒拍桌子：MDZZ舔老纸雪糕干啥！蛇精病! 淦 南京",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 52
+    },
+    {
+      "post": "🚲汉江骑车日🚲#병화의일상##闺蜜#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "第一条9⃣️图的微博 阿哈哈哈 我觉得OK👌#简笔画##粉色少女心##我的这颗少女心##画画#给你看看我的手帐吧手帐分享可爱",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 62
+    },
+    {
+      "post": "原食铺家的新品-绿茶绿豆麻薯蛋黄酥我真的很不爱吃蛋从小挨骂那种但是这家蛋黄酥我真的无限回购  最饿的时候总是会想起它味道超好分量超大@甜心软萌伞 不过我真的还是更喜欢红豆麻薯蛋黄酥  可能因为偏甜点（ 图9我的最爱还有！感觉加热了会更香！！！麻薯可以拔丝",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 127
+    },
+    {
+      "post": "列表晚安(☝｀˘ω˘)☝军训Goodbye（明天Goodbye）ps：大家能找见我么pps：这图凑的乱七八糟的，我真的是没图了",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 63
+    },
+    {
+      "post": "#2020最不想删的照片#高考查分前一天照完毕业照和班里的部分同学吃了顿饭熟悉的不熟悉的最后都变成了不熟悉",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 53
+    },
+    {
+      "post": "#心灵鸡汤#  你要忍，忍到春暖花开；你要走，走到灯火通明；你要看过世界辽阔，再评判是好是坏；你要卯足劲变好，再旗鼓相当站在不敢想象的人旁边；你要变成想象中的样子，这件事，一步都不能让。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 93
+    },
+    {
+      "post": "#韩国证件照#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "接纳才是最好的温柔",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "hio003#搞笑##情感#车震床沿途车载充气床汽车床垫 ，券后 69",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35
+    },
+    {
+      "post": "【Mr. Hublot/哈布洛先生】奥斯卡最佳短片动画奖，画面精美细致，机械迷绝对不能错过！故事很简单但是非常温情秒拍视频 #电影推荐##电影#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "wuli短腿老三狗",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "支棱起来💗 ✨",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "TroyeSivan 215的可爱们快来啊",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "不瘦20斤不删微博!!!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "身边竟然有这么美的地方 沈阳·道义",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#江歌母亲赴日征集签名#大家多多帮江歌妈妈签名，转发  网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 32
+    },
+    {
+      "post": "四季皆爱 上海",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "今天试用了dw 1w1 看下妆效呢 重庆",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "good morning [发红包啦]",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "“妈，我减肥。”    “懂了。”",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "一 刻 辉 煌",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "最幸福的事不过是知道自己想要什么且背后有人义无反顾地支持着",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29
+    },
+    {
+      "post": "我在#观世音菩萨#撞钟祈福，愿早日消除烦恼，福禄呈祥，善根增长。网页链接 南昌·绳金塔",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 43
+    },
+    {
+      "post": "ayy225光景不待人，须叟发成丝。——李白",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "纪念一下洗头了难得出门撸个妆😏😏😏😏 苏州",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "婚姻到底是什么！说出其中的意义！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "加班伴侣，给我力量。[加油]",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "#照片。# 没事。我就想发一波照片。@盐加三勺_",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "#设计师# 现在的娃真会玩 狮子大脸盘儿的秒拍视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "什么叫区别，这就是区别。。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "一看PG_one就激动                         😄@红花会PG_ONE #pg_one有女朋友了吗##中国有嘻哈##中国有嘻哈冠军# 哈尔滨·抚顺街区",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 87
+    },
+    {
+      "post": "这大概就是喵被打扰好眠的样子……#猫咪#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "分享一下我小时候的事！小时候因为胆小，错过一包辣条，长大后还胆小，只会错过更多！#插画##小时候##小漫画#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 54
+    },
+    {
+      "post": "一个月画两回🐉 哈尔滨·SUB LIVE",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "「愿上半年所有的遗憾 都是下半年惊喜的铺垫」#长沙# #宜家# 日常",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34
+    },
+    {
+      "post": "#早晚变秃#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "接着耶稣升天日和幼儿园计划日的六一，变成了四天。这几天从室内到室外的游乐场，从森林到海洋，阿团每天起来都在问“妈妈，今天去哪？！”，终于，明天周一啦",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 74
+    },
+    {
+      "post": "早",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "𝟮𝟬𝟭𝟲.𝟬𝟰 𝗣𝗮𝗿𝗶𝘀當時只道是尋常。 法国·塞纳河",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "#19年第几部电影# 19年第5部电影—哪吒。好好看，好笑又好感动，说川普的太乙真人真的让我从头笑到尾。最后感动到一直哭。总之特别棒，期待第二部。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 73
+    },
+    {
+      "post": "我刚刚关注了一级造价师超话，你也来看看？超话传送门→ 网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "无水印头像册#头像##壁纸# 早安～",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "与毛毛有酒、有阳光、的野餐                    / 青岛",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37
+    },
+    {
+      "post": "没有草稿，画残提前祝各位平安夜和圣诞节快乐！#日常摸鱼##圣诞节##平安夜#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38
+    },
+    {
+      "post": "现在打扮自己都是一件事难得的事情 烟台·福海路",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "#情人节# 是一个关于爱、浪漫以及花、巧克力、贺卡的节日这天孩子们会互相赠送礼物和卡片老师建议要送全班都送不要让同学们感觉被排除在外所以我们又满载而归了[捂脸]哥哥嘴馋在学校已经吃了好几块巧克力还把糖纸带回来真是肥水不流外人田哪老师会发给每个人一个包装袋自己设计制作#马上有爱# 加拿大",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 143
+    },
+    {
+      "post": "看了党妹的新视频 想去大理以及想吃豆沙馅的麻花见都没见过",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Day.7",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "冒痘患者",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "#studyaccount[超话]#𝟚𝟘𝟚𝟘-𝟙𝟚-𝟚𝟜𝓓𝓐𝓨  𝟝𝟠▪️明日考试▪️找我咨询转专业的同学有一个是第一名，我挺为他高兴的▪️晚上回宿舍还有小惊喜哈，舍友一个个都挺有心的，下回什么节日轮到我买肉呢▪️晚安#onenote##笔记##日常#法学sa打卡",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 132
+    },
+    {
+      "post": "#搞笑# 万万没想到，我叫王大锤。我是天上的太阳，我正在追求我的女神，但是我天天被后羿射来射去，太没面子了！#搞笑视频# DYY不二语的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "还有几天开学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "猪猪二十岁惹 我要每一年都陪在猪猪身边",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Single life",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "如果美丽一旦有了标准  那么我们的价值观就会变味✌️            今日份#素人改造##初恋头# 西安 CIT首席伯爵的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 68
+    },
+    {
+      "post": "#晚安心语# 黑夜那么长，都是为了黎明那道曙光，前路哪怕再艰难，你终会抵达梦想的彼岸，就算没有人陪伴，你也要做自己的太阳。 #晚安##晚安语录# 411114",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 79
+    },
+    {
+      "post": "awsl小梦和蝴蝶珠都好好看哦❤️@阴川蝴蝶猪__一生 @coser小梦 老年组今天去浪设备现在脚摩破皮。#深圳漫控嘉年华# @飞翔梦工场 深圳",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "#OOTD#  #日常#  集美们。潮鞋柜，扩列了  OOTD",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "在山城 为了拍一些照片坐了大半天时间的轻轨 然后…就是👉🏻&lt;从你的全世界路过&gt;…🚠 it made sense！🙂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 63
+    },
+    {
+      "post": "#深夜放毒#星巴克 太妃榛果拿铁半糖 绿洲",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "每日一善#阳光信用# 在社会主义建设时期，爱国主义更多的不是表现为赴汤蹈火，壮怀激烈，而是表现为奉公守法，敬业爱岗；表现为维护祖国统一，反对分裂祖国；表现为各族人民团结互相，为构建社会主义和谐社会，实现中华民族的伟大复兴而贡献智慧和力量。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 119
+    },
+    {
+      "post": "养了一只从不挑食的猫，是种怎样的体验？",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "#闽协情 今生缘#好有节奏感",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "🌈武汉降温啦哈哈哈哈哈哈哈哈窝在宿舍吃螺丝粉的感觉真棒嘻嘻嘻嘻还有用胖胖送的榨汁机榨的橙汁🍊🌈这个面膜 每次用完都会想喝醉酒一样脸红 敏感肌的人儿别入了 大冬天用这个真的是爽（太凉了）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 92
+    },
+    {
+      "post": "#女医生抢婴儿冲向抢救室#医生的天职是什么，赠医施药，救死扶伤，为还有这么尽责尽职的医生骄傲，如果多一点这样的人，社会应该会更美吧！为女医生点赞。 秒拍视频 .",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 80
+    },
+    {
+      "post": "好脾气的喵呜～",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "十年窗下无人问，一举成名天下知。有了微博无需宅，一呼百应朋友遍天下，今后必当好好织微博，并获得微博特发【一举成名】勋章。网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 64
+    },
+    {
+      "post": "#三月再见 四月你好# 超想看的纪录片 只敢每周看一集 厌学情绪一发作自己都害怕忘记密码没法续借📖 想🌂的第1️⃣2️⃣天 🙃还有6⃣️个教案1⃣️个论文1⃣️个汇报要写",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 85
+    },
+    {
+      "post": "今天和澎哥吵架嗷嗷哭。然后过一会就又好了画个花花送他吧～",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "喜欢的综艺收官啦。冬日限定来日可期。See u later.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30
+    },
+    {
+      "post": "#崔恕的红包#Boomshakalaka！我在崔恕 的红包中抽到了@让红包飞 提供的“金牛座财神卡”，2017年的小惊喜！也许你的惊喜更大哦~崔恕 的红包",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 77
+    },
+    {
+      "post": "上帝说 要有光。📷：@小泥依婵",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "今天立春，离开学也不早了吧！追完《任意依恋》又重了主题曲的毒晚上跑步在小区偶遇一只大白猫，喂了一根火腿肠，超级开心😊晚安呐！💘",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 63
+    },
+    {
+      "post": "晚安💤愿梦中出现你",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "信仰的力量",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "分享图片",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "#节后瘦身# 长假已经结束，为你送上一套健身操，专治春节肥，节后瘦身训练。 潘叔健身的秒拍视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 47
+    },
+    {
+      "post": "早安粉象生活邀请码925424任何事情，都有一个过程坚持一下，再坚持一下。播种和收获，本来就不在一个季节！ 早上好呐✿#早安心语# 宜春·铜鼓县",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "做人不要太XGF",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "我太开心了暑假追的剧寒假出了新一季有能让我爆笑得综艺在微博上结交了好多新朋友最重要的是有家人和朋友的陪伴！还有马上过春节了 一切的一切都让我超开心！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 74
+    },
+    {
+      "post": "骨盆保养好，至少年轻5岁。 #美好的一天##产后恢复##生活的模样# @微博视频 精致柔柔妈的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 51
+    },
+    {
+      "post": "美好的周末 I miss U☺️",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "不知道您是文科生还是理科生呀我是文科班出身，大一时修了政经这门学科，学下来感觉《政经》是高中政治《经济生活》这本书的补充和延展。所以感觉还是比较亲切的不知道您现在是自学中，还是选修了这门课……如果是修课的话，老师的讲课风格如果正好是您喜欢的那类，请尽情跟着老师走吧！ ...全文",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 139
+    },
+    {
+      "post": "今天的幸福是锅包you给的～ 温州·温州大学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "阴阳师手游 灵矢破魔，阴阳师×犬夜叉联动再启！绝版限定SSR桔梗降临平安京！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38
+    },
+    {
+      "post": "美容护肤护肤小知识①：油不是控的，也不是吸的，水才能克油！②：油性皮肤容易外油内干！③：皮肤是智能的，如果皮肤缺水，就会通过分泌更多的油脂来平衡。④：补水才是控油的绝对真理 ，久油长痘，久干长斑，补水才是王道！👉油痘不分离，干斑不分家。要想好皮肤，一定要多补水，清洁要到位，正常皮肤角质层含水量达到10％一20％，低于10％，会干、脱皮、过敏、红、肿、长疹子，补水是关键‼",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 186
+    },
+    {
+      "post": "#雷锋#一个人的作用，对于革命事业来说，就如一架机器上的一颗螺丝钉。机器由于有许许多多的螺丝钉的联接和固定，才成了一个坚实的整体，才能够运转自如，发挥它巨大的工作能。螺丝钉虽小，其作用是不可估计的。我愿永远做一个螺丝钉。螺丝钉要经常保养和清洗，才不会生锈。人的思想也是这样，要经常检查，才不会出毛病。           ——雷锋@山西农大信院工商与公共管理系 @张明宇-信院工管系 @山西农业大学信息学院 @山西农大信院青年志愿者联合会",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 219
+    },
+    {
+      "post": "头像有些人见面要坐飞机有些人见面要坐时光机有些人见面只能做梦 #情侣头像##日常#女生头像#无水印女生头像#女头",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 56
+    },
+    {
+      "post": "揣着一口袋的开心满载而归",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "这帮大一的真是太不让人省心了 绍兴·浙江越秀外国语学院",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "做梦梦到被两个男孩子追求，在有灵异设定的都市&amp;学院背景，一个是温柔阳光又优秀的竹马小哥哥，一个是神鬼不知清冷神秘的大哥哥（怀疑是昨天判官更新，把谢问游惑带进去了）。梦里就很纠结，醒了也一直在纠结。早上和dy说这个梦，dy：那你让他们做随机过程，谁对的多就接受谁——那他们都不会做可怎么办..——行了我知道随机过程大概是我脱单路上的最大阻碍。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 174
+    },
+    {
+      "post": "论应急保鲜小妙招",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "#冬至##莆田美食# “错过了疲倦袭来的瞬间，就很可能失眠。”——囷囷                                                 冬至你好♥︎ 莆田·体育中心",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 98
+    },
+    {
+      "post": "#今天穿什么# 暗黑系三十岁前要拼命做加法，要去尝试，你不知道自己有多少种可能，你也不知道命运会给你怎样的机缘。所以不试你怎么知道呢？ 本溪",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 70
+    },
+    {
+      "post": "独善其身 性冷淡",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "周杰伦 - 一点点 一点点 @咪咕音乐",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "测试一下我的小宝贝们都睡了吗出境@🐰 🥕 #汉服##汉服约拍#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "#密室大逃脱##杨幂被邓伦拖了一米远# 这里其实不可怕，因为我笑得太大声了哈哈哈哈哈哈哈哈哈哈",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 47
+    },
+    {
+      "post": "我好想做一个真真切切无忧无虑的可爱小孩",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "#真香好物间#💖均价不到十元的拼多多网红零食测评分享！💖终于还是忍不住对pdd下手啦，最近一直在尝试小零食和小玩意儿，据说水果也很好，欢迎大家来安利呦👏#美食分享##零食##零食安利##拼多多##种草##日常# 卿心无想的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 115
+    },
+    {
+      "post": "把圣诞过出了过年的感觉🍷",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "我的男朋友(๑°3°๑)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "先把自己变成想要的样子，然后遇一个无需取悦的人。友情爱情或者生活都一样，安全感都得自己给自己。—— 卢思浩#励志# 烟台·烟台工程职业技术学院",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 71
+    },
+    {
+      "post": "是小粉红呀 。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "今天5.5号 淘宝吾折天活动 满100-5 上不封顶 兄弟萌冲啊 奥利给30Braid @郑星洋",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 48
+    },
+    {
+      "post": "#春晚#世上无难事，只怕有钱人。羊年快到了，够壕才够拽！央视春晚 在发红包哦，快来试试手气！~[发红包][发红包]央视春晚 的红包",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 65
+    },
+    {
+      "post": "日常教育QwQ 厦门",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "🎉超级IP大型动作奇幻电影《燕赤霞》🎉       张家振&amp;袁和平双监制  袁家班人员              现还有40%份额可以出让       有意向的资方朋友可以聊一下了😝#影视##电影##影视投资#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 109
+    },
+    {
+      "post": "哎！好想做一个美女！呀！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "发布了头条文章：《前往极夜谷的武君不在少数，陆续已有不少人都入了谷。然后，有一行不速之客突然而现，》 前往极夜谷的武君不在少数，陆续已有不少人都入了谷。然后，有一行不速之客突然而现，",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 91
+    },
+    {
+      "post": "近日真的很爱喝奶茶了还有奈雪的各种面包",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "#手绘##画##绘画##iu# 我还是对我的女神下了手，居然把iu的腿画短了，对不起我们家iu，害，我们iu真漂亮 盐城",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 60
+    },
+    {
+      "post": "好家伙，qq都知道我驼背了",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "今天我司机穿了一件很骚气的衬衫pink老头#土酷时刻# 印度尼西亚·巴厘岛",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37
+    },
+    {
+      "post": "【西安F+品牌设计师伯爵】分享关于发型和你如何设计自己风格定位的发型  请开启你的视频之旅吧✈️✈️✈️     根据脸型的五官和整体比例来搭配属于每一个人的发型和色彩的 已适合生活中柴米油盐高级感的发型设计为理念 设计简约时尚好打理的发型 让每个人回家可以自己高原度还原的发型✌️       关注我吧❗️找到当下最适合你自己的发型               V❤️：19829877083 西安 西安艾芙家伯爵的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 213
+    },
+    {
+      "post": "易拉罐是我拍扁，的的笔记 真的太帅了，怎么能够那么帅呢（分享自@小红书）#小红书精选#网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 47
+    },
+    {
+      "post": "三月收获了我的小确幸❤",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "..人间惨剧.. ..何德何能..",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#养号#“不主动就是答案，没有回应就是最礼貌的拒绝，这句话特别让我深有感触，让我放弃了她”",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 45
+    },
+    {
+      "post": "重了4斤嗝",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "近日",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "分享图片",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "🌸收kuan2⃣0⃣8⃣0⃣，今天花出去的反正是挣回来了🤔继续努力，为了攒够能力和本💰 ，为自己争取选择的权利👏#愿你遇到的人都是温暖的#大学生#拼多多#兼职兼职日结手机赚钱#淘宝##淘宝刷单#京东#外卖#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 103
+    },
+    {
+      "post": "有事钟无艳 无事夏迎春",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "能不延期吗 天津",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "分享图片",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "老板说 嫩娘俩又来啦#美食##午饭# @青岛交通广播FM897 青岛·青岛国家广告产业园",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 44
+    },
+    {
+      "post": "又一次验证了这个等公交神奇定律你等的车永远都很慢但是仍然开心已经好久没坐公交车下班回家了怀念坐着公交听着歌刷着微博无忧无虑的日子",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 64
+    },
+    {
+      "post": "2019/6/12与你.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "来看看我拍的MV：“😜😍😍”，点此播放&gt;&gt;美拍（通过 #美拍# 录制）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 41
+    },
+    {
+      "post": "绿色里会有精灵嘛？",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "💅南瓜橙🎃 温州",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "#集福牛开福运# 开年惊喜~我收到了 @让红包飞 送我的#强壮如牛#福牛卡，离除夕分1亿的小目标又进了一步！集齐6种福牛卡，除夕分1亿，最高能赢2021元！收集新年好福运吧！#让红包飞# 快戳&gt;&gt; 新春集福牛",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 110
+    },
+    {
+      "post": "一天小组图形创意作业脑细胞要用完了 洛阳·河南科技大学",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "Y 会飞的扬Y:  享用美味午餐啦～简单的食谱，简单的菜，味蕾与美食的共舞～ Y会飞的扬Y的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 50
+    },
+    {
+      "post": "p1我的小姐妹和她的男盆友哈哈哈哈真可爱p2我最近都许愿王者削弱伽罗和李信",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37
+    },
+    {
+      "post": "#2019昆明高原国际半程马拉松#每一步，都向前！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "#Ling's life#OOTD07.01和闺蜜约会、看电影、吃饭饭过得超快的一天",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 42
+    },
+    {
+      "post": "既希望有人关心，又不想被过分打扰！想要恋爱的甜蜜又希望拥有单身的自由。单身的理由有很多种 🌹🌹🌹",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 48
+    },
+    {
+      "post": "1、【岁月会在所有的事物上刻上痕迹，因为经历，才懂得。才懂得今天的生活，是多么的来之不易。我们要好好的珍惜，因为我们生活在这个和平且安定的时代。有的吃，有的喝，有的住，有的爱。所以爱成为了我人生中的主题。】",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 103
+    },
+    {
+      "post": "#闺蜜照# 就这样一直搞怪大笑吧...@随yu而an678 @Ljinying201802 佛山",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 48
+    },
+    {
+      "post": "今天早上我看见了启明星。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "我太开心啦！@DJYOYOo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "#言冰云 一切为了大庆# #肖战言冰云# 誓死守卫大庆油田！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30
+    },
+    {
+      "post": "活在当下不买买买怎么对的起自己！！！！虽然血贵！ 上海·金沙江路",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 32
+    },
+    {
+      "post": "对于今天已穿打底裤的我对#降温~冷# 如此快觉得有些懵......",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 33
+    },
+    {
+      "post": "#向老师道一声感谢#教师节快乐！ 合肥·安徽大学(磬苑校区)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30
+    },
+    {
+      "post": "穿过纷扰的世界，翻越崇山峻岭，解开一切谜题，与每次错过搏击，用此生所有的决心去赴一场久别重逢后的初遇。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 51
+    },
+    {
+      "post": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊太甜了太甜了太甜了太甜了太甜了太甜了！！！！！！",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 43
+    },
+    {
+      "post": "今天起真的要多睡觉。可别整抑郁了。",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#日常# 晨",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "hio981#情感##晚安#【台媒公开怒怼台独分子：台湾就是中国的！血缘没法切断！】据台媒报道，有美媒称臭豆腐是台湾美食，引发大陆网友不满。对此，台湾一档节目中表示，大陆网友不要生气，臭豆腐百分之百是中国的，因为台湾就是中国的！并公开喊话怒怼台独分子：“台湾就是中国的！对不起！血缘、文化没有办法切断！你可以...全文： 网页链接 ?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 167
+    },
+    {
+      "post": "#剧版镇魂#kdd556 美女相亲遇到个抠门的小伙，没车没房还爱装，结局亮了 网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 43
+    },
+    {
+      "post": "被小红书推翻上天的sky bar当然一定要打卡✌️📍Delice A  位于解放碑41楼的高空网红甜品店景观很棒，甜品颜值很高，味道也挺不错的建议一定要挑人少的时间去哦！（PS：今天出门在背上贴了四张暖宝宝，有种背要被烧熟了感jio）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 117
+    },
+    {
+      "post": "#日常#空瓶 雪花秀润燥精华，不记得是第几瓶了，暂时不想回购了，瓶子好重",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 36
+    },
+    {
+      "post": "我明天起床就要煮泡面，加一个蛋两根肠",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "动次打次",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "防弹少年团黑鹅二号！！大黑你到底有多少存货！！米姐们加油 三个MV（昂宝×2外加黑鹅二号）等着我们刷管刷管 （幺宝真的杀我！！那一扭太会了吧！）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "太爱绸光缎面的衬衫了#今天穿什么##秋季穿搭look# #meandotherstories# 英国",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 50
+    },
+    {
+      "post": "#美食##日常##化妆品代购#听说这是馒头今天的晚餐，真是我的菜",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 32
+    },
+    {
+      "post": "🌸任何的收获都不是白得来的 也不是天上掉下来 更不是运气好 所谓的运气好 只不过是花了别人不愿意花的时间 费了别人懒得费的功夫 吃了别人吃不下的苦 受了很多委屈跟磨难才见到光明的 所以 才会越努力越幸运 晚安🌙",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 105
+    },
+    {
+      "post": "11.7#易烊千玺#北京重庆 重庆到达。11.5#王俊凯##王源#深圳重庆。在我来重庆的时间里回来重庆。时间刚刚好。运气刚刚好 网页链接",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 68
+    },
+    {
+      "post": "云门旅#日常#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "电视剧招摇#晚安#每日一善每日一善每日一善#晚安# 不管是厉尘澜、南山主还是西山主，都喜欢成这样了表个白能怎样？？电视剧招摇 沙漠和竹叶的微博视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 73
+    },
+    {
+      "post": "图5⃣️意义非凡 长沙",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "青草味 #四月你好#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "#studyaccount[超话]#- 好喜欢近期的书桌吖 开了一些盲盒有小娃盯着我写作业认真了许多 周三 我的小马尔济斯就要来啦 正在给它起名字❗️南国/红豆/薏米/猪猪 哪个好听🦆 好纠结这周准备周三录个视频 记录一下接狗狗的日子 顺便和我在北大附中过半天(///▽///)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 139
+    },
+    {
+      "post": "梁大维生日快乐大维哥，喜欢你的第四年，从初中到大学，看着你越来越好，我就知道你的付出不会白费，你的光芒终将散发的越来越广永远支持你爱你生日快乐🎊",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 72
+    },
+    {
+      "post": "#美食# 这个月是被它们↓↓治愈的🙉",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "书圣故里墨香发了一个快手作品，一起来看！书圣故里墨香的快手视频",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 31
+    },
+    {
+      "post": "十年苦读为今朝，迎考心态很重要。不能临时抱佛脚，越看越想心越慌。考前定要休息好，从从容容发挥高。祝你高考顺利，金榜题名！#舞蹈# #高考#",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 69
+    },
+    {
+      "post": "进入减肥期就代表着同时也要省钱了 福州",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "来看看我拍的视频：“ᐅ MASTER CLASS / The Chainsmokers / Choreography. PK WIN  舞蹈  编舞  我要上热门 ”，点此播放&gt;&gt;美拍（通过 美拍 拍摄）",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 108
+    },
+    {
+      "post": "迷恋这油画般的花色🌺在清晨会重叠着阳光，闪着温柔的光✨ stay soft， it looks beautiful on you…",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 65
+    },
+    {
+      "post": "享受 广州·北京路",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "ねずこです",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "✎ ....    🌙🔹很久没有发刀刀碎碎念了     今日只是放一下用自己拍的生活碎片📷     做的朋友圈背景#每日心情记录#日常朋友圈背景图",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 73
+    }
+  ]
+}

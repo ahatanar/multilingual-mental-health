@@ -1,0 +1,3516 @@
+{
+  "metadata": {
+    "language": "urdu",
+    "sample_size": 500,
+    "requested_size": 500,
+    "seed": 42,
+    "created": "2026-02-23T15:59:56.217612",
+    "source_total": 25002,
+    "label_distribution": {
+      "depressed": 250,
+      "not depressed": 250
+    }
+  },
+  "samples": [
+    {
+      "post": "subah aghaz lekin jaldi utha nahi dil mahinn kuch bikhra",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "khush hojao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pehle log mere kam samajhte lekin koi nahi samajh aur kam nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "mahinn hamesha dukhi rahta kisi din yahi chij mere ant maut kran banegy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "sab thek hashtags kia scene b keh rhay sath jhoti hukomat b use rhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "video jagrukta fahilaney li banahi gyi that s natural call so don t be behaved like aliens kisi majak banana uski madad krna apki nechta baqi rhi bat ap ki bat wajeh yha lrka madad sakta bs irada hona chahie madad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 41,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ap chup rahahi ap kay bap nay is mulk ka behad nuqsan kia magr ap mahinn shram haya he nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "g ndem olmuyorsun bir t rl hereye dil uzatyorsun yeter da",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "this made bawl holy crap tak perlu kot nak humiliate that student macamtu sepatutnya education tinggi kena humble la perangahi mcm musibat dah kenapa tua kutuk ni tuhan trik balik nikmat sakgi bru ada akahi dok hina orang sangat orang tua bodoh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 42,
+      "severity": "non-depression"
+    },
+    {
+      "post": "musibat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1,
+      "severity": "non-depression"
+    },
+    {
+      "post": "loting is more like loting my prents mere pas pahisa kaha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "is time ahise tts mat kro bhahi jab sachme bholne koshish rahe hum sab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "bhajpayio punya kam kia agnehotri kahne film posters chipkaye agnehotri cr shudh munafa krwaya kashmiri pandito nam sirf vote manga magr punya kam kps kea mila sirf sirf nostalgia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khatrkhun khatrkhun sunn meri dil dhun",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "suicidal khialat mera jena hram dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "gaza nagrikon hamle per khushian keon manahi vah bilkul nirdosh nahin",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bda khush do kaudi kurmy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "intelligence agency pased on terror threats pm the jalsa was to riske cancel krne kehtay pti walay fauj khilaf hithyr utha lete",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22,
+      "severity": "non-depression"
+    },
+    {
+      "post": "why dont tag makrs shayad sab yad ajaye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "chalie apne whatsapp status apne dalie ap chutie aur ap hr admi pasand jo desh virodhi batein krta fir dalie mera pitaji shrminda ki unke shukranuon prinam ap jahisa nikla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "this so sad but very powerful jac giving life so many at end hers liked how all mahinn chracters also got their special moments m really going mis show thank u all cast amp crew for amazing yers",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38,
+      "severity": "non-depression"
+    },
+    {
+      "post": "logo maqsad ban ha bemaqsad dosro zindagi tabah",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "rat bhr jurm batein dil mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "siasat asal spaces mahinn chalti hr samajhta wo sab bra siasatdan usko pm hona chahye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mas batting from srh likh lelo they will end top",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "icra cuts fy gdp growth estimate shrply on ukrahine conflict impact times india",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mujhy laga papa bus mujh naumed hyn pr mujh zayada wo team pr afsos rhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "mahin humesha tujhe yad rakhti bhulti hahi mujhe mahin nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bhakto se frk nahin padne",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dukh bhra dil jurm mahinn mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "zindagi mujhe nakam bana dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "aye khushian",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ap hrek bat best keunki krte hrek kam dil pyr ehsas chupa apke hrek kam isilie ap sabse alag aur juda re best everything sushant graceful dancer",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "itnii dhet ban chuki choty moty dukh mehsos nahi hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "thik nahi krungi bat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr bat bhol hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "tawajo nahi pa hon important decisions lene",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "kre ap tayyri hour twitter pr hoty jaha hasil nh cy dozakh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kisi yad jena apne ap ho azziat aur azziat mujhe mr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "zindagi bri bemaqsad si lagrhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "khud azziat nikalna chahti lekin ye mushkil hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "allah khush rkhen apko",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi itne rang dikhae k sirf black colour acha igta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zakhmon izhr raha pr himmat rang dhundla gaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "pakistan sunni tehrek zindabad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kahu dil hahi ek khamosh raz jise samajh nahi pata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "monthly nahi wekly nahi roz milega munafa jazzcash bachat plans payein up annual profit abhi dial krke bachat plan subscribe krein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "regulrly watch vice news for ukrahine coverage yesterday was hertbroken completely elderly mother lost her son etc etc really really hert melts shahitans hahivans do these things not normal insan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr pal hr lamha musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "azziat mujhe akela admi trah mahsus krati mujhe nahi samajhta koi mujhe nahi sun hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "severe"
+    },
+    {
+      "post": "subah lekin jaldi utha nahi dunia mahinn chhaya andhera sath chala ata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "sust hokr apni diet bhi khayal nahi rakhta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "hal aysa gaya mera jena hram dia us den ahisa khudkushi hram",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "agr zindagi koi maqsad nahi toh kam jana keun sawal hr roz meri soch mahinn ghomta rehta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "severe"
+    },
+    {
+      "post": "sath mei mrte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "meri ankhon mahinn dekha gayi udas mujh dilchaspi kami drust krty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "wrta lig ghuzra khu kawa khlk khraba",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "uljhan hti na tute hn lkn ghr m itna sunaya hy katne jate hn",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "maybe rent fraud but this concept bc tumme apna dimag nhi pr fantasy jitayenge tumse pahisa leke fraud which was developed by maha maha fraud all time anurag dwivedy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "meri mayusi meri ankhon nazr nahi athi usko",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "palkein bheg gayi mahinn musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "u dont deserved be followed am unfollowing u jis admi itni sense nhi sray decisions frd wahid nhi ye mrosi siasat wali prty nhi but",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr kadam lagta ke raste mahinn tota sa mujhe yaqen kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "my boks me yad na sahi shram ati hogy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "happiest birthday may allah bles khush rho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bezri bahr nikalne lie kea kru",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "lelo tumahri cycle mene bat nahi krni tum se",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "yah tumhri aunty bolna sath bahithi vah sabse badi siasat bhahi usmahinn munafiq koi nahin",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "jahise trops pighal rhe kash wahise baki ruthi hue khandan vo ek sath a jaye kitne bdi family hogi apny",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "so recently joined little roleplaying discord its really awesome because get be empires scott strborne scott the story our lore has ben based round empires lore xornoth",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "asani dukhi jata hon dil gehrahion mahinn chhupa drd samne ata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "bilkul acha nahi lagta kash khud tawajo di hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "hahi apko kuch nhi kaha mahinne",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "allah rehmat aor salamti ap pr amen allah ap dunya sub nahimaten brkaten aor khushian ata kry amen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rone purani bimri mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "hr subah naya asman dikhahi deta pr mera dil udas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "merayko he nahin no riks",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ache mrd hamesha khush rakhen vo occasionally betre",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "srdion sham mahinn ajeb sa sannata udas bechahi si jahise galat raha jahise trahin chut hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16,
+      "severity": "mild"
+    },
+    {
+      "post": "hr din naya tanha safr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "zindagi mahinn ahise lamhe aye ki himmat chhod dy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "hr pal meri roh cher hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "yes ajkal bht buray halat hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mujhe azziat siwa kuchh nahi mila zindagi mahinn bas hi rzu maut a mujhe rahat",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "severe"
+    },
+    {
+      "post": "mo likhta musibat ata",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "jiju gaye meri mani didi lie perfect hn jasus jiju rani didi khush rakhna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "haha khush hoja pe england nay gand mri tb kidr tera kohli am ly tha stat pader chutu",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apni zindagi mahinn bhi nahi badal pa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "bir insan defa l",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "they re happy with these lil antics choti khushian kisi kuch nahin hona lekin bhakton samney kia back hi mundane bhikhri life",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apne maqsad mahinn nakam hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "rothi batein hansne bahana keun bani jab dil khud ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "kash insan ma thakawat mada hotato much tired aftr tuff de",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "ullu pathon bat manni ni hoti phir nuqsan hahi muh utha ajate",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mera dil kehta ki smrtphone khredna chahie toh bechahi hon lordofg",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "ap install lahin k khahila krwingy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mahinn likh leti talent yk",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kaun kaun malahi kha d msaheb pata krie enginer kahise naukrei krta hahi iska bhi khayal rakhna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "natural videonatural love song status videonatural whatsapp shayri status natural video hieps",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pradrshan achha tha match player tournament v mila use khush v nazr a rhe the",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "nahi br mayosi hogi phir adat je",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "choti choti khushian nhi bri bri khushian congratulationsindia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "chahta hon mahin apne ghr mahinn rahun lekin bahr jane zimmedrian nibhani padty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "n kaho bechro they never found glory moments his life cherish bas ahisi choti choti khushian hamri hr dundh khush lete bechre beggrs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mere pas hath mujhe mehsos keu nahi rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "itni nafrat kesy ajati lehjon mahin ye bahizri ap smjhna na chahty hon agla bol kitna ajeb hy ye dekhna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20,
+      "severity": "mild"
+    },
+    {
+      "post": "allha khush rakhy apk bohot zabrdast post uummmhhh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "nazr rakhny kea zrort jesa waqt chl hahi waqt sb khud apne ap dikh hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kutta insan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "andheron mujhe ghera jet sahra chhuta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "beqrri dil sukon dor dia hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "only way educate society lets education girls promote female education",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tum wo ladke",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tawadi koi samjh nahi aoundi murshidwicket dono trf keun khelte hojab imran khan datt jaye tab kehte siasat ahise nahii hoti jb ap logon man idr ho jaokoi ahik point view hona chahye insan kakeum hmra media ahisa hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 39,
+      "severity": "non-depression"
+    },
+    {
+      "post": "suicidal khialath mujhe itni inteha di ke toh namaz bhi mera picha nahi chora",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "dil tot chehra muskurata hahi gehra dukh chhupa hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "itna mayos gaya zindagi seke kuch samj nahi rha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "sust hokr apne responsibilities bhagta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "sadam prhahi dheyan do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr nigah mahinn hr guzrte lamhe mahinn asani dukhi hone ehsas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "lanati umed is naumedi behtr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "dil mahinn chhupi mehromiat mujhe andr tod dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "tanhahi mahinn mehsos hahi drd bhri rat guzr hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "bemaqsad khushi kia krein",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "jis age mahin bechahi badhne lage",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "mashallah pehli mohabbat mrte dam tak yad rehty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mayusi pasti gir kesy utha ha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "mere sre apne mr gye aur mujhe suicidal thoughts rhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "sapne adhore jahise kahani mahinn antim panna na",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "hr pal jurmedil saya ankhon mahinn udas rang",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "this pukimak however kau ni mmg kena makan penampaq kali sehri for weks strahight musibat punya perangahi semoga tuhan trik nikmat kat dunia ni satu supaya kau tau peritnya jady",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mei khush hon magr kesi bechayni rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "zakhmon silsila chalta rehta mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "kia sitam ke teri surat ghor krne yad aty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "oha bu insan bela okur allahindan bulsun falan der ls n ya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ahisi film bana crores munafa sath occhi rajneti kahise payenge hindu muslim krne walon desh yuvao samasya kea dena lena jo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "musannif ishra ahik jayyad sahafi traf malom hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "yeah its normal i m not agahinstkho che alak da insan bacahi da jinahi pa respect poye ge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "buht buht mubrak allah pak ap dhonon sehat wali lambi zindagi buht sry khushian dein amen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dil mahinn preshanion saya mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "aj itni bri hasti hon str hon itnay sray pahisay meray pas famous hon andr pata sirf jalan meray andr bechayny",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21,
+      "severity": "mild"
+    },
+    {
+      "post": "et en plus la france manque mahinn doeuvre peu qualifi dans plusieurs domahinnes et m des qualifi s puisquon fahit appel des m decins l tranger",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi koi rang nahi sab suna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "apne iradon mahinn nakam hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "hr chandni rat mahinn nakami andhera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "khamosh rat ghr bahr nikalne jazbat nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "haha koe bat nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "thaka hon hr pal lagta jahise zindagi sra josh khatam gaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "really patanjali products munafa sewa krm mahin kherch really patanjali colgate bhi pechy chod dia hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr kadam naye ulajhao mujhe andr andr tod dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "uske bina jena ansu bhra safr ban hahi jismahinn hr kadam rone izhr hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "zehni bimri kran aj kam jane himmat nahi milty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "susti mahinn rehkr apne crer bhi nuksan pahuncha hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "bechahi hr pal sathy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "dil bhri sa lagta mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "mn kitnon mulk imlak nuqsan ponchaya un mn kitnon apne musalman bhayion tashadud k shahed kia munafqat b hadh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "berozgri mujhe suicide krne majbor dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "insan allah hi rop bs shi rop ap chun lijie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr pal meri zindagi kuch chhen lete log apne ap bachane himmat nahi rakhta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "bat nahi apki team pore tournament apko itni sri khushian di u should be proudwrna humre wale qudrat nizam dependent",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sawal hayhukomat kea mla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "th one so true",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "shafqat mehmod kahna paper hr surat honga bacha chaha mr corona a zamen phat ya pak bhrat jang shoro gahi ya mrshalla nafiz gahi chaha ww shorou gahi chaha bhi paper honga kuka ma million ka bhoka hon hram khana",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 40,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi safr lekin sath chalta ye hamesha drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "ankho mahinn chhupi dastak dil gehrahion suno mujh himmat nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "fodie gedankenwelt nasemmanzor ganty pehly fodie bhi asy khushian",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ghreb sab ziada pis hy bhahi is hukomat mein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mere mod stabilizers do hafton pehle khatam hogaye mahinn itna zyada disociate raha hon khudkushi soch mahinn doba hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "severe"
+    },
+    {
+      "post": "roth hon khud dil mahinn preshanion drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "so me jag bc kea krunga puri rat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "yad mat rakh muje bata me kisi nahi bataunga pakka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rothi batein hansne bahana keun bani jab dil khud ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "mere chehre sedhay maut izhr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "sapno jahan bikhr hahi musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "ji bilkul kam kam hukomat foreign agents pas janay to bache",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apni team dekho semi tak pahuch nayi payi dusre dekh kab tak khush rahoge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dukh bhra safr jurm mahinn mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "live fed di yad dila di jab tak sab band nahi mahinn chidia bhag hu cuz mujhe bhi yad ni na emo hona alvida",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kahise mayosiat shikr bahithe mere prabhu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "literally dil khush esy lag jesy pakistan world cuo jet gya ho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apni kismet likha nahi badal sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "sab bekr lagta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "moderate"
+    },
+    {
+      "post": "khush naseb ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dukh jagah ap khush kahise",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mere nahi mujhe suicidal thoughts nikale",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "tension rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "mild"
+    },
+    {
+      "post": "hr kona hr pal tanhahi ehsas aur himmat kafi kamzor",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "congratulations on winning most accurate prediction this video reminded when adi sahid ajkal social media py esy log hn social media py ap dekhn bachon prediction jet khush hoty hn allah allah pirayyy wb",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "woman gusa gi neighbors khushi khush hona chyia is ma gusa ks bat pa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apne dil drd kisi keh nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "ghalib restaurant",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bas sre gham jana sang hon tere hr mausam jana sang hon tere itne imtehan na mere",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "agr abhi ns hukomat hoti is b ziada mehangaye hone the",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "itna khush pory sal nhi hoi jitna ak din kr dia australia walo indvsausfinal",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "have we reached point where movies from mid s re so old most people wouldnt get reference",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "wase mujhay lagta meri trah ap prhahi bahot krty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hui bat captahin akhr keh di tahi ale",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "welcome duwao mahinn yad rkna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hyd mahin hasen mausam hta ni loml ahsas mehromiat hn",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "zindagi ahik imtehan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sahi bat bhahi musibat kam wohi sacah mitr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "twety ji welcome back khushian mohol kalse abhishafam mein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi mahinn bhi hasil nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "kisi ladki ankhon mahinn ankhen dal hum jhoth nahin bol sakte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dil bemaqsad tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "pahisa lage",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sakon sirf maut bad hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "hamri majbori kay tujh kahisay bandr kay hath nryal matlab social media lag haytabiat say frigh tu solangisindh taba krnay walay zrdrdi kay ghulam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr dua bad mere mathe hath phirana hr naumedgi mera sayya chodana meri hr hr khuda bhi lad mother ma",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20,
+      "severity": "mild"
+    },
+    {
+      "post": "yas mahin ap sath mam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "humre do abhitak project utre nahi so uska promotion nahi raha filal humre do natural gas se hi munafa kamane busy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ise kane mama hi final khelne dete kam kam wc kisi khush toh krta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hanna blck de isi bat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rat thodi gehri sehr ane do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apni ankhon mahinn apni taqder dekh nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "to ghante guzr gaye drd kahe kam nahi raha bhahi kam jo mil",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "mehromiat rat mahinn sitre ro rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khush babr azam khush pora pakistan ry bhe jab bcci mfia sab control raha and last moments py pitches change raha aur players tang kia rha fans janib aur sab dramo bad final na jeta khush hongy he",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38,
+      "severity": "non-depression"
+    },
+    {
+      "post": "same depresion rona tab bi lekin itna n jitna twet n rulya or hr mint bad rulya hahi koi video dekh ly",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22,
+      "severity": "mild"
+    },
+    {
+      "post": "bhrwayy hosla rakh tera bap agly sal bi hukomat krega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ahinda sab dhrne lie aynege agr ik nuqsan yan pak nuqsan pohonchaya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kam khanay adat meri body susti mahinn dal dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "umed sehr hahi humahin naumedi sahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "insan itna gredy jitna mile use km pd jata hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ager mujhe ehtisham nahi mila mahinn suicide dungy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "umedon jahan jurm mahinn mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "ankho mahinn chhupi asani dukhi hone kahani dil bhrosa tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "mere pas alfaz nahi reh gayeab ap muje bas chor do mrna chahta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "mujhe itna greb kabhi mehsos nahi huya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "rat sannate mahinn khud awaz drati apna khud khayal nahi rakh sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "sender lige nogle positive tankr din vej",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apne dil rok nahi pa vo tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "cause your an individual contributor not rlly where as they re stream organizations who already have stream advertising on tv so yt let s lot their content slide asuming it s god hopes they can bring more stream advertising the platform",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 41,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apne ap bezr hon khud nahi bach pa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "mahin apna khud khayal nahi rakh sakta mujhe bukhr sir drd raha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "rat ek baje slam poetry performance mahinn bahitha kea din gaye batao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "yr tum bat itna khush rahe since finals your team has only played one semifinal which your team lost india dusre ghr mahinn jhakne pehle apna ghr thik lo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rote rehna ek trah mayosiat hahi mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "hr swal jiska jwab mile dil bechaeni pahida deta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "thik khush jao lekin jyada der khushi nahi dhyan mahin rakhio bat din jyada dur nahi tum rovoge ham hasenge private friendship reason hamra padosibc fandom hahi hakk padosi bc song owner gawr fd",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "waqt acha jb ek dusre katti krty or mna lety",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "chalo khush ab ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "absolutely aj hasne milta in logon nautankibazi jahalat dekh nahi chr traf mayosiat mahaul chaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "raste chalte hue mahinne mehsos kia ke kabhikabhi fahisla lene mahinn thoda waqt lagta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "bekr jina be jena",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "sir g ik siasat depra mazhab istemal kahi lagya o da field o pitch mfr amp co nu dahi sra headon collision nuqsan ba hm akhpl kahi zaka mfr kha mazhabi crd sok hm nashi play kole its ik choice play on pitch mfr now should ber brunt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 48,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sir result bre mahinn update kre plzstudents bechahie shikr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "tab log isme teja galti nikal rahe she ungratefull pata gaya ki bb apne dam nahi jeti apne dam kuch nahi sakty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22,
+      "severity": "non-depression"
+    },
+    {
+      "post": "keonki jab international rate sasta jaye munafa kamane mauka milesrkron kayi khrche dikhaye nhi ja sakteslie vo pahisa wahan khrch bhi srkr ati uski nazrein petrol diesel he rehti hahiwahin am janta bewakof banti hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "aj hr chumtia cricket expert banega hr pidi khush hoga keunki use modi gali dene ek reason finally gya such the sorry state our leli citizens tht they wahit fr indias fahilure project their oneupmanship",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dukh bhri rat ghr bahr nikalne dil nahi krta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "ansu ankhon mahinn chhupa hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "khush rahy bhahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tadap tadap is will ah nikalti chris saza di joke ahisa gunah kia jad dia jad dia chata mohabbat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sra din bas layta rahu kam kru",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "sovereignty from nawaz sahab mery khayal zyadati shayad mian sahab iske mtlb tk pta ho apke sath siasat sahi horhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "behis halat mahinn ne sab kho dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "roshni bajaye andhera chhaya meri zindagi mahinn himmat thak gayi hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "ankhahi bhigi hahi dil ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "jo allah likh dia koi rok nahi sakta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dil tot hahi drd izhr nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "are bsdk idhar log sal dharne bahithke mudi koi fark nahi padta tere jahise porki ek twet kuch hoga",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi andheri rat si lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "meri khahir lekin ap ken hr waqt mujhe dekhti rehti wahise hal pr ahik shahir yad aya sunna deta hn wrna bhol jaon",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dosto sath bitaye lamhe khak mahinn gaye zindagi mayos kr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "roz roz sedhe maut sunne acchi adat gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "live situation rom on tehrek adam ahitmad news special transmision mr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "but with two s",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "itni asani mera pir bhol",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "rone purani bimri mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "hr chandni rat mahinn nakami andhera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "yesh musibat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sochta hon keun yeh dukh preshanion koi jawab nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "office mahinn kam krte krte susti ehsas hahi energy bost krne treqa chahie",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "sorryyyyyyyyyyyyy sir drd din maut kran banega",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "plzz delhi apni pant le ana",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khudkushi achy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "severe"
+    },
+    {
+      "post": "tanha ratein pehli bji guzri lekin itna sunsan mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "people pakistan understand accept entire no confidence motion has ben instigated by us we stand with our pm",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr pal lagta mahinn hrne hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "joe biden letter likh dhamki deh hahi khuda ko mano yr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "meanwhile alina prhahi streaks bhjty hoye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kumedit tash din qe jom kuq ke thot vetmeveti shyqyr sma bo nsna jem naj moter si yllka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sal umer bhi mujhe suicidal khialath rhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "akiro wey dil dinlerken kimi d n yorsan ona ahitsindir",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zehni azziat waja mahinn khud",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "ahise akelepan pehlie kabhi mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "allah mayosii brdasht nahi hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "dastanezindagi mahinn hr pal tanha safr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "mera mrna sahi rahe ab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "dedelete naman din pala pinatagal pa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "maut khauf nahi mujhe apne hr din hamesha jene koshish krta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "allah g mrna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "severe"
+    },
+    {
+      "post": "bhahi promotion band kro am admi budget bahr ye iphones to lakhs for fkin mobile u kiding midle clas itne pahise motorcycle activa khrdita hahiand u show it like only tata birla ambani celebs hi becho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 36,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hayad meri zindagi drd nishani ban hi reh jayegi kisi meri yad nahi ayegy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "hayr sayg duymadnz d nm yorum hatta gayet g zel bir slupla konuuyorsunuz demek istediim sadece t rkienin bi din devleti olmad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mujhe chahie case thawajuh du lekin mere apne masle mujhe distract rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "filhal prhahi dheyan do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "haha waqwe bechra masom sa sedha sa admy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "get more images here",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bezri mahinn rehkrmahinn apne friends apni problems shre hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "ehsas mehromi mr hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "mere sedhay maut andaza nahi lagaya sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "da en biafra aka buga match din",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi hr pal lagta ke adhora sa mujhe yaqen kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "hand writing achi ni ghuzra ho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bechahi dil mahinn hra hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "dukhi hon agr pasive khudkushi soch bat kron bahut si soch",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "samajh nahi pa hon kahise ulajhao hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "hr waqt apne tane sunne behtr suicide lu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "jis eizat usi ny mujhe mayos kia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "madachod soji na teri abhi tera halala hua khushi to hogy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "munafa unke ghr gaya kea",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tu eshi body banegi bas tum ese dekh hii khush lo kioki khoge tum nahi hot banke hii rehoge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mera wazan bhohot kam gaya jis waja mahinn bohot buri lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "khamoshion mahinn basa jurm mahinn mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "yahi ap mazil",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ba daya wlh munafa chatting hr whatsapp but as friend hr waya inayi da babe dinshy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hhhhhhh bohat jalil howa mugambow khush howa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tanhayi meri sathi ban gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "khud panke latka khudkushi krny",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "altml yllrn sonunda dtcf profes rler heyeti trafndan hazrlanm gizli bir rapor elime ge ti rapora g re dou sorunun z m indevletindoudaki halkn t rk olduunudillerinin t rk eden baka bir dil olmadn anlatmas gerekir deniordu smahinl beik",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 39,
+      "severity": "non-depression"
+    },
+    {
+      "post": "beqrr hokr dil ek ajeb si gham ehsas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "prhahi wrhahi sab dhoka krlo shadi abhi moka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "drd bhra dil shayri mahinn izhr nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "walaykum asalam shukria alhamdulillah hr hal mahin shukr allah operation ilawa illaj nahin sab friends dua chahie sabko salam khush rahie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "lafzon jurm dil rula ankhon mahinn hahi ranjogham",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "din iman paylam yap nerde civciv paylam vr hemen onu ben hatta civciv islamn akahidine ters konusa bile ben sonra radra taklnca rkadalr zerime sal onlrda beni cehennemle tehdit etsinler lan olm cehennemde kat kat en azndan yavaklr katnda olmam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 40,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sped str umran malik sir bolde umran bhi sped bre india new sped rock",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr kadam mehsos koi mera sathi nahi hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "chote pragraphs likh bhn asr tb na pdhe hn mn nd phucckkk reason dhrti itself samd bcz u nd so ab kitna bore kregy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bs dimagh mn ac khayal rahe q nhi rahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "choti choti khushian indvsausfinal worldcupfinal cwcfinal",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "jazak allah ap bht swet itni pyri duaon liay shukria allah pak her lafz badlay ap dheron khushian ata krein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mayosiat iblesiat",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "mild"
+    },
+    {
+      "post": "bohot jyada irritating how people like him wonder toh muh dekh lagta kam kam sal nahaya nahi hrakaton mahinn kamenapan was teasing payal in general everyone yoga kuch nahi hotanech",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zehan mahinn itni taklef kam jane ki soch bohot mushkil",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "raste mahinn khadi jurm mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "preshani din bure rahe hahi masla hahi din jawani hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "kasam bechahi dia yrrr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "nahi nahi abbb yad rahega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "fox cricket walay kitne frigh hahi mujhe reply kr rhe hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ajeb hogayi zindagi yon kahon mayosiat hoti soch jab mayosi ajati toh mahinn kisi trah allah pas chalijati thi unke kreb",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21,
+      "severity": "mild"
+    },
+    {
+      "post": "hahahahha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ramzan suicide halal",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "severe"
+    },
+    {
+      "post": "zindagi imtehan aur sra imtehan out syllabus a hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mana teri maujodgi ye zindagani mehrom jene koi doja treka mere dil malom abhisha met mod set",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "mild"
+    },
+    {
+      "post": "drd bhri kahani meri hasti preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "srii khushian mana len lekin ngl isko dekh ahik br khayal aya kash iski jaga babr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "jis din pak bhrat match us din father day ny",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "our govt work like hitler dont listen anyonejahise covid negative report sun khush insan vahise humri govt work negative waythey re worst govt for our youth",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi bemaqsad safr manzil pata nahi bas chalte chalte thak gir jane tamanna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "bemaqsad zindagi guzr hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "bs yahi kam rah hahi hukomat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr pal mehromi drd taza hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "inn ku kia fraq prta corror ho corror inho ney jittney khrch kie wo sab ikdadr aney key bad yahi awam ada krye inn ku brey beghrat peysey khrch krtey tu munafa rs rakhte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sust hokr bed leta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "what if petrol diesel prices re increased pahisa day till loksabha election",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "since vankr isnt givingus confesionmahinne khud likh dala its my first storyjo aj complete hahi lets give trynd find best location for their confesion sahirat love confesion on",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mujhe kisi chiz tawajo nahi ja",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "dil mahinn preshanion bojh mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "phle kia log khudkushi shoq s krte vo bemr hote zehni tor pr jahise mahinn abhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16,
+      "severity": "severe"
+    },
+    {
+      "post": "subject bhi mehsos nahi sakta s dead inside",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "when someone asks rat bhi chahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zakhmon silsila chalta rehta dil mahinn drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "iske apne log hukomat men to mujrim hone bawajod bahil gayilekin abhi mauka musalmano utho constitution bachane taqat agr kisi men to sirf tum",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tawajuh nahi pa hon personal problems wajah",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "sirappreciate your effort",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bad desh khushian gayab gayy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "lotus also ned make money fund those drivers crs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mahinn thakawat chor ho muskuraty huway ronay lgti hun zro qitr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "lafz bayan krne pehle dil tot hahi mera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "jet khwab lekin dil keh hahi hrne hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "mujhe thek nahi pata bhahi lekin ane wale mahino mahinn mujhe bohot mushkil fahisle lene honge",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16,
+      "severity": "mild"
+    },
+    {
+      "post": "khush bahut hogi auntyahir hindu kaffor hr gaye australia wale fir ehle kitab",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "roth hon khud mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "izzat her ahik ras nahin aty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tanhahi zanjer mujhe bandh rakhti logon dunia mahinn apni jagah nahi apna khud khayal nahi rakh sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "severe"
+    },
+    {
+      "post": "khush raho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mujhe ej din kahi br suicidal khialath athe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "jane hm modh p a gye age socho bechayni peche socho yadein",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "bas ba",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "fir koi khush nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rahahi kitni lambi keun ho lekin himmat kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "aur zulam nahi dekh sakta mrna chahta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "mian k shahir hahim b follow dahin plz",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "maut khauf nahi mujhe use roshni trah dekhta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "lah orang tua ni kau duk mengajr apa lagi bahik kau mampos je dripada kau menyakit kan hati korang bodoh punya orang tua musibat tua krepot",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "allah lambi sehatmand zindagi auladon khan sahab amen sumamen happy birthday freimrankhannow frepalestine fregazanow",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pichle mahine hue rajya chunav pehle hr pundit pandit nahi dhyan dijiega cutia save this twet kah bjp hr rajya mahinn hrne bhavishyavani gaye wo sab bhag gaye pata nahin pagal khane mahinn pakistan mahinn",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "cre about them zaka sr kekhduo wrna sta pashan khu nayam sok tapos am nakahi rejected always single ba mray sta pashan musibat ba sr sok akhle",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pantesan klo liat org tkt khilaf trs daya khayal nya terbiasa kerah bgtugile bener nonton dikit aja berdiri bulu kuduk",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khud bahut tanha bebasi mehsus krta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "meri jan tia dil pahi mat lo abhi ishq kay imtehan bhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "to grib admi sir mere pas padhahi pahisa nahi so govt schol padhta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "meanwhile alina prhahi streaks bhjty hoye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "terrorists have herd that frmers punjab have ben brutally beaten up god cre has ben taken by am admi prty punjab chandigrh sikhs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "apa khabr nama saya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kahu jurm mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "paki rishtedron khush krney liejo sadmen hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "asman ro hahi mujh jahise totay hue dilon himmat dekh",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "ankhon mahinn chhupi mayosi hr muskurahat bhi rukawat banaty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "aj dinner kha hon dil ek sukon nahi a",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "meri maut likhi hr din mrna kahise sikhun kisi aujr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "khud toh nhi likh rahe sab",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ap bade admi samjha sakti honourable madamjahise kat handi agr agni dur hotho khana nahi bann sakta bade admi samjhahiemeri family danger mahinn mobile",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pyra sa dil madom sa chehra mithi muskan yahi hahi meri bat ap btao kese ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dekho pri jii himmat kam lo hosla rakho adna sa dil hue jhoth moth sa shayr tumhe bas hath dil pr rakh dusre follow wale option pr click mujhe pata mushkil hahi bahot pr zindgi mahinn ese fahisle bhi lene hote der",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 42,
+      "severity": "mild"
+    },
+    {
+      "post": "mrna rahi hon agahin kash humri foreign trp count hoti no hopes left now pls watch on tv everyone",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "severe"
+    },
+    {
+      "post": "bechahi si mei bekhabr sa sangenghalty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "bht bht mubrak innshallah bohat munafa ga",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ankhon mahinn chhupi batein sirf rat hi samne aty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "badal sab gya waqt log halat aur kismat bas nhi badla thi yadien",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "some basic skincre tips that can try at home protect it from drying winters skincre dryskin skincretips healthyskin sehatmandapp",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "asman rula aj preshanion saya hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "insan itna gredy jitna mile use km pd jata hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "to pakhandi fauj hahiabhi dna check krega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "memory triggered from high schol sexed wod shop teacher made woden dils then we all had practice putting condoms on them with female teacher our sexed clas",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr roz kam jane soch drdnak lagti keunki dukh mujhe andr kuchal hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "azziat nikalne rasta dhundh hon lekin mujhe rasta nahi dikhta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "better be homo sapien rather being typical woman there a outside shayri unrealistic poems cinema puzzle",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bohat azziat nak din mere mahinn nahi jena chahty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "bahut royga apne biwi bacho juthi kasm khay vo admi thodi h",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this scoundrel corrupted courts serve him",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "rahahi jud gayi dil rishta tot hahi keun teri muskurahat nahi milty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "moderate"
+    },
+    {
+      "post": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tcrow vajahbsae nehi trops tejran family vajah sae teja jethi dang sae photo vi nehi dalthi dhi sra pick nishanth kae sath trend khabr vote apeal kia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "uska kisi se shadi gayi mrna chahta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "mujhay itni bhok kiun lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "lamhe guzr gaye pr unki yadon mahinn bhi khoi hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "prhahi nae horhe kron",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "yr tatti jrtahi yad nhi chahia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "prhahi nahi krni hoti tumhahi kia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "chupke roya krta hon magr himmat ankhon beh gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "behis iqtedr kwahish rakhne wale juda drd dil dua siwa kea sakte ise ap munafqt kahenge kea kren",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18,
+      "severity": "mild"
+    },
+    {
+      "post": "apni kismet likha nahi badal sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "tery sang guzr jaye umer ju baqi has do zra khul kahyy udas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "hr muskurahat mahinn chhupa ek gehra afsos",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "mujhe bahut dukh rha hakhir majbur insan jaye jaye kahahr traf sirf unhe naumidi milti hjra sochie abhi uanpr bet rhi hogy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22,
+      "severity": "mild"
+    },
+    {
+      "post": "whenever se fauj fel gosebumps",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "asani dukhi hone silsila jahise meri zindagi mahinn gehra andhera chha ho",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "moderate"
+    },
+    {
+      "post": "ro ro ankh drd rahe fel krne koshish mei kuch ziada fel gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "yhi likh aega psm paper mahin medem khush hojegy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zakhmon bhra dil lekin himmat mukabla krne lie tahir nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "kash mahin behri match hrne dukh to chhat puja ye soch khush hojata",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "asab din omi msh mestamela",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr rat naya khwab tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "bhao yaqen kro khudkushi krne lagy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "ahisa mujhe likh dogy dil khush hojayega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pakistanis india hr keun khush hotey ye nhi dikh rhi tmhey south asia kitna peche raha icc events m",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "common errors made by muslims ramadhan common errors involving cultural practices amp traditions excesive socializing after traweh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "breaking news",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi koi maksad nahi dikh bas chalti rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "raste mahinn ayi rukawat sab khatam dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "mlc chunav pahisa keu lagta rana ayub prt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "hr din naya tanha safr lagta jismahinn sathi nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "bahut bahut shukria apka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "bkle dost kapsn sadk dost isen g n ller tamir et ehli dil isen sevda sahrasnda mecnun deilsen leylay r canm l incit",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "more power my sisters batil dabne wale ay asman nahi sau br chuka tu imtehan humra",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "mahinn tuhanu bahot pyr krdi an elvishyadav ahise bolte ilu punjabi khush",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "kismat yah mera imtehan rahi tadap yah mujhe drd rahi dil kabhi mahinnne use dor nahi kia phir keon bewfahi woh ilazam rahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khudkushi es tra mahinm mr jauga qoam ke jan chot jaygy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "mera account ma pahisa bhej check kro zra",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "am loving my timeline full beautiful edits mahin kehti aj sri negativity ignore krte or esi choti choti khushian celebrate krte kuke bhahiii babr laughed babrazam babrlaughed babrlaughedalhumdulillah",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kam khanay adat meri zindagi udas mahinn bhr dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "suicide krny rhi hon kisi rokna to rok lo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "mahin apna khud khayal nahi rakh sakta hr kadam mujhe drd mehsos hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "mean vo apn pati kelie khush nahi sakty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khattaka lala treat rakahi khabr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khush raho pyre khob sra pyr kro khob sri masti kro shadi super super super son evil eyes off tejran",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pakistan naya bap ahise khush rhe jahise inke abba world cup jeta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sust hokr apne financial goals achieve krne mahinn lahid back hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "zyada khanay adat waja hr mujhe bhuka kehte",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "tanhahi mahinn mehsos hahi preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "sirf ghammo tawajo dete",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "khud maf nahi pa hon mahinne be prwahi mahinn apna rishta kho",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "sad jayega din",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ab bas china walo bhrose ghuzra kat hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "is bebasi acha suicide lu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "aj kal akhele ghr rehne khushi rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "desh pm khush nahi but bache trah ro nahi sakte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "ipl dekho khush raho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "kam jana mere bhot muskil gaya uske jane bad",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "guys ispe dhan do sunny toh aj hmri rat din hii khush die ab ise khush do unn ko se this instagram by",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tusi aj likh lawo ma nae jay rona",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "prhahi khatam krao guys",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "waqt sath mere kam lekr logon attitude badal mujhe lagta hahi ki kam jane mahinn mujhe support nahi raha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "severe"
+    },
+    {
+      "post": "dhoni fans khush na",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tum to khush jb babr hatt tha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "drd bhri kahani meri hasti preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "zindagi mahinn itni tanhahi ki mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "bahut bahut shukria apka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "sust hokr apne surroundings mahinn bhi change nahi la",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    }
+  ]
+}

@@ -1,0 +1,4019 @@
+{
+  "metadata": {
+    "language": "urdu_english",
+    "sample_size": 500,
+    "requested_size": 500,
+    "seed": 42,
+    "created": "2026-02-23T17:30:37.630549",
+    "source_total": 25002,
+    "label_distribution": {
+      "depressed": 250,
+      "not depressed": 250
+    },
+    "source_language": "urdu",
+    "translated_to": "english",
+    "translation_method": "googletrans"
+  },
+  "samples": [
+    {
+      "post": "The province started but did not wake up quickly, the heart was scattered",
+      "original_post": "subah aghaz lekin jaldi utha nahi dil mahinn kuch bikhra",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "be happy",
+      "original_post": "khush hojao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "At first, people underestimated me, but no one understands and cannot underestimate me",
+      "original_post": "pehle log mere kam samajhte lekin koi nahi samajh aur kam nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "Mahinan was always sad, one day this will kill me",
+      "original_post": "mahinn hamesha dukhi rahta kisi din yahi chij mere ant maut kran banegy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "All the right Hashtags can say, stay with the false government, stay with it",
+      "original_post": "sab thek hashtags kia scene b keh rhay sath jhoti hukomat b use rhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "video jagrukta fahilaney li banahi gyi that s natural call so don t be behaved like aliens kisi majak banana uski madad krna apki nekata baqi rhi bat ap ki bat wajeh yha lrka madad sakta bs irada hona chahie madad",
+      "original_post": "video jagrukta fahilaney li banahi gyi that s natural call so don t be behaved like aliens kisi majak banana uski madad krna apki nechta baqi rhi bat ap ki bat wajeh yha lrka madad sakta bs irada hona chahie madad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 41,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You are silent, your father has caused great damage to this country, but you are not ashamed",
+      "original_post": "ap chup rahahi ap kay bap nay is mulk ka behad nuqsan kia magr ap mahinn shram haya he nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Gnadim and the worlds are better than ever",
+      "original_post": "g ndem olmuyorsun bir t rl hereye dil uzatyorsun yeter da",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "this made bawl holy crap tak perlu kot nak humiliate that student macamtu should be educated tinggi kena humble la perangahi mcm musibat dah kenapa tua kutuk ni tuhan trik balik nakmat sakgi bru ada akahi dok hina orang sangat orang tua bodoh",
+      "original_post": "this made bawl holy crap tak perlu kot nak humiliate that student macamtu sepatutnya education tinggi kena humble la perangahi mcm musibat dah kenapa tua kutuk ni tuhan trik balik nikmat sakgi bru ada akahi dok hina orang sangat orang tua bodoh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 43,
+      "severity": "non-depression"
+    },
+    {
+      "post": "positive",
+      "original_post": "musibat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Looting this bend licke looting me print me pasa pasa said",
+      "original_post": "loting is more like loting my prents mere pas pahisa kaha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Don't do this at this time when we are all trying to forget the truth",
+      "original_post": "is time ahise tts mat kro bhahi jab sachme bholne koshish rahe hum sab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "bhajpayio punya kam kia agnehotri kahne film posters chipkaye agnehotri cr shudh munafa krwaya kashmiri pandito nam sirf vote manga magr punya kam kps kea mila sirf sirf nostalgia",
+      "original_post": "bhajpayio punya kam kia agnehotri kahne film posters chipkaye agnehotri cr shudh munafa krwaya kashmiri pandito nam sirf vote manga magr punya kam kps kea mila sirf sirf nostalgia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Tarikhin Tarikhin Sunan Meri Dhal Dhan",
+      "original_post": "khatrkhun khatrkhun sunn meri dil dhun",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Hundreds of thoughts have forbidden my life",
+      "original_post": "suicidal khialat mera jena hram dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Why did the Ghazanagariks not rejoice over the attack?",
+      "original_post": "gaza nagrikon hamle per khushian keon manahi vah bilkul nirdosh nahin",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Bad Khush Do Kodi Karme",
+      "original_post": "bda khush do kaudi kurmy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "There were terror threats from the Intelligence Agency, and if the rally was called for cancellation, the party would have taken up arms against the army.",
+      "original_post": "intelligence agency pased on terror threats pm the jalsa was to riske cancel krne kehtay pti walay fauj khilaf hithyr utha lete",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Those donut tags may be missed by all",
+      "original_post": "why dont tag makrs shayad sab yad ajaye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "chalie apne whatsapp status apne dalie ap chutie aur ap hr admi pasand jo desh virodhi batein krta fir dalie mera pitaji shrminda ki unke shukranuon prinam ap jahisa nikla",
+      "original_post": "chalie apne whatsapp status apne dalie ap chutie aur ap hr admi pasand jo desh virodhi batein krta fir dalie mera pitaji shrminda ki unke shukranuon prinam ap jahisa nikla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "this so sad but very powerful jac giving life so many at end hers like how all main characters also got their special moments m really going miss show thank u all cast amp crew for amazing yers",
+      "original_post": "this so sad but very powerful jac giving life so many at end hers liked how all mahinn chracters also got their special moments m really going mis show thank u all cast amp crew for amazing yers",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38,
+      "severity": "non-depression"
+    },
+    {
+      "post": "People become a goal and destroy another life without a goal",
+      "original_post": "logo maqsad ban ha bemaqsad dosro zindagi tabah",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "The whole night, talking about crime is heartbreaking",
+      "original_post": "rat bhr jurm batein dil mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "Politics is the real thing",
+      "original_post": "siasat asal spaces mahinn chalti hr samajhta wo sab bra siasatdan usko pm hona chahye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Miss Batting from Sara Lakh Lilu was Will and Top",
+      "original_post": "mas batting from srh likh lelo they will end top",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Sharp Cuts to GDP Growth Estimate Sharpley's Conflict Impact Times India",
+      "original_post": "icra cuts fy gdp growth estimate shrply on ukrahine conflict impact times india",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I felt that papa was just hoping for me, but I felt sorry for the Wu team",
+      "original_post": "mujhy laga papa bus mujh naumed hyn pr mujh zayada wo team pr afsos rhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "mild"
+    },
+    {
+      "post": "I will always remember you, I will never forget you",
+      "original_post": "mahin humesha tujhe yad rakhti bhulti hahi mujhe mahin nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "There is no difference between a devotee and a devotee",
+      "original_post": "bhakto se frk nahin padne",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My heart is full of guilt",
+      "original_post": "dukh bhra dil jurm mahinn mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Life failed me",
+      "original_post": "zindagi mujhe nakam bana dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "moderate"
+    },
+    {
+      "post": "There is happiness",
+      "original_post": "aye khushian",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Aap Harak Baat Best Kyunki Karte Harak Kim Dil Peer Ehsaas Chhapa Aap Harak Kim Asli Aap Ses Se Sebe And Jade Ray Best Everything Sushant Graakful Dancer",
+      "original_post": "ap hrek bat best keunki krte hrek kam dil pyr ehsas chupa apke hrek kam isilie ap sabse alag aur juda re best everything sushant graceful dancer",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Having become so dhat, the fourth fat does not feel sad",
+      "original_post": "itnii dhet ban chuki choty moty dukh mehsos nahi hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "You will not get tired",
+      "original_post": "thik nahi krungi bat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Forget everything",
+      "original_post": "hr bat bhol hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "mild"
+    },
+    {
+      "post": "I have not been able to take important decisions",
+      "original_post": "tawajo nahi pa hon important decisions lene",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Let's do it on a regular basis, where you don't get hell",
+      "original_post": "kre ap tayyri hour twitter pr hoty jaha hasil nh cy dozakh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Don't forget to live on your own and die to me",
+      "original_post": "kisi yad jena apne ap ho azziat aur azziat mujhe mr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "Life seems aimless",
+      "original_post": "zindagi bri bemaqsad si lagrhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "severe"
+    },
+    {
+      "post": "Azit himself wants to leave but it is difficult",
+      "original_post": "khud azziat nikalna chahti lekin ye mushkil hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "May Allah keep you happy",
+      "original_post": "allah khush rkhen apko",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life has seen so many colors that only black color grows well",
+      "original_post": "zindagi itne rang dikhae k sirf black colour acha igta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The wounds were visible, but the color of courage faded",
+      "original_post": "zakhmon izhr raha pr himmat rang dhundla gaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "Pakistan Sunni Tehreek Zindabad",
+      "original_post": "pakistan sunni tehrek zindabad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Say the heart is a silent secret that cannot be understood",
+      "original_post": "kahu dil hahi ek khamosh raz jise samajh nahi pata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "Not monthly, not weekly, not daily, you will get profit.",
+      "original_post": "monthly nahi wekly nahi roz milega munafa jazzcash bachat plans payein up annual profit abhi dial krke bachat plan subscribe krein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "regularly watch vice news for ukraine coverage yesterday was heartbroken completely elderly mother lost her son etc etc really really heart melts shahitans hahivans do these things not normal insan",
+      "original_post": "regulrly watch vice news for ukrahine coverage yesterday was hertbroken completely elderly mother lost her son etc etc really really hert melts shahitans hahivans do these things not normal insan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Be constantly concerned at every moment",
+      "original_post": "hr pal hr lamha musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Azit makes me feel like a lonely person, no one understands me, no one wants to listen to me",
+      "original_post": "azziat mujhe akela admi trah mahsus krati mujhe nahi samajhta koi mujhe nahi sun hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "severe"
+    },
+    {
+      "post": "But the province did not wake up quickly, the world was covered by darkness",
+      "original_post": "subah lekin jaldi utha nahi dunia mahinn chhaya andhera sath chala ata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "Being lazy, I don't even take care of my life",
+      "original_post": "sust hokr apni diet bhi khayal nahi rakhta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "The solution is like this, my life has been forbidden. On this day, suicide is forbidden",
+      "original_post": "hal aysa gaya mera jena hram dia us den ahisa khudkushi hram",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16,
+      "severity": "severe"
+    },
+    {
+      "post": "If there is no purpose in life, then why should the question be in my mind every day?",
+      "original_post": "agr zindagi koi maqsad nahi toh kam jana keun sawal hr roz meri soch mahinn ghomta rehta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18,
+      "severity": "severe"
+    },
+    {
+      "post": "I will die together",
+      "original_post": "sath mei mrte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My eyes will see me sad and my lack of interest will be corrected",
+      "original_post": "meri ankhon mahinn dekha gayi udas mujh dilchaspi kami drust krty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "Verta League Ghazra Kho Ko Khalki Khabara",
+      "original_post": "wrta lig ghuzra khu kawa khlk khraba",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The confusion did not even break, but the house was told so much that it was cut",
+      "original_post": "uljhan hti na tute hn lkn ghr m itna sunaya hy katne jate hn",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "mild"
+    },
+    {
+      "post": "maybe rent fraud but this concept bc tumme apna dimag nhi pr fantasy jitayenge tumse pahisa leke fraud which was developed by maha maha fraud all time anurag dwivedy",
+      "original_post": "maybe rent fraud but this concept bc tumme apna dimag nhi pr fantasy jitayenge tumse pahisa leke fraud which was developed by maha maha fraud all time anurag dwivedy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He did not see my disappointment in my eyes",
+      "original_post": "meri mayusi meri ankhon nazr nahi athi usko",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "My eyelids will get wet and I am constantly worried",
+      "original_post": "palkein bheg gayi mahinn musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "And don't be fooled or followed, and the man who is not so sensé is not the only person.",
+      "original_post": "u dont deserved be followed am unfollowing u jis admi itni sense nhi sray decisions frd wahid nhi ye mrosi siasat wali prty nhi but",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Harkadam Lagta Path Mahinan Tot Sa I lack faith",
+      "original_post": "hr kadam lagta ke raste mahinn tota sa mujhe yaqen kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "It will be a shame if you don't remember it on MyBox",
+      "original_post": "my boks me yad na sahi shram ati hogy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Happiest Birthday May Allah Bliss be happy",
+      "original_post": "happiest birthday may allah bles khush rho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "What do you do to get out?",
+      "original_post": "bezri bahr nikalne lie kea kru",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Lulu Tamhri Cycle Mane Don't Talk To You",
+      "original_post": "lelo tumahri cycle mene bat nahi krni tum se",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Yeh Tamhiri Onte Bolna Saath Bahethi, He is the worst politics, there is no one who is a hypocrite",
+      "original_post": "yah tumhri aunty bolna sath bahithi vah sabse badi siasat bhahi usmahinn munafiq koi nahin",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "As the troops are melting, the rest of the crying family will go together, how bad will the family be?",
+      "original_post": "jahise trops pighal rhe kash wahise baki ruthi hue khandan vo ek sath a jaye kitne bdi family hogi apny",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "so recently joined little roleplaying discord its really awesome because get be empires scott strborne scott the story our lore has ben based round empires lore xornoth",
+      "original_post": "so recently joined little roleplaying discord its really awesome because get be empires scott strborne scott the story our lore has ben based round empires lore xornoth",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I get sad easily, my heart is deep, the hidden pain comes to the fore",
+      "original_post": "asani dukhi jata hon dil gehrahion mahinn chhupa drd samne ata",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "It doesn't look good at all",
+      "original_post": "bilkul acha nahi lagta kash khud tawajo di hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "He did not say anything to you for months",
+      "original_post": "hahi apko kuch nhi kaha mahinne",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "May Allah's mercy and peace be upon you, Amen",
+      "original_post": "allah rehmat aor salamti ap pr amen allah ap dunya sub nahimaten brkaten aor khushian ata kry amen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I am tired of crying",
+      "original_post": "rone purani bimri mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Every province gives a new sky, but my heart is sad",
+      "original_post": "hr subah naya asman dikhahi deta pr mera dil udas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "No Rex is dead",
+      "original_post": "merayko he nahin no riks",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Good men always be happy wo vikksonalle battery",
+      "original_post": "ache mrd hamesha khush rakhen vo occasionally betre",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "In the winter evenings, the moon sounds strangely like a sad girl, and it is blooming like a thirtieth roof.",
+      "original_post": "srdion sham mahinn ajeb sa sannata udas bechahi si jahise galat raha jahise trahin chut hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20,
+      "severity": "mild"
+    },
+    {
+      "post": "Every day is a new solo journey",
+      "original_post": "hr din naya tanha safr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "I gave up the courage to live this moment",
+      "original_post": "zindagi mahinn ahise lamhe aye ki himmat chhod dy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "Every moment my soul is grazed",
+      "original_post": "hr pal meri roh cher hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Yes, the situation is very bad today",
+      "original_post": "yes ajkal bht buray halat hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I have got nothing but life, life, and death",
+      "original_post": "mujhe azziat siwa kuchh nahi mila zindagi mahinn bas hi rzu maut a mujhe rahat",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "You write positively",
+      "original_post": "mo likhta musibat ata",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Juju Gaye Meri Mani Didi Litti Perfect Hun Jasoos Juju Rani Didi Happy",
+      "original_post": "jiju gaye meri mani didi lie perfect hn jasus jiju rani didi khush rakhna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Ha ha happy p England gand mari tib kadar tera kohli um li tha satat padr chitu",
+      "original_post": "haha khush hoja pe england nay gand mri tb kidr tera kohli am ly tha stat pader chutu",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My life has not changed even for a month",
+      "original_post": "apni zindagi mahinn bhi nahi badal pa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "Against human beings",
+      "original_post": "bir insan defa l",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Thay Ray hoppe vita thase lil antics peak happiness nothing happen but in front of the devotees what back he mandane bhakhri life",
+      "original_post": "they re happy with these lil antics choti khushian kisi kuch nahin hona lekin bhakton samney kia back hi mundane bhikhri life",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "May your goals fail",
+      "original_post": "apne maqsad mahinn nakam hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "Why did dirty talk become an excuse to laugh when the heart itself is crying?",
+      "original_post": "rothi batein hansne bahana keun bani jab dil khud ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "Fatigue is a substance for a person, so give it after the trade",
+      "original_post": "kash insan ma thakawat mada hotato much tired aftr tuff de",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "If you don't listen to the muscles, then the damage will come up",
+      "original_post": "ullu pathon bat manni ni hoti phir nuqsan hahi muh utha ajate",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My heart says that I should buy a simratphone toh bacchi hoon Lordofig",
+      "original_post": "mera dil kehta ki smrtphone khredna chahie toh bechahi hon lordofg",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "Install it and play it",
+      "original_post": "ap install lahin k khahila krwingy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Mahinan writes talent",
+      "original_post": "mahinn likh leti talent yk",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Who knows who eats milk, the interviewer knows, Ener is working in Khase, take care of it too",
+      "original_post": "kaun kaun malahi kha d msaheb pata krie enginer kahise naukrei krta hahi iska bhi khayal rakhna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Natural Video Natural Love Song Status Video Natural Whatsapp Sherry Status Natural Video Heaps",
+      "original_post": "natural videonatural love song status videonatural whatsapp shayri status natural video hieps",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pradrshan achha tha match player tournament v mila use khush v nazr a rhe the",
+      "original_post": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pradrshan achha tha match player tournament v mila use khush v nazr a rhe the",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "No, there will be disappointment, then habit",
+      "original_post": "nahi br mayosi hogi phir adat je",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Peak peak happiness no bad bad happiness congratulation",
+      "original_post": "choti choti khushian nhi bri bri khushian congratulationsindia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I want to live in my own home, but I want to go out and take care of things",
+      "original_post": "chahta hon mahin apne ghr mahinn rahun lekin bahr jane zimmedrian nibhani padty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "severe"
+    },
+    {
+      "post": "Don't say that they were broken, nour fond, glory moments, life, life, happiness, happiness, happiness, happiness, happiness, happiness, happiness",
+      "original_post": "n kaho bechro they never found glory moments his life cherish bas ahisi choti choti khushian hamri hr dundh khush lete bechre beggrs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I can't feel my hands",
+      "original_post": "mere pas hath mujhe mehsos keu nahi rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "How can so much hatred come to me, I don't want to understand this nonsense.",
+      "original_post": "itni nafrat kesy ajati lehjon mahin ye bahizri ap smjhna na chahty hon agla bol kitna ajeb hy ye dekhna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "May Allah bless you, great post",
+      "original_post": "allha khush rakhy apk bohot zabrdast post uummmhhh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "What is the need to keep an eye on?",
+      "original_post": "nazr rakhny kea zrort jesa waqt chl hahi waqt sb khud apne ap dikh hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dog human",
+      "original_post": "kutta insan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Darkness surrounds me",
+      "original_post": "andheron mujhe ghera jet sahra chhuta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "moderate"
+    },
+    {
+      "post": "I have definitely given away the coins",
+      "original_post": "beqrri dil sukon dor dia hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Awle way advocate sukite let's education girls promote family education",
+      "original_post": "only way educate society lets education girls promote female education",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You are a boy",
+      "original_post": "tum wo ladke",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "tawadi koi samjh nahi aoundi murshidwicket dono trf keun khelte hojab imran khan datt jaye tab kehte siasat ahise nahii hoti jb ap logon man idr ho jaokoi ahik point view hona chahye insan kakeum hmra media ahisa hahy",
+      "original_post": "tawadi koi samjh nahi aoundi murshidwicket dono trf keun khelte hojab imran khan datt jaye tab kehte siasat ahise nahii hoti jb ap logon man idr ho jaokoi ahik point view hona chahye insan kakeum hmra media ahisa hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 39,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Sekdal Khalath gave me such extremes that even prayer did not widen my back",
+      "original_post": "suicidal khialath mujhe itni inteha di ke toh namaz bhi mera picha nahi chora",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "A broken heart, a smiling face hides a deep sadness",
+      "original_post": "dil tot chehra muskurata hahi gehra dukh chhupa hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "I was so disappointed in my life that I couldn't understand anything",
+      "original_post": "itna mayos gaya zindagi seke kuch samj nahi rha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "I slowly run away from my responsibilities",
+      "original_post": "sust hokr apne responsibilities bhagta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Pay attention to Saddam",
+      "original_post": "sadam prhahi dheyan do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every glance, every passing moment, every passing moment, the feeling of being easily miserable",
+      "original_post": "hr nigah mahinn hr guzrte lamhe mahinn asani dukhi hone ehsas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "moderate"
+    },
+    {
+      "post": "Damn hope this despair better",
+      "original_post": "lanati umed is naumedi behtr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Dil Mahinan hidden deprivation toad me inside",
+      "original_post": "dil mahinn chhupi mehromiat mujhe andr tod dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "A painful night passes, feeling lonely for months",
+      "original_post": "tanhahi mahinn mehsos hahi drd bhri rat guzr hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "What do you do with aimless happiness?",
+      "original_post": "bemaqsad khushi kia krein",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "The next month the heifers started to grow",
+      "original_post": "jis age mahin bechahi badhne lage",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "Mashallah, the first love will be remembered till death",
+      "original_post": "mashallah pehli mohabbat mrte dam tak yad rehty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "How do you get up from despair?",
+      "original_post": "mayusi pasti gir kesy utha ha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "My head will die and I will have a thousand thoughts",
+      "original_post": "mere sre apne mr gye aur mujhe suicidal thoughts rhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "Don't wear the dream of the unfinished story",
+      "original_post": "sapne adhore jahise kahani mahinn antim panna na",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "Every moment the eyes are sad",
+      "original_post": "hr pal jurmedil saya ankhon mahinn udas rang",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "this pukimak however kau ni mmg kena makan penampaq kali sehri for weks strahight musibat punya perangahi semoga tuhan trik nakmat kat dunia ni satu so kau tau peritnya jady",
+      "original_post": "this pukimak however kau ni mmg kena makan penampaq kali sehri for weks strahight musibat punya perangahi semoga tuhan trik nikmat kat dunia ni satu supaya kau tau peritnya jady",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I am happy, but someone is restless",
+      "original_post": "mei khush hon magr kesi bechayni rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "The injuries continued for months",
+      "original_post": "zakhmon silsila chalta rehta mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Do you remember to consider your path of oppression",
+      "original_post": "kia sitam ke teri surat ghor krne yad aty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He was a human being without a word of God",
+      "original_post": "oha bu insan bela okur allahindan bulsun falan der ls n ya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "This film made crores of profit with Vakchi Rajanti Khase Pange Hindu Muslim converts Desh Yuav Samasya Kya Dina Leina Jo",
+      "original_post": "ahisi film bana crores munafa sath occhi rajneti kahise payenge hindu muslim krne walon desh yuvao samasya kea dena lena jo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Masanif Usher is known as a well-known journalist",
+      "original_post": "musannif ishra ahik jayyad sahafi traf malom hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "It's normal and I'm not aware of the fact that six people have been killed, which will be respected.",
+      "original_post": "yeah its normal i m not agahinstkho che alak da insan bacahi da jinahi pa respect poye ge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Very blessed, may God bless you with good health and long life with lots of happiness, Amen",
+      "original_post": "buht buht mubrak allah pak ap dhonon sehat wali lambi zindagi buht sry khushian dein amen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Dil Mahinan worries Siya Mahinan Preshan Hoon",
+      "original_post": "dil mahinn preshanion saya mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "Today, I am such a bad person.",
+      "original_post": "aj itni bri hasti hon str hon itnay sray pahisay meray pas famous hon andr pata sirf jalan meray andr bechayny",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Yeetin plus la france minqe mehnin duivre p qulfi dans pulsires domhennis yet m dis qulfi s pisqun faht appel dism deconsul tranger",
+      "original_post": "et en plus la france manque mahinn doeuvre peu qualifi dans plusieurs domahinnes et m des qualifi s puisquon fahit appel des m decins l tranger",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life has no color, everyone heard",
+      "original_post": "zindagi koi rang nahi sab suna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "May your intentions fail",
+      "original_post": "apne iradon mahinn nakam hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "Every moonlit night is dark",
+      "original_post": "hr chandni rat mahinn nakami andhera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "No mood to go out at night",
+      "original_post": "khamosh rat ghr bahr nikalne jazbat nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Haha never mind",
+      "original_post": "haha koe bat nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every moment I feel as if life has lost its excitement",
+      "original_post": "thaka hon hr pal lagta jahise zindagi sra josh khatam gaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "Relais Patanjali products, apart from the profit, the monthly expenses, Relais Patanjali Kulgate has also been dug back.",
+      "original_post": "really patanjali products munafa sewa krm mahin kherch really patanjali colgate bhi pechy chod dia hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Each one confused me inside",
+      "original_post": "hr kadam naye ulajhao mujhe andr andr tod dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Living because of him is a journey full of tears",
+      "original_post": "uske bina jena ansu bhra safr ban hahi jismahinn hr kadam rone izhr hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "Mental illness cannot be underestimated today",
+      "original_post": "zehni bimri kran aj kam jane himmat nahi milty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "I have also reached Nixon by staying cheap",
+      "original_post": "susti mahinn rehkr apne crer bhi nuksan pahuncha hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "The girl is with you every moment",
+      "original_post": "bechahi hr pal sathy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "It seems like a full month of depression",
+      "original_post": "dil bhri sa lagta mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "How many countries have lost their property, how many of them have martyred their Muslim brothers through violence and hypocrisy.",
+      "original_post": "mn kitnon mulk imlak nuqsan ponchaya un mn kitnon apne musalman bhayion tashadud k shahed kia munafqat b hadh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Unemployment forced me to work",
+      "original_post": "berozgri mujhe suicide krne majbor dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "Insan Allah Hi Roop Bas Shi Roop Pick Up",
+      "original_post": "insan allah hi rop bs shi rop ap chun lijie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "People who steal something from my life every moment do not have the courage to save themselves",
+      "original_post": "hr pal meri zindagi kuch chhen lete log apne ap bachane himmat nahi rakhta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "severe"
+    },
+    {
+      "post": "No problem, your team gave you so much happiness throughout the tournament and should not be proud of our dependent system.",
+      "original_post": "bat nahi apki team pore tournament apko itni sri khushian di u should be proudwrna humre wale qudrat nizam dependent",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The question is, what did the government get?",
+      "original_post": "sawal hayhukomat kea mla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He fell asleep",
+      "original_post": "th one so true",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "shafqat mehmod kahna paper hr surat honga bacha chaha mr corona a zamen phat ya pak bhrat jang shoro gahi ya mrshalla nafiz gahi chaha ww shorou gahi chaha bhi paper honga kuka ma million ka bhoka hon hram khana",
+      "original_post": "shafqat mehmod kahna paper hr surat honga bacha chaha mr corona a zamen phat ya pak bhrat jang shoro gahi ya mrshalla nafiz gahi chaha ww shorou gahi chaha bhi paper honga kuka ma million ka bhoka hon hram khana",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 40,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life is a journey, but it always hurts",
+      "original_post": "zindagi safr lekin sath chalta ye hamesha drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "My eyes are hidden, my heart is deep, I don't have the courage to listen",
+      "original_post": "ankho mahinn chhupi dastak dil gehrahion suno mujh himmat nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "The first foodie Gdankenwelt Nsammanzur count the same happiness",
+      "original_post": "fodie gedankenwelt nasemmanzor ganty pehly fodie bhi asy khushian",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The poor are the worst in this government",
+      "original_post": "ghreb sab ziada pis hy bhahi is hukomat mein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My mood stabilizers will wear off two weeks ago.",
+      "original_post": "mere mod stabilizers do hafton pehle khatam hogaye mahinn itna zyada disociate raha hon khudkushi soch mahinn doba hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "Ruth is my heart, my heart, my troubles, my pain",
+      "original_post": "roth hon khud dil mahinn preshanion drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "So may I book the whole night",
+      "original_post": "so me jag bc kea krunga puri rat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Don't forget to tell me, I won't tell anyone",
+      "original_post": "yad mat rakh muje bata me kisi nahi bataunga pakka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Why did dirty talk become an excuse to laugh when the heart itself is crying?",
+      "original_post": "rothi batein hansne bahana keun bani jab dil khud ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "My face is straight death",
+      "original_post": "mere chehre sedhay maut izhr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "Spino Jahan Bakhar Hihi is constantly worried",
+      "original_post": "sapno jahan bikhr hahi musalsal fikrmand hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "Yes, at least if the government goes to foreign agents, children",
+      "original_post": "ji bilkul kam kam hukomat foreign agents pas janay to bache",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Look at your team, reach the semi, see others, how long will you be happy?",
+      "original_post": "apni team dekho semi tak pahuch nayi payi dusre dekh kab tak khush rahoge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Suffering journey guilt months suffering",
+      "original_post": "dukh bhra safr jurm mahinn mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Leve fed di yad di till subband nahi mehinin cheda bhag ho cuz me too yad ni ne imo hona hona alauda",
+      "original_post": "live fed di yad dila di jab tak sab band nahi mahinn chidia bhag hu cuz mujhe bhi yad ni na emo hona alvida",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Thank you my Lord",
+      "original_post": "kahise mayosiat shikr bahithe mere prabhu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "Latterly Dil Khush, he felt as if Pakistan had gone to the world",
+      "original_post": "literally dil khush esy lag jesy pakistan world cuo jet gya ho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You can't change your destiny",
+      "original_post": "apni kismet likha nahi badal sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Everything seems empty",
+      "original_post": "sab bekr lagta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "moderate"
+    },
+    {
+      "post": "Good luck",
+      "original_post": "khush naseb ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You are happy instead of sad",
+      "original_post": "dukh jagah ap khush kahise",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Not mine",
+      "original_post": "mere nahi mujhe suicidal thoughts nikale",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "severe"
+    },
+    {
+      "post": "Stay tuned",
+      "original_post": "tension rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "mild"
+    },
+    {
+      "post": "Everyone feels lonely every moment and the courage is quite weak",
+      "original_post": "hr kona hr pal tanhahi ehsas aur himmat kafi kamzor",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "Congratulations on winning most accurate prediction this video reminded when adi sahid ajkal social media py esy log hn social media py ap dekhn bachon prediction jet khush hoty hn allah allah pirayyy wb",
+      "original_post": "congratulations on winning most accurate prediction this video reminded when adi sahid ajkal social media py esy log hn social media py ap dekhn bachon prediction jet khush hoty hn allah allah pirayyy wb",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Woman gasa gi niegborus khushi khush hona chia this m gasa kis baat pa",
+      "original_post": "woman gusa gi neighbors khushi khush hona chyia is ma gusa ks bat pa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "No one can tell their heartache",
+      "original_post": "apne dil drd kisi keh nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Ghalib Restaurant",
+      "original_post": "ghalib restaurant",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Just the end of grief, I will be a stone for every season, I will be a stone for you, not so many trials for me",
+      "original_post": "bas sre gham jana sang hon tere hr mausam jana sang hon tere itne imtehan na mere",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "It would have been more expensive if there had been a government",
+      "original_post": "agr abhi ns hukomat hoti is b ziada mehangaye hone the",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I have not been so happy for the whole year as I did for one day in Australia",
+      "original_post": "itna khush pory sal nhi hoi jitna ak din kr dia australia walo indvsausfinal",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Howe We Rechheed Pint Where Movies From Mad Sre So Wold Most People Woldant Get Reference",
+      "original_post": "have we reached point where movies from mid s re so old most people wouldnt get reference",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I feel like you are ghosting me",
+      "original_post": "wase mujhay lagta meri trah ap prhahi bahot krty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "At the end of the day, the same thing was said",
+      "original_post": "hui bat captahin akhr keh di tahi ale",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Welcome, remember me",
+      "original_post": "welcome duwao mahinn yad rkna",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Haid Mehin Hasan Mosam Hata Ni Lomal Feeling Deprived",
+      "original_post": "hyd mahin hasen mausam hta ni loml ahsas mehromiat hn",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Life is a test",
+      "original_post": "zindagi ahik imtehan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Sahi baat bhi positiv kum wuhi coin meter",
+      "original_post": "sahi bat bhahi musibat kam wohi sacah mitr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Tote ji Welcome back Khushiyan Mohool Kalse in Abhishpam",
+      "original_post": "twety ji welcome back khushian mohol kalse abhishafam mein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Not even a month of life",
+      "original_post": "zindagi mahinn bhi hasil nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "We cannot lie to any girl",
+      "original_post": "kisi ladki ankhon mahinn ankhen dal hum jhoth nahin bol sakte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Beautiful thing, Riz asked, will you go without me?",
+      "original_post": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The heart breaks aimlessly",
+      "original_post": "dil bemaqsad tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "Slipped",
+      "original_post": "pahisa lage",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Coins are only after death",
+      "original_post": "sakon sirf maut bad hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "By necessity, you have been dragged into the hands of a monkey, which means that social media has become a slave to social media.",
+      "original_post": "hamri majbori kay tujh kahisay bandr kay hath nryal matlab social media lag haytabiat say frigh tu solangisindh taba krnay walay zrdrdi kay ghulam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Rubbing your hands on my forehead after every medicine.",
+      "original_post": "hr dua bad mere mathe hath phirana hr naumedgi mera sayya chodana meri hr hr khuda bhi lad mother ma",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Yes, I am with you",
+      "original_post": "yas mahin ap sath mam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Our two Abhitak projects have not come up, so their promotion has not been done, because our two natural gas projects are profitable.",
+      "original_post": "humre do abhitak project utre nahi so uska promotion nahi raha filal humre do natural gas se hi munafa kamane busy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Kim Kim Wook would have been happy if he had let her play the final",
+      "original_post": "ise kane mama hi final khelne dete kam kam wc kisi khush toh krta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Hannah, rather, give the same thing",
+      "original_post": "hanna blck de isi bat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Give the night a deep charm",
+      "original_post": "rat thodi gehri sehr ane do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Mahinan cannot see his destiny with his own eyes",
+      "original_post": "apni ankhon mahinn apni taqder dekh nahi sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "After hours passed, the pain did not subside",
+      "original_post": "to ghante guzr gaye drd kahe kam nahi raha bhahi kam jo mil",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "Deprivation night, months of crying",
+      "original_post": "mehromiat rat mahinn sitre ro rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "original_post": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "khush babar azam khush pora pakistan ry bhi jab bcci mfia sab control raha and last moments py pitches change raha aur players tang kia rha fans janib aur sab dramo bad final na jeta khush hongy he",
+      "original_post": "khush babr azam khush pora pakistan ry bhe jab bcci mfia sab control raha and last moments py pitches change raha aur players tang kia rha fans janib aur sab dramo bad final na jeta khush hongy he",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 38,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I can't cry in the evening, but I cried so much that I cried after every minute. I watched a video.",
+      "original_post": "same depresion rona tab bi lekin itna n jitna twet n rulya or hr mint bad rulya hahi koi video dekh ly",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21,
+      "severity": "mild"
+    },
+    {
+      "post": "Take courage, your father will rule next year",
+      "original_post": "bhrwayy hosla rakh tera bap agly sal bi hukomat krega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "If a loss is caused, it will be a pure loss",
+      "original_post": "ahinda sab dhrne lie aynege agr ik nuqsan yan pak nuqsan pohonchaya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Low body habit my body cheap mehenan dal daya",
+      "original_post": "kam khanay adat meri body susti mahinn dal dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Hope is the dawn for all of us",
+      "original_post": "umed sehr hahi humahin naumedi sahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "A man is as low as he gets",
+      "original_post": "insan itna gredy jitna mile use km pd jata hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "If I don't get respect, I'm going to die",
+      "original_post": "ager mujhe ehtisham nahi mila mahinn suicide dungy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "Hopes where the crime is suffering",
+      "original_post": "umedon jahan jurm mahinn mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Ankho Mahinan is hidden easily, the story of being sad is heart breaking",
+      "original_post": "ankho mahinn chhupi asani dukhi hone kahani dil bhrosa tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "moderate"
+    },
+    {
+      "post": "I have no words left, you just leave me alone, I want to die",
+      "original_post": "mere pas alfaz nahi reh gayeab ap muje bas chor do mrna chahta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "severe"
+    },
+    {
+      "post": "I have never felt so poor",
+      "original_post": "mujhe itna greb kabhi mehsos nahi huya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "Mahinan can't take care of himself while listening to the night",
+      "original_post": "rat sannate mahinn khud awaz drati apna khud khayal nahi rakh sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "Sunder lage nogle positive tankar day vij",
+      "original_post": "sender lige nogle positive tankr din vej",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I can't stop my heart and it's broken",
+      "original_post": "apne dil rok nahi pa vo tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "cause your an individual contributor not rlly where as they re stream organizations who already have stream advertising on tv so yt let s lot their content slide assuming it s god hopes they can bring more stream advertising the platform",
+      "original_post": "cause your an individual contributor not rlly where as they re stream organizations who already have stream advertising on tv so yt let s lot their content slide asuming it s god hopes they can bring more stream advertising the platform",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 41,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I can't save myself",
+      "original_post": "apne ap bezr hon khud nahi bach pa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "I can't take care of myself, I have a headache",
+      "original_post": "mahin apna khud khayal nahi rakh sakta mujhe bukhr sir drd raha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "At one o'clock in the night Saleem Putre performance Mahinan Behetha Kya Din Gaye Batao",
+      "original_post": "rat ek baje slam poetry performance mahinn bahitha kea din gaye batao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Hey, you're so happy, we're in the finals, your team feels good.",
+      "original_post": "yr tum bat itna khush rahe since finals your team has only played one semifinal which your team lost india dusre ghr mahinn jhakne pehle apna ghr thik lo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Crying makes me sad",
+      "original_post": "rote rehna ek trah mayosiat hahi mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "Every question, the answer of which would make Mel heart restless",
+      "original_post": "hr swal jiska jwab mile dil bechaeni pahida deta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "thik khush jao lekin jyada der khushi nahi dhyan mahin rakhio bat din jyada dur nahi tum rovoge ham hasenge private friendship reason hamra padosibc fandom hahi hakk padosi bc song owner gawr fd",
+      "original_post": "thik khush jao lekin jyada der khushi nahi dhyan mahin rakhio bat din jyada dur nahi tum rovoge ham hasenge private friendship reason hamra padosibc fandom hahi hakk padosi bc song owner gawr fd",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Time is good when they bite each other",
+      "original_post": "waqt acha jb ek dusre katti krty or mna lety",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Let's be happy now",
+      "original_post": "chalo khush ab ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Absolutly, today we can't see the innovation and ignorance of these people.",
+      "original_post": "absolutely aj hasne milta in logon nautankibazi jahalat dekh nahi chr traf mayosiat mahaul chaya",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "While walking along the road, I realized that it would take me some time to take any decision",
+      "original_post": "raste chalte hue mahinne mehsos kia ke kabhikabhi fahisla lene mahinn thoda waqt lagta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18,
+      "severity": "mild"
+    },
+    {
+      "post": "Booker live without living",
+      "original_post": "bekr jina be jena",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "sir g ik siasat depra mazhab istemal kahi lagya o da field o pitch mfr amp co nu dahi sra headon collision nuqsan ba hm akhpl kahi zaka mfr kha mazhabi crd sok hm nashi play kole its ik choice play on pitch mfr now should ber brunt",
+      "original_post": "sir g ik siasat depra mazhab istemal kahi lagya o da field o pitch mfr amp co nu dahi sra headon collision nuqsan ba hm akhpl kahi zaka mfr kha mazhabi crd sok hm nashi play kole its ik choice play on pitch mfr now should ber brunt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 48,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Sir Risalat Bere Mahinan update plztsdents bechhe shakar",
+      "original_post": "sir result bre mahinn update kre plzstudents bechahie shikr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "People are talking about the names of the people.",
+      "original_post": "tab log isme teja galti nikal rahe she ungratefull pata gaya ki bb apne dam nahi jeti apne dam kuch nahi sakty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "keonki jab international rate sasta jaye munafa kamane mauka milesrkron kayi khrche dikhaye nhi ja sakteslie vo pahisa wahan khrch bhi srkr ati uski nazrein petrol diesel he rehti hahiwahin am janta bewakof banti hahy",
+      "original_post": "keonki jab international rate sasta jaye munafa kamane mauka milesrkron kayi khrche dikhaye nhi ja sakteslie vo pahisa wahan khrch bhi srkr ati uski nazrein petrol diesel he rehti hahiwahin am janta bewakof banti hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "aj hr chumtia cricket expert banega hr pidi khush hoga keunki use modi gali dene ek reason finally gya such the sorry state our leli citizens tht they wahit fr indias fahilure project their oneupmanship",
+      "original_post": "aj hr chumtia cricket expert banega hr pidi khush hoga keunki use modi gali dene ek reason finally gya such the sorry state our leli citizens tht they wahit fr indias fahilure project their oneupmanship",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He doesn't want to go out of the house on a sad night",
+      "original_post": "dukh bhri rat ghr bahr nikalne dil nahi krta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "Tears are hidden in the eyes",
+      "original_post": "ansu ankhon mahinn chhupa hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Be happy",
+      "original_post": "khush rahy bhahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Tadap Tadap This villa is coming out of hashish and punished those who feel guilty.",
+      "original_post": "tadap tadap is will ah nikalti chris saza di joke ahisa gunah kia jad dia jad dia chata mohabbat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Just take it daily and reduce it",
+      "original_post": "sra din bas layta rahu kam kru",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Suwarigante from Nawaz Sahab, I think it is abuse, Sahab, I know what it means.",
+      "original_post": "sovereignty from nawaz sahab mery khayal zyadati shayad mian sahab iske mtlb tk pta ho apke sath siasat sahi horhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The disguised Mahinan lost everything",
+      "original_post": "behis halat mahinn ne sab kho dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Light and darkness shadowed my life and courage",
+      "original_post": "roshni bajaye andhera chhaya meri zindagi mahinn himmat thak gayi hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "The heart is crying",
+      "original_post": "ankhahi bhigi hahi dil ro hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "No one can stop what Allah has written",
+      "original_post": "jo allah likh dia koi rok nahi sakta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The heart is broken and the pain is not expressed",
+      "original_post": "dil tot hahi drd izhr nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "Hey Basdak, people sit here for years and there is no break in your life.",
+      "original_post": "are bsdk idhar log sal dharne bahithke mudi koi fark nahi padta tere jahise porki ek twet kuch hoga",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life seems like a dark night",
+      "original_post": "zindagi andheri rat si lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "My dear, but you used to look at me all the time.",
+      "original_post": "meri khahir lekin ap ken hr waqt mujhe dekhti rehti wahise hal pr ahik shahir yad aya sunna deta hn wrna bhol jaon",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The moments spent together with friends have gone to dust and life has disappointed",
+      "original_post": "dosto sath bitaye lamhe khak mahinn gaye zindagi mayos kr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "I got used to hearing death every day",
+      "original_post": "roz roz sedhe maut sunne acchi adat gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "Left Seventeen Rooms Tehreek Adam Ahtmad News Special Transmissions",
+      "original_post": "live situation rom on tehrek adam ahitmad news special transmision mr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Bit vita tuvo s",
+      "original_post": "but with two s",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Forget me so easily",
+      "original_post": "itni asani mera pir bhol",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "I am tired of crying",
+      "original_post": "rone purani bimri mujhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Every moonlit night is dark",
+      "original_post": "hr chandni rat mahinn nakami andhera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Yes, positive",
+      "original_post": "yesh musibat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I wonder why there is no answer to these sorrows and problems",
+      "original_post": "sochta hon keun yeh dukh preshanion koi jawab nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "moderate"
+    },
+    {
+      "post": "Reducing office hours is a cheap way to boost your energy",
+      "original_post": "office mahinn kam krte krte susti ehsas hahi energy bost krne treqa chahie",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "mild"
+    },
+    {
+      "post": "سوررییییییییییییے سر درد دن موت کرن بنگا",
+      "original_post": "sorryyyyyyyyyyyyy sir drd din maut kran banega",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Please bring your pint",
+      "original_post": "plzz delhi apni pant le ana",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Suicide is good",
+      "original_post": "khudkushi achy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "severe"
+    },
+    {
+      "post": "The lonely nights passed at 1 o'clock, but it didn't feel so lonely",
+      "original_post": "tanha ratein pehli bji guzri lekin itna sunsan mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "PEOPLE PAKISTAN UNDERSTAND ACCEPT INTRE NO CONFIDENCE MUTYON HUS BIN INSTIGATED BSV STAND WITH AND PAM",
+      "original_post": "people pakistan understand accept entire no confidence motion has ben instigated by us we stand with our pm",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Har pul lagta mehinan harne hoin",
+      "original_post": "hr pal lagta mahinn hrne hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Believe in God who writes and threatens",
+      "original_post": "joe biden letter likh dhamki deh hahi khuda ko mano yr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Manuela Alaina is sending streaks",
+      "original_post": "meanwhile alina prhahi streaks bhjty hoye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Committ Tash din qe jom kq k thot watmoti shaqir sama bo nisna jim nj motor c yellaka",
+      "original_post": "kumedit tash din qe jom kuq ke thot vetmeveti shyqyr sma bo nsna jem naj moter si yllka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Even the age was still bothering me",
+      "original_post": "sal umer bhi mujhe suicidal khialath rhe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Akroway dil dinlarkan kami din ursan ana ahitsendra",
+      "original_post": "akiro wey dil dinlerken kimi d n yorsan ona ahitsindir",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Mental health is the reason for the month itself",
+      "original_post": "zehni azziat waja mahinn khud",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "I have never felt so alone before",
+      "original_post": "ahise akelepan pehlie kabhi mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Allah does not tolerate disappointment",
+      "original_post": "allah mayosii brdasht nahi hoty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "My love will not change in front of me, but my love",
+      "original_post": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "Dastanzindagi Mahinan Every moment is a lonely journey",
+      "original_post": "dastanezindagi mahinn hr pal tanha safr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "Let me die now",
+      "original_post": "mera mrna sahi rahe ab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "Didilite Numan din pla panatagal pa",
+      "original_post": "dedelete naman din pala pinatagal pa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Death is not a fear, I always try to live every day",
+      "original_post": "maut khauf nahi mujhe apne hr din hamesha jene koshish krta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "God is dying",
+      "original_post": "allah g mrna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "severe"
+    },
+    {
+      "post": "bhahi promotion band kro am admi budget bahr ye iphones to lakhs for fkin mobile u kiding middle clas itne pahise motorcycle activa khrdita hahiand u show it like only tata birla ambani celebs hi becho",
+      "original_post": "bhahi promotion band kro am admi budget bahr ye iphones to lakhs for fkin mobile u kiding midle clas itne pahise motorcycle activa khrdita hahiand u show it like only tata birla ambani celebs hi becho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 36,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My life will remain a sign of pain, no one will remember me",
+      "original_post": "hayad meri zindagi drd nishani ban hi reh jayegi kisi meri yad nahi ayegy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "Heer seg demdans din nam yuram even git g zal bar silapla konersans damak stadium sedke turkinin bi din dovalit ulamad",
+      "original_post": "hayr sayg duymadnz d nm yorum hatta gayet g zel bir slupla konuuyorsunuz demek istediim sadece t rkienin bi din devleti olmad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I should have given the case, but my own issues kept me in the district",
+      "original_post": "mujhe chahie case thawajuh du lekin mere apne masle mujhe distract rahe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "For now, pay attention",
+      "original_post": "filhal prhahi dheyan do",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Haha, waqwe, scattered, innocent, straightforward person",
+      "original_post": "haha waqwe bechra masom sa sedha sa admy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Get bent images hari",
+      "original_post": "get more images here",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Be the first to share your problems with your friends",
+      "original_post": "bezri mahinn rehkrmahinn apne friends apni problems shre hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "The sense of deprivation may die",
+      "original_post": "ehsas mehromi mr hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "Can't guess my straight death",
+      "original_post": "mere sedhay maut andaza nahi lagaya sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "severe"
+    },
+    {
+      "post": "Big match day in Biafra",
+      "original_post": "da en biafra aka buga match din",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life seems incomplete every moment, I lack confidence",
+      "original_post": "zindagi hr pal lagta ke adhora sa mujhe yaqen kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "Hind writing is good",
+      "original_post": "hand writing achi ni ghuzra ho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Bachchi Dil Mahinan Hara Hoon",
+      "original_post": "bechahi dil mahinn hra hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "I am sad if I talk about suicidal thoughts",
+      "original_post": "dukhi hon agr pasive khudkushi soch bat kron bahut si soch",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "I don't understand, it's confusing",
+      "original_post": "samajh nahi pa hon kahise ulajhao hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Always learn to listen to yourself better",
+      "original_post": "hr waqt apne tane sunne behtr suicide lu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "This is what disappointed me",
+      "original_post": "jis eizat usi ny mujhe mayos kia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Madachud did not swell up, you will be happy if your halala happened now",
+      "original_post": "madachod soji na teri abhi tera halala hua khushi to hogy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Did the profit go to their house?",
+      "original_post": "munafa unke ghr gaya kea",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "So Yeshi will become a body, just look at it and you will be happy.",
+      "original_post": "tu eshi body banegi bas tum ese dekh hii khush lo kioki khoge tum nahi hot banke hii rehoge",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My vision has decreased drastically due to which my eyes look very bad",
+      "original_post": "mera wazan bhohot kam gaya jis waja mahinn bohot buri lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "I am suffering from silence and guilt",
+      "original_post": "khamoshion mahinn basa jurm mahinn mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "That's it",
+      "original_post": "yahi ap mazil",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Baa Daya Wala Profit Chatting Har Whatsapp Bit This Friend Har Waya Iniyi Di Babe Denshe",
+      "original_post": "ba daya wlh munafa chatting hr whatsapp but as friend hr waya inayi da babe dinshy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Hahahaha Bohat jalil hua Magumbo was happy",
+      "original_post": "hhhhhhh bohat jalil howa mugambow khush howa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Loneliness will be with me",
+      "original_post": "tanhayi meri sathi ban gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "To commit suicide by hanging himself",
+      "original_post": "khud panke latka khudkushi krny",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "altml yllrn endida dtcf profes rler heyeti trafndan hazrlanm gizli bir rapor elime ge ti rapora g re dou problemens z m indevletindoudaki halkn t rk olduunudillerinin t rk eden baka bir dil olmadn anlatmas georul deniordu smahinl beik",
+      "original_post": "altml yllrn sonunda dtcf profes rler heyeti trafndan hazrlanm gizli bir rapor elime ge ti rapora g re dou sorunun z m indevletindoudaki halkn t rk olduunudillerinin t rk eden baka bir dil olmadn anlatmas gerekir deniordu smahinl beik",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 39,
+      "severity": "non-depression"
+    },
+    {
+      "post": "A strange feeling of sadness settled in the heart",
+      "original_post": "beqrr hokr dil ek ajeb si gham ehsas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Every year, everyone cheats, the marriage is now postponed",
+      "original_post": "prhahi wrhahi sab dhoka krlo shadi abhi moka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Painful heart Sheri Mahinan Azhar not",
+      "original_post": "drd bhra dil shayri mahinn izhr nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Peace be upon you. Thank you. Alhamdulillah. Thank God for every solution. Thank God. Except for the operation, there is no problem. All friends need medicine. Peace be with you.",
+      "original_post": "walaykum asalam shukria alhamdulillah hr hal mahin shukr allah operation ilawa illaj nahin sab friends dua chahie sabko salam khush rahie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "In words, guilt, heart, tears, eyes, Mahinan, Hihi, Ranjogham",
+      "original_post": "lafzon jurm dil rula ankhon mahinn hahi ranjogham",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "din iman paylam yap nerde civciv paylam vr hemen onu ben hatta civciv islamn akahidine ters konusa bile ben sonra radra taklnca rkadalr zerime sal onlrda beni cehennemle sehenna etsinler lan olm cehennemde kat kat en azndan yavaklr katnda olmam",
+      "original_post": "din iman paylam yap nerde civciv paylam vr hemen onu ben hatta civciv islamn akahidine ters konusa bile ben sonra radra taklnca rkadalr zerime sal onlrda beni cehennemle tehdit etsinler lan olm cehennemde kat kat en azndan yavaklr katnda olmam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 40,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Speed ​​Seven Imran Malik Sir Bolde Imran Bhi Speed ​​Bad India Naya Speed ​​Rock",
+      "original_post": "sped str umran malik sir bolde umran bhi sped bre india new sped rock",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I feel like no one is with me",
+      "original_post": "hr kadam mehsos koi mera sathi nahi hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "severe"
+    },
+    {
+      "post": "Write small paragraphs and then don't read them.",
+      "original_post": "chote pragraphs likh bhn asr tb na pdhe hn mn nd phucckkk reason dhrti itself samd bcz u nd so ab kitna bore kregy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Just don't have a single thought in your mind",
+      "original_post": "bs dimagh mn ac khayal rahe q nhi rahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Peak Peak Pleasures Endosphincter Worldcupfunnel Cocfunnel",
+      "original_post": "choti choti khushian indvsausfinal worldcupfinal cwcfinal",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Jazak Allah, you are so sweet. Thank you for the medicines",
+      "original_post": "jazak allah ap bht swet itni pyri duaon liay shukria allah pak her lafz badlay ap dheron khushian ata krein",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Misery Iblisit",
+      "original_post": "mayosiat iblesiat",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2,
+      "severity": "mild"
+    },
+    {
+      "post": "bohot jyada irritating how people like him wonder toh muh dekh lagta kam kam sal nahaya nahi hrakaton mahinn kamenapan was teasing payal in general everyone yoga kuch nahi hotanech",
+      "original_post": "bohot jyada irritating how people like him wonder toh muh dekh lagta kam kam sal nahaya nahi hrakaton mahinn kamenapan was teasing payal in general everyone yoga kuch nahi hotanech",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 30,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The thought of losing so much pain is very difficult",
+      "original_post": "zehan mahinn itni taklef kam jane ki soch bohot mushkil",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "Path Mahinan Khadi guilty",
+      "original_post": "raste mahinn khadi jurm mubtala",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "moderate"
+    },
+    {
+      "post": "Worry days are bad, for example, days are youth",
+      "original_post": "preshani din bure rahe hahi masla hahi din jawani hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "I swear it",
+      "original_post": "kasam bechahi dia yrrr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "mild"
+    },
+    {
+      "post": "No, no, Abbb will be remembered",
+      "original_post": "nahi nahi abbb yad rahega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "How many times Fox Cricket is replaying me?",
+      "original_post": "fox cricket walay kitne frigh hahi mujhe reply kr rhe hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life will be strange. I used to think that when despair came, I used to go to Allah for some reason.",
+      "original_post": "ajeb hogayi zindagi yon kahon mayosiat hoti soch jab mayosi ajati toh mahinn kisi trah allah pas chalijati thi unke kreb",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21,
+      "severity": "mild"
+    },
+    {
+      "post": "Hahahaha",
+      "original_post": "hahahahha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Ramadan hundred is halal",
+      "original_post": "ramzan suicide halal",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "Life Exam and Head Exam Wit Syllabus",
+      "original_post": "zindagi imtehan aur sra imtehan out syllabus a hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Mana, your presence, this life is deprived, live, do not forget, my heart is known",
+      "original_post": "mana teri maujodgi ye zindagani mehrom jene koi doja treka mere dil malom abhisha met mod set",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "The painful story is my essence",
+      "original_post": "drd bhri kahani meri hasti preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Accept the happiness of Sri, but Nigal saw him and thought, Kush is in his place, Babar",
+      "original_post": "srii khushian mana len lekin ngl isko dekh ahik br khayal aya kash iski jaga babr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The day on which the Pak-Bharat match will be played",
+      "original_post": "jis din pak bhrat match us din father day ny",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "And goth work like hitler don't lists anonjhese code negative report listen happy man whese hamri goth work negative way tehe ray worst goth four and youth",
+      "original_post": "our govt work like hitler dont listen anyonejahise covid negative report sun khush insan vahise humri govt work negative waythey re worst govt for our youth",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life is an aimless journey, the destination is not known, just the desire to get tired while walking",
+      "original_post": "zindagi bemaqsad safr manzil pata nahi bas chalte chalte thak gir jane tamanna",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18,
+      "severity": "severe"
+    },
+    {
+      "post": "Have a purposeless life",
+      "original_post": "bemaqsad zindagi guzr hu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "That's all the government is lacking",
+      "original_post": "bs yahi kam rah hahi hukomat",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every moment the pain of deprivation is fresh",
+      "original_post": "hr pal mehromi drd taza hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "inn ku kia fraq prta corror ho corror inho ney jittney khrch kie wo sab ikdadr aney key bad yahi awam ada krye inn ku brey beghrat peysey khrch krtey tu munafa rs rakhte",
+      "original_post": "inn ku kia fraq prta corror ho corror inho ney jittney khrch kie wo sab ikdadr aney key bad yahi awam ada krye inn ku brey beghrat peysey khrch krtey tu munafa rs rakhte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 34,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I take it slow",
+      "original_post": "sust hokr bed leta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "mild"
+    },
+    {
+      "post": "WHAT OF PETROL DIESEL PRIX RAY INCREASED FASA DE TALL LOKSABA ELECTION",
+      "original_post": "what if petrol diesel prices re increased pahisa day till loksabha election",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "since vankr isnt giving confession maine khud likh dala its my first story aj complete hahi lets give trynd find best location for their confession sahirat love confession on",
+      "original_post": "since vankr isnt givingus confesionmahinne khud likh dala its my first storyjo aj complete hahi lets give trynd find best location for their confesion sahirat love confesion on",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I don't care about anything",
+      "original_post": "mujhe kisi chiz tawajo nahi ja",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "May the heart be burdened with worries for months",
+      "original_post": "dil mahinn preshanion bojh mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "Earlier, people used to commit suicide and become sick mentally",
+      "original_post": "phle kia log khudkushi shoq s krte vo bemr hote zehni tor pr jahise mahinn abhy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "The subject can't even feel it inside",
+      "original_post": "subject bhi mehsos nahi sakta s dead inside",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "He also spent the night there",
+      "original_post": "when someone asks rat bhi chahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The wounds continued to hurt",
+      "original_post": "zakhmon silsila chalta rehta dil mahinn drd",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Even though his own people were criminals in the government, he was left alone, but now, Muslims, get up, who has the power to save the parrots, if anyone has the power to save them, only you?",
+      "original_post": "iske apne log hukomat men to mujrim hone bawajod bahil gayilekin abhi mauka musalmano utho constitution bachane taqat agr kisi men to sirf tum",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Not getting attention due to personal problems",
+      "original_post": "tawajuh nahi pa hon personal problems wajah",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "Thank you for your effort",
+      "original_post": "sirappreciate your effort",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "After that, the happiness of the country was lost",
+      "original_post": "bad desh khushian gayab gayy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "LOTUS ALSO NID MAKAY MONEY FUND TOSHAY DERIVERS CRIS",
+      "original_post": "lotus also ned make money fund those drivers crs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "After leaving the tiredness of the month, I start crying while smiling",
+      "original_post": "mahinn thakawat chor ho muskuraty huway ronay lgti hun zro qitr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "mild"
+    },
+    {
+      "post": "My heart breaks before I can say the word",
+      "original_post": "lafz bayan krne pehle dil tot hahi mera",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "Jet dreams, but the heart is here",
+      "original_post": "jet khwab lekin dil keh hahi hrne hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "I don't know, but I will have to make some very difficult decisions in the coming months",
+      "original_post": "mujhe thek nahi pata bhahi lekin ane wale mahino mahinn mujhe bohot mushkil fahisle lene honge",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17,
+      "severity": "mild"
+    },
+    {
+      "post": "Kush will be very happy ontyahar hindu kafphod har gaye australia wale fur ahle book",
+      "original_post": "khush bahut hogi auntyahir hindu kaffor hr gaye australia wale fir ehle kitab",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Ruth is a self-employed person",
+      "original_post": "roth hon khud mahinn preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Respect does not come to everyone",
+      "original_post": "izzat her ahik ras nahin aty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The chain of loneliness keeps me enslaved",
+      "original_post": "tanhahi zanjer mujhe bandh rakhti logon dunia mahinn apni jagah nahi apna khud khayal nahi rakh sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "be happy",
+      "original_post": "khush raho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He said to me, \"Yes, I will wake up a hundred times.\"",
+      "original_post": "mujhe ej din kahi br suicidal khialath athe",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "There is a disappointment on the way to the heart, a broken dream",
+      "original_post": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "mild"
+    },
+    {
+      "post": "We will know how long it will take, think ahead, restlessness, think back, memories",
+      "original_post": "jane hm modh p a gye age socho bechayni peche socho yadein",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14,
+      "severity": "mild"
+    },
+    {
+      "post": "That's it",
+      "original_post": "bas ba",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "No one is happy",
+      "original_post": "fir koi khush nahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "How long is freedom but lack of courage?",
+      "original_post": "rahahi kitni lambi keun ho lekin himmat kamy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "And I can't see the cruelty, I want to die",
+      "original_post": "aur zulam nahi dekh sakta mrna chahta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "Please follow me in the city",
+      "original_post": "mian k shahir hahim b follow dahin plz",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Death is not a fear, I see it as light",
+      "original_post": "maut khauf nahi mujhe use roshni trah dekhta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "La warang ta ni ko dick manager aap lagi bhak ko mumpus ja dripada ko manect kin even covering bodoh punya warang ta positive ta kriput",
+      "original_post": "lah orang tua ni kau duk mengajr apa lagi bahik kau mampos je dripada kau menyakit kan hati korang bodoh punya orang tua musibat tua krepot",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "May Allah give you a long and healthy life for your children, Khan Sahab, Amen.",
+      "original_post": "allah lambi sehatmand zindagi auladon khan sahab amen sumamen happy birthday freimrankhannow frepalestine fregazanow",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "pichle mahine hue rajya chunav pehle hr pundit pandit nahi dhyan dijiega cutia save this twet kah bjp hr rajya mahinn hrne bhavishyavani gaye wo sab bhag gaye pata nahin pagal khane mahinn pakistan mahinn",
+      "original_post": "pichle mahine hue rajya chunav pehle hr pundit pandit nahi dhyan dijiega cutia save this twet kah bjp hr rajya mahinn hrne bhavishyavani gaye wo sab bhag gaye pata nahin pagal khane mahinn pakistan mahinn",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Kare abot thaum zak sar kakhdo otherwise sata pasion khu nim suk tapos um nakhi rejected Alvis single ba mre sata pasion positive ba sar sok akhle",
+      "original_post": "cre about them zaka sr kekhduo wrna sta pashan khu nayam sok tapos am nakahi rejected always single ba mray sta pashan musibat ba sr sok akhle",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Puntsan klo leit arg takt pitted against thought naya tarbasa krah bigtagele banner nunten dakit aja beri bulu child",
+      "original_post": "pantesan klo liat org tkt khilaf trs daya khayal nya terbiasa kerah bgtugile bener nonton dikit aja berdiri bulu kuduk",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I feel very alone and helpless",
+      "original_post": "khud bahut tanha bebasi mehsus krta hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "Don't take my heart, now is the test of love",
+      "original_post": "meri jan tia dil pahi mat lo abhi ishq kay imtehan bhy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "So, the poor man did not study with me, so he studied Goat Sachul",
+      "original_post": "to grib admi sir mere pas padhahi pahisa nahi so govt schol padhta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Manuela Alaina is sending streaks",
+      "original_post": "meanwhile alina prhahi streaks bhjty hoye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Terrorists have been hard under the formirs of Punjab, have been in a bad way.",
+      "original_post": "terrorists have herd that frmers punjab have ben brutally beaten up god cre has ben taken by am admi prty punjab chandigrh sikhs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You are a newspaper",
+      "original_post": "apa khabr nama saya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Say I'm guilty",
+      "original_post": "kahu jurm mubtala hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3,
+      "severity": "moderate"
+    },
+    {
+      "post": "To make pure relations happy",
+      "original_post": "paki rishtedron khush krney liejo sadmen hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The sky is crying, look at the courage of broken hearts like me",
+      "original_post": "asman ro hahi mujh jahise totay hue dilon himmat dekh",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "moderate"
+    },
+    {
+      "post": "The desperation hidden in the eyes would hinder every smile",
+      "original_post": "ankhon mahinn chhupi mayosi hr muskurahat bhi rukawat banaty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "Qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "original_post": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Today I eat dinner, I don't have a heart",
+      "original_post": "aj dinner kha hon dil ek sukon nahi a",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "My death is written every day to die Khase Sakhn Kisi Hajr",
+      "original_post": "meri maut likhi hr din mrna kahise sikhun kisi aujr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "All are not writing themselves",
+      "original_post": "khud toh nhi likh rahe sab",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Aap badi admi sakhti honurabale madamjehise cut hindi if agni dor hothu food can't be made badi admi sakhhimi my family dinger mahinan mobile",
+      "original_post": "ap bade admi samjha sakti honourable madamjahise kat handi agr agni dur hotho khana nahi bann sakta bade admi samjhahiemeri family danger mahinn mobile",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Parasa, heart, soul, face, fist, shelter, that's what I'm talking about. Tell me, how are you?",
+      "original_post": "pyra sa dil madom sa chehra mithi muskan yahi hahi meri bat ap btao kese ap",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "dekho pri jii himmat kam lo hosla rakho adna sa dil hue jhoth moth sa shayr tumhe bas hath dil pr rakh dusre follow wale option pr click mujhe pata mushkil hahi bahot pr zindgi mahinn ese fahisle bhi lene hote der",
+      "original_post": "dekho pri jii himmat kam lo hosla rakho adna sa dil hue jhoth moth sa shayr tumhe bas hath dil pr rakh dusre follow wale option pr click mujhe pata mushkil hahi bahot pr zindgi mahinn ese fahisle bhi lene hote der",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 42,
+      "severity": "mild"
+    },
+    {
+      "post": "I'm dying here, my foreign longing is still there, no hopes, lift now, plus watch, everyone.",
+      "original_post": "mrna rahi hon agahin kash humri foreign trp count hoti no hopes left now pls watch on tv everyone",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16,
+      "severity": "severe"
+    },
+    {
+      "post": "As a child, I was unaware",
+      "original_post": "bechahi si mei bekhabr sa sangenghalty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "Congratulations, inshallah, it will be a lot of profit",
+      "original_post": "bht bht mubrak innshallah bohat munafa ga",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Things that were hidden from the eyes for months would come out only at night",
+      "original_post": "ankhon mahinn chhupi batein sirf rat hi samne aty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "Time has changed, people, status and fate, only memories have changed",
+      "original_post": "badal sab gya waqt log halat aur kismat bas nhi badla thi yadien",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Here are some basic skin care tips to protect your home from harsh winters.",
+      "original_post": "some basic skincre tips that can try at home protect it from drying winters skincre dryskin skincretips healthyskin sehatmandapp",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The sky is full of troubles today",
+      "original_post": "asman rula aj preshanion saya hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "A man is as low as he gets",
+      "original_post": "insan itna gredy jitna mile use km pd jata hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "So Pakhndi Army will check DNA",
+      "original_post": "to pakhandi fauj hahiabhi dna check krega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Memory triggrade from high sachul theshed woodshop teacher made wooden dals thit we all had practice putting condoms s thaum vita family teacher and theshed class",
+      "original_post": "memory triggered from high schol sexed wod shop teacher made woden dils then we all had practice putting condoms on them with female teacher our sexed clas",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every day the thought of going less seems painful because the sadness crushes me inside",
+      "original_post": "hr roz kam jane soch drdnak lagti keunki dukh mujhe andr kuchal hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "severe"
+    },
+    {
+      "post": "The way out is difficult, but I don't see a way out",
+      "original_post": "azziat nikalne rasta dhundh hon lekin mujhe rasta nahi dikhta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "Better gay spain rather be typical woman tehre a otsde sherry unrealistic poems cinema puzzles",
+      "original_post": "better be homo sapien rather being typical woman there a outside shayri unrealistic poems cinema puzzle",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I don't want to live the days that are boring",
+      "original_post": "bohat azziat nak din mere mahinn nahi jena chahty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "severe"
+    },
+    {
+      "post": "You will cry a lot, save your wife when you swear, man's chin",
+      "original_post": "bahut royga apne biwi bacho juthi kasm khay vo admi thodi h",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Tere Nawaz Sharif was the worst thing under the happand Pak but theis nowbode was gifted people b army was theis secondary corrupt courts survey we",
+      "original_post": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this scoundrel corrupted courts serve him",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Rahahi Jadgi Dil Rishta Tot Hihi Why don't I get your smile",
+      "original_post": "rahahi jud gayi dil rishta tot hahi keun teri muskurahat nahi milty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "moderate"
+    },
+    {
+      "post": "Beautiful thing, Riz asked, will you go without me?",
+      "original_post": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Takruo Vajhbasae Nehi Troops Tijarn Family Cause Tja Jath Ding Photo V Nehi Dilthi Dhi Sir Pak Nshanth With Trending News Vote Appeal",
+      "original_post": "tcrow vajahbsae nehi trops tejran family vajah sae teja jethi dang sae photo vi nehi dalthi dhi sra pick nishanth kae sath trend khabr vote apeal kia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He wants to marry someone and die",
+      "original_post": "uska kisi se shadi gayi mrna chahta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "Why am I so hungry?",
+      "original_post": "mujhay itni bhok kiun lagty",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "mild"
+    },
+    {
+      "post": "Moments have passed, but their memories have also been lost",
+      "original_post": "lamhe guzr gaye pr unki yadon mahinn bhi khoi hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "I'm going to do it",
+      "original_post": "prhahi nae horhe kron",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Yer Tatti Jartahi yadahi nahi chha",
+      "original_post": "yr tatti jrtahi yad nhi chahia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You don't have to worry",
+      "original_post": "prhahi nahi krni hoti tumhahi kia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "I cry secretly, but my eyes are full of courage",
+      "original_post": "chupke roya krta hon magr himmat ankhon beh gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "moderate"
+    },
+    {
+      "post": "Those who have disguised power can only do so much pain in their hearts. They will call it hypocrisy",
+      "original_post": "behis iqtedr kwahish rakhne wale juda drd dil dua siwa kea sakte ise ap munafqt kahenge kea kren",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "mild"
+    },
+    {
+      "post": "You can't change your destiny",
+      "original_post": "apni kismet likha nahi badal sakta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "Let the life pass by, let the rest of the feelings be open and sad",
+      "original_post": "tery sang guzr jaye umer ju baqi has do zra khul kahyy udas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "mild"
+    },
+    {
+      "post": "Every smile hides a deep regret",
+      "original_post": "hr muskurahat mahinn chhupa ek gehra afsos",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "I feel very sad that the person is forced to go. He said that everywhere they find only despair.",
+      "original_post": "mujhe bahut dukh rha hakhir majbur insan jaye jaye kahahr traf sirf unhe naumidi milti hjra sochie abhi uanpr bet rhi hogy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19,
+      "severity": "mild"
+    },
+    {
+      "post": "From there the army fills goosebumps",
+      "original_post": "whenever se fauj fel gosebumps",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "severity": "non-depression"
+    },
+    {
+      "post": "My life has been dark and dark for months",
+      "original_post": "asani dukhi hone silsila jahise meri zindagi mahinn gehra andhera chha ho",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "moderate"
+    },
+    {
+      "post": "I cried and tried to fill it with pain",
+      "original_post": "ro ro ankh drd rahe fel krne koshish mei kuch ziada fel gayy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "severe"
+    },
+    {
+      "post": "This will be written in the Pasam paper, and the medium will be happy",
+      "original_post": "yhi likh aega psm paper mahin medem khush hojegy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14,
+      "severity": "non-depression"
+    },
+    {
+      "post": "A heart full of wounds but not pure enough to have the courage to respond",
+      "original_post": "zakhmon bhra dil lekin himmat mukabla krne lie tahir nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "moderate"
+    },
+    {
+      "post": "If the match was full of pain, the thought would be happy",
+      "original_post": "kash mahin behri match hrne dukh to chhat puja ye soch khush hojata",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Asb day mom mish mustamila",
+      "original_post": "asab din omi msh mestamela",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every night a new dream breaks",
+      "original_post": "hr rat naya khwab tot hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Brother, believe me, she started committing suicide",
+      "original_post": "bhao yaqen kro khudkushi krne lagy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "If you write to me, my heart will be happy",
+      "original_post": "ahisa mujhe likh dogy dil khush hojayega",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Pakistan India is not looking at how happy South Asia is.",
+      "original_post": "pakistanis india hr keun khush hotey ye nhi dikh rhi tmhey south asia kitna peche raha icc events m",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Common Errors Matters in Muslim Ramadan Common Errors Involving Cultural Practices and Traditions Issues Socializing After Taraweeh",
+      "original_post": "common errors made by muslims ramadhan common errors involving cultural practices amp traditions excesive socializing after traweh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Breaking news",
+      "original_post": "breaking news",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life doesn't look mixed, just keep going",
+      "original_post": "zindagi koi maksad nahi dikh bas chalti rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "moderate"
+    },
+    {
+      "post": "All obstacles along the way have been removed",
+      "original_post": "raste mahinn ayi rukawat sab khatam dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "moderate"
+    },
+    {
+      "post": "Malik Chnaav Phasa Ko Lagu Rana Ayub Parth",
+      "original_post": "mlc chunav pahisa keu lagta rana ayub prt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Every day seems like a new lonely journey without the body",
+      "original_post": "hr din naya tanha safr lagta jismahinn sathi nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "moderate"
+    },
+    {
+      "post": "Thank you very much",
+      "original_post": "bahut bahut shukria apka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Buckley dost capson road dost asin gun lilar construction ahli dil asin sauda saharasinda makinon dilson leler riknam li ankit",
+      "original_post": "bkle dost kapsn sadk dost isen g n ller tamir et ehli dil isen sevda sahrasnda mecnun deilsen leylay r canm l incit",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Crooked power misters, vain oppressors, the sky has not fallen asleep, so the test is ours",
+      "original_post": "more power my sisters batil dabne wale ay asman nahi sau br chuka tu imtehan humra",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Mahinan Thanu Bhoot Peer Kurdi In Ashedav Ahse Bolte Alu Punjabi Khush",
+      "original_post": "mahinn tuhanu bahot pyr krdi an elvishyadav ahise bolte ilu punjabi khush",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Life test disappointed me every moment a new punishment",
+      "original_post": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    },
+    {
+      "post": "Kusmat, this is my exam, treatment, this is my pain, my heart never got rid of it.",
+      "original_post": "kismat yah mera imtehan rahi tadap yah mujhe drd rahi dil kabhi mahinnne use dor nahi kia phir keon bewfahi woh ilazam rahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Suicide Yes Tera Mahanam will die, the people of the nation will suffer",
+      "original_post": "khudkushi es tra mahinm mr jauga qoam ke jan chot jaygy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13,
+      "severity": "severe"
+    },
+    {
+      "post": "Please check my account",
+      "original_post": "mera account ma pahisa bhej check kro zra",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "am loving my timeline full beautiful edits mahin kehti aj sri negativity ignore krte or esi choti choti khushian celebrate krte kuke bhahiii babr laughed babrazam babrlaughed babrlaughedalhumdulillah",
+      "original_post": "am loving my timeline full beautiful edits mahin kehti aj sri negativity ignore krte or esi choti choti khushian celebrate krte kuke bhahiii babr laughed babrazam babrlaughed babrlaughedalhumdulillah",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The low box habit filled my life with sad months",
+      "original_post": "kam khanay adat meri zindagi udas mahinn bhr dia",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "I have been doing hundreds of things",
+      "original_post": "suicide krny rhi hon kisi rokna to rok lo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "severe"
+    },
+    {
+      "post": "I can't take care of myself every time I feel pain",
+      "original_post": "mahin apna khud khayal nahi rakh sakta hr kadam mujhe drd mehsos hahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11,
+      "severity": "severe"
+    },
+    {
+      "post": "Mian Wu cannot be happy for his daughter",
+      "original_post": "mean vo apn pati kelie khush nahi sakty",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Khattak Lilla Treat Rekha Khabar",
+      "original_post": "khattaka lala treat rakahi khabr",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "my babies lots nd lots love happiness success for cuties mata rani bless and family always hmesha khush raho pyre khob sra pyr kro khob sri masti kro shadi super super super son evil eyes off tejran",
+      "original_post": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khush raho pyre khob sra pyr kro khob sri masti kro shadi super super super son evil eyes off tejran",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 37,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Pakistan's new father was happy as his father won the World Cup",
+      "original_post": "pakistan naya bap ahise khush rhe jahise inke abba world cup jeta",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Slow down and reach your financial goals",
+      "original_post": "sust hokr apne financial goals achieve krne mahinn lahid back hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7,
+      "severity": "mild"
+    },
+    {
+      "post": "More boxes habit cause everyone called me hungry",
+      "original_post": "zyada khanay adat waja hr mujhe bhuka kehte",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "I feel lonely for months",
+      "original_post": "tanhahi mahinn mehsos hahi preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "severity": "moderate"
+    },
+    {
+      "post": "They would only pay attention to their grief",
+      "original_post": "sirf ghammo tawajo dete",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "severity": "mild"
+    },
+    {
+      "post": "I can't help myself, I lost my relationship without care",
+      "original_post": "khud maf nahi pa hon mahinne be prwahi mahinn apna rishta kho",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10,
+      "severity": "mild"
+    },
+    {
+      "post": "The day will pass",
+      "original_post": "sad jayega din",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Now only the chain valve is reliable",
+      "original_post": "ab bas china walo bhrose ghuzra kat hahy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Take this helplessness well",
+      "original_post": "is bebasi acha suicide lu",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4,
+      "severity": "severe"
+    },
+    {
+      "post": "Happy to stay at home today",
+      "original_post": "aj kal akhele ghr rehne khushi rahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "Deshpam is not happy but the children cannot cry",
+      "original_post": "desh pm khush nahi but bache trah ro nahi sakte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Watch IPL and be happy",
+      "original_post": "ipl dekho khush raho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "It was difficult for my ghost to go down after he left",
+      "original_post": "kam jana mere bhot muskil gaya uske jane bad",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12,
+      "severity": "severe"
+    },
+    {
+      "post": "Gase Spay Dhan Du Shna Toh Toh Aaj Hamri Raat Din Hai Khush De Aba Ashe Khush Du In Ko Se Thies Instagram B",
+      "original_post": "guys ispe dhan do sunny toh aj hmri rat din hii khush die ab ise khush do unn ko se this instagram by",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Write this today, I cried",
+      "original_post": "tusi aj likh lawo ma nae jay rona",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5,
+      "severity": "non-depression"
+    },
+    {
+      "post": "Stop the gas",
+      "original_post": "prhahi khatam krao guys",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3,
+      "severity": "non-depression"
+    },
+    {
+      "post": "With the passage of time, I feel like people are getting less and less support",
+      "original_post": "waqt sath mere kam lekr logon attitude badal mujhe lagta hahi ki kam jane mahinn mujhe support nahi raha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15,
+      "severity": "severe"
+    },
+    {
+      "post": "Dhoni is not happy",
+      "original_post": "dhoni fans khush na",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "You were happy when Babar was dead",
+      "original_post": "tum to khush jb babr hatt tha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7,
+      "severity": "non-depression"
+    },
+    {
+      "post": "The painful story is my essence",
+      "original_post": "drd bhri kahani meri hasti preshan hon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "moderate"
+    },
+    {
+      "post": "Life has never felt so lonely",
+      "original_post": "zindagi mahinn itni tanhahi ki mehsos nahy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "severe"
+    },
+    {
+      "post": "Sabko Khush is not that easy",
+      "original_post": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6,
+      "severity": "mild"
+    },
+    {
+      "post": "Thank you very much",
+      "original_post": "bahut bahut shukria apka",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4,
+      "severity": "non-depression"
+    },
+    {
+      "post": "He didn't even heal his wounds by slowing down",
+      "original_post": "sust hokr apne surroundings mahinn bhi change nahi la",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "severity": "mild"
+    }
+  ]
+}

@@ -1,0 +1,3022 @@
+{
+  "metadata": {
+    "language": "spanish",
+    "sample_size": 500,
+    "requested_size": 500,
+    "seed": 42,
+    "created": "2026-02-23T13:24:55.161090",
+    "source_total": 669513,
+    "label_distribution": {
+      "depressed": 250,
+      "not depressed": 250
+    },
+    "labeling_method": "silver_label_consensus",
+    "classifiers": [
+      "xlm-roberta-depression",
+      "grok"
+    ],
+    "agreement_rate": 0.0812
+  },
+  "samples": [
+    {
+      "post": "Las inseguridades y los miedos son la base de todos mis pensamientos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Duele saber que a nadie le importas, que nadie te necesita, y que todos estarían mejor si tan sólo te fueras.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "No paran de llover las nubes del fracaso",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "a veces uno no sabe como esta, ya que no se siente ni bien, ni mal, es sentir la nada absoluta parecido a estar completamente vacío.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Ahora solo tengo el recuerdo de lo que no pasó.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Su felicidad es mi desgracia.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Ahora vuelvo a ser quien era ayer... Nadie o sólo alguien del revés...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Soy una persona que se pone triste muy fácilmente, perdón por ser así.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Mis amigos me ignoran😢",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Es realmente triste como una palabra puede destruirte absolutamente en cuestión de segundos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Si suicidarse no fuera doloroso el mundo estaría vacío.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Ojalá me arroparas entre tus brazos y me quitaras todos mis males.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "No me siento lo suficientemente bien.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "De seguro estas haciendo tu vida, mientras yo me quedo estancado en la mía.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "¿Por qué me sigue doliendo algo que se supone que ya superé?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "¿Como puedo dar amor, cuando amor es algo que nunca tuve?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Hago toda esta mierda para otras personas, y luego me despierto y estoy vacío, no tengo nada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "¿Que carajo sucede? Cuando me peso, mi peso está bien pero el espejo y mis ojos no lo ven así porque NO LO ES.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Me construyes como si fuera bloques de construcción, sólo para derribarme.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Empezó Todo con sonrisas y risas...pero término con llantos y angustia.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Todo esta bien hasta que me miro al espejo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "sigo creyendo que alguna vez me van a querer como yo quiero, capaz ese es el problema.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Sé que toda esperanza es una trampa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Estoy siempre sola y triste. Harta de sentirme así.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Estoy bien. Bien hundida. Bien decepcionada. Bien vacía. Bien harta. Bien rota. Bien fracasada. Bien inestable. Bien triste. Bien cansada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Que boluda que soy no aprendo más",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "El tiempo solo sana lo que ya no importa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Debí imaginar que en tu futuro no cabían mis abrazos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Ya no se como actuar, quien ser o que creer... Que sentir ni que esperar de vos.\"",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Me voy a tirar de esta ventana. Lo haría si fuese mía.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Estoy cansado de que influya más ese \"me han dicho tanto de ti..\" que tú mismo.\nEstoy cansado de que nada venga de frente.\nEstoy tan cansado",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "Necesito un ángel que me salve de mis demonios .",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "¿llorando por alguien que debí haber superado? ¿yo? probablemente.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Lo desenterraron.\n\nY se me rompió el pinche corazón y se me deshizo la poca humanidad que entonces tenía.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "quiero dormir por un largo tiempo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "¿cuántas veces has dicho adiós, esperando a que una sola vez te detenga?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Prometí volver a escribir y sigo sin hacerlo. ¿Ves? Incluso soy una decepción conmigo mismo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Necesito un descanso de mis propios pensamientos",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Can't help but think that it should have been me, either way I still wish you were here.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Literalmente no puedo hacer nada útil por mí. Todos mis problemas lo resuelven terceros o mi \"príncipe azul\".",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Soy un fracaso",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Odio ser tan sensible, lloro por la minima cosa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Ya pasó 1 años y aún no logro superarte.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Me aleje porque creí que sería bueno pero lo único que logré fue herir mi alma.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Te prometí decirte cuando estaba triste, pero te cansarás de oírme decir que estoy triste todos los días.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "¿Sueno exagerado si digo que ya no tengo fuerzas para tirar de mí mismo?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "No aguanto más las ganas de matarme.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "¿Alguna vez han estado tan tristes que ni siquiera pueden llorar y se sientan allí sólo a pensar en lo triste que es todo?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Los audífonos en mis oídos, mi corazón hecho mierda, la cabeza revuelta y un rostro de ‘No pasa nada.’",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Nota mental:\nNunca. Jamás. En tu vida, le ruegues a nadie. \nPorque nadie merece sentirse importante, ni tu tan miserable.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "no quiero ir a la facultad mañana, ni pasado ni nunca",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Y despiertas y ves que no eres el amor de la vida de nadie, que hace mucho nadie te extraña, que estás solo, triste y un poquito muerto.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "me gustaría que alguien tuviera miedo a perderme",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "sonreír con tristeza se ha vuelto una costumbre.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Sólo vivimos para ser un recuerdo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "No puedo explicarles lo MAL que me siento, me encantaría morirme en este preciso instante.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Eres muy joven para saber lo mala que es la vida.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Toda la grasa que cuelga alrededor de mis piernas me da repulsión, asco.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "No quiero ir a cursar, quiero morirme.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Quisiera que alguien estuviera para mi en esas noches de depresión.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Y encuentro mil lugares donde irme, pero ningún lugar donde quedarme.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Últinamente duermo poco y pienso mucho, y eso me está consumiendo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Yo no me merezco ni mierda en esta vida",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "a medida que pasan los años voy perdiendo más y más amigos, si sigo así voy a terminar completamente sola",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Quise que este año sea diferente a los demás, pero no, va de peor en peor.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Odio a mi familia, me odio a mi mismo, los odio a todos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Mensaje no enviado:\n\nMe destruiste.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "No puedo más. Con nada de esto.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Que estúpido fui al pensar que alguien como tu se iba a enamorar de alguien como yo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Tan feo. \nTan estupido. \nTan bueno para nada. \nTan mierda. \nTan inutil. \nTan yo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Estoy a nada, literal; \"a nada\" de hacer una pendejada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "No soy suficiente",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Uno quiere creer, pero la apatía no ayuda en mucho.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Brindo por todas esas palabras que no te dije por miedo a lo que pensarás, o dijeras.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "No puedo intentarlo con nadie más, sólo quiero contigo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Ya no quiero ser temporal para nadie.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "cada día me siento más y más sola",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "¿Cómo interpretar un silencio de MESES de alguien que se supone que te quería mucho? Es para un amigo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Por qué existe la gente como yo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "¿Y si me tomo esas pastillas?¿Y si me corto lo suficientemente profundo como para que mi alma descanse en paz?¿Y si me muero?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Me falta vida en mi tiempo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Yo se que tengo amigos pero siento que no tengo a nadie con quien hablar de toda la mierda que pasa por mi cabeza.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Te extraño, pero ya no me queda más nada que hacer.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Necesito que alguien me abrace de vez en cuando siento que todo está perdido.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Ella dice que esta bien, pero por dentro se esta muriendo lentamente.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Me declaro un cobarde. En vez de salirme del grupo de whsts silencie notificaciones",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "todo el día en la cama sin ganas de nada, así veo la vida pasar",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "No tengo en quien confiar, todos me decepcionan, o tal vez no, quizás soy yo el que se aleja y decepciona a los demás, aún no lo se.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Ese sentimiento cuando no estás triste , pero te sientes realmente vacío.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Las promesas no son lo que eran antes, las promesas duraban toda una vida, ahora sólo semanas.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "¿A dónde va uno cuando no quiere estar en ninguna parte?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Perdón por sentir lo que siento, por pensar lo que pienso, por ser como soy, perdón por todo, te juro que yo también odio todo de mi.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "que triste es estar vivo y no estar viviendo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "nadie tiene miedo de perderme",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "En qué momento llegó a ser que no puedo decir nada sin que me traten como una basura?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Dicen que la confianza  se recupera con el tiempo, pero el tiempo nunca se recupera.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Mi \"estoy bien\" significa que estoy de pie, respirando, andando, sintiendo, pero no significa que estoy feliz.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "¿Sabes qué es lo más triste de mi situación? Idealizar a las personas y siempre esperar más de ellos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Hola ¿alguien sabe cuánto falta para que me muera?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Viven diciendo que me quieren y que están para mí, pero justo cuando los necesito se van todos y me dejan solo. Váyanse a la mierda",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Estoy chata de mis medicamentos, deberían darme mínimo algo pa bajar de peso también",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Aveces pienso que es mejor estar solo, total siempre estoy solo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "últimamente todo me sale mal.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "siento que todo es demasiado para mí y no puedo manejarlo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Usted no me hable de odio a mi, si nunca te miraste en el espejo y odiabas todo lo que se reflejaba en él.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Estoy esperando a que llegue el día en que no extrañe nada, hasta entonces sigue doliendo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Mi vida es un grito inacabable.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "¿alguna vez has sentido esa sensación de que le molestas a la persona que tu consideras especial? o ¿sentir que está contigo por lastima?...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Que triste es dar lo mejor de ti, para que al final te quedes sin nada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Me arruina todo ser tan inseguro.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "supongo que eso es todo lo que hago,\ndecepciono a las personas que amo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Es que no sé qué hago despierta. Si por la mañana no se hace nada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Sentirme con ese dolor en el pecho cada que te veo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Me siento literalmente rota y esto ya ni puedo callar. Quiero gritar, llorar, hacerme daño a mi misma de mil formas… https://t.co/KklnE2IXYQ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "Real que si mi vida no cambia de acá a diciembre, me suicido. No aguanto más nada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Sálvame; no quiero estar así.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Soy un egoísta.\n\nLo sé.\n\nEn lugar de alegrarme por él...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "No tengo razones para sufrir, tampoco tengo alguien a quien amar.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "De algún modo u otro me siento, solo, vacío, ya nada me importa.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Me da miedo quedarme solo con mis pensamientos por que son los que mas daño me hacen.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Estoy tremendamente triste por el día que me ha tocado vivir hoy.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "No hay peor forma de torturarse que pensar en que hubiese pasado si en vez de hacer lo que hiciste hubieses hecho otra cosa.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Es difícil seguir cuando ya no hay nada por qué hacerlo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Los días que pasan,\nLas luces del alba,\nMi alma, mi cuerpo, mi voz,\nNo sirven de nada",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Pensarte tanto me hace mal",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Siento impotencia dé no poder hacer nada por mi hijo me cierran las puertas y no encuentro salida",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Me miro y pienso; “No hay nada de mí que me guste” \nMe miro y me digo a mí mismo; “Debe ser difícil querer a alguien como yo”",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "No estoy preparada para suspender trágicamente mañana y que me comuniquen que tengo que repetir curso. No lo estoy.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Es tan típico de mi tratar de huir cuando mi pequeño mundo se esta prendiendo en llamas.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Sabes que ya no hay nada en tus muñecas y aún te sigues sintiendo incómodo cuando alguien las revisa.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "estoy cansada de sentirme mal y encima siempre por las mismas cosas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Estoy dividido constantemente entre matarme o matar a todos los que están a mi alrededor",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Nací con el cordón umbilical enrollado en mi cuello, o sea que antes de nacer ya me quería matar, no esperes más de mí.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Que si contara el tiempo que paso mirando al techo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "¿A qué edad se deja de llorar por todo?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Por qué \ntodo el mundo\ntiene algún talento\ny yo\nel único que tengo\nes fracasar en todo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Me voy sintiendo diferente con cada lágrima que sale de mis lagrimales. En cada una de ellas va un sentimiento que dolía.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "¿a quien quiero engañar? soy una idiota.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "El peso de la tristeza en la oscuridad.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "El peor sentimiento es despertarse triste como la noche anterior.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Me dicen que me notan diferente, más apagado… Les respondo que no me pasa nada, que solo dormí mal. Ojalá fuera por eso…",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "todo me afecta, todo me pone mal, todo me hace llorar, Que mierda ser tan sensible y que la mínima cosa te afecte",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Extraño a mi vieja y extraño a Chester, los dos pilares de mi vida se fueron.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "¿Seguro que no puedo vivir a través de las chicas Gilmore? No quiero tener responsabilidades, ni decisiones que tomar ni dinero que ganar.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "De la tristeza surgió la nada,\nde la nada el vacío,\ndel vacío las carencias,\nde las carencias la frustración.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "estoy cansado física y mentalmente",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Estoy harta de sentirme así, solo quiero estar bien y no puedo. Las ganas de morir me consumen.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Sabéis que siempre digo que lo hago todo mal y no sé nada. Es que es más fácil, así es imposible defraudar a la gente.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Me dan más pena los perritos callejeros que pasan hambre que los nenes de la calle. Soy una hdp.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Mi mundo se derrumbo y con el mi vida",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Estoy triste y no se por que",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "¿me voy a sentir así toda mi vida?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Ella va caminando con la mirada perdida, la mente en otro sitio, rota, triste.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Y todos empezamos a descojonarnos como si no hubiera un mañana.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Puedo dormir 10 horas y aún así voy a despertar cansado.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Es tanta mi inseguridad que cada vez que paso por un grupo de chicas o chicos bajo la mirada, simplemente porque siento que se burlan de mi",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "Ojalá la vida tuviera un botón de reinicio.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Me siento tan mierda.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "No tengo ganas de seguir pero tampoco tengo ganas de parar",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Lo siento por estar triste todo el tiempo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "No te culpo por no quererme, después de todo, ni yo me quiero.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Últimamente mi madre me pregunta que si fumo \"otras cosas\".\nYo ya no sé cómo decirle que no porque cada vez llego más fumado a casa.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Estoy cansado de ponerme triste sin razón.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "El peor sentimiento es fingir que algo no te importa cuando la verdad es en lo único que piensas.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Estoy bien, me río y me divierto, pero en el fondo siento un vacío que no desaparece aunque esté riendo a carcajadas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "Todo lo estas haciendo mal, que no te das cuenta que todo lo que haces se está volviendo vacío, todos los sentimientos mierda.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Mi estado de animo es una mierda, porque puedo estar re bien por unos segundos y al rato no tener mas ganas de vivir.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Odio ser sensible, y que absolutamente todo me haga daño.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Hostia, cuando yo era niño le pagaban cantidad de royalties a esta señora para que ESTIMULARA MI SUPERPOTENCIAL, me siento SUCIO.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Aveces me pregunto si habrá alguien que se alegre de haberme conocido.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Me siento muy mal sobre cosas que antes no me importaban o me hacían sentir muy bien. Hasta pronto.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Mi fantasía sexual es dejar de estar tan triste todos los malditos días de mi vida.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Y nadie puede hacer mis días tan maravillosos como lo hacías vos.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Me estoy sintiendo mal, y nadie se da cuenta. Es como estar ahogándome, aún cuando estoy dando todo de mí para salir de esa tormenta",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Tengo ganas de morirme",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "He soñado que no tenía que trabajar. Pero for real, nunca más. Y de verdad que ahora creo que vivo en una pesadilla.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "No me puedo dormir",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "tengo mucho miedo de que te aburras de mí",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "En mi puta vida vuelvo a perderla",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "imagino mi suicidio unas 9264 veces al día",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Todo lo que hago me hace sentir culpable.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Sólo una esperanza me queda: Que la muerte no tarde.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Nunca vayan a hacerse examen médico estando crudos y desvelados.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "ojalá tuviera talento o una personalidad para ocultar mi falta de talento",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Todos piensan que me da igual todo.\nNadie piensa que me lo guardo todo en mi interior.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Ya no tengo su fotografía esa que alegraba mis mañanas cuando yo me levantaba",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "La noche es el único momento en el que puedes sentir total soledad, pues ni hay sonidos del exterior.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Me gusta venir a dar pláticas porque me elogian, pero tanto elogio me abruma, así que ya no me gusta.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Me siento demasiado mal.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Finjo ser feliz, cuando tengo cortes en mis muñecas, cuando lloro todo el tiempo, cuando solo estoy destruido y pienso en morir.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "duele saber que nunca me mirarás como yo te miro.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Nunca me quisiste, sólo te gustaba la idea  de ser todo un mundo para alguien.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Solo quiero a alguien que no se vaya cuando las cosas se pongan duras…",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Últimamente me la paso emperrada. Neta hoy nadie me pinches hable. Que con solo respirar cerca de mi los pinches voy a matar a la verga.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "me jode que todos la pasen bien mientras yo me deprimo aquí.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "A veces desaparezco sin razón, porque necesito alejarme de todo y aclarar mi ideas.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Y siento que cada día me afectan más las cosas.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "estoy harta de esta vida de mierda solo quiero morirme",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "no logre sobrevivir dentro del caparazon",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Igual pensáis que es una bobada pero yo siempre he estado gorda y no me imagino de otra manera.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "—¿Como te sientes?\n—Como un estorbo",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "odio pensar, siempre llego a conclusiones triste",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Es tanto el dolor que sientes que ya ni sabes cómo describirlo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Somos producto de nuestras propias decisiones: yo me he destruido a mí mismo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Mi familia piensa que me encuentro bien, pero ellos no saben las veces que me he encerrado en mi habitación deseando dejar de existir.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Mis amigos me cansan, da igual cuando leas esto.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Tengo la sensación de que llevo 8 años constipado.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "ESTO ES UN DESMADRE",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Sólo el vacío me escucha, \nSólo el vacío me alcanza.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Quisiera que el amor (de pareja) no fuese tan importante para mí, siempre salgo vuelto mierda",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Nunca vas a entender como me siento",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "que horrible es ser yo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "estoy en esa etapa de mi vida donde no sé en quien confiar, donde estoy la mayoría del tiempo solo y a veces lo prefiero así.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 26
+    },
+    {
+      "post": "No se a donde ir.\nNo se qué sentir.\nNo se por quien llorar.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Me siento tan solo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "lo único seguro en mi vida son las crisis existenciales, los bajones que me agarran de la nada y las inseguridades",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "No quiero que me importes demasiado, porque cuando te vayas no sabré qué hacer.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "estoy cansado de tanta mierda",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "llorar es feo pero llorar de la bronca o del cansancio que te causa haber aguantado muchas cosas, eso es lo peor que existe.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "En la calle podré estar feliz, pero al llegar a casa soy la persona mas triste del mundo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "soy tan inseguro físicamente conmigo mismo que hasta la más mínima cosa negativa que me digan me afecta y me dan altas ganas de llorar",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Me siento harto, cansado.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Creo que te extrañaré por siempre..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "A veces siento la necesidad de hacerme daño.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Cada día que pasa me cuesta más y más seguir intentándolo.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Una de las peores sensaciones es sentirse ignorado o reemplazado.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Y es tan triste ver que estando tan cerca, soy tan pequeño en este mundo para lograr hacer algo por aquellos que lo necesitan",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Extrañando a alguien que no me extraña",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Estoy tan disgustado con mi cuerpo, malditasea.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Lo peor no es morir, lo peor es vivir y sentirte muerto por dentro.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Me mataste por dentro.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "que triste es saber que nadie se la jugaría por mi",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Pasado el tiempo, aprendes a no darle importancia al qué dirán, pero los complejos del pasado siguen grabados a fuego en tu cabeza.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Estoy sentada sin pensar en lo que hice mal, tampoco pienso en lo que quiero hacer. Solo estoy sentada.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Papabenja ya había fallecido, y Mamalupe se había transformado en algo así como una muñeca de trapo. Sin voluntad, sin hablar...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "NO SE QUE ES PEOR. NO SENTIR NADA O SENTIRLO TODO",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Mis padres fueron los primeros en hacerme dudar si el amor existía",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Soy un desastre queriendo, no sé controlar lo que siento",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Qué triste sentir que no vales lo suficiente como para que tengan la disposición de intentar todo por ti.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Tengo ganas de que alguien me quiera, pero tristemente nadie tiene ganas de quererme",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Necesito empezar de cero lejos de toda esta mierda.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "nunca seré suficiente para ti.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Morir es un descanso entero, y yo quiero descansar, ya no quiero seguir luchando, me cansé de luchar, luchar por algo que no ganaré.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Me causa una tristeza inmensa sentir que el lugar que ocupo en personas no es el mismo que ellas ocupan en mí",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "Hasta el coño de que nadie confíe en mi",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "No me rescato mas",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "No puedo soportar la idea de que otras personas me miren y piensen que me veo horrible, que soy una mierda",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Tengo miedo de que te vayas, tengo miedo de que encuentres a alguien mejor que yo o simplemente cambies tu forma de pensar hacia mi.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "No sé si estoy llenando con lágrimas mi vacío; o si las lágrimas sólo lo hacen más grande.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Lo único que perdí ayer fue mi dignidad y cordura.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Espero que en el exámen venga el pleito de jukilop y Kenia os que ya me se todos los detalles 😂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "neta jaja me va a dar algo🙂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Me dan risa las piernitas de pollo de Bau 😂😍 https://t.co/5RfIuApz0F",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Así es 👊🏻🥊 https://t.co/Temr6mzPQC",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@TapiaFernanda Todas las promesas que han hecho los políticos en campaña!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@living__waters_ Entonces el Rodríguez es de Origen Hebreo!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@MarivyGlez Jajajaja😂 si, lo peor es que ni había tomado",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Me quiero hacer amigo de las vestidas pero siempre andan en su papel.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Que estrés😕",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Que mi crush me hable https://t.co/AJ5WqTesxt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@cuchufletabell Eso dicen muchos... hasta que caen😂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Gracias por estás enseñanzas que nos regalas, eres un chico increíble con un corazón inmenso❤ @mariobautista_ https://t.co/YnSMdUz4pC",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Así, como quiero.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Que pena",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@geraramirez11 Teamo+",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Videoconferencia (@ schlumberger) http://t.co/2pnirhOa21",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "cuando uno quiere algo y sabe que valdra la pena, no se cansa y no deja de luchar",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Las virtudes del mitológico pegaso son valor, prudencia e inteligencia; todas ellas -cual Perseo-  las necesitarán… https://t.co/5zS8eEQZIn",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Este amor que yo siento por ti algún día se terminará",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "El trabajo hecho con amor y alegría te genera paz!\nMuy buenos días!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "@MonicaAragonV @aarturosandoval @Derek_Tamayo @hectorrenegonza @04_JoseC @OmarMunguia_ @aosunal @RebecaBiebrich… https://t.co/3WI9A5qyfh",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Es imposible no pensar en eso cuando hay tantos sentimientos...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Durante los trabajos de la #ReunionPlenaria de este día nos acompaño @RicardoAnayaC Presidente del #CENPAN… https://t.co/dqhu1ilsXA",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Pero tambien me grita que rollo jajaj https://t.co/HaOI9K6Qch",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@DavidZahid @manuelalcarazb Que se diviertan ja ja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "💪💪🏃🏃 (@ Heavyteck in Guadalajara, Jalisco w/ @pawiimartin) https://t.co/wsUlQJBfPG",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@eduado_erick Culo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "El componente de lo atractivo de lo prohibido.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "#NuevaFotoDePerfil https://t.co/OYwP8VEbUR",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@CaroC_Cervantes Abusaste",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@mauriciomtzgrz @jaquirpb @brendagaarza_  tú",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Zanahorias en rodajas, con sal y limón para botanear.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@richmx100 @vichita23 De paaaaaan 😂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@ImBernardo__ @Rene_Santacruz DE HERMOSILLO PINCHE BOLA DE GENTE MECA ADSÑKJFSDÑLGKJSADGKJ, de echo si hay un putero de 7Eleven para alla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@majollamas @SoDamnTrue JAJAJAJ yo te amo amiga 👭",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Gracias a Dios ya termine la preparatoria 🙏🏻",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@SinhueAnguiano tienes pin?? Pasamelo...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@laualamilla Pues a quién viste",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Life saver!!! ⚠️⚠️⚠️⚠️⚠️ https://t.co/qutRKs5YoG",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Chismeando 🙊 (@ El Manantial de las Delicias) https://t.co/2KRNHVRGgZ",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Arribando el contingente de Gómez Palacio a #AvivandoLaLaguna #SomosUnoEnJesus http://t.co/ZI5O3E9yTY",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "I'm at Flor De Coco http://t.co/1S7fotey",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@Jorgehdzl 😮😮😮",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@KaLiicita no funciona igual pero ha de ayudar en algo, ánimo.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Acusada por abortar, #Adriana fue llevada a la plaza del pueblo; la apedrearon, le escupieron, la insultaron... http://t.co/8sL7ZxAfbb\"",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "@jancarlobg Jaloooo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Está elección sin duda fue histórica, ver que la mayoría de los mexicanos participaron por un mejor país 🇲🇽🙌🏻  dios… https://t.co/eVw92hkR6F",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Sin duda ✌🏻️ https://t.co/UE4PLUJLpw",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Por mucho que me gusta, creo que dejaré de vivir en  @LaNapolesCdMx #PorSiAndabanConElPendiente 😳🙈",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Ahuevo JODANSE @Patriots",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@Escobar_191292 nel compa otro pedo más fuerte",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Rompiéndola como siempre y dando tu 110% en todo lo qué haces, Gracias por contagiarme tu buen trip👌🏻❤️🔝… https://t.co/tX2TxYsQGt",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@LugoLugorocio00 Te amo mucho bebe y estoy segura que el video Mario ya lo vio 🙊❤️",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "https://t.co/yCA7oAhxu5",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "@SawyerGabrielle bebeeeeeeee",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Late night country music.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "se me hace una alta falta de respeto hacía la comunidad esta pregunta https://t.co/1psCzpy1tc",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@gina_fer Y los amigos?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Mi consejo del día es: \nHaganse compa de los malandros de la colonia, eso los absuelve de algún asalto o robo dentr… https://t.co/NHZBjhwmsA",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "https://t.co/aM4N240Icy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "Mi niño ya llego a CDMX 😍🙊🇲🇽 https://t.co/NFapO4u1Cx",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "No importa lo largo que sea el camino, mientras te mantengas enfocado en llegar!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@HctorReyesRodr2 Gracias!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Mañana es el #maratoncdmx2018 prevengan el tráfico y saquen fotos de los corredores tramposos que se encuentren en el metro o taxi. 😉",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "@karityka gracias Kari!! Abrazos!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@ximenaaav tú no",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Faltan 14 días para mi cumple y ya me empezaron a felicitar, es lo mejor 💕",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "https://t.co/1j7LJhS1eo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "o si no lo empiezas desde el lunes 🤔 https://t.co/4XzKteeKZg",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@maldonadoo97 Cumulonimbus incus!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Me urrrrrrgeeeee jiji https://t.co/p0fkQ9JNwI",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Tienen que ir a office depot, office max o soriana a conseguir los cuadernos de Mario son 10 diferentes.😍📚 https://t.co/9eqs1Eif3A",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Ya veo de dónde sacaron sus hijos el talento y tanto amor.😍👑#LaTiaGloriaEsLaMejor @latiagloria https://t.co/h2f0oLH9En",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "#Elecciones2018 México se divide en 5 circunscripciones electorales que agrupan a los distritos electorales. https://t.co/LDnAbxHDbs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Qué mala onda lo de OBJ 😭",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "No me imagino la tristeza que deben de estar sintiendo todos sus padres, sus hijos, sus hermanos, sus amigos 😔 #Chapecoense",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "8.4 grados!  Neta????? 😨 https://t.co/UzKxiHig2i",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@AlexiaLerma1 @marciacelayad @MindBlowing ya no me gustan los gatos",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@TaniiSalazar1 jajaja ya deja de stalkearme, jajajaja típico en ti.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Mi autoregalo 2017 https://t.co/UCuZTbHEk3",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@N1cky6arza @LedAngeles jaja luego te contamos",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@lajornadaonline @ArtEscobar @CNDH @partidoverdemex El colmo del descaro.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Excelente inicio de semana #Día58 campaña ganadora @SoyBlancaAlcala impactos mediáticos https://t.co/C1ORtKfGG4",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Eras eso que no buscaba, aquello que llegó a mi vida &amp;&amp; ordenaba todo \n\"@_DennGz: Tú. https://t.co/SeOxzK9NUZ\"",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@mariobautista_ y @ElJuanpaZurita salieron en @programa_hoy 😍🙌🏻 #ZuriBau",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "A mi Instagram le hace falta una foto de nosotros juntos.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@miprincesa8026 @OjoVisor_62 @cosapublica @RemedioCerinoG @Tabascohornyy @DennisG_Sirano @Pajarraquero… https://t.co/sgZIESElkc",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "11:14 Siempre estaremos aquí pase lo que pase, nunca dudes del amor y el gran apoyo que te tenemos, siempre juntos❤️🔝 @mariobautista_",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "2014 / 2018 \n\n#NoMemoNoParty  🔝🇲🇽🔥⚽️\n\nFrancisco Guillermo Ochoa Magaña @yosoy8a https://t.co/8w8fWICOCs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "No, porque siempre se piensa en un público general. Material que es clasificado como C tiene más oportunidad. https://t.co/5V9mHK41zn",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "JAJAJAJAJAJAJA neta me estoy riendo mucho 😂👏🏻",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Enamorada de tu sonrisa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@mtapiaf61 @UnionAbuelosTra https://t.co/t33qA4BPID",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@sjeanelle @maomamao97 en el pais de las maravillas",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "“@Meraryydel: El equipo de goidiglobal en capacitación 👊💪😎✨\n\n#PoderYDecisión @ IDI Global https://t.co/U4U6wrtzrP” Exito por alla!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@DiianaAlvareez ni yo jajajajajaja nocierto si estoy bien segura mana",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Frases de El príncipe de Nicolás Maquiavelo - Frases del libro, citas y fragmentos https://t.co/OLSEzekBAB",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@am_avila @mileniotv Si, pero es común en términos sencillos es un sistema de baja presión alargado, genera lluvias.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "#MetGala en 4 imágenes. https://t.co/BFGMooNB84",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "El #humor de @PACOTE_ https://t.co/WFXtckgqan",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "WhatsApp permitirá dejar mensajes de voz tras una llamada https://t.co/br1ldODwko",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Que bonito ver cómo dos ángeles cumplen el sueño de esta hermosa pequeña, es algo increíble, son los mejores❤… https://t.co/qnrDPq0B3F",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Un político impecable puede ser fácil víctima de un político truhán. https://t.co/dnXgsX6Jt1",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Yo sé que me voy a echar a mucha gente encima pero serie de Luis Miguel 🤮",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Me vale madre si tú me escribes cada dos horas, si tengo el tiempo de responderte,  lo haré enseguida.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@LIZAPSM amiga te invito a un lugar buenísimo a tomar té! real al mil",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@ElsaLuciaSilva @PaulinaRojasP mucha gente no sabe ingles",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Stats for the week have arrived. 3 new followers and 2 unfollowers via https://t.co/V3rANwIG91.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Mario está firmando los discos de la dinámica lsksndnddndkdkkdkdkd😍😍😍😍",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Gmail: 27 trucos y algún extra para exprimir al máximo tus correos: \n\nGmail lleva muchos años con nosotros, y... https://t.co/s4Vg0ZMAwD",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Si contesto cortante por wa no es porque esté enojado o ande de mamón, simplemente a veces me da hueva escribir",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Y resulto que el único que podía juzgarme, me defendio 🙏🏼",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@CataTrevinoL si😍",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "ah, ya entiendo, entonces...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Hoy exactamente hace 100 días decidí sacarte de mi vida por completo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Quiero hacer un viaje astral :(",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Esta gente piensa que le voy a estar rogando🙄.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "“@Alvaduuuchis: Oigaaaaaaa ya le dije...??? @Valerie_OLE mientras tanto diviertase hoy ok...????”//Claro! Porque viene conmigo 😊",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Aquí festejando con mi doctor y mi amiga por qué se logró el objetivo 🙌🏽@PauliinaWebber @okayfineCharlie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Cual maleta hago primero... Tercer fin o Cancún??",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@danielaa_valdez jajja yo maaaaas💕",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "wow oyama más niñas como tú de vdd omggg 👏🏻👏🏻👏🏻🙌🏻🙌🏻🙌🏻🙌🏻🙌🏻🙌🏻 https://t.co/TEDydHHQCs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Si el fue el mejor en su vida, es porque todavía no me conoce..",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Mochis necesita un bar karaoke con musica de los 70s y 80s! para olvidar por un rato el reggaeton",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@rdeandar13 @BorrachosVIP @GomezMosri JAJAJAJAJA",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Siempre te he querido",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "De esos amores que nacen de la nada!. Amor con humor negro y con corazón grande!! Te extraño… https://t.co/Bxs2mFmewC",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@SAMOALLSTAR @LunarioMx @CF_INEVITABLES listisima para verte pocos meses siii",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Buenos días para todos y #FelizMiércoles https://t.co/g1VQulmhWW",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Cirugía Plástica, Estética y Spa Médico en Cancún - Reducción de senos https://t.co/EJ4PMnrGP4",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "@adriloera @Milenio Hola, te mandé un correo. ¿Tienes algún número al que pueda marcarte? DM",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "#MiMasGrandeAmor #OdiameMas #a1de100 💛💙 @CF_America http://t.co/IM5hLIXp5Z",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@annelotrev No entendí",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "SNTE se sube al diálogo; pide revisar reforma https://t.co/CyyRHprEsL",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Cuando tires una chancla, no la recojas.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "¿Te afecta el caso de #Facebook y Cambridge Analytica?https://t.co/rKtRoHtV6p https://t.co/Z10XA2H7KI",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "La luna se ve y esta hermosa ❣❣",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "https://t.co/unOdOSgI9x",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "Me mama el pastel de zanahoria 🤤😍",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Los millenians no han descubierto la opción \"silenciar\" https://t.co/VnGnaqz9wf",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Me llena de orgullo verte cantar en un escenario lleno de mariposas, justo como comenzó nuestra historia.😭❤️👏🏻 https://t.co/y03veCikQH",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "I'm at La Casa del Sirloin (Villahermosa, TAB) http://t.co/NFy6X27qdy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Vamo avanzando #drawing #yugioh https://t.co/JQovuUZmPw",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@XimenaMry Me caí hace una semana jajajaja y ya me estoy muriendo, o sea no tengo nada pero me  duele jajaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Estoy bien feliz de que estés conmigo :)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Lo hiciste irreal mi amooor💣🔥\n\n#MarioBautista \n#NoDigasNada \n#Bautisters \n#KCAMexico https://t.co/5itqzW6isG",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "POR QUE NO PUEDO PONER IG MUSIC EN MIS STORYSSS??? ayudaaa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Prolegómeno imperial de las Leyes de Reforma republicanas en México.\nCon razón la Iglesia le retiró su apoyo a don… https://t.co/CkkumBLiim",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Madrugadas de valer vrg",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@manuelalcarazb @ImBernardo__ 7.- Los fisicos de la NASA usan Tecnologia mexicana para propulsar sus cohetes.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Me voy a gastar mi tarjeta de verano Cinemex con mi hermano 😂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "#AupaCultu #HalaMadrid #CopaDelRey https://t.co/fu0FO483bN",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@elrafaramirez Totalmente de acuerdo Lic es IGNORANCIA e INSULTO A UNO DE LOS MAS GRANDES LIDERES DE LA NO VIOLENCI… https://t.co/oVtAcczxGw",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Porque la gente es tan hater con los que se van de misiones, tanto como los que se la pasan en el antro, cada quien sus cubas👐🏿👐🏿👐🏿",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "Colombia by far is the best place I've ever been colombia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Dios les bendiga a tod@s por sus mensajes d amor! ♥ Gracias Señor x ser Fiel! \\o/ Prov 31:30 La mujer que teme al Señor es digna d alabanza.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29
+    },
+    {
+      "post": "\"@kukobenito: Todo pasa por algo! eres el mejor amigo q tengo!! Personas inteligentes como tu necesita el mundo// me va hacer chillar jaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "El que mucho se cree, poco realmente es.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@AlejandroLBaez Mejor me hubieras llevado a mi (no sé a donde pero me hubieras llevado) jajaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Like y me voy en vivo al gym",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Si ya estas ahí, no hay con que \"siempre no\"",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Instagram: 777soad\n⏩http://t.co/qGXZY4vh2Z",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Ahora ya no sé quién es mi Twitero fav.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "11:14 Este sueño 💗 @mariobautista_",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Dos de cabeza pa empezar y después qué sea lo que Dios quiera🤗 https://t.co/fm07GacnW4",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "https://t.co/Ppopy6CBza https://t.co/NQBsO1QjND",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "https://t.co/DjjAea67ww",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 1
+    },
+    {
+      "post": "A la no voy a poder manejar con este dolor de rodilla",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "@Carlostanori91 Pues me gusta estar con mi novia, algun pedo? #puto jajajaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Que buenas amistades tengo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@manuelcreado @EPN Jajajaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Inicia campaña Felipe Camarena por el PVEM, con la promesa de devolver la seguridad a Guanajuato ya que otros ‘No p… https://t.co/UrTWR9Bt84",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@Fito_Robledo JAJAJAJAJAJAJA yaaaaaaaaa! 😭",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "😍 https://t.co/V1rjP60aYK",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Eh, estás en rumbo de ser apoyo para un camping de personas con discapacidad, ten tantita madre y no seas intolerante, morra.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@greciatrujillo jajajajajajajaja te amo etcétera 😋",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Con Eruviel Ávila Estado de México y Miguel Márquez Guanajuato. Gracias por permitir intercambio de puntos de vista! http://t.co/J7uVIVoMVD",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "QUIERO TACOS.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "#wiii http://t.co/CYvsWl5Z5K",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@medranokatia Orale que ya tienes que dar inducción",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@oxanabarnett Siii",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@karenguadarrama Quien es Tigo ee",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@XinaEs @ggvm26 @misheelhigueraa @PaolaHermosil15 @LupitMoralesC @Made3179 @acaromagana @TrentiCorina @ElyChacon… https://t.co/T0RtZXGTeN",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Que buen día en entrega😂😂😂😂",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Vamos bien vamos bien",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "COMO LADRONA TE METISTE HASTA LO MAS PROFUNDO DE MI CORAZOOOOOON",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@mongsm16 JAJAJAJAJA",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Solo @samiauniversal podría hacer que se vean tan bien #ForoViena #SamiaMilFamosasEnUna https://t.co/o1nPtKRGWH",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Cuando se ama de verdad, ser fiel no es una obligación, es un placer.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "I gained 1 follower in the last week. You? Know your stats and grow with https://t.co/Vh1e5XZ19f",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Documentos desclasificados del gobierno estadounidense revelaron que los expresidentes Adolfo López Mateos, Gustavo… https://t.co/bkWlceBSDp",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@legallegosp claroo😻👀",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Esta rifadisimo 🔥🎵 #ToMyLove @ItsMisterPig @DaniellBautista @DJGamaOfficial https://t.co/uzwOCRcUJY",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Una Morena para setenta años  | En la opinión de Pablo Hiriart @PabloHiriart https://t.co/q92fd9X7Fb",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@kimmy_rojas Aquí en la oficina arriba :)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@nathsserra jajaja te encanta y quieres una igual , lo sabes bn :) #natheschiva #muerex1fotodechiva",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@eddieadan Asi es amigo, no creo que pueda ser un cabron aún más mentiroso jaja.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Gundam Unicorn\nYay or Nay!?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@DaniellBautista el sexo y la traicion.🎶",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@Irmalopezgarza abrazo inmenso mi Sra adorada!!!!!!, ya la extrañamos!!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Gold digger siempre será una de mis favs",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Y así es: la realidad es insoportable; y por eso, porque no se soporta, el hombre mata y muere, ama y crea.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "Acá explico un poquito de lo importante que son las bibliotecas para la democracia. \nhttps://t.co/pdr7chE5gR",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "El mundo nos está dando una señal muy cañona de que lo cuidemos de una vez por todas 😨",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Hoy es un día de los mas estresantes de mi vida",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@AndreaLegarreta amandote desde muy temprano Mi @JpabloGil @lion_gonzalez , pero como no hacerlo!! me encantas, mándame un clon o ven tu :(",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@donadoreslaguna ¿es posible donar aun cuando se tuvo hepatitis de niño?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@erickalanise Eeee eeee",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Que gusto amigo, la Unidad hace la fuerza felicidades, hacia la Victoria!!! https://t.co/e6Vp4fiHCo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "😍😍😍😍😍😍😍😍😍 el mejor cumple de mi vida. https://t.co/q0g3JFNokj",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@pao_og mucha marihuana está 👌👌👌",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@larson_ricardo @rmontsevm 😒",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "The Heliocentrics: Música para escapar de la existencia https://t.co/vzJLU4wnad https://t.co/ui2QCfJqNQ",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Muero de  calor ,eso de estar gorda nomas no me ayuda",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@evetorreesm Deeee",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "Por eso y muchas cosas más vuélvete tigre esta navidad... 🐯",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Dios te lo está recompensando @JavierAquino7 ! CRACK!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Me explica el poeta Luis Miguel Aguilar que la enfermedad  de Juan Carlos Osorio se llama \"rotación\" , razón por la cual le llama \"Rotorio\".",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "\"@G_a_b_s: @mcasab @ADDISPERIODISTA saludos ;)\"//gabs te extrañooooo!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@paolamdehoyos @LuisMontalvo21  jajajajajajaja",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@ChilangaSurf #LunesDeChubbyBoobies mi aportación del día. https://t.co/59WejyNIH1",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Bloqueada girl",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@benjactorres tqm apestoso",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "La @NASA difunde impresionantes imágenes del huracán #HARVEY desde el espacio #Texas https://t.co/knXucAfAr5",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "@badmorra @marciacelayad",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@ValeriaGarza aquí tengo él periódico para que le pingas tu autógrafo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Buenos días al más guapo.😍\n\n#MtvIconoMBautista \n#MTVPopMBautista \n#MTVMiaw https://t.co/Hj00LvdlcH",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Y es que ya estaba escrito que me tocaban tus besos 😏",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Eres y siempre serás mi persona favorita.😍 https://t.co/GKsNTFb8bD",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "No puedo con la gente q se queja del contenido televisivo, la solución es muy fácil señores y se resume al botón rojo de su control remoto!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "Julio tiene como 30 años y se pone con una de 19",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Quiero ver tu risa todo el día",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Algo no me cuadra... No se parece nada el retrato con el cuerpo encontrado. \nQuien lo mato? No era un carro negro i… https://t.co/iOgMXsiZj1",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "No habrá efectos negativos en seres humanos por eclipse de Sol, afirman especialista https://t.co/a9hKESWIiB",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@DejaDStalkearme eso es bueno, por cierto ¡feliz cumpleaños! 😉",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "\"I thank whatever gods may be for my unconquerable soul, I am the master of my faith, I am the captain of my soul\". Feliz viernes!!!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Para que se me quite lo hocicón",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@SaulVegaM Jajajajajajjaa si te emputas",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@KhaleesiHD Jaja amablemente me dijeron que si 😌",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Se ‘disparan’ los casos de violación en Hermosillo https://t.co/nTCr2CeLkb vía @Expresoweb",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Qué ganas de agarrar a putazos a este cabrón💆🏻‍♂️",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@Rdz7Selene Te quiero mucho 😍",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Tiene la mirada como me gusta👀",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Los increíbles hoteles-cápsula de Japón https://t.co/TjLyDGrDfT",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@EileenSotomayor @SebastianMancil te da mucha risa o q",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@BetoCampavz  pues con toda la actitud #haveaniceday #pretty #newday",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@SSP_Guadalupe @detzoms @Cicmty @MtyFollow @TuiteroRegio @VecinoRegi0 @saz2000 @AtentosMTYSur @CiudaDanaMtySur… https://t.co/QbowxhDup7",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@irarragorri Excelente trabajo. Una gran diferencia desde que está al frente del equipo.Excelente idea establecer este medio de comunicacion",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@SebaVPS @InvictosSomos tienes absolutamente toda la razón 🤐",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@arfaxadd_ you ain't down to ask him! Hahaha hey get me a torta from the lonchera you down? 🤔",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    }
+  ]
+}

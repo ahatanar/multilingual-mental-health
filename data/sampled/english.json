@@ -1,0 +1,3016 @@
+{
+  "metadata": {
+    "language": "english",
+    "sample_size": 500,
+    "requested_size": 500,
+    "seed": 42,
+    "created": "2026-02-21T04:15:04.699578",
+    "source_total": 10314,
+    "label_distribution": {
+      "not depressed": 250,
+      "depressed": 250
+    }
+  },
+  "samples": [
+    {
+      "post": "is full of barbecue and reeks of backyard campfire.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "he told us he was diagnosed with depression some years ago and that he goes to a therapist and he was telling us so many kind words",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@codywatkins you might be the only guy I know that has seen the entire series of the OC and is workin on a second time. FIND A NEW SHOW",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29
+    },
+    {
+      "post": "Just got out of church, ready to eat some fried chicken",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@liodain Oh hey you! Welcome to the crack. You'll get used to it.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Corona on my desk.. sun shining.. TGI FRIDAY!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "RT @kyem74: @Fact This person with depression, anxiety, PTSD ... doesn't hÃ«hÃ«",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "I just got hit with what literally feels a solid block of depression wtf",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@albo60s you must ask the Cubs fans. I can't fathom it myself.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Has anyone stopped to think Kanye might be bipolar? Racing thoughts, so my energy he's taking on all these albums (during mania), followed by a deep depression.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@Honoroit_txt @scholarOfSong [He sits in the depression corner and sobs.]",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@SueGrimsahw Thanks, Sue! I'm so glad SOME LIKE IT WILD was a success for you",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "I HAVE DEPRESSION AND IM GAY",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@RWPUSA I wonder if Donald Trump obtained any Provigil from Admiral Jackson.  Side effects include dry mouth, agitation, nervousness and mood changes including confusion, depression and hallucinations.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@horseyhands  I don't think you can buy Pennfield products in California, but I will check out their website  Thanks",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@jovenatheart COOOOL morning!  I want to see TRANSFORMER!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Last day of schooooool.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "... That's... What??? Because of this tweet I now know you have no idea what the hell depression actually is. This is literally so incorrect it's not even funny  https://twitter.com/ayanatheoracle/status/988862996247203841Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "Just one puff of cannabis 'could ease depression, stress and anxiety' - The Sun  https://goo.gl/fb/DDjw2MÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "know your enemy -green day!!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "I forgot about twitter...my escape",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@Itsalloso Thank You!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "I think it's time to kill some Zombies...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@PRADACCIA My girlfriend always apologizes to me for a lot of things like not hanging out with me to do homework and shit on that list I tell her she doesn't have to apologize for anything she apologizes for her depression pills taking away her sex drive I tell her all she doesn't have to",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 55
+    },
+    {
+      "post": "@josemi_alvarez Modern family is the real depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "I am going to rest, to die of cold :| and not feel like sleeping....I think I have a fever.... Bye",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "amping for ryan's 17th on friday gonna be good",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@coreyspowell How about depression?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Please depression disappear. This shit haunts me daily. My dreams have been really nice they just never materialize. Just fear & sad emotions rule my mind. Sorry but this is where I vent. I know I'm a loser but hey things could change. I hope & pray for it to happen foe me",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 53
+    },
+    {
+      "post": "@martyfriend BTW, loved the extra organ solo @ the 7PM last night.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "just found a new fav pop band",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@realDonaldTrump You won it by 21 points. It was won by 5 yesterday.  See you in November!AND, WHY ARE YOU SO SILENT ON THE STOCK MARKET TANKING - HISTORICALLY LOW UNDER TRUMP.  WORST SINCE DEPRESSION. SO SILENT!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": ". #selfhelp #IARTG #ASMSG #mentalhealthLiving with Depression & Anxiety@AmandaGreenUK https://goo.gl/EscrAZÂ  pic.twitter.com/hXk42humMC",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Miley Stevens - Waterhouse is at Jhy's house  http://apps.facebook.com/catbook/profile/view/6402509",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "I was only thin when very stressed and depression when got divorced",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "#2018goals :<Emoji: Fisted hand sign>fight my depression<Emoji: Woman weight lifting> lose another 53lbs<Emoji: Dancer> do more cardio<Emoji: Flexed biceps> become stronger and tone muscle<Emoji: Bikini> wear a bikini this summer<Emoji: Woman running> run a 5k in October<Emoji: Purple heart> be more loving<Emoji: Direct hit> finish projects<Emoji: No smoking symbol> quit smoking<Emoji: Reversed hand with middle finger extended> prove everyone wrong that ever doubted me!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 64
+    },
+    {
+      "post": "@cafedunoir absolutely!  just pitch in a few bucks for gas/tolls. u in? also we're passing out prospect cds after the show",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "@codejammer : yeah man... I cant wear the same red from Saturday morning till Suinday mid night.. Mallya shud have given me jerseys..",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Whether you are excited to graduate or nervous to be on your own, post-graduation depression is coming, and you might be its next target. Find out what you can do to avoid it here:  http://www.dixiesunnews.com/news/articles/2018/04/24/post-graduation-depression-palpable-dsu-alumni/Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 36
+    },
+    {
+      "post": "Stress-related health issues, anxiety disorders and cases of depression have soared over the past 30 years DESPITE the fact that we have flat-screen tv's, movies on demand, groceries delivered, non-stop internet,...  https://www.facebook.com/susan.korwin/posts/10216818240038376Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "'Something is better than nothing': Exercise helps ward off depression http://www.cbc.ca/news/health/exercise-depression-prevention-1.4634002Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "well done, the depression knows brass with helper",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Anxiety and depression always been  a thing its just that in this time people are starting to be more open",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@DrCSaroyan You will??",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@realcharmbreezy http://twitpic.com/4w3zf - now that lmao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Yesterday I was just talking about how my mom would sing about my depression at church if I were to ever tell her.  https://twitter.com/allureshae/status/988235826755751936Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "we have lots of exciting things planned for july",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Happy Birthday to me!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Me: what's wrong?My girl: *looks up at me with look of depression and stress on her face**Me: same babe same. #examseason",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "If you don't think your anxiety, depression, sadness and stress impact your physical health, think again  pic.twitter.com/OeBRRYGZvM",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Cultivate supportive relationships in order to end #depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Ok I REALLY need to go to bed and stop playing around with Twitter adding new friends!! Hello all you new people",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@LisaMarie110 hahaha, idk. but YAY! we're gonna be roomiess",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "This is so true. Depression especially  https://twitter.com/FranciscoLWhite/status/988758953470431233Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@Thyme2dream Awwww...shucks....  Thank you, Milady!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Why I fear the bad days in #depression #recovery  http://bit.ly/2BM7hyFÂ  pic.twitter.com/AmXO4EEbNE",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "istg seeing jihyo now makes me cry she went through body shaming and prob depression bc of how people tell her about her body",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "@heartbomb I'll try..blah! Thanks  what are u up to today?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "60 days, 6 hrs, 45 mins until our LA flight",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "good morning twitter world",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "I don't think people recognize how much ADHD affects a person's life. A lot of times ADHD is just one of multiple diagnoses a person may receive. It's usually something like major depression, bipolar or something else which gets most the blame when that person's life sucks.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "@elicab Aw. Well if u ever feel like flying over 2 con it up i'll help u find a place 2 crash... I once flew 2 London 4 a Buffy con, btw.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 32
+    },
+    {
+      "post": "@1txsage1957 you're welcome!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "trying to get higher paw points in pet society",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Clinical depression is the # 1 global leading cause of disability.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@Sog_Ola @babstoxyn @bimmyana @HayTeeHay @OVIWCE NOTE: Do not take mefloquine if you have a history of active or recent depression or other mental illness, seizures, or some types of heart-rhythm problems(arrhythmia).#ReadyToBeatMalaria #WorldMalariaDay #OVIWCE",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "Hooooray! @felixkat452 just made me breakfast  Now time for star wars revenge of the sith",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "i loove finding nemo haha. actually, i saw it today  i think i saw it like a BILLION times haha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@David__King thanks david for the offer, I live in Melbourne,but I'm coming to LA in September. Maybe lunch when I visit?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Save the date! On May 3 at 3 PM ET, join @NIMHgov for a Twitter chat on teendepression. NIMH experts will be on hand to answer your questions. Use#NIMHchats to follow the conversation:  http://bit.ly/2K3W5hJÂ  pic.twitter.com/fYDqzvco2T",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "really want to do some art but not feeling motivated *cough cough* slight depression *cough*but yea I'll try and get that redraw done soon, altho there are a lot of projects that I have to do for school and other homework",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "Just home for the quiz.  We won!  Wooo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Does it really matter? everyday some expert is telling us what's bad for us, don't do this, don't do that. Today running helps with depression.  I tell you what's helps with depression experts/news media/celebs/MPs shutting up. #BritainsFatFight",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "Everyone has a war going on inside of them between happiness and depression just some people happiness is winning and others depression is winning and some people the war is constantly changing",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "been keeping my room organized, keeping up a consistent skincare routine, biked home 11 miles yesterday from work, eating vegan yogurt & granola...seasonal depression is over <Emoji: Loudly crying face>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 30
+    },
+    {
+      "post": "@RajaSen Thanks and glad to know",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "1/2 People loose interest in every thing ... that's the case with many of the global population ... they don't have a focus or a goal that they are devoted to and neither are they 'INTERESTED VOLUNTARILY' in doing so. So people are left with either a boring life with depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "I love my hubster...he is the best",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@staceeadams I don't know, but I have theories about what u want 2 write. &amp; I've been there (and am there now) so I just write abt Amelia",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "@pauladeasis Happy birthday Paula! Have a good one.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Crying? I'm entering a deep depression. Can't eat. Can't sleep. That's worse than any pain <Emoji: Loudly crying face>  https://twitter.com/tsunamislim/status/989018909163614208Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "@TMobile_Chris I just mean I had a few too many  owww... my head.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "goin on the boy's boat, gonna have breakfast in leschi",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Using drugs to avoid depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "me during the depression hours crying over my faves vs me when i wake up  pic.twitter.com/V3qCYmDHaT",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "fare thee well, tweetdom",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "Vegan <Emoji: Cat face> taste like depression and #KurdishWhiteBeans",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@UKIP @Jacob_Rees_Mogg @theresa_may @UKHomeopathyReg Autism just means that the brain is wired differently and so it is sometimes possible to rewire the brain through a number of different ways. Prolonged homelessness, depression etc all rewire the brain in some way so that it resembles an autistic brain. Homeopathy cured my dog.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "actual picture of my anxiety, depression, and ocd when i'm in the middle of finals  pic.twitter.com/Vg5VZqfSCJ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "It took me two hours to go grocery shopping and I have no energy left to drive home, so I live at Publix now, I guess. #depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "me and my depression calming down and chilling after i take an anti depressant  pic.twitter.com/13CWWcHdsc",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@jcgpulido: Thanks for the well wishes. And you WILL like a big ass guy to help you in therapy and you will LOVE it. hahahaaa",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "We've got heat on the way!<Emoji: Fire><Emoji: Fire><Emoji: Fire>We're talking to @TheSADAG about student mental health after new data reveals a quarter of South African's suffer from depression. We've also got the new @SunELMusician track, and we're testing @YouTube's fake news detection capabilities pic.twitter.com/FBBPNZlRQm",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 44
+    },
+    {
+      "post": "Getting excited to see RENT tomorrow",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "dan had a speech about how depression, anxiety & going to a therapist is stigmatised in society i love him so much",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@ben_mayer I'd like to see a picture of you, Carl and John where everyone can read from your faces you're proud of and you love eachother",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "<Emoji: Police cars revolving light>Tickets Still Available!<Emoji: Police cars revolving light>...#mentalhealth #depression #depressionawareness #linkinbioâ¦  https://www.instagram.com/p/Bh_z2bnFQPo/Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Almost half of adults with autism struggle with depression  https://tacticalinvestor.com/almost-half-adults-autism-struggle-depression/Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "kanye coming back to twitter has cleared my skin and cured my chronic depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@alyscharles what isnt it people with a peg leg and a parrot on their shoulder",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Lads it has been a solid While since I've played p4 and I'm tempted to replay but like I Know that's the depression speaking  pic.twitter.com/UsyKY6yxAi",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Depression. Everybody I know is suffering from the fxxxking depression. What a great life!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@tommcfly we have some kick-ass beaches here in Venezuela! C'mon Fletcher! You all have so much fans here",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "@DavilaCS hahahaha you also feel good",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Watching Night at the Museum 2.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@highheelznkickz its ok; the 1st step is deniallll  LOL",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Having negative friends is linked to depression, lowered self esteem, insomnia and anxiety. Positive friends promote good overall health.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Post concert depression is so freakin real",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "How to cure depression? ._.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@tll587 did you have to corner her in a bathroom to obtain said beads?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Not long till LONDON BABY!!!  and then the EMIRATES ON SUNDAY!!!!  YEAH!! cant wait...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Breakfast is my favorite meal. Time for cereal",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@LisaMei62 That 98% tax for working class is what was talked about to cover Bernie's big ideas during the election. Think that's not possible - FDR did it during the depression - If you want to see what would be result of this plan - search Venezuela economic crisis",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "I've lost out on everything, said Mr. McIntyre, who at 64 is a member of the Windrush generation in the UK. He lost his job and the right to benefits. He became homeless, sleeping on a mattress in a cold warehouse, and he fell into a deep depression.  https://nyti.ms/2JqoPjAÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "Kanye West loses 9M followers in a day for liking Trump. I lose 2 followers for not liking #Trump and I spiral into depression <Emoji: Face with tears of joy> Guess its all relative!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 34
+    },
+    {
+      "post": "Depression and anxiety fucking suck while working",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@ksymmonds @SarahSymmonds My pleasure - great site - use it a lot for me iPhone ringtones",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@Causindrama Monday is good 4 me",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "I &lt;3 memory foam",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "THREAD A few months ago, I took steps to address my mental health. I think I've known for a long time that I've had anxiety and depression issues I just chose to ignore them, to lean into them, to just turn my nose up at them like I was superior somehow. I wasn't, I'm not. (1/23)",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 56
+    },
+    {
+      "post": "@Pmakedon813 @Satoranskyisgod @JoeyBats434 @boston73bruins My middle name is depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@SamiHernandez5 honey i told you that you can't listen to this song so often or else you'll spiral into a monsoon of depression and passion",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "@sitapati That sounds lovely! Are there any conventions that might sponsor a group like ours? We'd love to come!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "is handmade goodness at the moment  xxx",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "your future place is jahannam if you make fun of someone's depression for just fucking stupid fanwar",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "I hate depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@SkyNews A Tory govt increases depression by 85%. Fact",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "has onli just found out about Justin Bieber &amp; has fallen in love with his voice",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@lornayee i hope to try one soon",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@hahalorenzo I'm down.  With the same people?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Ready for Q1? Let's go!Q1. We know many of our children/young people with SEND also have challenges around their mental health. What sort of mental health issues does your child/Children you work with experience eg. Anxiety disorder/ depression ? #SENexchange",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "@EHayen I think you'd have a fun talk radio  Big plans for it?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "I have just made my twitter account!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Do you struggle with Depression or Anxiety? Here is what @SummitRDU  has to offer in the area of our G4 Recovery-Support Ministry:  http://ow.ly/FDTI30hKiHJÂ  For a look at our curriculum check out @BradHambrick  website here:  http://ow.ly/ffSl30hKiMrÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "To be blunt, it's a tokin' puff piece... *drops mic, blows out of the joint* <Emoji: Right pointing backhand index (light skin tone)> Could 'one puff' of cannabis ease depression? - Via @mnt https://www.medicalnewstoday.com/articles/321589.phpÂ â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "@sherryinbc Here in CA we call it a nice &quot;flip-side&quot;, sorry @IdolScott I couldn't behave as this Angel misplaced her halo long ago",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "fuck yeah  lakers all the way  baby",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Give a read to this great @InkHeist #guestpost #depression #writerslife from @todd_kiesling  https://inkheist.com/2018/04/25/placing-your-hand-into-the-void-by-todd-keisling/Â â¦@horrorbookshelf @shanedkeene#Horror pic.twitter.com/Pb9M9nVOTb",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "I just dyededed my hair",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "<Emoji: Smiling face with sunglasses>'Before you diagnose yourself with depression or low self-esteem, first make sure you are not, in fact, just surrounded by assholes.' ~W. Gibson #quotes #WednesdayWisdom #WednesdayMotivation #InspirationalQuotes",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "@toysrevil your astrodude is in the post man, let me know when he arrives  What WWR pieces do you have BTW?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "watching jumanji in bed. super sleepy. text me all day",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@joyous Ahhhh @daluckyme ....depression is a very bad silent killer",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Is Electroconvulsive Therapy a Miracle Cure for Depression?  https://www.healthline.com/health-news/is-electroconvulsive-therapy-a-miracle-cure-for-depressionÂ â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Hard work and an active lifestyle is the best cure for anxiety/depression in my opinion. Productivity breeds productivity. Getting started is the toughest part.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "had my cold shower infused with salt - feeling fresh and human once more. lunch/dinner was hard boiled eggs with fishball soup",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "Clinical Depression  http://depression.healthomni.com/2012/08/30/clinical-depression/Â â¦ pic.twitter.com/6UnnM95QOq",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@OsasCruz @The_HauteNurse @DrOlufunmilayo @Healthertainer @Deekachy_md @EmiNiTybaba @trending_medic @lou_whiz @ani_nomso @JosephineAvid Jonathan LP, Andrew LF (2016) Depression in children and adolescents. University of Kansas, Clinical Child Psychology Program.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@TyCity yes, thank you for refreshing my memory.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "almost done packing. yay, and I can even close my bag without having to jump on it ! .. pretty skilled , eh ?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "is wishing everyone a good night.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@so_jentastic Thanks girl  i plan on making this day a good one somehow lol",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Mom's depression tied to kids' emotional, intellectual development  https://in.reuters.com/article/us-health-mothers-depression/moms-depression-tied-to-kids-emotional-intellectual-development-idINKBN1HW2MZÂ â¦  https://www.instagram.com/paulortegagonzalez20/?btz52=1915044625Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "park bom treated her depression by intaking PRESCRIBED MEDICATIONS BY A LEGIT DOCTOR WHY CAN'T ANY OF YOU DRILL THE FUCKING CONCEPT INTO YOUR HARD SKULLS? ##ë°ë´ì ë°ë´ë²ë ¤ëì¸ì",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "Please support this important event. RT RT RT RT #MentalHealth #Depression #Suicide#MentalHealthAwareness https://twitter.com/CUnderwoodUK/status/989166362819022849Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@tyrese4real ur a teaser oh and nothing like a scorpio",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "cool evening, white wine, homemade cheesy potatoes, HBO, and clean laundry  mmmmm..paradise...or at least better than Monday thru Friday..",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Happy Birthday to my Grandpa.  He has 3 cats, but I still love him.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Anxiety and depression have tried 2 take everything from me. So now I have to beat it. All of it. I refuse to let my happiness be taken away like this.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "Every single person in the world\", every culture,\" every language & every country knows it \"\"\"\"You are what you eat. FOOD does MATTER\"\"\"\":   https://www.organiclivefood.com/nutrition/food-medicine-organic-live-raw-foods-beat-cancer-cells.phpÂ â¦ Food for the body is not enough. There must be food for the soul:  http://www.seattleorganicrestaurants.com/vegan-whole-food/natural-foods-herbs-for-treating-depression-anxiety.phpÂ â¦ #depression #food #health #organic pic.twitter.com/Nlj5b3Jki5\"\"",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 46
+    },
+    {
+      "post": "@damienmulley Glad to hear you're enjoying your BT Broadband service. We're here if you need us.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Retweeted Martin Lewis (@MartinSLewis):I'm very moved tonight about the @mmhpi victory: getting the law changed to give breathing space from creditors for those hospitalised from severe anxiety, depression &...  https://www.facebook.com/MintedTameside/posts/2207538105939980Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "@ShesElectric_ Good morning  xx",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "A girl at work just pulled out a bible in the breakroom and it is now the topic of conversation. My heart smiles!  He is awesome!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Jab bohat ziada tension aur depression ho to relax honay kay liay kya karna chaiay Need suggestions",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@hypnophil no biscuits here.. just bagels  im gonna have tea and eat food later lol what kind of biscuits do you have?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "i cant wait till i get sims 3 its going too be amazinggg  (YN)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@sarahdrinkwater Fantastic!  Glad you liked it!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Childrens theater show",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "https://www.google.com/search?client=ms-android-verizon&ei=BifgWp6oOpPcjwOXh42ADg&q=federal+reserve+caused+great+depression+&oq=federal+reserve+caused+great+depression+&gs_l=mobile-gws-serp.12..0i22i30j33i22i29i30l4.52384.71845..72636...0....307.6337.0j36j4j1..........1..mobile-gws-wiz-serp.....0..0j41j0i131j0i67j0i131i67j33i160.Rg7sxg%2F8GNA%3DÂ â¦The Federal Reserve'sÂ Tight Monetary PolicyÂ Caused the Great Depression.Â Federal ReserveÂ Chairman Ben Bernanke andÂ theÂ late Nobel Prize-winning economist Milton Friedman blameÂ the Federal ReserveÂ forthe Great Depression. But they do so forÂ theÂ wrong",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "@dizzel yo thanks Den you free around 6 for an hour today either tinderbox or your place?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@propagaxxa @bribearxoxo Technically speaking, antidepressants tend to make people who are diagnosed with depression more saddened than they were before. At least the first few months of taking them makes their depression worse.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "Dear ladies with crippling depression, have you tried smiling? A random man stopped me to tell me so it must be the solution <Emoji: Smiling face with smiling eyes>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "drinking iced coffee  and eating fries w/ big mad sauce ha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "GoodNight! Ya'll know I don't sleep.I pull all nighters,writing songs,&amp; thinking of new ways to annihilate &amp; embarrass my opponents",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@poutkyuns I have depression too and I start counseling next month.All I want is to be happy again",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Hay fever increases the risk of depression  https://inews.co.uk/?p=147048Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@BTS_twt @blueminyoongi_ Bts helped me when i went through depression (it wasn't anything serious), though i was feeling sad everyday and nothing seemed to bring my moods up. So when i stumbled upon them, i seriously started smiling and i immediately loved their songs. And army is also like a family",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "@MonmouthFF I've already submitted THE BATEMAN LECTURES ON DEPRESSION! Hope you guys are into a funny autobiographical doc that looks like this:  pic.twitter.com/T8Ha8Ysx7N",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Im gonna from this depression #infinitywar",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "aw im new to this haha hope its fun",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "NICE delays depression guideline labelled 'not fit for purpose' by GP expert group  http://www.pulsetoday.co.uk/clinical/mental-health/nice-delays-depression-guideline-labelled-not-fit-for-purpose-by-gp-expert-group/20036559.article#.WuDy8A175Jc.twitterÂ â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "It's been a nice cozy night with @SN8KEe.  Excited to marry that guy.... but for now?  Excited for sleep.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "it's real depression hours  pic.twitter.com/zOG4ZTBM2e",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "So next time, y'all think Deepika Padukone 'uses' her depression struggle as a sympathy gainer- take that opinion of yours and throw it in the trash. She shares it because people like you are so fucking ignorant about something she and 1 out of 5 people face on a daily basis. (3)",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 52
+    },
+    {
+      "post": "@mrsnasirjones u rdy 2 masterbate hun?? cuz I am",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "who couldnt afford the bus, got rIPPED OFF, got into a car accident, suffering from depression and anxiety,",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Did you know that 4-10% of people in England will experience depression in their lifetime? #Talkfest #ItsOkToTalk #ThursdayThoughts  http://socsi.in/32qe1Â  http://socsi.in/32qe1Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@bkwrrm_tx Hope you enjoy",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "@asad_afzaal Its not depression if you're like this since YOU ARRIVED IN THIS WORLD.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "craziest thing about depression is that i always think that i've hit rock bottom and that shit couldnt get worse, but today i turned down a costco churro cause i was sad, then cried about not eating the churro, and i realized that this is DEFINITELY rock bottom (until it isnt)",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "@MrSnyderXav The Honest Truth should be a part of the Genesis curriculum because it is about something that kids face all over the world today (depression).  pic.twitter.com/oUNVazorHE",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "just woke up,happy mothers day",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@haydio dang.. that's such a shame",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@ashleytisdale i would love to! you should totally come to Denver! that would be amazing",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@danwnews @The_glee_shop @Ledecestre @marshhie Risk of fatal respiratory depression, particularly in patients not previously treated with a strong opioid analgesic; manufacturer recommends use only in opioid tolerant patients.    Why give it him after telling the courts he won't live past 5 mins off his ventilator.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "Check out Heart Of Love Evolution: Surviving #Depression  http://amzn.to/2spiFNmÂ  Depression is the giving up of hope, the belief that no one cares for you, and the thought that suicide is the only way out #yeg #yyc #yvr",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "..At least i get to do it earlier than everyone else  a hee hee hee. LOL.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "And I guess, I just have to make sacrifices if I want to achieve my dreams. My family is very supportive at least (it's just, I can't stand living with them, as I need my own space and freedom; I feel trapped here). I just hope I can work through the stress and depression.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 54
+    },
+    {
+      "post": "@LeonBasin I have to remember you have probably been writing professionally longer than I have hehe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Why oh why is it so hard for me to get motivated to start working out? I am so lazy! Happy Friday.. the weekend is almost here",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@DJNEPTUNE I know what you mean... XOXO",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Binge watch a couple comedy shows on Netflix while in a bout of depression and it never recommends anything else every again.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "13 days* depression is hitting so hard that I'm getting dumb",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "I have a sleep-deprived EEG in the morning tomorrow, so I have to stay up all night and miss school tomorrow",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Is There a Link Between ADHD and SAD?  http://psy.pub/2EQYvAPÂ  #ADHD #parenting #depression #mentalhealth",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "@WTFKatie the video's done  I can't get the link because youtube isn't working, but it's the newest one under youtube.com/sarahsaysfasho",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Therapy over Skype â Online SkypeÂ Therapy for Effective Mindfulness Therapy for Overcoming Anxiety & Depression. Most people see big improvements within 3-4 weeks. Contact me to learn more and to schedule a Skype therapy session.  https://ift.tt/2FiGBmqÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "I don't know how to go through this, a lost in my family has happen with me going under depression<Emoji: Pensive face>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@ellapaigebabe Don't worryI won't forget, if I go backstage after the show I'll do it",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Where is @JohnMu? anyone heard or have seen JohnMu of CHeeseland recently?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Im not afraid to admit i have depression and anxiety... I never let it get the entire best of me or destroy me.. I let it be known so people can understand where im at and where the need to be. Im stronger than that!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "Sittin outside Tomatinos enjoying this beautiful evening",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "woooot Paranoid on disney 5 seconds ago",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "I gotta touch on that bc it's a huge difference between being sad and having depression..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@mylincolnlive 20th July that should be!  Both Mondays",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@mr_gadget  Do you care if @aplusk quits tweeting? http://tinyurl.com/pkrppa via @msaleem // nope quit talking about it do it now",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Anyways. Off now to tutor. Last maths tutoring before the summer I think. All good things and all that",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "is listening to NAS - America. Now I remember why I liked him so much",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Les longs week-ends font les petites semaines.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@PinkIsSoPretty5 yeah i have like 2 or 3 more quarters to go. story is a bit long for twitter, facebook me for details",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "More great evidence supporting daily exercise to create a more positive outlook: Exercising for 20 minutes-a-day cuts risk of developing depression by one third  https://www.telegraph.co.uk/science/2018/04/24/exercising-20-minutes-a-day-cuts-risk-developing-depression/?WT.mc_id=tmg_share_twÂ â¦ via @TelegraphSci",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Some lassies r the reason sm folk have depression anxiety n insecurity's it's actual vile<Emoji: Face vomiting>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@glennbeck buyers remorse.. know it well.. return what you don't like.. why let $ be wasted when it can be reused? Glad you are a tweeter",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "how cute  little sisters are adorable",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "J. Cole Talks Depression, Married Life, & New Rappers in Rare Interview  https://goo.gl/fb/PwnNUyÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "i want to be able to take a break from the internet to help my depression, but i can't. i'm already addicted to it like a drug, and a lot of my school stuff depends on it. i can't run away.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "It's a  few niggas who can put up with a shorty who suffers with depression and anxiety , who's always seeking reassurance , a shorty who has moments of overwhelming sadness for no reason .",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "@PKGulati lol I'm gna be there too, that's why I was asking",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "So am i gonna get triggered every time i see a tweet about tour now that im not going anymore because this isn't healthy i do not need more depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 30
+    },
+    {
+      "post": "3.) I had post partum depression for 6 months. Severe. This part scares me the most about having another kid.4.) I just cant see myself with TWO kids. I'm so content with life right now. I feel like this is it for me..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 43
+    },
+    {
+      "post": "About tear up this scrumptious ass depression sandwich",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Depression is such a villainous state",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Up was such a sweet movie.  &quot;I was hiding under your porch because - I love you&quot; fav part",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "Yay going to see All American Rejects in August totally excited",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Had a great early morning workout!! Getting ready for work",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "A pizza with the radius z and thickness a has the volume pi*z*z*a",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "@RoosterTeeth While struggling with deep depression and an eating disorder I met a girl who loved rwby. I promised myself that if I got better we'd hang out. I did recover and we watched rwby (for my first time) and I obtained my best friend.  Rwby still reminds me that I can do hard things!!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 55
+    },
+    {
+      "post": "Our team is proud to be involved in @tandemcopd, we are here today hearing recent updatesOptimising the benefits of #pulmonaryrehab by aiming to reduce anxiety & depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@shwood loved the cameo, made me chuckle! along with your SXSW talk over the past couple of shows",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "No Dio, but Mother F**king Tim Curry instead  http://bit.ly/hmV5F",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "is uploading pictures to Flickr.com",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "1-800-273-8255 - suicide hotline877-226-3111 - addiction hotline844-228-2962 - eating disorder hotline877-455-0628 - self harm hotline888-640-5174 - depression hotlinemy dms - lonely thots hotlineshare this for someone who might really need these phone numbers",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "@murdernmayhem very cool! i &lt;3 derby (and derby girls!)",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@MattGLee ugh i've just been through all that.. it's the worst feeling!  don't worry something better will come up",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "is hoping to get some R &amp; R this weekend.  we shall see.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "I'm Forgot all my problems and depression when you're with me for aâ¦  https://www.instagram.com/p/BiAR6_wHKsz9Nx8kIoOc8ajE_berEjKXPDXZlQ0/Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "its my birthday!!!!!!! finally 19, woohooooo!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "eating cupcakes  yummie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@ThomasSanders Ya girl stayed home from school today because of my anxiety and depression and avoided a trigger",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Teen Charged with Manslaughter; Encouraged Friend's Suicide - Maya Murphy, P.C. #teenagesuicide #depression #peerpressure #suicide #criminaldefense #mayalaw #lawyersinct  https://buff.ly/2JR5Yj3Â  pic.twitter.com/vkReUW83jM",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@naturallymaid I love it.  A beautiful mess.  And healing and dealing.  Sounds like alot of fun and that summer is right on track.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "@QinniArt This kinda reminds me of when o was suffering from depression and after I got help I decided to chop off my hair.. there's a study on people who suffer a dramatic event often chose to get a dramatic hair change after to recover",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "loves fifth street and sabets ng sabets with nai.  http://plurk.com/p/x6j1y",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "There are many failings in raising boys. Mainly, we're not always taught to deal w/ emotion, that its ok to feel & express pain, to admit fault, be okay w/ our shortcomings, to focus on growth. That depression doesn't mean you're alone, that anger/mania should never be weaponized",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 48
+    },
+    {
+      "post": "@souljaboytellem you the man Dre!!! the swag flu is off the chain for real! Killin it man, my number 1 rapper right now no doubt.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "love having guy friends that keep me in line... please don't ever leave me! haha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "lol of course two days before the big weekend my depression flares up and i remember its there",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "No strikes today !  for sure on my side  Nice and sunny here....",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Depression. It hits you suddenly and it kills you silently. <Emoji: Skull>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "25-04-2018",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 1
+    },
+    {
+      "post": "myra gave me dis cute pink bracelet for my burfday.  thnks, gal. apreciate it. a lot",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@kanyewest @JTM_YVA @NelsonPMAAInc @alexbwell4 I would say pre-great depression probably 90%+ of Klansmen and white supremacist identified as democrats. I would imagine 99% of those same groups today identify with @realDonaldTrump and the Republican Party.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "Can changes in your diet cure your depression?  http://ow.ly/m6bK30jDkQiÂ  http://ow.ly/m6bK30jDkQiÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "when you've got a fever and then caused u a depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "I broke my back carrying the burden of this dunya.Love broke me, hate shattered me, depression numbed me, and anxiety ignited my end. How naive of my soul, to burden it so heavily?Ya Rab, when I turned to You, all my worries were but a feather.  pic.twitter.com/YiyGUBqAsa",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 47
+    },
+    {
+      "post": "Today's a day where my depression  is  just a huge thing over my head",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "It's my birthday",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@ilynjhx go to the merch : runto the barrier : runto Niall's livestream : run in the house to find wifito the queue : run go to school : sorry I m still in my bed , I ve been to Niall's concert and post concert depression is there",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "@jumblejim trying to do more later! and also a bobby toon lol...http://ourspn.pixnet.net/blog/post/28142273  come visit us!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@ZaynnAbel_ Take several depression naps like me bc bitch ME TOO",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@JayneeLu Good one I will have my hubby bring me an iced apple chai tea! TY Jaynee",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@HayleeLovesK2 omg im watching ice princess too  lmao i lurvvee disney 2!! lmao were destined to be sisters. and yes Niley equals luv",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "Watching my &quot;Stomp The Yard&quot; DVD, just remembered why it's my #1 favorite movie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Going back and istening to an older album of an artist who went public with depression is nutty.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "yeah here it comeshere comes the depressionrrrrrrrrrrrRRRRRRRRRRRRREV IT UP",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@Mr_Nico I'm here..  n tell soccerjunki to add me bcuz I was one of the first to say yes to her bein accepted in #TFC",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "@EvaTEsq night! I am right behind ya",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Just one puff of cannabis 'could ease depression, stress and anxiety'  https://www.thesun.co.uk/news/6137739/cannabis-ease-depression-stress-anxiety/Â â¦ #cannabis",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "My mom and tay love banana LABBY TAPPY! Oh and BAJAAAAA!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@allevin18 Sadly, I feel a lot of deeply depressed souls have developed an incredible way of masking their depression to the world, in fear of being wrongly judged.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Mom's depression tied to kids' emotional, intellectual development  https://ift.tt/2HtVZCEÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "So...I'm about to start this aggressive medication for the next 6months. Side effects include depression, mood swings and skin reactions if I'm out in the sun...God help me!",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "the depression paradox: you spend twice as long in bed but have half the motivation to wash your bed sheets",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "I was technically an incel (hate that word) for years.My clinical depression, social anxiety and chronic shyness made damn sure nobody would be attracted to me.I am now happily married.Never killed anyone, though.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 33
+    },
+    {
+      "post": "@phillybookco Nice yo!!! Live it for me buddy!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "true love is: taking depression naps together",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@epolekoff I've heard people are getting entirely unrelated recommendations now, like new AAA shooters because you liked Indie Puzzle Depression GX or whateverBut hopefully real related stuff will slide in there",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "@VH1Shows yup",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@lintman That's awesome - what a funny picture (bout the monk) - I love it",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "It's sad when you realize that depression is your only true friend..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "More than 1 in 20 US children and teens have anxiety or depression  https://www.sciencedaily.com/releases/2018/04/180424184119.htmÂ â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@HippyDi I'll have a cup of coffee soon, find another bottle to open and sing something happier too",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "11 Symptoms of Depression in Men and How They Differ from Those in Women  https://ift.tt/2HuMCSYÂ  via LearningMind1 - #learningmind",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@ambermacarthur get better soon amber",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "depression is so weird because when you experience a good feeling it's also SO STRONG and it gets overwhelming",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@GayleConnell What kind of business are you working on? I saw your tweet to @jcloake  she recommended Joel Bauer, a friend of mine.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "...YT. It made me so happy. You guys are so amazing. I love you all... Thank you  Oh, and goodmorning, may your day be as good as mine",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Thank you my fans for that two pennies!  That gave me a good laugh this morning!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "watching jonas",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 2
+    },
+    {
+      "post": "'Suicidal' Mini Me actor Verne Troyer dies aged 49 after fight against depression became 'tooÂ much' https://butteredpopcornsite.wordpress.com/2018/04/24/suicidal-mini-me-actor-verne-troyer-dies-aged-49-after-fight-against-depression-became-too-much/Â â¦#Depression #Suicide #MentalHealth #VerneTroyer",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "I'm actually giving myself an early mark from work!!  Big day of meetings tomorrow ahead of Wednesday's &quot;Project GoLive&quot; culmination",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@SEGA Start with the Virtua Tennis 2009 - training top",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "homeee from livie's sweet which wass fuckingg awesomee .",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "'Depression symptoms, having to travel outside the respondents' community to give birth, and being born in an East Asian country were associated with lower levels of satisfaction.'",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@macster7 this a relief! Hahah. Telling my grievances to someone. Hahah. Thanks for absorbing. Hahah. Anyway, see you in school.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@AsteriaArgent Its good to hear ^^. Sometimes i kinda worried since seems half of my mutual have stress, depression and anxiety. Please don't hesitate again to shitpost if you feel bad again, i believe there ppl care for you :)",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "The Real Price of a Debt Driven Economy - via @smedian_network #Economics #Books #Debt #Depression #CreditCards https://medium.com/@jarljensensocial_76795/the-real-price-of-a-debt-driven-economy-ebc3359dbf9a?source=linkShare-e6bd750eb12b-1523053889?aduc=aLF9qrD1524673800810Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "Cures depression :)  pic.twitter.com/ZO9c1hgS73",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "lol that feel when the depression hits u in d face right when ur about to study",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@cosmicpolitan thank you lovely girl for the #followfriday, have a great weekend both of you",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@anitafiander Thanks... Happy Mother's Day to you too",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Three Common Misconceptions About Depression  http://feedlog.weightliftingstation.com/three-common-misconceptions-about-depression/Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "girls in bed, watching Alias and getting ready to raid the fridge - blueberries, here I come",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Anyways enough depression shit that no one cares about  pic.twitter.com/ST2Idyeig9",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@kruelNtent well I guess we'll just b corny. Atleast were smiling",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "i wish i could just have one day where i was actually happy but alas,,,, my depression and bpd will not let that happen c:",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Vintage Anchor Hocking Green Depression Glass Parfait Pudding  by FabulousFinds1   https://etsy.me/2JoKskqÂ  via @Etsy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "just landed, home at last  can't wait to get back to my bed",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "June Rent Free!   @ http://twtqpon.com/21wc2g #twtqpon",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@JackieB LOL.  oh btw hai from mah laptopz.  you'll see it tuesday",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "I'm wondering if winter is really over now so I can take the motorcycle out of the shed? I'm starting to get the itch to ride again",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@ceoYangHyunSuck It's a prescribed medication for her depression. Granted, it was illegal in SK but, she was not selling it unlike others. She's been humiliated & unable to work. What more do you want? Why do you keep kicking someone who's already down? Leave her alone!!! #ë°ë´ì ë°ë´ë²ë ¤ëì¸ì",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "@nonafairuz F.U and your 200 more followers haha",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "anyway.. going <Emoji: Airplane> INTENSE depression nap",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "@agwyllie Europe as its many countries... You will be stagnant, here in, Europe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "How exercising can slash the risk of depression  https://nyp.st/2vGw2KqÂ  via @nypost",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "Going to be live at the new Beer Barrel from 4:15-5:30 giving away goodies",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "I need to update my gem chat blog to fight my creeping depression.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Depression  https://twitter.com/cyn_santana/status/989161090616643585Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3
+    },
+    {
+      "post": "its post iw depression hours",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Tips For Returning To Work After Postnatal Depression  http://dld.bz/gJz6aÂ  #pnd #postnataldepression #mentalhealth #ppd #anxiety #returningtowork #workingmums pic.twitter.com/rSRd8a0hrz",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@loz_xx haha thanks luv ya too!  see u tmozzzz wooo and dont worry, every DOG has its day, or in this case, their days...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "Vintage 1930s Mayfair Pink Depression Glass Candy Jar With Lid Open Rose Pattern  https://etsy.me/2Js2NxcÂ  via @Etsy",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "So on my to the airport AGAIN!! Lookin 4ward to BCN n Sonar, will b gr8 2 have a few days to chill b4 the party madness",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 27
+    },
+    {
+      "post": "I added a video to a @YouTube playlist  http://youtu.be/7luYt6eanbA?aÂ  Her last words (depression based)",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@TrishaBabbitt i blogged a @neilhimself &quot;hey girl&quot; photo on bust.com. you prob can find it if you google &quot;fuck yeah! neil gaiman&quot;.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "~ POURED @ the Nats game but I was prepared: umbrella, rain jacket, rain boots.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Anxiety and depression. (Quick sketch)#anxiety #depression  pic.twitter.com/yOjv6jvnkS",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "you can cure bipolar depression by eating fruits, going to the gym, and discovering what YOU'RE doing wrong â a dumbass w a no-name online degree in holistic medicine",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "@mattmcfadden Sorry for your loss. Depression is brutal.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "I can't sleep I can't eat properly I'm always sadI want to dieWelcome to depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "HEY EVERY BODY!!!! LOOK I'M NOLONGER A BROWN BOX... I'M SO GLAD",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "im genuinely annoyed. like i personally deal with suicidal thoughts and depression and the fact that someone would fake this or do it for attention im deeply disgusted",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Wow tonight is gonna be one hell of a night. FUCK YA BRING IT ON!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "DEPRESSION IS REAL & IDNT WANNA BE HERE !",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "@ WildstarB - Happy Rezday Captain   - and that was quite a party!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "World Matters #TorontoStrong #stolengirls #equality #PTSD #abuse #depression #TIMESUP #TheWarAmps #mentalhealth #suicide #stigma #homeless #survivor #Just4Today #RedFriday #IG2018 #LoveisLove #abilities #ACCESS4ALL #ClimateChange #MMIWG #Bully #boysmattertoo #BeccaToldMeTo pic.twitter.com/Z30r41Uh5o",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "depression is something i don't speak about even going through it because it's also such a double edged sword. i love every race. even if white people had done so much i can't hate them all. my grandma is legit white! how tf can i hate, i do dislike people though.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "@kierij_ WOW you just have a sample of depression that's all <Emoji: Face with tears of joy>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "My 6 year old just asked me why her teacher is &quot;Following&quot; me on MySpacebook.  LOL",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "I slept for 11 hours and that's an excellent gauge of how bad my depression is currently.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Fr, I be getting hit with random depression, outta nowhere <Emoji: Upside-down face><Emoji: Disappointed face>  https://twitter.com/opheliax5_/status/988292175501971457Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "On a side note: I have many POSITIVE PPL helping me spread the word of my new music n video. Like youuuuu my sexy TWITTER FAM  I THANK YOU",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 29
+    },
+    {
+      "post": "I'm Lindsay. I love anything true crime, coffee, reading, podcasts, blogging and talking about my dog/kids. I use a lot of GIFs. My spirit animal is the platypus, I'm Bipolar, have anxiety & depression. #letsbefriends pic.twitter.com/z5ed35EITb",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 36
+    },
+    {
+      "post": "Making Mary Kay appts. and taking care of a sick husband",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@plainlyphyra aww.. didnt get to tweet with you.. goodnight (or morning/afternoon there).. ill catch you next time (soon!)  tca *hugs*",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@Sarahies haha I guess so! Not sure, Im not going out. May have a wander over to a friend's house later",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "When YOUR BODY gets the RIGHT FUEL, watch what it does.Do you know anyone that has any these situations: high blood pressure, diabetes, arthritis and depression, MS,cancer, stiff joints or  sluggish over all apathy. WATCH THIS  pic.twitter.com/3pnRuel0vs",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "@GuySebastian Thanks for the follow  first celeb YEY hehe I bet you never get used to being called a celebrity x",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "that last hour went veeryyy quick",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@itswendylou Thank you  Happy Saturday to you too!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@nick_carter http://twitpic.com/3knrc - okaaay  thats crazy  luv it  erm....blue?!  omg",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Beginning a sermon series in Leviticus tomorrow. Yep. That's right. Leviticus",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "There is correlation between depression and losing your voice, or vice versa. Silenced turns into silence.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "@davynathan Lol!!!! Ur too funny Mr Hottie Way  - Ethan probably went back to sleep.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Sleeping next to someone you love not only reduces depression, but it also helps you to live longer and makes you fall asleep faster.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "The #Whistling Cure",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 3
+    },
+    {
+      "post": "@rjamestaylor @minter you know I HAVE TO see this shirt now!!!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "@harvardmed Why this @HarvardMed resident is opening up about his secret battle with depressionâand wants others to do the same:  http://bit.ly/2HJOwyLÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "depression sucks unless your depressing your dick into me haha",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@Trialsinner pinky swear",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 3
+    },
+    {
+      "post": "Oh, okay... So I totally forgot to Tweet this, but... Night At The Museum 2 was AMAZING, just like the first one. I loved it",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "Engaging in physical activity decreases people's chance of developing depression  https://ift.tt/2vJK3HiÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 11
+    },
+    {
+      "post": "https://www.google.com/search?q=federal+reserve+caused+great+depression&client=ms-android-verizon&prmd=niv&source=lnms&tbm=vid&sa=X&ved=0ahUKEwiRjNbe7dTaAhVGKGMKHU58Bx4Q_AUIEygD&biw=320&bih=489Â â¦How the Federal Reserve caused the Depression and cheated Americans out of their money.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@kaitoconnell Aaaaayyyyy momma you trynna take a depression nap later",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "it's rainy and I love rain but rain like,,, triggers my depression so I feel like shit rn",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "i love depression hour  pic.twitter.com/XKaD37qE7O",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@Flick101studio hahaa..ok set! give me the time and date. place.. HAHA.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 11
+    },
+    {
+      "post": "partying it up tonight at J lounge in downtown LA. Its a nice sunny day in cali!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@ryanhawiya yeah i wouldnt care if i was in a Disney channel movie! but i really wanna be in a horror/thriller",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "@BTS_ARMY_INT They got me out of depression during the darkest moments of my life and nothing can explain how profoundly they have impacted my life. They're the only constant in my life even when things are falling apart and thats one reason why i will protect them at all cost",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 50
+    },
+    {
+      "post": "Yoga, meditation, running, gym, healthy eating, mindfulness, hula hooping, dancing, self-care, enough sleep, arts & crafts, puzzles, colouring books, affirmations? http://feelgoodart.orgÂ  #affirmations #videos #printable #depression #WellnessWednesday via  http://ripl.comÂ  pic.twitter.com/LGt3KJt7Rp",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "aww loved bacc now at miz's house for the BBQ",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "I'm entering a post-infinity war depression bye",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Finally back home  had a fun day at Arrowhead Mall with @Jamie_Cheroske @enbaldarlingg and @kevinwilliams",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@NicoledeB I dont' have much clout, but would def give 'arugulance' 2 thumbs up.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Abnormal Functional Connectivity of Ventral Anterior Insula in Asthmatic Patients with Depression.  http://dlvr.it/QQjTv0Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "http://twitpic.com/6rfhc - ooohh....what if i fell to the floor? couldnt take this anymore...this might become a lyrics session lol",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "taking a much needed nap  nighty night.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "Goob was truly the only character that has ever come closer to Deadpool in the comics to showing true depression.  https://twitter.com/lnsaneTweets/status/989154383802793984Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@snehliverbird Forget about the post Klopp era, I'm getting depression pangs over his record in big finals",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "#MentalHealthAwareness month & Children's Mental Health Week, join @NIMHgov's Twitter chat on teen depression on May 3rd at 3 PM ET. NIMH experts will be answering your questions. #NIMHchats to follow the conversation:  @NEDAstaff  http://bit.ly/2K3W5hJÂ  pic.twitter.com/pEf3EPgVyZ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 36
+    },
+    {
+      "post": "is hoping someone wont check their twitter so I can surprise them later today",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "Running is my way of processing things that happen. It's my way of coping with depression andâ¦  https://www.instagram.com/p/BiAjCkInrG4/Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 18
+    },
+    {
+      "post": "sorry for not being active lately, my depression is getting the best of me <Emoji: Pensive face> love you all very much <Emoji: Beating heart><Emoji: Beating heart><Emoji: Beating heart>  pic.twitter.com/hErK360cyg",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 30
+    },
+    {
+      "post": "Ask HN: Effective methods to fight depression:  https://news.ycombinator.com/item?id=16922738Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 9
+    },
+    {
+      "post": "i love it when stupid people use terms like ocd, depression, bipolar, trust issues and anxiety when they literally know nothing about it",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "@aJackieLarsen @Nemosanartist @highwatermark_ Not everyone has the capacity to immediately understand all material taught to them.  Everyone has their strengths and weaknesses, and the stress from dealing with something that a person isn't generally good with can be overwhelming.  Also, depression sucks and causes crying.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 45
+    },
+    {
+      "post": "About that time to smoke some weed and take a depression nap",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "@POTUS @FLOTUS @RamonitaSilva7 @JeffreyGuterman @steve_durnan O saved us FROM a Great Depression. Recovery has steadily improved w NO CHANGE under trumpAlso, trumps getting ousted one way or the otherHe's a CRIMINAL & Mueller will NAIL HIMCOUNT ON IT  pic.twitter.com/5avCFO1r6R",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 39
+    },
+    {
+      "post": "my boat has been floated by @stephenjerzak",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "ha, everybody is saying goodnight to twitter @heycassadee Twitterroos @selenagomez night  umm ok thats it!night!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@Mari122500 Substitute that pit of emptiness for something you really like to do,  don't self medicate because you will only dive deeper into depression,  meditate,",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "about to leave for the kiro",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Me after dealing with anxiety and depression, nd someone asks if I'm alright:  https://twitter.com/linongarchives/status/988125671833653249Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Feel so empty.. Worthless.. Failure.. Hopeless.. Unwanted.. A joke.. Fuck up.. Embarrassment.. #depression #borderlinepersonality #mentalillness #bipolar #anxiety",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@c4lpt Redesign looks good. Pleasant improvement",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@sawyersweetie LOL! Not very! You should! You do have a new job to dress for.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@Aasri_Kayy ummm... okay, well whatever IT is, it can't sing all that well? Katy Perry sings it better, mayne.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@johnbernos Seriously dude. Let's get jobs back at Disneyland! I mean, we can still be with RD too if we're seasonal right?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 22
+    },
+    {
+      "post": "New post (Reverse the Aging Process) has been published on Healthier Life 101 -  https://www.healthierlife101.com/reverse-the-aging-process/Â â¦ #AntiAging #BestAntiAgingProducts #Cancer #Depression #HairProducts #PainRelief #ReverseAging #ReverseDisease #ReverseTheAgingProcess #SkinCare #Socialization #Supplements pic.twitter.com/m1qJmncpaL",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "@Nice_Igloo Real depression hours :(",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Hello to all my new followers",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "Exercise can prevent depression, no matter your age or gender @qz  https://buff.ly/2Ke5F1BÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "Sun is shining... Going to studio... Or go to the sea? That's the problem...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "will shop for labels, while those ladies lay and wait for love, uh! go fergie",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Spaniards can notice my Galician accent when I speak English. They find it funny",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@nerdy_passion Bullcrap you don't miss us. Do you know how much trouble you caused? You caused the server to die and caused me to go into spiraling depression, came into my house and accused me of crap I didn't do to you, etc. Never contact me after this.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 48
+    },
+    {
+      "post": "@Exoticqtee u a learn!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 4
+    },
+    {
+      "post": "A big part of depression is feeling really lonely, even if you're in a room full of a million people",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@stillgenie I thought that was the show she casts. I want to be the star, or nothing.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@stillsoyoungxo soooo I didn't bother to look for it and I tom myself imma wait till it comes out on Tuesday w/c I'm really excited about",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "@symphonyinsepia It's the depression and stress.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "wow imagine me without time management and concentration issues, minor anxiety, self diagnosed depression, and depleting heath problems from unhealthy eating habits <Emoji: Relieved face>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 25
+    },
+    {
+      "post": "JUST STOP. Dopamine is for mood elevation. Norepinehrine has activity on both @ and B receptors, increases sympathetic activity. Serotonin levels decreased in anxiety & depression while oxytocin causes uterine smooth muscle contraction in active phase of labour. Period.  https://twitter.com/hamzaeqbal/status/989195927742238721Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 41
+    },
+    {
+      "post": "just played a cash game with my friends at my house and cashed out for $1545 when there was only $2370 on the table.. profited $845",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 26
+    },
+    {
+      "post": "Hopefully my roomies won't become obsessed with me and try to kill me like the one in the movie single white female did...",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 23
+    },
+    {
+      "post": "@CLinterior Happy weekend; that is great about your father.  Good morning yet from our side of the globe",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 18
+    },
+    {
+      "post": "@HarlemLanes Right!  I am trying to convince my homegirl thats its a lounge type thing that just happens to have bowling",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "just added heaps of new celebs. lana, i think we're the only true twitterers  ILY all",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "Chronic depression is a mother fucker. I don't know when I am awake, drunk, asleep, crying. Knowing I have no one to talk to.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 24
+    },
+    {
+      "post": "@ShizuStreams shizu is the best healer.  She heals my sadness and depression with her voice c:",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 16
+    },
+    {
+      "post": "wrap me tight in rice-paper string http://archiveofourown.org/works/11717343Â â¢ NAMJIN, namjoon-centric (7.6k)â¢ LOT of dark stuff but mainly abt recovery and healingâ¢ BIG TW!: child sexual abuse, rape, depression, drug use, suicide attemptâ¢ only recommending this cause it's very well-written  pic.twitter.com/6fqddXe5BY",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "@AsaCavalli PS u can't call me boo then old head, that mix don't match!!! (An I'm younger than you!!! Cougar!!) Lmao",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 21
+    },
+    {
+      "post": "@adsxoxo I just saw the trailer for The Road on ET. I WANT TO WATCH",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 15
+    },
+    {
+      "post": "Long weekend here in Canada! Heading over the border for a little shopping and a change of scenery.    Have a good one, see you Tuesday!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "@heylandsberg @sadTOsportsfan Everyday presents a new challenge. I'm doing my best to make sure the world knows... It's ok to have depression and it's not ok to put other people down #love #peace #chainlink<Emoji: Link symbol> #supportmentalhealth",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 37
+    },
+    {
+      "post": "i can feel that Depression Sessionâ¢ kicking in <Emoji: Smiling face with heart-shaped eyes><Emoji: Smiling face with heart-shaped eyes>",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 19
+    },
+    {
+      "post": "@philcampbell I've just returned home from a day by the coast! It was akin to July 4th!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "Going up north for the weekend :[ but on the brightside..I'm going to dance my ass off at the wedding",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "#Journey2worthy #podcast episode 13FLAT to FIT! Listen to @lasagafitness as she explians how to overcame a severe depression and started her own fitness company! Tune in here:  http://www.journey2worthy.comÂ  pic.twitter.com/SaXILDoiBq",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 29
+    },
+    {
+      "post": "@revstacey I don't know your number!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "I love Jay Jay Pistolet.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "Doc @giasison how to treat depression po? And how to fight it?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 12
+    },
+    {
+      "post": "wow, i found all of brennan's messages saved in a word document. they're so sweet. i love him so much.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "Well what an absolutely shit day. Sick of my life taking shots at me every fucking day. The point of me trying is supposed to make effort not dig me deeper into depression, anger & stress!Sorry for short/crappy stream. Honestly don't know when or If I'll be back..  pic.twitter.com/pLbpbaO1WT",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 49
+    },
+    {
+      "post": "[Zicutake] Depression can be prevented by exercise  https://goo.gl/fb/Mu7k6tÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Do you run a blog or website on mental #health ? Look! #niche #PLR #content on #depression to add to your ws Pls RT http://smarturl.it/depressiononam?IQid=jbhowtoÂ â¦ pic.twitter.com/FkfNJ7XDoH",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 27
+    },
+    {
+      "post": "@anautumnecho Nice talking to you Alex, thanks!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 7
+    },
+    {
+      "post": "i cooked. depression where?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 4
+    },
+    {
+      "post": "TWITTER MYSPACE FACEBOOK UNBLOCKED AT SCHOOL. LOVE IT",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Old post catch up: Sinking? I hate you, depression  http://rviv.ly/sfkMZEÂ",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 10
+    },
+    {
+      "post": "@jmcefalas @BootstrapCook After years of no-appetite/depression I gained weight, came up to 29 BMI. This is a good thing though, as a certain someone refuses to believe I'm overweight so it's shattered their ideas about their own weight.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "If we could take @kanyewest 's opinion of himself, dry it out, and grind it down into little tablets, we could single handily cure depression in this country; if not the world..",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 32
+    },
+    {
+      "post": "Happy two year anniversary to the best gurrfrann in the whole world",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 12
+    },
+    {
+      "post": "@DeionSanders I changed my life with the help of football, saved it from depression and almost suicide. But today continue to help others",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "is off to bed. Goodnight everyone",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 6
+    },
+    {
+      "post": "@charleehissey When I was off with depression I had to have medical proof ( ie what medication I was on )",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "@Reauxnin: ty for the ff love twomie!! Lol",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@KimKardashian @SamTheGreat_ You also need to reread Kim's post. She didn't say her husband was mentally ill. She said mental illness is no joke. As people who assume he's mentally ill for using his own mind are making jokes about it. I have mental illness. Depression and anxiety. It's no joke.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 51
+    },
+    {
+      "post": "@disciplesix ooh how??? Show me",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 5
+    },
+    {
+      "post": "@marcusschossow bet that is invented in sweden! hahah",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@hannahber Thanks Sam. I'm going through a lot lately. Take care of yourself.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "I Really Enjoy Following Random People On Here &amp; Striking Up Conversations!! Could Kinda Seem Odd But I'm Just Chatty  And A Bit Nosey",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "https://m.youtube.com/watch?v=UPS_oV6OD6QÂ â¦How the Federal Reserve caused the Depression and cheated Americans out of their money.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 15
+    },
+    {
+      "post": "@TraceCyrus Hey Brudder!! i miss you sooo much.. come back from tour  when can i see you?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "@TheSongBird75 That's so twisted. I hated CAMHS too, they said I just had mild depression and ignored an early diagnosis of BPD xx",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 23
+    },
+    {
+      "post": "I have started sharing my journey through depression on my blog, go to my website and check it out... we need more mental health awareness in NZ  http://igotyou258991715.wordpress.comÂ #igotyou #nzmentalhealth #MentalHealthAwareness",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 31
+    },
+    {
+      "post": "Physical Activity and Incident Depression: A Meta-Analysis of Prospective Cohort Studies: American Journal of Psychiatry: Vol 0, No 0  https://ajp.psychiatryonline.org/doi/suppl/10.1176/appi.ajp.2018.17111194?platform=hootsuite#.WuBj1x0CpLE.twitterÂ â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 21
+    },
+    {
+      "post": "Depression sucks",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 2
+    },
+    {
+      "post": "@audaciouslady Hey, AL.. Have U tried search.twitter.com ? Adding hashtag (ex #Disability ) in front of words finds likeminded tweeple",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 20
+    },
+    {
+      "post": "@5windows Play your cards right and you can be @SunsBunny LOL Ummm anyway you look like an innocent angel but somehow I doubt it  xoxo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 25
+    },
+    {
+      "post": "morning twits happy sunday ya'll, from a sunny Durham",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "NIGHT babies. Got a VH1 thing in the am  Check out my pics! http://twitpic.com/2y57u http://twitpic.com/2xzl1 http://twitpic.com/2y5s2",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "I hope you had the time of your life... testing the slide show for swim. I'm proud",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 17
+    },
+    {
+      "post": "this day keeps getting better i got my tax refund, a free vacation, my paycheck, and a new couch....",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "got internet on my phone so i can be cool",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "ahhh you know it's going to be a good day when you aren't nursing a hangover",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 16
+    },
+    {
+      "post": "is at Hogs Breath waiting for a table",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Depression: The Misunderstood Epidemic  https://tacticalinvestor.com/might-explain-unhappiness-epidemic/Â â¦",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 6
+    },
+    {
+      "post": "I edited over 400 photos, blogged ( http://tr.im/funnyface ), and took care of some emails.  If only I was this productive all the time.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 24
+    },
+    {
+      "post": "PEOPLE GET ONT TWITTER...................to late going to facebook",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Well... another dayoff, another stream.no warframe today. Frostpunk, chill music and relaxed depression.Stream starts at 16:00 (+4 UTC)see ya at  http://twitch.tv/lokisnailÂ #SupportSmallerStreamers#nightstreams@TwitchBoost@TwitchGrower@TwitchRTsBot@TwitchNetworkin",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 22
+    },
+    {
+      "post": "@MikeTrout  would be willing to support our company's cause. We focus on saving the lives of teenagers by encouraging them to learn to love the characteristics that make them different. We decrease, suicides, homicides, bullying, depression, and more.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 38
+    },
+    {
+      "post": "in a foursome with anxiety, stress and depression",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@adamagee awesome! super stoked for the new album",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "@DENISE_RICHARDS Very Cool Ms. Richards   Enjoy your day.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 8
+    },
+    {
+      "post": "Serious question for my fellow depression sufferers. What are some techniques you use to keep going when you're not on medication? Because I find myself sliding back down the slope and my progress being reversed.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 35
+    },
+    {
+      "post": "Listen LIVE!  Now playing Depression by J.C. Hulsey!  Hosted by Tim Boudreau.  http://outlawsradio.airtime.pro/Â",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 13
+    },
+    {
+      "post": "Quote of the day: &quot;Walk softly and carry a big magnifying glass.&quot;  -Richard Lacayo",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 14
+    },
+    {
+      "post": "@daintyflair was at Bishan just now; is ok la.",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 9
+    },
+    {
+      "post": "Hell isn't a location, it's a state of mind. Anxiety, fear, and depression are your demons. At the center of your problems, you're the one pulling the strings.",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 28
+    },
+    {
+      "post": "Tonight is the Night where it's all Depression naps but No Energy Recovered folks",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 14
+    },
+    {
+      "post": "going to mangdu in a bit, then to magnivate's office, after that senci and maybe fx O_O oh my",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 19
+    },
+    {
+      "post": "watch this...  http://bit.ly/cZ9k7  ok now. who wants to make out?",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 10
+    },
+    {
+      "post": "Fun fact about Pandora's Box ( http://Soundcloud.com/cabido/pandoras-boxÂ â¦ <Emoji: Skull>), the Derg 'Depression' chime is in there bc the project started as a VOL. 149 for @_TSURUDA_ #legendsneverdie and if you have never heard of Depression by Derg, wyd with your life?",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 42
+    },
+    {
+      "post": "I would like to see a #dystopian #YA novel in which a technologically privileged society makes personal autonomy the highest value, leading to cultural polarization, the fragmentation of communities, and a huge rise in depression and economic inequality. Oh, wait...",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 40
+    },
+    {
+      "post": "And June also brings E3! Sony press conference 7pm our time tomorrow night!",
+      "label": "normal",
+      "ground_truth": "not depressed",
+      "word_count": 13
+    },
+    {
+      "post": "me falling into my anxiety and depression  pic.twitter.com/XGlw9Pkxgl",
+      "label": "depression",
+      "ground_truth": "depressed",
+      "word_count": 8
+    }
+  ]
+}
