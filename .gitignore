@@ -1,6 +1,4 @@
 .env
-results/
 __pycache__/
 *.pyc
-data/cleaned/
-data/sampled/
+
