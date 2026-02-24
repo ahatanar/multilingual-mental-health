@@ -1,11 +1,25 @@
 {
   "metadata": {
-    "model": "claude-haiku-4-5",
+    "model": "claude",
     "language": "urdu",
-    "status": "partial",
-    "completed": 360,
-    "total": 500,
-    "last_saved": "2026-02-24T17:46:07.428830"
+    "timestamp": "20260224_175149",
+    "sample_size": 500
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "true_positives": 104,
+      "false_positives": 1,
+      "true_negatives": 249,
+      "false_negatives": 146
+    },
+    "precision": 0.9905,
+    "recall": 0.416,
+    "f1_score": 0.5859,
+    "accuracy": 0.706,
+    "total_samples": 500,
+    "total_classified": 500,
+    "unclear_responses": 0,
+    "error_responses": 0
   },
   "results": [
     {
@@ -3607,6 +3621,1406 @@
       "raw_response": "Not Depressed\n\n(This is a casual, temporary statement about feeling tired and going to bed. It describes a momentary state without indicators of persistent depression, hopelessness, or behavioral dysfunction.)",
       "error": null,
       "word_count": 5
+    },
+    {
+      "index": 361,
+      "post_preview": "what if petrol diesel prices re increased pahisa day till loksabha election",
+      "post_full": "what if petrol diesel prices re increased pahisa day till loksabha election",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 362,
+      "post_preview": "since vankr isnt givingus confesionmahinne khud likh dala its my first storyjo aj complete hahi lets...",
+      "post_full": "since vankr isnt givingus confesionmahinne khud likh dala its my first storyjo aj complete hahi lets give trynd find best location for their confesion sahirat love confesion on",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 28
+    },
+    {
+      "index": 363,
+      "post_preview": "mujhe kisi chiz tawajo nahi ja",
+      "post_full": "mujhe kisi chiz tawajo nahi ja",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 364,
+      "post_preview": "dil mahinn preshanion bojh mahinn preshan hon",
+      "post_full": "dil mahinn preshanion bojh mahinn preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional Urdu verse vocabulary about emotional burden. While it uses emotional language, it lacks the personal, persistent indicators of depression such as hopelessness, worthlessness, social",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 365,
+      "post_preview": "phle kia log khudkushi shoq s krte vo bemr hote zehni tor pr jahise mahinn abhy",
+      "post_full": "phle kia log khudkushi shoq s krte vo bemr hote zehni tor pr jahise mahinn abhy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post is making a general observation/commentary about suicide and mental illness in society, not expressing personal distress or suicidal ideation. It's a third-person societal observation, not self-directed suffering",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 366,
+      "post_preview": "subject bhi mehsos nahi sakta s dead inside",
+      "post_full": "subject bhi mehsos nahi sakta s dead inside",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 367,
+      "post_preview": "when someone asks rat bhi chahy",
+      "post_full": "when someone asks rat bhi chahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 368,
+      "post_preview": "zakhmon silsila chalta rehta dil mahinn drd",
+      "post_full": "zakhmon silsila chalta rehta dil mahinn drd",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional Urdu ghazal vocabulary about wounds and heartache. While emotionally evocative, it lacks personal distress indicators and reads as a stylized romantic or philosophical",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 369,
+      "post_preview": "iske apne log hukomat men to mujrim hone bawajod bahil gayilekin abhi mauka musalmano utho constitut...",
+      "post_full": "iske apne log hukomat men to mujrim hone bawajod bahil gayilekin abhi mauka musalmano utho constitution bachane taqat agr kisi men to sirf tum",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 370,
+      "post_preview": "tawajuh nahi pa hon personal problems wajah",
+      "post_full": "tawajuh nahi pa hon personal problems wajah",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 371,
+      "post_preview": "sirappreciate your effort",
+      "post_full": "sirappreciate your effort",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 372,
+      "post_preview": "bad desh khushian gayab gayy",
+      "post_full": "bad desh khushian gayab gayy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is political/societal commentary (\"the country's happiness has disappeared\") expressing frustration about the state of the nation, not personal mental health distress.)",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 373,
+      "post_preview": "lotus also ned make money fund those drivers crs",
+      "post_full": "lotus also ned make money fund those drivers crs",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 374,
+      "post_preview": "mahinn thakawat chor ho muskuraty huway ronay lgti hun zro qitr",
+      "post_full": "mahinn thakawat chor ho muskuraty huway ronay lgti hun zro qitr",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 375,
+      "post_preview": "lafz bayan krne pehle dil tot hahi mera",
+      "post_full": "lafz bayan krne pehle dil tot hahi mera",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a poetic/literary expression using conventional romantic or ghazal-style language (\"my heart breaks before words can express it\"). While it uses emotional vocabulary, it reads as a stylized poetic statement rather",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 376,
+      "post_preview": "jet khwab lekin dil keh hahi hrne hon",
+      "post_full": "jet khwab lekin dil keh hahi hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"beautiful dreams, but the heart says they will break/be destroyed.\" While melancholic in tone, this is a poetic/romantic expression about dreams and heartbreak rather than a personal expression",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 377,
+      "post_preview": "mujhe thek nahi pata bhahi lekin ane wale mahino mahinn mujhe bohot mushkil fahisle lene honge",
+      "post_full": "mujhe thek nahi pata bhahi lekin ane wale mahino mahinn mujhe bohot mushkil fahisle lene honge",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(The post expresses uncertainty and anticipation of difficult times ahead, but this is situational concern about future challenges, not persistent hopelessness, worthlessness, or behavioral indicators of depression.)",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 378,
+      "post_preview": "khush bahut hogi auntyahir hindu kaffor hr gaye australia wale fir ehle kitab",
+      "post_full": "khush bahut hogi auntyahir hindu kaffor hr gaye australia wale fir ehle kitab",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post contains political/religious commentary expressing frustration about migration and religious groups. The emotional language is directed at societal issues, not personal mental health or self-directed distress.)",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 379,
+      "post_preview": "roth hon khud mahinn preshan hon",
+      "post_full": "roth hon khud mahinn preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"I cry, I trouble myself\" — it expresses temporary emotional distress or frustration in a casual, momentary way rather than persistent hopelessness, worthlessness, or behavioral symptoms",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 380,
+      "post_preview": "izzat her ahik ras nahin aty",
+      "post_full": "izzat her ahik ras nahin aty",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 381,
+      "post_preview": "tanhahi zanjer mujhe bandh rakhti logon dunia mahinn apni jagah nahi apna khud khayal nahi rakh sakt...",
+      "post_full": "tanhahi zanjer mujhe bandh rakhti logon dunia mahinn apni jagah nahi apna khud khayal nahi rakh sakta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 382,
+      "post_preview": "khush raho",
+      "post_full": "khush raho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 383,
+      "post_preview": "mujhe ej din kahi br suicidal khialath athe",
+      "post_full": "mujhe ej din kahi br suicidal khialath athe",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 384,
+      "post_preview": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "post_full": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional ghazal vocabulary about heartbreak and shattered dreams. While it employs melancholic imagery, it reads as a romantic or philosophical verse rather than a personal expression of",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 385,
+      "post_preview": "jane hm modh p a gye age socho bechayni peche socho yadein",
+      "post_full": "jane hm modh p a gye age socho bechayni peche socho yadein",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses temporary worry about a decision (\"we've reached a point, think ahead about anxiety, think back about memories\"). It reflects situational concern about a specific circumstance, not persistent hopelessness, worth",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 386,
+      "post_preview": "bas ba",
+      "post_full": "bas ba",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 387,
+      "post_preview": "fir koi khush nahy",
+      "post_full": "fir koi khush nahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a casual, vague statement (\"no one is happy\") that appears to be a general observation or complaint about circumstances rather than a personal expression of depression. It lacks specific indicators of hopelessness, worthless",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 388,
+      "post_preview": "rahahi kitni lambi keun ho lekin himmat kamy",
+      "post_full": "rahahi kitni lambi keun ho lekin himmat kamy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses temporary frustration about a situation being long or difficult and lacking courage/motivation in that moment—situational complaining rather than persistent hopelessness, worthlessness, or behavioral indicators of depression.)",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 389,
+      "post_preview": "aur zulam nahi dekh sakta mrna chahta",
+      "post_full": "aur zulam nahi dekh sakta mrna chahta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 390,
+      "post_preview": "mian k shahir hahim b follow dahin plz",
+      "post_full": "mian k shahir hahim b follow dahin plz",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 391,
+      "post_preview": "maut khauf nahi mujhe use roshni trah dekhta hon",
+      "post_full": "maut khauf nahi mujhe use roshni trah dekhta hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses a philosophical or spiritual perspective on death—viewing it as light rather than something fearful. While it mentions death, it does not express hopelessness, worthlessness, self-harm intent,",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 392,
+      "post_preview": "lah orang tua ni kau duk mengajr apa lagi bahik kau mampos je dripada kau menyakit kan hati korang b...",
+      "post_full": "lah orang tua ni kau duk mengajr apa lagi bahik kau mampos je dripada kau menyakit kan hati korang bodoh punya orang tua musibat tua krepot",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses anger and frustration directed at parents/elders, using harsh language. It is situational complaint and criticism of others, not self-directed expressions of hopelessness, worthlessness, or",
+      "error": null,
+      "word_count": 26
+    },
+    {
+      "index": 393,
+      "post_preview": "allah lambi sehatmand zindagi auladon khan sahab amen sumamen happy birthday freimrankhannow frepale...",
+      "post_full": "allah lambi sehatmand zindagi auladon khan sahab amen sumamen happy birthday freimrankhannow frepalestine fregazanow",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 394,
+      "post_preview": "pichle mahine hue rajya chunav pehle hr pundit pandit nahi dhyan dijiega cutia save this twet kah bj...",
+      "post_full": "pichle mahine hue rajya chunav pehle hr pundit pandit nahi dhyan dijiega cutia save this twet kah bjp hr rajya mahinn hrne bhavishyavani gaye wo sab bhag gaye pata nahin pagal khane mahinn pakistan mahinn",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 395,
+      "post_preview": "cre about them zaka sr kekhduo wrna sta pashan khu nayam sok tapos am nakahi rejected always single ...",
+      "post_full": "cre about them zaka sr kekhduo wrna sta pashan khu nayam sok tapos am nakahi rejected always single ba mray sta pashan musibat ba sr sok akhle",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post appears to be fragmented, code-switched text with unclear syntax. While it contains words suggesting rejection and relationship difficulties, the disjointed nature makes it difficult to identify genuine personal distress versus casual complaining",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 396,
+      "post_preview": "pantesan klo liat org tkt khilaf trs daya khayal nya terbiasa kerah bgtugile bener nonton dikit aja ...",
+      "post_full": "pantesan klo liat org tkt khilaf trs daya khayal nya terbiasa kerah bgtugile bener nonton dikit aja berdiri bulu kuduk",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 397,
+      "post_preview": "khud bahut tanha bebasi mehsus krta hon",
+      "post_full": "khud bahut tanha bebasi mehsus krta hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 398,
+      "post_preview": "meri jan tia dil pahi mat lo abhi ishq kay imtehan bhy",
+      "post_full": "meri jan tia dil pahi mat lo abhi ishq kay imtehan bhy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is romantic/poetic language expressing a request not to test one's heart in matters of love. It's a conventional romantic sentiment, not an expression of personal mental distress, hopelessness, or behavioral symptoms",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 399,
+      "post_preview": "to grib admi sir mere pas padhahi pahisa nahi so govt schol padhta",
+      "post_full": "to grib admi sir mere pas padhahi pahisa nahi so govt schol padhta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 400,
+      "post_preview": "meanwhile alina prhahi streaks bhjty hoye",
+      "post_full": "meanwhile alina prhahi streaks bhjty hoye",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 401,
+      "post_preview": "terrorists have herd that frmers punjab have ben brutally beaten up god cre has ben taken by am admi...",
+      "post_full": "terrorists have herd that frmers punjab have ben brutally beaten up god cre has ben taken by am admi prty punjab chandigrh sikhs",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 402,
+      "post_preview": "apa khabr nama saya",
+      "post_full": "apa khabr nama saya",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 403,
+      "post_preview": "kahu jurm mubtala hon",
+      "post_full": "kahu jurm mubtala hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This appears to be a poetic or literary phrase (\"I am afflicted by crime/sin\") rather than a personal expression of depression. Without broader context indicating genuine personal distress, this reads as literary or philosophical expression",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 404,
+      "post_preview": "paki rishtedron khush krney liejo sadmen hahy",
+      "post_full": "paki rishtedron khush krney liejo sadmen hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"Pakistani relatives are sad/unhappy\" — it's a third-person observation about others' emotional state, not a personal expression of the poster's own mental distress.)",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 405,
+      "post_preview": "asman ro hahi mujh jahise totay hue dilon himmat dekh",
+      "post_full": "asman ro hahi mujh jahise totay hue dilon himmat dekh",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional metaphorical language (\"the sky weeps like me,\" \"broken hearts\"). While it employs melancholic imagery, it reads as a shayri-style composition",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 406,
+      "post_preview": "ankhon mahinn chhupi mayosi hr muskurahat bhi rukawat banaty",
+      "post_full": "ankhon mahinn chhupi mayosi hr muskurahat bhi rukawat banaty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional ghazal vocabulary about hidden sorrow and forced smiles. While melancholic in tone, it reads as artistic expression rather than a personal statement of genuine distress or",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 407,
+      "post_preview": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh ...",
+      "post_full": "qawmu vikkaslafa bogeri dhuvvan anekkaves ry ey kiahigen molhu vahaka eh ufankurane ry evves kusheh kurevvinama ekkala millionuge molhu report budhdhi qabolu kura vahaka thakeh vunes hehehe",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 408,
+      "post_preview": "aj dinner kha hon dil ek sukon nahi a",
+      "post_full": "aj dinner kha hon dil ek sukon nahi a",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses temporary dissatisfaction or lack of enjoyment from a specific meal/event, not persistent depression. It's a casual complaint about a single situation, not indicative of hopelessness, worthlessness",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 409,
+      "post_preview": "meri maut likhi hr din mrna kahise sikhun kisi aujr",
+      "post_full": "meri maut likhi hr din mrna kahise sikhun kisi aujr",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 410,
+      "post_preview": "khud toh nhi likh rahe sab",
+      "post_full": "khud toh nhi likh rahe sab",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 411,
+      "post_preview": "ap bade admi samjha sakti honourable madamjahise kat handi agr agni dur hotho khana nahi bann sakta ...",
+      "post_full": "ap bade admi samjha sakti honourable madamjahise kat handi agr agni dur hotho khana nahi bann sakta bade admi samjhahiemeri family danger mahinn mobile",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 412,
+      "post_preview": "pyra sa dil madom sa chehra mithi muskan yahi hahi meri bat ap btao kese ap",
+      "post_full": "pyra sa dil madom sa chehra mithi muskan yahi hahi meri bat ap btao kese ap",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 413,
+      "post_preview": "dekho pri jii himmat kam lo hosla rakho adna sa dil hue jhoth moth sa shayr tumhe bas hath dil pr ra...",
+      "post_full": "dekho pri jii himmat kam lo hosla rakho adna sa dil hue jhoth moth sa shayr tumhe bas hath dil pr rakh dusre follow wale option pr click mujhe pata mushkil hahi bahot pr zindgi mahinn ese fahisle bhi lene hote der",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post appears to be casual, fragmented advice/encouragement to someone (\"keep courage, don't lose hope\"). While it mentions life being difficult, it's framed as motivational guidance to another person rather than",
+      "error": null,
+      "word_count": 42
+    },
+    {
+      "index": 414,
+      "post_preview": "mrna rahi hon agahin kash humri foreign trp count hoti no hopes left now pls watch on tv everyone",
+      "post_full": "mrna rahi hon agahin kash humri foreign trp count hoti no hopes left now pls watch on tv everyone",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 415,
+      "post_preview": "bechahi si mei bekhabr sa sangenghalty",
+      "post_full": "bechahi si mei bekhabr sa sangenghalty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 416,
+      "post_preview": "bht bht mubrak innshallah bohat munafa ga",
+      "post_full": "bht bht mubrak innshallah bohat munafa ga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 417,
+      "post_preview": "ankhon mahinn chhupi batein sirf rat hi samne aty",
+      "post_full": "ankhon mahinn chhupi batein sirf rat hi samne aty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional romantic or melancholic imagery — \"hidden feelings in eyes, only the night understands.\" While it employs emotional language, it reads as a verse or ghazal",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 418,
+      "post_preview": "badal sab gya waqt log halat aur kismat bas nhi badla thi yadien",
+      "post_full": "badal sab gya waqt log halat aur kismat bas nhi badla thi yadien",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post reflects on how time and circumstances change, but people's memories remain. It's a philosophical observation about the passage of time and fate, not an expression of personal hopelessness, worthlessness, or persistent",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 419,
+      "post_preview": "some basic skincre tips that can try at home protect it from drying winters skincre dryskin skincret...",
+      "post_full": "some basic skincre tips that can try at home protect it from drying winters skincre dryskin skincretips healthyskin sehatmandapp",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 420,
+      "post_preview": "asman rula aj preshanion saya hahy",
+      "post_full": "asman rula aj preshanion saya hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression about external circumstances (\"the sky cries today, shadows of troubles\") rather than personal mental distress or self-directed suffering.)",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 421,
+      "post_preview": "insan itna gredy jitna mile use km pd jata hahy",
+      "post_full": "insan itna gredy jitna mile use km pd jata hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 422,
+      "post_preview": "to pakhandi fauj hahiabhi dna check krega",
+      "post_full": "to pakhandi fauj hahiabhi dna check krega",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 423,
+      "post_preview": "memory triggered from high schol sexed wod shop teacher made woden dils then we all had practice put...",
+      "post_full": "memory triggered from high schol sexed wod shop teacher made woden dils then we all had practice putting condoms on them with female teacher our sexed clas",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 424,
+      "post_preview": "hr roz kam jane soch drdnak lagti keunki dukh mujhe andr kuchal hahy",
+      "post_full": "hr roz kam jane soch drdnak lagti keunki dukh mujhe andr kuchal hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 425,
+      "post_preview": "azziat nikalne rasta dhundh hon lekin mujhe rasta nahi dikhta",
+      "post_full": "azziat nikalne rasta dhundh hon lekin mujhe rasta nahi dikhta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 426,
+      "post_preview": "better be homo sapien rather being typical woman there a outside shayri unrealistic poems cinema puz...",
+      "post_full": "better be homo sapien rather being typical woman there a outside shayri unrealistic poems cinema puzzle",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 427,
+      "post_preview": "bohat azziat nak din mere mahinn nahi jena chahty",
+      "post_full": "bohat azziat nak din mere mahinn nahi jena chahty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 428,
+      "post_preview": "bahut royga apne biwi bacho juthi kasm khay vo admi thodi h",
+      "post_full": "bahut royga apne biwi bacho juthi kasm khay vo admi thodi h",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses frustration or criticism about someone else's behavior (a man making false oaths to his wife and children). It is third-person commentary on another person's actions, not self-directed expressions of",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 429,
+      "post_preview": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this ...",
+      "post_full": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this scoundrel corrupted courts serve him",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 430,
+      "post_preview": "rahahi jud gayi dil rishta tot hahi keun teri muskurahat nahi milty",
+      "post_full": "rahahi jud gayi dil rishta tot hahi keun teri muskurahat nahi milty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses sadness about a broken relationship and missing someone's smile — situational emotional pain from a specific event, not persistent hopelessness, worthlessness, or behavioral indicators of depression.)",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 431,
+      "post_preview": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "post_full": "khoubsurat bat rz hahi pocha mere bghahir g lo ge mahin ne kha aho aedi oxygen",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 432,
+      "post_preview": "tcrow vajahbsae nehi trops tejran family vajah sae teja jethi dang sae photo vi nehi dalthi dhi sra ...",
+      "post_full": "tcrow vajahbsae nehi trops tejran family vajah sae teja jethi dang sae photo vi nehi dalthi dhi sra pick nishanth kae sath trend khabr vote apeal kia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 433,
+      "post_preview": "uska kisi se shadi gayi mrna chahta",
+      "post_full": "uska kisi se shadi gayi mrna chahta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses situational distress about a specific event—someone's marriage—rather than persistent personal depression. It's a reactive emotional statement about an external circumstance, not an indication of hopelessness, worthless",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 434,
+      "post_preview": "mujhay itni bhok kiun lagty",
+      "post_full": "mujhay itni bhok kiun lagty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 435,
+      "post_preview": "lamhe guzr gaye pr unki yadon mahinn bhi khoi hon",
+      "post_full": "lamhe guzr gaye pr unki yadon mahinn bhi khoi hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a poetic/literary expression about memories of past moments. While it uses emotional language, it's a conventional romantic or nostalgic sentiment expressed in ghazal/shayri style, not an expression",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 436,
+      "post_preview": "prhahi nae horhe kron",
+      "post_full": "prhahi nae horhe kron",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 437,
+      "post_preview": "yr tatti jrtahi yad nhi chahia",
+      "post_full": "yr tatti jrtahi yad nhi chahia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 438,
+      "post_preview": "prhahi nahi krni hoti tumhahi kia",
+      "post_full": "prhahi nahi krni hoti tumhahi kia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 439,
+      "post_preview": "chupke roya krta hon magr himmat ankhon beh gayy",
+      "post_full": "chupke roya krta hon magr himmat ankhon beh gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 440,
+      "post_preview": "behis iqtedr kwahish rakhne wale juda drd dil dua siwa kea sakte ise ap munafqt kahenge kea kren",
+      "post_full": "behis iqtedr kwahish rakhne wale juda drd dil dua siwa kea sakte ise ap munafqt kahenge kea kren",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses philosophical/spiritual sentiment about longing and separation, using conventional poetic/religious language (\"dua\" - prayer, \"munafqt\" - hypocrisy). It appears to be",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 441,
+      "post_preview": "apni kismet likha nahi badal sakta",
+      "post_full": "apni kismet likha nahi badal sakta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 442,
+      "post_preview": "tery sang guzr jaye umer ju baqi has do zra khul kahyy udas",
+      "post_full": "tery sang guzr jaye umer ju baqi has do zra khul kahyy udas",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is romantic/poetic expression using conventional Urdu poetry language. It expresses a desire to spend remaining life with someone and a request to smile despite sadness — literary sentiment rather than personal mental health distress",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 443,
+      "post_preview": "hr muskurahat mahinn chhupa ek gehra afsos",
+      "post_full": "hr muskurahat mahinn chhupa ek gehra afsos",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is poetic/literary expression using conventional ghazal vocabulary. \"Every smile hides a deep regret\" is a stylistic observation about human nature, not a personal expression of persistent hopelessness or dist",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 444,
+      "post_preview": "mujhe bahut dukh rha hakhir majbur insan jaye jaye kahahr traf sirf unhe naumidi milti hjra sochie a...",
+      "post_full": "mujhe bahut dukh rha hakhir majbur insan jaye jaye kahahr traf sirf unhe naumidi milti hjra sochie abhi uanpr bet rhi hogy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 22
+    },
+    {
+      "index": 445,
+      "post_preview": "whenever se fauj fel gosebumps",
+      "post_full": "whenever se fauj fel gosebumps",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 446,
+      "post_preview": "asani dukhi hone silsila jahise meri zindagi mahinn gehra andhera chha ho",
+      "post_full": "asani dukhi hone silsila jahise meri zindagi mahinn gehra andhera chha ho",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 447,
+      "post_preview": "ro ro ankh drd rahe fel krne koshish mei kuch ziada fel gayy",
+      "post_full": "ro ro ankh drd rahe fel krne koshish mei kuch ziada fel gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 448,
+      "post_preview": "yhi likh aega psm paper mahin medem khush hojegy",
+      "post_full": "yhi likh aega psm paper mahin medem khush hojegy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 449,
+      "post_preview": "zakhmon bhra dil lekin himmat mukabla krne lie tahir nahy",
+      "post_full": "zakhmon bhra dil lekin himmat mukabla krne lie tahir nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 450,
+      "post_preview": "kash mahin behri match hrne dukh to chhat puja ye soch khush hojata",
+      "post_full": "kash mahin behri match hrne dukh to chhat puja ye soch khush hojata",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This post expresses frustration about a specific event—a cricket match loss. It's situational complaining about a particular outcome, not an expression of persistent hopelessness, worthlessness, or behavioral symptoms of",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 451,
+      "post_preview": "asab din omi msh mestamela",
+      "post_full": "asab din omi msh mestamela",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 452,
+      "post_preview": "hr rat naya khwab tot hahy",
+      "post_full": "hr rat naya khwab tot hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"every night a new dream breaks/shatters.\" While melancholic in tone, it is poetic/literary expression using conventional romantic or philosophical imagery, not a personal expression of persistent hop",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 453,
+      "post_preview": "bhao yaqen kro khudkushi krne lagy",
+      "post_full": "bhao yaqen kro khudkushi krne lagy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 454,
+      "post_preview": "ahisa mujhe likh dogy dil khush hojayega",
+      "post_full": "ahisa mujhe likh dogy dil khush hojayega",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 455,
+      "post_preview": "pakistanis india hr keun khush hotey ye nhi dikh rhi tmhey south asia kitna peche raha icc events m",
+      "post_full": "pakistanis india hr keun khush hotey ye nhi dikh rhi tmhey south asia kitna peche raha icc events m",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 456,
+      "post_preview": "common errors made by muslims ramadhan common errors involving cultural practices amp traditions exc...",
+      "post_full": "common errors made by muslims ramadhan common errors involving cultural practices amp traditions excesive socializing after traweh",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 457,
+      "post_preview": "breaking news",
+      "post_full": "breaking news",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 458,
+      "post_preview": "zindagi koi maksad nahi dikh bas chalti rahy",
+      "post_full": "zindagi koi maksad nahi dikh bas chalti rahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 459,
+      "post_preview": "raste mahinn ayi rukawat sab khatam dia",
+      "post_full": "raste mahinn ayi rukawat sab khatam dia",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"obstacles came in the way, I finished/resolved them all.\" It expresses overcoming challenges, not personal distress or depression.)",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 460,
+      "post_preview": "mlc chunav pahisa keu lagta rana ayub prt",
+      "post_full": "mlc chunav pahisa keu lagta rana ayub prt",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 461,
+      "post_preview": "hr din naya tanha safr lagta jismahinn sathi nahy",
+      "post_full": "hr din naya tanha safr lagta jismahinn sathi nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 462,
+      "post_preview": "bahut bahut shukria apka",
+      "post_full": "bahut bahut shukria apka",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 463,
+      "post_preview": "bkle dost kapsn sadk dost isen g n ller tamir et ehli dil isen sevda sahrasnda mecnun deilsen leylay...",
+      "post_full": "bkle dost kapsn sadk dost isen g n ller tamir et ehli dil isen sevda sahrasnda mecnun deilsen leylay r canm l incit",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This appears to be romantic/poetic content using classical literary references (Mecnun, Leyla) and conventional romantic vocabulary. It is literary expression rather than a personal expression of mental distress.)",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 464,
+      "post_preview": "more power my sisters batil dabne wale ay asman nahi sau br chuka tu imtehan humra",
+      "post_full": "more power my sisters batil dabne wale ay asman nahi sau br chuka tu imtehan humra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is political/social commentary expressing defiance and solidarity with women against oppression. The intense emotional language is directed at societal injustice, not personal mental distress or hopelessness.)",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 465,
+      "post_preview": "mahinn tuhanu bahot pyr krdi an elvishyadav ahise bolte ilu punjabi khush",
+      "post_full": "mahinn tuhanu bahot pyr krdi an elvishyadav ahise bolte ilu punjabi khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 466,
+      "post_preview": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "post_full": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 467,
+      "post_preview": "kismat yah mera imtehan rahi tadap yah mujhe drd rahi dil kabhi mahinnne use dor nahi kia phir keon ...",
+      "post_full": "kismat yah mera imtehan rahi tadap yah mujhe drd rahi dil kabhi mahinnne use dor nahi kia phir keon bewfahi woh ilazam rahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is romantic/ghazal-style poetry expressing heartbreak and betrayal in a beloved relationship. While it uses emotional language about pain and suffering, it is a literary expression following conventional poetic forms and themes,",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 468,
+      "post_preview": "khudkushi es tra mahinm mr jauga qoam ke jan chot jaygy",
+      "post_full": "khudkushi es tra mahinm mr jauga qoam ke jan chot jaygy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 469,
+      "post_preview": "mera account ma pahisa bhej check kro zra",
+      "post_full": "mera account ma pahisa bhej check kro zra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 470,
+      "post_preview": "am loving my timeline full beautiful edits mahin kehti aj sri negativity ignore krte or esi choti ch...",
+      "post_full": "am loving my timeline full beautiful edits mahin kehti aj sri negativity ignore krte or esi choti choti khushian celebrate krte kuke bhahiii babr laughed babrazam babrlaughed babrlaughedalhumdulillah",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 28
+    },
+    {
+      "index": 471,
+      "post_preview": "kam khanay adat meri zindagi udas mahinn bhr dia",
+      "post_full": "kam khanay adat meri zindagi udas mahinn bhr dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 472,
+      "post_preview": "suicide krny rhi hon kisi rokna to rok lo",
+      "post_full": "suicide krny rhi hon kisi rokna to rok lo",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 473,
+      "post_preview": "mahin apna khud khayal nahi rakh sakta hr kadam mujhe drd mehsos hahy",
+      "post_full": "mahin apna khud khayal nahi rakh sakta hr kadam mujhe drd mehsos hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 474,
+      "post_preview": "mean vo apn pati kelie khush nahi sakty",
+      "post_full": "mean vo apn pati kelie khush nahi sakty",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 475,
+      "post_preview": "khattaka lala treat rakahi khabr",
+      "post_full": "khattaka lala treat rakahi khabr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 476,
+      "post_preview": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khus...",
+      "post_full": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khush raho pyre khob sra pyr kro khob sri masti kro shadi super super super son evil eyes off tejran",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 477,
+      "post_preview": "pakistan naya bap ahise khush rhe jahise inke abba world cup jeta",
+      "post_full": "pakistan naya bap ahise khush rhe jahise inke abba world cup jeta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is political/sports commentary expressing frustration about Pakistan's leadership and performance. The emotional language is directed at societal/political issues, not personal mental health or self-directed distress.)",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 478,
+      "post_preview": "sust hokr apne financial goals achieve krne mahinn lahid back hon",
+      "post_full": "sust hokr apne financial goals achieve krne mahinn lahid back hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses temporary frustration about lacking motivation for a specific financial goal, not persistent hopelessness or behavioral depression symptoms. It's situational complaining about a particular challenge.)",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 479,
+      "post_preview": "zyada khanay adat waja hr mujhe bhuka kehte",
+      "post_full": "zyada khanay adat waja hr mujhe bhuka kehte",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 480,
+      "post_preview": "tanhahi mahinn mehsos hahi preshan hon",
+      "post_full": "tanhahi mahinn mehsos hahi preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This translates to \"feeling alone in solitude, I am worried/troubled.\" While it mentions loneliness and worry, it is a casual expression of temporary emotional discomfort rather than a persistent pattern of hop",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 481,
+      "post_preview": "sirf ghammo tawajo dete",
+      "post_full": "sirf ghammo tawajo dete",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a poetic/lyrical phrase meaning \"only sorrows receive attention.\" It's a general observation or commentary on life/society, not a personal expression of the poster's own mental state or suffering.)",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 482,
+      "post_preview": "khud maf nahi pa hon mahinne be prwahi mahinn apna rishta kho",
+      "post_full": "khud maf nahi pa hon mahinne be prwahi mahinn apna rishta kho",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 483,
+      "post_preview": "sad jayega din",
+      "post_full": "sad jayega din",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a casual, colloquial expression meaning \"the day will pass\" — a temporary situational comment about getting through a day, not an indicator of persistent depression, hopelessness, or behavioral symptoms of mental",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 484,
+      "post_preview": "ab bas china walo bhrose ghuzra kat hahy",
+      "post_full": "ab bas china walo bhrose ghuzra kat hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 485,
+      "post_preview": "is bebasi acha suicide lu",
+      "post_full": "is bebasi acha suicide lu",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 486,
+      "post_preview": "aj kal akhele ghr rehne khushi rahy",
+      "post_full": "aj kal akhele ghr rehne khushi rahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 487,
+      "post_preview": "desh pm khush nahi but bache trah ro nahi sakte",
+      "post_full": "desh pm khush nahi but bache trah ro nahi sakte",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is political/societal commentary expressing frustration about the country and its leadership. The statement is about external circumstances, not personal mental health or self-directed distress.)",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 488,
+      "post_preview": "ipl dekho khush raho",
+      "post_full": "ipl dekho khush raho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 489,
+      "post_preview": "kam jana mere bhot muskil gaya uske jane bad",
+      "post_full": "kam jana mere bhot muskil gaya uske jane bad",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses temporary difficulty with a specific situation—work becoming hard after someone left. It's situational frustration, not persistent hopelessness, worthlessness, or behavioral indicators of depression.)",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 490,
+      "post_preview": "guys ispe dhan do sunny toh aj hmri rat din hii khush die ab ise khush do unn ko se this instagram b...",
+      "post_full": "guys ispe dhan do sunny toh aj hmri rat din hii khush die ab ise khush do unn ko se this instagram by",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 491,
+      "post_preview": "tusi aj likh lawo ma nae jay rona",
+      "post_full": "tusi aj likh lawo ma nae jay rona",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This appears to be a casual, conversational request in Punjabi/Roman Urdu (\"you write today, I won't cry\"). It's a temporary, situational statement about a specific moment, not an",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 492,
+      "post_preview": "prhahi khatam krao guys",
+      "post_full": "prhahi khatam krao guys",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 493,
+      "post_preview": "waqt sath mere kam lekr logon attitude badal mujhe lagta hahi ki kam jane mahinn mujhe support nahi ...",
+      "post_full": "waqt sath mere kam lekr logon attitude badal mujhe lagta hahi ki kam jane mahinn mujhe support nahi raha",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This expresses frustration about a specific situational change—people's attitudes shifting when work circumstances changed—rather than persistent hopelessness, worthlessness, or behavioral symptoms of depression. It's a complaint about a",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 494,
+      "post_preview": "dhoni fans khush na",
+      "post_full": "dhoni fans khush na",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 495,
+      "post_preview": "tum to khush jb babr hatt tha",
+      "post_full": "tum to khush jb babr hatt tha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This appears to be a casual, possibly sarcastic or humorous remark about someone being happy when a particular person was absent. It's a situational comment about others, not a self-directed expression of personal",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 496,
+      "post_preview": "drd bhri kahani meri hasti preshan hon",
+      "post_full": "drd bhri kahani meri hasti preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 497,
+      "post_preview": "zindagi mahinn itni tanhahi ki mehsos nahy",
+      "post_full": "zindagi mahinn itni tanhahi ki mehsos nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 498,
+      "post_preview": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "post_full": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed\n\n(This is a general philosophical observation about happiness being difficult and sadness existing in big hearts. It's a casual, reflective statement about the human condition rather than a personal expression of the poster's own depression or distress",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 499,
+      "post_preview": "bahut bahut shukria apka",
+      "post_full": "bahut bahut shukria apka",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "Not Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 500,
+      "post_preview": "sust hokr apne surroundings mahinn bhi change nahi la",
+      "post_full": "sust hokr apne surroundings mahinn bhi change nahi la",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "Depressed",
+      "error": null,
+      "word_count": 9
     }
   ]
 }
