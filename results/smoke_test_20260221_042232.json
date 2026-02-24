@@ -1,0 +1,154 @@
+{
+  "timestamp": "20260221_042232",
+  "summary": {
+    "pass": 16,
+    "fail": 0,
+    "skip": 0
+  },
+  "results": [
+    {
+      "provider": "gemini",
+      "language": "arabic",
+      "status": "PASS",
+      "prediction": "depressed",
+      "ground_truth": "depressed",
+      "correct": true,
+      "raw_response": "Depressed\n"
+    },
+    {
+      "provider": "gemini",
+      "language": "chinese",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed\n"
+    },
+    {
+      "provider": "gemini",
+      "language": "english",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed\n"
+    },
+    {
+      "provider": "gemini",
+      "language": "spanish",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed\n"
+    },
+    {
+      "provider": "deepseek",
+      "language": "arabic",
+      "status": "PASS",
+      "prediction": "depressed",
+      "ground_truth": "depressed",
+      "correct": true,
+      "raw_response": "Depressed"
+    },
+    {
+      "provider": "deepseek",
+      "language": "chinese",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "deepseek",
+      "language": "english",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "deepseek",
+      "language": "spanish",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "openai",
+      "language": "arabic",
+      "status": "PASS",
+      "prediction": "depressed",
+      "ground_truth": "depressed",
+      "correct": true,
+      "raw_response": "Depressed"
+    },
+    {
+      "provider": "openai",
+      "language": "chinese",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "openai",
+      "language": "english",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "openai",
+      "language": "spanish",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "claude",
+      "language": "arabic",
+      "status": "PASS",
+      "prediction": "error",
+      "ground_truth": "depressed",
+      "correct": false,
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "chinese",
+      "status": "PASS",
+      "prediction": "error",
+      "ground_truth": "not depressed",
+      "correct": false,
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "english",
+      "status": "PASS",
+      "prediction": "error",
+      "ground_truth": "not depressed",
+      "correct": false,
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "spanish",
+      "status": "PASS",
+      "prediction": "error",
+      "ground_truth": "not depressed",
+      "correct": false,
+      "raw_response": ""
+    }
+  ]
+}

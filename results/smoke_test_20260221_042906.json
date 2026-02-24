@@ -1,0 +1,42 @@
+{
+  "timestamp": "20260221_042906",
+  "summary": {
+    "pass": 0,
+    "fail": 4,
+    "skip": 0
+  },
+  "results": [
+    {
+      "provider": "claude",
+      "language": "arabic",
+      "status": "FAIL",
+      "reason": "API returned error prediction",
+      "prediction": "error",
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "chinese",
+      "status": "FAIL",
+      "reason": "API returned error prediction",
+      "prediction": "error",
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "english",
+      "status": "FAIL",
+      "reason": "API returned error prediction",
+      "prediction": "error",
+      "raw_response": ""
+    },
+    {
+      "provider": "claude",
+      "language": "spanish",
+      "status": "FAIL",
+      "reason": "API returned error prediction",
+      "prediction": "error",
+      "raw_response": ""
+    }
+  ]
+}

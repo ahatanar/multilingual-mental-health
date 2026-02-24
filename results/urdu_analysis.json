@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "language": "urdu",
+    "created": "2026-02-23T16:25:35.040893",
+    "sample_size": 500,
+    "severity_distribution": {
+      "mild": 85,
+      "moderate": 86,
+      "severe": 79,
+      "non-depression": 250
+    }
+  },
+  "overall_metrics": {
+    "gemini": {
+      "confusion_matrix": {
+        "true_positives": 227,
+        "false_positives": 58,
+        "true_negatives": 192,
+        "false_negatives": 23
+      },
+      "precision": 0.7965,
+      "recall": 0.908,
+      "f1_score": 0.8486,
+      "accuracy": 0.838,
+      "total_samples": 500,
+      "total_classified": 500,
+      "unclear_responses": 0,
+      "error_responses": 0
+    },
+    "openai": {
+      "confusion_matrix": {
+        "true_positives": 222,
+        "false_positives": 50,
+        "true_negatives": 200,
+        "false_negatives": 28
+      },
+      "precision": 0.8162,
+      "recall": 0.888,
+      "f1_score": 0.8506,
+      "accuracy": 0.844,
+      "total_samples": 500,
+      "total_classified": 500,
+      "unclear_responses": 0,
+      "error_responses": 0
+    },
+    "deepseek": {
+      "confusion_matrix": {
+        "true_positives": 209,
+        "false_positives": 39,
+        "true_negatives": 211,
+        "false_negatives": 41
+      },
+      "precision": 0.8427,
+      "recall": 0.836,
+      "f1_score": 0.8394,
+      "accuracy": 0.84,
+      "total_samples": 500,
+      "total_classified": 500,
+      "unclear_responses": 0,
+      "error_responses": 0
+    },
+    "claude": {
+      "confusion_matrix": {
+        "true_positives": 131,
+        "false_positives": 11,
+        "true_negatives": 239,
+        "false_negatives": 119
+      },
+      "precision": 0.9225,
+      "recall": 0.524,
+      "f1_score": 0.6684,
+      "accuracy": 0.74,
+      "total_samples": 500,
+      "total_classified": 500,
+      "unclear_responses": 0,
+      "error_responses": 0
+    }
+  },
+  "severity_breakdown": {
+    "gemini": {
+      "mild": {
+        "total": 85,
+        "correct": 72,
+        "rate": 0.8471
+      },
+      "moderate": {
+        "total": 86,
+        "correct": 77,
+        "rate": 0.8953
+      },
+      "severe": {
+        "total": 79,
+        "correct": 78,
+        "rate": 0.9873
+      },
+      "non-depression": {
+        "total": 250,
+        "correct": 192,
+        "rate": 0.768
+      }
+    },
+    "openai": {
+      "mild": {
+        "total": 85,
+        "correct": 66,
+        "rate": 0.7765
+      },
+      "moderate": {
+        "total": 86,
+        "correct": 82,
+        "rate": 0.9535
+      },
+      "severe": {
+        "total": 79,
+        "correct": 74,
+        "rate": 0.9367
+      },
+      "non-depression": {
+        "total": 250,
+        "correct": 200,
+        "rate": 0.8
+      }
+    },
+    "deepseek": {
+      "mild": {
+        "total": 85,
+        "correct": 58,
+        "rate": 0.6824
+      },
+      "moderate": {
+        "total": 86,
+        "correct": 76,
+        "rate": 0.8837
+      },
+      "severe": {
+        "total": 79,
+        "correct": 75,
+        "rate": 0.9494
+      },
+      "non-depression": {
+        "total": 250,
+        "correct": 211,
+        "rate": 0.844
+      }
+    },
+    "claude": {
+      "mild": {
+        "total": 85,
+        "correct": 29,
+        "rate": 0.3412
+      },
+      "moderate": {
+        "total": 86,
+        "correct": 43,
+        "rate": 0.5
+      },
+      "severe": {
+        "total": 79,
+        "correct": 59,
+        "rate": 0.7468
+      },
+      "non-depression": {
+        "total": 250,
+        "correct": 239,
+        "rate": 0.956
+      }
+    }
+  }
+}

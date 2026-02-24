@@ -1,0 +1,46 @@
+{
+  "timestamp": "20260221_042936",
+  "summary": {
+    "pass": 4,
+    "fail": 0,
+    "skip": 0
+  },
+  "results": [
+    {
+      "provider": "claude",
+      "language": "arabic",
+      "status": "PASS",
+      "prediction": "depressed",
+      "ground_truth": "depressed",
+      "correct": true,
+      "raw_response": "Depressed"
+    },
+    {
+      "provider": "claude",
+      "language": "chinese",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "claude",
+      "language": "english",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    },
+    {
+      "provider": "claude",
+      "language": "spanish",
+      "status": "PASS",
+      "prediction": "not depressed",
+      "ground_truth": "not depressed",
+      "correct": true,
+      "raw_response": "Not Depressed"
+    }
+  ]
+}

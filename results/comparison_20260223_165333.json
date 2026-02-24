@@ -1,0 +1,76 @@
+{
+  "models": {
+    "ChatGPT (GPT-4o-mini)": {
+      "urdu": {
+        "confusion_matrix": {
+          "true_positives": 186,
+          "false_positives": 16,
+          "true_negatives": 234,
+          "false_negatives": 64
+        },
+        "precision": 0.9208,
+        "recall": 0.744,
+        "f1_score": 0.823,
+        "accuracy": 0.84,
+        "total_samples": 500,
+        "total_classified": 500,
+        "unclear_responses": 0,
+        "error_responses": 0
+      }
+    },
+    "Gemini 2.0 Flash": {
+      "urdu": {
+        "confusion_matrix": {
+          "true_positives": 229,
+          "false_positives": 65,
+          "true_negatives": 185,
+          "false_negatives": 21
+        },
+        "precision": 0.7789,
+        "recall": 0.916,
+        "f1_score": 0.8419,
+        "accuracy": 0.828,
+        "total_samples": 500,
+        "total_classified": 500,
+        "unclear_responses": 0,
+        "error_responses": 0
+      }
+    },
+    "DeepSeek Chat": {
+      "urdu": {
+        "confusion_matrix": {
+          "true_positives": 209,
+          "false_positives": 24,
+          "true_negatives": 226,
+          "false_negatives": 41
+        },
+        "precision": 0.897,
+        "recall": 0.836,
+        "f1_score": 0.8654,
+        "accuracy": 0.87,
+        "total_samples": 500,
+        "total_classified": 500,
+        "unclear_responses": 0,
+        "error_responses": 0
+      }
+    },
+    "Claude Haiku 4.5": {
+      "urdu": {
+        "confusion_matrix": {
+          "true_positives": 62,
+          "false_positives": 1,
+          "true_negatives": 249,
+          "false_negatives": 187
+        },
+        "precision": 0.9841,
+        "recall": 0.249,
+        "f1_score": 0.3974,
+        "accuracy": 0.6232,
+        "total_samples": 500,
+        "total_classified": 499,
+        "unclear_responses": 1,
+        "error_responses": 0
+      }
+    }
+  }
+}
