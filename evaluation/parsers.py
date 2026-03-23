@@ -78,7 +78,7 @@ class EnglishParser(DatasetParser):
     language = "english"
 
     def __init__(self, data_dir: str):
-        self.csv_path = os.path.join(data_dir, "english", "sentiment_tweets3.csv")
+        self.csv_path = os.path.join(data_dir, "raw", "english", "sentiment_tweets3.csv")
 
     def parse(self) -> List[Dict[str, str]]:
         rows: List[Dict[str, str]] = []
@@ -107,7 +107,7 @@ class ArabicParser(DatasetParser):
     language = "arabic"
 
     def __init__(self, data_dir: str):
-        self.csv_path = os.path.join(data_dir, "arabic", "CairoDep_Datasets.csv")
+        self.csv_path = os.path.join(data_dir, "raw", "arabic", "CairoDep_Datasets.csv")
 
     def parse(self) -> List[Dict[str, str]]:
         rows: List[Dict[str, str]] = []
@@ -139,8 +139,8 @@ class ChineseParser(DatasetParser):
     _HTML_RE = re.compile(r"<[^>]+>")
 
     def __init__(self, data_dir: str):
-        self.depressed_path = os.path.join(data_dir, "chinese", "depressed.jsonl")
-        self.control_path = os.path.join(data_dir, "chinese", "control.jsonl")
+        self.depressed_path = os.path.join(data_dir, "raw", "chinese", "depressed.jsonl")
+        self.control_path = os.path.join(data_dir, "raw", "chinese", "control.jsonl")
 
     def _parse_file(self, path: str, label: str) -> List[Dict[str, str]]:
         rows: List[Dict[str, str]] = []
@@ -187,10 +187,10 @@ class SpanishParser(DatasetParser):
 
     def __init__(self, data_dir: str):
         self.depressed_path = os.path.join(
-            data_dir, "spanish", "tweets_Español_depresivos.json"
+            data_dir, "raw", "spanish", "tweets_Español_depresivos.json"
         )
         self.non_depressed_path = os.path.join(
-            data_dir, "spanish", "tweets_Español_no-depresivos.json"
+            data_dir, "raw", "spanish", "tweets_Español_no-depresivos.json"
         )
 
     def _parse_tar_jsonl(self, tar_path: str, label: str) -> List[Dict[str, str]]:
@@ -261,7 +261,7 @@ class UrduParser(DatasetParser):
     }
 
     def __init__(self, data_dir: str):
-        self.csv_path = os.path.join(data_dir, "urdu", "Depression.csv")
+        self.csv_path = os.path.join(data_dir, "raw", "urdu", "Depression.csv")
 
     def parse(self) -> List[Dict[str, str]]:
         rows: List[Dict[str, str]] = []

@@ -25,6 +25,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from typing import List, Dict
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+
 from config import get_api_key, DEFAULT_MODELS
 from models import GeminiProvider, DeepSeekProvider, OpenAIProvider, ClaudeProvider
 from evaluation.metrics import EvaluationMetrics
@@ -48,9 +51,9 @@ MODELS = {
                "max_workers": 1, "delay": 1.5},  # 50 RPM limit
 }
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-SAMPLED_DIR = os.path.join(DATA_DIR, "sampled")
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+SAMPLED_DIR = os.path.join(DATA_DIR, "phase1", "sampled")
+RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 
 
 # ── Data loading ─────────────────────────────────────────────────────────────
@@ -420,8 +423,8 @@ def main():
         print("\n🔄 Re-parsing data first...")
         import subprocess
         result = subprocess.run(
-            [sys.executable, "prepare_data.py", "--reparse"],
-            cwd=os.path.dirname(__file__) or ".",
+            [sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "prepare_data.py"), "--reparse"],
+            cwd=PROJECT_ROOT,
         )
         if result.returncode != 0:
             print("  ❌ Data preparation failed. Aborting.")

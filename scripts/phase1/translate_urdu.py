@@ -25,8 +25,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-INPUT_PATH = os.path.join("data", "sampled", "urdu.json")
-OUTPUT_PATH = os.path.join("data", "sampled", "urdu_english.json")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+INPUT_PATH = os.path.join(PROJECT_ROOT, "data", "phase1", "sampled", "urdu.json")
+OUTPUT_PATH = os.path.join(PROJECT_ROOT, "data", "phase1", "sampled", "urdu_english.json")
 
 MAX_RETRIES = 3
 RETRY_DELAY = 2.0

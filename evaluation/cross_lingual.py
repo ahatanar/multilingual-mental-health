@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 RESULTS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "results")
-SAMPLED_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sampled")
+SAMPLED_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "phase1", "sampled")
 
 
 def _save_sampled_data(samples: List[Dict], language: str, sample_size: int, seed: int) -> str:

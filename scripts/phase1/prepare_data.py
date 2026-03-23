@@ -20,6 +20,9 @@ import sys
 from datetime import datetime
 from typing import List, Dict
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+
 from evaluation.parsers import get_parser, PARSERS
 from evaluation.sampler import DatasetSampler
 
@@ -29,8 +32,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-SAMPLED_DIR = os.path.join(DATA_DIR, "sampled")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+SAMPLED_DIR = os.path.join(DATA_DIR, "phase1", "sampled")
 
 
 def prepare_language(language: str, sample_size: int = 500, seed: int = 42,

@@ -22,11 +22,14 @@ def get_api_key(provider: str) -> str:
         "openai": "OPENAI_API_KEY",
         "claude": "CLAUDE_API_KEY",
         "grok": "GROK_API_KEY",
+        "cohere": "COHERE_API_KEY",
     }
 
     env_var = env_map.get(provider.lower())
     if not env_var:
-        raise ValueError(f"Unknown provider: {provider}. Must be one of: {list(env_map.keys())}")
+        raise ValueError(
+            f"Unknown provider: {provider}. Must be one of: {list(env_map.keys())}"
+        )
 
     key = os.environ.get(env_var)
     if not key:

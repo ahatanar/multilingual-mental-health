@@ -8,7 +8,7 @@ from typing import Dict, List, Optional, Set
 
 logger = logging.getLogger(__name__)
 
-CHECKPOINT_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "labeler_progress")
+CHECKPOINT_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "phase1", "labeler_progress")
 
 
 class CheckpointManager:

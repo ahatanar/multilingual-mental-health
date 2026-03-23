@@ -1,0 +1,1142 @@
+{
+  "metadata": {
+    "language": "arabic",
+    "dataset": "CairoDep",
+    "model": "command-r-08-2024",
+    "seed": 42,
+    "total_requested": 6000,
+    "total_translated": 125,
+    "depressed_count": 60,
+    "normal_count": 65,
+    "failed_count": 0,
+    "status": "partial",
+    "timestamp": "2026-03-22T21:58:00.955582"
+  },
+  "samples": [
+    {
+      "index": 0,
+      "original": "أنا راضي #بالسهر لو سهري يريحك 💜 #حسهرلك يا قمر لو كان ده #يفرحك 😊 👌",
+      "translation": "I'm happy to stay up late if it pleases you 💜 I'll stay up for you, my moon, if that makes you happy 😊 👌",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 1,
+      "original": "والحقيقة آه طلعت وقتها كنت وحشة، مش وحشة بالمعنى الحرفي، انا بس مبتفاعلش معاهم.. بخرج عشان اقعد اسمع اغاني لوحدي، ت… https://t.co/Oda4REbWQV",
+      "translation": "The truth is, I was awkward back then, not literally, I just don't interact with them... I go out to sit and listen to music alone, um...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 2,
+      "original": "معرفش ماااالي اكيد بقد انا عندي حالة اكتئاب",
+      "translation": "I don't know what's wrong with me, I'm definitely depressed.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 3,
+      "original": "لأي شخص يتأثر بهذا المرض الهائل مرحبا بالجميع، أردت أن تأخذ بعض الوقت للتحدث مع الجميع عن عقلهم. أريد أن أجعل هذا المنشور يستهدف أي شخص، لذلك سأبذل قصارى جهدي لضرب كل النقاط بأفضل ما أستطيع. أولا، سوف أتناول القراء الذين يشعرون أنهم غير محبوبين. من فضلك لا تشعر بهذه الطريقة. هناك 7 مليارات شخص على هذا الكوكب والعد وأنت لم تنهب خارج منطقة الراحة الخاصة بك. لأحد أن يقول أنه لا يمكن أن يكون محبوبا أبدا هو عذر ترفضه الاعتراف. إنه ليس خطأك، حيث أن الاكتئاب يجعلنا نحفر حفرة لأنفسنا وتلتصق رأسنا مباشرة في الأوساخ. لا نرى شيئا سوى الظلام بعد ذلك، لذلك من المفهوم أن يفكر في ذلك و / أو تصدق هذا. رؤية أشياء من الضوء الإيجابي حيث يمكننا إلقاء اللوم على أنفسنا أمر صعب للغاية أن نفعله بشكل خاص عندما يعني أننا ندرك السبب وراء تصوير الأشياء في الحياة بالطريقة التي نراها. بالنسبة لبعضكم، تترك المجتمع يخدعك في التفكير في أننا بحاجة إلى الحب من مصدر خارجي. من هذا يعني شريك نحب غاليا. بالتأكيد، هناك بعض الذين هم في مكان أفضل بسبب هذا، ولكن بالنسبة لنا جميع الأشخاص النحيفين أو الذين يعانون من زيادة الوزن في الولايات المتحدة أو الأشخاص الذين يشعرون بعدم الأمان والمعبوبين (لا تقلق، نفعل جميعا، نحن كل مجتمع تمتص الحمار لقبول الأمور مثل هذا عادة)، نحن نخشى أنفسنا شعور نحتاج إلى علاقة. في الواقع، جميعنا يحتاجون إلى الأشخاص الذين يحبوننا ويطلعونا. كل ما يتطلب هو الخطوة للقيام بالأشياء التي تحبها وتخرجها من منطقة الراحة الخاصة بك، في وتيرتك الخاصة! بالنسبة لنا الذين يعتقدون أن الحياة لا معنى لها، هذا شيء نفرض أنفسنا على الاعتقاد. كل ما يمكننا فعله هو التجشير في الحياة عندما تحدث الأحداث الرهيبة والمضي قدما. نحن نخدع أنفسنا نتوقع أن تكون الحياة سعيدة وإلى الأبد مثل هذه القصص الزائدة التي نسمعها. الحقيقة هي أن الموت سيكون دائما معنا. هل هذا يعني أننا قد ينهي الأشياء هنا؟ لا، لأن ذلك يعني أننا نحفر حفرة أخرى لأنفسنا. هناك أشياء تحبه بها قبل أن يركل هذا الاكتئاب الغبي وكنت قد خدعت نفسك أن تعتقد أنه لا توجد نقطة. لدينا جميعا حدود حياتنا ولا توجد نقطة في انتظار الوقت للتوقف، نحتاج إلى تحقيق أقصى استفادة مما نحصل عليه. نحن نعيش في فترة زمنية حيث يمكننا الاسترخاء طالما نحن لا ندع المجتمع يؤثر على أفكارنا وهو أمر صعب القيام به ولكنه ضروري للتعافي.\n(يجب أن أذهب إلى السرير، لكنني سأفعل هذا مرة أخرى وإنهاءها! حتى ذلك الحين، لا تدع أنفسكم، فهذه مجرد عقولنا تجعلنا نعتقد أننا لا نفعل شيئا، عندما يجب أن نتجاهلنا الدماغ والاستماع إلى قلوبنا. افعل ما كنت تريد القيام به، والحفاظ عليه آمنا للآخرين!)",
+      "translation": "For anyone affected by this massive illness, hello everyone. I wanted to take some time to speak to everyone about their minds. I want to make this post target anyone, so I'll do my best to hit all the points as best as I can. First, I'll address the readers who feel unloved. Please don't feel that way. There are 7 billion people on this planet, and counting, and you haven't exhausted your comfort zone. For anyone to say they can never be loved is an excuse you refuse to acknowledge. It's not your fault, as depression makes us dig a hole for ourselves and stick our heads right into the dirt. We then see nothing but darkness, so it's understandable to think and/or believe that. Seeing things from a positive light where we can blame ourselves is very hard to do, especially when it means we acknowledge the reason behind portraying things in life the way we see them. For some of you, society tricks you into thinking we need love from an external source. By this, I mean a partner we dearly love. Sure, there are some who are in a better place because of this, but for all of us thin or overweight people in the US or people who feel insecure and unloved (don't worry, we all do, we're all a society of ass-kickers for accepting things like this usually), we fear ourselves feeling the need for a relationship. In fact, we all need people who love us and look out for us. All it requires is the step to do the things you love and get out of your comfort zone, at your own pace! For us who believe life is meaningless, this is something we impose on ourselves to believe. All we can do is grit our teeth and bear it when terrible events happen and move on. We trick ourselves into expecting life to be happy and forever like those excessive stories we hear. The truth is that death will always be with us. Does this mean we may as well end things here? No, because that means we're digging another hole for ourselves. There are things you love that came before this stupid depression kicked in and you tricked yourself into believing there's no point. We all have our life limits, and there's no point in waiting for time to stop, we need to make the most of what we get. We live in a time period where we can relax as long as we don't let society influence our thoughts, which is hard to do but necessary for recovery.\n(I have to go to bed, but I'll do this again and finish it! Until then, don't let yourselves, it's just our minds making us believe we're doing nothing, when we should ignore our brains and listen to our hearts. Do what you want to do, and keep it safe for others!)",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 4,
+      "original": "ليست جيدة بما فيه الكفاية حتى الآن في الآونة الأخيرة كنت أشعر أنني مثل المشكلة حتى أنني أبذل قصارى جهدي في كل مرة لتكون أفضل لي. أساسا بالنسبة لهم ولكن أعتقد بالنسبة لي أيضا. انها مثل أنا تستخدم للراحة. أريد أن الحب هذا كل شيء. توقفت عن النظر في أمل أنه كان من المفترض أن تجدني بدلا من ذلك، لكن الآن أشعر أنني في إهدار وقتي. أجد أن شخصا ما أو غير مريض يكون دائما دفعا كما يبدو.",
+      "translation": "I'm not good enough yet. Lately, I've been feeling like I'm the problem, even though I'm trying my best each time to be better, mainly for them, but I think for myself too. It's like I'm used to being comfortable. I want to love this all. I stopped looking in the hope that I was supposed to be found instead, but now I feel like I'm wasting my time. I find that someone or something else being sick is always a push, as it seems.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 5,
+      "original": "ماشين كويس ماشاءالله ربنا ازيد من حالاة الشفاء وربنا يرحم موتانا وموتا المسلمين اللهم انصرنا علي اعداء الدين يارب العالمين",
+      "translation": "The machine is doing well, praise be to God. May God increase our state of healing, and may He have mercy on our deceased and the deceased of all Muslims. Oh Lord of the Worlds, grant us victory over the enemies of our religion.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 6,
+      "original": "انت حد كويس ياض 😃\\nقالك الدنيا مش كده 😏\\nEmad A. Adel",
+      "translation": "You're a good guy, man 😃\nTold you the world isn't like that 😏\nEmad A. Adel",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 7,
+      "original": "هل يجب أن أبقى أنا (27 مترا) صديقي في حالة سكر (29F) في النادي مع رجل قابلته للتو؟ فكرت في النشر على عيتا، لكنني بصدق لا تندم على أفعالي هنا ولا أعتقد أنني كنت في الخطأ. أنا لا أبحث عن التحقق من الصحة، وأحب أن أرى ما إذا كان الناس يعترضون على كيفية تصرفت.\n\nليلة أمس، صديقي N. احتفل بعيد ميلادها. دعت مجموعة من الناس إلى شريط، وفي وقت لاحق في الليل ذهبنا إلى النادي. بعد بضع ساعات غادر كل صديق آخر، أخبرني أحد الأصدقاء (44F) عن رعاية N. لقد انتهى الأمر بالذهاب إلى نادي آخر. على الرغم من أنني أشرب أيضا، في ذلك الوقت، ما بيننا، كنت الشخص الذي كان أكثر واقعية تقريبا.\n\nلذلك نذهب إلى حلبة الرقص، رجل يقترب منا. إنه مهتم بها، لكنه يتحدث معي، لأنه كان من الواضح أننا أصدقاء، ونحن هناك معا. رقصوا، مصنوعون، كان لديهم الكثير من المحادثة قدر الإمكان في حلبة رقص تكنو بصوت عال. في مرحلة ما، قررت أن أسميها ليلة، وأخبرتني أنها بخير، وأنها تريد البقاء. حسنا، حاولت الخروج من هذا النادي وحده، لكنني لم أستطع تركها هناك.\n\nأعود، نحن نفعل نفس الشيء معها تخبرني أنها بخير. أحاول أن أغادر مرة أخرى، لكنني فقط انتهى بالعودة إليها. في هذه المرحلة، بدأ الرجل في الحصول على فاتنة حقا وقحا بالنسبة لي، لأنه كان من الواضح جدا أنني أردت العودة إلى المنزل وأردت أن أذهب يا صديقي أيضا ولا أبقى هناك. حاول أن يجادل معي، أخبرني أنني لا أملكها، ويمكنها أن تفعل ما تريد، وأنا الشخص الذي يجري بقوة لأنني أصر على أننا نذهب. كنت أبحث عن صديقي، وهذا الرجل العشوائي يعتقد أنه كان لديه الأرض عالية الأخلاقية.\n\nاتضح أن النادي كان بالفعل يغلق على أي حال. توقف الموسيقى، الأنوار على. نحن أخيرا جعلنا طريقنا للخروج. إنها تصر على البقاء معه، أصر على أخذ منزلها. أنا أجادل مع الرجل، ورمي بعض الكلمات الخيارية عليه، لأنه قدم لي ما مجموعه 0 أسباب للثقة معها. لذلك أجبرتها على أن تأتي معي. لم أكن جرها، لم تكن الركل والصراخ، لكنها كانت تحديا للغاية. استمرت في النظر والعودة إلى الوراء في كل خطوة. يتبعنا الرجل من النادي حتى مدخل المترو، ويتوقف إلا بمجرد أن بدأت في صنع مشهد ويصيئ أنه يجب أن يتوقف عن اتباعنا واتصل به زحف.\n\nأخذت صديقي إلى مكانها. تأكد من أنها حصلت على هناك آمنة وصوت. لكن على طول الطريق هناك كانت دفاعية وجدية، قائلة إن الرجل كان لطيفا وأنه كان وقحا فقط لأنني كنت قد قوسته. حاولت السبب معها، لأنني أخبرتها أنني كنت أتعامل معها بنفس الطريقة التي أرغب في التعامل معها من قبل أصدقائي. كنت أبحث عنها، وأردت أن تكون آمنة. وهذا الرجل؟ كان وقحا لأنه كان الأحمق الصف.\n\nلقد كنت في وضع مماثل معها من قبل. لقد تركتها بالفعل في النادي. لقد تعلمت فيما بعد أن اتخذت إلى المستشفى، وأنها لم تعد فكرة عن كيفية وجودها إلى المنزل. أردت أن أتجنب هذا النوع من السيناريو، أو شيء أسوأ.\n\nهل هناك أي شيء يجب أن فعلت بطريقة مختلفة؟ هل مرت بشيء مماثل؟ هل تعتقد أنني ردت؟ أنا لا حول السيطرة على ما يقوله أصدقائي أو يفعلون، لكنني سأكون ملعون إذا سمحوا لهم بالبقاء مع شخص غريب وقح عندما يخبرني حدستي بعدم القيام بذلك.\n\n\n\\ * \\ * tl؛ د. \\ * \\ *: الأصدقاء في حالة سكر يريد البقاء مع رجل قابلته للتو في النادي. أصرت أن نذهب إلى المنزل، رغم حفرها كعبها. جادل مع الرجل، كان وقحا، اتبعنا إلى محطة مترو الأنفاق. لقد حصلت عليها إلى مكانها في قطعة واحدة.",
+      "translation": "Should I have let my drunk friend (27M) stay with a guy she just met at the club? I thought about posting on Pita, but honestly, I don't regret my actions here and don't think I was in the wrong. I'm not looking for validation, just curious to see if people object to how I acted.\n\nLast night, my friend N. was celebrating her birthday. She invited a group of people to a bar, and later in the night, we went to a club. After a few hours, every other friend had left, and one friend (44F) told me about looking after N., who ended up going to another club. Although I was drinking too, at that time, between the two of us, I was the more sober one.\n\nSo we went to the dance floor, and a man approached us. He was interested in her, but he was talking to me, as it was clear we were friends and there together. They danced, flirted, and had as much conversation as possible on a loud techno dance floor. At some point, I decided to call it a night, and she told me she was fine and wanted to stay. Well, I tried to leave the club alone, but I couldn't leave her there.\n\nI returned, and we did the same thing, with her telling me she was okay. I tried to leave again, but I just ended up going back to her. At this point, the man started getting really pushy and rude to me, because it was very clear that I wanted to go home and my friend also wanted to leave and not stay there. He tried to argue with me, telling me I didn't own her and she could do what she wanted, and I was being pushy because I insisted we leave. I was looking out for my friend, and this random guy thought he had the moral high ground.\n\nIt turned out the club was closing anyway. The music stopped, the lights came on. We finally made our way out. She insisted on staying with him, and I insisted on taking her home. I argued with the man, throwing some choice words at him, because he gave me absolutely zero reasons to trust him with her. So I forced her to come with me. I wasn't dragging her, she wasn't kicking and screaming, but she was very challenging. She kept looking back at every step. The man followed us from the club to the metro entrance and only stopped when I started making a scene and shouting that he should stop following us and called him a creep.\n\nI took my friend to her place. I made sure she got there safely and soundly. But all the way there, she was defensive and serious, saying the man was nice and that he was only rude because I had riled him up. I tried reasoning with her, telling her I was treating her the way I'd want my friends to treat me. I was looking out for her, and I wanted her to be safe. As for this guy? He was rude because he was an asshole.\n\nI've been in a similar situation with her before. I've already left her at a club. I later learned she was taken to the hospital and had no idea how she got home. I wanted to avoid that kind of scenario, or something worse.\n\nIs there anything I should have done differently? Has anyone gone through something similar? Do you think I overreacted? I'm not about controlling what my friends say or do, but I'll be damned if I let them stay with a rude stranger when my gut tells me not to.\n\n* * tl;dr * *: Drunk friends want to stay with a guy she just met at the club. I insisted we go home, despite her digging in her heels. Argued with the man, he was rude, followed us to the metro station. I got her to her place in one piece.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 8,
+      "original": "يا جماعة هل هذا العلاج موجود في مستشفى الامل او مستشفيات الصحة النفسية الحكومية او المستشفيات الكبيرة مثل السعودي الألماني؟ الاكتئاب والقلق والارق زايدة علي الايام هذي ولي فترة تارك علاج وعندي اكتئاب وضيقة وقلق شديد لدرجة اني ما غير جالس افحط في البيت ولا اقدر اجلس في مكان واحد اكثر من خمس دقايق!! وحتى عندي كذا احساس غريب احس ان قلبي فيه مثل الحرارة او كأن فوقه صاج تيفال حامي لو تجي امي تحط الصاج وتسوي بيض مقلي يمكن يستوي من حرارة قلبي😣 والتربتيزول ما ابي ارجعله مع انه كان محسن مزاجي بس المشكلة ذبحني بالجفاف ريقي طول الوقت ناشف وشهيتي مفتوحة زيادة عن اللزوم وترازودون قريت عنه في بعض المواقع الاجنبية ويقولون ان مفعوله قريب من مفعول الفاليوم ويحسن النوم ويشتغل على القلق ولا يسبب زيادة في الوزن مثل التربتيزول ولا يسبب جفاف.. فهل من احد قد جرب هذا العلاج او يعرف وين القاه؟؟ تكفون يا جماعة الوضع مرة مزري لا يغركم اني امزح واستهبل عليكم ولكن الحقيقة اني محترق من داخلي وخاصة هذي الايام احس الاكتئاب والقلق والارق زايد عن حده مدري وش السالفة هل هو بسبب رمضان والصوم والا شي ثاني الله اعلم",
+      "translation": "\"Hey, everyone, is this treatment available at Amal Hospital or at government psychiatric hospitals or larger hospitals like Saudi German? Depression, anxiety, and insomnia have been getting worse for me these days, and I've been off my medication for a while. I'm depressed, feeling suffocated, and have severe anxiety to the point where I can't sit still in the house and can't stay in one place for more than five minutes! I also have some strange sensations; I feel like my heart has a heat in it, or as if there's a hot Tefal pan on top of it. If my mom were to put the pan on and fry an egg, it might cook from the heat of my heart. 😣 I don't want to go back to taking Tryptizol, even though it improved my mood, but the problem is that it killed me with dehydration; my mouth is always dry, and my appetite is excessively open. I read about trazodone on some foreign websites, and they say its effect is similar to that of Valium, it improves sleep, and works on anxiety, and it doesn't cause weight gain like Tryptizol or cause dehydration.. Has anyone tried this treatment or know where I can find it? Please, guys, the situation is really bad. Don't be fooled by my jokes and fooling around with you, but the truth is that I'm burning up inside, especially these days, I feel that depression, anxiety, and insomnia are at their peak. I don't know what the story is, is it because of Ramadan and fasting, or is it something else, God knows best.\"",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 9,
+      "original": "اللهم أبدل حزن أمي بفرح تبكي من شدته ، اللهم جنب والداي أذى الدنيا وأطل بأعمارهم وأحفظهم لي🖤🖤",
+      "translation": "May Allah replace my mother's sorrow with joy so intense that she weeps from it. May Allah protect my parents from the harms of this world, grant them long lives, and keep them safe for me.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 10,
+      "original": "غدا سوف تختفي الكمامه وتشرق الابتسامه اين الواثقون بالله قول يا رب",
+      "translation": "Tomorrow the mask will disappear and the smile will shine. Where are those who trust in God? Say, \"O Lord.\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 11,
+      "original": "يا إخوات و يا إخوان  مرة ثانية فشل جديد  أنا لي صديقة أحب لها كل الخيرو احترمها واقدرها  لحد هنا عادي اللي مش عادي أنها تزوجت من شهرين وما علمتني ولا دعتني لحفلة العرس كأني غير موجودة وسمعت من ناس نعرفهم  واتصلت بها فخبرتني أمها ...............صح النوم هي متزوجة من شهرين أو أكثر فقلت لأمها طيب ليش ما دعاتني لحفلة عرسها فمهمهت بكلمات  وما كان ودي أحرج أمها  بس جرحتني وأنا كنت أطن أنها أخت لي  والأن رجعتني خطوات للوراء وما عندي ثقة في أحد بعد الي صار",
+      "translation": "My sisters and brothers, another new failure. I have a friend whom I wish all the good and respect and appreciate. Up to this point, it's normal, but what's not normal is that she got married two months ago and didn't tell me or invite me to the wedding, as if I didn't exist. I heard about it from people we know, and when I called her, her mother answered... Wake up, she's been married for two months or more. So I asked her mother, \"Why didn't she invite me to the wedding?\" She mumbled something, and I didn't want to embarrass her, but she hurt me. I thought she was like a sister to me, but now she's taken me a few steps back, and I don't trust anyone after what happened.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 12,
+      "original": "اليوم استيقظت بخيبة أمل. توقعات تمتص. توقعات الناس والأحداث، وكل شيء فقط يضفي نفسه لخيبة الأمل. اليوم بخيبة أمل في شخص اهتمت حقا. تمتص.\n\n& amp؛ # X200B؛\n\nلا أريد أن آكل أو الاستيقاظ حقا وأكره الشعور. يبدو الأمر كما لو كان من قبل، في كل مكان عدم وجود الدافع لمتابعة السعادة.\n\n& amp؛ # X200B؛\n\nأن تكون متفائلا صعبا اليوم أنني أخذت استراحة منه. اليوم لن أفعل شيئا واعشد في أفكاري. أحبكم جميعا. غدا سيكون أفضل. يجب أن يكون لأنني سأجعلها كذلك ولكن اليوم فقدت.",
+      "translation": "Today I woke up feeling disappointed. Expectations suck. People's expectations and events, everything just adds up to disappointment. Today I'm disappointed in someone I really cared about. It sucks.\n\nI don't want to eat or really wake up and I hate this feeling. It feels like before, everywhere there's a lack of motivation to pursue happiness.\n\nBeing optimistic is hard today, so I'm taking a break from it. Today I won't do anything and wallow in my thoughts. I love you all. Tomorrow will be better. It has to be, because I'll make it so, but today I've lost.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 13,
+      "original": "RT @mestaderah_shfc: فواز القرني: سأشتغل على نفسي حتى أموت من أجل أسعاد فريق #الشباب https://t.co/zS1bFqJwOP",
+      "translation": "Fuaz Al-Qarni: I will work on myself until I die to make #AlShabab happy.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 14,
+      "original": "بس انت بتعرف بعدين لما بترجع تفكر و بتحس بالندم و تأنيب الضمير بس بيكون الوقت ده فات",
+      "translation": "You know, later when you reflect and feel regret and guilt, but by then it's too late.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 15,
+      "original": "وزارة الصحة العامة تعلن في مؤتمر صحفي عن شفاء أول 4 حالات في دولة #قطر من فيروس #كورونا",
+      "translation": "The Ministry of Public Health announces at a press conference the recovery of the first 4 cases in the State of Qatar from the Coronavirus.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 16,
+      "original": "دورة مفرغة أحتاج إلى الرفقة ولكني أخشى التخلي، لذلك أخرجني كل من يحبني حقا من خلال عدم السماح لهم بذلك. ثم عندما يغادرون أنني بحاجة إلى الرفقة أكثر وأثق به حتى أقل. لذلك أنا، 2020 كان لدي الفرص وجلتهم جميعا.",
+      "translation": "A vicious cycle: I need companionship, but I fear abandonment, so everyone who truly loves me pushes me away by not letting them do so. Then, when they leave, I need companionship even more and trust them even less. So I, in 2020, had the opportunities and took them all.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 17,
+      "original": "صديقي (26F) يرجع تاريخها إلى قصة طويلة من mooch (30 مترا) قصيرة باختصار ممكنة للإنسان.\n\nانتقل أفضل صديق لي من المدرسة الثانوية عبر البلاد بعيدا عن عائلاتنا. عشنا معا لمدة شهر في البداية حتى التقت رجلا وانتقلت على الفور إلى منزله معه وعائلته بعد شهر واحد من المواعدة.\n\nينتهي المتأنق كونه مدمن الهيروين ومدمن ميث، فقد أخفه منها. أقول لها تنهار معه والعودة إلى شقتي. هي ترفض. وتنتهي في الحصول على شقتها الخاصة، ولكن السماح له بالعيش هناك إيجار مجانا دون عمل. يملأ المتأنق على كل شيء ويهدد بمغادرةها لأشياء تافهة. كما أنه يجعل عبثا ضخمة ولا ينظف أبدا بينما يطلق عليها.\n\nوأخيرا يريد الصديق أخيرا الانفصال عن هذا الرجل ولكن السبب الوحيد الذي تقول إنها تقيم هي لأنها تحب قطته جلبت إلى شقتها. يقول هذا الرجل بصراحة إنه يريد أن يحملها ويغضب عندما تريد أن تذهب في مراقبة النسل، وتخلص من نوبات الغضب عندما تطير إلى المنزل لزيارة أسرتها لأنه \"لا يثق بها\"، إلخ.\n\nكيف في العالم أحصل عليها أن تأتي إلى حواسها؟ لدى صديقي درجتان وظيفتان رائعا بعد أنه ليس له حرفيا أي قدرة على رؤية هذا الرجل، فهذه دائما عذرا لأفعاله. أخشى موعظا هذا الرجل سوف يطرقها ومواصلة العيش بشكل أساسي لأنه لا يعرف أنها لن تتركه إذا كان لديهم طفل معا. لقد حدث هذا لأكثر من عام الآن.\n\nTL؛ DR:\nيتحرك صديقي مع مستخدم مخدرات بعد شهر من المواعدة. ثم تحصل على شقتها الخاصة وتسمح له بالعيش مع حرة إيجارها أثناء عدم عملها وتصنع الفوضى. يغضب ويغضب طوال الوقت والمحادثات حول كيف يريد الأطفال من أجل الحفاظ عليها في مكانها. أحتاج المشورة حول كيفية مساعدتها.",
+      "translation": "My friend (26F) has been dating a mooch (30M) for a long time, and it's a short story in brief.\n\nMy best friend from high school moved across the country away from our families. We lived together for a month initially until she met a man and moved in with him and his family after just one month of dating.\n\nThe mooch turns out to be a heroin and meth addict, which he hid from her. I tell her to break up with him and move back into my apartment, but she refuses. She ends up getting her own apartment but lets him live there rent-free without working. He mooches off everything and threatens to leave her over petty things. He also makes a huge mess and never cleans up while calling her names.\n\nFinally, my friend wants to break up with this man, but the only reason she says she stays is because she loves the cat he brought into her apartment. This man openly says he wants to impregnate her and gets angry when she wants to go on birth control, and he throws tantrums when she flies home to visit her family because \"he doesn't trust her,\" etc.\n\nHow on earth do I get her to come to her senses? My friend has two great jobs, yet he literally has no ability to see this man for who he is, always making excuses for his actions. I fear this man will beat her and she'll continue living with him basically because he doesn't know she won't leave him if they have a child together. This has been going on for over a year now.\n\nTL; DR:\nMy friend moves in with a drug user after just one month of dating. She then gets her own apartment and lets him live there rent-free while not working and making a mess. He gets angry and throws tantrums all the time, and talks about wanting children to keep her in place. I need advice on how to help her.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 18,
+      "original": "فقدت الشغف تجاه مجال عملي بسبب كذا صدمة متتالية خاصة اخر صدمة دي دمرتني نفسيا خلتني كرهت كل حاجه كنت بحب مجالي جدا وبطور نفسي فيه باستمرار حاليا مبقتش اطيق افتح كتاب او اقعد قدام فيديو بيجيلي فرص عمل محترمة وبرفض بحسها غير مناسبة او محتاجة تحدي جديد وانا نفسيا حاسس اني مش عايز وش وضغط عليا\nحاسس اني مفيش روح للمناهدة ومواجهة المشاكل شئ ما اتكسر جوايا اتأذيت كتير جدا ازاي ارجع شغفي تاني وارجع زي الاول معتش عندي ثقة في نفسي \nمشكورين",
+      "translation": "I have lost passion for my field of work due to several consecutive shocks, especially the last one, which destroyed me psychologically. It made me hate everything. I loved my field so much and was constantly developing myself in it. Now, I can't stand to open a book or sit in front of a video. I get offered respectable job opportunities, but I refuse them, feeling they are not suitable or that I need a new challenge. Psychologically, I feel like I don't want to continue and I'm under pressure. I feel like there's no spirit left to endure and face problems. Something inside me has broken, and I've been hurt a lot. How can I regain my passion and become like I was before? I no longer have confidence in myself. Thank you.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "crowdsourcing",
+      "translation_failed": false
+    },
+    {
+      "index": 19,
+      "original": "بناء على الارقام اللي صرنا نشوفها .. من الواضح أن بدأنا نحصد ثمرة مجهود القائمين على محاربة الفايروس وكذلك الوعي ارتفع بين الناس اكثر من قبل .. مع ان في ناس غير مباليه لو يشدون حيلهم شوي بمجرد الاهتمام بمسألة المسافه الاجتماعيه راح نتجاوز هذه الازمه بإذن الله",
+      "translation": "Based on the numbers we're seeing, it's clear that we're starting to see the results of the efforts of those fighting the virus, and awareness has increased among people more than before. Even though some people are indifferent, if they just put in a little more effort and pay attention to social distancing, we'll overcome this crisis, God willing.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 20,
+      "original": "حاسة انى هموت خلاص من الحزن مش قادرة انطق ولا احكى اللى جوايا جوزى اللى كله بيضرب بينا المثل فى حبنا لبعض واهتمامنا ببعض اكتشفت وانا بعمل مكالمه من فونه ان هو عامل اكونت فيك وبيكلم واحدة متجوزة اتعرف عليها من شهرين لما كان فى مؤتمر  واجهته بكل هدوء الاول انكر  ان ده حسابه بس ده للاسف مفتوح على فونه والشات كله مكالمات صوتيه بس  بكل هدوء واجهته قالى انها غلطه وانها ست متزوجه  اتعرف عليها فى مؤتمر تبع شغله من شهرين وانها بتعتبره اخوها الكبير وبتشتكى له من جوزها وكده ومفيش بينهم حاجة والموضوع بينهم صداقه مش اكتر بس من اضطرابه وقلقه عرفت كدبه بس مش قادرة اخد موقف  والدى ووالدتى متوفيين واخويا الوحيد مشغول فى بيته وولاده اللى يعينه مش ناقص هم انا مش بشتغل وده كان شرطه قبل الجواز وبنتى داخله اولى طب ولازم اكون جنبها  مش قادرة اكسره قدام اهلنا ولا اهز صورته قدام ولادنا قلت له كل واحد فينا فى حال مش هقدر اثق فيه تانى  لانى راجعت مواقف كتير له كنت بعديها بحسن نيه بس للاسف هو ميستاهلش بنام مع ابنى الصغير فى اوضته بحجه ان جوزى بيشغل التكييف وانا بتعب منه ده قدام ولادنا وبنتعامل قدامهم فى اضيق نطاق حاول يعتذر كتير وبيقول انا مش لاقى مبرر بس مش هقدر اعيش من غيرك واخر ايام بيلح عليا عاوز علاقه انا قلت له اتجوز وانا اقسم بالله موافقه وهبارك خطوتك قدام كل اهلنا وموافقه انك تقول انى انا عندى مشاكل صحيه تمنعنى عنك وده سبب جوازك بس انا مش طايقاه يلمسنى همووووت  حاسه انى عمري كله ضاع مع حد ما يستاهلش وازى الراجل يكون مرتاح مع مراته وبيحبها ويلف عشان يتعرف على دى ويكلم دى ويخترع حجج عشان يخرج وحده ويتكلم هو مش بيقابلها علاقه نت بس  هموت والله مش قادرة احكى لحد",
+      "translation": "I feel like I'm going to die from sadness, I can't speak or express what's inside me. My husband, who everyone praises for our love and care for each other, I discovered while making a call from his phone that he has an account on Vic and is talking to a married woman he met two months ago at a conference. I confronted him calmly at first, he denied it was his account, but unfortunately, it was open on his phone, and all the chats were voice calls. I confronted him calmly, and he said it was a mistake, that she's a married woman he met at a work conference two months ago, and she considers him her big brother, complaining to him about her husband, and there's nothing between them, just friendship. But I knew he was lying from his nervousness and anxiety. I can't take a stand; my parents are deceased, my only brother is busy with his family and children, and I don't want to burden him with my problems. I'm not working, and that was his condition before our marriage, and my daughter is starting medical school, and I need to be by her side. I can't break him in front of our families or shake his image in front of our children. I told him we'll each go our separate ways; I can't trust him again. I've overlooked many of his actions in good faith, but he doesn't deserve it. I sleep with our youngest son in his room, claiming that my husband turns on the air conditioning, and I get tired from it—all this in front of our children, and we barely interact in front of them. He tried to apologize a lot and said he couldn't find a justification, but he can't live without me. In these last few days, he's been insisting on having a relationship. I told him to get married; I swear I approve and will bless your step in front of all our families, and I agree that you say I have health problems that prevent me from being with you, and that's the reason for your marriage. But I can't stand him touching me; I feel like I'm going to die. I feel like my whole life has been wasted with someone who doesn't deserve it. How can a man be comfortable with his wife and love her, yet go around meeting others, talking to others, and inventing excuses to go out with one and talk to another? It's just an online relationship. I'm going to die; I can't tell anyone.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "crowdsourcing",
+      "translation_failed": false
+    },
+    {
+      "index": 21,
+      "original": "ربنا يجعل كلامنا خفيف لذيذ ظريف لطيف علي الناس اللي نعرفها و منعرفهاش",
+      "translation": "May our words be light, delightful, witty, and gentle to those we know and those we don't.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 22,
+      "original": "طبعا الاغنية من الشعر القديم قمت بتلحينها باسلوب الموشحات وهي اهداء لكل الاصدقاء بدون ترتيب الاخ ولافي الاخ عالم نفس الاخ شفيق الاخ طائر الامل منتظر الفرحة الوردة مغربية سهيلة الاخ عادل الاخ كيف الحال العضو حزين انا طبعا مجرد هاوي لااكثر واستهوتني كلمات للشاعر مسفر بن مهلهل شاعر قديم ارت وضعها في المنتدي ربما تزرع في قلوب يائسة الامل والحياة مع العلم انا قمت بتلحينها بشكل تلقائي ومكتئب جدا اتمني تعجبكم واستسمح الادارة في وضع رابط الاغنية دع المقادير تجري في أعنتها ,,,ولا تبيتن إلا خالي البالي ما بين غمضة عين وانتباهتها ,,,يبدل الله من حال إلى حال ,,,,,,,,, ولرب نازلة يضيق بها الفتى ,,,ذرعا وعند الله منها المخرج ضاقت فلما استحكمت حلقاتها ,,,فرجت وكان يظنها لا تفرج تحيات اخوكم المصراتي  http://www.youtube.com/watch?v=X1cmYWpZ01Efeature=youtu.be",
+      "translation": "Of course, the song is from old poetry, which I have composed in the style of a muwashshah. It is dedicated to all my friends, in no particular order: my brother Walafi, my brother Alam Nafs, my brother Shafiq, my brother Tayir Al-Amal, Muntadhir Al-Farha, Al-Wardah Al-Maghribiyah, Sahila, my brother Adel, my brother Kayf Al-Hal, and the member Hazin Ana. I am just an amateur, and the words of the poet Musfar Bin Muhlahil, an old poet, captivated me, so I decided to post them in the forum, hoping they will plant hope and life in desperate hearts. I composed the song spontaneously and in a very depressed state. I hope you like it, and I apologize to the administration for including the song's link.\n\nLet fate run its course, and do not spend your nights worrying. Between one blink and another, God changes one's state. And when a calamity befalls a person and he despairs, he will find relief from God. When things become most constricted, they will ease up, and what was thought to be impossible will happen.\n\nGreetings from your brother, Al-Masrati.\n\nhttp://www.youtube.com/watch?v=X1cmYWpZ01Efeature=youtu.be",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 23,
+      "original": "أنا (23F) هل تريد التحدث إلى صديقي (28 مترا) حول بعض مشاعري حول العلاقة التي أرغب في التحدث مع صديقي عن مشاعري عن علاقتنا. بدأنا المواعدة قبل بضعة أشهر وكان كل شيء مذهلا ولا يزالون كذلك. إنه عظيم وفهم وحب الرجل وأنا أستمتع بقضاء وقتي معه.\n\nومع ذلك، في الآونة الأخيرة كنت أشعر بعيدة قليلا منه. لم نتمكن من ممارسة الجنس كما كان من قبل وأحيانا ذهبت في عطلة نهاية الأسبوع (نلتقي فقط في عطلة نهاية الأسبوع) دون أن يكون هناك نشاط جنسي آخر على الإطلاق.\n\nيراقب الاباحية وسوف fap لها طوال الأسبوع وأحيانا أعتقد أن هذا هو السبب في أننا لم يعد بعد الآن كما كان من قبل. قلت أنا بخير معها، وهذا صحيح، لكن من الواضح أنني أفضل ما إذا لم يكن كذلك لكنني أعتقد أن يقول إنه لن يكون الكثير. أجد مشاهدة الاباحية أثناء وجودها في علاقة أمر مثير للاشمئزاز والقذرة وغير الضرورية تماما. وحتى لو قلت لا، أعتقد أنه ما زال يفعل ذلك وراء ظهري (لا يعني ذلك بطريقة ضارة) كوس أعتقد أنه أصبح عادة.\nربما يكون هذا أيضا أحد الأسباب التي أشعر بها بعيدة عن سبب سبب مشاهدة الإباحية إذا كان لي. أشعر أنني ثم أنا غير كاف. على الرغم من أنه يبدو أنه يشاهد الاباحية فقط من صنمه.\n\nفي المساء، إنه بعيد بعض الشيء لأنه يلعب بشكل تنافسي عبر الإنترنت، وبالتالي فإننا لم نتحدث أيضا كما كان من قبل.\n\nأريد أن أحضر هذه الأمر، لكنني لا أريد أن أتحكم لكنني لا أريد أن أتعفن مع هذه المشاعر فيي وفي بدوره قد يستاءه / أن يكون متوترا حوله وهو غير عادل له. هل سأتحكم أو مجنون التفكير في هذه؟ أنا عديمي الخبرة تماما مع العلاقات الخطيرة وهذا هو أول شخص خطير. مسبقا، لقد كان لديه فقط هوكوبس عارضة. هل ربما أكون غير ناضجة بعض الشيء؟ كيف أذهب مع هذا؟ أخشى التعبير عن مشاعري ويجري عرضة للخطر وأنه سيغير تصوره لي. أعلم أنني سأبدأ تمزيقه عندما أفتح هذا الأمر لأنني أميل إلى أن أكون عاطفيا للغاية وأنا خائف من الحكم على هذه الأفكار.\n\ntldr.\nالشعور بعيدة ومخلصة من صديقي وتتساءل عما إذا كان يجب أن أحضره إليه ولكني خائف وغير متأكد من كيفية",
+      "translation": "I (23F) want to talk to my friend (28M) about some of my feelings regarding our relationship. I'd like to discuss my feelings about us with my friend. We started dating a few months ago, and everything has been amazing, and it still is. He's great, understanding, and a loving man, and I enjoy spending time with him.\n\nHowever, lately, I've been feeling a bit distant from him. We haven't been able to have sex as we used to, and sometimes I go through the weekend (we only meet on weekends) without any sexual activity at all.\n\nHe watches porn and will fap to it all week, and sometimes I think that's why we're not as close as we were before. I said I was okay with it, and that's true, but obviously, I'd prefer it if he didn't, but I think he'll say it's not a big deal. I find watching porn while in a relationship disgusting, dirty, and completely unnecessary. Even if I say no, I think he still does it behind my back (not in a harmful way) because I think it's become a habit.\n\nMaybe this is also one of the reasons I feel distant, wondering why he watches porn if we're together. I feel like I'm not enough. Although it seems he only watches porn for his fantasy.\n\nIn the evenings, he's a bit distant because he plays competitive online games, so we don't talk as much as we used to either.\n\nI want to bring this up, but I don't want to be controlling, yet I don't want to fester with these feelings inside me, and in turn, he might get upset/be tense about it, and that's not fair to him. Am I being controlling or crazy for thinking about this? I'm completely inexperienced with serious relationships, and this is my first serious one. Previously, he's only had casual hookups. Maybe I'm a bit immature? How do I go about this? I'm afraid to express my feelings and be vulnerable, and he'll change his perception of me. I know I'll start tearing up when I open up about this because I tend to be very emotional, and I'm scared of being judged for these thoughts.\n\ntldr.\nFeeling distant and loyal to my friend and wondering if I should bring it up to him, but I'm scared and unsure how to.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 24,
+      "original": "السلام عليكم منذ 3 اشهر مررت بمشكله اقلقتني كثيرا وقمت افكر فيها بطريقه سلبيه واحسست بضيق نفسي شديد جدا لم استطع تحمله وتدهورت حالتي النفسيه كثيرا ذهبت الى الطبيب وقال ان عندي اكتئاب ووصف لي دواء مضت على زيارتي للطبيب 20 يوما ..احس ان الضيق الشديد والتفكير قد تلاشى والحمدلله منذ اسبوعين ولكني احس بملل رهيب وأغلب الوقت لااحس بسعاده او فرح .. هواياتي واهتماماتي تركتها ولم اعد اجد لها اي معنى وفقدت متعتها لم اعد احس بأن الحياه جميله او ممتعه كالسابق  فهل الأحساس الدائم بالملل وعدم الأحساس بمتع الحياه هو أكتئاب نفسي ..ارجو التوضيح ولكم جزيل الشكر",
+      "translation": "Hello, I have been struggling with a problem for the past three months, which has caused me a lot of worry and negative thinking. I felt an intense sense of distress that I couldn't bear, and my mental state deteriorated significantly. I went to the doctor, who diagnosed me with depression and prescribed medication. It's been 20 days since my visit, and I feel like the intense distress and overthinking have subsided, praise be to God. However, for the past two weeks, I've been feeling an overwhelming sense of boredom, and most of the time, I don't feel happy or joyful. I've abandoned my hobbies and interests, and they no longer hold any meaning or pleasure for me. I no longer feel that life is beautiful or enjoyable as it used to be. Is this constant feeling of boredom and lack of enjoyment in life a form of mental depression? I would appreciate some clarification. Thank you very much.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 25,
+      "original": "أعباء لدي أطفال صغار. هم أعباء. يجب أن أطبخ لهم ونظيفة لهم وملبيعهم وشرائهم اللعب. لقد كنت محاكيا على القرف ورأت. اليوم، واحد منهم ركلني في الكرات. مرة واحدة، واحد منهم لكماتي في العين وأعتقد أنه سينخفض. أنا أستحم لهم وأنا امسح حميرهم وأنا تنظيف أسنانهم. لا أحد منهم يدفع الإيجار أو يخرج القمامة.\n\nوأنا أحبهم، دون قيد أو شرط. سوف أموت من أجلهم. هم أفضل شيء حدث لي على الإطلاق، الفترة. وإنني أتطلع إلى رؤيتهم كل يوم. أنها تجعلني ابتسم وتضحك وأحب أن أجعلها تبتسم وتضحك. أنها تعطيني الغرض. أنها تجعلني أريد أن أكون شخصا أفضل. أنها تجعلني أرغب في التغلب على الاكتئاب.\n\nهل أنت عبء؟ على الاغلب لا. ولكن هل تشعر وكأنه عبء؟ بكل تأكيد. وتعلم ماذا؟ الذين يهتموا سخيف. شخص ما هناك يحبك دون قيد أو شرط، حتى لو كنت عبئا. شخص ما يموت من أجلك، حتى لو كنت عبئا. هل تعرف أن الناس يهتمون ببعضهم البعض؟ أننا نحب بعضنا البعض؟ هذا ما يعنيه أن تكون إنسانية.\n\nأنت محبوب. سواء كنت تعرف ذلك أم لا، ما إذا كنت تستطيع الاعتراف بذلك أم لا، فأنت محبوب. انت جيد. العالم أفضل لأنك في ذلك.",
+      "translation": "I have young children. They are a burden. I have to cook for them, clean for them, clothe them, and buy them toys. I've been kicked in the balls by one of them today. Once, one of them punched me in the eye, and I think it's going to bruise. I bathe them, I wipe their bums, and I brush their teeth. None of them pay rent or take out the trash.\n\nAnd I love them, unconditionally. I would die for them. They are the best thing that has ever happened to me, period. I look forward to seeing them every day. They make me smile and laugh, and I love making them smile and laugh. They give me purpose. They make me want to be a better person. They make me want to overcome depression.\n\nAre you a burden? Probably not. But do you feel like one? Definitely. And you know what? Those who care are stupid. Someone out there loves you unconditionally, even if you're a burden. Someone would die for you, even if you're a burden. Do you know that people care for each other? That we love each other? That's what it means to be human.\n\nYou are loved. Whether you know it or not, whether you can admit it or not, you are loved. You are good. The world is better because you're in it.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 26,
+      "original": "الحمد لله عدد الشفاء اكثر",
+      "translation": "Praise be to God, the number of cures is greater.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 27,
+      "original": "بدأت صحتي العقلية تؤثر على صحتي الجسدية سلبا للسياق، وقد تعرضت اضطرابات متعددة الأكل في الماضي، وتعتادت أن أبدو إلا أقل قليلا من المتوسط. ولكن نظرا لتطوير الفراش أكثر مؤخرا (اضطراب الأكل الشرقي) ولأن الاكتئاب أصبح أسوأ بكثير من ذي قبل بسبب زيادة وزني وعن عدد لا يحصى من الأشياء الأخرى، أعلم أنني بدأت تبدو سيئة حقا. تعتقد عائلتي أنني كسول ولا أهتم، وإلى حد أن هذا صحيح لأنني لا أريد أن أكون مستيقظا. أقضي الكثير من وقتي في النوم، حتى في المدرسة. لا أستطيع حتى مساعدته أنا حرفيا متعبا للغاية. أنا بالاشمئزاز مع نفسي وحده لأن الجميع يشعرون بالاشمئزاز أيضا معي. كل يوم أستيقظ وأفكاري الأولى هي السبب في أنني يجب أن أكون في هذا الجسم؟ لماذا هذه حياتي؟ لا أتمنى لو أنني أحصل على أفضل، أتمنى أن تكون صحةي العقلية ليست سيئة بما يكفي لتأثير صحتي البدنية. لأن الناس لا يشفقونك عندما يحدث هذا، فإنهم يفترضون فقط لأنك مهمل.",
+      "translation": "My mental health has started to negatively impact my physical health, and I've experienced multiple eating disorders in the past. I used to look slightly less than average, but due to the recent development of orthorexia (eating disorder) and my depression getting much worse than before due to my weight gain and countless other things, I know I'm starting to look really bad. My family thinks I'm lazy and don't care, and to an extent, this is true because I don't want to be awake. I spend a lot of my time sleeping, even at school. I can't even help it, I'm literally too tired. I'm disgusted with myself, and everyone else feels disgusted with me too. Every day I wake up, my first thoughts are, why am I in this body? Why is this my life? I don't wish to get better, I wish my mental health wasn't bad enough to impact my physical health. People don't pity you when this happens, they just assume you're negligent.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 28,
+      "original": "نفسي  لو ربنا اداني عمر و وصلت سن ال 70  اني اكون قادر استعد اني اتقبل الموت في اي وقت  بمعني ان مهما حصل حتي لو لا… https://t.co/d3S7uLrUJL",
+      "translation": "I wish that God grants me a long life and that I reach the age of 70, so that I am able to prepare myself to accept death at any time, meaning that no matter what happens, even if...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 29,
+      "original": "رفضي (18F) BF (19M) المجيء إلى منزلي بعد عامين من المواعدة أنا في الكلية والعيش مع أحد والدي، وصديقي يعيش مع والديه. من المهم أن نذكر أنه جيدا وله منزل جميل، بينما أعيش في حديقة مقطورة. نحن نعيش في غضون 5 دقائق من بعضهم البعض، لكن علي دائما أن أذهب إلى منزله. أطلب منه ما لا يقل عن يومين خارج الأسبوع ليأتي، وسيعذر عذرا وعادة ما أود كهز & أمبير؛ الذهاب إلى منزله. ومع ذلك، في الآونة الأخيرة عندما من المفترض أن نتسكع & amp؛ عندما يقول إنه يريد مني أن أتيت، أطلب منه المجيء إلى هنا & AMP؛ إذا لم يحدث بعد ذلك، فلن يتعطل فقط وأصبح عادة ما أكمل مع القطط & أمبير؛ العمل في المستقبل على الواجبات المنزلية. انها تأخذ عدد من علاقتنا، لكنني بالكاد في المنزل لأنني أذهب إلى الكلية، شنق مع أصدقائي و أمبير؛ أختي التي أنا قريب جدا من، جنبا إلى جنب مع عبء عمل الكلية بدوام كامل. إنه جنون عندما يكون لدي واجبات منزلية وأطلب منه أن يأتي للتو ويقول إنه لا يريد مشاهدتي القيام بأداء واجبي طوال الليل عندما أستطيع أن أفعل شيئا آخر \". أنا على منحة درجات كاملة + بعض & amp؛ لن أعيش في حديقة مقطورة لبقية حياتي. آخذ عبء العمل الكلي الخاص بي بجدية للغاية، كما أنه ليس في الكلية & أمبير؛ لا تخطط للذهاب إلى الكلية، فهو لا يفهم ما هو 15 ساعة معتمدة. ولم أكن أيضا طالما طالب أول جنرال. أشعر أنني لن أذهب إلى المنزل وألا أهمالي أطفالي. يبدو أن هذه مشكلة ثابتة لأنني أعرف عائلته بأكملها، وعرضها مع الألغام مرتين؟ لا عطلات، حيث يوجد دائما ذريعة، لكنني أتوقع دائما حضور عطلته. الأمر لا يعجبه أنه منزل غزر، إنه حديقة مقطورة حتى تحدث أشياء رجالية، لكنني أحب ذلك هنا. لقد تحدثت إليه حول هذا الأمر عدة مرات، ولم يتغير شيء. هل أنا مبالغ فيه؟ جزء مني يفهم أنه جيد جدا & amp؛ أن متنزهات مقطورة لها وصمة عار. إنه يجعلني أشعر بالحرج من حيث أعيش، لكنني لا أستطيع تغيير ذلك أنا ضعيف AF ؟؟ هذه ليست القضية الوحيدة في علاقتنا & أمبير؛ لكنني أحبه وسيشعر بمفرده بدونه.\n\nملاحظة. على My Mobile RN، آسف للغاية لأي مشكلات أو تنسيق أو أي شيء\n\nTL؛ DR - صديقي لمدة عامين يرفض أن يأتي إلى منزلي لأنني أعيش في حديقة مقطورة & أمبير؛ انه جيد قبالة.",
+      "translation": "My boyfriend (19M) refuses to come to my place after two years of dating. I'm in college and living with one of my parents, while he lives with his. It's important to note that he's well-off and has a nice home, whereas I live in a trailer park. We're within 5 minutes of each other, but I always have to go to his place. I ask him to come over at least a couple of days a week, and he makes excuses and usually ends up saying no. I'd like him to make the effort and come here sometimes. Lately, when we're supposed to hang out and he says he wants me to come over, I ask him to come here instead, and if he doesn't, he just doesn't show up and it's becoming a habit. I end up spending time with my cats and working on homework. It's taking a toll on our relationship, but I'm hardly ever home because I'm at college, hanging out with friends, and spending time with my sister, who I'm very close to, along with my full-time college workload. It's crazy when I have homework and I ask him to just come over, and he says he doesn't want to see me doing homework all night when I could be doing something else. I'm on a full scholarship plus some, and I won't be living in a trailer park for the rest of my life. I take my total workload very seriously, and since he's not in college and doesn't plan to go, he doesn't understand what a 15-credit hour load is. I haven't been a general student for long either. I feel like I won't go home and neglect my children. It seems like a fixed issue because I know his whole family, and I've offered to introduce them to mine twice? No holidays, as there's always an excuse, but I always expect him to attend mine. He doesn't like that it's a trailer park, it's a manly thing, but I like it here. I've talked to him about this several times, and nothing has changed. Am I overreacting? Part of me understands that he's well-off and that trailer parks have a stigma. He makes me feel embarrassed about where I live, but I can't change that—I'm weak AF? This isn't the only issue in our relationship, but I love him and would feel alone without him.\n\nNote: On my mobile RN, sorry for any formatting issues or anything.\n\nTL;DR - My two-year boyfriend refuses to come to my place because I live in a trailer park, and he's too good for it.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 30,
+      "original": "السلام عليكم ورحمة الله وبركاته قبل فترة كتبت لكم عن المكملات الغذائية والفيتامينات اللي تعالج الاكتئاب والضيقة انا مستمر عليها لكن لاحظت انه الضيقة والاكتئاب رجعوا لي مرة ثانية !!! ما ادري هل فيه علاج اذا استخدمته يسبب الانشراح والهوس الخفيف أكيد فيه ياليت تعطوني اسم العلاج ؟؟ انا اعاني من الاكتئاب والوسواس فقط",
+      "translation": "Hello, may peace, mercy, and blessings be upon you. Some time ago, I wrote to you about dietary supplements and vitamins that treat depression and anxiety. I've been taking them consistently, but I've noticed that anxiety and depression have returned. I don't know if there's a treatment that, when used, causes a sense of elation and mild mania. Surely there is, I wish you'd give me the name of the treatment. I suffer from depression and obsessive-compulsive disorder only.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 31,
+      "original": "ساره أسألي ظافر النهاية راح تكون سعيده او لا #حلاوة_الدنيا #تفاعلكم",
+      "translation": "Sarah, ask Zafer if the ending will be happy or not. #SweetnessOfLife #YourInteraction",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 32,
+      "original": "الحمدالله",
+      "translation": "Praise be to God.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 33,
+      "original": "ما شاء الله عدد الفحوصات ممتاز ٥٠٠٠ فحص وهذا يترك الفرصة لاستكشاف اكبر عدد ممكن من الحالات و عزلها . الحمدلله 🤲🏻",
+      "translation": "\"Masha'Allah, the number of tests is excellent, 5000 examinations, and this leaves the opportunity to explore and isolate as many cases as possible. Alhamdulillah.\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 34,
+      "original": "انا اكتشفت انى مش مكتئب\nانا عايش دور الاكتئاب\nانا عندى حزن واحباط لانى مش عارف اتأقلم مع الحياة ومش قادر اعيش صح.\nد… https://t.co/3sw9y2jv1f",
+      "translation": "I realized I'm not depressed; I'm just playing the role of depression. I feel sad and discouraged because I can't adapt to life and I'm unable to live properly.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 35,
+      "original": "سؤال بس يا بتعت يا رب صبرني هو مين البعد عني بسبب مفيش شخص اتخالق انا ظلمة و لو حصل هو ظلمني قبلها الاكس ختنتي و مت… https://t.co/9uDhrWvIIW",
+      "translation": "Question, my love, oh God, grant me patience. Who is it that has left me because of the absence of a person who was created for me? I am the one who has been wronged, and if he wronged me before, the ex betrayed me and died...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 36,
+      "original": "انا جواتي شخص كئيب مطفي..وشخص فاقد شغفه..وشخص..وشخص ما بحب يتكلم..رغم هيك ما زالت الضحكة...♥️🥀\nh.a.m.z.a__kn",
+      "translation": "I am an introverted, uninspired person...a person who has lost his passion...a person...a person who doesn't like to talk...despite all this, the smile is still there...♥️🥀\nh.a.m.z.a__kn",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 37,
+      "original": "يشارك صديقي سريره مع زميله في الغرفة وأصدقائه على الرغم من أن لديه غرفة غريبة.\nيمتلك صديقي (25m، Me) من 3 أشهر من 3 أشهر منزله حوالي ساعة بعيدا عن المكان الذي أعيش فيه. منذ حوالي 6 مسوس صديقه (والصديق السابق) انتقل معه. لقد كانوا أصدقاء لفترة طويلة ولم يشاركوا عاطفيا أو جنسيا في سنوات عديدة.\n\nيحتوي صديقي على غرفة نوم احتياطية، لكنها مليئة بالأثاث والارتباطين. زميله في الغرفة ينام في سريره معه. عندما بدأت وبدأت في الخروج من أنني أخبرته أنه إذا كان وانا جادا فسوف أفضله أنه لا يشارك سريره مع أي شخص وأن يقوم بتنظيف غرفة الغيار حتى يمكن أن ينام زميل الغرفة في سريره الخاص.\n\nلقد أصبح وأصبح أكثر خطورة وأصدقائهم رسميا قبل بضعة أشهر. لقد ناقشنا ترتيبات نومه أربع أو خمس مرات منذ ذلك الحين وفي كل مرة يصبح فيها حجة. يخبرني أنه يعتقد أنني لا أثق به، لكنني أخبرته مرارا وتكرارا أنني لا أعتقد أن أي شيء يجري بينهما، فهذا يجعلني غير مرتاح. في كل مرة يتمتع بها المحادثة، يضمن لي أنه سينظف غرفة الغيار، لذا فإن زميله في الغرفة لن ينام في سريره بعد الآن، ولكن عندما يتعلق الأمر مرة أخرى لديه الكثير من الأعذار لماذا لم يتم ذلك (العمل ، الإجهاد، إلخ).\n\nلا أعرف ما إذا كان هذا غير معقول تماما أو \"الطراز القديم\"، ولكن في ذهني لا ينبغي أن يشارك صديقي سرير مع شخص ما عندما لا يكون ضروريا وعندما أخبرته أنني لا أحب ذلك. عندما أذهب إلى منزله، أشعر أنني يجب أن أغسل الأوراق قبل أن أتمكن من النوم في سريره ويقزز زميله في الغرفة في الليل في منزل الأصدقاء. آخر مرة كنت هناك قضيت عدة ساعات من المساعدة في تنظيف غرفة الغيار، لكننا لم نتحول إليها. كان ذلك منذ حوالي أسبوعين وما زال لم ينته الأمر ولم يكن زميله في الغرفة نائما في سريره.\n\nالليلة بعد أن قضى عطلة نهاية الأسبوع معي، أخبرني أن صديقه في الغرفة، شخص أعرفه ولدي مشاكل خطيرة معه، كان في منزله. إنه يعرف أنني أعرف هذا الشخص وكيف أشعر بهذه الشخص، وأكدني دائما أنه ليس قريبا من هذا الشخص على الرغم من أن زميله في الغرفة يعرفهم. حوالي ساعة بعد أن وصل إلى المنزل، يخبرني أنهم جميعا يضعون في سريره يراقب فيلما. كنت غاضبا جدا بعد أن أخبرته عدة مرات أنني لم أكن مرتاحا معه بمشاركة سريره حتى مع زميله في الغرفة، ناهيك عن هذا الشخص الذي يعرف أن لدي مشاكل معه.\n\nأنا لا أعرف ما يجب القيام به. لا أعتقد أن هناك أي شيء يحدث جنسيا بين أي منهم، لكنه يغمرني أن صديقي يشارك سريره مع هذا الشخص الآخر، وهذا حقا يجعلني أشعر أنني لا يهتم بالطريقة التي تجعلني أشعر أنني أشعر بها. لقد حصل على غرفة معيشة رائعة وأتمنى أن يستمتع بضيوفه وتناول زميله في الغرفة في غرفة الغيار. أحصل على الانطباع بأنه حتى بعد أن ينتهي تنظيف غرفة الغيار التي لا يزال يخطط للحصول على زميله في الغرفة في سريره لمشاهدة الأفلام.\n\nهل لدي الحق في طلبه لتحريك زميله في الغرفة في غرفة الاحتياط وعدم مشاركة سريره مع الضيوف؟ أشعر أنني أشغل أكثر من مبدأ ذلك في هذه المرحلة منذ أن طلبت ولا سمعت. أخبرني أصدقائي وعائلاتي أن زميله في الغرفة ينام في سريره يبدو وكأنه علم أحمر، لكنني أعتقد أنه كسول فقط ولم تنظيف غرفة النوم الاحتياطية.\n\nفي المرة القادمة التي أراه، أود الحصول على محادثة جدية حول هذا وشرح السبب في أن هذا يزعجني واتضح أنه أتوقع منه أن ينتهك غرفة النوم الاحتياطية وليس لديك أي شخص آخر في سريره بعد الآن. لقد كان لدينا هذه المحادثة عدة مرات، ولكن إذا لم يحدث هذه المرة أشعر أنني لا أستطيع أن أطلب السؤال. يجب أن انفصل عنه إذا لم يتم إصلاح هذا؟ أخشى أنه حتى بعد أن ينتهي من غرفة الغيار، سيتضمن زميله في غرفته في سريره طوال الوقت وربما حتى أصدقاء آخرين وهذا ليس بخير معي.\n\nTL؛ DR: صديقي لمدة 3 أشهر يعيش بعد ساعة ويشارك سريره مع صديقها السابق / زميله في الغرفة وأحيانا الأصدقاء الآخرين. لقد أكد لي أنه سوف ينظف غرف النوم الاحتياطية له، لكنه لم يكن رغم أن أستمر في السؤال. لا أعتقد أن هناك أي شيء يحدث جنسيا، لكن هل انفصلت عنه إذا لم ينقل زميله في الغرفة من السرير وتوقف عن دعوة الناس إلى سريره حتى بعد أن سألته عدة مرات؟",
+      "translation": "My friend shares his bed with his roommate and his friends, even though he has a spare room.\nMy friend (25m, me) has had his own place for about three months, about an hour away from where I live. Around six months ago, his friend (and ex-partner) moved in with him. They've been friends for a long time and haven't been emotionally or sexually involved for many years.\n\nMy friend has a spare bedroom, but it's filled with furniture and belongings. His roommate sleeps in the bed with him. When we started dating, I told him that if he was serious, I'd prefer he didn't share his bed with anyone and that he should clean out the spare room so his roommate could sleep in his own bed.\n\nThey've become more serious and official with their relationship in the past few months. We've discussed his sleeping arrangements four or five times since then, and each time it turns into an argument. He tells me he thinks I don't trust him, but I've repeatedly assured him that I don't think anything is going on between them, it just makes me uncomfortable. Every time we have this conversation, he promises me that he'll clean out the spare room, so his roommate won't sleep in his bed anymore, but when it comes to it, he has lots of excuses as to why it hasn't been done (work, stress, etc.).\n\nI don't know if this is completely unreasonable or \"old-fashioned,\" but in my mind, my friend shouldn't be sharing a bed with someone when it's not necessary, especially when I've told him I don't like it. When I go to his place, I feel like I have to wash the sheets before I can sleep in his bed, and it grosses me out that his roommate is in the room at night at his friend's house. The last time I was there, I spent several hours helping to clean out the spare room, but we still didn't manage to turn it around. That was about two weeks ago, and it's still not done, and his roommate isn't sleeping in his own bed.\n\nTonight, after spending the weekend with me, he told me that his roommate, someone I know and have serious issues with, was at his place. He knows that I know this person and how I feel about them, and he's always assured me that he's not close to this person, even though his roommate knows them. About an hour after he got home, he tells me they're all snuggled up in his bed watching a movie. I was very angry after telling him multiple times that I wasn't comfortable with him sharing his bed, even with his roommate, let alone this person I know I have issues with.\n\nI don't think there's anything sexual going on between any of them, but it upsets me that my friend is sharing his bed with this other person, and it really makes me feel like he doesn't care about how I feel. He has a great living room, and I wish he'd enjoy having guests and let his roommate sleep in the spare room. I get the impression that even after the spare room is cleaned up, he still plans to have his roommate in his bed to watch movies.\n\nDo I have the right to ask him to move his roommate into the spare room and not share his bed with guests? I feel like I'm being overly principled at this point since I've asked and not been listened to. My friends and family have told me that his roommate sleeping in his bed seems like a red flag, but I think he's just lazy and hasn't cleaned out the spare bedroom.\n\nThe next time I see him, I want to have a serious conversation about this and explain why it upsets me and make it clear that I expect him to clean up the spare room and not have anyone else in his bed anymore. We've had this conversation several times, but if it doesn't happen this time, I feel like I can't keep asking. Should I break up with him if he doesn't move his roommate out of the bed and stop inviting people into his bed, even after I've asked him multiple times? I'm afraid that even after the spare room is done, he'll still have his roommate in his room in his bed all the time, and maybe even other friends, and that's not okay with me.\n\nTL;DR: My friend of three months lives an hour away and shares his bed with his ex-partner/roommate and sometimes other friends. He's assured me he'll clean out the spare bedrooms, but he hasn't, even though I keep asking. I don't think anything sexual is happening, but should I break up with him if he doesn't move his roommate out of the bed and stop inviting people into his bed, even after I've asked him multiple times?",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 38,
+      "original": "#ترحيل_مهند_الفلسطيني_مطلبنا بصراحة في تساهل مع الوافدين كم من اجنبي مجرم تمت محاكمته وسجنه ثم يرحل ويسمح له بالعودة إلى بلدنا",
+      "translation": "#The_deportation_of_the_Palestinian_Muhannad_is_our_demand Frankly, there is leniency towards expatriates. How many foreign criminals have been tried, imprisoned, then deported, and then allowed to return to our country?",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 39,
+      "original": "@senth_feel كنت احسب انا من اصحاب الخيار الثاني لين قريت هذي وانصدددمت!! هذي انا انطوائيه وامنيتي اعيش بمكان هادي و… https://t.co/77UUmRWrmL",
+      "translation": "@senth_feel I thought I was one of those who preferred the second option until I read this and was shocked! This is me, an introvert, and my wish is to live in a peaceful place and… https://t.co/77UUmRWrmL",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 40,
+      "original": "آخر مستجدات مرض فيروس كورونا في قطر",
+      "translation": "The latest coronavirus updates in Qatar.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 41,
+      "original": "هل هو معقول لصديقي [M26] [F25] من 6 أشهر ليصبح أصدقاء الرجل ينام؟ كما العنوان، صديقتي لديها صديق ذكر. هم أصدقاء قديمون، يعرفون بعضهم البعض حوالي 5 سنوات من ما يمكنني جمعه. يبدو الرجل نردي بعض الشيء وأشك في أن وجدت له جذابة أو أي شيء.\n\nيعيش حوالي 30 دقيقة السفر بعيدا وعندما يأتي لزيارة صديقتي وأصدقائها، نوع من الدوران البقاء في منازلهم. تعتبر صديقتي غرفة نوم احتياطية في شقتها وتتيح له تحطمها هناك إذا كانت لها ليلة خارج. أنا عادة لا تخرج معهم، لكنها تأكد دائما للتأكد من أنني أشعر بدعوة.\n\nعندما حدث هذا أولا، سألت صديقتي على وجه التحديد إذا كان الأمر جيدا إذا كان ينام، قلت. لم أفكر حقا كثيرا في ذلك. لم تعطيني أي سبب لعدم الثقة بها وكان هذا هو المعيار قبل مؤرخنا.\n\nلكن الرجل يواصل دعوة نفسه للنوم في منزلها، وبينما لم يكن لدي \"أدلة ملموسة\" لن أكون قد صدمت حقا إذا كان مهتما بها. لا أريد أن أكون غيايا أو سيطرة، لذلك لم أوقف ذلك أبدا.\n\nهل أنا ساذج هنا؟\n\n& amp؛ # X200B؛\n\nTL؛ دكتور، صديق صديق يدعو إلى تحطم نفسه في منزلها.",
+      "translation": "Is it reasonable for my friend [M26] [F25] to have a male friend sleep over after six months of friendship? As the title suggests, my friend has a male friend. They are old friends, having known each other for around five years as far as I can gather. The man seems a bit nerdy, and I doubt she finds him attractive or anything.\n\nHe lives about a 30-minute travel distance away, and when he comes to visit my friend and her friends, it's kind of a given that he stays over at their places. My friend considers her spare bedroom in her apartment as a crash pad for him if she has a night out. I usually don't go out with them, but she always makes sure to invite me.\n\nWhen this first happened, I specifically asked my friend if it was okay for him to sleep over, and she said yes. I didn't think much of it at the time. She gave me no reason to distrust her, and this was the norm before we started dating.\n\nBut the man continues to invite himself to sleep over at her place, and while I don't have any \"concrete evidence,\" I wouldn't be completely shocked if he was interested in her. I don't want to be paranoid or controlling, so I've never stopped it.\n\nAm I being naive here?\n\nTL;DR: A friend's friend keeps crashing at her place.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 42,
+      "original": "كيفية الاقتراب من بلدي [F30] إذن [M31] إبطال والنقد هو مثل كل ما أقوله مؤخرا يتم رفضه من قبل زوجي. في كل مرة أعطي فيها وجهة نظري، فمن الخطأ أو غير صالح. أنا لا أتعامل مع هذا بشكل جيد للغاية، لذلك لا أعيشه جيدا، أميل إلى التحدث معه خلال اليوم بطريقة غاضبة لأن هذا قد أخذ أداة علي. في كل مرة أقدم فيها وجهة نظري حول كيفية شعوري حياله، لا يسمح لي بالتحدث، لذلك أشعر بالإحباط للغاية لأن هذا يؤثر على العلاقة كثيرا. أنا أعلم بشكل معقول أن هناك أعذار بالنسبة لي أن أتحدث بشدة، لكنني حقا لا أعرف حقا ما يجب القيام به لأنه لا يسمح لي بالتعبير عن الطريقة التي أشعر بها حيال انتقاده المستمر حول كيف أفعل أشياء، عن مجززتي ، إلخ.\n\nأي نصيحة حول كيف يمكنني الاقتراب من ذلك؟\n\nTL؛ د. شريكي يحتفظ باختصار آرائي ومشاعرها وأجها إلى وجهات النظر وليس لدي أي فكرة عن كيفية جعله يرى أنه أتأثر به للغاية به",
+      "translation": "How to get close to my [F30] so [M31] invalidating and critical is that everything I say lately is being rejected by my husband. Every time I give my opinion, it's wrong or invalid. I'm not handling this very well, so I don't live it well, I tend to speak to him during the day in an angry manner because this has taken a toll on me. Every time I express my feelings about how I feel about him, I'm not allowed to speak, so I get very frustrated because this affects the relationship a lot. I reasonably know there are excuses for me to speak harshly, but I really don't know what to do because I'm not allowed to express how I feel about his constant criticism of how I do things, about my job, etc.\n\nAny advice on how I can get closer to this?\n\nTL;DR My partner keeps invalidating my opinions, feelings, and efforts and turning them into views, and I have no idea how to make him see that I'm very affected by it.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 43,
+      "original": "أشعر أنني (21 متر) عاطفيا مع صديقتي (21F) كنت مواعدة صديقتي لمدة 6 أشهر وحوالي حوالي 6 أشهر، وأشعر أنني أشعر أنني لا أستطيع التعبير عن مشاكل العلاقة أو أي أفكار سلبية بشكل عام. إنها حقا غير آمنة حول نفسها وتميل إلى التركيز وتذكر السلبي كثيرا. لا تستطيع التحدث بلطف بنفسها وسوف ننظر إلى الحزن حتى عندما تكون فازت. علاوة على ذلك، فهي لا تريد أن تكون في مزاج سلبي على الإطلاق ويفعل كل ما تستطيعه تجنبه. كلما كانت هناك أي كمية من الحزن، فإنها ألغت أكثر من مجرد الحزن والتي تؤدي دائما إلى إخفاء الأشياء أو البكاء.\n\nتهتم بي ومزاجي كثيرا جدا، أنا أحزن أو حريص يجعلها تشعر بالسوء أنها لا تستطيع أن تجعلني أشعر أنني بحالة جيدة 100٪ من الوقت. أشعر أنني لا أستطيع إحضار أي أفكار سيئة أو أشياء لا أحب السبب في أنها ألغت لها أخذها كسيناريو أسوأ الحالات واختيار الاختباء ما يجعلني حزينا بدلا من العمل عليه.\n---\n** TL؛ Dr **: لا أشعر أنني أستطيع أن أحضر أشياء تحتاج إلى العمل لأنها تحظى بحزن حقا كلما لم أكن سعيدا.",
+      "translation": "I feel like I'm (21M) emotionally drained with my girlfriend (21F). We've been dating for around 6 months, and I feel like I can't express any relationship issues or negative thoughts in general. She's really insecure about herself and tends to focus on and remember the negative a lot. She can't speak kindly to herself and will look sad even when she's won. Furthermore, she doesn't want to be in a negative mood at all and does everything she can to avoid it. Whenever there's any amount of sadness, she takes it as more than just sadness, which always leads to her hiding things or crying.\n\nShe cares about my mood a lot, and it makes her feel bad that she can't make me feel good 100% of the time. I feel like I can't bring up any negative thoughts or things I dislike because she takes it as a worst-case scenario and chooses to hide it, which makes me sad instead of working on it.\n---\nTL;DR: I don't feel like I can bring up things that need work because she gets really sad whenever I'm not happy.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 44,
+      "original": "ما بقه شي للعيد ، حبيت أكون أول واحد أهنيك كل عام وانت بخير، بسمتك تخلق لي الفرحه من حيث لا احتسب ، جعل الي أحبه مايجوف اله السعاده 💙.",
+      "translation": "There's nothing left until Eid, I wanted to be the first to wish you, may you always be well, your smile brings me joy unexpectedly, may those I love always see happiness. 💙",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 45,
+      "original": "الحمد لله اولا واخراً اشكر جميع من تعب معانا من دكاترة واحلى عميد د.عبدالله  تحياتي لكم  #فرحتي_نجاحي",
+      "translation": "Praise be to God first and last. I thank all the doctors who worked with us, and the best dean, Dr. Abdullah. My greetings to you all. #MyJoy_MySuccess",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 46,
+      "original": "من فضلك أعطني القوة لقتل نفسي وأنا أعلم الآن أنه لن يتغير شيء على الإطلاق بالنسبة لي. لأنني مكسور. أنا مكتئب بشدة أنني غير قادر على أي تقدم. كل ما أقوم به هو النوم. تعبت من الصلاة كل ليلة الله إما قتلني أو مساعدتي في تحويل حياتي. كل ما أحصل عليه هو الصمت.\n\nأنا امرأة تبلغ من العمر 25 عاما. أنا غير جذاب. كونها امرأة قبيحة هي نوع مختلف من الألم.\nلم أستطع حتى الانتهاء من المدرسة. لا يمكن أن تعقد وظيفة. حياتي تبدو نفسها تماما اليوم كما فعلت منذ حوالي 10 سنوات. بدون حركة. لا نمو. كل ذلك لأنني كنت مكتئبا جدا لا أستطيع أن أفعل نفسي لأفعل أي شيء. عندما يحصل سيئا بشكل خاص، لن أستحم أو تنظيف نفسي في أشهر. انا ليس لدى اصدقاء. ليس لدي أي عائلة أهتم فعلا.\n\nأنا أستسلم عن نفسي. أنا غير قادر على التغيير. حتى مع العلاج والأدوية، ما زلت نفس الشخص المكسور.\n\nفي هذه المرحلة، أعلم أنني لن أموت إلا إذا فعلت ذلك بنفسي. لا أعرف كيف نجح الأشخاص الذين نجحوا في ذلك الشجاعة. في كل مرة أحاول، أخرجني. أعلم أنني بحاجة إلى القيام بذلك، أريد فقط معرفة كيفية محاربة غريزة جسدي الطبيعي للبقاء.",
+      "translation": "Please give me the strength to kill myself and I know now that nothing will change at all for me. Because I am broken. I am severely depressed that I am unable to make any progress. All I do is sleep. I am tired of praying every night, God either kill me or help me turn my life around. All I get is silence.\n\nI am a 25-year-old woman. I am unattractive. Being an ugly woman is a different kind of pain.\nI couldn't even finish school. I can't hold down a job. My life looks exactly the same today as it did about 10 years ago. No movement. No growth. All because I've been so depressed that I can't make myself do anything. When it gets particularly bad, I won't bathe or clean myself for months. I have no friends. I have no family that I actually care about.\n\nI am giving up on myself. I am unable to change. Even with therapy and medication, I am still the same broken person.\n\nAt this point, I know I will only die if I do it myself. I don't know how people who succeed at it find the courage. Every time I try, it throws me out. I know I need to do it, I just want to know how to fight my body's natural instinct to survive.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 47,
+      "original": "RT @m7mod3br: #Unlimited_Internet_In_Egypt\nنفسي أشوف المسلسل على 1080p قبل ما أموت \nأنا عيني باظت وربي https://t.co/cqWcVq7sev",
+      "translation": "I want to watch the series in 1080p before I die. My eyes are ruined, I swear.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 48,
+      "original": "مش عارفه ابدا منين بس حاسه ان حياتي مبقلهاش طعم عايشه وخلاص بقيت بنام كتير اوي لدرجه اني ممكن افضل نايمه يومين ورا بعض",
+      "translation": "I don't know where to begin, but I feel like my life has lost its taste. I'm just living, and I've been sleeping a lot lately, to the extent that I could sleep for two days straight.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "facebook",
+      "translation_failed": false
+    },
+    {
+      "index": 49,
+      "original": "(17 و) أنا الوقوع في الحب (19 م) هل أخبره أو انتظر فقط؟ قابلته منذ حوالي أسبوع عبر الإنترنت. هناك الكثير من أوجه التشابه بيننا وبين يشعر خاص بي. لقد حصل على عرض ضعيف معي ولدي أيضا. لقد ألمح إنه يحبني لكنني لا أريد أن أجعل هذه القفز.\n\nلقد قولنا بالفعل كم نستمتع بالتحدث مع بعضنا البعض، وأنا بالتأكيد سقطت. أوصى فيلم الرومانسية لمشاهدته، حيث توجد أوجه تشابه لاغدي بين الولايات المتحدة.\n\nأتساءل ماذا تفعل ؟؟\n\ntldr يجب أن أقول له أنني حقا أحبه أو الانتظار؟",
+      "translation": "(17 and) I'm falling in love (19 pm) Should I tell him or just wait? I met him about a week ago online. There are so many similarities between us and he feels special to me. He's got a weak spot for me and I have one too. He's hinted that he loves me but I don't want to make this leap.\n\nWe've already said how much we enjoy talking to each other, and I've definitely fallen. I recommended a romantic movie to watch, where there are similarities between us.\n\nI wonder what to do??\n\ntldr Should I tell him I really love him or wait?",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 50,
+      "original": "المخاوف من أن بلدي فرنك بلجيكي [25M] يخونني [20F] لذلك لدي مخاوف قليلة. وبضع قليل أقصد قليلا. لقد كنت جنبا إلى جهة من فرنك بلجيكي وكنت معا منذ أكثر من عام بقليل، لكن الأمور قد بدأت في ألا تشعر بأنها نفس الشيء بعد الآن. أنا حاملا حاليا (سأكون 29 أسبوعا يوم الجمعة) وأشعر أنني غير مهتم بي على الإطلاق بعد الآن. والوقت الوحيد الذي يقضيه في أي وقت معي، فهو ليس حقا يقضي الوقت معي. إنه يشكو دائما من الأشياء التي أريد القيام بها، وبالكاد حاولت حتى الآن للتنازل عني.\n\nوهو دائما، دائما ما نحته في هاتفه.\n\nلا يهم أين نحن أو ماذا نفعل. هو دائما على هاتفه. ولم يسمح لي أبدا بمعرفة ما يفعله أو يفعله، إذا أخبرني (الذي أعتقد أنه فقط أن أخرجني لأصيبه،) يصنع شيئا ما.\n\nالأمور كانت تجف حقا جنسيا.\n\nالمستخدمة أيضا، عندما نجتمعنا أولا، لم نتمكن من الحفاظ على أيدينا من أي وقت مضى. كان لدينا دائما متعة وأشياء جديدة أردنا تجربتها. اعتاد أن تكون ممتعة. الآن لها دائما نفس الشيء. ولم ينظر إلي حتى لي بعد الآن. حتى يكرن اسم امرأة أخرى في الليلة الأخرى. عينيه مغلقة دائما والوقت الوحيد الذي ينظر إلي فيه خلال كل شيء هو عندما أجريت انتباهه.\n\nثم هناك الاباحية.\n\nفي وقت ما الأسبوع الماضي، أعتقد أن ربما يوم الجمعة الماضي، استيقظت في منتصف الليل واشتعلت له. وهو يدعي أنه كان ينظر إلى الصور التي أنقذني في هاتفه ولكن. ذهبت من خلال المحادثات بيننا على Instagram أو FB Messanger وغيرها ولا توجد صور يمكن أن ينقذها لي أنه يمكن استخدامه بهذه الطريقة. وليس ذلك فحسب، بل حاول أيضا أن يكذب عليه أيضا. حاول أن أخبرني أنه كان مجرد وجود \"حلم جنسي\" عندما رأيته بوضوح يحدق في هاتفه.\n\nوهو سائل للغاية حول ما يفعله.\n\nكما قلت، لقد دفن دائما في هاتفه. في كل مرة أسأل عن ما ينظر إليه أو ما يفعله هو الذي يحصل على دفاعي كبير ويخفي هاتفه أكثر. والشيء الوحيد الذي يمكنني الوصول إليه هو Facebook. التي أنا غير مرتاح تماما مع الرسائل التي يرسلها إلى الأعضاء في أسرته. إنه يروي باستمرار أن يريدني أن ألتقي بالجميع، لكن يخفي مني أنه يريد \"يجتمع\" مع ابن عمه سرا \"اللحاق بالركب\" معها. وعندما أواجهه حيال ذلك، حصل على دفاعي وغاضب بما فيه الكفاية إلى النقطة التي ضربني فيها تقريبا.\n\nلذلك، أنا عالق. وحاسنا حقا رأي ثان.\n\nTD؛ LR أعتقد أن صديقي يخونني وهو هو في الأساس يجري دفاعي وملطفة حول كل شيء.",
+      "translation": "I'm afraid my boyfriend is cheating on me, so I have a few concerns. A few, I mean a little. I've been with him for a little over a year, but things don't feel the same anymore. I'm currently pregnant (I'll be 29 weeks on Friday) and I feel like he's not interested in me at all anymore. The only time he spends with me, he's not really spending time with me. He's always complaining about the things I want to do, and he's barely tried to compromise with me so far.\n\nHe's always, always on his phone.\n\nIt doesn't matter where we are or what we're doing. He's always on his phone. He never lets me know what he's doing or up to, and if he does tell me (which I think is just to get me off his back), he makes something up.\n\nThings have been really dry sexually.\n\nAlso, when we first got together, we couldn't keep our hands off each other. We always had fun and new things we wanted to try. It used to be fun. Now it's always the same. He doesn't even look at me anymore. He even called out another woman's name the other night. His eyes are always closed and the only time he looks at me during anything is when I draw his attention.\n\nThen there's the pornography.\n\nLast week, I think maybe last Friday, I woke up in the middle of the night and caught him. He claims he was looking at pictures I saved on his phone, but. I went through our conversations on Instagram, FB Messenger, and others, and there are no pictures he could've saved for me that he could use that way. Not only that, but he also tried to lie about it. He tried to tell me he was just having a \"sex dream\" when I clearly saw him staring at his phone.\n\nHe's very secretive about what he does.\n\nAs I said, he's always buried in his phone. Every time I ask what he's looking at or doing, he gets very defensive and hides his phone more. The only thing I can access is Facebook. I'm not comfortable at all with the messages he sends to members of his family. He constantly says he wants me to meet everyone, but he hides from me that he wants to \"catch up\" with his cousin secretly. And when I confront him about it, he gets defensive and angry enough to the point where he almost hit me.\n\nSo, I'm stuck. And I really need a second opinion.\n\nTL;DR I think my boyfriend is cheating on me, and he's basically being defensive and evasive about everything.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 51,
+      "original": "نوجه إشادة قلبية لوزارة الداخلية على الجهود التي تبذلها بكل إخلاص في سبيل نشر الوعي المجتمعي بأسلوب راقي خاصة في هذه المرحلة الحساسة ودورها اللامحدود في نشر الأمن والأمان في كافة المجتمع القطري .. تحية إجلال وإحترام لجميع منتسبي هذه الوزارة العريقة.",
+      "translation": "We offer heartfelt praise to the Ministry of Interior for their dedicated efforts in promoting community awareness in an elegant manner, especially during this sensitive period, and for their limitless role in spreading security and safety throughout Qatari society. A salute of respect and admiration to all members of this venerable ministry.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 52,
+      "original": "مع اني ما بحبش الولاد البيض خالص بس احمد مالك ماله بيحلو كدة معلش؟؟ يخربيت جمال امه 🙁",
+      "translation": "Although I don't like white boys at all, what's wrong with Ahmed? He's looking so good! Damn his mother's beauty.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 53,
+      "original": "الحمداللة وضع بقطر خير وماحد توفى لسمح اللة وبتشافون قريبا،ودولة جزاها الله خير مابتقصر في العلاج والفحص والاسعافات ،وانا شفت احدى مجمعات مشكورين يمسحون بمعقم عربات الاغراض ويعطيهم العافية",
+      "translation": "Praise be to God, the situation in Qatar is good and no one has passed away, God forbid. You will be seeing them soon, and the state, may God reward them, is not falling short in providing treatment, testing, and emergency services. I saw one of the malls, may they be thanked, sanitizing the shopping carts, and may they be given good health.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 54,
+      "original": "RT @roqiahamdy_r: عندي اكتئاب صغنتوت كدا",
+      "translation": "I have a little bit of depression.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 55,
+      "original": "انا بفتح تويتر اكلم نفسي لا مستني حد يكلمني ولا يواسيني ، فملكش انك تحكم عليا بإني كئيب او اتنشن ، انا اصلا ببقا هربان من باقي السوشيال.",
+      "translation": "I open Twitter to talk to myself, not waiting for anyone to talk to me or console me. So, don't judge me as being depressed or attention-seeking. I'm usually escaping from the rest of social media.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 56,
+      "original": "هذا الشغل الصح",
+      "translation": "This is the right job.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 57,
+      "original": "صباح الخير لي بعد ولادتي 6 شهور والله لايوريكم جاتني اعراض غريبه عجيبه وللعلم هذه ماهي اول ولاده المهم كان تجيني نوبات فزع وخوف جننت عيالي وزوجي حرقان في فروة الراسدوخااات رعشهاذا مشيت مقدر اكمل خلاص احس راسي ثقييييييلاحس صدري وظهري مطبووووووووووووقه ع بعض اعوذبالله ثقل في اليدينواحس مثل الغصه في البلعوم كانها لقمه وناشبه والى الان احس بها كتمات بدون سببكاره كل الحياه بعد ماكنت فرفوشه والابتسامه ماتفارقني المهم قبل 3 شهور رحت لدكتور ممتاز في جده واعطاني السيروكسات ودواء ثاني الحمدلله تحسنت كثير يارب لك الحمد لكن الدكتور يقول 3شهور ونوقف العلاج بدا يقلل الجرعات لكن احس نفسي مو مثل قبل من كانت مثلي او تعرفو احد صار له مثلي يطمني ادعولي يحفظ عيااااالي ويسخر لي زوجي",
+      "translation": "Good morning, it's been six months since I gave birth, and may God not let you experience this: I've been having some strange and bizarre symptoms. For your information, this is not my first childbirth. I would have panic attacks and feel terrified; I drove my children and husband crazy. I had a burning sensation on my scalp, dizziness, and tremors. If I walked, I couldn't continue; I felt my head was so heavy. My chest and back felt crushed together. I sought refuge in Allah from this heaviness. I felt my hands were heavy, and there was a lump in my throat, as if a piece of food was stuck there, and I still feel it. I feel suffocated without any reason. I hate life now, whereas I used to be cheerful, and a smile never left my face. Three months ago, I went to an excellent doctor in Jeddah, who prescribed Seroxat and another medication. Thank God, I've improved a lot. May God be praised. However, the doctor says we'll stop the treatment in three months and has started reducing the doses. I feel I'm not the same as before. If anyone has experienced something similar or knows someone who has, please reassure me. Please pray for me, may God protect my children and make my husband obedient to me.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 58,
+      "original": "الحمد لله والشكر لله، بدأ العد التنازلي للإصابات والقادم أفضل بأذن الله الواحد الأحد، اليوم عدد الإصابات1648 عدد حالات الشفاء4451 الوفيات2 مجموع الوفيات 38أقل نسبةوفيات في العالم في قطر وإن شاءالله قريبا وينتهي الوباء من قطر وجميع العالم شكراللعاملين بوزارة الصحة, الله يعينكم،",
+      "translation": "Praise be to God and thanks to God, the countdown to infections has begun and better days are ahead, God willing. Today, the number of infections is 1648, the number of recoveries is 4451, and the number of deaths is 2. Qatar has the lowest mortality rate in the world, and God willing, the epidemic will soon end in Qatar and the entire world. Thank you to all the healthcare workers at the Ministry of Health, may God give you strength.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 59,
+      "original": "السلام عليكم كيفكم ي اخوان ، انا حالتي كان عندي اكتئاب حاذ السنه الماضيه جربت ادويه كثير لم تفد غير افكسور 150 ولكن احتجت انا اعمل جلسات كهرباء والحمدلله تحسنت فاعطاني الدكتور مثبت مزاج لامكتال 200 مع افكشور 150 الحمدلله اموري كانت تمام قبل 4 شهور رجع الاكتياب لي من جديد فاضاف لي الدكتور علاج سيروكيل سبب لي نوم فضيع فتركته ثم اعطاني ابيفاي سبب لي قلل فغيره الدكتور واعطاني ريدون 2 مل والحمدلله تحسنت كثير في منتصف رمضان رجعت الانتكاسه من جديد فاضاف لي الدكتور علاج انتابرو 10 مل والحمدلله تحسنت بعد 20 يوم لكن فجاه جاني نوم فضيع ورجع الاكتياب ومالي خلق شي والم بالبطن ومابغى اقابل احد ، فزودت الجرعه الى 20 مل الانتابرو والان لي 5 ايام لم اتحسن كثير نفس الوضع ، هل اصبر على زياده جرعه الانتابرو ام اغير العلاج . وكم احتاج من الوقت عشان يبدا مفعول زياده الجرعه من الانتابرو ؟؟؟",
+      "translation": "Peace be upon you, how are you, my brothers? I had depression last year. I tried many medications, but only Effexor 150 worked. I needed electroconvulsive therapy, and, praise be to God, I improved. The doctor prescribed the mood stabilizer Lamictal 200 with Effexor 150. Alhamdulillah, things were fine for four months, but depression returned. The doctor added Seroquel, which caused excessive sleep, so I stopped it. Then, he prescribed Abilify, which caused restlessness, so the doctor changed it to Redon 2 mg, and, praise be to God, I improved a lot. In the middle of Ramadan, the relapse returned, so the doctor added Entabro 10 mg, and, alhamdulillah, I improved after 20 days. But suddenly, I experienced excessive sleep, depression returned, I have no motivation, abdominal pain, and I don't want to meet anyone. I increased the Entabro dose to 20 mg, and now, for five days, I haven't improved much; the situation is the same. Should I be patient and increase the Entabro dose or change the treatment? How long will it take for the increased Entabro dose to take effect?",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 60,
+      "original": "أنا [21F] لا أعرف كيفية التعامل مع علاقة صديقها [23 م] مع زميله [54F] يا شباب.\n\nلذلك هذا شيء وصل مؤخرا. صديقي يعمل في صالة الألعاب الرياضية مع زميله في العمل. اعتادت أن تعلمه، والآن يساعدها (عرفوا بعضهم البعض لمدة 4 سنوات تقريبا). إنهم يقضون إلى حد كبير 5 ساعات كل يوم يعملون على الطبقات، ثم يعملون في العمل. في بعض الأحيان يمتد هذا لأنهم يذهبون إلى تناول الغداء في العمل.\n\nهذا الزميل متزوج، للرجوع إليه، لكنه لا يضر زوجها. مشكلتي الأكبر هنا هي أنه في الماضي علق الناس على أنهم يبدووا أنهم في علاقة. لقد تم التعارف فقط لمدة شهرين، لكنها بدأت حقا في الوصول إلي. يخبرها عن كل شيء في حياته، وأحيانا بمزيد من التفصيل أكثر مما يقول لي. إنها غزلي للغاية: صفعه، مما يمنحه العناق حول الرقبة، وما إلى ذلك. هم أيضا نص بعد العمل. إنها تشتري له الأشياء، ويرسل الأشياء إلى المنزل معه لإعطاء لعائلته.\n\nكيف أذهب؟ أنا خائف تقريبا من إحضار الأمور، لأنني حرفيا لا أعرف ماذا أقترح؟ لا يرىها ليست واقعية، لأن وظيفته مرتبطة بها، ويستمتع بالعمل معها. أنا حقا أحب صديقي، وأريد أن تسوء الأمور بشكل جيد، لكن هذه المشكلة تجعلني أشعر بالرخص. إنه بصراحة بالنسبة لي، وأنا نفسي نفسي في الاعتقاد بأنه سيكون معها كثيرا ولكنه لا يستطيع ذلك. هل هذا طبيعي؟ كيف يجب أن أذهب حول هذا؟\n\nTL؛ دكتور: صديقها قريب جدا من امرأة أكبر سنا، وهو معروف ببعض الوقت، ولا أعرف كيفية المتابعة.\n\nتحرير: يجب أن نذكر أنها جيدة جدا تبدو جسديا لعمرها. الناس يبذلون دائما تعليقات عن ذلك.",
+      "translation": "I [21F] don't know how to handle my boyfriend's [23M] relationship with his colleague [54F], guys.\n\nSo this is something that has come up recently. My boyfriend works at the gym with his co-worker. She used to teach him, and now he assists her (they've known each other for almost four years). They spend, essentially, five hours every day working on classes, and then they work at the gym. Sometimes this extends because they go for lunch at work.\n\nThis colleague is married, for reference, but it doesn't bother her husband. My bigger problem here is that in the past, people have commented that they seem to be in a relationship. They've only been acquainted for two months, but it's really starting to get to me. He tells her everything about his life, sometimes with more detail than he tells me. She's very flirty: slapping him, giving him neck hugs, etc. They also text after work. She buys him things, and he brings things home to give to his family.\n\nHow do I proceed? I'm almost afraid to bring things up because I literally don't know what to suggest? He doesn't see it as unrealistic because his job is tied to her, and he enjoys working with her. I really love my boyfriend, and I want things to work out well, but this issue is making me feel cheap. It's frankly getting to me, and I find myself believing that he will be with her a lot, but he can't. Is this normal? How should I go about this?\n\nTL;DR: My boyfriend is very close to an older woman, they've known each other for some time, and I don't know how to proceed.\n\nEdit: I should mention that she looks very good physically for her age. People always make comments about that.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 61,
+      "original": "عاوزه اموت نفسي بجد",
+      "translation": "I want to kill myself seriously.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 62,
+      "original": "الشعور بالضياع بعد الطلاق 40 متر مطلق من الزوجة (38F) بعد أن تزوجت لمدة 7 سنوات (معا لمدة 15 عاما) في سبتمبر وأواجه صعوبة في الوقت المناسب.\n\nغادرت بينما كنت خارج المدينة لرحلة التخييم كانت من المفترض أن تنضم إلي. انها سرقت كلبي أيضا. أغنية البلد في صنع، وأنا أعلم.\n\nاكتشفت كل هذا عبر رسالة نصية أرسلتها أثناء مغادرة الحالة.\n\nاتصال صغير معها منذ أن غادرت في يوليو. فقط عندما تريد أو تحتاج إلى شيء ما. لا يوجد إغلاق حقيقي.\n\nأين أذهب من هنا؟ أنا حزين وغاضب في نفس الوقت.\n\nاي نصيحه؟",
+      "translation": "Feeling lost after divorce. 40M single from wife (38F) after 7 years of marriage (together for 15 years) in September and I'm struggling to cope.\n\nShe left while I was out of town on a camping trip, which she was supposed to join. She also took my dog. It's a country song in the making, I know.\n\nI found out about all this through a text message she sent as she was leaving the state.\n\nMinimal contact with her since she left in July. Only when she wants or needs something. No real closure.\n\nWhere do I go from here? I'm sad and angry at the same time.\n\nAny advice?",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 63,
+      "original": "أشعر وكأنني سأحصل على نوبة قلبية! لماذا يجب أن تسير الاكتئاب والقلق باليد. ربما يكون ضغط الدم سخيفا كبيرا في الأسبوع الماضي من كمية القلق والحزن الذي أشعر به. فوز قلبي الراحة ينقط 105-120 يدق في الدقيقة. حاولت أن أتعرض للاطلاع على معالج وأكبر 7 فبراير، وهذا لمدة ساعة في نصف التقييم. كان تقييمي الأخير صعبا للغاية في البكاء عندما سئل عن أسئلة معينة. أنا أحسب، أنا سعيد لأنني حصلت على ذلك مع. فقط لمعرفة أنني يجب أن تأخذ واحدة أخرى أكثر كثافة. أنا مرعوم جدا للحديث عن أي من مشاكلي مع شخص غريب كامل. لا أعرف حتى من أين أبدأ لأنه الكثير من الأشياء ... أجد أنه أصعب شيء يجب القيام به. أنا لا أشعر بالراحة في الجلوس مع أي شخص مباشرة أمامي لأنني أعرف أن أسألني أسئلة شخصية. فكيف سأفعل شخص غريب؟ أنا أحب الشخص الأكثر شيئ على الإطلاق! أنا أكره أن لدي قلق اجتماعي وقلزال. لكنني أعلم أنني يجب أن أحصل على المساعدة وحاول فقط مواجهة مخاوفي. ثم أخبرني الطبيب اليوم أنني لا أشف من الجراحة بسبب الإجهاد. والتي ستكون الجراحة الرابعة. فقط أضف المزيد من الإجهاد لي. أقسم أنني لا أستطيع الاسترخاء أبدا إلا إذا كنت مخدرا. الحزن الأكبر هو أن الشيء الوحيد الذي صعدته لمدة خمس سنوات سيحدث، لم أفعل ذلك أبدا. لدي الكثير من الحزن والبكاء عندما أكون وحدي حول هذا الموضوع. لأنني لا أستطيع أن أخبر أحدا عن ذلك حقا وأن يخفيها من أي شخص آخر. كيف يمكنك المضي قدما عندما تحب شخصا ما كثيرا لا يريد أن يكون معك. ومع ذلك، أنت تعرف أن الحياة التي كان لديك من قبل لم تكن تعمل بسبب العديد من الأسباب. على رأس كل هذا القرف، يجب أن تتحرك في أقل شهرين. كل شيء يحدث بسرعة كبيرة. ليس أن أي شخص يعطي القرف حول ما أكتب. لا أحد من المحتمل أن يقرأ حتى القرف. ومع ذلك، فإنه يبدو أفضل إلى حد ما للحصول على قليل من صدري. طغت جدا! UGH FML!",
+      "translation": "I feel like I'm going to have a heart attack! Why do depression and anxiety have to go hand in hand. Maybe my blood pressure is ridiculously high this week from the amount of anxiety and sadness I'm feeling. My heart rate is dropping 105-120 beats per minute. I tried to get an appointment with a therapist and the earliest is February 7, and it's only for a half-hour assessment. My last assessment was so difficult, I was crying when asked certain questions. I guess, I'm glad I got through it. Just to know that I have to take another one, even more intense. I'm so scared to talk about any of my problems with a complete stranger. I don't even know where to start because there's so much... I find it the hardest thing to do. I'm not comfortable sitting with anyone directly in front of me because I know they'll ask me personal questions. How am I supposed to do that with a stranger? I'm the most shy person ever! I hate that I have social anxiety and panic attacks. But I know I have to get help and just try to face my fears. Then the doctor told me today that I'm not healing from the surgery because of the stress. Which will be the fourth surgery. Just adding more stress to me. I swear, I can never relax unless I'm sedated. The biggest sadness is that the one thing I've built up for five years is going to happen, and I've never done it. I have so much sadness and crying when I'm alone about this topic. Because I can't tell anyone about it and hide it from everyone else. How can you move on when you love someone so much who doesn't want to be with you. Yet, you know the life you had before wasn't working because of many reasons. On top of all this crap, you have to move in less than two months. Everything is happening so fast. Not like anyone gives a crap about what I write. No one is probably even going to read this crap. Yet, it feels somewhat better to get a little off my chest. Overwhelmed! UGH FML!",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 64,
+      "original": "الحاجة إلى بعض سياق الدعم الخطير: لقد وضعت قلقا حادا بعد جراحة مؤلمة منذ 6 أشهر، والتي كانت اختيارية تماما ولدي هذا الأسف كل يوم. لقد تركتني شعور مشوه والآن رحلتي أو قتالي مستحقة كل ثانية من اليوم. لأنه ربما بضع ساعات في العمل، أحصل على بعض الإغاثة لأنني مشتت، لكنني اضطررت إلى الحد من نفسي للعمل بدوام جزئي لأنني أشعر بالتوتر للغاية.\n\nولكن، عندما أحصل على المنزل، فهو مثل حلقة مفرغة من الأفكار لأنني أحصل على الاكتئاب للغاية للقيام بأشياء اعتدت الاستمتاع بها. لقد قطعت 90٪ من أصدقائي ولا أخرج بنفسي على الإطلاق. اعتدت أن أكون شخصا اجتماعيا وسعيدا رائعا والآن أنا إجمالي الانطوائي. أنا معتمدة جدا على شريكي ولا يمكنني فعل أي شيء بدونه.\n\nأحصل على الاكتئاب بشدة كل يوم عندما أفكر في حياتي قبل الجراحة. لقد ذهبت VLC في عائلتي التي أعطاني الصدمة لتقودني إلى إجراء الجراحة، وأشعر أنني قد انتهت حياتي. أتمنى أن أتمكن من الانتقال من هذا ولكن يبدو كل شيء صعبا للغاية. أنا فقط 26 ويجب أن أكون في ذروة حياتي بناء ما اعتقدت أن حياتي المهنية حلمي، ولكن الإدراك أن حياتي كانت تحت سيطرة شخص آخر وجميع الإساءات الأخرى للذهاب معها أكثر من اللازم وبعد الشيء الوحيد الذي يمكنني الاستمتاع به هو الجلوس على شرفتي وجود عدد قليل من السجائر، لكنها دائما هادئة مؤقتة قبل العاصفة واقعي.",
+      "translation": "I need some serious context support: I've had severe anxiety since a painful surgery 6 months ago, which was entirely optional and I have this regret every day. It left me feeling disfigured and now my journey or fight is warranted every second of the day. Because maybe a few hours at work, I get some relief because I'm distracted, but I've had to limit myself to part-time work because I feel so anxious.\n\nBut, when I get home, it's like a vicious cycle of thoughts because I get so depressed to do things I used to enjoy. I've cut off 90% of my friends and I never go out by myself. I used to be a wonderful, social, happy person and now I'm a total introvert. I'm very dependent on my partner and can't do anything without them.\n\nI get so depressed every day when I think about my life before the surgery. VLC in my family that gave me the shock to lead me to have the surgery, and I feel like my life is over. I wish I could move on from this but everything seems so hard. I'm only 26 and I should be at the peak of my life building what I thought was my dream career, but the realization that my life was under someone else's control and all the other abuses that go with it are too much and the only thing I can enjoy is sitting on my balcony having a few cigarettes, but it's always a temporary calm before my realistic storm.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 65,
+      "original": "الحمدالله حمدا كثيرا",
+      "translation": "Praise be to God, abundant praise.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 66,
+      "original": "بالنسبة لي لا أنظر إلا إلى أعداد الوفيات العبرة في عدد الوفيات قطر من أقل دول العالم في نسبة الوفيات الحمد لله ما الفائدة إذا كانت أعداد الإصابة قليل واعداد الوفيات كبيرة مصر مثلا عدد الاصابات ٢٠٠ و ٣٠٠ فقط في اليوم عدد الوفيات في اليوم الواحد فوق ال٢٠",
+      "translation": "For me, I only look at the number of deaths; the lesson is in the death toll. Qatar is one of the lowest countries in the world in terms of mortality rate. Praise be to God. What's the use if the number of infections is low, but the death toll is high? Take Egypt, for example: the number of infections is only 200 to 300 per day, but the daily death toll is over 20.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 67,
+      "original": "والله م عايز غير كوباية شاي وبوسة حب ورضا بالحال 🌸 💙",
+      "translation": "\"I only want a cup of tea, a kiss of love, and acceptance of my situation 🌸 💙\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 68,
+      "original": "@rrrr_dddd99 ردي على ال dm عندي اكتئاب 😂",
+      "translation": "\"@rrrr_dddd99 Reply to my DM, I'm depressed 😂\"",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 69,
+      "original": "لما أتكلم مع حد في خططى و احلامى و طموحاتى و الاقيه مش فاهم خطوره الموقف و مش بيتكلم بجديه \\nبشيل منه العمر كله 😅",
+      "translation": "When I speak to someone about my plans, dreams, and aspirations, and I find them not understanding the gravity of the situation and not taking it seriously, I remove them from my life. 😅",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 70,
+      "original": "العاهرة الحزينة إذا أراد أي شخص التحدث عن مدى الاكتئاب حياتهم هي فقط اسمحوا لي أن أعرف 🤷🏼♀️ أنا 22 و أمبير؛ توفي خطيبي في عام 2018 وما زلت صادرا كل يوم. لقد أصبح الاكتئاب والقلق سيئا للغاية لدرجة أنني لا أترك غرفتي إلا إذا اضطررت إلى العمل. لذلك نعم قصة الظهر قصيرة من الاكتئاب بلدي 😅",
+      "translation": "The sad whore if anyone wants to talk about how depressed their lives are just let me know 🤷🏼‍♀️ I'm 22 & my fiancé died in 2018 and I'm still grieving every day. Depression and anxiety have gotten so bad that I don't leave my room unless I have to work. So yeah, a short back story from my depression 😅",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 71,
+      "original": "لماذا يهمني ما يفكر به الناس؟ لا أريد أن أهتم بما يفكر فيه الناس، ولا أريد أن أشعر بالأذى بعد الآن. انتقلت إلى الولايات المتحدة من إسبانيا عندما كنت ثمانية. تزوجت والدتي قطعة مسيئة من القرف، وبصراحة تماما لا أستطيع تذكر آخر مرة كنت سعيدا. أنا نسيم الآن، لقد خرجت من الأرقام المرجعية بسبب حلقة القلق والاكتئاب أبدا. لقد تركت وظيفتين حتى الآن وتدريب وظيفة جديدة تبدأ الأسبوع المقبل.\n\nاليوم، كان لدي يوم سيء للغاية، فتحت ما يصل إلى صديق عن مشاكلي بالثقة والترابط مع أشخاص جدد. اتصلت بالفتاة التي أخذت عذريتي، والتي لم أفعلها في عام تقريبا. اتصلت بها وكانت في العمل في انتظار ركوبها إلى المنزل. أعتقد أنها كانت مع عامل مشترك أو شيء ما لأنها بدأت تتحدث عن كيفية خروجني من المدرسة الثانوية. ثم سألتني إذا كنت ذاهب إلى الكلية، وقلت لها أنني لا أعرف. كانت تخبرني أن أتوقف عن كونك \"شائكة\"، لقد قلت حرفيا شيئا للإساءة إليها وأنها يجب أن تذهب وتكرر حقيقة أنني لم تخرج. جي شكرا لتذكيرني أنني خاسر سخيف، لم أكن أعرف.\n\nوالدتي لا تجعلها أسهل مع تصرخها المستمر لها، لأنني غير سعيد بموقف حياتي.\n\nأنا متعب، لا أريد التعامل معها بعد الآن",
+      "translation": "Why do I care what people think? I don't want to care about what people think, and I don't want to feel hurt anymore. I moved to the US from Spain when I was eight. My mother married an abusive piece of crap, and frankly, I can't remember the last time I was happy. I'm a mess now, I've spiraled out of control due to an endless cycle of anxiety and depression. I've quit two jobs so far, and a new job training starts next week.\n\nToday was an especially bad day, I opened up to a friend about my problems with trust and connecting with new people. I called the girl who took my virginity, whom I haven't seen in almost a year. She was at work, waiting for her ride home. I think she was with a mutual acquaintance or something because she started talking about how I dropped out of high school. Then she asked me if I was going to college, and I told her I didn't know. She was telling me to stop being \"spiky,\" I literally said something to insult her and she should go and repeat the fact that I dropped out. Gee, thanks for reminding me that I'm a stupid loser, I didn't know.\n\nMy mother doesn't make it easier with her constant yelling at me, because I'm not happy with my life situation.\n\nI'm tired, I don't want to deal with this anymore.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 72,
+      "original": "السلام عليكم ورحمه الله وبركاته ابي اعرف نتاءج الجلسات الكهربائيه الرجاء من اللي جربو ا الجلسات يفيدني لاني ناوي اجربها لان حالي ووضعي جدا تعبان , عندي اكتئاب متوسط .",
+      "translation": "Hello, may God's peace, mercy, and blessings be upon you. I want to know the results of electric shock therapy. Please, those who have tried it, let me know because I'm planning to give it a go as my situation is very bad. I have moderate depression.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 73,
+      "original": "لا يريد صديقي (19F) الخاص بي (25 مترا) التحدث معي خلال الأسبوع، يبدو لي غريبة بالنسبة لي، ولكن ربما يكون الشيء البالغ الذي لا أفهمه. أقضي عطلة نهاية الأسبوع معه ونحن ندعو مرة واحدة أو مرتين في اليوم للحديث عن يومنا ويقول ليلة سعيدة خلال الأسبوع، ربما إجمالي 30 دقيقة. لقد قال دائما إنه يكره الرسائل النصية وأحببت ذلك، لكنني توقفت عن الرسائل النصية تماما حتى لا نصدر الآن وأستطيع أن أفهم لماذا لا يحب ذلك حتى لا صفقة كبيرة.\n\nلقد فجر مؤخرا وقال إنه لديه الكثير على طبقه ويريد العودة إلى المنزل والاسترخاء ولا تقلق بشأن الاتصال بي. إنه يريدني أن تتحرك لأنه يقول إنه يريدني شخصيا. أنا لا أتحرك لأنني أشعر أنه ليس الوقت المناسب، لقد كنا معا منذ ما يقرب من عامين، لكنني أعتقد أنني أصغر جدا على هذا القرار الكبير بالانتقال إلى صديق ولم ينته وبعد وعادة ما يذهب فقط إلى المنزل ويلعب ألعاب الفيديو أو الساعات التلفزيونية ولا تريد أن تتوقف، واقترحت أنه ربما لم يكن لديه وقت أو مساحة للعلاقة ونفرج مرة أخرى يقول إنه يحبني وهذا ليس صحيحا لا تريد التحدث معي خلال الأسبوع لأنه إما أنا \"معه\" أو \"لا\".\n\nيقول إنني لا أستطيع أن أكون مؤلما خلال الأسبوع لأنه يحبط أنه لا يستطيع فعل أي شيء حيال ذلك. أشعر أنني يريد علاقة عندما يريد ذلك ولا تريد التعامل مع الوجود في واحد خلال الأسبوع بعد العمل. يقول إنه يحبني ويريد مني أن أكون من حوله كل يوم بعد العمل ولكنه لا يبدو صحيحا.\n\nلقد طرحت لي كيف أخبرني شركة عمل مشارك أنه يعاني من العيش في الحياة اليومية يوما بعد يوم واستكشاف قدر الإمكان (يشبه 30) وأقلت صديقي أنني أحببت ذلك وأريد أن أفعل ذلك واستكشاف الحياة أكثر من ذلك، أوضحت أنه أردت أن أفعل ذلك معه واستكشاف أماكن جديدة معا ببطء منذ أن هيس مجاني ومطبي للغاية. اليوم من أي مكان ليس لديه موقف ويدعوني ويجري وقحا لذلك أقول ما الخطأ وقال هس \"مريض ومتعب من (أنا) يتحدث عن الأشياء (بلدي) يقول عامل المشغل (ما هو كل شيء عن أماكن رائعة لمحاولة وبعد أنا بصراحة فقط جلبتها 2 مرات لأفكار ما يجب القيام به في عطلة نهاية الأسبوع. ثم قال \"أنا لا أعرف أن هذا ليس كذلك، وأنا لا أعرف ما هو عليه ولكن لا أريد التحدث على الهاتف\" صرخ أنني اتصلت ربما 3 مرات وكل ما حصلت عليه كان \"أنا لا أريد للتحدث على الهاتف \"لذلك سألت عما إذا كان يريد مني أن آتي وأهم\" أنا لا أهتم \"وعلقت حتى أخرجت 30 دقيقة إلى منزله وقال ما أراد التحدث عنه وقال كان يذهب للنوم وشرع في النوم لذلك ذهبت إلى المنزل. هافنت سمع منه.\n\nهل أنا فقط غير ناضجة للغاية لفهم الفضاء الذي يحتاجه أو في الحياة المعيشية؟ هل قلت شيئا خاطئا؟ أفهم المساحة الشخصية ولكن كل أسبوع يبدو جذريا، وكذلك كيف يتصرف. لا أستطيع أن أخبر من هو الخطأ هنا.\n\nTL؛ دكتور صديقي يريد مساحة كبيرة خلال الأسبوع لأنه يحتوي على \"الكثير على طبقه\" ويتصرف قليلا",
+      "translation": "My friend (19F) doesn't want to talk to me during the week, which seems strange to me, but maybe it's something mature that I don't understand. We spend our weekends together and call once or twice a day to talk about our day and say goodnight during the week, maybe a total of 30 minutes. He's always said he hates texting, and I liked that, but I've stopped texting altogether so we don't text now, and I can understand why he doesn't like it, it's not a big deal.\n\nHe recently blew up and said he has a lot on his plate and wants to go home and relax and not worry about contacting me. He wants me to move in because he says he wants me personally. I'm not moving because I feel it's not the right time; we've been together for almost two years, but I think I'm too young for this big decision of moving in with a partner, and it's not final yet. Usually, he just goes home and plays video games or watches TV for hours and doesn't want to stop. I suggested that maybe he didn't have the time or space for a relationship, and we broke up again. He says he loves me, and this isn't right; he doesn't want to talk to me during the week because it's either \"with him\" or \"not.\"\n\nHe says I can't be demanding during the week because it frustrates him that he can't do anything about it. I feel like he wants a relationship when he wants it and doesn't want to deal with being in one during the week after work. He says he loves me and wants me to be around every day after work, but it doesn't seem right.\n\nHe brought up how I told his work colleague that I enjoy living in the moment day by day and exploring as much as possible (like 30) and I told my friend that I loved that and wanted to do that and explore life more, I explained that I wanted to do that with him and explore new places together slowly since he's free and very chill. Today, he had no attitude and called me and was being rude, so I said, \"What's wrong?\" and he said, \"H's sick and tired of (me) talking about (my) things.\" The operator said (what's it all about places to try and I honestly just brought it up 2 times for ideas of what to do on the weekend. Then he said, \"I don't know that this isn't, and I don't know what it is, but I don't want to talk on the phone.\" He shouted that I called maybe 3 times, and all I got was, \"I don't want to talk on the phone,\" so I asked if he wanted me to come over, and he said, \"I don't care,\" and hung up. I waited 30 minutes and went to his house, and he said what he wanted to talk about, and he was going to sleep and proceeded to sleep, so I went home. I haven't heard from him.\n\nAm I just too immature to understand the space he needs or in life? Have I said something wrong? I understand personal space, but every week seems drastic, as well as how he's acting. I can't tell who's wrong here.\n\nTL;DR: My friend wants a lot of space during the week because he has \"a lot on his plate\" and is acting a bit strange.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 74,
+      "original": "RT @favkriz_: نفسي انزل اسكندريه قبل ما اموت",
+      "translation": "I wish to visit Alexandria before I die.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 75,
+      "original": "كان لدي هجوم ذعر في محاولة للقيام بهوا هوايتي المفضلة .. لا أعرف لماذا حدث ذلك وما زلت خائفا أو خائفا .. أنا فنان أحب رسم حيوانات الرسوم المتحركة والتحريك أيضا. لقد كنت دائما في الرسوم المتحركة والرسوم المتحركة عندما كنت طفلا وأنا 17 وما زلت أشاهد الرسوم الكاريكاتورية. لكنني كنت قد أشعر بالاكتئاب مؤخرا في الآونة الأخيرة أنه يبدو أن رأيي هو خدر أنا لم أستسلم في أسابيع مؤخرا .. وأنا أعلم أنني يجب أن أفعل ذلك مرة أخرى لذلك أنا لا أعرف أن ننسى كيفية رسم لول. الليلة حصلت على تعليق على الفيديو الخاص بي (القديم) YouTube SpeedPaint Video، لقد مر بعض الوقت لأن أي شخص قد علق أنني لم أحملت في غضون بضع سنوات بسبب حالتي. اقرأ \"هل أنت حي؟\" وكنت قلقة وأيضا سعداء بأن شخصا ما لا يزال يهتم ويعتقد أنه ربما سأحصل على جهازك اللوحي ورسمه مرة أخرى. ولكن بمجرد أن خرجت وبدأت في رسم المخطط الذي شعرت صدري بالضيق وكان من الصعب جدا أنفاس .. وأكثر من ذلك استمرت في رسمها حتى شعرت بالتعب وشعرت بالذعر! توقفت وألقيت جهازي على سريري بعيدا عني وتوقف. كنت أشعر بالتنفس بشدة وأشعر رأسي غريبا في نفس الوقت. كان لدي هجوم ذعر لعنة! كنت خائفا لدرجة أن أسوأ خوف قد حدث ولا أستطيع الرسم! إذا استمر في الحصول على هجوم ذعر في كل مرة أرسم فيها، فأنا لا أعتقد أنني سأكون قادرا على الاستمتاع بأي شيء .. !! ما زلت لا أستطيع تهدئة ومن الصعب جدا متى أرى رسم أو حاول أن أقسم نفسي أشعر بهجوم ذعر يأتي ..\n\nأشعر أنني قد حصلت على هذا لأنني لم أستطع أن أشعر بأي شيء. عادة عندما أرسم أنه شعور لطيف وممتع إحضار شخصيات حلمي إلى الحياة على الورق أو الرقمية خاصة عند الحركة. لكنها كانت طويلة منذ فترة طويلة منذ أن شعرت بالسعادة لأنني لا أستطيع أن أكون سعيدا في محاولة لرسم أنني لا أعرف ما إذا كان هذا ما معنى لكنني ينقط! لقد تم الاكتئاب بالطريقة لفترة طويلة وأحتاج إلى مساعدة، لكن والدي لا يعتقدون أن لدي اكتئاب حتى عندما أخبرتهم أنني أعاني من أفكار انتحارية. والأسوأ من أن نشعر بأنني أشعر أنني يجب أن أقتل نفسي .. لا يهم كم مرة أقول والدي لا أعتقد أنهم يفهمون مدى سوء هذا حقا ... هذا سيء حقا .. أحتاج إلى مساعدة وقريبا لأنني لا أعرف ماذا أفعل ..",
+      "translation": "I had a panic attack while trying to do my favorite hobby.. I don't know why it happened and I'm still scared or nervous.. I'm an artist who loves drawing cartoon animals and animating as well. I've always been into cartoons and animation since I was a kid and I'm 17 now and I still watch cartoons. But lately I've been feeling depressed and recently it seems like my opinion is numb, I haven't given up in weeks lately.. And I know I should do it again so I don't know to forget how to draw lol. Tonight I got a comment on my (old) YouTube SpeedPaint Video, it's been a while since anyone has commented that I haven't uploaded in a few years due to my condition. It read \"Are you alive?\" and I was worried and also happy that someone still cares and thinks that maybe I'll get my tablet and draw again. But as soon as I went out and started drawing the outline I felt my chest tighten and it was very hard to breathe.. And it kept going on and on until I felt tired and felt panicked! I stopped and threw my device on my bed away from me and stopped. I was breathing heavily and felt my head weird at the same time. I had a damn panic attack! I was so scared that the worst fear had happened and I can't draw! If I keep getting panic attacks every time I draw, I don't think I'll be able to enjoy anything..!! I still can't calm down and it's very hard whenever I see a drawing or try to swear myself I feel a panic attack coming..\n\nI feel like I got this because I couldn't feel anything. Usually when I draw it's a nice and enjoyable feeling to bring my dream characters to life on paper or digitally especially when animating. But it's been a long time since I felt happy because I can't be happy trying to draw I don't know if this is what it means but I'm dropping! I've been depressed for a long time and I need help, but my parents don't believe I have depression even when I told them I'm having suicidal thoughts. And worse than that is feeling like I should kill myself.. It doesn't matter how many times I tell my parents I don't think they understand how bad this really is... This is really bad.. I need help soon because I don't know what to do..",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 76,
+      "original": "فرحان عايز اضحك 😂 😂",
+      "translation": "Happy, I want to laugh 😂 😂",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 77,
+      "original": "عائلة زوجي (27) تجعلني (27) أشعر أنني لا أحبه. أفكر في رؤية فقط في قوانيني في وقت عيد الميلاد.\n\nبعض الخلفية. لأول خمس سنوات أو ست سنوات من كونها مع زوجي، لم أتحدث مع أخيه لأنه كان فظيعا بالنسبة لي. لقد تحسنت الأمور الآن على الرغم من أنني لا أعتقد أنه سيكون من أي وقت مضى هو الشخص الذي أستمتع بشركته. أنا لا أتحدث مع أخته. بعد أن تزوجنا انتقلت معنا لفترة وجيزة لأنها. كان مشينها ساحقا لذلك ظللت مسافة بلدي. منذ بضعة أشهر كان لدي مواجهة لها شرحت فيها كان السبب في أنني لم أتحدث معها. أصبحت حماتي غاضبة للغاية من خلال ذلك وأخبرتني أنها بالاشمئزاز من سلوكي. بدوره أخبرتها أنني شعرت بالاشمئزاز بالطريقة التي تدعها أشقاء زوجي تعاملني. لم يكن لديها رد. لقد تم تفجير الأمور الآن ولكن ما زلت أشعر بحرجا بعض الشيء.\n\nلديهم عشاء العائلة كل شهر.\n\nأنا أكره الذهاب. أذهب مع زوجي لجعله سعيدا. كل ما يحدث هو أخيه وأخته تتحدث عن أنفسهم كثيرا، ويفعل أجداده، وهذا هو. والدته تستضيف العشاء وهي لطيفة بما فيه الكفاية بنفسها. تماما إنهم مجرد صداع. لا أحد يسأل حقا عني.\n\nانهم فقط يتحدث بصوت عال وجعل كل شيء عن أنفسهم.\n\nذهبنا إلى المنزل ليلة الأحد وشعرت مثل القرف. كنت غاضبا في الطريق كله إلى المنزل. قال زوجي، \"أحبك\" وأنا فقط لم أستطع أن أقول ذلك. شعرت سخيفة للغاية لكن عائلته تجعلني أشعر أنني لا أحبه.\n\nشعرت بذلك حتى ذهبت إلى صالة الألعاب الرياضية حرق بعض البخار.\n\nأشعر أن خياري الوحيد هو التوقف عن رؤيتهم.\n\nTLDR: كان لديه بعض المشاكل مع عائلة الزوج في الماضي، لا يتحدثون معي حقا، يجعلني أعتقد أن أفضل ما يراه بعد الآن.",
+      "translation": "My husband's family (27) makes me (27) feel like I don't love him. I'm thinking of seeing them only on my terms at Christmas time.\n\nSome background: For the first five or six years of being with my husband, I didn't speak to his brother because he was awful to me. Things have improved now, although I don't think he'll ever be someone I enjoy spending time with. I don't speak to his sister either. After we got married, she moved in with us briefly because she was homeless, but I kept my distance as her behaviour was overwhelming. A few months ago, I had a confrontation with her where I explained why I hadn't been speaking to her. My mother-in-law got very angry about this and told me she was disgusted by my behaviour. In turn, I told her I was disgusted by the way she let her son's siblings treat me. She had no response. Things have blown over now, but I still feel a bit embarrassed.\n\nThey have a family dinner every month.\n\nI hate going. I go with my husband to make him happy. All that happens is his brother and sister talk about themselves a lot, and so do his grandparents, and that's it. His mother hosts the dinner and she's nice enough herself. They're just a headache. No one really asks about me.\n\nThey just talk loudly and make everything about themselves.\n\nWe went home on Sunday night and I felt like crap. I was angry the whole way home. My husband said, \"I love you,\" and I just couldn't say it back. I felt so silly, but his family makes me feel like I don't love him.\n\nI felt that way until I went to the gym to burn off some steam.\n\nI feel like my only option is to stop seeing them.\n\nTLDR: I've had some issues with my husband's family in the past, they don't really talk to me, and it makes me think that it's best to see them on my terms from now on.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 78,
+      "original": "كيف أقول معالجي أنه يجب أن أكون في المستشفى؟ كان معالجي يسألني إذا كنت أرغب في الاستشفاء في المستشفى. في ذلك الوقت رفضت. ومع ذلك، حيث كان علاجي يتقدم، أشعر كما لو أنني لم تقدم أي تقدم. أود أن أخبرها أنني غيرت عقلي. أنا قلق للغاية بشأن التكاليف .... كيف يمكنني رفع هذا الأمر وتحدث عن ذلك؟",
+      "translation": "How do I tell my therapist that I need to be hospitalized? My therapist was asking me if I wanted to be admitted to the hospital. At the time, I refused. However, as my treatment progressed, I feel like I haven't made any progress. I want to tell her that I've changed my mind. I'm very concerned about the costs... How can I bring this up and talk about it?",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 79,
+      "original": "بلدي (22F) أمي (62F) لا يريدني الخروج. مرحبا بكم جميعا. أحتاج إلى بعض النصائح من الغريب على الإنترنت!\n\nأتطلع إلى الخروج، وقد اتصلت بصديق مشترك يحتاج إلى زميل في الغرفة (24F). زميل الغرفة هو صديق لصديقته السابقة لصديق؛ لقد قابلتها مؤخرا ويبدو أن شخص لطيف حقا.\n\nعلى أي حال، أحاول التحرك. أقدم ما يكفي من المال شهريا ويستغرق الأمر 15 دقيقة بالحافلة للوصول إلى العمل من الشقة. المشكلة الوحيدة هي أنه ليس لدي رخصة أو سيارة حتى الآن (تعمل على ذلك)، لكنني أخطط لتغيير توفري في العمل، لذلك لن تضطر إلى أخذ الحافلة في وقت متأخر من الليل (لأنني لست كذلك سيء يبحث الشخص وأريد أن ألعبه آمنا). طمأني في الغرفة المحتملة عن سلامة المجمع، لأنني أخبرتها أن أمي كانت قلقة. المنطقة المحيطة هي سطحي قليلا، للتأكد، لكنني أعتقد أنني سأكون بخير إذا كنت أعرف محيطي. قال الشخص الذي يتحرك إنها عاشت هناك لمدة خمس سنوات ولم تواجه أي مشاكل (تتحرك لأسباب غير ذات صلة).\n\nلقد ناقشت مع أمي عني الخروج. لديها خاصية أخرى تحاول إصلاحها وتقول إن أخي (22 مليون) ويمكنني أن أعيش هناك، لكنه كان حوالي 6-7 أشهر منذ أن اتصلت بشخص ما لمساعدتها في إصلاحها داخل الممتلكات. يبدو أنها أكثر دوافعا لإصلاحها الآن بعد أن أرغب في الخروج، لكنني قلق من أنه لن يتم ذلك شيئا إذا انتهى الأمر بعدم التحرك، وسأضيع فرصة.\n\nتقول أمي باستمرار أن المنطقة ليست آمنة، وأن هناك أشخاص أكثر خطورة بسبب متجر إباحي يعد بضعة كتل .. إنها قالت أشياء مثل \"خطرة\" و \"لا تتركني\". إنها مشفرة للغاية وتبدو أنها على حافة انهيار لأنني أفكر في التحرك. لقد بكيت كثيرا بالفعل وأشعر بالتوتر والأذنب.\n\nTLDR: هل تريد التحرك، أمي تنهار، نصيحة؟",
+      "translation": "My (22F) mom (62F) doesn't want me to move out. Hello everyone. I need some advice from a stranger on the internet!\n\nI'm looking forward to moving out, and I've contacted a mutual friend who needs a roommate (24F). The roommate is a friend of a friend's ex; I met her recently, and she seems like a really nice person.\n\nAnyway, I'm trying to make the move. I earn enough money monthly, and it takes 15 minutes by bus to get to work from the apartment. The only issue is that I don't have a license or a car yet (working on it), but I plan to change my work availability, so I won't have to take the bus late at night (as I'm not a person who looks scary and want to play it safe). The potential roommate reassured me about the safety of the complex, as I told her my mom was worried. The surrounding area is a bit superficial, for sure, but I think I'll be fine if I know my surroundings. The person moving said they lived there for five years and never had any issues (moving for unrelated reasons).\n\nI've discussed moving out with my mom. She has another property she's trying to fix up and says my brother (22M) and I can live there, but it's been around 6-7 months since she contacted someone to help with the repairs. She seems more motivated to fix it now that I want to move out, but I'm worried it won't amount to anything if it ends up not working out, and I'll miss an opportunity.\n\nMy mom keeps saying the area isn't safe, and there are more dangerous people because of a porn store a few blocks away... She's said things like \"dangerous\" and \"don't leave me.\" She's very anxious and seems to be on the verge of a breakdown because I'm thinking of moving out. She's already cried a lot, and I feel stressed and guilty.\n\nTLDR: Want to move, mom is breaking down, advice?",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 80,
+      "original": "يساعد؟ أحتاج إلى بعض المشورة / الاقتراحات مساعدة أنا عالق حقا حول هذا: / غير متأكد إذا قام أي شخص بنشر هذا قبل ...\n\nهل تسمح ل S / O الخاص بك للخروج وحدها مع صديق للجنس الآخر؟ يمكن أن يكون أي شيء: لتناول وجبة، للذهاب للتسوق، أيا كان. إذا كانت الإجابة بنعم كم مرة تسمح له / لها للقيام بذلك؟ إذا كان هذا لا، لماذا؟\n\nأنا (19F) لديه صديق (19M) لديه عدد قليل من الأصدقاء الإناث، وكان يخرج مع بعضهم وحدهم ولكن أنا غير مرتاح لها: / أخبرته عن ذلك وقال إنه لن يتعطل في كثير من الأحيان معهم. اعتقدت أن أكون غير آمنة للغاية وأنني أتم إفساد (مثل لماذا لا أستطيع أن أثق ببي؟ وحده مع أصدقاء الجنس الآخر. هل هذا صحيح؟\n\nTD؛ LR يريد صديقي أن يتسكع مع صديق أنثى وحدها ولكن أنا لست غير مرتاح لها وأنا أتساءل عما إذا كان من الطبيعي أن أشعر بهذه الطريقة",
+      "translation": "Does [he/she] help? I need some advice/suggestions. I'm really stuck on this:/ I'm not sure if anyone has posted this before...\n\nDo you allow your S/O to go out alone with a friend of the opposite sex? It could be anything: for a meal, to go shopping, whatever. If yes, how often do you let them do this? If no, why?\n\nI (19F) have a friend (19M) who has a few female friends, and he's been hanging out with them alone, but I'm uncomfortable with it:/ I told him about it, and he said he won't hang out with them often. I thought I was being too insecure and that I'm overreacting (like why can't I trust my S/O alone with friends of the opposite sex? Is this right?\n\nTL;DR My friend wants to hang out with a female friend alone, but I'm not comfortable with it, and I'm wondering if it's normal to feel this way.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 81,
+      "original": "شفتوا لما سمعتوا كلام الصحه والتزمتوا اللهم لك الحمد",
+      "translation": "\"Did you see when you listened to the health advice and followed it? All praise is due to Allah.\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 82,
+      "original": "اللهم إنا نسألك في آخر جمعة من شعبان ان تشفي كل مريض وترحم كل ميت وان تشرح صدورنا وتيسر امورنا وان تجعل يوم الجمعة فرج لكل صابر",
+      "translation": "\"O Allah, on this last Friday of Sha'ban, we ask You to heal every sick person, have mercy on every deceased soul, open our chests, ease our affairs, and make this Friday a relief for every patient one.\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 83,
+      "original": "كلكم عندكم كرش وقف وبف وانا عندي اكتئاب",
+      "translation": "You all have a belly, stand up and speak, and I have depression.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 84,
+      "original": "الشعور بأنني ليس لدي أسباب أن أكون مكتئبا كنت مهتما قليلا. لقد تم تشخيصي مع الاكتئاب الثنائي القطب قبل بضع سنوات، لكنني أتذكر وجودها (أو على الأقل كونها حزانا كبيرا) طوال حياتي، وأنا لا أشعر بطريقة أو بأخرى أن لدي \"ما يكفي من الأسباب\" للاكتئاب.\n\nأرى الكثير من الناس الذين يعانون من الاكتئاب الذي أثار أو ناتج عن الأحداث المأساوية الرئيسية في حياتهم مثل وجود حياة صعبة للغاية وغريبة مع مشاكل الأسرة والمدرسة وحتى الإدمان؛ ولكن في حالتي (أو على الأقل معظمها) أحصل على الاكتئاب للغاية بسبب القضايا الرومانسية. أعتقد أن الحدث الأكثر تكرارا في حياتي يحبه بعض الفتاة وعدم الاتصال به، وفي معظم الحالات، يجب أن أراها بشخص آخر. أمام كل هذا، أشعر أنه تقلص، كما أنه ليس سبب وجيه ليكون مثل هذا. أحصل على سيء للغاية، مثل الانتحار حقا، وأحيانا أشعر أن أشعر بالتفكير في أنه إذا سألني أحدهم \"ولكن هل تريد أن تقتل نفسك بسبب تلك الفتاة؟\" سوف أقول على الفور نعم.\n\nبالطبع، ليس هذا فقط هذا يجعلني بائسة. هناك جوانب أخرى حقا من حياتي التي يحزنني كثيرا، ولكن خصيصا للمرء الرومانسي له مثل هذه الخسائر الضخمة علي. أشعر أنني غير مرغوب فيه وغير مهم، تجاهله وحتى ألوم نفسي كثيرا بالنسبة للتفكير في خطأي، فإن الشخص الآخر لا يشعر نفسه، وللوضع نفسي في بعض المواقف التي أرى نفسي كأخزن.\n\nبالنسبة لي بجد كونها وحدها. لسوء الحظ، توجد العديد من الصداقات التي أحصل عليها مع الفتيات لأنه في مرحلة ما كنت مهتما بطريقة ما، وأشعر بالضيق أن أي شيء خرج منه. لا أحب أن أشعر بالأشخاص الذين لا أعرفهم، ومن الصعب حقا أن أشاركوا عاطفيا مع الأصدقاء لأنهم غير آمنين فسوف يدمرون الصداقة أو حتى بسبب رؤيته كخقيق أو فقط صديق. أعلم أنني مخطئ يتصرف مثل هذا. سأكون أكثر راحة قليلا وأشعر أقل غير مرغوب فيه إذا حدث نوع من العناية فقط، وهي قبلة، حتى ممارسة الجنس في بعض الحالات. ولكن، حسنا، مع الكثير من الأشخاص الذين لديهم قضايا \"أسوأ\"، أشعر أن هذا لا شيء وأنني أغبي عن السماح لهذا النوع من الأشياء.\n\n& amp؛ # X200B؛\n\nأي أفكار؟\n\nإنها المرة الأولى التي ننشرها هنا، وأنتج، كان مجرد شعور مثل السماح به.\n(راجع للشغل، وليس المتكلم الإنجليزي الأصلي. قد يكون لها بعض الأخطاء)",
+      "translation": "I felt like I had no reason to be depressed, which was a bit intriguing. I was diagnosed with bipolar disorder a few years ago, but I remember having it (or at least being very sad) my whole life, and I don't feel like I have \"enough reasons\" to be depressed.\n\nI see many people who suffer from depression triggered or resulting from major tragic events in their lives, such as having a very difficult and strange life with family and school problems, and even addiction; but in my case (or at least most of the time), I get very depressed because of romantic issues. I think the most recurring event in my life is liking some girl and not being contacted by her, and in most cases, I have to see her with someone else. In the face of all this, I feel diminished, as if it's not a valid reason to be so. I get really bad, like actually suicidal, and sometimes I feel like I would think that if someone asked me, \"But would you kill yourself over that girl?\" I would say yes immediately.\n\nOf course, it's not just this that makes me miserable. There are other aspects of my life that I'm very sad about, but specifically for the romantic one, these losses are huge for me. I feel unwanted, unimportant, ignored, and I blame myself a lot for thinking that my mistake is that the other person doesn't feel the same, and for putting myself in situations where I see myself as a nuisance.\n\nIt's hard for me to be alone. Unfortunately, I have many friendships with girls because at some point I was interested in them somehow, and I feel bad that anything came of it. I don't like feeling like people I don't know, and it's really hard to share emotionally with friends because they're not secure, and it will ruin the friendship or even be seen as a hookup or just a friend. I know I'm wrong to act like this. I would feel a little more comfortable and less unwanted if there was some kind of care, a kiss, even sex in some cases. But, well, with so many people having \"worse\" issues, I feel like this is nothing and I'm stupid for allowing this kind of thing.\n\nAny thoughts?\n\nThis is the first time I've posted here, and I felt like just letting it out.\n(By the way, the speaker is not a native English speaker. There might be some errors.)",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 85,
+      "original": "اللهم لك الحمد ...",
+      "translation": "Lord, praise be to You.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 86,
+      "original": "سرني اليوم خبر ترقية صديقي وأخي سعادة الدكتور عبدالمحسن القرني الى درجة أستاذ مشارك الرجل المتألق دائما الف مبروك",
+      "translation": "I was delighted to hear the news of my friend and brother, Dr. Abdulmohsen Al-Garni's promotion to the rank of Associate Professor. The always brilliant man, congratulations a thousand times over.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 87,
+      "original": "🙏الله يقويكم على مكافحة الفيروس والحدّ من انتشاره، الله يشفي جميع المرضى",
+      "translation": "May God give you strength to combat the virus and curb its spread, may He heal all the sick.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 88,
+      "original": "#رمضان_كريم يارب شهر الخير اقبل بالافراح لا تحرم اللي يرتجي منك غفران انزل علينا رحمة منك نرتاح نرفع يدينا نرتجي منك رضوان #لخبطة",
+      "translation": "#Ramadan Kareem Oh Lord, may the month of goodness be accepted with joy. Do not deprive those who seek your forgiveness. Bestow upon us your mercy, and we shall find comfort. We raise our hands, seeking your contentment. #Disarray",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 89,
+      "original": "RT @drSAlsadoun: 5-ولكنني لا أحمل الغلَّ داخلي فلي روضُ حبّ واسعٌ ورحيب\nأقارئة الفنجـان يكفــي لجاجةً  وسفسطةً فالأمر جدُّ كئيب  \nفمـا أنا…",
+      "translation": "5-But I do not bear grudges within me, for I have a vast and spacious garden of love.\nReader of the cup, enough with your insistence and sophistry, for the matter is very grim.\nI am not...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 90,
+      "original": "@alaaokk @afnng2021 @n___Gaza_egypt فعلا اللي على السفرة كئيب و مايفتحش النفس، و مختلفه معاك في السندوتش ده ،أنا حر… https://t.co/owKM7AosAM",
+      "translation": "@alaaokk @afnng2021 @n___Gaza_egypt The food on the table is indeed depressing and unappetizing. I disagree with you about this sandwich; I am free to have my own opinion... https://t.co/owKM7AosAM",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 91,
+      "original": "في غياهب مقبرة الحبايب والرحيل\nالتقينا واثر كلّ(ن) مفارق له حبيـب\n\nقلت انا قلبي وحيلي وكلّي في قحيـل\nقالت الحالة رد… https://t.co/nLVh9Izq0S",
+      "translation": "In the depths of the cemetery of loved ones and farewells,\nWe met, and each one had a beloved, a parting gift.\n\nI said, my heart, my strength, and all of me are in turmoil.\nShe replied, the situation demands...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 92,
+      "original": "ايوه اليوم شوفت كله ملتزم ماشاءالله",
+      "translation": "Yes, today I saw everyone was committed, Mashallah.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 93,
+      "original": "بيض الله وجيهم اي خل المتفرغين الي بيروحون يتمشون يرجعون ويدفعون من جيوبهم .. مالهم حاجة يتمشون الحين",
+      "translation": "May God bless their faces; those who are free and go for a walk should return and pay from their own pockets. They don't need to walk around now.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 94,
+      "original": "بتمني المزيكا، والسينما، ونسمة الهوا الجميلة في يوم حر، ودفا الشمس في نهار الشتا الجميل، وسقعة هوا الليل علي النيل، والذكرايات الدافية الحنينة -زي بيت جدتي الله يرحمها في الصبح بعد الأمتحانات وهو داخله نور الشمس وأشعتها مدفية البلاط، وجدتي فاردة جسمها علي الكنبة ومغمضة زي الملاك- اللي بنفتكرها من وقت للتاني صدف وتطبطب علي روحنا تذكيراً بيوم كانت قلوبنا خُفاف، بتمني يكونوا أسباب كفاية أنكم -وأنا معاكم- تقدروا تكملوا يوم تاني في الدنيا أنهاردة..",
+      "translation": "I wish for music, cinema, and the beautiful breeze on a hot day, the warmth of the sun on a lovely winter day, the cool night air by the Nile, and the comforting, warm memories - like my grandmother's house, may she rest in peace, in the morning after exams, with the sunlight streaming in, warming the tiles, and my grandmother stretched out on the sofa, eyes closed like an angel - memories we recall from time to time, caressing our souls and reminding us of days when our hearts were light. I wish these were enough reasons for you - and me along with you - to be able to face another day in this world today.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "crowdsourcing",
+      "translation_failed": false
+    },
+    {
+      "index": 95,
+      "original": "اللهم لك الحمد اللهم ارحم من توفى واغفر له واشفي جميع المصابين وطهر أرضنا من هذا الوباء انك على كل شي قدير",
+      "translation": "Lord, all praise is for You. Lord, have mercy on those who have passed away, forgive them, heal all the injured, and purify our land from this plague. You are indeed capable of all things.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 96,
+      "original": "زوجتي تتركني بعد خمسة عشر عاما معا وأنا مدمر أشعر أنني بالكاد يمكنني العمل. لا أريد أن أذهب إلى العمل أو الخروج أو فعل أي شيء. قضيت سنوات جديدة حواء في الصباح بحث عن طرق لقتل نفسي بلا ألم. أنا رجل مكسور في منتصف العمر، مع شعر رقيق وأنا زيادة الوزن من الآثار الجانبية المضادة للاكتئاب. أشعر حقا كأنني لم يكن لدي شيء في الخزان ولا يوجد نقطة في الذهاب.\n\nلا أريد أي مشاعر جيدة حول كيف يوجد أشخاص يحبونني وأشياء سيحصلون على أفضل. أريد فقط التوقف عن القائمة. لا يوجد أي نقطة في الحياة. وجود لا معنى له. إذا كان الله موجودا وأفضل الحياة الأبدية ممكنة، فسيكون من غير المجدي ومملة. الكون لا نهاية لها وكل نفس الشيء. نحن موجودون، نحن ننشر، نحن نموت، وإذا نحن محظوظون، لدينا وقت ممتع إلى حد ما.\n\nولكن دعونا نواجه الأمر، ومعظمنا لا يحصلون على وقت جيد. نقول أنفسنا قصصا، أنفسنا أنفسنا تشعر بتحسن من مكاننا في الكون الذي لا يتأثر بوجودنا الضئيل الصغير. ثم نحاول ونجبر هذه القصص على الآخرين في شكل دين والطوائف الأخرى. الاحتيال لأنفسنا والآخرين من حولنا مع قواعد لا معنى لها للعيش من قبل.\n\nالإنسانية مارس الجنس، وأريد فقط أن تحقق من أجل الخير بالفعل.\n\nلكنني لا أستطيع بعد، لأن شيئا ما يمنعني من أخذ حياتي الخاصة. لا أعرف ما هو عليه بعد، لكنني آمل أن أجده يوما واحدا وسحقه من أجل الخير.\n\nتبا الحياة ويمارس الجنس مع الإنسانية.",
+      "translation": "My wife is leaving me after fifteen years together and I'm devastated; I feel like I can barely function. I don't want to go to work or go out or do anything. I've spent my new years Eve mornings researching ways to kill myself painlessly. I'm a broken middle-aged man, with thinning hair and I'm overweight from the side effects of anti-depressants. I really feel like I have nothing in the tank and there's no point in going on.\n\nI don't want any good feelings about how there are people who love me and things will get better. I just want to stop existing. There's no point to life. Existence is meaningless. If God exists and eternal life is even possible, it would be pointless and boring. The universe is endless and all the same. We exist, we procreate, we die, and if we're lucky, we have a somewhat enjoyable time.\n\nBut let's face it, most of us don't get a good time. We tell ourselves stories, convince ourselves that we feel better about our place in an uncaring, vast universe. Then we try and force these stories onto others in the form of religion and other cults. We're conning ourselves and those around us with meaningless rules to live by.\n\nHumans have sex, and I just want to check out for good.\n\nBut I can't yet, because something is stopping me from taking my own life. I don't know what it is yet, but I hope to find it one day and crush it for good.\n\nFuck life and fuck humanity.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 97,
+      "original": "لبس الكمام في إلتزام لكن نسبة كبيرة لابسين الكمام مع كشف الخشم و الفم .. يعني اصبح الكمام اكسسوار بس",
+      "translation": "Wearing a mask is a commitment, but a large percentage of people are wearing masks with their noses and mouths exposed... so the mask has become just an accessory.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 98,
+      "original": "@thansulii ماشاءالله متألقه وين ماكنتي ، وين القاه ؟ وابي توقيعك فيك😻❤️!",
+      "translation": "What a brilliant performance wherever you are, where can I find it? And I want your autograph!",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 99,
+      "original": "هل يمكن أن تكون صادقا مع المعالج الخاص بك؟ قريبا سأذهب إلى المعالج لأول مرة وأنا لست متأكدا من مدى صادق. لا أريدهم أن يحبسني إذا قلت لدي أفكار انتحارية في بعض الأحيان. كما يقولون إنه سري ولكن إذا كان في المستقبل، أخرج عن طريق الخطأ أي قضية قانونية لا أريد أن تحقق الشرطة من سجلاتي وأقول إنني مجنون أو انتحاري",
+      "translation": "Can you be honest with your therapist? Soon I'll be going to a therapist for the first time and I'm not sure how honest I should be. I don't want them to lock me up if I say I have suicidal thoughts sometimes. They say it's confidential, but if in the future, I accidentally bring up any legal issues, I don't want the police to check my records and say I'm crazy or suicidal.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 100,
+      "original": "غموض حاض عني أفتقد ما اعتادت حياتي أن تكون مثل. كل يوم، أتمنى لو كانت مثل هذا. لأن الطريقة الآن، أنا لا أحب ذلك. قد أحاول تحقيق أقصى استفادة منه، لكنها هي الطريقة التي كانت بها، الطريقة التي لم يكن من المفترض أن تنهارها، وأنا أطول لفترة طويلة. لكنها لن تأتي أبدا. أشعر أنني إذا كانت بعض الأشياء في حياتي كانت مختلفة، فقد يتم إجراء بعض التغييرات، والتي قد تساعد. في نهاية المطاف، حدثت قضية بلدي الكثير، وهو الكثير من الضار وينبغي أن يحدث أبدا، الكثير من وجع القلب وكسر القلب في حياتي منذ عام 2017، وأنا لست متأكدا مما يجب عليه. حياتي قبل ذلك، شعرت حياتي قبل أكثر من عام تقريبا كما كان أقرب إلى قلبي. ولكن الآن تشعر حياتي مثل هذه الفوضى من الأشياء التي لا أريدها. أنا لا أعرف ما يجب القيام به. أريد فقط متابعة الأهداف التي تلقيتها، هل الأشياء التي اعتدت أن أحبها، والعيش بالمعنى والغرض الذي كان يعتاد على الإقامة في الداخل. ولكن بعد ذلك مزيج من المرض العقلي والصدمة السابقة والخلل والخيارات السيئة من جانبي، وكذلك على أجزاء من الآخرين دفعني إلى هذا المسار. في قلبي، ما زلت أريد ما أردت. المسار الذي كنت فيه. ولكن ليس لدي أي فكرة كيف يمكنني الوصول إلى هناك. ليس لدي اي فكرة عما يجب القيام به. هناك حتى أشخاص أثروا على حياتي أنني حلمت بالاتصال، لكنني أشعر أنه لا يهم. إن كل أمتعة حماقة أحملها سوف أبقني في نهاية المطاف فصل ما أحبه عاطفيا، وجعل القيام به بلا معنى للغاية. حتى كل هذا حماقة في حياتي يخدم غرضا، حتى أجد هذا الغرض وراء كل هذا هراء، لماذا حدث ذلك، ماذا تفعل معها، وبهذه الطريقة التي يمكن أن تجدها مكانا في حياتي وتركني، فزت \" تكون قادرة على المضي قدما في طريقي وسوف تبقى بدلا من ذلك تجول بعيدا عن المنزل.",
+      "translation": "Mysticism has faded from me. I miss what my life used to be like. Every day, I wish it was like this. Because the way it is now, I don't like it. I might try to make the best of it, but it is what it is, the way it was meant to be, and I've been through it for too long. But it will never come. I feel that if some things in my life were different, some changes could be made, which might help. Ultimately, my issue has happened a lot, a lot of harm that should never have happened, a lot of heartache and heartbreak in my life since 2017, and I'm not sure what to do. My life before that, my life before felt more like it was closer to my heart almost a year ago. But now my life feels like this mess of things I don't want. I don't know what to do. I just want to pursue the goals I received, do the things I used to love, and live with the meaning and purpose that used to reside within. But then a mix of mental illness, previous trauma, dysfunction, and bad choices on my part, as well as parts from others, pushed me onto this path. In my heart, I still want what I wanted. The path I was on. But I have no idea how I can get there. I have no idea what to do. There are even people who influenced my life that I dreamt of connecting with, but I feel it doesn't matter. All the stupid baggage I carry will eventually keep me from loving emotionally, and make it too meaningless to do so. Even all this nonsense in my life serves a purpose, until I find this purpose behind all this nonsense, why it happened, what to do with it, and in that way, you can find a place in my life and leave me, I won't be able to move on with my way and will instead wander away from home.",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 101,
+      "original": "اللهم لك الحمد والشكر كما ينبغي لجلال وجهك و عظيم سلطانك",
+      "translation": "Lord, all praise and gratitude are due to You, as it ought to be for Your majestic presence and mighty sovereignty.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 102,
+      "original": "\" أنا لسُت كئيب .. أنا فاقِد للشعور \"",
+      "translation": "\"I am not depressed; I am devoid of feeling.\"",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 103,
+      "original": "يا اخوان انا الدكتور شخصني ان عندي اكتئاب واضطراب ثنائي القطب المشكلة وين تقع المشكلة ان انا صارلي 3 ايام ما انام بالليل أسهر يعني وأحس بنشاط زايد عن الحد .. ما ادري والله يا اخوان يمكن هذي نوبة هوس المشكلة اروح الجامعه وانا مواصلة.. فيدون جزاكم الله خير",
+      "translation": "My brothers, the doctor diagnosed me with depression and bipolar disorder. The problem is, I've been staying up all night for three days now, and I feel excessively energetic. I don't know, brothers, maybe this is a manic episode. The problem is, I go to university without sleeping, please advise, may God reward you with goodness.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 104,
+      "original": "قابلت رفيقي وكنا معا لمدة ثلاثة أشهر سحرية. ولكن كان لدينا فرق واحد أساسي أبقينا من الاستعداد. قلبي ثقيل اليوم. [27F] كان يرى رجلا خلال الأشهر الثلاثة الماضية، دعنا ندعوه هنري [33 م]. لقد كان أول شخص ذهبت فيه موعدا منذ أن انتهت علاقاتي الأربع سنوات، وساعدني حقا في الخروج من الركود. نحن نضغط عليه على الفور ولم أقابل أي شخص في حياتي التي شعرت بها في تناغم ذلك. شعرت بخالية من الإجهاد والسعادة، وهكذا في تقديره لكوني فقط. ساعد في فتح قلبي مرة أخرى وقدمني إلى الكثير من الأشياء الجديدة (الطعام واليوغا والجنس عاطفي وغيرها. كنا نشطا معا وتواصل دائما جيدا كيف شعرنا. ننام بنفس الطريقة، أحببت كيف رائحته وشعرنا، ونجمع كل نفس الأطعمة والموسيقى.\n\nلكن الشيء الوحيد الذي أبقى لنا من تحديد علاقتنا هو أنني أحادي الزواج وأفضل العلاقات المفتوحة. لقد فوجئت حقا بتعلم أن ستة تواريخ في، وأزعجت بصدق أنه لم يخبرني في وقت سابق. لقد لعبت مع فكرة علاقة مفتوحة منذ فترة، ولعبت مع فكرة وجود علاقة زواجية، ولكن عندما ذهبنا في رحلة نهاية الأسبوع معا (والتي كانت لا تصدق)، أخبرته أنني قررت ذلك بحزم فتح لم يكن لي. أجاب أنه يريد أن يكون معي كثيرا، وأنه يريد أن يفعل أشياء \"حق\" وسوف تضع بعض الفكر في هذا. بالنسبة لي رغم ذلك، لم تكن هذه علامة جيدة. أن تكون مفتوحة هي قيمة أساسية بالنسبة له، لذلك حتى لو كان الأمر بخير ليكون أحادي الزواج الآن، عندما نسقط في الحب، لن يدوم ذلك.\n\nلا يزال لم يحضره لمدة أسبوعين بعد رحلتنا، وعندما ذهبت لرؤيته لتناول العشاء الليلة الماضية، فقد نشأ أنه شعرت أنني قد تجنبه قليلا. لذلك لقد نشأت اهتمامي، وأنني لا أرغب أبدا في سحبه أو لي في شيء يجب أن تتعرض فيه قيمنا الأساسية. قاوم في البداية، قائلا إنه سيحاول أن يكون monogamous معي، لكنني قلت في النهاية، \"عندما تكون الأمور بين شخصين حقا حقا، لا تضطر إلى التفكير كثيرا لاتخاذ قرار بشأن ما إذا كنت تريد لنكون معا\". يبدو أن ذلك صدى معه، لذلك جلسنا هناك واحتجز بعضنا البعض وصرخوا عن عدد اللحظات الجميلة التي قمنا بها معا. أخبرني أنني سأكون دائما شخصا مميزا للغاية، لكنني كنت على حق، ولم يستطع ضمان ذلك في المستقبل لن يريد أن يكون مفتوحا مرة أخرى.\n\nكان حزينا جدا، لكنني سعيد لأننا تركناها على شروط جيدة. هناك إمكانات لصداقة أن تكون هناك، وأشعر بطريقة أو بأخرى كان صديق الروح. لا يزال هو. قلبي ثقيل اليوم، وأفتقده بشكل رهيب، لكنني أعلم أنه الأفضل.\n\nTLDR: كنت مع شخص شعر وكأنه رفيقي. لقد تأرستنا لمدة ثلاثة أشهر، لكننا أردت في النهاية أن أكون أحجام وأفضل أن أكون في علاقات مفتوحة فقط.",
+      "translation": "I met my companion, and we were together for three magical months. However, one fundamental difference kept us apart. My heart is heavy today. [27F] He was seeing someone during the past three months, let's call him Henry [33M]. He was the first person I went on a date with since my four-year relationship ended, and he really helped me get out of my slump. We clicked instantly, and I've never met anyone in my life that I felt such a deep connection with. I felt stress-free and happy, and he appreciated me just for being me. He helped open my heart again and introduced me to so many new things (food, yoga, passionate sex, and more). We were active together and always communicated well about how we felt. We slept the same way, I loved his scent and touch, and we shared the same tastes in food and music.\n\nBut the one thing that kept us from defining our relationship was that I am monogamous and prefer open relationships. I was truly surprised to learn, six dates in, and honestly upset that he hadn't told me earlier. I've been playing with the idea of an open relationship for a while, and I've also played with the idea of being in a monogamous one, but when we went on our weekend trip together (which was incredible), I told him I had firmly decided that being open wasn't for me. He replied that he wanted to be with me so much, and that he wanted to do things \"right\" and would put some thought into it. For me, though, that wasn't a good sign. Being open is a core value for him, so even if it's okay to be monogamous now, when we fall in love, it won't last.\n\nHe still hasn't brought it up for two weeks after our trip, and when I went to see him for dinner last night, it came up that I felt like I was avoiding him a bit. So I brought up my interest, and that I never want to pull him or myself into something where our core values are compromised. He resisted at first, saying he would try to be monogamous with me, but I eventually said, \"When things are between two people who are really, truly meant for each other, you don't have to think too much about deciding whether you want to be together.\" That seemed to resonate with him, so we sat there, held each other, and shouted about all the beautiful moments we had together. He told me I would always be a very special person to him, but I was right, and he couldn't guarantee that in the future he wouldn't want to be open again.\n\nHe was very sad, but I'm glad we left it on good terms. There's potential for friendship to be there, and I feel like he was somehow a soulmate. He still is. My heart is heavy today, and I miss him terribly, but I know it's for the best.\n\nTLDR: I was with someone who felt like my soulmate. We dated for three months, but in the end, we wanted different things and preferred to be in open relationships only.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 105,
+      "original": "بعد اتخاذ الدولة عدة إجراءات احترازية لمواجهة فيروس #كورونا ومنها تعليق الدراسة و منع التجمعات و تعليق المواصلات العامة، ما هي الخطوة الصحيحة التي تراها مناسبة للمرحلة القادمة للحد من انتشار الفيروس ؟",
+      "translation": "Following several precautionary measures taken by the state to tackle the Coronavirus, including suspending classes, banning gatherings, and halting public transportation, what is the appropriate next step to curb the virus's spread?",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 106,
+      "original": "السلام عليكم ورحمة الله وبركاته  مستكفة ألم غامر شفيق ميلاد  أين انتم أيها الغائبون ؟ غدى ملتقانا كئيبا أكثر من المعتاد بغيابكم أتمنى أن تكونوا بخير  افتقدكم كثيرا :(",
+      "translation": "Hello and may God's peace and blessings be upon you. Overwhelming pain. A compassionate birthday. Where are you, you absentees? Our meeting has become more gloomy than usual without you. I hope you are well. I miss you a lot :(",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 107,
+      "original": "اللهم لك الحمد",
+      "translation": "Lord, praise be to you.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 108,
+      "original": "شفت فيلم كئيب و انا زعلت https://t.co/GsbJIOPzp7",
+      "translation": "I watched a depressing movie and felt sad.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 109,
+      "original": "لا أستطيع أن أحب شخص ما. مرحبا، أنا [m21]، لقد كنت عزباء لفترة طويلة جدا .. أنا أعزب أنا أعني حتى أصدقاء الإناث .. كان لدي صديق أنثى مرت منذ 6 سنوات، منذ ذلك الحين كنت مدمرا و لا يمكن مقابلة أي شخص جديد، قضى معظم سنوات المراهقة في غرفتي، والبكاء، ولعب ألعاب لاعب واحد، أو شيء من هذا القبيل ..\nكان لدي اكتئاب فظيع جدا بسبب وفاتها، فقد وصلت إلى نقطة في حياتي عندما أخشى التحدث أو تخشى الخروج. حتى بدأت التدخين [إنهاء قبل ثلاثة أشهر]\nعلى أي حال، فأنا أفضل للعامين الماضيين، مشغول جدا في الواقع ولكن أنا أحب ذلك، وظيفتين + كلية = صفقة جيدة للبقاء خارج الاكتئاب.\nلذلك، منذ 8 أشهر من صديق لي أقنعني أن أتحدث إلى صديق عبر الإنترنت [21F] .. لقد أرسلتها وحدثنا عن الأشياء غير الرسمية وأعجبتني في غضون يومين، بحلول نهاية الأسابيع الأولى التي قالت إنها أحببتني، لقد ظللت من مشاعر لمدة شهر حتى بدأت في التعود على وجودها المرح الداعم للغاية.\nالآن، لقد كنا الرسائل النصية واللقاء كل شهر أو نحو ذلك لمدة 7 أشهر الماضية .. أنا أيضا أهرب من قول \"أنا أحبك أيضا\" عندما تقول إنها تحبني .. وعندما أفعل، أنا أكره نفسي وفي كل مرة يحدث ذلك أحاول أن أقول لها ما أشعر به حقا لكنني لا أريد إيذائها.\nلكن ... حتى يومنا هذا، لا أشعر أن \"الحب\" الحقيقي تجاهها، لا أستطيع أن أحب كل شيء عنها، لا أستطيع أن أحبها على الإطلاق.\nالمشكلة هي أنها لم تتحدث معي أبدا عن عدم التعبير عن مشاعري ولا تعتقد أنني أعالجها سيئة، فهي تعتقد أنها بخير.\nوهذا يدمرني أكثر من ذلك، كل يوم يمر أشعر أنني أحاول أن أكون شخصا محب للسلام أو أب / زوج جيد، لا أعرف كيف أحب شخص ما.\nولا تفهموني خطأ، إنها جميلة ومخلصة للغاية وداعمة، فهي ليست عنها أنت أنا.\n\nلذا من فضلك، سأكون نشطا للغاية معك في التعليقات، لكن من فضلك قل لي ماذا أفعل مع نفسي ومعها .. لا أريد أن أؤذها أنها لم تفعل شيئا سيئا. كيف أحب؟\n\nP.S: أنا لست متحدثا باللغة الإنجليزية الأصلية لذلك أنا آسف إذا كانت لغتي الإنجليزية سيئة أو شيء مسيئة، لم يكن المقصود بهذه الطريقة.\n\nTL؛ DR: لدي فرنك غيني أشعر أنني لا أستطيع أن أحبها بشكل صحيح لأنها تستحق لكنني لا أريد أن أؤذها، ماذا علي أن أفعل؟",
+      "translation": "I can't love someone. Hello, I'm [m21], I've been single for way too long.. I'm single I mean even female friends.. I had a female friend who passed away 6 years ago, since then I've been devastated and can't meet anyone new, spent most of my teenage years in my room, crying, playing single-player games, or something like that..\nI had an awful depression because of her death, I reached a point in my life where I'm afraid to talk or afraid to go out. Even started smoking [quit 3 months ago]\nAnyway, I'm better for the past 2 years, very busy actually but I like it, 2 jobs + college = good deal to stay out of depression.\nSo, for about 8 months a friend of mine convinced me to talk to an online friend [21F].. I sent her and we talked about casual stuff and I liked her within 2 days, by the end of the first weeks she said she loved me, I kept my feelings for a month until I started getting used to her very supportive and cheerful presence.\nNow, we've been texting and meeting every month or so for the past 7 months.. I also keep running away from saying \"I love you too\" when she says she loves me.. and when I do, I hate myself and every time it happens I try to tell her how I really feel but I don't want to hurt her.\nBut... until this day, I don't feel the \"real\" love towards her, I can't love everything about her, I can't love her at all.\nThe problem is that she never talked to me about not expressing my feelings and she doesn't think I'm treating her badly, she thinks she's fine.\nAnd this destroys me even more, every day passes I feel like I'm trying to be a peace-loving person or a good dad/husband, I don't know how to love someone.\nAnd don't get me wrong, she's beautiful and very loyal and supportive, it's not about her it's about me.\n\nSo please, I'll be very active with you in the comments, but please tell me what to do with myself and with her.. I don't want to hurt her she hasn't done anything wrong. How do I love?\n\nP.S: I'm not a native English speaker so I'm sorry if my English is bad or something offensive, it wasn't meant that way.\n\nTL;DR: I have a Guinean franc feeling that I can't love her properly because she deserves it but I don't want to hurt her, what should I do?",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 110,
+      "original": "وبعد كدا صحيت من النوم احكيلكم القصة المؤثرة جدا الي من نسج خيالي دي عشان انا واحده ناقصه ربنا فضلني على البهايم وا… https://t.co/yJsjdnvmiB",
+      "translation": "I woke up from my sleep to tell you this very touching story that I made up because I am a woman whom God has favored over animals and...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 111,
+      "original": "افضل قرار بصراحة الحمدلله ارتحت نفسيا احين ولا شخص له عذر لما يطلع ويهيت المفروض كل شخص يكون على قد المسؤلية تجاه غيره ومثل ماقالت الاخت الفاضلة لولوة الخاطر \"سلامتك هي سلامتي وسلامتي هي سلامتك\"",
+      "translation": "The best decision, honestly, Alhamdulillah, I feel relieved now. No one has an excuse not to go out and meet people. Everyone should be responsible for others, just as the honorable sister Lulwa Al-Khater said, \"Your safety is my safety, and my safety is your safety.\"",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 112,
+      "original": "#عبر_عن_الي_بقلبك مو كل شيء بالقلب ينقال _ او الحروف ما تكفي ولا تعبر عن الي بالقلب يمكن فرح او حزن او ألم او خيبة اشياء كثيره بهالقلب",
+      "translation": "Not everything in the heart should be said, nor do letters suffice to express what's in the heart. It could be joy, sadness, pain, or disappointment. There are many things in the heart.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "semEval",
+      "translation_failed": false
+    },
+    {
+      "index": 113,
+      "original": "اكيد .. الصين بكبرها و كل التطور الي فيها ما قدروا يسيطروا على الڤيروس الا لمن عملوا حظر تجول",
+      "translation": "Certainly, China, despite its vast size and advanced development, could not control the virus until they imposed a curfew.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 114,
+      "original": "اخبار جميله ورائعه الحمدلله دائما وابدا",
+      "translation": "Gorgeous and wonderful news, Alhamdulillah always and forever.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 115,
+      "original": "توفير في الموارد والوقت، وراحة نفسية وزيادة الإنتاجية في العمل.",
+      "translation": "Saving resources and time, psychological comfort, and increased productivity at work.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 116,
+      "original": "هل تعرف ماذا تفعل بي؟ عزيزي الوالدين، أعلم أنك تقول إنني خيبة أمل لبعضنا البعض والندف بسبب الغضب الذي تضيءه بداخلي. أنت تبرز الغضب الذي لم أكن أعرفه. إنه يقتلني أنك لن تؤمن حقا أو فهم الاكتئاب. ما يقتلك أكثر من ذلك هو أن نسمع أنك تقول أنك سوف تحبني بغض النظر عن ما. سخيف الكلمات الفارغة.\n\nأنا بخسارة لما يجب القيام به. إيف تصبح خدر. أشعر أنني ليس لدي أي سيطرة على عواطفتي في بعض الأحيان وصرخها باستمرار لأنه يجعل الأمور أسوأ فقط. أن تبشر في كيفية التعامل مع الاكتئاب، منك، نفس الأشخاص الذين لا يؤمنون به، يصعب عليهم التعامل معهم.\n\nأتمنى أن تفهم، أو أتلست محاولة ..\n\nهل تعرف ماذا تفعل بي؟",
+      "translation": "Do you know what you're doing to me? Dear parents, I know you say I'm a disappointment to each other and the snowflakes because of the anger you ignite inside me. You bring out the anger I didn't know I had. It kills me that you won't truly believe or understand depression. What kills you more is hearing you say you'll love me regardless. Stupid empty words.\n\nI'm at a loss for what to do. I've become numb. I feel like I have no control over my emotions sometimes and I scream endlessly because it only makes things worse. To be preached to on how to deal with depression, by you, the same people who don't believe in it, is hard to deal with.\n\nI wish you'd understand, or at least try..\n\nDo you know what you're doing to me?",
+      "label": "depression",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 117,
+      "original": "والله من تطبق قرار عدم دخولهم\nصار التسوق بدون ازعاج وهدوء  \nقبل مسوين الجمعيات ساحة العاب ويفرغون كل طاقاتهم اللي محكورين فيها بالشقق",
+      "translation": "God, since the decision to keep them out has been enforced, shopping has become peaceful and quiet. Before, they turned the cooperatives into a playground and released all their pent-up energy from being cooped up in their apartments.",
+      "label": "normal",
+      "dialect": "slang",
+      "source": "Data_World",
+      "translation_failed": false
+    },
+    {
+      "index": 118,
+      "original": "RT @Saari47400405: فاقدك ، والكون بـ غيابك كئيب\nلا أحد قبلك ، ولا بعدك أحد\n\nعفت خلق الله من بْعيد وقريب\nوأعتزلت الناس بعدك : لـ الأبد\n\nكل و…",
+      "translation": "Missing you, the world is gloomy without you.\nNo one before you, and no one after you.\n\nI've abandoned all of God's creation, near and far.\nI've secluded myself from people after you: forever.\n\nEverything...",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 119,
+      "original": "عشان انا حد كئيب",
+      "translation": "Because I'm a gloomy person.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 120,
+      "original": "انا هنا من حسابي كئيب ويدور حرش ونفسيه وحالته حاله بالواقع انا اضحك ولطيفة وكيوت اتقي شر الكيوت اذا غضب من المجتمع",
+      "translation": "I'm here, feeling gloomy on my account, with a lot of drama and a fragile mental state. In reality, I'm laughing, friendly, and cute. Beware of the cute one when they're angry at society.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 121,
+      "original": "بلدي (23 واو) صديقها (30 متر) لم يطلق عليني أبدا جميلة لقد كنت مع صديقي لأكثر من عام. يحب الحصول على مجاملات ولديه القليل من الأنا (وهو رجل ذو مظهر جيد حقا وأرى النساء يحدق فيه كثيرا). أشيد به طوال الوقت لأن هذا من أنا ... أحب أن أجعله يبتسم وأشعر أنني بحالة جيدة. الشيء هو أنه لا يعطيني أبدا ذلك في المقابل ... إنه لا يسمى لي أبدا جميل، ونادرا ما يكملني (قال إن أشياء أجمل للنساء الأخريات). سوف يحتضان لي مرة واحدة في حين أن أمسك يدي (حتى انه ليس حنون جسديا أيضا، لكنه يتوقع أن يلمسه طوال الوقت).\n\nالشيء الذي يغضب لي أكثر هو أنه نكت وتزلقني على ما لا نهاية. سوف يسخر من وزني، بعقب بلدي، يجعل النكات العرقية تهدف نحو لي. إنه في الواقع يذهب أيام حيث يثيرني ولن يقول شيئا لطيفا واحدا. إنها تعاملني أشبه أحد أصدقائه الرجل من صديقته الفعلية. أعلم أنه ينجذب إلي ويهتم بي، لكنني لا أحصل على ما في رأسه.\n\nقلت له أن يؤلمني، لكنه يقول إنه يظهر أن المودة بطرق مختلفة ومزاح واحد منهم ولم يتغير أبدا. أعرف أن هذا يبدو فظيعا، لكنني أحصل على أفكار الغش عليه طوال الوقت. لا يهمني الجنس، لكنني لا أشعر بالتقدير والعاطفة في الوقت الحالي.\n\nأنا أحبه، لكنني لا أعرف ماذا أفعل.\n\n\nLLDR - صديقي لم يطلق علي أبدا جميلة، لكنه يتوقع مني أن أجهزه.",
+      "translation": "My (23W) boyfriend (30M) has never called me beautiful; I've been with my boyfriend for over a year. He loves getting compliments and has a bit of an ego (he's a really good-looking guy, and I see women staring at him a lot). I praise him all the time because that's who I am... I love making him smile, and it makes me feel good. The thing is, he never gives that back to me... He never calls me beautiful, and rarely compliments me (he says nicer things to other women). He'll hug me once in a while, but I hold his hand (he's not even physically affectionate, yet he expects to be touched all the time).\n\nThe thing that angers me the most is that he teases and jokes about me endlessly. He'll mock my weight, my butt, and make racial jokes aimed at me. He actually goes days where he teases me and won't say one nice thing. He treats me more like one of his guy friends than his actual girlfriend. I know he's attracted to me and cares about me, but I don't get what's on his mind.\n\nI've told him it hurts me, but he says he shows affection in different ways, and teasing is one of them, and he never changes. I know this sounds awful, but I get cheating thoughts all the time. I don't care about sex, but I don't feel appreciated or loved right now.\n\nI love him, but I don't know what to do.\n\nLLDR - My boyfriend has never called me beautiful, but he expects me to dress up for him.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    },
+    {
+      "index": 122,
+      "original": "اكتئاب العالمين كله عندي",
+      "translation": "The whole world's depression is upon me.",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Twitter_API",
+      "translation_failed": false
+    },
+    {
+      "index": 123,
+      "original": "انا محتاجة جدا انكلم مع حد ومش لاقيه اي حد يسمعني ويفهمني وتعبت من الوحدة ممكن الاقي حد اتكلم معاه ؟",
+      "translation": "I really need to talk to someone, I can't find anyone to listen to me and understand me, I'm tired of being alone, can I find someone to talk to?",
+      "label": "depression",
+      "dialect": "slang",
+      "source": "Nafsany",
+      "translation_failed": false
+    },
+    {
+      "index": 124,
+      "original": "بلدي [25M] صديقها [24m] هو الذهاب المكسرات فوق فيروس كوروناف بلدي فرنك بلجيكي وكنت معا 2 سنوات ونحن نعيش معا في ماساتشوستس.\n\nلقد اشترى حقيبة 50 رطل من الأرز والفاصوليا ولا تريد أي منا مغادرة المنزل أو أكثر من الناس. لن يذهب التسوق البقالة أو النظام من الأمازون طازجة لأن الغرباء يتعاملون مع الطعام. إنه يعطيني أيضا القرف للعمل في المكتب بدلا من جهاز التحكم عن بعد على الرغم من أنه ليس لدينا مكتب منزلي\n\nوقال إنه قلق بشأن أسرته تعاقد الفيروس، لكنهم يعيشون على بعد 30 دقيقة في الضواحي ونحن نعيش في المدينة. عادة ما نذهب إلى والديه كل يوم أحد، لكننا نستفخ لتجنب نشر الفيروس لهم لأنهم في الستينيات. هذا أفهم لكن التدابير الاحترازية التي يتناولها تبدو فاحشة بالنسبة لي.\n\nأنا من أجل الوصول إلى نقطة انعطاف الآن لأنني قمت بخطط مع صديق لتناول العشاء، وصديقي لا يريدني أن أخرج في الأماكن العامة (غرامة)، ولكنه يرفض أيضا الحصول على الضيوف في المنزل. فلسفتي هي أننا يجب أن نعيش في خوف ونحن لن نذهب إلى مكان عام مزدحم، فما هو الضرر؟ لا أريد أن أعيش حياة بمعزل بسبب قلقه.\n\n& amp؛ # X200B؛\n\nTL؛ DR لا أستطيع أن أعيش حياتي لأن صديقي بالذعر عن فيروس Coronav",
+      "translation": "My [25M] boyfriend [24m] is going nuts over the Coronavirus. We've been together for 2 years and live together in Massachusetts.\n\nHe bought a 50-pound bag of rice and beans and doesn't want either of us to leave the house or be around people. He won't go grocery shopping or order from Amazon Fresh because strangers handle the food. He's also giving me grief for working in the office instead of remotely, even though we don't have a home office set up.\n\nHe's worried about his family contracting the virus, but they live 30 minutes away in the suburbs, and we're in the city. We usually go to his parents' every Sunday, but we're refraining from doing so to avoid spreading the virus to them since they're in their sixties. I understand that, but the precautions he's taking seem excessive to me.\n\nI'm at my wit's end now because I made plans with a friend for dinner, and my boyfriend doesn't want me to go out in public (fine), but he also refuses to have guests over at our home. My philosophy is that we shouldn't live in fear, and we won't go to a crowded public place, so what's the harm? I don't want to live a secluded life because of his anxiety.\n\nTL;DR I can't live my life because my boyfriend is panicking about the Coronavirus.",
+      "label": "normal",
+      "dialect": "standard arabic",
+      "source": "reddit",
+      "translation_failed": false
+    }
+  ]
+}

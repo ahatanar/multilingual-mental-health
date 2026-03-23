@@ -15,6 +15,9 @@ import os
 import sys
 from datetime import datetime
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+
 from config import get_api_key
 from models import GeminiProvider, DeepSeekProvider, OpenAIProvider, ClaudeProvider
 from evaluation.prompts import CLASSIFICATION_PROMPT
@@ -26,8 +29,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-SAMPLED_DIR = os.path.join(os.path.dirname(__file__), "data", "sampled")
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results")
+SAMPLED_DIR = os.path.join(PROJECT_ROOT, "data", "phase1", "sampled")
+RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 
 PROVIDERS = {
     "gemini":   {"class": GeminiProvider,   "model": "gemini-2.0-flash"},

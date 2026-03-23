@@ -8,33 +8,38 @@ import json
 import os
 import sys
 
-BASE = r"D:\Downloads\multilingual-mental-health"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+PHASE1_RESULTS = os.path.join(PROJECT_ROOT, "experiments", "phase1", "results")
 
 def load_json(path):
-    with open(os.path.join(BASE, path), 'r', encoding='utf-8') as f:
+    with open(os.path.join(PROJECT_ROOT, path), 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def load_result(filename):
+    with open(os.path.join(PHASE1_RESULTS, filename), 'r', encoding='utf-8') as f:
         return json.load(f)
 
 # Load all V2 result files
-gemini = load_json("results/gemini_urdu_20260223_163756.json")
-openai_r = load_json("results/openai_urdu_20260223_163756.json")
-deepseek = load_json("results/deepseek_urdu_20260223_163900.json")
-claude = load_json("results/claude_urdu_20260223_165333.json")
+gemini = load_result("gemini_urdu_20260223_163756.json")
+openai_r = load_result("openai_urdu_20260223_163756.json")
+deepseek = load_result("deepseek_urdu_20260223_163900.json")
+claude = load_result("claude_urdu_20260223_165333.json")
 
 # Load sampled data for severity
-sampled = load_json("data/sampled/urdu.json")
+sampled = load_json("data/phase1/sampled/urdu.json")
 
 # Load V1 and V2 comparison
-v1_comp = load_json("results/comparison_20260223_162159.json")
-v2_comp = load_json("results/comparison_20260223_165333.json")
+v1_comp = load_result("comparison_20260223_162159.json")
+v2_comp = load_result("comparison_20260223_165333.json")
 
 # Load translation results
-gemini_eng = load_json("results/gemini_urdu_english_20260223_173431.json")
-openai_eng = load_json("results/openai_urdu_english_20260223_173448.json")
-deepseek_eng = load_json("results/deepseek_urdu_english_20260223_173536.json")
-claude_eng = load_json("results/claude_urdu_english_20260223_174949.json")
+gemini_eng = load_result("gemini_urdu_english_20260223_173431.json")
+openai_eng = load_result("openai_urdu_english_20260223_173448.json")
+deepseek_eng = load_result("deepseek_urdu_english_20260223_173536.json")
+claude_eng = load_result("claude_urdu_english_20260223_174949.json")
 
 # Load analysis
-analysis = load_json("results/urdu_analysis.json")
+analysis = load_result("urdu_analysis.json")
 
 models = {
     'gemini': gemini,

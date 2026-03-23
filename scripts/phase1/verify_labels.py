@@ -23,14 +23,17 @@ from typing import Dict, List, Optional
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, PROJECT_ROOT)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
 logger = logging.getLogger(__name__)
 
-SAMPLED_DIR = os.path.join(os.path.dirname(__file__), "data", "sampled")
-RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results")
+SAMPLED_DIR = os.path.join(PROJECT_ROOT, "data", "phase1", "sampled")
+RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 
 VERIFIER_MODEL = "SajjadIslam/multiMentalRoBERTA-5-class"
 DEPRESSION_THRESHOLD = 0.50
