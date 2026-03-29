@@ -29,7 +29,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 sys.path.insert(0, PROJECT_ROOT)
 
 from config import get_api_key, DEFAULT_MODELS
-from models import GeminiProvider, DeepSeekProvider, OpenAIProvider, ClaudeProvider
+from models import GeminiProvider, DeepSeekProvider, OpenAIProvider, ClaudeProvider, LMStudioProvider
 from evaluation.metrics import EvaluationMetrics
 from evaluation.prompts import CLASSIFICATION_PROMPT, PROMPTS
 from evaluation.parsers import PARSERS
@@ -49,6 +49,8 @@ MODELS = {
     "openai": {"class": OpenAIProvider, "name": "ChatGPT (GPT-4o-mini)", "default_model": "gpt-4o-mini"},
     "claude": {"class": ClaudeProvider, "name": "Claude Haiku 4.5", "default_model": "claude-haiku-4-5",
                "max_workers": 1, "delay": 1.5},  # 50 RPM limit
+    "lmstudio": {"class": LMStudioProvider, "name": "LM Studio (Local)", "default_model": "local-model",
+                 "max_workers": 1, "delay": 0},
 }
 
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")

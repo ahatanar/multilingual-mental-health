@@ -16,6 +16,10 @@ def get_api_key(provider: str) -> str:
         - DEEPSEEK_API_KEY
         - OPENAI_API_KEY
     """
+    # LM Studio runs locally — no real API key required
+    if provider.lower() == "lmstudio":
+        return "lm-studio"
+
     env_map = {
         "gemini": "GEMINI_API_KEY",
         "deepseek": "DEEPSEEK_API_KEY",
