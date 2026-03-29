@@ -6,48 +6,54 @@ from dotenv import load_dotenv
 # Load .env file from project root
 load_dotenv()
 
+# ── Local model keys ──────────────────────────────────────────────────────────
+# Models in this set use LM Studio and need no real API key.
+# If you add a new local model entry to runner.py MODELS, add its key here too.
+LOCAL_PROVIDERS = {"lmstudio", "llama", "qwen", "mistral"}
+
+# ── Online API key mapping ────────────────────────────────────────────────────
+# Maps runner.py MODELS keys -> environment variable names.
+# Add a new entry here when you add a new online model.
+ENV_MAP = {
+    "gemini":   "GEMINI_API_KEY",
+    "openai":   "OPENAI_API_KEY",
+    "deepseek": "DEEPSEEK_API_KEY",
+    "claude":   "CLAUDE_API_KEY",
+    "grok":     "GROK_API_KEY",
+    "cohere":   "COHERE_API_KEY",
+}
+
 
 def get_api_key(provider: str) -> str:
     """
-    Get the API key for a given provider from environment variables.
-    
-    Expected env vars:
-        - GEMINI_API_KEY
-        - DEEPSEEK_API_KEY
-        - OPENAI_API_KEY
+    Return the API key for a given provider.
+
+    Local providers (LM Studio) return a dummy key — no env var needed.
+    Online providers read from environment variables (loaded from .env).
     """
-    # LM Studio runs locally — no real API key required
-    if provider.lower() == "lmstudio":
+    if provider.lower() in LOCAL_PROVIDERS:
         return "lm-studio"
 
-    env_map = {
-        "gemini": "GEMINI_API_KEY",
-        "deepseek": "DEEPSEEK_API_KEY",
-        "openai": "OPENAI_API_KEY",
-        "claude": "CLAUDE_API_KEY",
-        "grok": "GROK_API_KEY",
-        "cohere": "COHERE_API_KEY",
-    }
-
-    env_var = env_map.get(provider.lower())
+    env_var = ENV_MAP.get(provider.lower())
     if not env_var:
         raise ValueError(
-            f"Unknown provider: {provider}. Must be one of: {list(env_map.keys())}"
+            f"Unknown provider: '{provider}'. "
+            f"Add it to ENV_MAP in config.py or LOCAL_PROVIDERS if it's a local model."
         )
 
     key = os.environ.get(env_var)
     if not key:
         raise EnvironmentError(
-            f"API key not found. Set the {env_var} environment variable.\n"
-            f"  export {env_var}=your-key-here"
+            f"API key not found. Set {env_var} in your .env file.\n"
+            f"  {env_var}=your-key-here"
         )
     return key
 
 
-# Default model names per provider
+# Default model names per provider (used outside of runner.py)
 DEFAULT_MODELS = {
-    "gemini": "gemini-2.0-flash",
+    "gemini":   "gemini-2.0-flash",
+    "openai":   "gpt-4o-mini",
     "deepseek": "deepseek-chat",
-    "openai": "gpt-4o-mini",
-    "claude": "claude-haiku-4-5-20241022",
+    "claude":   "claude-haiku-4-5-20241022",
 }
