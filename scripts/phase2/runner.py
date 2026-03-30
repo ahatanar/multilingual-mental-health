@@ -42,15 +42,42 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ── Registry ─────────────────────────────────────────────────────────────────
+# ── Model registry ───────────────────────────────────────────────────────────
+#
+# HOW TO ADD A MODEL — see CONTRIBUTING.md for full instructions.
+#
+# Online model (API-based):
+#   1. Create a provider class in models/ (copy an existing one as template).
+#   2. Add the provider's env-var key to config.py  (env_map dict).
+#   3. Add the API key to your .env file.
+#   4. Add an entry below:
+#        "mymodel": {"class": MyProvider, "name": "Display Name",
+#                    "default_model": "model-id-string"},
+#
+# Local model (LM Studio):
+#   1. Load the model in LM Studio and start the local server (default: localhost:1234).
+#   2. Copy the model identifier from LM Studio's "Local Server" tab.
+#   3. Add an entry below with that identifier as "default_model":
+#        "mylocal": {"class": LMStudioProvider, "name": "My Model (Local)",
+#                    "default_model": "exact-model-id-from-lmstudio",
+#                    "max_workers": 1, "delay": 0},
+#   4. Add "mylocal" to LOCAL_PROVIDERS in config.py so no API key is required.
 
 MODELS = {
-    "gemini":   {"class": GeminiProvider,   "name": "Gemini 2.0 Flash",       "default_model": "gemini-2.0-flash"},
-    "deepseek": {"class": DeepSeekProvider, "name": "DeepSeek Chat",           "default_model": "deepseek-chat"},
-    "openai":   {"class": OpenAIProvider,   "name": "ChatGPT (GPT-4o-mini)",   "default_model": "gpt-4o-mini"},
-    "claude":   {"class": ClaudeProvider,   "name": "Claude Haiku 4.5",        "default_model": "claude-haiku-4-5",
+    # ── Online models (require API keys in .env) ──────────────────────────────
+    "gemini":   {"class": GeminiProvider,   "name": "Gemini 2.0 Flash",      "default_model": "gemini-2.0-flash"},
+    "openai":   {"class": OpenAIProvider,   "name": "GPT-4o-mini",            "default_model": "gpt-4o-mini"},
+    "deepseek": {"class": DeepSeekProvider, "name": "DeepSeek Chat",          "default_model": "deepseek-chat"},
+    "claude":   {"class": ClaudeProvider,   "name": "Claude Haiku 4.5",       "default_model": "claude-haiku-4-5",
                  "max_workers": 1, "delay": 1.5},
-    "lmstudio": {"class": LMStudioProvider, "name": "LM Studio (Local)",         "default_model": "local-model",
+
+    # ── Local models (LM Studio — no API key needed) ──────────────────────────
+    # Update "default_model" to match the model ID shown in LM Studio's server tab.
+    "llama":    {"class": LMStudioProvider, "name": "Llama 3.2 (Local)",      "default_model": "llama-3.2-3b-instruct",
+                 "max_workers": 1, "delay": 0},
+    "qwen":     {"class": LMStudioProvider, "name": "Qwen 2.5 (Local)",       "default_model": "qwen2.5-7b-instruct",
+                 "max_workers": 1, "delay": 0},
+    "mistral":  {"class": LMStudioProvider, "name": "Mistral 7B (Local)",     "default_model": "mistral-7b-instruct-v0.3",
                  "max_workers": 1, "delay": 0},
 }
 
