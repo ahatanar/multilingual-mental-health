@@ -1,0 +1,5012 @@
+{
+  "metadata": {
+    "model": "deepseek/deepseek-r1-0528-qwen3-8b",
+    "language": "urdu",
+    "status": "partial",
+    "completed": 500,
+    "total": 5000,
+    "last_saved": "2026-03-30T06:10:07.824739"
+  },
+  "results": [
+    {
+      "index": 1,
+      "post_preview": "uske chorne bad kahi br khudkushi krne dil",
+      "post_full": "uske chorne bad kahi br khudkushi krne dil",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 2,
+      "post_preview": "ned remind your hert about its function by distracting it with bit crdio dawg otherwise its to much ...",
+      "post_full": "ned remind your hert about its function by distracting it with bit crdio dawg otherwise its to much dawg",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 3,
+      "post_preview": "thakawat mahinn nend ni aty",
+      "post_full": "thakawat mahinn nend ni aty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 4,
+      "post_preview": "kisne kaha ek trfa mohabbat drd dete mujhe hamesha khushi milti love praticksejpal praticksejpal pra...",
+      "post_full": "kisne kaha ek trfa mohabbat drd dete mujhe hamesha khushi milti love praticksejpal praticksejpal pratickfam pratick jab mila",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 5,
+      "post_preview": "pak fauj",
+      "post_full": "pak fauj",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 6,
+      "post_preview": "bhahi tum isi mahinn khush raho",
+      "post_full": "bhahi tum isi mahinn khush raho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 7,
+      "post_preview": "bhahi inke family to bhi nhi kia mahine to vo log vellon trah ahise dekh rahe bbprotein shake banaya...",
+      "post_full": "bhahi inke family to bhi nhi kia mahine to vo log vellon trah ahise dekh rahe bbprotein shake banaya vo yad hahilkn kisne bheja vo yad nhi faltu comprison krengeaur fir bolna nothing agahinst her",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 8,
+      "post_preview": "chor likh",
+      "post_full": "chor likh",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 9,
+      "post_preview": "bada dr lagra hahirat nend bhi yahi sab chalta",
+      "post_full": "bada dr lagra hahirat nend bhi yahi sab chalta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 10,
+      "post_preview": "another one",
+      "post_full": "another one",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 11,
+      "post_preview": "zindagi mujhe hrne majbor dia",
+      "post_full": "zindagi mujhe hrne majbor dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 12,
+      "post_preview": "bollywod movie bat rahy",
+      "post_full": "bollywod movie bat rahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 13,
+      "post_preview": "rahahi mere samvednaon bhri mahinn hrne hon",
+      "post_full": "rahahi mere samvednaon bhri mahinn hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 14,
+      "post_preview": "lagta isme khush rehna padega ausie a nation with approx cr population yet they produce finest sport...",
+      "post_full": "lagta isme khush rehna padega ausie a nation with approx cr population yet they produce finest sportspeople there something that neds be lerned from them",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 25
+    },
+    {
+      "index": 15,
+      "post_preview": "jazak allah ap bht swet itni pyri duaon liay shukria allah pak her lafz badlay ap dheron khushian at...",
+      "post_full": "jazak allah ap bht swet itni pyri duaon liay shukria allah pak her lafz badlay ap dheron khushian ata krein",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 16,
+      "post_preview": "filistinde yanan saldrnn bir ge erlilii yoktur olamazda din dil rk mezhebi olursa olsun sivil ld rem...",
+      "post_full": "filistinde yanan saldrnn bir ge erlilii yoktur olamazda din dil rk mezhebi olursa olsun sivil ld remezsin galci israhil ordusu orada dururken sivil ld rmek sadece sionizmin ekmahinne s rer",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 17,
+      "post_preview": "drd bhra dil shayri mahinn izhr nahy",
+      "post_full": "drd bhra dil shayri mahinn izhr nahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 18,
+      "post_preview": "siasat asal spaces mahinn chalti hr samajhta wo sab bra siasatdan usko pm hona chahye",
+      "post_full": "siasat asal spaces mahinn chalti hr samajhta wo sab bra siasatdan usko pm hona chahye",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 19,
+      "post_preview": "ahat si sunahi deti guzre lamhon yadon bojh sath lekr",
+      "post_full": "ahat si sunahi deti guzre lamhon yadon bojh sath lekr",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 20,
+      "post_preview": "nov indvaus match hoga tab hra dega ma tab khush jauga",
+      "post_full": "nov indvaus match hoga tab hra dega ma tab khush jauga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 21,
+      "post_preview": "think till now must have sen almost vms on this one scene shalki moment pura shalki fd kitna khush g...",
+      "post_full": "think till now must have sen almost vms on this one scene shalki moment pura shalki fd kitna khush gaya",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 22,
+      "post_preview": "jurmeishq mahinn uljhanon silsila dil drd chhupa hahy",
+      "post_full": "jurmeishq mahinn uljhanon silsila dil drd chhupa hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 23,
+      "post_preview": "yadon waja tawajo nahi pa",
+      "post_full": "yadon waja tawajo nahi pa",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 24,
+      "post_preview": "right but someone time tanhahi bht dangerous hotti jo khudkushi krwa dahity",
+      "post_full": "right but someone time tanhahi bht dangerous hotti jo khudkushi krwa dahity",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 25,
+      "post_preview": "sada vi hi hal hun elope dey vi halat nahy",
+      "post_full": "sada vi hi hal hun elope dey vi halat nahy",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 26,
+      "post_preview": "tumhen sabb khabr hahiy",
+      "post_full": "tumhen sabb khabr hahiy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 27,
+      "post_preview": "sab media walay hata aj hmray security adro b bol dia koi direct threat nahi aya humy wrna establish...",
+      "post_full": "sab media walay hata aj hmray security adro b bol dia koi direct threat nahi aya humy wrna establishment dimag khrab wo halat ma neutral rahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 26
+    },
+    {
+      "index": 28,
+      "post_preview": "purani chat dekh khud mrna chahta",
+      "post_full": "purani chat dekh khud mrna chahta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 29,
+      "post_preview": "utna pahisa hahi uske pas",
+      "post_full": "utna pahisa hahi uske pas",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 30,
+      "post_preview": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "post_full": "zindagi imtehan mujhe mayos dia hr pal naya azab",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 31,
+      "post_preview": "roz roz sedhe maut sunne acchi adat gayy",
+      "post_full": "roz roz sedhe maut sunne acchi adat gayy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 32,
+      "post_preview": "yr pora likh lo bacha nh yahan confuse dia",
+      "post_full": "yr pora likh lo bacha nh yahan confuse dia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 33,
+      "post_preview": "sahi kaha yaha soch halat khrab aur kitna mehga hoga",
+      "post_full": "sahi kaha yaha soch halat khrab aur kitna mehga hoga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 34,
+      "post_preview": "take cre khayal rakhna apna im gonna mis a lot im saying this seyoutomorrow god night love you",
+      "post_full": "take cre khayal rakhna apna im gonna mis a lot im saying this seyoutomorrow god night love you",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 35,
+      "post_preview": "exam date dijie wrna suicide krunga koi chra nehi mere pas trget exam group d sal gaya plz exam date...",
+      "post_full": "exam date dijie wrna suicide krunga koi chra nehi mere pas trget exam group d sal gaya plz exam date dijie papa tabiat thik nehy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 25
+    },
+    {
+      "index": 36,
+      "post_preview": "zindagi mahinn chhupi himmat kami dil hahi shayad tutne",
+      "post_full": "zindagi mahinn chhupi himmat kami dil hahi shayad tutne",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 37,
+      "post_preview": "ansu ankhon mahinn chhupa hahy",
+      "post_full": "ansu ankhon mahinn chhupa hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 38,
+      "post_preview": "thanxx ap khush rahahichoti pyr",
+      "post_full": "thanxx ap khush rahahichoti pyr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 39,
+      "post_preview": "yhi sab reason tum desh to apne ghr bhi pm nhi ban saktetumhe bas virodh hahi dikhta nahi hahiase lo...",
+      "post_full": "yhi sab reason tum desh to apne ghr bhi pm nhi ban saktetumhe bas virodh hahi dikhta nahi hahiase logo dor rehna behtr hahi wahi desh om krta htino comments onlybkte rho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 40,
+      "post_preview": "bhi hole khush who stopping u we celebrated pakistanis getting out here without entering knockouts",
+      "post_full": "bhi hole khush who stopping u we celebrated pakistanis getting out here without entering knockouts",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 41,
+      "post_preview": "hr kona hr pal tanhahi ehsas aur himmat kafi kamzor",
+      "post_full": "hr kona hr pal tanhahi ehsas aur himmat kafi kamzor",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 42,
+      "post_preview": "w salam khush raho",
+      "post_full": "w salam khush raho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 43,
+      "post_preview": "godnes jitna tum nay tumhray bap nay mulk nuqsan pohnchaya utna kisi dushman nay nahi pohnchayakahis...",
+      "post_full": "godnes jitna tum nay tumhray bap nay mulk nuqsan pohnchaya utna kisi dushman nay nahi pohnchayakahisay lahitiii krnanijhotimakkran",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 44,
+      "post_preview": "it will create jobs in future electric chrging points will be neded though personally would fel happ...",
+      "post_full": "it will create jobs in future electric chrging points will be neded though personally would fel happy own cr with fre membership mahindra club that provides all such facilities under one rof",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 45,
+      "post_preview": "insan kitna ajeb lahasil bechahi rehta hasil jaye toh beprwah",
+      "post_full": "insan kitna ajeb lahasil bechahi rehta hasil jaye toh beprwah",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 46,
+      "post_preview": "sust hokr apne goals achieve krne mahinn der raha hon",
+      "post_full": "sust hokr apne goals achieve krne mahinn der raha hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 47,
+      "post_preview": "mera bill kabhi se upr nahi aya jabse factory strt hue tpdl settelment lie bolrahe sir bahut jyada d...",
+      "post_full": "mera bill kabhi se upr nahi aya jabse factory strt hue tpdl settelment lie bolrahe sir bahut jyada depresion hon mujhe enforcement walo dwra hrrase kia jraha sir suicide krlunga ap mere last hope",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 34
+    },
+    {
+      "index": 48,
+      "post_preview": "mrket keun gir hahi bhahi kahi ahik jagah khush rehne do yr bhenchod hahi yr",
+      "post_full": "mrket keun gir hahi bhahi kahi ahik jagah khush rehne do yr bhenchod hahi yr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 49,
+      "post_preview": "zindagi gham mujhe us bholne nahi pa",
+      "post_full": "zindagi gham mujhe us bholne nahi pa",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 50,
+      "post_preview": "samj nahi rha kese drd kam kru mr jau",
+      "post_full": "samj nahi rha kese drd kam kru mr jau",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 51,
+      "post_preview": "khud juda raste anjan zindagi adhori kahany",
+      "post_full": "khud juda raste anjan zindagi adhori kahany",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 52,
+      "post_preview": "sir plz pervahize elahi cm nani bnayen hamri prty bohut nuqsan ga",
+      "post_full": "sir plz pervahize elahi cm nani bnayen hamri prty bohut nuqsan ga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 53,
+      "post_preview": "uske badakhlaqi dekh mera suicide krne dil krta",
+      "post_full": "uske badakhlaqi dekh mera suicide krne dil krta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 54,
+      "post_preview": "n sip olmaynca insan koup vrmak istedii yere adm bile atamaz zir bunda bile all hn senin in murad et...",
+      "post_full": "n sip olmaynca insan koup vrmak istedii yere adm bile atamaz zir bunda bile all hn senin in murad ettii bir yr vrdr",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 55,
+      "post_preview": "nhi nhi aur nahi reh sakti is dunia khudkushi krne ja",
+      "post_full": "nhi nhi aur nahi reh sakti is dunia khudkushi krne ja",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 56,
+      "post_preview": "congres abhian khush rahen sabhi vrg madphyam vrg chhote dukandr majdor kisan mehangahi bhi rahat mi...",
+      "post_full": "congres abhian khush rahen sabhi vrg madphyam vrg chhote dukandr majdor kisan mehangahi bhi rahat milegi hmri congres prty satta rahegy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 57,
+      "post_preview": "jab wo gayi khana khane dil nahi krta",
+      "post_full": "jab wo gayi khana khane dil nahi krta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 58,
+      "post_preview": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this ...",
+      "post_full": "true nawaz shrif the worst thing that happened pak but this nobody was gifted ppl by fauj then this scoundrel corrupted courts serve him",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 59,
+      "post_preview": "mr beast allah wo banda jo ajse sal bad africa mahinn sehatmand tycons nikalega mr beast musalman nh...",
+      "post_full": "mr beast allah wo banda jo ajse sal bad africa mahinn sehatmand tycons nikalega mr beast musalman nhe lekin filhal kam musalmano wale raha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 60,
+      "post_preview": "apki chhathi mahinya sri dukh drd kam sri khushian de",
+      "post_full": "apki chhathi mahinya sri dukh drd kam sri khushian de",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 61,
+      "post_preview": "ive tried so hrd not say anything response this twet lekin bechayni bechayni sahab",
+      "post_full": "ive tried so hrd not say anything response this twet lekin bechayni bechayni sahab",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 62,
+      "post_preview": "but krao yad bholne koshish rha m",
+      "post_full": "but krao yad bholne koshish rha m",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 63,
+      "post_preview": "hawa rukh jalta chiragerzo takdilebrbad mahinn bhi kisi yad baqi andheri rat yeh mojzamiracle dikhae...",
+      "post_full": "hawa rukh jalta chiragerzo takdilebrbad mahinn bhi kisi yad baqi andheri rat yeh mojzamiracle dikhaenge humchirag agr mila apna dil jalaenge",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 64,
+      "post_preview": "isi shabaz jesa banda jesay ne siasat nahi chori bhi chorus allah pakistan mir sadiq mir jaffr azad ...",
+      "post_full": "isi shabaz jesa banda jesay ne siasat nahi chori bhi chorus allah pakistan mir sadiq mir jaffr azad krwaye amen please say amen with hert agre so allah gawah rahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 65,
+      "post_preview": "drd bhra dil mera jet rah mahinn kho hon",
+      "post_full": "drd bhra dil mera jet rah mahinn kho hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 66,
+      "post_preview": "mere adhi jawani prhne mahin khatam jayegy",
+      "post_full": "mere adhi jawani prhne mahin khatam jayegy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 67,
+      "post_preview": "ache logon allah bahut imtehan leta pr sath nhi chhodata bure logon allah sab deta magr sath nhi det...",
+      "post_full": "ache logon allah bahut imtehan leta pr sath nhi chhodata bure logon allah sab deta magr sath nhi deta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 68,
+      "post_preview": "ben ger ekten akademie gitmek istiorum fransz dil bilimci bile olabilirim yeter hazirana kadr lmemey...",
+      "post_full": "ben ger ekten akademie gitmek istiorum fransz dil bilimci bile olabilirim yeter hazirana kadr lmemeyi braym",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 69,
+      "post_preview": "zakhmon silsila chalta rehta dil mahinn drd",
+      "post_full": "zakhmon silsila chalta rehta dil mahinn drd",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 70,
+      "post_preview": "sray lefafay r corrupt log ikathe gye sirf ahik shahir peche shahir shahir ha ghtya safi sahb chahe ...",
+      "post_full": "sray lefafay r corrupt log ikathe gye sirf ahik shahir peche shahir shahir ha ghtya safi sahb chahe jitne lefafy la lo bhi ni hone wla",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 26
+    },
+    {
+      "index": 71,
+      "post_preview": "khoti bche establishment sath us wqt tate chos rahe ab wo chup to kuuto trha bhonk rahe kisi pti waz...",
+      "post_full": "khoti bche establishment sath us wqt tate chos rahe ab wo chup to kuuto trha bhonk rahe kisi pti wazir byan jisme btaya establishment govt khilaf",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 26
+    },
+    {
+      "index": 72,
+      "post_preview": "sab sath raha",
+      "post_full": "sab sath raha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 73,
+      "post_preview": "nahin ahisa hona chahie k sray contents public dein sath mahinn isi apni investigation viral de taka...",
+      "post_full": "nahin ahisa hona chahie k sray contents public dein sath mahinn isi apni investigation viral de takay beruni quwwatein naya plan bana lein pakistan chat masala makhloq chezay lagatay rahahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 74,
+      "post_preview": "cler krdia wrna jan lene m waqt nhi lgaty",
+      "post_full": "cler krdia wrna jan lene m waqt nhi lgaty",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 75,
+      "post_preview": "hele r bunu yapan mantkl bir insan krma cikty",
+      "post_full": "hele r bunu yapan mantkl bir insan krma cikty",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 76,
+      "post_preview": "zindagi tez daur mahinn apna khayal rakhna mere mushkil ban hahy",
+      "post_full": "zindagi tez daur mahinn apna khayal rakhna mere mushkil ban hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 77,
+      "post_preview": "zakham btay dikhay ni sakty",
+      "post_full": "zakham btay dikhay ni sakty",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 78,
+      "post_preview": "son amca muhafazakr rt dedikleri yani rt lerin zg ve eit yamasna y zyllrdr asl engel olanlr asl m ca...",
+      "post_full": "son amca muhafazakr rt dedikleri yani rt lerin zg ve eit yamasna y zyllrdr asl engel olanlr asl m cadele edilemsi gereken insan tipi bunlrcahil ve bilmedii fakat inanmak zorunda kald dinin lesi olmulr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 34
+    },
+    {
+      "index": 79,
+      "post_preview": "thanks lot hasham khush rahoso nice u",
+      "post_full": "thanks lot hasham khush rahoso nice u",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 80,
+      "post_preview": "subject bhi mehsos nahi sakta s dead inside",
+      "post_full": "subject bhi mehsos nahi sakta s dead inside",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 81,
+      "post_preview": "mere account mahinn sabse balance hone bavjud lagatr mere pas debit note aya mujhe penalty gahi jise...",
+      "post_full": "mere account mahinn sabse balance hone bavjud lagatr mere pas debit note aya mujhe penalty gahi jise meri operation per bahut bada dhabba laga mujhe pahisa mujhse penalty rop mahinn dia hahi account statement dekho mujhe vah pahisa wapas kro",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 40
+    },
+    {
+      "index": 82,
+      "post_preview": "spaces pr whatsapp jesa tempo brhany option hona chahyekuch loag bht slow sped mahinn bolty hahi nen...",
+      "post_full": "spaces pr whatsapp jesa tempo brhany option hona chahyekuch loag bht slow sped mahinn bolty hahi nend ajaty",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 83,
+      "post_preview": "kam jane himmat nahi milti keunki zehan mahinn bohot zor taklef",
+      "post_full": "kam jane himmat nahi milti keunki zehan mahinn bohot zor taklef",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 84,
+      "post_preview": "badi mahromi mahin avahilable nahy",
+      "post_full": "badi mahromi mahin avahilable nahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 85,
+      "post_preview": "zindagi safr lekin sath chalta ye hamesha drd",
+      "post_full": "zindagi safr lekin sath chalta ye hamesha drd",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 86,
+      "post_preview": "ankhon mahinn ansu chhupay betha hon lekin dil ronay rok nahi sakta",
+      "post_full": "ankhon mahinn ansu chhupay betha hon lekin dil ronay rok nahi sakta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 87,
+      "post_preview": "us mujhe kahi nahi chora even kam bhi nahy",
+      "post_full": "us mujhe kahi nahi chora even kam bhi nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 88,
+      "post_preview": "ajeb si bechayni kisi khone ahsas kitni sre drd feling bullywod plotted kill sr",
+      "post_full": "ajeb si bechayni kisi khone ahsas kitni sre drd feling bullywod plotted kill sr",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 89,
+      "post_preview": "sapno jahan bikhr preshanion saya hahi hr traf",
+      "post_full": "sapno jahan bikhr preshanion saya hahi hr traf",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 90,
+      "post_preview": "bekr zindgi koi fayeda nahy",
+      "post_full": "bekr zindgi koi fayeda nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 91,
+      "post_preview": "exam viva sa phlay prhahi sa mun mor lana wahyat khayalat ana zrory",
+      "post_full": "exam viva sa phlay prhahi sa mun mor lana wahyat khayalat ana zrory",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 92,
+      "post_preview": "bat rahay i can make it for u any de",
+      "post_full": "bat rahay i can make it for u any de",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 93,
+      "post_preview": "khan toe zor laga lac bnday ay hukomat nae bachni thats it",
+      "post_full": "khan toe zor laga lac bnday ay hukomat nae bachni thats it",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 94,
+      "post_preview": "hr subah meri zindagi mahinn aur drd ehsas hahy",
+      "post_full": "hr subah meri zindagi mahinn aur drd ehsas hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 95,
+      "post_preview": "uske jane mahromi meri zindagi mahinn drd bhr dia",
+      "post_full": "uske jane mahromi meri zindagi mahinn drd bhr dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 96,
+      "post_preview": "sust hokr bed leta hon",
+      "post_full": "sust hokr bed leta hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 97,
+      "post_preview": "bnda frigh uper portion ka khaly",
+      "post_full": "bnda frigh uper portion ka khaly",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 98,
+      "post_preview": "mahin bas apni lyf khushian gin hu jise muje aj match dukh kam indvsaus wc",
+      "post_full": "mahin bas apni lyf khushian gin hu jise muje aj match dukh kam indvsaus wc",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 99,
+      "post_preview": "dal badlene admy",
+      "post_full": "dal badlene admy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 100,
+      "post_preview": "yaha tension nend nahi a aur bande dm mahinn nice dp rahe",
+      "post_full": "yaha tension nend nahi a aur bande dm mahinn nice dp rahe",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 101,
+      "post_preview": "la trasmisi n empieza las pero la hora estipulada pra el prtido es las",
+      "post_full": "la trasmisi n empieza las pero la hora estipulada pra el prtido es las",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 102,
+      "post_preview": "tum krlo hindu muslim usi muslim india hr banda respect krta usi muslim rotey dekh adha india roya u...",
+      "post_full": "tum krlo hindu muslim usi muslim india hr banda respect krta usi muslim rotey dekh adha india roya usi muslim kay wicket leney india khush tu ag lagao hindu muslim",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 103,
+      "post_preview": "but usko khelna nahi keh sakte be got out way to erly hota abhi halat aur hotey",
+      "post_full": "but usko khelna nahi keh sakte be got out way to erly hota abhi halat aur hotey",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 104,
+      "post_preview": "fodie gedankenwelt nasemmanzor ganty pehly fodie bhi asy khushian",
+      "post_full": "fodie gedankenwelt nasemmanzor ganty pehly fodie bhi asy khushian",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 105,
+      "post_preview": "mazedr dia aj pak bhrat wc t uae match twets jri crores people watch maha match betwen means ind pak...",
+      "post_full": "mazedr dia aj pak bhrat wc t uae match twets jri crores people watch maha match betwen means ind pak chalte raho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 22
+    },
+    {
+      "index": 106,
+      "post_preview": "kon si rajneti krke dusre kursi bahitha bhagwan use khush nahi dekhna chahta kohli woh sab raha jo v...",
+      "post_full": "kon si rajneti krke dusre kursi bahitha bhagwan use khush nahi dekhna chahta kohli woh sab raha jo vadapav khaye bina nahi milna chahie come me after doing honest kundali analysis",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 31
+    },
+    {
+      "index": 107,
+      "post_preview": "my sister literally on verge a panic attack because these mulki halat can everything be over already...",
+      "post_full": "my sister literally on verge a panic attack because these mulki halat can everything be over already im tired now",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 108,
+      "post_preview": "otobusun kapisini acik tutun ugurcan bey her an gitmek isteyebilir",
+      "post_full": "otobusun kapisini acik tutun ugurcan bey her an gitmek isteyebilir",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 109,
+      "post_preview": "drd apna rishta salon purana",
+      "post_full": "drd apna rishta salon purana",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 110,
+      "post_preview": "umedon jahan mahinn hra hon",
+      "post_full": "umedon jahan mahinn hra hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 111,
+      "post_preview": "kun khush",
+      "post_full": "kun khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 112,
+      "post_preview": "record fuel price hike due spike oil prices during last couple weks finance minister times india",
+      "post_full": "record fuel price hike due spike oil prices during last couple weks finance minister times india",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 113,
+      "post_preview": "khobsurat lrki dil toray tabhi drd kam hoga keunki different drd hoga",
+      "post_full": "khobsurat lrki dil toray tabhi drd kam hoga keunki different drd hoga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 114,
+      "post_preview": "kahu dil hal hra hon",
+      "post_full": "kahu dil hal hra hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 115,
+      "post_preview": "behtri bahut khushi bat bahut achha laga dil khush gaya dosto ye bahut achha cherforgreatnes myindus...",
+      "post_full": "behtri bahut khushi bat bahut achha laga dil khush gaya dosto ye bahut achha cherforgreatnes myindusindbank",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 116,
+      "post_preview": "yhc bts tum chale jao zra sambhal jaye dhadkane dil set paye sas paye",
+      "post_full": "yhc bts tum chale jao zra sambhal jaye dhadkane dil set paye sas paye",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 117,
+      "post_preview": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khus...",
+      "post_full": "my babies lots nd lots love happines succes for cuties mata rani blesed nd family always hmesha khush raho pyre khob sra pyr kro khob sri masti kro shadi super super super son evil eyes off tejran",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 118,
+      "post_preview": "rahahi mere samne bandh gayy",
+      "post_full": "rahahi mere samne bandh gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 119,
+      "post_preview": "khushian hasi ajati sabd bolte",
+      "post_full": "khushian hasi ajati sabd bolte",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 120,
+      "post_preview": "arse bad hanse bhi apne hal parkhawab sheshe the pighal gayezindagi teri anch zyada khushk patto tar...",
+      "post_full": "arse bad hanse bhi apne hal parkhawab sheshe the pighal gayezindagi teri anch zyada khushk patto tarah bikhar gaye gali kuucho mahinnhawa dosti koi so anjam hona",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 121,
+      "post_preview": "sheher sannate mahinn meri tanhahi ek alag sa mel",
+      "post_full": "sheher sannate mahinn meri tanhahi ek alag sa mel",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 122,
+      "post_preview": "bebasi tw tumhre yaqen imtehan",
+      "post_full": "bebasi tw tumhre yaqen imtehan",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 123,
+      "post_preview": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "post_full": "dil kay rastay kesii thokr mene khahii totay khwab sray eik mayosii hahii chahiy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 124,
+      "post_preview": "kru kru alag level tension a hahy",
+      "post_full": "kru kru alag level tension a hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 125,
+      "post_preview": "ankho mahinn chhupi khwabon tasver dil mahinn basi keun wo adhory",
+      "post_full": "ankho mahinn chhupi khwabon tasver dil mahinn basi keun wo adhory",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 126,
+      "post_preview": "hamri majbori kay tujh kahisay bandr kay hath nryal matlab social media lag haytabiat say frigh tu s...",
+      "post_full": "hamri majbori kay tujh kahisay bandr kay hath nryal matlab social media lag haytabiat say frigh tu solangisindh taba krnay walay zrdrdi kay ghulam",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 127,
+      "post_preview": "zindagi mujhe naya sabak sikha dia hr drd",
+      "post_full": "zindagi mujhe naya sabak sikha dia hr drd",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 128,
+      "post_preview": "dastak deti tanhayi hra hon",
+      "post_full": "dastak deti tanhayi hra hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 129,
+      "post_preview": "gurmetramrahim dhan dhan satguru tera asra gpita g mehr gkhushian bkshna ghosp da kmm bhut chlana gp...",
+      "post_full": "gurmetramrahim dhan dhan satguru tera asra gpita g mehr gkhushian bkshna ghosp da kmm bhut chlana gpapa g nu apne nl rkhna g payment visa aje gbhr jayie g tandrusti bkshna g",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 130,
+      "post_preview": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pr...",
+      "post_full": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pradrshan achha tha match player tournament v mila use khush v nazr a rhe the",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 131,
+      "post_preview": "is time ahise tts mat kro bhahi jab sachme bholne koshish rahe hum sab",
+      "post_full": "is time ahise tts mat kro bhahi jab sachme bholne koshish rahe hum sab",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 132,
+      "post_preview": "asman aj keun itna gehra lagta jahise mere dil krvan udas",
+      "post_full": "asman aj keun itna gehra lagta jahise mere dil krvan udas",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 133,
+      "post_preview": "ziada thakwat bad nend bi a rhy",
+      "post_full": "ziada thakwat bad nend bi a rhy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 134,
+      "post_preview": "zindagi hr pal lagta sunsan jahise rang na isme",
+      "post_full": "zindagi hr pal lagta sunsan jahise rang na isme",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 135,
+      "post_preview": "unka munafa sirf pahisa but sach kahe apse sirf apke account se contact badhane zyada bhalahi hahy",
+      "post_full": "unka munafa sirf pahisa but sach kahe apse sirf apke account se contact badhane zyada bhalahi hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 136,
+      "post_preview": "drd bhri raton mahinn himmat shama bujh gayy",
+      "post_full": "drd bhri raton mahinn himmat shama bujh gayy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 137,
+      "post_preview": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "post_full": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 138,
+      "post_preview": "wade tote khwab chaknachor bas soch zehan mahinn rengti mahinn apna mustaqbil saja nahi sakta",
+      "post_full": "wade tote khwab chaknachor bas soch zehan mahinn rengti mahinn apna mustaqbil saja nahi sakta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 139,
+      "post_preview": "khush rahao g",
+      "post_full": "khush rahao g",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 140,
+      "post_preview": "khudkushi kam khud say bahizri dusray apnay oper havie hahy",
+      "post_full": "khudkushi kam khud say bahizri dusray apnay oper havie hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 141,
+      "post_preview": "indian team australia cricket world cup keoun hr keounki ki physical trahining kreb kreb same hogi l...",
+      "post_full": "indian team australia cricket world cup keoun hr keounki ki physical trahining kreb kreb same hogi lekin mental trahining indian players nahin di jatiindian players mungeri lal hasen sapno mahinn jet hasil krke khush jate",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 142,
+      "post_preview": "woman gusa gi neighbors khushi khush hona chyia is ma gusa ks bat pa",
+      "post_full": "woman gusa gi neighbors khushi khush hona chyia is ma gusa ks bat pa",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 143,
+      "post_preview": "wo twet dekhte ap log pagalo trah hr aurat ka mzak bnane lge shram nhi ati apko ma bap achi prvrish ...",
+      "post_full": "wo twet dekhte ap log pagalo trah hr aurat ka mzak bnane lge shram nhi ati apko ma bap achi prvrish dena bol jaye insan preshan k dosro betio kechad uchalne lgta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 144,
+      "post_preview": "belki senin nietin saf temiz olabilir allah ile senin randa l kin peinden gittiin zerzevat sizin gib...",
+      "post_full": "belki senin nietin saf temiz olabilir allah ile senin randa l kin peinden gittiin zerzevat sizin gibi gen leri kullanyorve bu ii din siaseti ve madur edebiat yaprak allah in her duaya amin diorum rabbim nietlere g re tecelli edendir",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 40
+    },
+    {
+      "index": 145,
+      "post_preview": "ankhon mahinn ansu keun mahinn hrne hon",
+      "post_full": "ankhon mahinn ansu keun mahinn hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 146,
+      "post_preview": "aj sham mei bohat udas phir mene chahiii bnahii udas apna mehman bnaya",
+      "post_full": "aj sham mei bohat udas phir mene chahiii bnahii udas apna mehman bnaya",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 147,
+      "post_preview": "bas hi jiski wajah hindu mre jate hahi seculr jammat chode teri behan beti sath nahin jo logon sath ...",
+      "post_full": "bas hi jiski wajah hindu mre jate hahi seculr jammat chode teri behan beti sath nahin jo logon sath bhagwan tujhe bahut jaldi accha sabak sekhaega bhi bahut tadpega inhi zulm",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 31
+    },
+    {
+      "index": 148,
+      "post_preview": "asignments gpa but with god company friends teachers sab imtehan pas jaty but once step out this phi...",
+      "post_full": "asignments gpa but with god company friends teachers sab imtehan pas jaty but once step out this phir zindagi imtehan lena shuru deti lrkon lye crer banany presure lrkion lye shadi k ghr basany presure",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 149,
+      "post_preview": "us mujhe ahisa toda ab mrne dil krta kam jane nahy",
+      "post_full": "us mujhe ahisa toda ab mrne dil krta kam jane nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 150,
+      "post_preview": "apne ap hr chuka hon",
+      "post_full": "apne ap hr chuka hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 151,
+      "post_preview": "arre insab block do have blocked all toxic ppl dikh te kuch log nhi sudhar sakte unko to sudharo dor...",
+      "post_full": "arre insab block do have blocked all toxic ppl dikh te kuch log nhi sudhar sakte unko to sudharo dor raho bs inko samjha kuch nhi milta tried lot then its like laut budhu ghar aye",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 36
+    },
+    {
+      "index": 152,
+      "post_preview": "apke qahid thehre ap hamid mer taqreban aek bus musafir jiski mazil bilawal house phir jati umrah ha...",
+      "post_full": "apke qahid thehre ap hamid mer taqreban aek bus musafir jiski mazil bilawal house phir jati umrah haeq jurat hae ni bani gala kr interview kro zahir hae sach ata bola jae ir tum jese log tu angrezo ghulam ho nhy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 41
+    },
+    {
+      "index": 153,
+      "post_preview": "filhal prhahi dheyan do",
+      "post_full": "filhal prhahi dheyan do",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 154,
+      "post_preview": "khud juda hon jurm mubtala",
+      "post_full": "khud juda hon jurm mubtala",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 155,
+      "post_preview": "dr lagda be prwahi da",
+      "post_full": "dr lagda be prwahi da",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 156,
+      "post_preview": "right what kind game inded because sure dont like it ofcourse mahinn one she wants be on her side gh...",
+      "post_full": "right what kind game inded because sure dont like it ofcourse mahinn one she wants be on her side gh gonna write doubts into story",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 25
+    },
+    {
+      "index": 157,
+      "post_preview": "roda dakwah z win bukan sekedr nama dua roda menangkan rabb semesta tak perlu kau tanya ttg pahala t...",
+      "post_full": "roda dakwah z win bukan sekedr nama dua roda menangkan rabb semesta tak perlu kau tanya ttg pahala tak perlu kau kira batas masa pra penderma ikhlas menderma jaminan bahagia nikmati surganya ket motor dakwah dri tuk dahi di pak pak bhrat",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 42
+    },
+    {
+      "index": 158,
+      "post_preview": "chidchida pan kam kahise kren",
+      "post_full": "chidchida pan kam kahise kren",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 159,
+      "post_preview": "youtuber olmas neden sorun ayrca br nsann ini yorumlamak kmsenn hadine degl bz sizi alamadk ama siz ...",
+      "post_full": "youtuber olmas neden sorun ayrca br nsann ini yorumlamak kmsenn hadine degl bz sizi alamadk ama siz hc tanmadgnz br nsan adna cieri be pra etmez dyorsunuz dieceklerm bu kadr sayglr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 31
+    },
+    {
+      "index": 160,
+      "post_preview": "lafz bayan krne pehle dil tot hahi mera",
+      "post_full": "lafz bayan krne pehle dil tot hahi mera",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 161,
+      "post_preview": "mahilayen khush rajasthan mahinn keunki congres srkr ki yah saste dam cylinder",
+      "post_full": "mahilayen khush rajasthan mahinn keunki congres srkr ki yah saste dam cylinder",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 162,
+      "post_preview": "beqrri meri zindagi mahinn udas mahaul bana dia",
+      "post_full": "beqrri meri zindagi mahinn udas mahaul bana dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 163,
+      "post_preview": "zindagi safr mujhe tohda ab himmat thak gayy",
+      "post_full": "zindagi safr mujhe tohda ab himmat thak gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 164,
+      "post_preview": "tsl sath",
+      "post_full": "tsl sath",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 165,
+      "post_preview": "que as sea mi pahisa querido lindo mrtes",
+      "post_full": "que as sea mi pahisa querido lindo mrtes",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 166,
+      "post_preview": "zindagi safr mahinn asani dukhi jata hon manzilein dor reh jaty",
+      "post_full": "zindagi safr mahinn asani dukhi jata hon manzilein dor reh jaty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 167,
+      "post_preview": "zindagi sre lamhe jurm mahinn mubtala dil tot hahy",
+      "post_full": "zindagi sre lamhe jurm mahinn mubtala dil tot hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 168,
+      "post_preview": "hand writing achi ni ghuzra ho",
+      "post_full": "hand writing achi ni ghuzra ho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 169,
+      "post_preview": "dil tot hahi awaz nahi aty",
+      "post_full": "dil tot hahi awaz nahi aty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 170,
+      "post_preview": "brought capitalism that has nothing do with anything",
+      "post_full": "brought capitalism that has nothing do with anything",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 171,
+      "post_preview": "pahisa pahisa",
+      "post_full": "pahisa pahisa",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 172,
+      "post_preview": "ahisa rahem is lamhe mahinn ye lamha kahan mera hahi samne isey chho lon zra mr jaon je lon zra khus...",
+      "post_full": "ahisa rahem is lamhe mahinn ye lamha kahan mera hahi samne isey chho lon zra mr jaon je lon zra khushian chom lon ya ro lo n zra mr jao n ya je lon zra",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 173,
+      "post_preview": "bechahi ye nazr nahi aya hahi desperation brh hahi mery",
+      "post_full": "bechahi ye nazr nahi aya hahi desperation brh hahi mery",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 174,
+      "post_preview": "ankhahi bhigi hahi dil ro hahy",
+      "post_full": "ankhahi bhigi hahi dil ro hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 175,
+      "post_preview": "sikhayega hindu dhram kea hota tolerate krne wale din gaye",
+      "post_full": "sikhayega hindu dhram kea hota tolerate krne wale din gaye",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 176,
+      "post_preview": "yahi ap mazil",
+      "post_full": "yahi ap mazil",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 177,
+      "post_preview": "mahin apna khud khayal nahi rakh sakta bimri meri hasraton kuchal dia",
+      "post_full": "mahin apna khud khayal nahi rakh sakta bimri meri hasraton kuchal dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 178,
+      "post_preview": "vyapri gobrmint kea umed sakte abhi funeral pahise lekr munafa dikhayega ahisa ghatia nech log sirf ...",
+      "post_full": "vyapri gobrmint kea umed sakte abhi funeral pahise lekr munafa dikhayega ahisa ghatia nech log sirf sirf desh hi sakte bbmkj",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 179,
+      "post_preview": "eik zrd banana mahinn dant mr mujhe khudkushi ehsas",
+      "post_full": "eik zrd banana mahinn dant mr mujhe khudkushi ehsas",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 180,
+      "post_preview": "medam mujhe bata do plz krachi men hbl atm nahi rahe out distt to pahise kahan milrnge hbl atm adahi...",
+      "post_full": "medam mujhe bata do plz krachi men hbl atm nahi rahe out distt to pahise kahan milrnge hbl atm adahigi kab shuro rahi plz bechahie khatam kren plz",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 28
+    },
+    {
+      "index": 181,
+      "post_preview": "zindagi imtehan aur sra imtehan out syllabus a hahy",
+      "post_full": "zindagi imtehan aur sra imtehan out syllabus a hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 182,
+      "post_preview": "agr jab team jet hahi tab khush hote or apni team support krte jab humri team hr to bad language use...",
+      "post_full": "agr jab team jet hahi tab khush hote or apni team support krte jab humri team hr to bad language use krte sab log mujhe to bhut proud apni team",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 183,
+      "post_preview": "mere jena koi fahida nahy",
+      "post_full": "mere jena koi fahida nahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 184,
+      "post_preview": "hate when this happens bro everytime get other four letters jinke sath have option put multiple lett...",
+      "post_full": "hate when this happens bro everytime get other four letters jinke sath have option put multiple letters as fifth one wordle",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 185,
+      "post_preview": "waqt acha jb ek dusre katti krty or mna lety",
+      "post_full": "waqt acha jb ek dusre katti krty or mna lety",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 186,
+      "post_preview": "hr din naya tofan lata",
+      "post_full": "hr din naya tofan lata",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 187,
+      "post_preview": "rone purani bimri mujhe",
+      "post_full": "rone purani bimri mujhe",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 188,
+      "post_preview": "they re happy with these lil antics choti khushian kisi kuch nahin hona lekin bhakton samney kia bac...",
+      "post_full": "they re happy with these lil antics choti khushian kisi kuch nahin hona lekin bhakton samney kia back hi mundane bhikhri life",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 22
+    },
+    {
+      "index": 189,
+      "post_preview": "like when m close them something happening anything that not right not just pasing away like events ...",
+      "post_full": "like when m close them something happening anything that not right not just pasing away like events can fel that something bad happening palpitation bechahi shuru hou hahi then know somewhere something not right",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 34
+    },
+    {
+      "index": 190,
+      "post_preview": "mohabbat bre mahinn puche me",
+      "post_full": "mohabbat bre mahinn puche me",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 191,
+      "post_preview": "thnk u bhahi bolne lie ab apne ht meh bin bulaye ghr mehman acche nhi lgte aj aplogo moment mila phi...",
+      "post_full": "thnk u bhahi bolne lie ab apne ht meh bin bulaye ghr mehman acche nhi lgte aj aplogo moment mila phir v khushian manane wajah humre ht trget rhe",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 29
+    },
+    {
+      "index": 192,
+      "post_preview": "mujhe bohot zehani takan islie kam jane himmat nahi milty",
+      "post_full": "mujhe bohot zehani takan islie kam jane himmat nahi milty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 193,
+      "post_preview": "apne iradon mahinn nakam hokr tut hon",
+      "post_full": "apne iradon mahinn nakam hokr tut hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 194,
+      "post_preview": "siasat nutral thik magr mulk salmiat mamla maybe",
+      "post_full": "siasat nutral thik magr mulk salmiat mamla maybe",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 195,
+      "post_preview": "dukh bhri rat ghr bahr nikalne dil nahi krta",
+      "post_full": "dukh bhri rat ghr bahr nikalne dil nahi krta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 196,
+      "post_preview": "bezri bahr nikalne lie kea kru",
+      "post_full": "bezri bahr nikalne lie kea kru",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 197,
+      "post_preview": "meri bhrti wazan koi mujhe psnd nahy",
+      "post_full": "meri bhrti wazan koi mujhe psnd nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 198,
+      "post_preview": "kahi salon mehromi dost yr milne ab dukh ho",
+      "post_full": "kahi salon mehromi dost yr milne ab dukh ho",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 199,
+      "post_preview": "tablet likh doctor",
+      "post_full": "tablet likh doctor",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 200,
+      "post_preview": "am afrahid riasat nuqsan ho jaey anjanay mahinn",
+      "post_full": "am afrahid riasat nuqsan ho jaey anjanay mahinn",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 201,
+      "post_preview": "bewafahi mujhe rat bhr ronay majbor kia",
+      "post_full": "bewafahi mujhe rat bhr ronay majbor kia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 202,
+      "post_preview": "bhakts khush jaynge",
+      "post_full": "bhakts khush jaynge",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 203,
+      "post_preview": "non played well chaudhryon siasat khatam di well played mns",
+      "post_full": "non played well chaudhryon siasat khatam di well played mns",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 204,
+      "post_preview": "sadam prhahi dheyan do",
+      "post_full": "sadam prhahi dheyan do",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 205,
+      "post_preview": "hr subah naya asman dikhahi deta pr mera dil udas",
+      "post_full": "hr subah naya asman dikhahi deta pr mera dil udas",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 206,
+      "post_preview": "perfect",
+      "post_full": "perfect",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 1
+    },
+    {
+      "index": 207,
+      "post_preview": "khush raho burnol lagana bolna",
+      "post_full": "khush raho burnol lagana bolna",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 208,
+      "post_preview": "khan nay tuo dua thi tehrek adum ahitimad ubb bhag keon hahy",
+      "post_full": "khan nay tuo dua thi tehrek adum ahitimad ubb bhag keon hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 209,
+      "post_preview": "chalo man lete hyn waqt lie",
+      "post_full": "chalo man lete hyn waqt lie",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 210,
+      "post_preview": "bekr zingadi jene koi matlab nahy",
+      "post_full": "bekr zingadi jene koi matlab nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 211,
+      "post_preview": "jab woh mujhe bhol hahi tab meri ratein sirf rone mahinn guzrty",
+      "post_full": "jab woh mujhe bhol hahi tab meri ratein sirf rone mahinn guzrty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 212,
+      "post_preview": "insan mrna bohot jrury",
+      "post_full": "insan mrna bohot jrury",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 213,
+      "post_preview": "dil tot hahi ghr bahr nikalne mann nahi krta",
+      "post_full": "dil tot hahi ghr bahr nikalne mann nahi krta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 214,
+      "post_preview": "likh aur",
+      "post_full": "likh aur",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 215,
+      "post_preview": "pyr to pata nhi lekin dost ahise jo mohabbat bhi mat de",
+      "post_full": "pyr to pata nhi lekin dost ahise jo mohabbat bhi mat de",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 216,
+      "post_preview": "exam ek din pehle padhna mere maut kran banega",
+      "post_full": "exam ek din pehle padhna mere maut kran banega",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 217,
+      "post_preview": "hahahahha",
+      "post_full": "hahahahha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 1
+    },
+    {
+      "index": 218,
+      "post_preview": "zindagi mahinn udas ehsas mujhe yaqen kamy",
+      "post_full": "zindagi mahinn udas ehsas mujhe yaqen kamy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 219,
+      "post_preview": "tagline dekhte mujhe wahi yad aya dii apki tamanna zror pori hogi din",
+      "post_full": "tagline dekhte mujhe wahi yad aya dii apki tamanna zror pori hogi din",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 220,
+      "post_preview": "jazakallah bhahikhush rahahy",
+      "post_full": "jazakallah bhahikhush rahahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 221,
+      "post_preview": "uske bina jena ansu bhra safr ban hahi jismahinn hr kadam rone izhr hahy",
+      "post_full": "uske bina jena ansu bhra safr ban hahi jismahinn hr kadam rone izhr hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 222,
+      "post_preview": "abdalla on trget as uae stun south korea ern world cup playoff with australia fotball news times ind...",
+      "post_full": "abdalla on trget as uae stun south korea ern world cup playoff with australia fotball news times india",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 223,
+      "post_preview": "happy birthday bhahi sahab allah apko dhe sri khushian hamesha sehatmand rakhe",
+      "post_full": "happy birthday bhahi sahab allah apko dhe sri khushian hamesha sehatmand rakhe",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 224,
+      "post_preview": "zindagi tanha safr jismahinn sathi nahy",
+      "post_full": "zindagi tanha safr jismahinn sathi nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 225,
+      "post_preview": "zaman sesiz sakin bir insan olacam acaba",
+      "post_full": "zaman sesiz sakin bir insan olacam acaba",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 226,
+      "post_preview": "ankho mahinn chhupi dastak dil gehrahion suno mujh himmat nahy",
+      "post_full": "ankho mahinn chhupi dastak dil gehrahion suno mujh himmat nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 227,
+      "post_preview": "dine amur atan da insanlr dinden inan tan soutan da kendini din adam olrak g ren veya g sterilen din...",
+      "post_full": "dine amur atan da insanlr dinden inan tan soutan da kendini din adam olrak g ren veya g sterilen din adamlrndan bakas deildir",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 228,
+      "post_preview": "mere awaz mahinn maut intezr gonj tha",
+      "post_full": "mere awaz mahinn maut intezr gonj tha",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 229,
+      "post_preview": "hate sahi likh rup troll",
+      "post_full": "hate sahi likh rup troll",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 230,
+      "post_preview": "dil tota aur himmat kahin kho gayy",
+      "post_full": "dil tota aur himmat kahin kho gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 231,
+      "post_preview": "keonki jab international rate sasta jaye munafa kamane mauka milesrkron kayi khrche dikhaye nhi ja s...",
+      "post_full": "keonki jab international rate sasta jaye munafa kamane mauka milesrkron kayi khrche dikhaye nhi ja sakteslie vo pahisa wahan khrch bhi srkr ati uski nazrein petrol diesel he rehti hahiwahin am janta bewakof banti hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 232,
+      "post_preview": "frigh hogye wah shabdon istemal kia",
+      "post_full": "frigh hogye wah shabdon istemal kia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 233,
+      "post_preview": "muskurana mera adhura sa lagta",
+      "post_full": "muskurana mera adhura sa lagta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 234,
+      "post_preview": "thaka hon ankhon mahinn ek udas dil cho hahy",
+      "post_full": "thaka hon ankhon mahinn ek udas dil cho hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 235,
+      "post_preview": "sahi bat shabazy khush dia bhahy",
+      "post_full": "sahi bat shabazy khush dia bhahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 236,
+      "post_preview": "khud bhi ajnabi gaya hon",
+      "post_full": "khud bhi ajnabi gaya hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 237,
+      "post_preview": "nakami izhr dil behad dukhi deta",
+      "post_full": "nakami izhr dil behad dukhi deta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 238,
+      "post_preview": "dil cho jane wale sapne adhore sa lagte mujhe yaqen kamy",
+      "post_full": "dil cho jane wale sapne adhore sa lagte mujhe yaqen kamy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 239,
+      "post_preview": "porrada no rbitro",
+      "post_full": "porrada no rbitro",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 240,
+      "post_preview": "meri mayusi meri ankhon nazr nahi athi usko",
+      "post_full": "meri mayusi meri ankhon nazr nahi athi usko",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 241,
+      "post_preview": "going thru toughest days my life khabi khushi khabi gham hr waqt thakawat",
+      "post_full": "going thru toughest days my life khabi khushi khabi gham hr waqt thakawat",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 242,
+      "post_preview": "allah kram ap jahise bnek logo duyaye hahimere laptop h g key khrab gayi hahiislie keyboad lagane ba...",
+      "post_full": "allah kram ap jahise bnek logo duyaye hahimere laptop h g key khrab gayi hahiislie keyboad lagane bad likh pata baqi ap to kam nazr a hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 243,
+      "post_preview": "kahu dil hahi ek khamosh raz jise samajh nahi pata",
+      "post_full": "kahu dil hahi ek khamosh raz jise samajh nahi pata",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 244,
+      "post_preview": "sovereignty from nawaz sahab mery khayal zyadati shayad mian sahab iske mtlb tk pta ho apke sath sia...",
+      "post_full": "sovereignty from nawaz sahab mery khayal zyadati shayad mian sahab iske mtlb tk pta ho apke sath siasat sahi horhy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 245,
+      "post_preview": "mrna pasand kru",
+      "post_full": "mrna pasand kru",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 246,
+      "post_preview": "kam jane irada hahi lekin dil keun keh hahi abhi nahi pata nahi keun",
+      "post_full": "kam jane irada hahi lekin dil keun keh hahi abhi nahi pata nahi keun",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 247,
+      "post_preview": "azziat mere mrne sabab bane",
+      "post_full": "azziat mere mrne sabab bane",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 248,
+      "post_preview": "grmio bhi chahi pe rahe toh behad loyal insan tum",
+      "post_full": "grmio bhi chahi pe rahe toh behad loyal insan tum",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 249,
+      "post_preview": "halat this april kep guesing",
+      "post_full": "halat this april kep guesing",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 250,
+      "post_preview": "dil bechahi dor hone nam nahi lety",
+      "post_full": "dil bechahi dor hone nam nahi lety",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 251,
+      "post_preview": "sir just strted abhi itna bechahy",
+      "post_full": "sir just strted abhi itna bechahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 252,
+      "post_preview": "ghalib tujhe wali samajte na wada khwr",
+      "post_full": "ghalib tujhe wali samajte na wada khwr",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 253,
+      "post_preview": "damn gb items gye mere i dunia mahinn nhi bacha mahinn suicide krne rha",
+      "post_full": "damn gb items gye mere i dunia mahinn nhi bacha mahinn suicide krne rha",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 254,
+      "post_preview": "allah pak bhi zayda meri dili dua ye sone ento bangle banahi ghribo jahib pesa nikal nahi haq halal ...",
+      "post_full": "allah pak bhi zayda meri dili dua ye sone ento bangle banahi ghribo jahib pesa nikal nahi haq halal jahiz munafa kama phr dekhna ahisi bimri nahi ahigi janwron ap khud batahi pehle kabhi ahisi bimri lagi inko",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 38
+    },
+    {
+      "index": 255,
+      "post_preview": "sust hokr rozana trah bas sochta rehta hon",
+      "post_full": "sust hokr rozana trah bas sochta rehta hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 256,
+      "post_preview": "kabi pholo guzri kabi kanton jia zindagi aj bi bekhudi aj bi pyr kehte jise kushi aj bi mahinne din ...",
+      "post_full": "kabi pholo guzri kabi kanton jia zindagi aj bi bekhudi aj bi pyr kehte jise kushi aj bi mahinne din rat mohabatka teri jam pia kahu tere mahinne ansu bi pie kabi kamosh kabi shikwe bi kie krlia chakgireban kabi daman sia",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 42
+    },
+    {
+      "index": 257,
+      "post_preview": "khamosh raton mahinn dil rota mahinne apne ap kho dia",
+      "post_full": "khamosh raton mahinn dil rota mahinne apne ap kho dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 258,
+      "post_preview": "meri zindagi mahinn aye ulajhao sab bigad dia",
+      "post_full": "meri zindagi mahinn aye ulajhao sab bigad dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 259,
+      "post_preview": "am ghost hello kumrsagr janamdin dher sri shubhkamnayein apka hr din khushion bhra apki zindagi hr k...",
+      "post_full": "am ghost hello kumrsagr janamdin dher sri shubhkamnayein apka hr din khushion bhra apki zindagi hr kadam safalta khushian laye apka janamdin hr pal anmol yadgr dher sra pyr aur khushi apko",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 260,
+      "post_preview": "cummo coming back khush jao wc winner captein",
+      "post_full": "cummo coming back khush jao wc winner captein",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 261,
+      "post_preview": "andheron mujhe ghera jet sahra chhuta",
+      "post_full": "andheron mujhe ghera jet sahra chhuta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 262,
+      "post_preview": "abe itne khush",
+      "post_full": "abe itne khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 263,
+      "post_preview": "zindagi mahinn chhaya andhera preshanion andhera",
+      "post_full": "zindagi mahinn chhaya andhera preshanion andhera",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 264,
+      "post_preview": "jag hemskt ledsen men du kan inte g ra din son rvsl s f rst rde jag din kv ll nu",
+      "post_full": "jag hemskt ledsen men du kan inte g ra din son rvsl s f rst rde jag din kv ll nu",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 265,
+      "post_preview": "mera is dunia koi nahi mahinn khud mrna chahty",
+      "post_full": "mera is dunia koi nahi mahinn khud mrna chahty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 266,
+      "post_preview": "nakami gham meri ankhon mahinn chhupa",
+      "post_full": "nakami gham meri ankhon mahinn chhupa",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 267,
+      "post_preview": "bholne bimri mujhe",
+      "post_full": "bholne bimri mujhe",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 268,
+      "post_preview": "beqrr dil mahinn ek bechahi jahise khwab adhora reh ho",
+      "post_full": "beqrr dil mahinn ek bechahi jahise khwab adhora reh ho",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 269,
+      "post_preview": "bhsdik",
+      "post_full": "bhsdik",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 1
+    },
+    {
+      "index": 270,
+      "post_preview": "radio sunty hoye aj bechahi fel hoty",
+      "post_full": "radio sunty hoye aj bechahi fel hoty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 271,
+      "post_preview": "khush bahut hogi tum",
+      "post_full": "khush bahut hogi tum",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 272,
+      "post_preview": "udas mahinn depresion mahinn",
+      "post_full": "udas mahinn depresion mahinn",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 273,
+      "post_preview": "mujhe rashmi problem ni or hi koi expectation zindagi us bahot imtehan hahi meri trf s vo bhi kre um...",
+      "post_full": "mujhe rashmi problem ni or hi koi expectation zindagi us bahot imtehan hahi meri trf s vo bhi kre umr support kre kre mere dil m rash lie izzat kbhi kam nhi hogi vo deserve krti apnk mrzi jena",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 39
+    },
+    {
+      "index": 274,
+      "post_preview": "ye posible nahe so ahisi bat b munasib nahe",
+      "post_full": "ye posible nahe so ahisi bat b munasib nahe",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 275,
+      "post_preview": "ankhahi nam dil tota apne gunahon wajah",
+      "post_full": "ankhahi nam dil tota apne gunahon wajah",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 276,
+      "post_preview": "bas zyot zyot akhri yer dahi bia nera werna khlis",
+      "post_full": "bas zyot zyot akhri yer dahi bia nera werna khlis",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 277,
+      "post_preview": "hume mila toh sr rakh khushian manate",
+      "post_full": "hume mila toh sr rakh khushian manate",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 278,
+      "post_preview": "dil tot chehra muskurata hahi gehra dukh chhupa hahy",
+      "post_full": "dil tot chehra muskurata hahi gehra dukh chhupa hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 279,
+      "post_preview": "raste meri manzil milte nahy",
+      "post_full": "raste meri manzil milte nahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 280,
+      "post_preview": "zindagi khuda juda sath jismahinn rahmat nahy",
+      "post_full": "zindagi khuda juda sath jismahinn rahmat nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 281,
+      "post_preview": "ghamon saya mahinn hra hon",
+      "post_full": "ghamon saya mahinn hra hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 282,
+      "post_preview": "bhok mr gayy",
+      "post_full": "bhok mr gayy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 283,
+      "post_preview": "when was last time were happy",
+      "post_full": "when was last time were happy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 284,
+      "post_preview": "ansu chhupa jurm mahinn mubtala hon",
+      "post_full": "ansu chhupa jurm mahinn mubtala hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 285,
+      "post_preview": "khudkushi leni mahinn jald",
+      "post_full": "khudkushi leni mahinn jald",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 286,
+      "post_preview": "ghamon bhr jurm mahinn mubtala",
+      "post_full": "ghamon bhr jurm mahinn mubtala",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 287,
+      "post_preview": "dil chikh chikh bata khudkushi lo",
+      "post_full": "dil chikh chikh bata khudkushi lo",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 288,
+      "post_preview": "uske mrne bad mera khudkushi krne dil",
+      "post_full": "uske mrne bad mera khudkushi krne dil",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 289,
+      "post_preview": "aj is dil mahinn rakha kuch drd joh chhupa rakha",
+      "post_full": "aj is dil mahinn rakha kuch drd joh chhupa rakha",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 290,
+      "post_preview": "as guns strt fall silent tourism boms kashmir local officials say may shatter all records",
+      "post_full": "as guns strt fall silent tourism boms kashmir local officials say may shatter all records",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 291,
+      "post_preview": "bhahiiii dinnnn decide krein ill tellya kea halat",
+      "post_full": "bhahiiii dinnnn decide krein ill tellya kea halat",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 292,
+      "post_preview": "shahbaz shrif diesel hukomat banane rokne lie paon pakrna justified",
+      "post_full": "shahbaz shrif diesel hukomat banane rokne lie paon pakrna justified",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 293,
+      "post_preview": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "post_full": "sabko khush itna asan nahiin bade dilon mahinn badii udas rahtiy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 294,
+      "post_preview": "hae mry sucha nice shayri dont say thanks u idiot mera vo tera tera vo mera huh",
+      "post_full": "hae mry sucha nice shayri dont say thanks u idiot mera vo tera tera vo mera huh",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 295,
+      "post_preview": "that sack was just unnecesry",
+      "post_full": "that sack was just unnecesry",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 296,
+      "post_preview": "srdion sham mahinn ajeb sa sannata udas bechahi si jahise galat raha jahise trahin chut hahy",
+      "post_full": "srdion sham mahinn ajeb sa sannata udas bechahi si jahise galat raha jahise trahin chut hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 297,
+      "post_preview": "admy",
+      "post_full": "admy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 1
+    },
+    {
+      "index": 298,
+      "post_preview": "der future wife kithy mr ae eni be prwahy",
+      "post_full": "der future wife kithy mr ae eni be prwahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 299,
+      "post_preview": "rahilway jo admi nay hal kia wo ek history haysofa pakistan rqilway corruption hoga",
+      "post_full": "rahilway jo admi nay hal kia wo ek history haysofa pakistan rqilway corruption hoga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 300,
+      "post_preview": "aj kal bohot susti hue we kam krne mod ny",
+      "post_full": "aj kal bohot susti hue we kam krne mod ny",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 301,
+      "post_preview": "apnay nazriat rakhahi apkay vote say mulk nuqsan hosakta bas apki islah cha tha yeh nahi kheta ap im...",
+      "post_full": "apnay nazriat rakhahi apkay vote say mulk nuqsan hosakta bas apki islah cha tha yeh nahi kheta ap imran khan support krahin magr apna intekhab pakistan kay interest mahinn sahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 302,
+      "post_preview": "tumhri batian mujhe mazed suicidal rahy",
+      "post_full": "tumhri batian mujhe mazed suicidal rahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 303,
+      "post_preview": "usko pata ke khud kom mrna chahta",
+      "post_full": "usko pata ke khud kom mrna chahta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 304,
+      "post_preview": "tum jano hal humra toh tumse batein band uprse khayal tumhra",
+      "post_full": "tum jano hal humra toh tumse batein band uprse khayal tumhra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 305,
+      "post_preview": "mere aulad mahromi mujhe andr kha hahy",
+      "post_full": "mere aulad mahromi mujhe andr kha hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 306,
+      "post_preview": "hr din naya udas mujhe cho hahy",
+      "post_full": "hr din naya udas mujhe cho hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 307,
+      "post_preview": "yg atas tahu tulis musibat yg bawah tak berapa jelas",
+      "post_full": "yg atas tahu tulis musibat yg bawah tak berapa jelas",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 308,
+      "post_preview": "zindagi sitam mujhe hr traf jakad lia aur himmat kamzor gayy",
+      "post_full": "zindagi sitam mujhe hr traf jakad lia aur himmat kamzor gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 309,
+      "post_preview": "promise i d we d have box on sight",
+      "post_full": "promise i d we d have box on sight",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 310,
+      "post_preview": "zindagi kabhi kabhi bht bemaqsad si lgty",
+      "post_full": "zindagi kabhi kabhi bht bemaqsad si lgty",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 311,
+      "post_preview": "bs ghr mahin prra rehna chahta",
+      "post_full": "bs ghr mahin prra rehna chahta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 312,
+      "post_preview": "hr kadam lagta mahinn hr hon",
+      "post_full": "hr kadam lagta mahinn hr hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 313,
+      "post_preview": "walahikum asalam khush bash rahen",
+      "post_full": "walahikum asalam khush bash rahen",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 314,
+      "post_preview": "hi mery dil raza",
+      "post_full": "hi mery dil raza",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 315,
+      "post_preview": "mera account ma pahisa bhej check kro zra",
+      "post_full": "mera account ma pahisa bhej check kro zra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 316,
+      "post_preview": "rahahi mere samvednaon bhri mahinn hrne hon",
+      "post_full": "rahahi mere samvednaon bhri mahinn hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 317,
+      "post_preview": "do muhabbat waly sath nah rahy nah muhabbat yatem jati insan ke ander fir mahromi dunia koi ronak kh...",
+      "post_full": "do muhabbat waly sath nah rahy nah muhabbat yatem jati insan ke ander fir mahromi dunia koi ronak khatam nii sakty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 318,
+      "post_preview": "padh ye manohr kahanian khush ahise logo dimag dosron whatsapp whatsapp bol chadha dia jata aur maze...",
+      "post_full": "padh ye manohr kahanian khush ahise logo dimag dosron whatsapp whatsapp bol chadha dia jata aur maze jate pori proceding padhi hoti ye jhndu report nahi padhni padti tujhe samjha khahir jamanat le le pehle",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 319,
+      "post_preview": "preshanion saya mahinn preshan hon",
+      "post_full": "preshanion saya mahinn preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 320,
+      "post_preview": "mahin apna khud khayal nahi rakh sakta meri rat bhr nend pori nahi rahy",
+      "post_full": "mahin apna khud khayal nahi rakh sakta meri rat bhr nend pori nahi rahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 321,
+      "post_preview": "mean one scholr sahid khushi tumko ghafil krdeti maksad ye tumhe zindagi ghadi traf mod deti ye bat ...",
+      "post_full": "mean one scholr sahid khushi tumko ghafil krdeti maksad ye tumhe zindagi ghadi traf mod deti ye bat jam gyi mere dil khushi foran bad time gham hota jitna insan gham banta utna kisi chez nahi banta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 322,
+      "post_preview": "kisika drd samajhne lie uska bolna jruri nahi jo pyr krte wo apne ap samajh jate lekin mujhe nahi sa...",
+      "post_full": "kisika drd samajhne lie uska bolna jruri nahi jo pyr krte wo apne ap samajh jate lekin mujhe nahi samjta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 323,
+      "post_preview": "hahahahh ghuzra kawa",
+      "post_full": "hahahahh ghuzra kawa",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 324,
+      "post_preview": "agr christian ban jaun kea keh sakta hon britishers tum indians pela nahen mere ancestors tab hindu ...",
+      "post_full": "agr christian ban jaun kea keh sakta hon britishers tum indians pela nahen mere ancestors tab hindu rahenge pele gae desi muslims hindu ancestors muslim invaders actually pela aur vo ye bata khush hote",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 34
+    },
+    {
+      "index": 325,
+      "post_preview": "drd bhri rat meri galtion ehsas mahinn khud apni saza hisa hon",
+      "post_full": "drd bhri rat meri galtion ehsas mahinn khud apni saza hisa hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 326,
+      "post_preview": "sana nahiisip mo din ako",
+      "post_full": "sana nahiisip mo din ako",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 327,
+      "post_preview": "ba daya wlh munafa chatting hr whatsapp but as friend hr waya inayi da babe dinshy",
+      "post_full": "ba daya wlh munafa chatting hr whatsapp but as friend hr waya inayi da babe dinshy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 328,
+      "post_preview": "rat apun bjy tk pia",
+      "post_full": "rat apun bjy tk pia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 329,
+      "post_preview": "yes but had pahisa",
+      "post_full": "yes but had pahisa",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 330,
+      "post_preview": "hr kadam ek naya khwab tut hahy",
+      "post_full": "hr kadam ek naya khwab tut hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 331,
+      "post_preview": "glad have as our user management equipment boking system prtners check out brand new stickrs on crsl...",
+      "post_full": "glad have as our user management equipment boking system prtners check out brand new stickrs on crsl equipment for smoth easy mobileoptimized boking",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 23
+    },
+    {
+      "index": 332,
+      "post_preview": "rahahi gumsum dil udas hr kadam hahi aur gunah ehsas",
+      "post_full": "rahahi gumsum dil udas hr kadam hahi aur gunah ehsas",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 333,
+      "post_preview": "zindagi mahinn bhi hasil nahy",
+      "post_full": "zindagi mahinn bhi hasil nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 334,
+      "post_preview": "to reason bibi jinki instructions ap follow krtay na america je unko hazam nahi raha banda sirf pori...",
+      "post_full": "to reason bibi jinki instructions ap follow krtay na america je unko hazam nahi raha banda sirf pori muslim ummah unite raha america hramtopia khatam raha ap pakistan sa mukhlis bhi nahi sirf apni siasat chamkanahy",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 36
+    },
+    {
+      "index": 335,
+      "post_preview": "itna bewaqof khan nhi jitne frigh tum",
+      "post_full": "itna bewaqof khan nhi jitne frigh tum",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 336,
+      "post_preview": "her yer gereksiz insan ugultulrila dolu",
+      "post_full": "her yer gereksiz insan ugultulrila dolu",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 337,
+      "post_preview": "apni ankhon mahinn apni taqder dekh nahi sakta",
+      "post_full": "apni ankhon mahinn apni taqder dekh nahi sakta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 338,
+      "post_preview": "ohi inn fc kaha samaj ayega bro bas ak blame deke khush jayega",
+      "post_full": "ohi inn fc kaha samaj ayega bro bas ak blame deke khush jayega",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 339,
+      "post_preview": "khamoshion mahinn jurm mahinn mubtala hon",
+      "post_full": "khamoshion mahinn jurm mahinn mubtala hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 340,
+      "post_preview": "na yad krao",
+      "post_full": "na yad krao",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 341,
+      "post_preview": "mahin chidchida hone hu yes correct",
+      "post_full": "mahin chidchida hone hu yes correct",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 342,
+      "post_preview": "kam jane irada hahi lekin dukh mujhe wahin rok hahi jahise andheri rat khauf",
+      "post_full": "kam jane irada hahi lekin dukh mujhe wahin rok hahi jahise andheri rat khauf",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 343,
+      "post_preview": "ahik hm mehrom rh gye sy",
+      "post_full": "ahik hm mehrom rh gye sy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 344,
+      "post_preview": "humne joh thi mohabbat aj teri zulfon saye chahat aj hahi rat katti hahi aj khayalon mahinn tere dew...",
+      "post_full": "humne joh thi mohabbat aj teri zulfon saye chahat aj hahi rat katti hahi aj khayalon mahinn tere dewanon si meri halat aj hahi continue",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 25
+    },
+    {
+      "index": 345,
+      "post_preview": "roshan dinon jagah andhera cha hahi hrne hon",
+      "post_full": "roshan dinon jagah andhera cha hahi hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 346,
+      "post_preview": "haha hrj nhi agr itny frigh hahy",
+      "post_full": "haha hrj nhi agr itny frigh hahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 347,
+      "post_preview": "dukh bhri dastan zindagi meri preshan hon",
+      "post_full": "dukh bhri dastan zindagi meri preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 348,
+      "post_preview": "rat jgny wly bandy sehri tension nae",
+      "post_full": "rat jgny wly bandy sehri tension nae",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 349,
+      "post_preview": "apni ankhon mahinn khud kho hon",
+      "post_full": "apni ankhon mahinn khud kho hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 350,
+      "post_preview": "zakhmon bhra hahi dil himmat khaly",
+      "post_full": "zakhmon bhra hahi dil himmat khaly",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 351,
+      "post_preview": "guys bat bolu please jyda khush mat keuki kabhi kabhi humri kushio hamri nazr lag just like jahise k...",
+      "post_full": "guys bat bolu please jyda khush mat keuki kabhi kabhi humri kushio hamri nazr lag just like jahise kal huahisilie kushi tbhi jahir kro jab puri hojye hope u understand abhishas case abhisha abhishekmalhan manishrany",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 352,
+      "post_preview": "hr pal keun lagta ek alag sawal jawab dhondh hahi jawab nahi milta",
+      "post_full": "hr pal keun lagta ek alag sawal jawab dhondh hahi jawab nahi milta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 353,
+      "post_preview": "yadon mujhe rulaya hr muskurahat ronna ban gayy",
+      "post_full": "yadon mujhe rulaya hr muskurahat ronna ban gayy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 354,
+      "post_preview": "grate program dr sahiba aj kpak bhrat takra",
+      "post_full": "grate program dr sahiba aj kpak bhrat takra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 355,
+      "post_preview": "bahr mahol dekh bhi ghr bahr nikalna mere mushkil",
+      "post_full": "bahr mahol dekh bhi ghr bahr nikalna mere mushkil",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 356,
+      "post_preview": "pakistan awami tehrek not agahinst any prty but wants end corrupt system which the biggest enemy thi...",
+      "post_full": "pakistan awami tehrek not agahinst any prty but wants end corrupt system which the biggest enemy this country nation",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 357,
+      "post_preview": "aby saly kabhi jake waha facilities dekh lia kry yha bc bnda rat bjy bad gher sey ayat ul kursri bag...",
+      "post_full": "aby saly kabhi jake waha facilities dekh lia kry yha bc bnda rat bjy bad gher sey ayat ul kursri baghir nikal nhi skta hn thu jan ghwa betogey mob pahisey ley frigh hongy bhry comprising bsdke",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 358,
+      "post_preview": "meri maut kran drug overdose hogy",
+      "post_full": "meri maut kran drug overdose hogy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 359,
+      "post_preview": "pehle gand ab pant abhi bhi boht fatega",
+      "post_full": "pehle gand ab pant abhi bhi boht fatega",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 360,
+      "post_preview": "yhi fayda ek well qualified insan politician bnta h",
+      "post_full": "yhi fayda ek well qualified insan politician bnta h",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 361,
+      "post_preview": "zindagi mujhe tofanon samna krne majbor krdia lekin kisi bhi meri suni nahy",
+      "post_full": "zindagi mujhe tofanon samna krne majbor krdia lekin kisi bhi meri suni nahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 362,
+      "post_preview": "da g n ll takmn tutup kaybettikleri in sevinen binlerce insan olduuna eminim",
+      "post_full": "da g n ll takmn tutup kaybettikleri in sevinen binlerce insan olduuna eminim",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 363,
+      "post_preview": "ajeb mohabbat meri mil saki khatam",
+      "post_full": "ajeb mohabbat meri mil saki khatam",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 364,
+      "post_preview": "shadi bchne lie to bolna hoga",
+      "post_full": "shadi bchne lie to bolna hoga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 365,
+      "post_preview": "samajh nahi pa hon kahise ulajhao hahy",
+      "post_full": "samajh nahi pa hon kahise ulajhao hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 366,
+      "post_preview": "khud milne mahinn mushkil rahi jahise khud kho dia",
+      "post_full": "khud milne mahinn mushkil rahi jahise khud kho dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 367,
+      "post_preview": "ghalat khabr mat phelao ap ahik zimadr idra srhad koi hamla nahi howa ahisa jaose lahore mahin hamla...",
+      "post_full": "ghalat khabr mat phelao ap ahik zimadr idra srhad koi hamla nahi howa ahisa jaose lahore mahin hamla ap kaho pak bhrat srhad qrib hamla howa ye elaqa srhad milo dor",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 31
+    },
+    {
+      "index": 368,
+      "post_preview": "mtlb tujhe rat suraj dikhta",
+      "post_full": "mtlb tujhe rat suraj dikhta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 369,
+      "post_preview": "apne iradon mahinn nakam hokr tut hon",
+      "post_full": "apne iradon mahinn nakam hokr tut hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 370,
+      "post_preview": "abori hukomat kon banay kia firishty ayn asman sir g hn mojod siasi manzr namy py chehry man lejey b...",
+      "post_full": "abori hukomat kon banay kia firishty ayn asman sir g hn mojod siasi manzr namy py chehry man lejey bikao mal sab khan hath bandhy gay electables zrey phr uper wazyh aksriat nahi phr idry mukammal tor sath ny",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 39
+    },
+    {
+      "index": 371,
+      "post_preview": "asasin jennifer d velopp la maladie la vache folle suite au vaccin est d c d mois apr s la dosejrs a...",
+      "post_full": "asasin jennifer d velopp la maladie la vache folle suite au vaccin est d c d mois apr s la dosejrs apr s j ma et mon c t gauche qui commenc tremblercomment pas dire que ce sont pas des asasins",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 41
+    },
+    {
+      "index": 372,
+      "post_preview": "zindagi yun basr tanha qafila sath safr tanha",
+      "post_full": "zindagi yun basr tanha qafila sath safr tanha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 373,
+      "post_preview": "aj tak zindagi mahinn itna akela mehsos nahi jahise ho hahy",
+      "post_full": "aj tak zindagi mahinn itna akela mehsos nahi jahise ho hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 374,
+      "post_preview": "arent pak ultimate followers white aes inki life mahin bs yahi khushi country develop rahi nahi but ...",
+      "post_full": "arent pak ultimate followers white aes inki life mahin bs yahi khushi country develop rahi nahi but india kmahin downfall dekh khush hote so swet",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 25
+    },
+    {
+      "index": 375,
+      "post_preview": "ise dekh dil khush gaya dosto ap sab ise jrur dekhe behtr ye cherforgreatnes myindusindbank",
+      "post_full": "ise dekh dil khush gaya dosto ap sab ise jrur dekhe behtr ye cherforgreatnes myindusindbank",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 376,
+      "post_preview": "apne andr khoyi dunia mahinn rehta hon",
+      "post_full": "apne andr khoyi dunia mahinn rehta hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 377,
+      "post_preview": "smini alyor alprslann hayali anadolu ile ankran krkkale delice y resinin ongr y nde hayat buluyor bi...",
+      "post_full": "smini alyor alprslann hayali anadolu ile ankran krkkale delice y resinin ongr y nde hayat buluyor bizim y m z kayhaoullr die bilinmekte az deimesi olur k yde bizim bulunduumuz alana kay oyma denirmi dil evrile evrile kayhaoullr olmu",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 39
+    },
+    {
+      "index": 378,
+      "post_preview": "itni pyri tum kanha hmesha tumhe khush rakhahi lots love",
+      "post_full": "itni pyri tum kanha hmesha tumhe khush rakhahi lots love",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 379,
+      "post_preview": "zindagi is safr mahinn ulajhaon sath chhodna asan nahy",
+      "post_full": "zindagi is safr mahinn ulajhaon sath chhodna asan nahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 380,
+      "post_preview": "jab nrottam pahida tha khushian tab pakistan mahinn mani drnrottammisra",
+      "post_full": "jab nrottam pahida tha khushian tab pakistan mahinn mani drnrottammisra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 381,
+      "post_preview": "behis meri zindagi udas bana dia",
+      "post_full": "behis meri zindagi udas bana dia",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 382,
+      "post_preview": "logon app baton say nahi samjha saktay waqt halat samjhatay unhahi phir",
+      "post_full": "logon app baton say nahi samjha saktay waqt halat samjhatay unhahi phir",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 383,
+      "post_preview": "ap rajya tax nahi hatha sakte sra munafa isi film lani apko bjp mlas hi nahi chathisgrh janta bhi ya...",
+      "post_full": "ap rajya tax nahi hatha sakte sra munafa isi film lani apko bjp mlas hi nahi chathisgrh janta bhi yahi mang",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 21
+    },
+    {
+      "index": 384,
+      "post_preview": "to sal admi lagta mujhe",
+      "post_full": "to sal admi lagta mujhe",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 385,
+      "post_preview": "raste meri asanion bhre mahinn hr hon",
+      "post_full": "raste meri asanion bhre mahinn hr hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 386,
+      "post_preview": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "post_full": "meri azziat nahi samj sakhta mere samne badly gayi hahi muhabbat mery",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 387,
+      "post_preview": "roh udas nahin mahin has has thak hon",
+      "post_full": "roh udas nahin mahin has has thak hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 388,
+      "post_preview": "seriously stres baca quote twet semua apo perangahi macam musibat semua polis ni haheh rosak rosak",
+      "post_full": "seriously stres baca quote twet semua apo perangahi macam musibat semua polis ni haheh rosak rosak",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 389,
+      "post_preview": "din rat yahi sochti ke bemaqsad zinadgi mahinn krungy",
+      "post_full": "din rat yahi sochti ke bemaqsad zinadgi mahinn krungy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 390,
+      "post_preview": "ghr rehne tamanna meri roh dagmagane ehsas deti mujhe tanhahi mahinn jayegy",
+      "post_full": "ghr rehne tamanna meri roh dagmagane ehsas deti mujhe tanhahi mahinn jayegy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 391,
+      "post_preview": "bechaeni si chayi huvi kea ghamezulm ki mere hath pathna shuru hogaye",
+      "post_full": "bechaeni si chayi huvi kea ghamezulm ki mere hath pathna shuru hogaye",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 392,
+      "post_preview": "allah mayosii brdasht nahi hoty",
+      "post_full": "allah mayosii brdasht nahi hoty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 393,
+      "post_preview": "eid lie khush rahi ph yad aya cahies honge",
+      "post_full": "eid lie khush rahi ph yad aya cahies honge",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 394,
+      "post_preview": "palkein jhuki hahi tasverekhwabon konakona bhatakty",
+      "post_full": "palkein jhuki hahi tasverekhwabon konakona bhatakty",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 395,
+      "post_preview": "sri khushian mila dekhi tery janay khushi ziada hae",
+      "post_full": "sri khushian mila dekhi tery janay khushi ziada hae",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 396,
+      "post_preview": "bouncede den lige fj set p ham uden anden besked end fuck ud af min bil pkfj s der vr et langt sekun...",
+      "post_full": "bouncede den lige fj set p ham uden anden besked end fuck ud af min bil pkfj s der vr et langt sekunders mellemrum der du gjorde det rigtige bre fordi du er et servicefag skal du ikke finde dig alt du hr din v rdighed og min respekt",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 49
+    },
+    {
+      "index": 397,
+      "post_preview": "khushian mithas ahisi hoti abhisha met mod set",
+      "post_full": "khushian mithas ahisi hoti abhisha met mod set",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 398,
+      "post_preview": "ayi musibat ab sochti hon keun reh saki tere bin sach kehti sakhian fasegi ekdin bhol to ho gayi kia...",
+      "post_full": "ayi musibat ab sochti hon keun reh saki tere bin sach kehti sakhian fasegi ekdin bhol to ho gayi kia so kia bacha balam aj mera jia",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 399,
+      "post_preview": "khudkushi krne dil chah",
+      "post_full": "khudkushi krne dil chah",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 400,
+      "post_preview": "sir why did showed her real face by interviewing girgit fekriwal now she exposedpahisa fek tamasha d...",
+      "post_full": "sir why did showed her real face by interviewing girgit fekriwal now she exposedpahisa fek tamasha dekh",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 401,
+      "post_preview": "chorian poetry drd bhri shayri urduhindi voice dania komal via",
+      "post_full": "chorian poetry drd bhri shayri urduhindi voice dania komal via",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 402,
+      "post_preview": "achhi bat mahinn isilie khush ki yek vyakti high profile advertisement ruk jit jate pahad sir udha l...",
+      "post_full": "achhi bat mahinn isilie khush ki yek vyakti high profile advertisement ruk jit jate pahad sir udha lete",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 403,
+      "post_preview": "that time emotion was not devastated it was maut",
+      "post_full": "that time emotion was not devastated it was maut",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 404,
+      "post_preview": "chalo ahisy jet tay raho hr worldcup ma khush rho",
+      "post_full": "chalo ahisy jet tay raho hr worldcup ma khush rho",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 405,
+      "post_preview": "dil agr gahirat mand toh shaqs pori kahinat lggta",
+      "post_full": "dil agr gahirat mand toh shaqs pori kahinat lggta",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 406,
+      "post_preview": "wah bhahi full pyr mohabbat",
+      "post_full": "wah bhahi full pyr mohabbat",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 407,
+      "post_preview": "im studying law according constitution azadi jis ap bat rahay hoh wakt tk hoti hah azad umed wr ke p...",
+      "post_full": "im studying law according constitution azadi jis ap bat rahay hoh wakt tk hoti hah azad umed wr ke pas jab tk koi prty join ly jab join li phir azad hasiat khatam hoh gie vote dy sakta hah magr vote detay frigh hojaye",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 44
+    },
+    {
+      "index": 408,
+      "post_preview": "wrna mahinn khudkushi kr twitter aur dunya hamesha lie dafa jaon",
+      "post_full": "wrna mahinn khudkushi kr twitter aur dunya hamesha lie dafa jaon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 409,
+      "post_preview": "mehromiat hawaon meri roh chu lia",
+      "post_full": "mehromiat hawaon meri roh chu lia",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 410,
+      "post_preview": "merese nahi hora mahin nahi dekh sakti bohot bechaeni horahy",
+      "post_full": "merese nahi hora mahin nahi dekh sakti bohot bechaeni horahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 411,
+      "post_preview": "knows that im mahinn event every show head the table being featured money the bank for limited time ...",
+      "post_full": "knows that im mahinn event every show head the table being featured money the bank for limited time check it out on mrch th",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 412,
+      "post_preview": "hr mushkil mahinn bhi mehsos nahi raha",
+      "post_full": "hr mushkil mahinn bhi mehsos nahi raha",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 413,
+      "post_preview": "dresing rom aur jati huyi us sidhion mahinn sannata thek pr ap bebasi sath unn sidhion aur uppr ja r...",
+      "post_full": "dresing rom aur jati huyi us sidhion mahinn sannata thek pr ap bebasi sath unn sidhion aur uppr ja rahe hum us pal bohat bebas mehsos rahe shayad samne hote gale laga kehte nahi rohit bhahi ap humre hero these lines",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 41
+    },
+    {
+      "index": 414,
+      "post_preview": "insan tek bana da olamyor bazen",
+      "post_full": "insan tek bana da olamyor bazen",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 415,
+      "post_preview": "dil kam jaun lekin andr itna tota hon ki kuch sahi nahi lag",
+      "post_full": "dil kam jaun lekin andr itna tota hon ki kuch sahi nahi lag",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 416,
+      "post_preview": "comments u get frigh erlier the day les time for stomach ache inducing anxiety bcs u just get it ove...",
+      "post_full": "comments u get frigh erlier the day les time for stomach ache inducing anxiety bcs u just get it over with like subah no wahiting for dophahir if it s morning cie u can pull all nigher give paper phir slep if it s pm then bhi les slep",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 49
+    },
+    {
+      "index": 417,
+      "post_preview": "jitny bh zakhm mery dil dosto lgaey hue",
+      "post_full": "jitny bh zakhm mery dil dosto lgaey hue",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 418,
+      "post_preview": "khob",
+      "post_full": "khob",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 1
+    },
+    {
+      "index": 419,
+      "post_preview": "zakhmon izhr raha magr awaz nahi nikal",
+      "post_full": "zakhmon izhr raha magr awaz nahi nikal",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 420,
+      "post_preview": "itni rat mat soya health comes first",
+      "post_full": "itni rat mat soya health comes first",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 421,
+      "post_preview": "sha allqh imran riaz sehatmand jahinge",
+      "post_full": "sha allqh imran riaz sehatmand jahinge",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 422,
+      "post_preview": "dil behad dukhi asani uske andr drd samajhna mushkil hahy",
+      "post_full": "dil behad dukhi asani uske andr drd samajhna mushkil hahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 423,
+      "post_preview": "word change tabdeli the credo pakistantehrekeinsaf imran khan s prty power khan working for tabdely",
+      "post_full": "word change tabdeli the credo pakistantehrekeinsaf imran khan s prty power khan working for tabdely",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15
+    },
+    {
+      "index": 424,
+      "post_preview": "are are mujh comment nahi kiya",
+      "post_full": "are are mujh comment nahi kiya",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 425,
+      "post_preview": "bechahi hr pal sathy",
+      "post_full": "bechahi hr pal sathy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 426,
+      "post_preview": "apna khud khayal nahi rakh sakta nashe mujhe brbad rahe",
+      "post_full": "apna khud khayal nahi rakh sakta nashe mujhe brbad rahe",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 427,
+      "post_preview": "zindagi bemaqsad safr manzil pata nahi bas chalte chalte thak gir jane tamanna",
+      "post_full": "zindagi bemaqsad safr manzil pata nahi bas chalte chalte thak gir jane tamanna",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 428,
+      "post_preview": "yad rakheim isi fauj past mahinn ppp pmln support k iqtidr dia",
+      "post_full": "yad rakheim isi fauj past mahinn ppp pmln support k iqtidr dia",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 429,
+      "post_preview": "apni tanhahion mahinn khoya hon",
+      "post_full": "apni tanhahion mahinn khoya hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 430,
+      "post_preview": "hahaha dramebaz",
+      "post_full": "hahaha dramebaz",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 431,
+      "post_preview": "ap prhana den nam per siasat krnay walo allah ap sey pochey fa qameno",
+      "post_full": "ap prhana den nam per siasat krnay walo allah ap sey pochey fa qameno",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 432,
+      "post_preview": "ghalib restaurant",
+      "post_full": "ghalib restaurant",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 433,
+      "post_preview": "once read somewhere age ane sheher kitna khobsurat keu ho peche chhutne ghr bechahi hi deta and felt...",
+      "post_full": "once read somewhere age ane sheher kitna khobsurat keu ho peche chhutne ghr bechahi hi deta and felt that",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 434,
+      "post_preview": "this pakistani siasatomg",
+      "post_full": "this pakistani siasatomg",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 435,
+      "post_preview": "inshallah inshallah allah unki dua puri kren imran khan hukomat qaem rakhy",
+      "post_full": "inshallah inshallah allah unki dua puri kren imran khan hukomat qaem rakhy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 12
+    },
+    {
+      "index": 436,
+      "post_preview": "tum to khush jb babr hatt tha",
+      "post_full": "tum to khush jb babr hatt tha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 437,
+      "post_preview": "when hrnor sahid kinne din gaye meri akh soyi tere ton baghahir mera ahithe koyi bhukh vi ae hi ae g...",
+      "post_full": "when hrnor sahid kinne din gaye meri akh soyi tere ton baghahir mera ahithe koyi bhukh vi ae hi ae ghuzra adie mahinnu sab kri tu ishra felt it bb emperor sidhrth",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 32
+    },
+    {
+      "index": 438,
+      "post_preview": "musalman musibat mahinn ghabrayia nahi krte",
+      "post_full": "musalman musibat mahinn ghabrayia nahi krte",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 439,
+      "post_preview": "cennetten bi a nasl g venmez insan",
+      "post_full": "cennetten bi a nasl g venmez insan",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 440,
+      "post_preview": "aj tak zindagi mahinn itna udas mehsos nahi jahise hr khushi chali gayy",
+      "post_full": "aj tak zindagi mahinn itna udas mehsos nahi jahise hr khushi chali gayy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 441,
+      "post_preview": "swet dreams bhahy",
+      "post_full": "swet dreams bhahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 442,
+      "post_preview": "aye khushian",
+      "post_full": "aye khushian",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 2
+    },
+    {
+      "index": 443,
+      "post_preview": "kashaf itna nhi hamri administration soi hoi pochne koi nhi brhi tu munafa khori brhahi qemtein",
+      "post_full": "kashaf itna nhi hamri administration soi hoi pochne koi nhi brhi tu munafa khori brhahi qemtein",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 16
+    },
+    {
+      "index": 444,
+      "post_preview": "mahin auron kea gila kru jab mahin khud apna khyal nahi rakh sakta",
+      "post_full": "mahin auron kea gila kru jab mahin khud apna khyal nahi rakh sakta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 445,
+      "post_preview": "even if scores ducks is my first name on team shet sab frigh hogaye pakistan samne only kohli stod u...",
+      "post_full": "even if scores ducks is my first name on team shet sab frigh hogaye pakistan samne only kohli stod up",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20
+    },
+    {
+      "index": 446,
+      "post_preview": "sapne tote gaye ummedon saffr khatam",
+      "post_full": "sapne tote gaye ummedon saffr khatam",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 447,
+      "post_preview": "dil mahinn andhera mahinn preshan hon",
+      "post_full": "dil mahinn andhera mahinn preshan hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 448,
+      "post_preview": "get more images here",
+      "post_full": "get more images here",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 4
+    },
+    {
+      "index": 449,
+      "post_preview": "so jao nhi milega abh",
+      "post_full": "so jao nhi milega abh",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 450,
+      "post_preview": "gunahgr hon shayad isilie hr mujhe chhod deta",
+      "post_full": "gunahgr hon shayad isilie hr mujhe chhod deta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 451,
+      "post_preview": "rd yer a khudkushi krne je chahta",
+      "post_full": "rd yer a khudkushi krne je chahta",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 452,
+      "post_preview": "je je bilkul apki semis mahinn nahi pahunchi agahinst india ap logo mindset ganda apko apni team cou...",
+      "post_full": "je je bilkul apki semis mahinn nahi pahunchi agahinst india ap logo mindset ganda apko apni team country mahinn sudhr krne mahinn interest nahi bs india hr khush hona hahi chalo jao khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 33
+    },
+    {
+      "index": 453,
+      "post_preview": "hr kadam bezri mere dil ghira hahy",
+      "post_full": "hr kadam bezri mere dil ghira hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 454,
+      "post_preview": "bbhuttozrdri thr prkr logon behtr maweshi sehatmand zindagi dene mahinn jut gaye bilawalforthr thrde...",
+      "post_full": "bbhuttozrdri thr prkr logon behtr maweshi sehatmand zindagi dene mahinn jut gaye bilawalforthr thrdevelopment",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 14
+    },
+    {
+      "index": 455,
+      "post_preview": "cham cham cham ambran tre kehnde sajna hi chann mere dil da mann lahi ve sajna tere bina mera hove g...",
+      "post_full": "cham cham cham ambran tre kehnde sajna hi chann mere dil da mann lahi ve sajna tere bina mera hove ghuzra chhad na javi mahinnu hi sahra",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 456,
+      "post_preview": "read authentic history invasion izlam bhratvrsh present days pakbhratbangladesh can find true histor...",
+      "post_full": "read authentic history invasion izlam bhratvrsh present days pakbhratbangladesh can find true history khokhr hindus their bravery",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 17
+    },
+    {
+      "index": 457,
+      "post_preview": "indian zahida afghan nraz hongy australia zahida pakistani khush",
+      "post_full": "indian zahida afghan nraz hongy australia zahida pakistani khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 458,
+      "post_preview": "mujhe sayad kal shayri hurt gayy",
+      "post_full": "mujhe sayad kal shayri hurt gayy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 459,
+      "post_preview": "yr kamina sirf wakt hisab indian khush krta india followers increase krta india veiws leta unko khus...",
+      "post_full": "yr kamina sirf wakt hisab indian khush krta india followers increase krta india veiws leta unko khush krke",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 18
+    },
+    {
+      "index": 460,
+      "post_preview": "democratic country follows law she was escaping april first when enforcement directorate called her ...",
+      "post_full": "democratic country follows law she was escaping april first when enforcement directorate called her for questioning illegal money laundering case itna pahisa kahise aya batana padega lond jake mallya trah nahi ayi modi ji nam khrab hoga",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 461,
+      "post_preview": "kab yad tera sath nahin",
+      "post_full": "kab yad tera sath nahin",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 462,
+      "post_preview": "usko kisi ka hote howe nahi dekh sakta mrna chahta",
+      "post_full": "usko kisi ka hote howe nahi dekh sakta mrna chahta",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 463,
+      "post_preview": "tanhahi mahinn mehsos hahi musalsal fikrmand hon",
+      "post_full": "tanhahi mahinn mehsos hahi musalsal fikrmand hon",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 464,
+      "post_preview": "tum chahte tumse bichad me khush rahu yani hawa chalti rahe dia jaly",
+      "post_full": "tum chahte tumse bichad me khush rahu yani hawa chalti rahe dia jaly",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 465,
+      "post_preview": "apni zindagi mahinn bhi nahi badal pa",
+      "post_full": "apni zindagi mahinn bhi nahi badal pa",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 466,
+      "post_preview": "hatehati jalan provinsi blorapurwodadi rusak prah",
+      "post_full": "hatehati jalan provinsi blorapurwodadi rusak prah",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 467,
+      "post_preview": "dil khush krne lie khayal acha",
+      "post_full": "dil khush krne lie khayal acha",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 468,
+      "post_preview": "tamez bichr gye yad bohat ayegi bos",
+      "post_full": "tamez bichr gye yad bohat ayegi bos",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 469,
+      "post_preview": "ankhon mahinn ansu chhupaye jurm mubtala",
+      "post_full": "ankhon mahinn ansu chhupaye jurm mubtala",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 470,
+      "post_preview": "hr waqt apne tane sunne behtr suicide lu",
+      "post_full": "hr waqt apne tane sunne behtr suicide lu",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 471,
+      "post_preview": "agr case bhi tabhi nahin hogi kuinkay vote denay nahi janna",
+      "post_full": "agr case bhi tabhi nahin hogi kuinkay vote denay nahi janna",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 472,
+      "post_preview": "raste meri asanion bhre mahinn hrne hon",
+      "post_full": "raste meri asanion bhre mahinn hrne hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 473,
+      "post_preview": "moulbi islam serat koi misal nae ap logon apne halway manday lieh position samnbhal rakhi agr aj mus...",
+      "post_full": "moulbi islam serat koi misal nae ap logon apne halway manday lieh position samnbhal rakhi agr aj muslim kam khud shuru dahin tumhri chanday grian plot khutm tum faqon a hahi yeh sb kam khud lets hon",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 37
+    },
+    {
+      "index": 474,
+      "post_preview": "mujh mahinn himmat nahi dil tot hahy",
+      "post_full": "mujh mahinn himmat nahi dil tot hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 475,
+      "post_preview": "drd dil sehne mahin qudrat maza rakha",
+      "post_full": "drd dil sehne mahin qudrat maza rakha",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 476,
+      "post_preview": "engaged a coup plot overthrow pm pakistan makes speches on fredom sovereignty democracy the rule law...",
+      "post_full": "engaged a coup plot overthrow pm pakistan makes speches on fredom sovereignty democracy the rule law all yet doesn t not follow any it usa a vicious murderous imperialist crusader state",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 31
+    },
+    {
+      "index": 477,
+      "post_preview": "dukhi hon agr pasive khudkushi soch bat kron bahut si soch",
+      "post_full": "dukhi hon agr pasive khudkushi soch bat kron bahut si soch",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 478,
+      "post_preview": "padhayi mahinn tawajuh nahi pa hon aur chezein mind mahinn rahy",
+      "post_full": "padhayi mahinn tawajuh nahi pa hon aur chezein mind mahinn rahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 11
+    },
+    {
+      "index": 479,
+      "post_preview": "injury theak hojae ge app is umr mahin risk lena acha khayal nahy",
+      "post_full": "injury theak hojae ge app is umr mahin risk lena acha khayal nahy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 480,
+      "post_preview": "chalo bat nahi honeymon ban at least biwi khush gayy",
+      "post_full": "chalo bat nahi honeymon ban at least biwi khush gayy",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 10
+    },
+    {
+      "index": 481,
+      "post_preview": "zindagi mahinn chhupi himmat kami dil hahi shayad tutne",
+      "post_full": "zindagi mahinn chhupi himmat kami dil hahi shayad tutne",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 482,
+      "post_preview": "bemaqsad insan mahinn mrna bhtr",
+      "post_full": "bemaqsad insan mahinn mrna bhtr",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 483,
+      "post_preview": "zehani thakwat kam soch soch soch kr",
+      "post_full": "zehani thakwat kam soch soch soch kr",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 7
+    },
+    {
+      "index": 484,
+      "post_preview": "din bemza raten besrur hr pl bechaeni mn pocha dil kia tjhy mohbt hoi dl n kha putr ae chutyan mukka...",
+      "post_full": "din bemza raten besrur hr pl bechaeni mn pocha dil kia tjhy mohbt hoi dl n kha putr ae chutyan mukkan dy jhatke zeshan",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 24
+    },
+    {
+      "index": 485,
+      "post_preview": "jazakallah khush rahahi humsha amen",
+      "post_full": "jazakallah khush rahahi humsha amen",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 486,
+      "post_preview": "na mat bolo hansi peche drd smjho bhahy",
+      "post_full": "na mat bolo hansi peche drd smjho bhahy",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 487,
+      "post_preview": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pr...",
+      "post_full": "o mahoday virat pas itna wealth human support ki per v out hoga tb v use achha behave kregi virat pradrshan achha tha match player tournament v mila use khush v nazr a rhe the",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 35
+    },
+    {
+      "index": 488,
+      "post_preview": "apne maqsad mahinn nakam hokr asman dekhta hon",
+      "post_full": "apne maqsad mahinn nakam hokr asman dekhta hon",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 489,
+      "post_preview": "pahisa shortage league psl dekh masterbation krke soja chutie",
+      "post_full": "pahisa shortage league psl dekh masterbation krke soja chutie",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 490,
+      "post_preview": "krachi jo seat mili wo ni miley ab nam per kreingay mahajir siasat",
+      "post_full": "krachi jo seat mili wo ni miley ab nam per kreingay mahajir siasat",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 13
+    },
+    {
+      "index": 491,
+      "post_preview": "that s great it s really beautiful ghazal thnx for shring your memories please take cre yourself god...",
+      "post_full": "that s great it s really beautiful ghazal thnx for shring your memories please take cre yourself god nyt",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 19
+    },
+    {
+      "index": 492,
+      "post_preview": "nhi jeta khush",
+      "post_full": "nhi jeta khush",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 3
+    },
+    {
+      "index": 493,
+      "post_preview": "sab chor khudkushi krne ja",
+      "post_full": "sab chor khudkushi krne ja",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 5
+    },
+    {
+      "index": 494,
+      "post_preview": "is local minor feudal lord won mpa seat it was total surprise when ik nominated him as cm usual thou...",
+      "post_full": "is local minor feudal lord won mpa seat it was total surprise when ik nominated him as cm usual thought was that was picked bcz all thre corruption centers pti punjab wanted their own man so had pick neutral",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 39
+    },
+    {
+      "index": 495,
+      "post_preview": "this pukimak however kau ni mmg kena makan penampaq kali sehri for weks strahight musibat punya pera...",
+      "post_full": "this pukimak however kau ni mmg kena makan penampaq kali sehri for weks strahight musibat punya perangahi semoga tuhan trik nikmat kat dunia ni satu supaya kau tau peritnya jady",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 30
+    },
+    {
+      "index": 496,
+      "post_preview": "tham sa hahieh waqt ahise tere lia tehra jahise",
+      "post_full": "tham sa hahieh waqt ahise tere lia tehra jahise",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 9
+    },
+    {
+      "index": 497,
+      "post_preview": "zindagi mahinn andhera chha dil mahinn andhera hahy",
+      "post_full": "zindagi mahinn andhera chha dil mahinn andhera hahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 8
+    },
+    {
+      "index": 498,
+      "post_preview": "tumhri batian mujhe mazed suicidal rahy",
+      "post_full": "tumhri batian mujhe mazed suicidal rahy",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    },
+    {
+      "index": 499,
+      "post_preview": "happy th birthday sir epitomize rre actora protagonistdirectorwriter amp many more facets fauj plays...",
+      "post_full": "happy th birthday sir epitomize rre actora protagonistdirectorwriter amp many more facets fauj plays the expresion his ideologies amp socioeconomic status fortunate se him live on stage",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 27
+    },
+    {
+      "index": 500,
+      "post_preview": "kitna bhr bhr jhot likh dia",
+      "post_full": "kitna bhr bhr jhot likh dia",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 6
+    }
+  ]
+}

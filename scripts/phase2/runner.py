@@ -77,8 +77,8 @@ MODELS = {
                  "max_workers": 1, "delay": 0},
     "qwen":     {"class": LMStudioProvider, "name": "Qwen 3.5 9B (Local)",     "default_model": "qwen/qwen3.5-9b",
                  "max_workers": 1, "delay": 0},
-    "mistral":  {"class": LMStudioProvider, "name": "Mistral 7B (Local)",     "default_model": "mistral-7b-instruct-v0.3",
-                 "max_workers": 1, "delay": 0},
+    "deepseek-local": {"class": LMStudioProvider, "name": "Deepseek-r1-0528-qwen3-8b (Local)", "default_model": "deepseek-r1-0528-qwen3-8b",
+                       "max_workers": 1, "delay": 0},
 }
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
@@ -134,7 +134,8 @@ def load_samples(lang: str) -> List[Dict]:
 
 def _partial_path(model_name: str, language: str, out_dir: Path = None) -> Path:
     d = out_dir or EXP1_RESULTS_DIR
-    return d / f"{model_name}_{language}.partial.json"
+    safe_name = model_name.replace("/", "_").replace(":", "_")
+    return d / f"{safe_name}_{language}.partial.json"
 
 
 def _save_partial(results: List[Dict], model_name: str, language: str,
@@ -301,7 +302,8 @@ def save_results(results: List[Dict], metrics: Dict,
     out_dir = out_dir or EXP1_RESULTS_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = out_dir / f"{model_name}_{language}_{timestamp}.json"
+    safe_name = model_name.replace("/", "_").replace(":", "_")
+    path = out_dir / f"{safe_name}_{language}_{timestamp}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump({
             "metadata": {
@@ -490,10 +492,14 @@ def run_experiment1(args) -> None:
                 print(f"  [{info['name']}][{lang}] {e}")
             return
 
+        if args.limit:
+            samples = samples[:args.limit]
+
         with print_lock:
             note = f" [rate-limited: {model_workers}w, {model_delay}s]" if model_delay != args.delay else ""
+            limit_note = f" [LIMIT: {args.limit}]" if args.limit else ""
             print(f"\n  Started: {info['name']} x {lang.capitalize()} "
-                  f"({len(samples)} samples){note}")
+                  f"({len(samples)} samples){note}{limit_note}")
 
         results = run_evaluation(
             provider, samples, lang, template,
@@ -683,6 +689,8 @@ def run_experiment2(args) -> None:
 
         # Skip error entries — no valid prediction to attribute
         entries = [e for e in all_entries if e.get("prediction") not in ("error", "unclear", None)]
+        if args.limit:
+            entries = entries[:args.limit]
         skipped = len(all_entries) - len(entries)
         if skipped:
             logger.info(f"[{model_key}][{lang}] Skipping {skipped} error/unclear entries")
@@ -808,6 +816,8 @@ def main() -> None:
     parser.add_argument("--workers", type=int,   default=1,   help="Parallel requests per model")
     parser.add_argument("--prompt",  type=str,   default=None, choices=list(PROMPTS.keys()),
                         help="Override prompt version (default: language-specific V3)")
+    parser.add_argument("--limit",   type=int,   default=None,
+                        help="Only process the first N samples (e.g. --limit 10 for a quick test)")
     args = parser.parse_args()
 
     print_header()

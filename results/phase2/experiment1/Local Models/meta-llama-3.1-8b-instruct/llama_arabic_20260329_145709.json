@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "model": "lmstudio",
+    "model": "meta-llama-3.1-8b-instruct",
     "language": "arabic",
     "experiment": 1,
     "timestamp": "20260329_145709",
