@@ -77,7 +77,7 @@ MODELS = {
                  "max_workers": 1, "delay": 0},
     "qwen":     {"class": LMStudioProvider, "name": "Qwen 3.5 9B (Local)",     "default_model": "qwen/qwen3.5-9b",
                  "max_workers": 1, "delay": 0},
-    "deepseek-local": {"class": LMStudioProvider, "name": "Deepseek-r1-0528-qwen3-8b (Local)", "default_model": "deepseek-r1-0528-qwen3-8b",
+    "deepseek-local": {"class": LMStudioProvider, "name": "Deepseek-r1-0528-qwen3-8b (Local)", "default_model": "deepseek/deepseek-r1-0528-qwen3-8b",
                        "max_workers": 1, "delay": 0},
 }
 
