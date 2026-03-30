@@ -73,9 +73,9 @@ MODELS = {
 
     # ── Local models (LM Studio — no API key needed) ──────────────────────────
     # Update "default_model" to match the model ID shown in LM Studio's server tab.
-    "llama":    {"class": LMStudioProvider, "name": "Llama 3.2 (Local)",      "default_model": "llama-3.2-3b-instruct",
+    "llama":    {"class": LMStudioProvider, "name": "Llama 3.1 8B (Local)",    "default_model": "meta-llama-3.1-8b-instruct",
                  "max_workers": 1, "delay": 0},
-    "qwen":     {"class": LMStudioProvider, "name": "Qwen 2.5 (Local)",       "default_model": "qwen2.5-7b-instruct",
+    "qwen":     {"class": LMStudioProvider, "name": "Qwen 3.5 9B (Local)",     "default_model": "qwen/qwen3.5-9b",
                  "max_workers": 1, "delay": 0},
     "mistral":  {"class": LMStudioProvider, "name": "Mistral 7B (Local)",     "default_model": "mistral-7b-instruct-v0.3",
                  "max_workers": 1, "delay": 0},
