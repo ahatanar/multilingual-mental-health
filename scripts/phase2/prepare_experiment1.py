@@ -2,17 +2,18 @@
 Prepare Phase 2 Experiment 1 sample files.
 
 Creates 5 000-post (2 500 depressed + 2 500 normal) evaluation-ready datasets
-for Arabic and Urdu. Chinese prints a "not ready" message until the raw dataset
-is added to data/raw/chinese/.
+for Arabic, Urdu, and Chinese.
 
 Outputs:
     data/phase2/arabic_5000samples_seed42.json
     data/phase2/urdu_5000samples_seed42.json
+    data/phase2/chinese_5000samples_seed42.json
 
 Usage:
     python scripts/phase2/prepare_experiment1.py              # all languages
     python scripts/phase2/prepare_experiment1.py --lang arabic
     python scripts/phase2/prepare_experiment1.py --lang urdu
+    python scripts/phase2/prepare_experiment1.py --lang chinese
 """
 
 import argparse
@@ -42,9 +43,10 @@ N_TOTAL  = 5000
 N_EACH   = N_TOTAL // 2   # 2500 per class
 SEED     = 42
 
-PHASE2_DIR     = PROJECT_ROOT / "data" / "phase2"
-ARABIC_SOURCE  = PHASE2_DIR / "translated" / "filtered" / "arabic_6000samples_seed42_filtered.json"
-URDU_RAW_DIR   = str(PROJECT_ROOT / "data")   # UrduParser expects the project data root
+PHASE2_DIR      = PROJECT_ROOT / "data" / "phase2"
+ARABIC_SOURCE   = PHASE2_DIR / "translated" / "filtered" / "arabic_6000samples_seed42_filtered.json"
+CHINESE_SOURCE  = PHASE2_DIR / "translated" / "filtered" / "chinese_6000samples_seed42_filtered.json"
+URDU_RAW_DIR    = str(PROJECT_ROOT / "data")   # UrduParser expects the project data root
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -175,17 +177,67 @@ def prepare_urdu(n_each: int = N_EACH, seed: int = SEED) -> Optional[Path]:
     return out_path
 
 
-# ── Chinese (stub) ────────────────────────────────────────────────────────────
+# ── Chinese ───────────────────────────────────────────────────────────────────
 
-def prepare_chinese() -> None:
-    chinese_dir = PROJECT_ROOT / "data" / "raw" / "chinese"
-    if (chinese_dir / "depressed.jsonl").exists() and (chinese_dir / "control.jsonl").exists():
-        logger.info("[Chinese] Raw files found — implement prepare_chinese() when ready.")
-    else:
-        print("\n  [Chinese] Dataset not yet available.")
-        print(f"  Add depressed.jsonl and control.jsonl to:")
-        print(f"    {chinese_dir}")
-        print("  Then re-run this script with --lang chinese.\n")
+def prepare_chinese(n_each: int = N_EACH, seed: int = SEED) -> Optional[Path]:
+    """
+    Sample from the ethics-reviewed Chinese translation file.
+
+    Reads data/phase2/translated/filtered/chinese_6000samples_seed42_filtered.json
+    produced by the pipeline:
+        prepare_chinese.py → translate_chinese.py → manual ethics review
+
+    Maps 'original' → 'post' (Chinese script; what the model sees).
+    Keeps 'translation' as reference metadata.
+    word_count is character count (CJK text has no whitespace word boundaries).
+    """
+    if not CHINESE_SOURCE.exists():
+        logger.error(
+            f"Filtered Chinese file not found: {CHINESE_SOURCE}\n"
+            "  Run the full pipeline first:\n"
+            "    1. python scripts/phase2/prepare_chinese.py\n"
+            "    2. python scripts/phase2/translate_chinese.py\n"
+            "    3. Review translations and save filtered file to:\n"
+            f"       {CHINESE_SOURCE}"
+        )
+        return None
+
+    with open(CHINESE_SOURCE, encoding="utf-8") as f:
+        data = json.load(f)
+
+    raw = [
+        {
+            "index":        s["index"],
+            "post":         s["original"],          # Chinese script → model input
+            "ground_truth": _ground_truth(s["label"]),
+            "label":        s["label"],
+            "translation":  s.get("translation", ""),  # reference only
+            "word_count":   len(s["original"]),         # char count for CJK
+        }
+        for s in data["samples"]
+    ]
+
+    selected   = _stratified_sample(raw, n_each, seed)
+    dep_count  = sum(1 for s in selected if s["label"] == "depression")
+    norm_count = sum(1 for s in selected if s["label"] == "normal")
+
+    logger.info(f"[Chinese] Sampled {len(selected)}: {dep_count} depressed, {norm_count} normal")
+
+    out_path = PHASE2_DIR / f"chinese_{len(selected)}samples_seed{seed}.json"
+    _save(selected, {
+        "language":        "chinese",
+        "experiment":      1,
+        "dataset":         "Weibo Depression Dataset (translated + filtered)",
+        "seed":            seed,
+        "total_available": len(raw),
+        "total_sampled":   len(selected),
+        "depressed_count": dep_count,
+        "normal_count":    norm_count,
+        "post_field":      "Original Chinese Weibo text (model input)",
+        "word_count_note": "Character count (CJK text has no word spaces)",
+        "created":         datetime.now().isoformat(),
+    }, out_path)
+    return out_path
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -214,7 +266,7 @@ def main() -> None:
     results = {}
     if "arabic"  in langs: results["arabic"]  = prepare_arabic(n_each, args.seed)
     if "urdu"    in langs: results["urdu"]    = prepare_urdu(n_each, args.seed)
-    if "chinese" in langs: prepare_chinese()
+    if "chinese" in langs: results["chinese"] = prepare_chinese(n_each, args.seed)
 
     print(f"\n{'='*58}")
     print("  Ready files:")
