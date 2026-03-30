@@ -49,7 +49,7 @@ MODELS = {
     "openai": {"class": OpenAIProvider, "name": "ChatGPT (GPT-4o-mini)", "default_model": "gpt-4o-mini"},
     "claude": {"class": ClaudeProvider, "name": "Claude Haiku 4.5", "default_model": "claude-haiku-4-5",
                "max_workers": 1, "delay": 1.5},  # 50 RPM limit
-    "lmstudio": {"class": LMStudioProvider, "name": "LM Studio (Local)", "default_model": "local-model",
+    "lmstudio": {"class": LMStudioProvider, "name": "Qwen 3.5 9B (Local)", "default_model": "qwen/qwen3.5-9b",
                  "max_workers": 1, "delay": 0},
 }
 
