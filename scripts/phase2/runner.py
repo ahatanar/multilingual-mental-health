@@ -330,9 +330,9 @@ def select_experiment() -> int:
     print("\n  Select Experiment:")
     print("  " + "-" * 52)
     print("  [1]  Experiment 1 — Monolingual classification")
-    print("       (Arabic / Urdu / Chinese, classification only)")
-    print("  [2]  Experiment 2 — Classification + keyword extraction")
-    print("       (same languages, outputs key words + translations per post)")
+    print("       (Arabic / Urdu / Chinese, classify each post as Depressed / Not Depressed)")
+    print("  [2]  Experiment 2 — Keyword attribution")
+    print("       (explain Exp 1 labels: which words drove each prediction?)")
     print("  [3]  Experiment 3 — ...                          [COMING SOON]")
     print()
 

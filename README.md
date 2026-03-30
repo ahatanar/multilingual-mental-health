@@ -16,13 +16,15 @@ Each LLM is evaluated on 5 000 posts per language, presented in the language's *
 |----------|---------|--------|-------|---------|
 | Arabic | CairoDep (Egyptian dialect) | Arabic script | 5 000 | 2 500 dep + 2 500 normal |
 | Urdu | Urdu Depression Dataset | Roman Urdu (transliterated) | 5 000 | 2 500 dep + 2 500 normal |
-| Chinese | TBD | Chinese script | 5 000 | 2 500 dep + 2 500 normal |
+| Chinese | Weibo Depression Dataset | Simplified Chinese | 5 000 | 2 500 dep + 2 500 normal |
 
-**Why native script?** The research goal is to test true multilingual capability — not how well models handle translated content. Arabic posts are sourced from Egyptian social media; Urdu from Pakistani Roman-script social media. Each has distinct cultural patterns that challenge generic models.
+**Why native script?** The research goal is to test true multilingual capability — not how well models handle translated content. Arabic posts are sourced from Egyptian social media; Urdu from Pakistani Roman-script social media; Chinese from Weibo. Each has distinct cultural patterns that challenge generic models.
 
 **Arabic pre-processing pipeline:** The Arabic dataset required an additional ethics step. Raw CairoDep posts were translated to English (Cohere `command-r-08-2024`) so the research team could screen for inappropriate content before evaluation. 42 posts were removed (translation failures, explicit sexual content, graphic violence, PII). The final evaluation uses the **original Arabic text**, not the translations.
 
 **Urdu labels:** The raw Urdu dataset has four severity levels (`mild`, `moderate`, `severe`, `non-depression`). For binary classification these are collapsed: `mild/moderate/severe → depressed`, `non-depression → not depressed`. The original severity label is preserved in the data for analysis.
+
+**Chinese dataset:** Sourced from Weibo (Chinese microblogging platform). Posts are in Simplified Chinese; some contain code-switched English, emoji, and Weibo-specific emoticons (e.g. `[挖鼻屎]`). The dataset was pre-processed and translated for internal review before the 5 000-sample eval file was created.
 
 **Models evaluated:** Gemini 2.0 Flash, DeepSeek Chat, ChatGPT (GPT-4o-mini), Claude Haiku 4.5
 
@@ -39,7 +41,7 @@ Builds directly on Experiment 1. Rather than asking the model to classify **and*
 **Design rationale:** Combining classification and keyword extraction in one prompt conflates the two tasks — the model may choose words to justify a label it has already settled on, rather than surfacing the evidence it actually used. By separating the steps, Experiment 2 captures true attribution: the model explains a prediction it has already committed to.
 
 **Input per post (from Experiment 1 result files):**
-- The original post text (Arabic script / Roman Urdu)
+- The original post text (Arabic script / Roman Urdu / Simplified Chinese)
 - The model's own predicted label (`Depressed` or `Not Depressed`)
 
 **Output format — 2 lines per post (nothing else):**
@@ -51,7 +53,7 @@ sadness, loneliness, fear
 
 | Line | Content |
 |------|---------|
-| 1 | Key word(s) from the post in the **original language** (Arabic script / Roman Urdu), comma-separated |
+| 1 | Key word(s) from the post in the **original language** (Arabic / Roman Urdu / Chinese), comma-separated |
 | 2 | One-word English translation of each keyword, in the same order, comma-separated |
 
 **Why keyword attribution?**
@@ -60,7 +62,7 @@ Surfacing the words that drove each classification enables post-hoc analysis:
 - Where do models diverge — and which words explain the disagreement?
 - Do models latch onto genuine clinical signals or spurious surface features (e.g. religious phrases, common interjections)?
 
-**Prompts:** Language-specific attribution V3 prompts (`v3_arabic_exp2`, `v3_exp2`) — 6 cultural few-shot examples each showing a post, its label, and the correct 2-line attribution response.
+**Prompts:** Language-specific attribution V3 prompts (`v3_arabic_exp2`, `v3_exp2`, `v3_chinese_exp2`) — 6 cultural few-shot examples each showing a post, its label, and the correct 2-line attribution response.
 
 **Each result entry includes:**
 ```json
@@ -93,7 +95,7 @@ Planned for a future phase. Will be implemented and documented when the design i
 | English | Sentiment Tweets | Kaggle |
 | Spanish | [Spanish Depression Tweets](https://www.kaggle.com/datasets/francescoronzano/spanish-tweets-suggesting-depression) | Kaggle |
 | Urdu | Urdu Depression Dataset | Roman Urdu social media, academically curated |
-| Chinese | [Google Drive](https://drive.google.com/file/d/1fNKtoo4SP98OAhalMjNRZfFqmQZsQ0fh/view) | TBD |
+| Chinese | Weibo Depression Dataset | Weibo (Chinese microblogging), Simplified Chinese |
 
 ---
 
@@ -131,14 +133,16 @@ multilingual-mental-health/
 │       ├── arabic_6000samples_seed42.json       # Intermediate: 6 000 raw Arabic posts for translation
 │       ├── arabic_5000samples_seed42.json       # EXPERIMENT INPUT: 5 000 Arabic posts (original script)
 │       ├── urdu_5000samples_seed42.json         # EXPERIMENT INPUT: 5 000 Urdu posts (Roman script)
+│       ├── chinese_5000samples_seed42.json      # EXPERIMENT INPUT: 5 000 Chinese posts (Simplified)
 │       ├── translated/
 │       │   ├── arabic_6000samples_seed42_translated.json   # Cohere translations (ethics review)
+│       │   ├── chinese_6000samples_seed42_translated.json  # Chinese translations (internal review)
 │       │   └── filtered/
 │       │       └── arabic_6000samples_seed42_filtered.json # 5 958 posts after removing 42 flagged
-│       └── translation_progress/    # Checkpoints from Cohere translation pipeline
+│       └── translation_progress/    # Checkpoints from translation pipeline
 │
 ├── evaluation/                      # Shared evaluation library (used by all phases)
-│   ├── prompts.py                   # Classification prompts (V1/V2/V3 + Arabic/Chinese V3)
+│   ├── prompts.py                   # Classification prompts (V1/V2/V3 per language + attribution V3 per language)
 │   ├── parsers.py                   # Language-specific dataset parsers (one class per language)
 │   ├── metrics.py                   # EvaluationMetrics: accuracy, precision, recall, F1
 │   ├── sampler.py                   # DatasetSampler: stratified sampling utility
@@ -205,13 +209,14 @@ pip install -r requirements.txt
 #    GEMINI_API_KEY, OPENAI_API_KEY, DEEPSEEK_API_KEY, CLAUDE_API_KEY, COHERE_API_KEY
 
 # 3. Prepare experiment data (Arabic + Urdu 5 000-post files)
+#    Chinese is already prepared at data/phase2/chinese_5000samples_seed42.json
 python scripts/phase2/prepare_experiment1.py
 
 # 4. Run evaluation (interactive menu)
 python scripts/phase2/runner.py
 #    -> Select [1] Experiment 1
 #    -> Select model(s)
-#    -> Select language(s): Arabic, Urdu (Chinese pending dataset)
+#    -> Select language(s): Arabic, Urdu, Chinese
 ```
 
 **CLI flags for the runner:**
@@ -221,7 +226,7 @@ python scripts/phase2/runner.py
 | `--fresh` | Ignore partial results, start from scratch |
 | `--delay N` | Seconds between API calls (default: 1.0) |
 | `--workers N` | Parallel requests per model (default: 1) |
-| `--prompt v2` | Override language-specific prompt (choices: v1, v2, v3, v3_arabic, v3_chinese) |
+| `--prompt v2` | Override language-specific prompt (choices: v1, v2, v3, v3_arabic, v3_chinese, v3_exp2, v3_arabic_exp2, v3_chinese_exp2) |
 
 ---
 
@@ -231,11 +236,12 @@ python scripts/phase2/runner.py
 |-----|-------------|----------|
 | `v1` | Zero-shot, minimal instructions | Baseline comparison |
 | `v2` | Enhanced clinical framework, handles sarcasm + edge cases | General use |
-| `v3` | Few-shot with 6 Roman Urdu examples, political/poetry FP guards | Urdu (default) |
+| `v3` | Few-shot with 6 Roman Urdu examples, political/poetry FP guards | Urdu Exp 1 (default) |
 | `v3_arabic` | Few-shot with 6 Arabic-script examples, religious/hashtag FP guards | Arabic Exp 1 (default) |
-| `v3_chinese` | Clinical framework only — examples pending dataset | Chinese (default) |
+| `v3_chinese` | Few-shot with 6 Chinese Weibo examples, illness/fandom/lifestyle FP guards | Chinese Exp 1 (default) |
 | `v3_exp2` | Urdu attribution: given a label, identify the words that drove it (2-line output) | Urdu Exp 2 (default) |
 | `v3_arabic_exp2` | Arabic attribution: same design for Arabic/Egyptian dialect | Arabic Exp 2 (default) |
+| `v3_chinese_exp2` | Chinese attribution: same design for Chinese Weibo posts | Chinese Exp 2 (default) |
 
 ---
 
