@@ -473,6 +473,41 @@ Post:
 Response:"""
 
 
+# ── Exp 3: Cross-lingual consistency check (one universal prompt) ────────────
+# Each model receives the English translation of a post it classified in Exp 1,
+# along with its original label.  It is asked two things:
+#   1. Identify 1-2 key English words from the translation that are central to
+#      the decision.
+#   2. State whether the translation still supports the original classification.
+#
+# Two placeholders:
+#   {prediction}        — the model's own Exp 1 label ("Depressed" / "Not Depressed")
+#   {original_language} — language the original post was written in
+#   {post_text}         — English translation (filled by provider.classify())
+#
+# Output is EXACTLY TWO lines:
+#   Line 1: 1-2 key English words, comma-separated
+#   Line 2: yes  or  no
+
+CONSISTENCY_PROMPT_EXP3 = """You are reviewing a mental health text classification for cross-lingual consistency.
+
+A social media post originally written in {original_language} was previously classified as "{prediction}".
+You are now shown the English translation of that same post.
+
+Does the English translation support the "{prediction}" classification?
+
+Identify 1-2 key English words from the translation that are most central to the "{prediction}" decision.
+
+Produce EXACTLY two lines — nothing else:
+Line 1: 1-2 key English words from the translation, comma-separated
+Line 2: yes  (the translation supports "{prediction}")  or  no  (it does not)
+
+Translation:
+\"\"\"{post_text}\"\"\"
+
+Response:"""
+
+
 # ── Prompt registry ─────────────────────────────────────────────────────────
 
 PROMPTS = {
@@ -484,6 +519,7 @@ PROMPTS = {
     "v3_exp2":         ATTRIBUTION_PROMPT_V3_EXP2,          # Urdu — attribution (explain existing label)
     "v3_arabic_exp2":  ATTRIBUTION_PROMPT_V3_ARABIC_EXP2,   # Arabic — attribution
     "v3_chinese_exp2": ATTRIBUTION_PROMPT_V3_CHINESE_EXP2,  # Chinese — attribution
+    "v3_exp3":         CONSISTENCY_PROMPT_EXP3,             # Exp 3 — cross-lingual consistency (all languages)
 }
 
 # ── Language → default prompt mapping ───────────────────────────────────────
@@ -499,6 +535,13 @@ LANGUAGE_DEFAULT_PROMPTS_EXP2 = {
     "urdu":    "v3_exp2",
     "arabic":  "v3_arabic_exp2",
     "chinese": "v3_chinese_exp2",
+}
+
+# Exp 3 uses one universal prompt for all languages
+LANGUAGE_DEFAULT_PROMPTS_EXP3 = {
+    "urdu":    "v3_exp3",
+    "arabic":  "v3_exp3",
+    "chinese": "v3_exp3",
 }
 
 # ── Active prompt ────────────────────────────────────────────────────────────
