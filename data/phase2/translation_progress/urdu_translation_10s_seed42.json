@@ -1,0 +1,111 @@
+{
+  "total": 10,
+  "translated_count": 10,
+  "depressed_translated": 3,
+  "normal_translated": 7,
+  "failed_count": 0,
+  "seed": 42,
+  "last_updated": "2026-04-02T23:50:32.333524",
+  "items": [
+    {
+      "index": 0,
+      "original": "uske chorne bad kahi br khudkushi krne dil",
+      "translation": "He had the courage to attempt suicide after the dark night.",
+      "label": "depression",
+      "severity": "severe",
+      "ground_truth": "depressed",
+      "word_count": 8,
+      "translation_failed": false
+    },
+    {
+      "index": 1,
+      "original": "ned remind your hert about its function by distracting it with bit crdio dawg otherwise its to much dawg",
+      "translation": "Need to remind your heart about its function by distracting it with a bit of cardio, dog, otherwise it's too much dog.",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 19,
+      "translation_failed": false
+    },
+    {
+      "index": 2,
+      "original": "thakawat mahinn nend ni aty",
+      "translation": "Thank you, I can't sleep at all this month.",
+      "label": "depression",
+      "severity": "mild",
+      "ground_truth": "depressed",
+      "word_count": 5,
+      "translation_failed": false
+    },
+    {
+      "index": 3,
+      "original": "kisne kaha ek trfa mohabbat drd dete mujhe hamesha khushi milti love praticksejpal praticksejpal pratickfam pratick jab mila",
+      "translation": "Who said one-sided love causes pain? I always find joy. Love Praticksejpal, Pratickfam Pratick, when we meet.",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 18,
+      "translation_failed": false
+    },
+    {
+      "index": 4,
+      "original": "pak fauj",
+      "translation": "Pak Army.",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "translation_failed": false
+    },
+    {
+      "index": 5,
+      "original": "bhahi tum isi mahinn khush raho",
+      "translation": "Sister, stay happy this month.",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 6,
+      "translation_failed": false
+    },
+    {
+      "index": 6,
+      "original": "bhahi inke family to bhi nhi kia mahine to vo log vellon trah ahise dekh rahe bbprotein shake banaya vo yad hahilkn kisne bheja vo yad nhi faltu comprison krengeaur fir bolna nothing agahinst her",
+      "translation": "My sister, her family is not like that. They are treating her like an outsider, and it's been a month. She made a protein shake, but they don't remember that. They only remember the useless comparisons and then say, \"I have nothing against her.\"",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 35,
+      "translation_failed": false
+    },
+    {
+      "index": 7,
+      "original": "chor likh",
+      "translation": "Thief write.",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "translation_failed": false
+    },
+    {
+      "index": 8,
+      "original": "bada dr lagra hahirat nend bhi yahi sab chalta",
+      "translation": "\"The big doctor looks amazed, even in his sleep, everything continues as usual.\"",
+      "label": "depression",
+      "severity": "mild",
+      "ground_truth": "depressed",
+      "word_count": 9,
+      "translation_failed": false
+    },
+    {
+      "index": 9,
+      "original": "another one",
+      "translation": "\"Another one bites the dust.\"",
+      "label": "normal",
+      "severity": "non-depression",
+      "ground_truth": "not depressed",
+      "word_count": 2,
+      "translation_failed": false
+    }
+  ]
+}

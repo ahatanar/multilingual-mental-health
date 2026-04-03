@@ -81,9 +81,50 @@ Surfacing the words that drove each classification enables post-hoc analysis:
 
 ---
 
-### Experiment 3 — *Coming Soon*
+### Experiment 3 — Cross-Lingual Label Consistency *(active)*
 
-Planned for a future phase. Will be implemented and documented when the design is finalised.
+Builds on Experiment 1. Each model is given the **English translation** of a post it already classified, together with its original label. The model is asked: *does the English translation still support your earlier classification?*
+
+**Design rationale:** A classification driven by genuine clinical content should hold regardless of the language it is expressed in. If a model changes its label when shown the translated version of a post it previously classified, it is exhibiting cross-lingual inconsistency — suggesting the original decision was influenced by language-specific surface cues rather than the underlying meaning. The combination of original label, re-evaluation response, and translated text also creates a rich dataset for human annotation and ground-truth validation.
+
+**Input per post (from Experiment 1 result files + English translations):**
+- The English translation of the post (produced by Cohere during data preparation)
+- The model's own predicted label from Experiment 1 (`Depressed` or `Not Depressed`)
+- The original language name (used as a hint in the prompt)
+
+**Output format — 2 lines per post (nothing else):**
+
+```
+hopelessness, alone
+yes
+```
+
+| Line | Content |
+|------|---------|
+| 1 | 1-2 key **English** words from the translation that are central to the decision, comma-separated |
+| 2 | `yes` (model still agrees with its Exp 1 label) or `no` (model disagrees) |
+
+**Prompt:** One universal prompt (`v3_exp3`) for all three languages. Two variable placeholders are filled at runtime: `{prediction}` (the Exp 1 label) and `{original_language}` (e.g. "Roman Urdu", "Arabic (Egyptian dialect)").
+
+**Translation sources:**
+- Arabic / Chinese: `translation` field already present in `data/phase2/*_5000samples_seed42.json`
+- Urdu: loaded from `data/phase2/translated/urdu_5000samples_seed42_translated.json` (or the in-progress checkpoint)
+
+**Each result entry includes:**
+```json
+{
+  "index": 42,
+  "post_full": "...",
+  "ground_truth": "depressed",
+  "prediction": "Depressed",
+  "translation": "I feel hopeless and completely alone...",
+  "keywords_exp3": ["hopelessness", "alone"],
+  "agreement": "yes",
+  "raw_response_exp3": "hopelessness, alone\nyes"
+}
+```
+
+**Results location:** `results/phase2/experiment3/`
 
 ---
 
@@ -226,7 +267,7 @@ python scripts/phase2/runner.py
 | `--fresh` | Ignore partial results, start from scratch |
 | `--delay N` | Seconds between API calls (default: 1.0) |
 | `--workers N` | Parallel requests per model (default: 1) |
-| `--prompt v2` | Override language-specific prompt (choices: v1, v2, v3, v3_arabic, v3_chinese, v3_exp2, v3_arabic_exp2, v3_chinese_exp2) |
+| `--prompt v2` | Override language-specific prompt (choices: v1, v2, v3, v3_arabic, v3_chinese, v3_exp2, v3_arabic_exp2, v3_chinese_exp2, v3_exp3) |
 
 ---
 
@@ -242,6 +283,7 @@ python scripts/phase2/runner.py
 | `v3_exp2` | Urdu attribution: given a label, identify the words that drove it (2-line output) | Urdu Exp 2 (default) |
 | `v3_arabic_exp2` | Arabic attribution: same design for Arabic/Egyptian dialect | Arabic Exp 2 (default) |
 | `v3_chinese_exp2` | Chinese attribution: same design for Chinese Weibo posts | Chinese Exp 2 (default) |
+| `v3_exp3` | Cross-lingual consistency: given English translation + Exp 1 label, output 1-2 keywords + yes/no | All languages Exp 3 (universal) |
 
 ---
 
