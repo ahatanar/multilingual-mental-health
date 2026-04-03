@@ -1,12 +1,19 @@
 {
-  "total": 5000,
-  "translated_count": 2450,
-  "depressed_translated": 1223,
-  "normal_translated": 1227,
-  "failed_count": 1,
-  "seed": 42,
-  "last_updated": "2026-04-03T02:02:14.374077",
-  "items": [
+  "metadata": {
+    "language": "urdu",
+    "script": "Roman Urdu (Latin script)",
+    "dataset": "Urdu Depression Dataset (Roman Urdu)",
+    "model": "command-r-08-2024",
+    "seed": 42,
+    "total_requested": 5000,
+    "total_translated": 2450,
+    "depressed_count": 1223,
+    "normal_count": 1227,
+    "failed_count": 1,
+    "status": "partial",
+    "timestamp": "2026-04-03T02:02:14.433072"
+  },
+  "samples": [
     {
       "index": 0,
       "original": "uske chorne bad kahi br khudkushi krne dil",
