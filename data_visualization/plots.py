@@ -73,6 +73,38 @@ def _skip(reason: str, name: str) -> None:
     print(f"  [plot] Skipped '{name}': {reason}")
 
 
+# ── merged-DataFrame column name constants ────────────────────────────────────
+# Centralised so all functions use the same strings and refactoring is safe.
+
+_COL_CORRECT_EXP1      = "correct_exp1"
+_COL_CORRECT_EXP2      = "correct_exp2"
+_COL_AGREEMENT_EXP3    = "agreement_exp3"
+_COL_KW_COUNT_EXP2     = "keyword_count_exp2"
+_COL_KW_COUNT_EXP3     = "keyword_count_exp3_exp3"
+_COL_TRANSLATIONS_EXP2 = "translations_exp2"
+_COL_KEYWORDS_EXP3     = "keywords_exp3_exp3"
+
+# ── shared micro-helpers ──────────────────────────────────────────────────────
+
+def _exclude_gemma_chinese(df: pd.DataFrame) -> pd.DataFrame:
+    """Drop gemma/chinese rows — that run returned constant 1 keyword (experiment error)."""
+    return df[~((df["model"] == "gemma") & (df["language"] == "chinese"))].copy()
+
+
+def _ensure_axes_list(axes) -> list:
+    """Wrap a single Axes object in a list so subplot loops are always uniform."""
+    return [axes] if not isinstance(axes, (list, np.ndarray)) else list(axes)
+
+
+def _annotate_box_mean(ax, position: int, data, fmt: str = ".2f",
+                       offset: float = 0.05, fontsize: int = 9) -> None:
+    """Place a mean-value label above the box at `position` (1-indexed)."""
+    if len(data):
+        mean = np.mean(data)
+        ax.text(position, mean + offset, f"{mean:{fmt}}",
+                ha="center", va="bottom", fontsize=fontsize)
+
+
 # ── Experiment 1 plots ────────────────────────────────────────────────────────
 
 def plot_exp1_metrics_by_model(summary: pd.DataFrame, out_dir: Path) -> Path | None:
@@ -339,29 +371,48 @@ def plot_exp1_confusion_summary(summary: pd.DataFrame, out_dir: Path) -> Path | 
 # ── Experiment 2 plots ────────────────────────────────────────────────────────
 
 def plot_exp2_keyword_count_dist(registry: Registry, out_dir: Path) -> Path | None:
-    """Box plot of keyword count distribution per model and language."""
+    """
+    Box plot of keyword count distribution — one subplot per language so models
+    are clearly visible within each language. Excludes gemma/chinese (experiment
+    error: all entries returned exactly 1 keyword).
+    """
     df2 = registry.all_samples(experiment=2)
     if df2.empty or "keyword_count" not in df2.columns:
         _skip("no Exp2 keyword data", "exp2_keyword_count_dist"); return None
 
-    combos = sorted(df2.groupby(["model", "language"]).groups.keys())
-    if len(combos) < 2:
-        _skip("need ≥2 combos", "exp2_keyword_count_dist"); return None
+    df2 = _exclude_gemma_chinese(df2)
 
-    data = [df2[(df2["model"] == m) & (df2["language"] == l)]["keyword_count"].values
-            for m, l in combos]
-    labels = [f"{m}\n{l}" for m, l in combos]
+    langs = sorted(df2["language"].unique())
+    if not langs:
+        _skip("no language data after filtering", "exp2_keyword_count_dist"); return None
 
-    fig, ax = plt.subplots(figsize=(max(12, len(combos) * 1.5), 6))
-    bp = ax.boxplot(data, labels=labels, patch_artist=True, showfliers=False)
-    for patch, (m, _) in zip(bp["boxes"], combos):
-        patch.set_facecolor(_model_color(m))
-        patch.set_alpha(0.7)
+    fig, axes = plt.subplots(1, len(langs), figsize=(6 * len(langs), 6), sharey=False)
+    axes = _ensure_axes_list(axes)
 
-    ax.set_ylabel("Keywords extracted per entry")
-    ax.set_title("Experiment 2 — Keyword count distribution by model & language")
-    ax.tick_params(axis="x", labelsize=8)
-    ax.grid(axis="y", alpha=0.3)
+    for ax, lang in zip(axes, langs):
+        sub = df2[df2["language"] == lang]
+        models = sorted(sub["model"].unique())
+        data = [sub[sub["model"] == m]["keyword_count"].values for m in models]
+
+        bp = ax.boxplot(data, labels=[m.capitalize() for m in models],
+                        patch_artist=True, showfliers=False)
+        for patch, m in zip(bp["boxes"], models):
+            patch.set_facecolor(_model_color(m))
+            patch.set_alpha(0.75)
+
+        for i, (_, d) in enumerate(zip(models, data), 1):
+            _annotate_box_mean(ax, i, d, fmt=".1f", fontsize=7)
+
+        ax.set_title(f"{lang.capitalize()}", fontsize=12)
+        ax.set_ylabel("Keywords per entry" if ax is axes[0] else "")
+        ax.tick_params(axis="x", labelsize=9, rotation=15)
+        ax.grid(axis="y", alpha=0.3)
+
+    fig.suptitle(
+        "Experiment 2 — Keyword count distribution by model per language\n"
+        "(gemma/chinese excluded: experiment error — all entries returned 1 keyword)",
+        fontsize=11,
+    )
     return _save(fig, out_dir / "exp2" / "keyword_count_distribution.png")
 
 
@@ -437,49 +488,51 @@ def plot_exp2_keywords_by_class(registry: Registry, out_dir: Path) -> Path | Non
     return _save(fig, out_dir / "exp2" / "top_keywords_by_class.png")
 
 
-def plot_exp2_keywords_correct_vs_incorrect(
-    merged_12: pd.DataFrame, out_dir: Path
+def plot_exp2_keyword_count_by_predicted_class(
+    registry: Registry, out_dir: Path
 ) -> Path | None:
-    """Compare keyword counts for correct vs incorrect predictions."""
-    if merged_12.empty:
-        _skip("no Exp1+2 merged data", "exp2_keywords_correct_vs_incorrect"); return None
+    """
+    Box plot comparing keyword counts extracted for depressed vs not-depressed
+    predicted entries, per model. Shows whether models extract more/fewer keywords
+    when predicting depression vs no depression.
+    """
+    df2 = registry.all_samples(experiment=2)
+    if df2.empty or "keyword_count" not in df2.columns or "prediction" not in df2.columns:
+        _skip("no Exp2 keyword/prediction data", "exp2_keyword_count_by_predicted_class"); return None
 
-    # Find keyword_count column (may be suffixed)
-    kc_col = next(
-        (c for c in merged_12.columns if "keyword_count" in c and "exp2" in c),
-        next((c for c in merged_12.columns if "keyword_count" in c), None)
+    df2 = _exclude_gemma_chinese(df2)
+    df2 = df2[df2["prediction"].isin(["depressed", "not depressed"])].dropna(subset=["keyword_count"])
+
+    models = sorted(df2["model"].unique())
+    if not models:
+        _skip("no data after filtering", "exp2_keyword_count_by_predicted_class"); return None
+
+    fig, axes = plt.subplots(1, len(models), figsize=(3.5 * len(models), 5), sharey=True)
+    axes = _ensure_axes_list(axes)
+
+    classes = ["depressed", "not depressed"]
+    colors = {"depressed": "#EF4444", "not depressed": "#3B82F6"}
+
+    for ax, model in zip(axes, models):
+        sub = df2[df2["model"] == model]
+        data = [sub[sub["prediction"] == cls]["keyword_count"].values for cls in classes]
+        bp = ax.boxplot(data, labels=["Dep.", "Not dep."],
+                        patch_artist=True, showfliers=False)
+        for patch, cls in zip(bp["boxes"], classes):
+            patch.set_facecolor(colors[cls])
+            patch.set_alpha(0.75)
+        for i, (_, d) in enumerate(zip(classes, data), 1):
+            _annotate_box_mean(ax, i, d, fontsize=8)
+        ax.set_title(model.capitalize(), fontsize=10)
+        ax.grid(axis="y", alpha=0.3)
+
+    axes[0].set_ylabel("Keywords per entry")
+    fig.suptitle(
+        "Experiment 2 — Keyword count by predicted class per model\n"
+        "(Do models extract more/fewer keywords when predicting depression?)",
+        fontsize=11,
     )
-    correct_col = next(
-        (c for c in merged_12.columns if c.startswith("correct")), None
-    )
-    if kc_col is None or correct_col is None:
-        _skip("missing keyword_count or correct column", "exp2_keywords_correct_vs_incorrect"); return None
-
-    correct_counts = merged_12[merged_12[correct_col] == True][kc_col].dropna()
-    incorrect_counts = merged_12[merged_12[correct_col] == False][kc_col].dropna()
-    if correct_counts.empty or incorrect_counts.empty:
-        _skip("not enough data in both correct/incorrect", "exp2_keywords_correct_vs_incorrect"); return None
-
-    fig, ax = plt.subplots(figsize=(8, 5))
-    bp = ax.boxplot([correct_counts.values, incorrect_counts.values],
-                    labels=["Correct (Exp1)", "Incorrect (Exp1)"],
-                    patch_artist=True, showfliers=False)
-    box_colors = ["#22C55E", "#EF4444"]
-    for patch, color in zip(bp["boxes"], box_colors):
-        patch.set_facecolor(color)
-        patch.set_alpha(0.7)
-    ax.set_ylabel("Keyword count (Exp2)")
-    ax.set_title("Experiment 2 — Keyword count: Correct vs Incorrect predictions")
-    ax.grid(axis="y", alpha=0.3)
-
-    # Add mean annotations
-    for i, (label, data) in enumerate(
-        [("Correct", correct_counts), ("Incorrect", incorrect_counts)], 1
-    ):
-        ax.text(i, data.mean() + 0.05, f"mean={data.mean():.2f}",
-                ha="center", va="bottom", fontsize=9, color="gray")
-
-    return _save(fig, out_dir / "exp2" / "keywords_correct_vs_incorrect.png")
+    return _save(fig, out_dir / "exp2" / "keyword_count_by_predicted_class.png")
 
 
 # ── Experiment 3 plots ────────────────────────────────────────────────────────
@@ -638,91 +691,409 @@ def plot_cross_f1_vs_agreement(
     return _save(fig, out_dir / "cross" / "f1_vs_agreement.png")
 
 
-def plot_cross_exp1_vs_exp2_accuracy(
-    summary: pd.DataFrame, out_dir: Path
-) -> Path | None:
-    """Side-by-side: Exp1 vs Exp2 accuracy per model (should be identical but good to verify)."""
-    df1 = summary[summary["experiment"] == 1][["model", "language", "accuracy"]].rename(
-        columns={"accuracy": "accuracy_exp1"}
-    )
-    df2 = summary[summary["experiment"] == 2][["model", "language", "accuracy"]].rename(
-        columns={"accuracy": "accuracy_exp2"}
-    )
-    if df1.empty or df2.empty:
-        _skip("missing Exp1 or Exp2 data", "cross_exp1_vs_exp2_accuracy"); return None
-
-    merged = df1.merge(df2, on=["model", "language"], how="inner").dropna()
-    if merged.empty:
-        _skip("no overlapping data", "cross_exp1_vs_exp2_accuracy"); return None
-
-    merged["label"] = merged["model"] + " / " + merged["language"]
-    merged = merged.sort_values("accuracy_exp1", ascending=False)
-    x = np.arange(len(merged))
-    width = 0.35
-
-    fig, ax = plt.subplots(figsize=(max(10, len(merged) * 1.4), 5))
-    ax.bar(x - width / 2, merged["accuracy_exp1"], width, label="Exp 1", color="#3B82F6", alpha=0.85)
-    ax.bar(x + width / 2, merged["accuracy_exp2"], width, label="Exp 2", color="#10B981", alpha=0.85)
-    ax.set_xticks(x)
-    ax.set_xticklabels(merged["label"].tolist(), rotation=30, ha="right", fontsize=9)
-    ax.set_ylim(0, 1.05)
-    ax.yaxis.set_major_formatter(mticker.PercentFormatter(xmax=1, decimals=0))
-    ax.set_ylabel("Accuracy")
-    ax.set_title("Cross-experiment — Exp1 vs Exp2 accuracy (same base classification)")
-    ax.legend()
-    ax.grid(axis="y", alpha=0.3)
-    return _save(fig, out_dir / "cross" / "exp1_vs_exp2_accuracy.png")
 
 
-def plot_cross_exp1_exp3_label_flip(
+def plot_cross_exp1_exp3_flip_analysis(
     merged_13: pd.DataFrame, out_dir: Path
-) -> Path | None:
+) -> list[Path]:
     """
-    For entries where Exp1 is wrong, what fraction 'flip' in Exp3?
-    Stacked bars per model-language.
+    Detailed 4-category breakdown of how Exp3 agreement relates to Exp1 correctness.
+
+    The 4 categories per sample:
+      A) Exp1 correct   + Exp3 agrees     → "Correct & confirmed"       (best case)
+      B) Exp1 correct   + Exp3 disagrees  → "Correct but overruled"     (harmful flip)
+      C) Exp1 wrong     + Exp3 disagrees  → "Wrong, corrected by Exp3"  (beneficial flip)
+      D) Exp1 wrong     + Exp3 agrees     → "Wrong & confirmed wrong"   (worst case)
+
+    Produces two complementary plots:
+      1. Stacked bar chart showing absolute counts of all 4 categories per model+language
+      2. Rate comparison: beneficial-flip rate and harmful-flip rate per model
     """
     if merged_13.empty:
-        _skip("no Exp1+3 merged data", "cross_exp1_exp3_label_flip"); return None
+        _skip("no Exp1+3 merged data", "cross_exp1_exp3_flip_analysis"); return []
 
-    correct_col = next((c for c in merged_13.columns if c.startswith("correct_")), None)
-    agreement_col = next((c for c in merged_13.columns if "agreement_exp3" in c or c == "agreement_exp3"), None)
+    correct_col = _COL_CORRECT_EXP1
+    agreement_col = _COL_AGREEMENT_EXP3
+    if correct_col not in merged_13.columns or agreement_col not in merged_13.columns:
+        _skip("missing correct_exp1 or agreement_exp3 column", "cross_exp1_exp3_flip_analysis"); return []
 
-    if correct_col is None or agreement_col is None:
-        _skip("missing correct or agreement columns", "cross_exp1_exp3_label_flip"); return None
-
+    # ── build per-combo table ──────────────────────────────────────────────
     rows = []
     for (model, lang), grp in merged_13.groupby(["model", "language"]):
-        incorrect = grp[grp[correct_col] == False]
-        if incorrect.empty:
+        classified = grp[grp[agreement_col].isin(["yes", "no"])]
+        if classified.empty:
             continue
-        flipped = (incorrect[agreement_col] == "no").sum()
-        stayed_wrong = (incorrect[agreement_col] == "yes").sum()
+
+        correct_agree    = ((classified[correct_col] == True)  & (classified[agreement_col] == "yes")).sum()
+        correct_disagree = ((classified[correct_col] == True)  & (classified[agreement_col] == "no")).sum()
+        wrong_disagree   = ((classified[correct_col] == False) & (classified[agreement_col] == "no")).sum()
+        wrong_agree      = ((classified[correct_col] == False) & (classified[agreement_col] == "yes")).sum()
+        total = len(classified)
+
         rows.append({
-            "label": f"{model}\n{lang}",
+            "label": f"{model.capitalize()}\n{lang.capitalize()}",
             "model": model, "language": lang,
-            "flipped": int(flipped),
-            "stayed_wrong": int(stayed_wrong),
-            "total_incorrect": len(incorrect),
+            "correct_confirmed": int(correct_agree),
+            "correct_overruled": int(correct_disagree),
+            "wrong_corrected":   int(wrong_disagree),
+            "wrong_confirmed":   int(wrong_agree),
+            "total": total,
+            "beneficial_flip_rate": wrong_disagree / total if total else 0,
+            "harmful_flip_rate":    correct_disagree / total if total else 0,
+            "agreement_on_correct": correct_agree / (correct_agree + correct_disagree) if (correct_agree + correct_disagree) else 0,
+            "agreement_on_wrong":   wrong_agree  / (wrong_agree + wrong_disagree)   if (wrong_agree + wrong_disagree) else 0,
         })
 
     if not rows:
-        _skip("no incorrect-prediction rows found", "cross_exp1_exp3_label_flip"); return None
+        _skip("could not build flip-analysis rows", "cross_exp1_exp3_flip_analysis"); return []
 
     df = pd.DataFrame(rows)
-    x = np.arange(len(df))
+    saved = []
 
-    fig, ax = plt.subplots(figsize=(max(9, len(df) * 1.5), 5))
-    ax.bar(x, df["flipped"], label="Flipped in Exp3 (disagree)", color="#22C55E")
-    ax.bar(x, df["stayed_wrong"], bottom=df["flipped"],
-           label="Still wrong in Exp3 (agree)", color="#EF4444", alpha=0.75)
+    # ── Plot 1: Stacked bar — all 4 categories ─────────────────────────────
+    cat_cols = ["correct_confirmed", "correct_overruled", "wrong_corrected", "wrong_confirmed"]
+    cat_labels = [
+        "A: Correct & confirmed by Exp3",
+        "B: Correct but overruled by Exp3 (harmful)",
+        "C: Wrong, corrected by Exp3 (beneficial)",
+        "D: Wrong & confirmed wrong by Exp3",
+    ]
+    cat_colors = ["#22C55E", "#F97316", "#3B82F6", "#EF4444"]
+
+    x = np.arange(len(df))
+    fig, ax = plt.subplots(figsize=(max(11, len(df) * 1.8), 6))
+    bottoms = np.zeros(len(df))
+    for col, label, color in zip(cat_cols, cat_labels, cat_colors):
+        vals = df[col].values
+        bars = ax.bar(x, vals, bottom=bottoms, label=label, color=color, edgecolor="white", linewidth=0.5)
+        # Label each segment if large enough
+        for bar, bot, val in zip(bars, bottoms, vals):
+            if val / df["total"].max() > 0.04:
+                ax.text(bar.get_x() + bar.get_width() / 2,
+                        bot + val / 2,
+                        str(val), ha="center", va="center",
+                        fontsize=7.5, color="white", fontweight="bold")
+        bottoms += vals
 
     ax.set_xticks(x)
     ax.set_xticklabels(df["label"].tolist(), fontsize=9)
-    ax.set_ylabel("Count (among Exp1 incorrect predictions)")
-    ax.set_title("Cross-experiment — Exp1 wrong predictions: flip behavior in Exp3")
-    ax.legend()
+    ax.set_ylabel("Sample count")
+    ax.set_title(
+        "Exp1 vs Exp3 — Flip analysis: did Exp3 agreement help or hurt?\n"
+        "A=both correct  |  B=harmful flip  |  C=beneficial flip  |  D=both wrong"
+    )
+    ax.legend(loc="upper right", fontsize=8, framealpha=0.9)
     ax.grid(axis="y", alpha=0.3)
-    return _save(fig, out_dir / "cross" / "exp1_incorrect_flip_in_exp3.png")
+    saved.append(_save(fig, out_dir / "cross" / "exp3_flip_analysis_stacked.png"))
+
+    # ── Plot 2: Rate chart — beneficial vs harmful flip rates per model ────
+    fig2, axes2 = plt.subplots(1, 2, figsize=(14, 5))
+
+    # Left: beneficial vs harmful flip rates
+    ax_rates = axes2[0]
+    x2 = np.arange(len(df))
+    width = 0.35
+    ax_rates.bar(x2 - width / 2, df["beneficial_flip_rate"] * 100,
+                 width, label="Beneficial flip rate\n(wrong→corrected)",
+                 color="#3B82F6", alpha=0.85)
+    ax_rates.bar(x2 + width / 2, df["harmful_flip_rate"] * 100,
+                 width, label="Harmful flip rate\n(correct→overruled)",
+                 color="#F97316", alpha=0.85)
+    ax_rates.set_xticks(x2)
+    ax_rates.set_xticklabels(df["label"].tolist(), fontsize=8)
+    ax_rates.set_ylabel("Rate (%)")
+    ax_rates.set_title("Beneficial vs Harmful flip rate per model+language")
+    ax_rates.legend(fontsize=8)
+    ax_rates.grid(axis="y", alpha=0.3)
+
+    # Right: agreement rate when Exp1 was correct vs when Exp1 was wrong
+    ax_cond = axes2[1]
+    ax_cond.bar(x2 - width / 2, df["agreement_on_correct"] * 100,
+                width, label="Agreement rate\n(when Exp1 correct)",
+                color="#22C55E", alpha=0.85)
+    ax_cond.bar(x2 + width / 2, df["agreement_on_wrong"] * 100,
+                width, label="Agreement rate\n(when Exp1 wrong)",
+                color="#EF4444", alpha=0.85)
+    ax_cond.set_xticks(x2)
+    ax_cond.set_xticklabels(df["label"].tolist(), fontsize=8)
+    ax_cond.set_ylabel("Rate (%)")
+    ax_cond.set_title("Exp3 agreement rate conditioned on Exp1 correctness")
+    ax_cond.legend(fontsize=8)
+    ax_cond.grid(axis="y", alpha=0.3)
+
+    fig2.suptitle("Exp3 flip behavior analysis — rates", fontsize=12)
+    saved.append(_save(fig2, out_dir / "cross" / "exp3_flip_rates.png"))
+
+    return saved
+
+
+def plot_exp2_exp3_keyword_count_paired(
+    merged_23: pd.DataFrame, out_dir: Path
+) -> Path | None:
+    """
+    Side-by-side comparison of how many keywords each model extracts in Exp2
+    (original-language → translated to English) vs Exp3 (direct from English
+    translation). One subplot per model. Colored by agreement.
+    """
+    if merged_23.empty:
+        _skip("no Exp2+3 merged data", "exp2_exp3_keyword_count_paired"); return None
+
+    kc2 = _COL_KW_COUNT_EXP2
+    kc3 = _COL_KW_COUNT_EXP3
+    if kc2 not in merged_23.columns or kc3 not in merged_23.columns:
+        _skip("missing keyword_count columns", "exp2_exp3_keyword_count_paired"); return None
+
+    models = sorted(merged_23["model"].unique())
+    fig, axes = plt.subplots(1, len(models), figsize=(5 * len(models), 5), sharey=False)
+    axes = _ensure_axes_list(axes)
+
+    for ax, model in zip(axes, models):
+        sub = merged_23[merged_23["model"] == model]
+        data_exp2 = sub[kc2].dropna().values
+        data_exp3 = sub[kc3].dropna().values
+
+        bp = ax.boxplot([data_exp2, data_exp3],
+                        labels=["Exp2\n(translated)", "Exp3\n(direct)"],
+                        patch_artist=True, showfliers=False)
+        for patch, color in zip(bp["boxes"], ["#F59E0B", "#3B82F6"]):
+            patch.set_facecolor(color)
+            patch.set_alpha(0.75)
+
+        for i, d in enumerate([data_exp2, data_exp3], 1):
+            _annotate_box_mean(ax, i, d)
+
+        ax.set_title(f"{model.capitalize()}", fontsize=11)
+        ax.grid(axis="y", alpha=0.3)
+
+    axes[0].set_ylabel("Keywords per entry")
+    fig.suptitle(
+        "Exp2 vs Exp3 — Keyword count comparison\n"
+        "Exp2: original-language kws translated to English  |  Exp3: kws from English translation",
+        fontsize=11,
+    )
+    return _save(fig, out_dir / "cross" / "exp2_exp3_keyword_count_paired.png")
+
+
+def plot_exp2_exp3_keyword_overlap_and_top(
+    merged_23: pd.DataFrame, out_dir: Path
+) -> list[Path]:
+    """
+    Two plots:
+      1. Jaccard similarity distribution between Exp2 translated keywords and
+         Exp3 English keywords, per model — shows conceptual overlap.
+      2. Top-20 keyword comparison: Exp2 translated vs Exp3 direct, side by side
+         (combined across all models/languages with data).
+    """
+    if merged_23.empty:
+        _skip("no Exp2+3 merged data", "exp2_exp3_keyword_overlap"); return []
+
+    kw2_col = _COL_TRANSLATIONS_EXP2
+    kw3_col = _COL_KEYWORDS_EXP3
+    if kw2_col not in merged_23.columns or kw3_col not in merged_23.columns:
+        _skip("missing keyword list columns", "exp2_exp3_keyword_overlap"); return []
+
+    def _jaccard(a: list, b: list) -> float | None:
+        sa = {w.lower().strip() for w in a if w}
+        sb = {w.lower().strip() for w in b if w}
+        if not sa and not sb:
+            return None
+        union = sa | sb
+        return len(sa & sb) / len(union) if union else 0.0
+
+    saved = []
+
+    # Single pass: compute per-model Jaccard scores AND global keyword counters
+    from collections import Counter
+    models = sorted(merged_23["model"].unique())
+    jaccard_data: dict[str, list[float]] = {m: [] for m in models}
+    cnt2: Counter = Counter()
+    cnt3: Counter = Counter()
+
+    for model, kw2_val, kw3_val in zip(
+        merged_23["model"], merged_23[kw2_col], merged_23[kw3_col]
+    ):
+        if isinstance(kw2_val, list):
+            cnt2.update(w.lower().strip() for w in kw2_val if w and w.strip())
+        if isinstance(kw3_val, list):
+            cnt3.update(w.lower().strip() for w in kw3_val if w and w.strip())
+        if isinstance(kw2_val, list) and isinstance(kw3_val, list):
+            j = _jaccard(kw2_val, kw3_val)
+            if j is not None:
+                jaccard_data[model].append(j)
+
+    jaccard_data = {m: scores for m, scores in jaccard_data.items() if scores}
+
+    # ── Plot 1: Jaccard similarity box plot per model ─────────────────────
+    if jaccard_data:
+        fig, ax = plt.subplots(figsize=(9, 5))
+        bp = ax.boxplot(
+            list(jaccard_data.values()),
+            labels=[m.capitalize() for m in jaccard_data.keys()],
+            patch_artist=True, showfliers=False,
+        )
+        for patch, model in zip(bp["boxes"], jaccard_data.keys()):
+            patch.set_facecolor(_model_color(model))
+            patch.set_alpha(0.75)
+        for i, (_, scores) in enumerate(jaccard_data.items(), 1):
+            _annotate_box_mean(ax, i, scores, fmt=".3f", offset=0.005)
+        ax.set_ylabel("Jaccard similarity")
+        ax.set_ylim(-0.05, 1.05)
+        ax.set_title(
+            "Exp2 vs Exp3 — Keyword overlap (Jaccard) per model\n"
+            "How similar are Exp2 translated keywords to Exp3 direct English keywords?"
+        )
+        ax.grid(axis="y", alpha=0.3)
+        saved.append(_save(fig, out_dir / "cross" / "exp2_exp3_keyword_jaccard.png"))
+
+    # ── Plot 2: Top-20 keywords side-by-side ──────────────────────────────
+
+    if cnt2 and cnt3:
+        top2 = cnt2.most_common(20)
+        top3 = cnt3.most_common(20)
+
+        fig2, (ax2, ax3) = plt.subplots(1, 2, figsize=(16, 7))
+        kws2, vals2 = zip(*top2)
+        kws3, vals3 = zip(*top3)
+
+        ax2.barh(list(kws2)[::-1], list(vals2)[::-1], color="#F59E0B", alpha=0.85)
+        ax2.set_title("Exp2 — Top 20 translated keywords\n(original-language → English)")
+        ax2.set_xlabel("Frequency")
+        ax2.grid(axis="x", alpha=0.3)
+
+        ax3.barh(list(kws3)[::-1], list(vals3)[::-1], color="#3B82F6", alpha=0.85)
+        ax3.set_title("Exp3 — Top 20 keywords\n(direct from English translation)")
+        ax3.set_xlabel("Frequency")
+        ax3.grid(axis="x", alpha=0.3)
+
+        fig2.suptitle(
+            "Exp2 vs Exp3 — Top keyword comparison (all models & languages)\n"
+            "Are the same concepts surfacing through translation vs direct extraction?",
+            fontsize=11,
+        )
+        saved.append(_save(fig2, out_dir / "cross" / "exp2_exp3_top_keywords_comparison.png"))
+
+    return saved
+
+
+def plot_exp2_exp3_multidimensional(
+    merged_23: pd.DataFrame, out_dir: Path
+) -> list[Path]:
+    """
+    Multi-dimensional analysis connecting Exp2 keywords, Exp3 keywords, agreement,
+    and correctness. Produces two plots:
+
+      1. Scatter: Exp2 keyword count vs Exp3 keyword count, colored by agreement
+         (yes=green, no=red), faceted by language — reveals whether keyword volume
+         patterns differ for agreed vs disagreed cases.
+
+      2. Grouped bar: for each (agree/disagree) × (correct/wrong) quadrant,
+         show the avg Exp2 keyword count and avg Exp3 keyword count — reveals
+         whether keyword verbosity is linked to both agreement and correctness.
+    """
+    if merged_23.empty:
+        _skip("no Exp2+3 merged data", "exp2_exp3_multidimensional"); return []
+
+    kc2 = _COL_KW_COUNT_EXP2
+    kc3 = _COL_KW_COUNT_EXP3
+    ag  = _COL_AGREEMENT_EXP3
+    cor = _COL_CORRECT_EXP2
+
+    missing = [c for c in [kc2, kc3, ag] if c not in merged_23.columns]
+    if missing:
+        _skip(f"missing columns: {missing}", "exp2_exp3_multidimensional"); return []
+
+    sub = merged_23[merged_23[ag].isin(["yes", "no"])].copy()
+    sub[kc2] = pd.to_numeric(sub[kc2], errors="coerce")
+    sub[kc3] = pd.to_numeric(sub[kc3], errors="coerce")
+    sub = sub.dropna(subset=[kc2, kc3])
+    if sub.empty:
+        _skip("no valid rows after filtering", "exp2_exp3_multidimensional"); return []
+
+    saved = []
+    ag_colors = {"yes": "#22C55E", "no": "#EF4444"}
+    cmaps    = {"yes": "Greens",   "no": "Reds"}
+
+    # ── Plot 1: density (hexbin) per language — replaces transparent scatter ──
+    # With ~10 K points per panel, hexbin reveals density far better than
+    # alpha-blended individual points. Mean diamonds are overlaid for each group.
+    langs = sorted(sub["language"].unique())
+    fig, axes = plt.subplots(1, len(langs), figsize=(6 * len(langs), 5), sharey=True)
+    axes = _ensure_axes_list(axes)
+
+    for ax, lang in zip(axes, langs):
+        grp = sub[sub["language"] == lang]
+        for ag_val in ["yes", "no"]:
+            pts = grp[grp[ag] == ag_val]
+            if pts.empty:
+                continue
+            ax.hexbin(pts[kc2].values, pts[kc3].values,
+                      gridsize=20, cmap=cmaps[ag_val],
+                      alpha=0.55, mincnt=1, linewidths=0)
+            ax.scatter(
+                pts[kc2].mean(), pts[kc3].mean(),
+                c=ag_colors[ag_val], s=160, marker="D",
+                edgecolors="black", linewidths=1.2,
+                label=f"Agree={ag_val} (mean)", zorder=5,
+            )
+        ax.set_xlabel("Exp2 keyword count")
+        ax.set_title(f"{lang.capitalize()}", fontsize=11)
+        ax.grid(alpha=0.3)
+        if ax is axes[0]:
+            ax.set_ylabel("Exp3 keyword count")
+
+    handles, labels_ = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels_, loc="lower center", ncol=2, fontsize=9,
+               bbox_to_anchor=(0.5, -0.05))
+    fig.suptitle(
+        "Exp2 keyword count vs Exp3 keyword count by Exp3 agreement\n"
+        "Hexbin = density; diamonds = group means",
+        fontsize=11,
+    )
+    saved.append(_save(fig, out_dir / "cross" / "exp2_exp3_kw_count_scatter.png"))
+
+    # ── Plot 2: quadrant bar chart ────────────────────────────────────────
+    if cor not in sub.columns:
+        return saved  # skip quadrant chart if no correctness column
+
+    sub_c = sub.dropna(subset=[cor])
+    quadrants = [
+        ("Correct + Agree",    (sub_c[cor] == True)  & (sub_c[ag] == "yes")),
+        ("Correct + Disagree", (sub_c[cor] == True)  & (sub_c[ag] == "no")),
+        ("Wrong + Disagree",   (sub_c[cor] == False) & (sub_c[ag] == "no")),
+        ("Wrong + Agree",      (sub_c[cor] == False) & (sub_c[ag] == "yes")),
+    ]
+    q_labels, q_mean2, q_mean3, q_counts = [], [], [], []
+    for label, mask in quadrants:
+        pts = sub_c[mask]
+        if len(pts) >= 10:
+            q_labels.append(f"{label}\n(n={len(pts):,})")
+            q_mean2.append(pts[kc2].mean())
+            q_mean3.append(pts[kc3].mean())
+            q_counts.append(len(pts))
+
+    if len(q_labels) >= 2:
+        x = np.arange(len(q_labels))
+        w = 0.35
+        q_colors = ["#22C55E", "#F97316", "#3B82F6", "#EF4444"]
+
+        fig2, ax2 = plt.subplots(figsize=(11, 5))
+        bars2 = ax2.bar(x - w / 2, q_mean2, w, label="Avg Exp2 kw count", color="#F59E0B", alpha=0.85)
+        bars3 = ax2.bar(x + w / 2, q_mean3, w, label="Avg Exp3 kw count", color="#3B82F6", alpha=0.85)
+        for bar, v in zip(list(bars2) + list(bars3), q_mean2 + q_mean3):
+            ax2.text(bar.get_x() + bar.get_width() / 2, v + 0.02, f"{v:.2f}",
+                     ha="center", va="bottom", fontsize=8.5)
+        ax2.set_xticks(x)
+        ax2.set_xticklabels(q_labels, fontsize=9)
+        ax2.set_ylabel("Average keyword count")
+        ax2.set_title(
+            "Avg keyword count (Exp2 vs Exp3) across correctness × agreement quadrants\n"
+            "Do disagreement cases extract more or fewer keywords?"
+        )
+        ax2.legend()
+        ax2.grid(axis="y", alpha=0.3)
+        saved.append(_save(fig2, out_dir / "cross" / "exp2_exp3_kw_quadrant_bars.png"))
+
+    return saved
 
 
 def plot_cross_keyword_agreement_connection(
@@ -732,10 +1103,10 @@ def plot_cross_keyword_agreement_connection(
     if merged_23.empty:
         _skip("no Exp2+3 merged data", "cross_keyword_agreement_connection"); return None
 
-    kc_col = next((c for c in merged_23.columns if "keyword_count" in c and "exp2" in c), None)
-    ag_col = next((c for c in merged_23.columns if "agreement_exp3" in c or c == "agreement_exp3"), None)
+    kc_col = _COL_KW_COUNT_EXP2
+    ag_col = _COL_AGREEMENT_EXP3
 
-    if kc_col is None or ag_col is None:
+    if kc_col not in merged_23.columns or ag_col not in merged_23.columns:
         _skip("missing keyword_count or agreement columns", "cross_keyword_agreement_connection"); return None
 
     sub = merged_23[[kc_col, ag_col]].dropna()
@@ -805,7 +1176,7 @@ def generate_all_plots(
     _try(plot_exp2_keyword_stats_heatmap, kw_summary, out_dir)
     _try(plot_exp2_top_keywords, top_kws, out_dir)
     _try(plot_exp2_keywords_by_class, registry, out_dir)
-    _try(plot_exp2_keywords_correct_vs_incorrect, merges.get("exp1_exp2", pd.DataFrame()), out_dir)
+    _try(plot_exp2_keyword_count_by_predicted_class, registry, out_dir)
 
     # Experiment 3
     _try(plot_exp3_agreement_rates, agreement_summary, out_dir)
@@ -814,8 +1185,10 @@ def generate_all_plots(
 
     # Cross-experiment
     _try(plot_cross_f1_vs_agreement, summary, agreement_summary, out_dir)
-    _try(plot_cross_exp1_vs_exp2_accuracy, summary, out_dir)
-    _try(plot_cross_exp1_exp3_label_flip, merges.get("exp1_exp3", pd.DataFrame()), out_dir)
+    _try(plot_cross_exp1_exp3_flip_analysis, merges.get("exp1_exp3", pd.DataFrame()), out_dir)
+    _try(plot_exp2_exp3_keyword_count_paired, merges.get("exp2_exp3", pd.DataFrame()), out_dir)
+    _try(plot_exp2_exp3_keyword_overlap_and_top, merges.get("exp2_exp3", pd.DataFrame()), out_dir)
+    _try(plot_exp2_exp3_multidimensional, merges.get("exp2_exp3", pd.DataFrame()), out_dir)
     _try(plot_cross_keyword_agreement_connection, merges.get("exp2_exp3", pd.DataFrame()), out_dir)
 
     print(f"\n[plots] {len(saved)} plot(s) saved.\n")
