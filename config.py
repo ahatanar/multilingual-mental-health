@@ -9,7 +9,7 @@ load_dotenv()
 # ── Local model keys ──────────────────────────────────────────────────────────
 # Models in this set use LM Studio and need no real API key.
 # If you add a new local model entry to runner.py MODELS, add its key here too.
-LOCAL_PROVIDERS = {"lmstudio", "llama", "qwen", "mistral"}
+LOCAL_PROVIDERS = {"lmstudio", "llama", "qwen", "mistral", "deepseek-local"}
 
 # ── Online API key mapping ────────────────────────────────────────────────────
 # Maps runner.py MODELS keys -> environment variable names.

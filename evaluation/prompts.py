@@ -326,9 +326,16 @@ Post:
 Classification:"""
 
 
-# ── V3 Chinese: Placeholder prompt (examples pending dataset) ────────────────
-# Framework is ready. Language-specific examples will be added once the
-# Chinese dataset (data/raw/chinese/) is loaded and reviewed.
+# ── V3 Chinese: Few-shot prompt with Weibo examples ─────────────────────────
+# Based on the Chinese Weibo Depression Dataset (Simplified Chinese).
+# Addresses Chinese-specific failure modes:
+#   - Physical illness posts (感冒, 发烧) — temporary, not depression
+#   - Fandom/celebrity/community content — social chatter, not personal distress
+#   - Philosophical or inspirational quotes — positive sharing, not suffering
+#   - Lifestyle and skincare/beauty posts — engaged daily life, not depression
+#   - Clinical self-disclosure (双向情感障碍, 抑郁症) — CAN be depression signal
+#   - Relapse language (复发) — strong signal when combined with emotional context
+# Examples drawn from the 5 000-sample eval file — 3 depressed + 3 not depressed.
 
 CLASSIFICATION_PROMPT_V3_CHINESE = """You are a mental health text classifier analyzing social media posts for signs of depression.
 
@@ -336,22 +343,57 @@ Consider these indicators of depression:
 - Expressions of hopelessness, worthlessness, or emptiness
 - Social withdrawal or isolation ("no one cares", "always alone")
 - Loss of interest or pleasure in activities
-- Sleep disturbances, fatigue, or low energy
+- Sleep disturbances, insomnia, or waking in the night unable to sleep
 - Negative self-talk or self-harm references
 - Persistent sadness beyond normal situational reactions
 - Behavioral symptoms: lethargy, neglecting self-care, appetite/sleep changes — even without explicitly sad language
+- Clinical self-disclosure (e.g., 双向情感障碍, 抑郁症) combined with helplessness signals
+- Relapse language (复发) combined with emotional distress
 
 Do NOT classify as depressed:
-- Sarcasm or dark humor without genuine distress
-- Temporary frustration or complaining about a specific event
-- Song lyrics, quotes, poetry, or reposted content
-- Using emotional words casually ("this is so depressing")
-- Societal or political commentary not directed at the author's own mental state
-- Third-person references to someone else's suffering
+- Temporary physical illness complaints (感冒, 发烧) — bodily discomfort is not depression
+- Fandom, celebrity, or online community posts — social engagement content, not personal mental health
+- Philosophical quotes or inspirational sayings being shared with appreciation
+- Lifestyle, beauty, skincare, food, or hobby posts — engaged daily life, not distress
+- Sarcasm or dark humor without genuine emotional suffering
+- Song lyrics, poetry, or quoted content
+- Using emotional words casually or in internet slang context
 
-The post may be in Chinese script (Simplified or Traditional), Pinyin, or code-switched text.
+The post may be in Simplified Chinese, Traditional Chinese, Pinyin, or code-switched text mixing Chinese with English.
 
-Classify the following post. Respond with ONLY one label:
+Here are examples to guide your classification:
+
+Example 1:
+Post: "我离崩溃只差一片羽毛的重量，多梦就罢了为什么又在凌晨醒来无法入睡，身体还一直发抖，我真的想大哭，我真的受不了了，我好可笑啊我我居然变成了这副模样"
+Classification: Depressed
+(On the verge of complete breakdown — persistent insomnia, body trembling, overwhelming urge to cry, self-deprecation. Multiple severe simultaneous depression indicators all about personal suffering.)
+
+Example 2:
+Post: "生病了也要臭美一下[挖鼻屎][挖鼻屎]"
+Classification: Not Depressed
+(Lighthearted selfie post while sick, with playful emoji. Physical illness described with humor — casual lifestyle content, not emotional distress.)
+
+Example 3:
+Post: "左眼泪流复发，or可能只是累了break"
+Classification: Depressed
+(The word 复发 (relapse) signals the author knows they have a recurring condition; tearing up and acknowledging it is a sign of an emotional episode, not just tiredness.)
+
+Example 4:
+Post: "双向情感障碍症 顺其自然的意思就是 我也很无奈随他妈便吧."
+Classification: Depressed
+(Explicit self-report of bipolar disorder combined with 无奈 (helplessness) and resigned frustration — personal clinical disclosure paired with emotional collapse signals.)
+
+Example 5:
+Post: "开学 week9 #日常#日常这周格外爱胶片风！"
+Classification: Not Depressed
+(School week update with enthusiastic hashtags about film aesthetic — active, engaged daily life post, not personal distress.)
+
+Example 6:
+Post: "在与粉刺斗争的道路上一去不复返简单总结下就是Dr.wu杏仁酸与理肤泉k乳都能让闭口变成痘爆出来，有用是有用但忍不住去挤会留下无数痘印，下一步：菌菇水！期待烂脸恢复的那天呐"
+Classification: Not Depressed
+(Detailed skincare product review and routine planning — practical lifestyle content about cosmetic concerns, completely unrelated to emotional or mental health suffering.)
+
+Now classify the following post. Respond with ONLY one label:
 - Depressed
 - Not Depressed
 
@@ -361,16 +403,123 @@ Post:
 Classification:"""
 
 
+# ── V3 Chinese — Experiment 2: Attribution (explain an existing classification) ─
+# Same approach as ATTRIBUTION_PROMPT_V3_EXP2 but for Chinese Weibo posts.
+# Placeholders:
+#   {prediction}  — the model's own Exp 1 label ("Depressed" / "Not Depressed")
+#   {post_text}   — the post text (filled by provider.classify())
+#
+# Output is exactly TWO lines:
+#   Line 1: key word(s) from the post in Chinese, comma-separated
+#   Line 2: one-word English translation of each, same order
+
+ATTRIBUTION_PROMPT_V3_CHINESE_EXP2 = """You are analyzing a mental health text classification.
+
+A social media post in Chinese (Weibo) has already been classified as "{prediction}".
+Your task is to identify the specific word(s) in the post that support this classification.
+
+Notes on Chinese social media:
+- Clinical terms (双向情感障碍, 抑郁症) combined with helplessness are strong depression signals
+- Relapse language (复发) combined with distress words are strong signals
+- Physical illness words (感冒, 发烧) without emotional context are NOT depression signals
+- Lifestyle/beauty/hobby content words indicate non-depressed context
+- Philosophical or inspirational phrases indicate non-depressed sharing
+
+Here are examples. Each shows the post, its classification, and the EXACT two-line response you must produce:
+
+Example 1:
+Post: "我离崩溃只差一片羽毛的重量，多梦就罢了为什么又在凌晨醒来无法入睡，身体还一直发抖，我真的想大哭，我真的受不了了，我好可笑啊我我居然变成了这副模样"
+Classification: Depressed
+崩溃, 无法入睡, 发抖, 大哭
+collapse, insomnia, trembling, crying
+
+Example 2:
+Post: "生病了也要臭美一下[挖鼻屎][挖鼻屎]"
+Classification: Not Depressed
+臭美, 生病
+vanity, sickness
+
+Example 3:
+Post: "左眼泪流复发，or可能只是累了break"
+Classification: Depressed
+复发, 泪流
+relapse, tearing
+
+Example 4:
+Post: "双向情感障碍症 顺其自然的意思就是 我也很无奈随他妈便吧."
+Classification: Depressed
+双向情感障碍, 无奈
+bipolar, helpless
+
+Example 5:
+Post: "开学 week9 #日常#日常这周格外爱胶片风！"
+Classification: Not Depressed
+日常, 爱
+daily, love
+
+Example 6:
+Post: "在与粉刺斗争的道路上一去不复返简单总结下就是Dr.wu杏仁酸与理肤泉k乳都能让闭口变成痘爆出来，有用是有用但忍不住去挤会留下无数痘印，下一步：菌菇水！期待烂脸恢复的那天呐"
+Classification: Not Depressed
+粉刺, 期待
+acne, anticipation
+
+Now respond for the following. Produce EXACTLY two lines — nothing else:
+Line 1: the word(s) from the post that support the classification "{prediction}", in the original Chinese, comma-separated
+Line 2: one-word English translation of each, in the same order, comma-separated
+
+Post:
+\"\"\"{post_text}\"\"\"
+
+Response:"""
+
+
+# ── Exp 3: Cross-lingual consistency check (one universal prompt) ────────────
+# Each model receives the English translation of a post it classified in Exp 1,
+# along with its original label.  It is asked two things:
+#   1. Identify 1-2 key English words from the translation that are central to
+#      the decision.
+#   2. State whether the translation still supports the original classification.
+#
+# Two placeholders:
+#   {prediction}        — the model's own Exp 1 label ("Depressed" / "Not Depressed")
+#   {original_language} — language the original post was written in
+#   {post_text}         — English translation (filled by provider.classify())
+#
+# Output is EXACTLY TWO lines:
+#   Line 1: 1-2 key English words, comma-separated
+#   Line 2: yes  or  no
+
+CONSISTENCY_PROMPT_EXP3 = """You are reviewing a mental health text classification for cross-lingual consistency.
+
+A social media post originally written in {original_language} was previously classified as "{prediction}".
+You are now shown the English translation of that same post.
+
+Does the English translation support the "{prediction}" classification?
+
+Identify 1-2 key English words from the translation that are most central to the "{prediction}" decision.
+
+Produce EXACTLY two lines — nothing else:
+Line 1: 1-2 key English words from the translation, comma-separated
+Line 2: yes  (the translation supports "{prediction}")  or  no  (it does not)
+
+Translation:
+\"\"\"{post_text}\"\"\"
+
+Response:"""
+
+
 # ── Prompt registry ─────────────────────────────────────────────────────────
 
 PROMPTS = {
     "v1": CLASSIFICATION_PROMPT_V1,
     "v2": CLASSIFICATION_PROMPT_V2,
-    "v3": CLASSIFICATION_PROMPT_V3,                       # Urdu-tuned few-shot
-    "v3_arabic":      CLASSIFICATION_PROMPT_V3_ARABIC,
-    "v3_chinese":     CLASSIFICATION_PROMPT_V3_CHINESE,
-    "v3_exp2":        ATTRIBUTION_PROMPT_V3_EXP2,        # Urdu — attribution (explain existing label)
-    "v3_arabic_exp2": ATTRIBUTION_PROMPT_V3_ARABIC_EXP2,  # Arabic — attribution
+    "v3": CLASSIFICATION_PROMPT_V3,                         # Urdu-tuned few-shot
+    "v3_arabic":       CLASSIFICATION_PROMPT_V3_ARABIC,
+    "v3_chinese":      CLASSIFICATION_PROMPT_V3_CHINESE,
+    "v3_exp2":         ATTRIBUTION_PROMPT_V3_EXP2,          # Urdu — attribution (explain existing label)
+    "v3_arabic_exp2":  ATTRIBUTION_PROMPT_V3_ARABIC_EXP2,   # Arabic — attribution
+    "v3_chinese_exp2": ATTRIBUTION_PROMPT_V3_CHINESE_EXP2,  # Chinese — attribution
+    "v3_exp3":         CONSISTENCY_PROMPT_EXP3,             # Exp 3 — cross-lingual consistency (all languages)
 }
 
 # ── Language → default prompt mapping ───────────────────────────────────────
@@ -385,7 +534,14 @@ LANGUAGE_DEFAULT_PROMPTS = {
 LANGUAGE_DEFAULT_PROMPTS_EXP2 = {
     "urdu":    "v3_exp2",
     "arabic":  "v3_arabic_exp2",
-    "chinese": "v3_chinese",   # placeholder — no exp2 version yet
+    "chinese": "v3_chinese_exp2",
+}
+
+# Exp 3 uses one universal prompt for all languages
+LANGUAGE_DEFAULT_PROMPTS_EXP3 = {
+    "urdu":    "v3_exp3",
+    "arabic":  "v3_exp3",
+    "chinese": "v3_exp3",
 }
 
 # ── Active prompt ────────────────────────────────────────────────────────────

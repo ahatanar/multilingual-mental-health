@@ -31,6 +31,6 @@ class LMStudioProvider(ModelProvider):
                 {"role": "user", "content": prompt},
             ],
             temperature=0.0,
-            max_tokens=50,
+            max_tokens=1000,
         )
         return response.choices[0].message.content

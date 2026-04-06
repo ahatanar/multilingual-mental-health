@@ -33,7 +33,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from config import get_api_key, DEFAULT_MODELS
 from models import GeminiProvider, DeepSeekProvider, OpenAIProvider, ClaudeProvider, LMStudioProvider
 from evaluation.metrics import EvaluationMetrics
-from evaluation.prompts import PROMPTS, LANGUAGE_DEFAULT_PROMPTS, LANGUAGE_DEFAULT_PROMPTS_EXP2
+from evaluation.prompts import PROMPTS, LANGUAGE_DEFAULT_PROMPTS, LANGUAGE_DEFAULT_PROMPTS_EXP2, LANGUAGE_DEFAULT_PROMPTS_EXP3
 
 logging.basicConfig(
     level=logging.INFO,
@@ -77,8 +77,8 @@ MODELS = {
                  "max_workers": 1, "delay": 0},
     "qwen":     {"class": LMStudioProvider, "name": "Qwen 3.5 9B (Local)",     "default_model": "qwen/qwen3.5-9b",
                  "max_workers": 1, "delay": 0},
-    "mistral":  {"class": LMStudioProvider, "name": "Mistral 7B (Local)",     "default_model": "mistral-7b-instruct-v0.3",
-                 "max_workers": 1, "delay": 0},
+    "deepseek-local": {"class": LMStudioProvider, "name": "Deepseek-r1-0528-qwen3-8b (Local)", "default_model": "deepseek/deepseek-r1-0528-qwen3-8b",
+                       "max_workers": 1, "delay": 0},
     "gemma":    {"class": LMStudioProvider, "name": "Gemma 9B (Local)",       "default_model": "google/gemma-3-9b-it",
                  "max_workers": 1, "delay": 0},
 }
@@ -88,6 +88,7 @@ MODELS = {
 PHASE2_DATA_DIR = PROJECT_ROOT / "data" / "phase2"
 EXP1_RESULTS_DIR = PROJECT_ROOT / "results" / "phase2" / "experiment1"
 EXP2_RESULTS_DIR = PROJECT_ROOT / "results" / "phase2" / "experiment2"
+EXP3_RESULTS_DIR = PROJECT_ROOT / "results" / "phase2" / "experiment3"
 
 # Keep RESULTS_DIR pointing to exp1 for backward-compat with existing partial files
 RESULTS_DIR = EXP1_RESULTS_DIR
@@ -141,7 +142,8 @@ def _safe_model_name(model_name: str) -> str:
 
 def _partial_path(model_name: str, language: str, out_dir: Path = None) -> Path:
     d = out_dir or EXP1_RESULTS_DIR
-    return d / f"{_safe_model_name(model_name)}_{language}.partial.json"
+    safe_name = model_name.replace("/", "_").replace(":", "_")
+    return d / f"{_safe_model_name(safe_name)}_{language}.partial.json"
 
 
 def _save_partial(results: List[Dict], model_name: str, language: str,
@@ -324,7 +326,8 @@ def save_results(results: List[Dict], metrics: Dict,
     out_dir = out_dir or EXP1_RESULTS_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = out_dir / f"{_safe_model_name(model_name)}_{language}_{timestamp}.json"
+    safe_name = model_name.replace("/", "_").replace(":", "_")
+    path = out_dir / f"{_safe_model_name(safe_name)}_{language}_{timestamp}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump({
             "metadata": {
@@ -353,10 +356,11 @@ def select_experiment() -> int:
     print("\n  Select Experiment:")
     print("  " + "-" * 52)
     print("  [1]  Experiment 1 — Monolingual classification")
-    print("       (Arabic / Urdu / Chinese, classification only)")
-    print("  [2]  Experiment 2 — Classification + keyword extraction")
-    print("       (same languages, outputs key words + translations per post)")
-    print("  [3]  Experiment 3 — ...                          [COMING SOON]")
+    print("       (Arabic / Urdu / Chinese, classify each post as Depressed / Not Depressed)")
+    print("  [2]  Experiment 2 — Keyword attribution")
+    print("       (explain Exp 1 labels: which words drove each prediction?)")
+    print("  [3]  Experiment 3 — Cross-lingual consistency")
+    print("       (re-evaluate Exp 1 labels using English translations: does the model still agree?)")
     print()
 
     while True:
@@ -513,10 +517,14 @@ def run_experiment1(args) -> None:
                 print(f"  [{info['name']}][{lang}] {e}")
             return
 
+        if args.limit:
+            samples = samples[:args.limit]
+
         with print_lock:
             note = f" [rate-limited: {model_workers}w, {model_delay}s]" if model_delay != args.delay else ""
+            limit_note = f" [LIMIT: {args.limit}]" if args.limit else ""
             print(f"\n  Started: {info['name']} x {lang.capitalize()} "
-                  f"({len(samples)} samples){note}")
+                  f"({len(samples)} samples){note}{limit_note}")
 
         results = run_evaluation(
             provider, samples, lang, template,
@@ -706,6 +714,8 @@ def run_experiment2(args) -> None:
 
         # Skip error entries — no valid prediction to attribute
         entries = [e for e in all_entries if e.get("prediction") not in ("error", "unclear", None)]
+        if args.limit:
+            entries = entries[:args.limit]
         skipped = len(all_entries) - len(entries)
         if skipped:
             logger.info(f"[{model_key}][{lang}] Skipping {skipped} error/unclear entries")
@@ -761,6 +771,296 @@ def run_experiment2(args) -> None:
 
     print(f"\n{'='*58}")
     print("  Experiment 2 complete!")
+    print(f"{'='*58}")
+    for fp in all_output_files:
+        print(f"    -> {fp}")
+    print()
+
+
+# ── Experiment 3 helpers ──────────────────────────────────────────────────────
+
+# Human-readable names for the original-language hint in the Exp 3 prompt
+_LANG_DISPLAY = {
+    "arabic":  "Arabic (Egyptian dialect)",
+    "urdu":    "Roman Urdu",
+    "chinese": "Simplified Chinese (Weibo)",
+}
+
+
+def load_translations_for_exp3(lang: str) -> Dict[str, str]:
+    """
+    Build {original_post_text: english_translation} lookup for a language.
+
+    Arabic / Chinese: the 5 000-sample files already contain a 'translation' field
+    (added by prepare_experiment1.py).
+
+    Urdu: no translation field in the main sample file; fall back to:
+      1. data/phase2/translated/urdu_*_translated.json  (complete run)
+      2. data/phase2/translation_progress/urdu_translation_*s_seed42.json  (checkpoint)
+    """
+    lookup: Dict[str, str] = {}
+
+    # Primary: main 5 000-sample file (Arabic & Chinese have 'translation' field)
+    sample_path = PHASE2_DATA_DIR / SAMPLE_PATTERN.format(lang=lang)
+    if sample_path.exists():
+        with open(sample_path, encoding="utf-8") as f:
+            data = json.load(f)
+        for s in data["samples"]:
+            if s.get("translation") and not s.get("translation_failed"):
+                # Main sample files use "post"; translated output files use "original"
+                post_key = s.get("post") or s.get("original", "")
+                if post_key:
+                    lookup[post_key] = s["translation"]
+        if lookup:
+            logger.info(f"[{lang}] {len(lookup)} translations loaded from {sample_path.name}")
+            return lookup
+
+    # Fallback 1: translated/ subdirectory
+    translated_dir = PHASE2_DATA_DIR / "translated"
+    if translated_dir.exists():
+        for p in sorted(translated_dir.glob(f"{lang}_*samples_seed42_translated.json")):
+            with open(p, encoding="utf-8") as f:
+                td = json.load(f)
+            for s in td.get("samples", []):
+                if s.get("translation") and not s.get("translation_failed"):
+                    lookup[s["original"]] = s["translation"]
+            if lookup:
+                logger.info(f"[{lang}] {len(lookup)} translations loaded from {p.name}")
+                return lookup
+
+    # Fallback 2: translation_progress checkpoint
+    progress_dir = PHASE2_DATA_DIR / "translation_progress"
+    if progress_dir.exists():
+        for p in sorted(progress_dir.glob(f"{lang}_translation_*s_seed42.json"), reverse=True):
+            with open(p, encoding="utf-8") as f:
+                td = json.load(f)
+            for s in td.get("items", []):
+                if s.get("translation") and not s.get("translation_failed"):
+                    lookup[s["original"]] = s["translation"]
+            if lookup:
+                logger.info(f"[{lang}] {len(lookup)} translations loaded from checkpoint {p.name}")
+                return lookup
+
+    logger.warning(f"[{lang}] No English translations found — Exp 3 entries will be skipped")
+    return {}
+
+
+def _parse_exp3_response(raw_response: str) -> Dict:
+    """
+    Parse an Experiment 3 consistency response (2 lines).
+
+    Expected format:
+        keyword1, keyword2     ← 1-2 key English words
+        yes                    ← or: no
+
+    Returns {"keywords": [...], "agreement": "yes"|"no"|<raw>}.
+    """
+    lines = [l.strip() for l in raw_response.strip().splitlines() if l.strip()]
+    keywords      = [k.strip() for k in lines[0].split(",")] if len(lines) >= 1 else []
+    agreement_raw = lines[1].lower().strip() if len(lines) >= 2 else ""
+    if agreement_raw.startswith("yes"):
+        agreement = "yes"
+    elif agreement_raw.startswith("no"):
+        agreement = "no"
+    else:
+        agreement = agreement_raw  # keep as-is for manual review
+    return {"keywords": keywords, "agreement": agreement}
+
+
+def _call_exp3_one(provider, entry: Dict, idx: int, total: int,
+                   model_name: str, language: str, prompt_template: str) -> Dict:
+    """
+    Run Experiment 3 for one entry.
+
+    'entry' is an Exp 1 result augmented with 'translation' and 'original_language'.
+    Sends the English translation to the model and asks whether it still supports
+    the original prediction.  Parses the 2-line response (keywords + yes/no).
+    """
+    logger.info(f"[{model_name}][{language}] Consistency {idx}/{total}...")
+
+    translation = entry.get("translation", "")
+    if not translation:
+        return {
+            **entry,
+            "keywords_exp3": [],
+            "agreement":         "no_translation",
+            "raw_response_exp3": "",
+            "error_exp3":        "no English translation available",
+        }
+
+    # Fill in the two variable placeholders before calling classify()
+    filled = (prompt_template
+              .replace("{prediction}", entry.get("prediction", ""))
+              .replace("{original_language}", entry.get("original_language", language)))
+
+    result = provider.classify(post=translation, prompt_template=filled)
+    parsed = _parse_exp3_response(result["raw_response"])
+
+    return {
+        **entry,
+        "keywords_exp3":     parsed["keywords"],
+        "agreement":         parsed["agreement"],
+        "raw_response_exp3": result["raw_response"],
+        "error_exp3":        result["error"],
+    }
+
+
+def run_experiment3(args) -> None:
+    """
+    Experiment 3 — Cross-Lingual Label Consistency (Translation-Based Re-evaluation).
+
+    For each (model, language) pair already run in Experiment 1, load that
+    result file, augment each entry with its English translation, then ask
+    the same model: does the English translation still support your original
+    classification?
+
+    Output per entry — exactly two lines:
+        Line 1: 1-2 key English words from the translation, comma-separated
+        Line 2: yes (agrees) or no (disagrees)
+
+    Results saved to: results/phase2/experiment3/
+    """
+    exp1_available = discover_exp1_results()
+    if not exp1_available:
+        print("\n  No Experiment 1 results found.")
+        print(f"  Expected location: {EXP1_RESULTS_DIR}")
+        print("  Run Experiment 1 first, then come back.")
+        return
+
+    selected_pairs = select_exp1_results(exp1_available)
+    if not selected_pairs:
+        return
+
+    prompt_key      = args.prompt if args.prompt else "v3_exp3"
+    prompt_template = PROMPTS[prompt_key]
+    prompt_label    = prompt_key.upper()
+
+    print(f"\n{'='*58}")
+    print(f"  Experiment 3 — Consistency Check Plan:")
+    for mk, lang in selected_pairs:
+        name = MODELS[mk]["name"] if mk in MODELS else mk
+        print(f"    {name} x {lang.capitalize()}")
+    print(f"  Prompt:   {prompt_label}  (universal — all languages)")
+    print(f"  Results:  {EXP3_RESULTS_DIR}")
+    print(f"{'='*58}")
+
+    confirm = input("\n  Proceed? (Y/n): ").strip().lower()
+    if confirm == "n":
+        print("  Aborted.")
+        return
+
+    all_output_files = []
+    print_lock       = threading.Lock()
+
+    def _run_one_exp3(model_key: str, lang: str) -> None:
+        info          = MODELS.get(model_key, {"name": model_key, "class": None, "default_model": None})
+        model_delay   = max(args.delay, info.get("delay", 0))
+        model_workers = min(args.workers, info.get("max_workers", args.workers))
+
+        # Load Exp 1 results
+        exp1_path = exp1_available[(model_key, lang)]
+        with open(exp1_path, encoding="utf-8") as f:
+            exp1_data = json.load(f)
+        all_entries = exp1_data["results"]
+
+        # Skip entries without a valid Exp 1 prediction
+        entries = [e for e in all_entries if e.get("prediction") not in ("error", "unclear", None)]
+        skipped = len(all_entries) - len(entries)
+        if skipped:
+            logger.info(f"[{model_key}][{lang}] Skipping {skipped} error/unclear entries")
+
+        # Load English translations
+        with print_lock:
+            print(f"\n  [{lang.capitalize()}] Loading English translations...")
+        translation_lookup = load_translations_for_exp3(lang)
+        with print_lock:
+            print(f"  [{lang.capitalize()}] {len(translation_lookup)} translations available")
+
+        # Augment entries with translation + original language label
+        lang_display = _LANG_DISPLAY.get(lang, lang.capitalize())
+        augmented = []
+        missing_translations = 0
+        for e in entries:
+            post_text   = e.get("post_full", "")
+            translation = translation_lookup.get(post_text, "")
+            if not translation:
+                missing_translations += 1
+            augmented.append({**e, "translation": translation, "original_language": lang_display})
+
+        if missing_translations:
+            logger.warning(
+                f"[{lang}] {missing_translations}/{len(entries)} entries have no translation "
+                f"and will be marked as 'no_translation'"
+            )
+
+        if args.limit:
+            augmented = augmented[:args.limit]
+
+        try:
+            api_key = get_api_key(model_key)
+        except EnvironmentError as e:
+            with print_lock:
+                print(f"  [{info['name']}] {e} — skipping")
+            return
+
+        provider = info["class"](api_key=api_key, model_name=info["default_model"])
+
+        with print_lock:
+            print(f"\n  Started consistency check: {info['name']} x {lang.capitalize()} "
+                  f"({len(augmented)} entries)")
+
+        results = run_evaluation(
+            provider, augmented, lang, prompt_template,
+            delay=model_delay, fresh=args.fresh, workers=model_workers,
+            classify_fn=_call_exp3_one,
+            results_dir=EXP3_RESULTS_DIR,
+        )
+
+        # Restore skipped (error/unclear) entries without keywords
+        skipped_entries = [
+            {**e, "keywords_exp3": [], "agreement": "skipped",
+             "raw_response_exp3": "", "error_exp3": "skipped (no valid Exp 1 prediction)"}
+            for e in all_entries if e.get("prediction") in ("error", "unclear", None)
+        ]
+        full_results = results + skipped_entries
+        full_results.sort(key=lambda x: x.get("index", 0))
+
+        # Compute consistency stats
+        agreed     = sum(1 for r in full_results if r.get("agreement") == "yes")
+        disagreed  = sum(1 for r in full_results if r.get("agreement") == "no")
+        no_trans   = sum(1 for r in full_results if r.get("agreement") == "no_translation")
+        total_valid = agreed + disagreed
+        agree_pct  = agreed / total_valid * 100 if total_valid else 0
+
+        with print_lock:
+            print(
+                f"\n  {info['name']} — {lang.capitalize()} (Exp 3 Consistency)\n"
+                f"  Total entries:   {len(full_results)}\n"
+                f"  Agreed (yes):    {agreed} ({agree_pct:.1f}%)\n"
+                f"  Disagreed (no):  {disagreed}\n"
+                f"  No translation:  {no_trans}\n"
+            )
+
+        metrics = EvaluationMetrics.compute(full_results)
+        metrics["agreement_rate"] = round(agree_pct / 100, 4)
+
+        path = save_results(full_results, metrics, model_key, lang,
+                            out_dir=EXP3_RESULTS_DIR, experiment=3)
+        with print_lock:
+            all_output_files.append(str(path))
+            print(f"  Saved: {path}")
+
+    jobs = selected_pairs
+    if len(jobs) == 1:
+        _run_one_exp3(jobs[0][0], jobs[0][1])
+    else:
+        print(f"\n  Running {len(jobs)} consistency jobs")
+        with ThreadPoolExecutor(max_workers=len(jobs)) as executor:
+            for f in [executor.submit(_run_one_exp3, mk, lang) for mk, lang in jobs]:
+                f.result()
+
+    print(f"\n{'='*58}")
+    print("  Experiment 3 complete!")
     print(f"{'='*58}")
     for fp in all_output_files:
         print(f"    -> {fp}")
@@ -831,6 +1131,8 @@ def main() -> None:
     parser.add_argument("--workers", type=int,   default=1,   help="Parallel requests per model")
     parser.add_argument("--prompt",  type=str,   default=None, choices=list(PROMPTS.keys()),
                         help="Override prompt version (default: language-specific V3)")
+    parser.add_argument("--limit",   type=int,   default=None,
+                        help="Only process the first N samples (e.g. --limit 10 for a quick test)")
     args = parser.parse_args()
 
     print_header()
@@ -845,8 +1147,8 @@ def main() -> None:
             run_experiment2(args)
             break
         elif exp == 3:
-            print("\n  Experiment 3 is not yet implemented.")
-            print("  Returning to menu...\n")
+            run_experiment3(args)
+            break
 
 
 if __name__ == "__main__":
