@@ -1,0 +1,16 @@
+﻿model,language,total_entries,entries_with_keywords,pct_with_keywords,avg_keyword_count,median_keyword_count,total_keyword_occurrences,total_unique_keywords
+claude,arabic,5000,5000,100.0,2.94,3.0,14716,7221
+claude,chinese,5000,5000,100.0,2.66,2.0,13306,7592
+claude,urdu,5000,5000,100.0,2.25,2.0,11268,4356
+gemini,arabic,5000,4996,99.9,2.29,2.0,11440,4236
+gemini,chinese,5000,5000,100.0,2.17,2.0,10861,5238
+gemini,urdu,5000,5000,100.0,2.25,2.0,11257,3524
+gemma,arabic,5000,4988,99.8,3.68,3.0,18379,8857
+gemma,chinese,5000,5000,100.0,1.0,1.0,5000,2
+gemma,urdu,5000,4999,100.0,2.85,2.0,14226,5121
+llama,arabic,5000,5000,100.0,1.88,2.0,9406,4234
+llama,chinese,5000,5000,100.0,1.86,2.0,9282,7694
+llama,urdu,5000,5000,100.0,1.99,2.0,9959,3088
+openai,arabic,5000,4950,99.0,2.85,3.0,14265,5570
+openai,chinese,5000,4970,99.4,2.85,2.0,14266,7602
+openai,urdu,5000,4958,99.2,2.52,2.0,12607,4073
