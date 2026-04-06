@@ -212,8 +212,8 @@ Here are examples. Each shows the post, its classification, and the EXACT two-li
 Example 1:
 Post: "فقدت الشغف تجاه مجال عملي بسبب كذا صدمة متتالية خاصة اخر صدمة دي دمرتني نفسيا خلتني كرهت كل حاجه كنت بحب مجالي جدا وبطور نفسي فيه باستمرار حاليا مبقتش اطيق افتح كتاب او اقعد قدام فيديو"
 Classification: Depressed
-فقدت, دمرتني, ضغط
-lost, destroyed, pressure
+فقدت, دمرتني, مبقتش
+lost, destroyed, no longer
 
 Example 2:
 Post: "الحمدالله حمدا كثيرا"

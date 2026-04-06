@@ -79,6 +79,8 @@ MODELS = {
                  "max_workers": 1, "delay": 0},
     "mistral":  {"class": LMStudioProvider, "name": "Mistral 7B (Local)",     "default_model": "mistral-7b-instruct-v0.3",
                  "max_workers": 1, "delay": 0},
+    "gemma":    {"class": LMStudioProvider, "name": "Gemma 9B (Local)",       "default_model": "google/gemma-3-9b-it",
+                 "max_workers": 1, "delay": 0},
 }
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
@@ -132,9 +134,14 @@ def load_samples(lang: str) -> List[Dict]:
 
 # ── Checkpoint helpers (identical logic to phase1/runner.py) ─────────────────
 
+def _safe_model_name(model_name: str) -> str:
+    """Sanitize model name for use in file paths (replace / with -)."""
+    return model_name.replace("/", "-")
+
+
 def _partial_path(model_name: str, language: str, out_dir: Path = None) -> Path:
     d = out_dir or EXP1_RESULTS_DIR
-    return d / f"{model_name}_{language}.partial.json"
+    return d / f"{_safe_model_name(model_name)}_{language}.partial.json"
 
 
 def _save_partial(results: List[Dict], model_name: str, language: str,
@@ -209,8 +216,24 @@ def _parse_exp2_response(raw_response: str) -> Dict:
     Missing or malformed lines produce empty lists.
     """
     lines = [l.strip() for l in raw_response.strip().splitlines() if l.strip()]
-    keywords     = [k.strip() for k in lines[0].split(",")] if len(lines) >= 1 else []
-    translations = [t.strip() for t in lines[1].split(",")] if len(lines) >= 2 else []
+
+    if not lines:
+        return {"keywords": [], "translations": []}
+
+    if len(lines) >= 2:
+        keywords     = [k.strip() for k in lines[0].split(",") if k.strip()]
+        translations = [t.strip() for t in lines[1].split(",") if t.strip()]
+    else:
+        # Model collapsed both lines into one — split by Arabic vs ASCII.
+        def _has_arabic(s: str) -> bool:
+            return any("\u0600" <= c <= "\u06FF" for c in s)
+
+        items = [item.strip() for item in lines[0].split(",") if item.strip()]
+        keywords     = [item for item in items if _has_arabic(item)]
+        translations = [item for item in items if not _has_arabic(item)]
+        if not keywords:          # nothing Arabic — keep everything as keywords
+            keywords, translations = items, []
+
     return {"keywords": keywords, "translations": translations}
 
 
@@ -301,7 +324,7 @@ def save_results(results: List[Dict], metrics: Dict,
     out_dir = out_dir or EXP1_RESULTS_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = out_dir / f"{model_name}_{language}_{timestamp}.json"
+    path = out_dir / f"{_safe_model_name(model_name)}_{language}_{timestamp}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump({
             "metadata": {
