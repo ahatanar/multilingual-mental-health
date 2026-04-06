@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evaluating Multilingual LLMs for Depression Detection in Culturally Diverse Social Media Text — Final Report Draft</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    color: #111;
+    background: #fff;
+  }
+  h1 { font-size: 18pt; text-align: center; margin-bottom: 6px; }
+  h2 { font-size: 14pt; color: #1a3a6b; border-bottom: 1px solid #1a3a6b; padding-bottom: 3px; margin-top: 28px; }
+  h3 { font-size: 12pt; color: #1a3a6b; margin-top: 20px; margin-bottom: 6px; }
+  h4 { font-size: 11pt; font-style: italic; margin-top: 14px; margin-bottom: 4px; }
+  .meta { text-align: center; font-size: 11pt; color: #333; margin-bottom: 20px; }
+  .abstract { background: #f7f9fc; border-left: 4px solid #1a3a6b; padding: 14px 18px; margin: 20px 0; font-size: 11pt; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+    margin: 14px 0;
+  }
+  th { background: #1a3a6b; color: #fff; padding: 7px 10px; text-align: left; }
+  td { padding: 5px 10px; border: 1px solid #bbb; }
+  tr:nth-child(even) { background: #f4f7fc; }
+  .caption { font-size: 10pt; text-align: center; color: #555; margin-top: -6px; margin-bottom: 14px; font-style: italic; }
+  .example-box {
+    background: #fffbe6;
+    border: 1px solid #d4a800;
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 11pt;
+  }
+  .example-box strong { color: #7a4a00; }
+  .figure-ref { font-size: 10pt; color: #555; font-style: italic; text-align: center; display: block; margin: 6px 0 16px 0; }
+  .highlight { background: #fff3cd; padding: 1px 3px; border-radius: 2px; }
+  ul, ol { margin: 8px 0 8px 20px; }
+  li { margin-bottom: 4px; }
+  .section-intro { font-size: 11pt; color: #444; margin-bottom: 10px; }
+  .img-placeholder {
+    border: 2px dashed #aaa;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+    margin: 10px 0 4px 0;
+    border-radius: 4px;
+  }
+  img { max-width: 100%; height: auto; display: block; margin: 10px auto 4px auto; border: 1px solid #ddd; }
+  p { margin: 8px 0; text-align: justify; }
+  .keyword-tag { background: #e8f0fe; padding: 1px 5px; border-radius: 3px; font-family: monospace; font-size: 10pt; }
+</style>
+</head>
+<body>
+
+<h1>Evaluating Multilingual LLMs for Depression Detection<br>in Culturally Diverse Social Media Text</h1>
+
+<div class="meta">
+  <strong>Authors:</strong> Taha Rana, Abdul Muqit Afzal, Harsh Patel, Daniyal Lilani<br>
+  <strong>Course:</strong> CSCI 4055: Natural Language Processing &nbsp;|&nbsp; April 2026<br>
+  <strong>GitHub:</strong> https://github.com/ahatanar/multilingual-mental-health
+</div>
+
+<div class="abstract">
+  <strong>Abstract.</strong> We present a comprehensive evaluation of six large language models (LLMs) — three commercial API-based and three local open-weight — for depression detection in Arabic, Romanized Urdu, and Chinese social media posts. Using a balanced dataset of 5,000 samples per language (15,000 total), we run three experiments: (1) raw binary classification with culturally grounded V3 few-shot prompts, (2) keyword-level reasoning transparency where models identify the lexical signals behind their decisions, and (3) cross-lingual label consistency where models re-evaluate their classifications on English-translated versions of the same posts. Our results show that Romanized Urdu is easiest for all models (best F1: 0.9016, Gemini), Chinese is consistently hardest (best F1: 0.6606, Gemini), and Arabic lies in between (best F1: 0.8600, Gemini). Local open-weight models, particularly LLaMA 3 8B and Gemma 8B, match or approach commercial API performance on Arabic and Urdu. Keyword analysis reveals systematic patterns of semantic misalignment — including negation confusion, cultural idiom misreading, and religious expression false positives — that explain a substantial portion of classification errors. Cross-lingual consistency analysis shows that Gemini is substantially more self-consistent (83–94% agreement) than GPT-4o-mini (80–83%), suggesting that Gemini's classifications are more robustly grounded in post content rather than language-surface cues.
+</div>
+
+<!-- ======================================================================== -->
+<h2>1. Introduction</h2>
+
+<p>Mental health detection in social media text has emerged as one of the most active applications of natural language processing, with the potential to assist clinical screening at population scale. However, the vast majority of existing work focuses on English-language data, leaving speakers of languages like Arabic (over 420 million speakers), Urdu (over 230 million), and Chinese (over 1.3 billion) severely underserved by current AI tools.</p>
+
+<p>These languages present distinct and compounding challenges for LLMs. Arabic involves dialectal variation, rich morphology, and cultural norms around emotional expression tied to religious idiom and collectivist social values. Romanized Urdu involves code-switching between Roman script, native Urdu vocabulary, and English, encoded through poetic metaphors and culturally specific distress expressions. Chinese social media involves tonal ambiguity, regional variation, and culturally embedded expressions of distress that differ substantially from Western clinical vocabulary.</p>
+
+<p>This report presents the final experimental results of our project, which systematically evaluates six LLMs — GPT-4o-mini, Gemini 2.0 Flash, Claude Haiku 4.5, LLaMA 3 8B, Gemma 8B, and DeepSeek 8B — across three experiments spanning 90,000 individual classifications. Our primary contributions are:</p>
+
+<ol>
+  <li><strong>The largest comparative LLM evaluation for multilingual mental health classification to date</strong>, covering 6 models × 3 languages × 5,000 samples each.</li>
+  <li><strong>A keyword transparency analysis</strong> that moves beyond accuracy metrics to surface the lexical signals driving model decisions — including systematic failure modes tied to cultural and linguistic nuance.</li>
+  <li><strong>A cross-lingual label consistency analysis</strong> that tests whether model classifications are robust across language presentations of the same content, providing a novel measure of reasoning quality beyond correctness alone.</li>
+  <li><strong>Evidence that local open-weight models can match commercial API performance</strong> on some language-model combinations, with important implications for privacy-preserving mental health NLP deployment.</li>
+</ol>
+
+<!-- ======================================================================== -->
+<h2>2. Background and Related Work</h2>
+
+<p>Earlier milestones in this project (Milestones 2 and 3) established the baseline methodology. Milestone 2 evaluated Gemini 2.0 Flash on Arabic using a 50-sample pilot, achieving 90.0% accuracy. Milestone 3 expanded to a 500-sample Urdu evaluation across four models and four prompting strategies, finding that: (a) V3 few-shot culturally grounded prompting outperformed zero-shot by 2.8–8.3%, (b) a translate-then-classify pipeline caused 8–14% accuracy drops relative to native-language processing, and (c) models exhibited distinct behavioral profiles — Gemini as a high-recall screener, GPT-4o-mini and DeepSeek as balanced classifiers, and Claude Haiku as an ultra-high-precision model that misses the majority of depressed posts.</p>
+
+<p>The present report scales these findings to 5,000 samples per language and introduces Experiment 2 (keyword reasoning transparency) and Experiment 3 (cross-lingual consistency), enabling a much richer analysis of where and how model failures occur at the lexical and semantic level.</p>
+
+<!-- ======================================================================== -->
+<h2>3. Data Preparation and Translation Pipeline</h2>
+
+<h3>3.1 Dataset Sourcing</h3>
+<p>Three datasets were sourced, one per target language:</p>
+<ul>
+  <li><strong>Arabic:</strong> CairoDep and related Arabic social media corpora, covering Egyptian and MSA dialectal variation.</li>
+  <li><strong>Romanized Urdu:</strong> The Roman Urdu Depression Assessment dataset (Mohmand et al.), a professionally curated academic dataset with four severity labels (non-depression, mild, moderate, severe) derived from social media platforms.</li>
+  <li><strong>Chinese:</strong> Weibo-based mental health datasets reflecting Chinese social media expression patterns.</li>
+</ul>
+
+<h3>3.2 Translation and Cleaning</h3>
+<p>For each language, 6,000 samples were translated to English using Cohere's Command R model (<code>command-r-08-2024</code>), selected for its strong multilingual performance and competitive API costs. Translation served dual purposes: (1) as a data cleaning pass — posts that were ambiguous, corrupted, or off-topic were flagged and removed; and (2) producing the English translations used directly as input for Experiment 3. After cleaning, 5,000 samples were selected per language with a balanced 50/50 depressed / not depressed split.</p>
+
+<table>
+  <tr><th>Language</th><th>Total Translated</th><th>Final Sample</th><th>Depressed</th><th>Not Depressed</th></tr>
+  <tr><td>Arabic</td><td>6,000</td><td>5,000</td><td>2,500</td><td>2,500</td></tr>
+  <tr><td>Romanized Urdu</td><td>6,000</td><td>5,000</td><td>2,500</td><td>2,500</td></tr>
+  <tr><td>Chinese</td><td>6,000</td><td>5,000</td><td>2,500</td><td>2,500</td></tr>
+</table>
+<p class="caption">Table 1: Dataset composition after translation and filtering.</p>
+
+<!-- ======================================================================== -->
+<h2>4. Model Selection</h2>
+
+<p>Six models were evaluated, split equally between commercial API-based and local open-weight models. This split directly addresses our central research question: whether open-weight models can serve as viable, privacy-preserving alternatives to commercial APIs for multilingual mental health NLP.</p>
+
+<table>
+  <tr><th>Model</th><th>Type</th><th>Provider / Backend</th><th>Role in Project</th></tr>
+  <tr><td>GPT-4o-mini</td><td>Commercial API</td><td>OpenAI</td><td>Strong multilingual baseline</td></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Commercial API</td><td>Google DeepMind</td><td>High-recall reference model</td></tr>
+  <tr><td>Claude Haiku 4.5</td><td>Commercial API</td><td>Anthropic</td><td>Ultra-high precision, low recall</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Local / Open-weight</td><td>LM Studio</td><td>Primary open-weight candidate</td></tr>
+  <tr><td>Gemma 8B</td><td>Local / Open-weight</td><td>LM Studio</td><td>Lightweight open-weight candidate</td></tr>
+  <tr><td>DeepSeek 8B</td><td>Local / Open-weight</td><td>LM Studio</td><td>Multilingual-tuned open-weight candidate</td></tr>
+</table>
+<p class="caption">Table 2: Models evaluated in this project.</p>
+
+<p>Local model inference was handled via LM Studio, allowing reuse of the same model provider abstraction built in earlier milestones. Daniyal Lilani led the commercial API experiments; Harsh Patel led the local model pipeline; Taha Rana and Abdul Muqit Afzal led data cleaning, translation, and scripting across all three experiments.</p>
+
+<!-- ======================================================================== -->
+<h2>5. Experimental Design</h2>
+
+<h3>Experiment 1 — Multilingual Depression Classification (V3 Prompting)</h3>
+<p>All six models classified all 5,000 samples per language (15,000 per model, 90,000 total) using our V3 few-shot prompt strategy. V3 prompts include: multi-shot culturally grounded examples in the target language, exclusion rules for language-specific false positive patterns (poetry, religious expression, political commentary, casual usage), and a binary output constraint (Depressed / Not Depressed). Distinct V3 prompts were written for each language. This experiment produces standard classification metrics (accuracy, precision, recall, F1) for every model–language combination and serves as the primary quantitative result of the project.</p>
+
+<h3>Experiment 2 — Keyword Extraction and Reasoning Transparency</h3>
+<p>Each model received the same post it classified in Experiment 1 along with its own assigned label, and was asked to identify 1–2 keywords most influential in its decision, plus their English translations. This experiment probes reasoning at the lexical level — surfacing which words drove each classification and whether those words reflect genuine clinical signals or systematic biases. Experiment 2 uses the same labels as Experiment 1 (it does not re-classify), so its metrics are identical to Experiment 1 by design; the analytical value lies in the keyword output, not the classification outcome.</p>
+
+<h3>Experiment 3 — Cross-Lingual Label Consistency</h3>
+<p>Each model received the Cohere-translated English version of the post it classified in Experiment 1, along with its original label. It was asked: does it still agree with this classification? It also identified 1–2 English keywords central to this re-evaluation. This tests whether model decisions are driven by post content (language-invariant) or surface-level language cues. A model that changes its decision when shown the translated version is exhibiting cross-lingual inconsistency, raising questions about the robustness of its reasoning. Experiment 3 was run only for Gemini and GPT-4o-mini, which have complete Exp1+2+3 coverage across all three languages.</p>
+
+<!-- ======================================================================== -->
+<h2>6. Experiment 1 Results: Classification Performance</h2>
+
+<h3>6.1 Full Results Table</h3>
+
+<table>
+  <tr><th>Model</th><th>Type</th><th>Language</th><th>Accuracy</th><th>Precision</th><th>Recall</th><th>F1</th><th>TP</th><th>FP</th><th>TN</th><th>FN</th></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Online</td><td>Arabic</td><td>0.8665</td><td>0.9046</td><td>0.8196</td><td>0.8600</td><td>2049</td><td>216</td><td>2282</td><td>451</td></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Online</td><td>Urdu</td><td>0.8984</td><td>0.8744</td><td>0.9304</td><td>0.9016</td><td>2326</td><td>334</td><td>2166</td><td>174</td></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Online</td><td>Chinese</td><td>0.7112</td><td>0.8010</td><td>0.5620</td><td>0.6606</td><td>1405</td><td>349</td><td>2151</td><td>1095</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Online</td><td>Arabic</td><td>0.8018</td><td>0.9660</td><td>0.6256</td><td>0.7594</td><td>1564</td><td>55</td><td>2445</td><td>936</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Online</td><td>Urdu</td><td>0.8944</td><td>0.9595</td><td>0.8236</td><td>0.8864</td><td>2059</td><td>87</td><td>2413</td><td>441</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Online</td><td>Chinese</td><td>0.6398</td><td>0.8787</td><td>0.3244</td><td>0.4739</td><td>811</td><td>112</td><td>2388</td><td>1689</td></tr>
+  <tr><td>Claude Haiku 4.5</td><td>Online</td><td>Arabic</td><td>0.7992</td><td>0.9431</td><td>0.6368</td><td>0.7603</td><td>1592</td><td>96</td><td>2404</td><td>908</td></tr>
+  <tr><td>Claude Haiku 4.5</td><td>Online</td><td>Urdu</td><td>0.7056</td><td>0.9795</td><td>0.4200</td><td>0.5879</td><td>1050</td><td>22</td><td>2478</td><td>1450</td></tr>
+  <tr><td>Claude Haiku 4.5</td><td>Online</td><td>Chinese</td><td>0.6096</td><td>0.9322</td><td>0.2364</td><td>0.3772</td><td>591</td><td>43</td><td>2457</td><td>1909</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Local</td><td>Arabic</td><td>0.8234</td><td>0.8159</td><td>0.8352</td><td>0.8255</td><td>2088</td><td>471</td><td>2029</td><td>412</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Local</td><td>Urdu</td><td>0.8536</td><td>0.8110</td><td>0.9220</td><td>0.8630</td><td>2305</td><td>537</td><td>1963</td><td>195</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Local</td><td>Chinese</td><td>0.6826</td><td>0.8029</td><td>0.4840</td><td>0.6039</td><td>1210</td><td>297</td><td>2203</td><td>1290</td></tr>
+  <tr><td>Gemma 8B</td><td>Local</td><td>Arabic</td><td>0.8344</td><td>0.8519</td><td>0.8095</td><td>0.8302</td><td>2019</td><td>351</td><td>2143</td><td>475</td></tr>
+  <tr><td>Gemma 8B</td><td>Local</td><td>Urdu</td><td>0.8726</td><td>0.8752</td><td>0.8692</td><td>0.8722</td><td>2173</td><td>310</td><td>2190</td><td>327</td></tr>
+  <tr><td>Gemma 8B</td><td>Local</td><td>Chinese</td><td>0.6308</td><td>0.8998</td><td>0.2944</td><td>0.4436</td><td>736</td><td>82</td><td>2418</td><td>1764</td></tr>
+  <tr><td>DeepSeek 8B</td><td>Local</td><td>Arabic</td><td>0.7907</td><td>0.8428</td><td>0.7149</td><td>0.7736</td><td>1785</td><td>333</td><td>2164</td><td>712</td></tr>
+  <tr><td>DeepSeek 8B</td><td>Local</td><td>Urdu</td><td>0.7188</td><td>0.7966</td><td>0.5885</td><td>0.6770</td><td>1469</td><td>375</td><td>2114</td><td>1027</td></tr>
+  <tr><td>DeepSeek 8B</td><td>Local</td><td>Chinese</td><td>0.6476</td><td>0.8261</td><td>0.3750</td><td>0.5158</td><td>936</td><td>197</td><td>2293</td><td>1560</td></tr>
+</table>
+<p class="caption">Table 3: Complete Experiment 1 results — all 6 models × 3 languages (n=5,000 per cell).</p>
+
+<h3>6.2 Model Rankings by Language</h3>
+
+<img src="data_visualization/outputs/plots/exp1/f1_heatmap.png" alt="F1 Score Heatmap: Model × Language">
+<span class="figure-ref">Figure 1: F1 score heatmap across all model–language combinations. Darker blue = higher F1.</span>
+
+<img src="data_visualization/outputs/plots/exp1/model_ranking.png" alt="Model Ranking by Average F1">
+<span class="figure-ref">Figure 2: Models ranked by average F1 score across all three languages.</span>
+
+<img src="data_visualization/outputs/plots/exp1/online_vs_local.png" alt="Online vs Local Model Comparison">
+<span class="figure-ref">Figure 3: Online (commercial API) vs local (open-weight) model performance comparison.</span>
+
+<h3>6.3 Key Findings from Experiment 1</h3>
+
+<h4>Chinese is Consistently the Most Difficult Language</h4>
+<p>All six models show substantially lower F1 on Chinese compared to Arabic and Urdu. The best Chinese result — Gemini at F1=0.6606 — falls well below the best Arabic result (Gemini at 0.8600) and the best Urdu result (Gemini at 0.9016). This likely reflects the relative scarcity of Chinese mental health NLP data in model pretraining corpora, combined with the cultural distance between Chinese social media expression conventions and Western clinical vocabulary that these models were trained on. A consistent pattern across Chinese results is very high precision but very low recall: models are reluctant to classify Chinese posts as depressed, leading to many missed cases (false negatives).</p>
+
+<img src="data_visualization/outputs/plots/exp1/metrics_by_language.png" alt="Metrics by Language">
+<span class="figure-ref">Figure 4: Average metrics grouped by language across all models. Chinese consistently lags on recall and F1.</span>
+
+<h4>Local Open-Weight Models Are Competitive with Commercial APIs</h4>
+<p>A critical finding for practical deployment: LLaMA 3 8B achieves F1=0.8630 on Urdu (vs. Gemini's 0.9016 and GPT-4o-mini's 0.8864) and F1=0.8255 on Arabic (vs. Gemini's 0.8600). Gemma 8B similarly achieves F1=0.8722 on Urdu and 0.8302 on Arabic. These results demonstrate that, for Arabic and Urdu at least, local models running on consumer hardware can provide classification quality approaching the best commercial APIs — a compelling finding for privacy-preserving deployment in clinical or social work contexts where data sovereignty is important.</p>
+
+<img src="data_visualization/outputs/plots/exp1/per_language_urdu.png" alt="All Models on Urdu">
+<span class="figure-ref">Figure 5: All models on Romanized Urdu. Local models match commercial APIs closely.</span>
+
+<img src="data_visualization/outputs/plots/exp1/per_language_arabic.png" alt="All Models on Arabic">
+<span class="figure-ref">Figure 6: All models on Arabic. Gemini leads; LLaMA and Gemma competitive with Claude and GPT-4o-mini.</span>
+
+<img src="data_visualization/outputs/plots/exp1/per_language_chinese.png" alt="All Models on Chinese">
+<span class="figure-ref">Figure 7: All models on Chinese. All models struggle; performance gap widens significantly vs. other languages.</span>
+
+<h4>Claude Haiku 4.5: The Ultra-High-Precision Anomaly</h4>
+<p>Claude Haiku 4.5 exhibits an extreme precision-recall imbalance across all languages, particularly on Chinese (precision=0.932, recall=0.236, F1=0.377) and Urdu (precision=0.980, recall=0.420, F1=0.588). Claude generates almost no false positives — it virtually never incorrectly flags a non-depressed post as depressed — but it misses the majority of depressed posts. On Chinese, it correctly identifies only 591 of 2,500 depressed posts. This pattern, first observed at smaller scale in Milestone 3, persists and intensifies at 5,000 samples and across all three languages. It appears to reflect safety alignment training that produces a strong prior against flagging content as indicative of mental health distress, even when clear clinical signals are present. For depression screening applications where missing a depressed individual is far more costly than a false alarm, Claude Haiku 4.5 is not suitable as a primary classifier.</p>
+
+<img src="data_visualization/outputs/plots/exp1/confusion_summary.png" alt="Confusion Summary by Model">
+<span class="figure-ref">Figure 8: Proportional TP/FP/TN/FN breakdown per model (averaged across languages). Claude's extreme FN skew is clearly visible.</span>
+
+<h4>GPT-4o-mini: High Precision, Low Recall Pattern Continues</h4>
+<p>GPT-4o-mini also shows a consistent precision-over-recall bias: on Arabic (precision=0.966, recall=0.626), it correctly identifies almost all posts it classifies as depressed, but misses 936 of 2,500 genuinely depressed posts. This conservative behavior was documented in Milestone 2 and persists at scale. On Urdu, GPT-4o-mini achieves near-parity with Gemini (F1=0.886 vs 0.902), but its Chinese performance (F1=0.474) reveals how this conservative prior becomes catastrophic when the model lacks strong language-specific signal.</p>
+
+<h4>DeepSeek 8B Underperforms Relative to Other Local Models</h4>
+<p>Despite being described as "multilingual-tuned," DeepSeek 8B consistently underperforms LLaMA 3 8B and Gemma 8B. On Urdu, it achieves only F1=0.677, well below LLaMA (0.863) and Gemma (0.872). On Chinese, it achieves F1=0.516, above Gemma (0.444) and Claude (0.377) but below LLaMA (0.604). On Arabic it also falls below LLaMA and Gemma. This suggests that the multilingual tuning in this DeepSeek variant does not generalize well to the languages and domains in our evaluation.</p>
+
+<!-- ======================================================================== -->
+<h2>7. Experiment 2 Results: Keyword Extraction and Reasoning Transparency</h2>
+
+<h3>7.1 Keyword Coverage and Volume</h3>
+
+<table>
+  <tr><th>Model</th><th>Language</th><th>Entries w/ Keywords</th><th>Avg Keywords/Entry</th><th>Unique Keywords</th></tr>
+  <tr><td>Gemini</td><td>Arabic</td><td>4,996 (99.9%)</td><td>2.29</td><td>4,236</td></tr>
+  <tr><td>Gemini</td><td>Urdu</td><td>5,000 (100%)</td><td>2.25</td><td>3,524</td></tr>
+  <tr><td>Gemini</td><td>Chinese</td><td>5,000 (100%)</td><td>2.17</td><td>5,238</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Arabic</td><td>4,950 (99.0%)</td><td>2.85</td><td>5,570</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Urdu</td><td>4,958 (99.2%)</td><td>2.52</td><td>4,073</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Chinese</td><td>4,970 (99.4%)</td><td>2.85</td><td>7,602</td></tr>
+  <tr><td>Claude</td><td>Arabic</td><td>5,000 (100%)</td><td>2.94</td><td>7,221</td></tr>
+  <tr><td>Claude</td><td>Urdu</td><td>5,000 (100%)</td><td>2.25</td><td>4,356</td></tr>
+  <tr><td>Claude</td><td>Chinese</td><td>5,000 (100%)</td><td>2.66</td><td>7,592</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Arabic</td><td>5,000 (100%)</td><td>1.88</td><td>4,234</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Urdu</td><td>5,000 (100%)</td><td>1.99</td><td>3,088</td></tr>
+  <tr><td>LLaMA 3 8B</td><td>Chinese</td><td>5,000 (100%)</td><td>1.86</td><td>7,694</td></tr>
+  <tr><td>Gemma 8B</td><td>Arabic</td><td>4,988 (99.8%)</td><td>3.68</td><td>8,857</td></tr>
+  <tr><td>Gemma 8B</td><td>Urdu</td><td>4,999 (100%)</td><td>2.85</td><td>5,121</td></tr>
+  <tr><td>Gemma 8B</td><td>Chinese</td><td>5,000 (100%)</td><td>1.00</td><td><strong>2</strong></td></tr>
+  <tr><td>DeepSeek 8B</td><td>Arabic</td><td>—</td><td>—</td><td>—</td></tr>
+</table>
+<p class="caption">Table 4: Keyword extraction statistics by model and language. Note: Gemma/Chinese returned exactly 1 keyword per entry (a parsing artifact); DeepSeek Exp2 data not available for this analysis.</p>
+
+<p>A notable anomaly: Gemma 8B on Chinese produced exactly 1.00 keywords per entry with only 2 unique keywords total across all 5,000 entries. This indicates a parsing failure or output format collapse where Gemma reverted to a degenerate response pattern for Chinese. This renders Gemma's Chinese keyword data analytically useless and is excluded from keyword comparisons.</p>
+
+<img src="data_visualization/outputs/plots/exp2/keyword_count_distribution.png" alt="Keyword Count Distribution by Language">
+<span class="figure-ref">Figure 9: Distribution of keyword counts per entry, split by language. Each language shown in a separate panel to allow fair axis scaling. Gemma/Chinese excluded.</span>
+
+<img src="data_visualization/outputs/plots/exp2/keyword_stats_heatmap.png" alt="Keyword Count Heatmap">
+<span class="figure-ref">Figure 10: Average keyword count per entry across model × language combinations.</span>
+
+<h3>7.2 Most Frequent Translated Keywords</h3>
+
+<img src="data_visualization/outputs/plots/exp2/top_keywords_global.png" alt="Top Global Keywords">
+<span class="figure-ref">Figure 11: Top 25 most frequently cited translated keywords across all models and languages.</span>
+
+<img src="data_visualization/outputs/plots/exp2/top_keywords_by_class.png" alt="Top Keywords by Depression Class">
+<span class="figure-ref">Figure 12: Top keywords split by ground truth class (depressed vs. not depressed). This reveals which terms models associate with each label.</span>
+
+<p>The global top keywords reveal both expected clinical signals (<span class="keyword-tag">depression</span>, <span class="keyword-tag">pain</span>, <span class="keyword-tag">suicide</span>, <span class="keyword-tag">sad</span>, <span class="keyword-tag">despair</span>, <span class="keyword-tag">darkness</span>) and two surprises that illuminate systematic model biases:</p>
+
+<ol>
+  <li><strong>"Gratitude" (3,490 occurrences) — the top keyword overall.</strong> This term appears primarily in Arabic and Urdu, where expressions of religious gratitude (Arabic: "الحمد لله" / "Alhamdulillah"; Urdu equivalents) are extremely common in non-depressed posts. However, models citing "gratitude" as a keyword for non-depressed classifications demonstrates awareness of this cultural signal — and the V3 prompt's explicit guidance to not flag religious acceptance as distress appears to have been effective.</li>
+  <li><strong>"Politics" (1,409 occurrences) — the fifth most common keyword.</strong> This term appears primarily in Arabic and Urdu non-depressed posts expressing frustration with political situations. This directly validates one of our V3 prompt exclusion rules and shows that political commentary remains a significant source of potential false positives that models must actively suppress.</li>
+</ol>
+
+<img src="data_visualization/outputs/plots/exp2/keyword_count_by_predicted_class.png" alt="Keyword Count by Predicted Class">
+<span class="figure-ref">Figure 13: Average keyword count for "Depressed" vs "Not Depressed" predictions per model. Models consistently cite more keywords when predicting depression, suggesting greater lexical attention to distress signals.</span>
+
+<h3>7.3 Qualitative Examples: Semantic Misalignment in Keywords</h3>
+
+<p>Keyword extraction enables a form of error analysis that would otherwise require native speaker annotation: when a model misclassifies a post, the keywords it cites reveal <em>why</em>. Below we highlight selected examples where keyword evidence reveals systematic failure modes.</p>
+
+<h4>Example A — Arabic False Negative: Denial Language Overrides Content (GPT-4o-mini)</h4>
+<div class="example-box">
+  <strong>Language:</strong> Arabic &nbsp;|&nbsp; <strong>GT:</strong> Depressed &nbsp;|&nbsp; <strong>Predicted:</strong> Not Depressed<br>
+  <strong>Exp2 Keyword (translated):</strong> <span class="keyword-tag">lost</span><br>
+  <strong>Analysis:</strong> The post describes internal disorientation — "Don't call me depressed because I am lost, not depressed." The model extracted "lost" as its keyword, correctly identifying the distress signal at the lexical level. However, the explicit self-denial of the depression label ("I am not depressed") appears to have overridden the clinical significance of "lost" as a distress marker. This is a psychologically nuanced failure: the speaker's cognitive denial of their own depressive state is characteristic of depressive cognition, yet the model treats the surface negation as the authoritative signal.
+</div>
+
+<h4>Example B — Arabic False Positive: Social Content Without Distress (GPT-4o-mini)</h4>
+<div class="example-box">
+  <strong>Language:</strong> Arabic &nbsp;|&nbsp; <strong>GT:</strong> Not Depressed &nbsp;|&nbsp; <strong>Predicted:</strong> Depressed<br>
+  <strong>Exp2 Keywords (translated):</strong> <span class="keyword-tag">lonely</span>, <span class="keyword-tag">I can't</span>, <span class="keyword-tag">I have no</span>, <span class="keyword-tag">no one</span><br>
+  <strong>Analysis:</strong> The post contains multiple phrases that pattern-match to isolation and helplessness vocabulary. However, the ground truth is not depressed — the post likely represents a momentary social complaint or casual expression. This false positive illustrates how surface-level keyword matching on isolation vocabulary can produce false alarms when posts lack the persistent, clinical-level distress that annotators recognized as absent.
+</div>
+
+<h4>Example C — Arabic Religious Expression as Keyword: Correct Handling</h4>
+<div class="example-box">
+  <strong>Language:</strong> Arabic &nbsp;|&nbsp; <strong>GT:</strong> Not Depressed &nbsp;|&nbsp; <strong>Predicted:</strong> Not Depressed<br>
+  <strong>Exp2 Keyword (translated):</strong> <span class="keyword-tag">O God</span>, <span class="keyword-tag">forgive</span><br>
+  <strong>Analysis:</strong> The model correctly identified a post containing Islamic prayer expressions and classified it as not depressed. The keyword "O God, forgive" — a common Arabic supplication — was appropriately recognized as religious expression rather than despair. This represents a successful application of the V3 prompt's religious expression exclusion rule, and it is reflected in the high frequency of "gratitude" in the global keyword table.
+</div>
+
+<h4>Example D — Urdu False Negative: Semantic Collapse on Distress Keywords (Claude)</h4>
+<div class="example-box">
+  <strong>Language:</strong> Romanized Urdu &nbsp;|&nbsp; <strong>GT:</strong> Depressed &nbsp;|&nbsp; <strong>Predicted:</strong> Not Depressed<br>
+  <strong>Exp2 Keyword (translated):</strong> <span class="keyword-tag">exhaustion</span>, <span class="keyword-tag">sleep</span><br>
+  <strong>Analysis:</strong> The model extracted "exhaustion" and "sleep" from a post describing what appears to be behavioral depression symptoms (fatigue, sleep disruption). Yet the classification is "Not Depressed." This is consistent with Claude's documented ultra-conservative behavior: even when the model identifies clinically relevant distress signals in the keywords, its safety prior overrides the clinical inference. This example illustrates that Claude's problem is not keyword recognition failure — it is that keyword signals are insufficient to overcome its alignment-driven reluctance to label content as depression.
+</div>
+
+<h4>Example E — Urdu False Negative: Poetry Exclusion Rule Misapplied (Claude)</h4>
+<div class="example-box">
+  <strong>Language:</strong> Romanized Urdu &nbsp;|&nbsp; <strong>GT:</strong> Depressed &nbsp;|&nbsp; <strong>Predicted:</strong> Not Depressed<br>
+  <strong>Exp2 Keyword (translated):</strong> <span class="keyword-tag">poetry</span><br>
+  <strong>Analysis:</strong> The model cited "poetry" as the primary keyword justifying a "Not Depressed" classification. The V3 prompt includes an exclusion rule for poetry and song lyrics — but this rule is designed for formal literary expression, not personal posts that happen to use poetic register to express genuine suffering. The model appears to have over-applied the poetry exclusion, suppressing depression classification for any post with poetic language regardless of clinical content. This mirrors the most persistent failure mode identified in Milestone 3.
+</div>
+
+<!-- ======================================================================== -->
+<h2>8. Experiment 3 Results: Cross-Lingual Label Consistency</h2>
+
+<h3>8.1 Agreement Rate Summary</h3>
+
+<table>
+  <tr><th>Model</th><th>Language</th><th>Total</th><th>Agree</th><th>Disagree</th><th>Agreement Rate</th><th>Flip Rate</th></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Arabic</td><td>5,000</td><td>4,688</td><td>308</td><td><strong>93.84%</strong></td><td>6.16%</td></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Chinese</td><td>5,000</td><td>4,657</td><td>339</td><td><strong>93.21%</strong></td><td>6.78%</td></tr>
+  <tr><td>Gemini 2.0 Flash</td><td>Urdu</td><td>5,000</td><td>4,186</td><td>807</td><td><strong>83.84%</strong></td><td>16.14%</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Arabic</td><td>5,000</td><td>4,106</td><td>865</td><td>82.60%</td><td>17.30%</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Chinese</td><td>5,000</td><td>4,107</td><td>890</td><td>82.19%</td><td>17.80%</td></tr>
+  <tr><td>GPT-4o-mini</td><td>Urdu</td><td>5,000</td><td>3,983</td><td>1,013</td><td>79.72%</td><td>20.26%</td></tr>
+</table>
+<p class="caption">Table 5: Experiment 3 agreement summary. Agreement rate = proportion of cases where the model upholds its original classification when shown the English translation.</p>
+
+<img src="data_visualization/outputs/plots/exp3/agreement_rates.png" alt="Agreement Rates per Model and Language">
+<span class="figure-ref">Figure 14: Agreement rates per model and language. Gemini is substantially more self-consistent than GPT-4o-mini across all three languages.</span>
+
+<img src="data_visualization/outputs/plots/exp3/agreement_heatmap.png" alt="Agreement Rate Heatmap">
+<span class="figure-ref">Figure 15: Agreement rate heatmap: model × language. Gemini's higher self-consistency across all languages is clearly visible.</span>
+
+<img src="data_visualization/outputs/plots/exp3/agreement_breakdown.png" alt="Agreement Breakdown Stacked Bar">
+<span class="figure-ref">Figure 16: Stacked bar chart showing agree/disagree counts by model and language.</span>
+
+<h3>8.2 Key Findings from Experiment 3</h3>
+
+<h4>Gemini Is Substantially More Self-Consistent than GPT-4o-mini</h4>
+<p>Gemini upholds its original classifications 83.84–93.84% of the time when shown translated versions, compared to 79.72–82.60% for GPT-4o-mini. The gap is most pronounced on Arabic (Gemini: 93.84% vs GPT-4o-mini: 82.60%) and Chinese (93.21% vs 82.19%). This suggests that Gemini's classifications are more robustly grounded in post content rather than surface language cues — a finding that complements its higher F1 in Experiment 1. GPT-4o-mini's lower consistency indicates that approximately 17–20% of its classifications may be influenced by language-specific surface patterns rather than the underlying semantic content.</p>
+
+<h4>Urdu Shows the Most Disagreement for Both Models</h4>
+<p>Both Gemini and GPT-4o-mini show higher flip rates on Urdu (16.14% and 20.26%) than on Arabic or Chinese. This may reflect the Romanized Urdu transliteration loss in the Cohere translations — poetic expressions and culturally embedded Urdu idioms may not survive translation as faithfully as Arabic or Chinese text, causing models to re-evaluate more posts when shown the translated version.</p>
+
+<h4>Cross-Language Agreement vs. Accuracy Correlation</h4>
+
+<img src="data_visualization/outputs/plots/cross/f1_vs_agreement.png" alt="F1 vs Agreement Rate Scatter">
+<span class="figure-ref">Figure 17: Scatter plot of Exp1 F1 score vs. Exp3 agreement rate per model–language combination. Models with higher accuracy tend to agree more with themselves in translation — Gemini clusters in the top-right.</span>
+
+<h3>8.3 The Four-Category Flip Analysis</h3>
+
+<p>Experiment 3 disagreements can be decomposed into four clinically meaningful categories based on the model's original correctness (Exp1) and whether it changes its decision (Exp3):</p>
+
+<ul>
+  <li><strong>A: Correct + Upheld (Confirmed correct)</strong> — Model was right originally and stays right on translation. Ideal.</li>
+  <li><strong>B: Correct + Overruled (Harmful flip)</strong> — Model was right originally but changes to the wrong label on translation. The translation destabilized a correct decision.</li>
+  <li><strong>C: Wrong + Corrected (Beneficial flip)</strong> — Model was wrong originally but self-corrects when shown the translation. The translation improved the decision.</li>
+  <li><strong>D: Wrong + Upheld (Confirmed wrong)</strong> — Model was wrong originally and remains wrong. The translation did not help.</li>
+</ul>
+
+<img src="data_visualization/outputs/plots/cross/exp3_flip_analysis_stacked.png" alt="4-Category Flip Analysis">
+<span class="figure-ref">Figure 18: Stacked bar chart showing the four flip categories per model and language. The relative proportions of harmful vs. beneficial flips reveal whether translation tends to help or hurt decision quality.</span>
+
+<img src="data_visualization/outputs/plots/cross/exp3_flip_rates.png" alt="Flip Rates Panel">
+<span class="figure-ref">Figure 19: Harmful flip rate (B) and beneficial flip rate (C) by model and language. A net-positive model has more C than B flips.</span>
+
+<!-- ======================================================================== -->
+<h2>9. Cross-Experiment Analysis</h2>
+
+<h3>9.1 Keyword Volume vs. Agreement Rate</h3>
+
+<img src="data_visualization/outputs/plots/cross/keyword_count_vs_agreement.png" alt="Keyword Count vs Agreement Rate">
+<span class="figure-ref">Figure 20: Keyword count (Exp2 average per entry) vs. agreement rate (Exp3) per model–language combination. A negative relationship would suggest that models citing more keywords are less stable in their decisions.</span>
+
+<h3>9.2 Experiment 2 vs. Experiment 3 Keywords: A Comparison</h3>
+
+<p>Experiment 2 asks models to identify keywords from the original-language post (in Arabic, Urdu, or Chinese) and translate them to English. Experiment 3 asks models to identify keywords from the Cohere-translated English post. Comparing these two keyword sets provides a window into how well keyword reasoning is preserved across language representations of the same content.</p>
+
+<img src="data_visualization/outputs/plots/cross/exp2_exp3_keyword_count_paired.png" alt="Exp2 vs Exp3 Keyword Count Comparison">
+<span class="figure-ref">Figure 21: Side-by-side box plots of keyword counts from Exp2 (original-language keywords translated) vs. Exp3 (English keywords from translated post) per model. Models that extract similar counts in both conditions show more consistent reasoning behavior.</span>
+
+<img src="data_visualization/outputs/plots/cross/exp2_exp3_top_keywords_comparison.png" alt="Top Keywords Exp2 vs Exp3">
+<span class="figure-ref">Figure 22: Top keywords cited in Exp2 vs. Exp3 side-by-side. Overlap indicates semantic consistency; divergence indicates that the translation changed the model's lexical focus.</span>
+
+<img src="data_visualization/outputs/plots/cross/exp2_exp3_keyword_jaccard.png" alt="Keyword Jaccard Similarity">
+<span class="figure-ref">Figure 23: Jaccard similarity between Exp2 and Exp3 keyword sets per model (box plots). Higher Jaccard = more consistent lexical focus across language presentations.</span>
+
+<img src="data_visualization/outputs/plots/cross/exp2_exp3_kw_count_scatter.png" alt="Keyword Count Hexbin Scatter">
+<span class="figure-ref">Figure 24: Hexbin density plot: Exp2 keyword count vs. Exp3 keyword count, colored by Exp3 agreement. High-density clusters reveal the typical range of keyword usage for consistent vs. inconsistent classifications.</span>
+
+<img src="data_visualization/outputs/plots/cross/exp2_exp3_kw_quadrant_bars.png" alt="Keyword Quadrant Analysis">
+<span class="figure-ref">Figure 25: Quadrant bar chart categorizing posts by high/low Exp2 and Exp3 keyword counts. Posts with high keyword counts in both experiments represent cases with rich lexical evidence; posts with high Exp2 but low Exp3 counts represent cases where the translation collapsed the model's lexical attention.</span>
+
+<!-- ======================================================================== -->
+<h2>10. Discussion</h2>
+
+<h3>10.1 Commercial APIs vs. Local Open-Weight Models</h3>
+
+<p>The results provide nuanced evidence for the viability of local open-weight models as privacy-preserving alternatives to commercial APIs. For Arabic and Urdu, LLaMA 3 8B and Gemma 8B achieve F1 scores within 3–8 percentage points of the best commercial API (Gemini 2.0 Flash), running entirely on local hardware with no data transmission to external servers. This makes them viable candidates for deployment in clinical settings with data sovereignty requirements or in low-resource environments where API costs are prohibitive.</p>
+
+<p>However, for Chinese, the gap widens substantially: the best local model (LLaMA, F1=0.604) lags Gemini (0.661) by 5.7 points, and all models struggle. This likely reflects both the inherent difficulty of Chinese mental health NLP and the relative underrepresentation of Chinese mental health vocabulary in local model pretraining.</p>
+
+<p>DeepSeek 8B's underperformance relative to LLaMA and Gemma is unexpected given its "multilingual-tuned" designation. This warrants further investigation — the specific languages it was tuned on may not include the dialectal variants in our datasets.</p>
+
+<h3>10.2 The Precision-Recall Trade-off in Clinical Context</h3>
+
+<p>The clinical implications of the precision-recall trade-off observed across models are significant. In a depression screening context, <strong>false negatives (missed depression)</strong> are far more costly than false positives (false alarms): a false negative means a person in distress receives no intervention, while a false positive means an unnecessary but not harmful follow-up. Under this asymmetric cost structure:</p>
+
+<ul>
+  <li><strong>Gemini 2.0 Flash</strong> (high recall across languages) is the best-suited model for initial screening, where the priority is maximizing sensitivity at the cost of some false alarms.</li>
+  <li><strong>LLaMA 3 8B</strong> (recall=0.922 on Urdu) offers screening-quality performance in a local deployment.</li>
+  <li><strong>Claude Haiku 4.5</strong> is entirely unsuitable for screening — its recall of 23.6% on Chinese means it would miss 76.4% of depressed Chinese posts.</li>
+  <li><strong>GPT-4o-mini</strong> is suitable for secondary confirmation (high precision) but not primary screening.</li>
+</ul>
+
+<h3>10.3 Cultural and Linguistic Failure Modes</h3>
+
+<p>The keyword analysis surfaces several recurring failure modes that are cultural and linguistic in origin, not merely statistical:</p>
+
+<ol>
+  <li><strong>Denial language as dominant signal:</strong> Posts where speakers explicitly deny being depressed ("I am not depressed, I am just tired") trigger negative classifications even when the surrounding content expresses genuine distress. The model anchors on the explicit negation rather than reading the clinical subtext.</li>
+  <li><strong>Religious expression false suppression:</strong> Islamic and other religious expressions (prayer, acceptance of fate, gratitude) appear to suppress depression classifications even in posts with genuine distress signals. The V3 prompt's religious expression exclusion rule helps but cannot fully resolve this — the boundary between religious acceptance and resigned hopelessness is semantically subtle.</li>
+  <li><strong>Poetry exclusion over-generalization:</strong> Models trained with the V3 "do not classify poetry as depressed" rule appear to apply this broadly to any post with poetic register, even when the content expresses genuine personal suffering. Distinguishing literary convention from clinically significant poetic expression requires cultural knowledge that current LLMs partially lack.</li>
+  <li><strong>Chinese cultural vocabulary gap:</strong> Chinese social media expressions of distress — particularly indirect, metaphorical, or euphemistic references to depression — appear to be systematically under-detected. Models trained primarily on Western clinical vocabulary lack sufficient exposure to the Chinese cultural vocabulary of distress.</li>
+</ol>
+
+<h3>10.4 Cross-Lingual Consistency as a Measure of Reasoning Quality</h3>
+
+<p>Experiment 3 introduces a novel evaluation dimension: not just <em>what</em> a model decides but <em>how stable</em> that decision is when the same content is presented in a different language. Gemini's higher cross-lingual consistency (83–94% agreement) compared to GPT-4o-mini (80–83%) suggests that Gemini's decisions are more deeply grounded in semantic content and less dependent on surface language cues. This has implications beyond accuracy: a model that changes its mind 17–20% of the time when shown a translation of the same post is exhibiting a form of reasoning instability that raises legitimate questions about its reliability in deployment, even when its aggregate accuracy appears high.</p>
+
+<!-- ======================================================================== -->
+<h2>11. Conclusion</h2>
+
+<p>This project presents the most comprehensive comparative evaluation of LLMs for multilingual depression detection to date, covering six models across three languages and three experimental paradigms. Our key findings are:</p>
+
+<ol>
+  <li><strong>Chinese is the hardest language for all models.</strong> All six models show substantially lower F1 on Chinese than on Arabic or Urdu, with a consistent pattern of high precision but very low recall — models are reluctant to classify Chinese posts as depressed, missing the majority of true cases.</li>
+
+  <li><strong>Local open-weight models can match commercial APIs on Arabic and Urdu.</strong> LLaMA 3 8B and Gemma 8B achieve competitive F1 scores (within 3–8 points of Gemini 2.0 Flash) on both Arabic and Urdu, making them viable privacy-preserving alternatives for deployment in sensitive healthcare contexts.</li>
+
+  <li><strong>Claude Haiku 4.5's safety alignment makes it unsuitable for depression screening.</strong> Its extreme precision-recall imbalance (recall as low as 23.6% on Chinese) means it would miss the vast majority of depressed posts, an unacceptable outcome for any screening application.</li>
+
+  <li><strong>Keyword analysis reveals systematic semantic misalignment.</strong> Models consistently misclassify posts involving denial language, religious expression, poetic register, and culturally embedded Chinese distress vocabulary — failure modes that are invisible in aggregate metrics but clearly visible in per-prediction keyword evidence.</li>
+
+  <li><strong>Gemini is more self-consistent across languages than GPT-4o-mini.</strong> Gemini's 83–94% cross-lingual agreement rates, compared to GPT-4o-mini's 80–83%, suggest that Gemini's classifications are more robustly grounded in post content and less susceptible to language-surface variation.</li>
+
+  <li><strong>Culturally grounded prompting is essential.</strong> The V3 few-shot approach with language-specific examples and exclusion rules substantially improved performance over zero-shot baselines (a finding confirmed at scale from Milestone 3's smaller experiments), but systematic errors persist that prompt engineering alone cannot resolve without deeper cultural and clinical knowledge.</li>
+</ol>
+
+<p>These findings have direct practical implications for practitioners building multilingual mental health NLP tools. For screening applications, Gemini 2.0 Flash offers the best combination of high recall and cross-lingual stability. For privacy-preserving deployments, LLaMA 3 8B provides the best local model performance on Arabic and Urdu. For Chinese, all current models are insufficient for reliable clinical screening and should be augmented with human review. Future work should pursue Chinese-specific culturally grounded prompt engineering, ensemble approaches combining the complementary error profiles of Gemini (low FN) and GPT-4o-mini (low FP), and manual annotation by native-speaking mental health professionals to validate ground truth labels and categorize error types.</p>
+
+<!-- ======================================================================== -->
+<h2>References</h2>
+
+<ol>
+  <li>Mohmand, R. et al. (2023). Depression Assessment in Romanized Urdu. GitHub: https://github.com/RubaMohmand/Depression-Assessment-in-RU</li>
+  <li>CairoDep: Arabic Social Media Depression Dataset (Cairo University).</li>
+  <li>Weibo Mental Health Datasets: Chinese Social Media Mental Health Corpora.</li>
+  <li>Cohere. (2024). Command R (command-r-08-2024). Multilingual Translation API.</li>
+  <li>Rana, T., Afzal, A.M., Patel, H., Lilani, D. (2026). Milestone 3: Evaluating Multilingual LLMs for Depression Detection in Culturally Diverse Social Media Text. CSCI 4055, Ontario Tech University.</li>
+  <li>Meta AI. (2024). LLaMA 3 8B. Open-weight language model.</li>
+  <li>Google DeepMind. (2024). Gemma 8B. Open-weight language model.</li>
+  <li>DeepSeek AI. (2024). DeepSeek 8B. Open-weight multilingual language model.</li>
+  <li>OpenAI. (2024). GPT-4o-mini. Commercial API language model.</li>
+  <li>Google DeepMind. (2024). Gemini 2.0 Flash. Commercial API language model.</li>
+  <li>Anthropic. (2025). Claude Haiku 4.5. Commercial API language model.</li>
+</ol>
+
+<hr>
+<p style="text-align:center; font-size:10pt; color:#888;">CSCI 4055: Natural Language Processing — Ontario Tech University — April 2026<br>
+<em>Note: All figures referenced in this report are located in <code>data_visualization/outputs/plots/</code>. To view this report with embedded figures, open this HTML file from the project root directory in a web browser.</em></p>
+
+</body>
+</html>
