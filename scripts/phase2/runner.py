@@ -558,7 +558,7 @@ def discover_exp1_results() -> Dict[tuple, Path]:
     if not EXP1_RESULTS_DIR.exists():
         return {}
     found: Dict[tuple, list] = {}
-    for p in EXP1_RESULTS_DIR.glob("*.json"):
+    for p in EXP1_RESULTS_DIR.rglob("*.json"):
         if p.name.startswith("comparison_"):
             continue
         parts = p.stem.split("_")
