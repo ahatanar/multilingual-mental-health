@@ -1,0 +1,7 @@
+﻿model,language,total,agree,disagree,no_translation,other,agreement_rate,flip_count,flip_rate
+gemini,arabic,5000,4688,308,0,4,0.9384,308,0.0616
+gemini,chinese,5000,4657,339,0,4,0.9321,339,0.0678
+gemini,urdu,5000,4186,807,2,5,0.8384,807,0.1614
+openai,arabic,5000,4106,865,0,29,0.826,865,0.173
+openai,chinese,5000,4107,890,0,3,0.8219,890,0.178
+openai,urdu,5000,3983,1013,2,2,0.7972,1013,0.2026
