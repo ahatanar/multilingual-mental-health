@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "model": "deepseek/deepseek-r1-0528-qwen3-8b",
+    "language": "chinese",
+    "status": "partial",
+    "completed": 10,
+    "total": 4986,
+    "last_saved": "2026-04-13T05:37:01.044246"
+  },
+  "results": [
+    {
+      "index": 1,
+      "post_preview": "生病了也要臭美一下[挖鼻屎][挖鼻屎]",
+      "post_full": "生病了也要臭美一下[挖鼻屎][挖鼻屎]",
+      "ground_truth": "not depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 19,
+      "keywords": [
+        "生病",
+        "臭美"
+      ],
+      "translations": [
+        "sickness",
+        "vanity"
+      ],
+      "raw_response_exp2": "\n生病, 臭美  \nsickness, vanity",
+      "error_exp2": null
+    },
+    {
+      "index": 2,
+      "post_preview": "虽然退圈了，但是看见撕逼还是想说一句，惨还是cpf最惨。",
+      "post_full": "虽然退圈了，但是看见撕逼还是想说一句，惨还是cpf最惨。",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 28,
+      "keywords": [
+        "撕逼",
+        "cpf"
+      ],
+      "translations": [
+        "fighting/arguments",
+        "worst"
+      ],
+      "raw_response_exp2": "\n撕逼, cpf  \nfighting/arguments, worst",
+      "error_exp2": null
+    },
+    {
+      "index": 3,
+      "post_preview": "晕 感冒发烧一晚上真是太难受了",
+      "post_full": "晕 感冒发烧一晚上真是太难受了",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 15,
+      "keywords": [],
+      "translations": [],
+      "raw_response_exp2": "",
+      "error_exp2": null
+    },
+    {
+      "index": 4,
+      "post_preview": "双向情感障碍症 顺其自然的意思就是 我也很无奈随他妈便吧.",
+      "post_full": "双向情感障碍症 顺其自然的意思就是 我也很无奈随他妈便吧.",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 29,
+      "keywords": [
+        "双向情感障碍症",
+        "无奈"
+      ],
+      "translations": [
+        "bipolar",
+        "helpless"
+      ],
+      "raw_response_exp2": "\n双向情感障碍症, 无奈  \nbipolar, helpless",
+      "error_exp2": null
+    },
+    {
+      "index": 5,
+      "post_preview": "开学 week9 #日常#日常这周格外爱胶片风！",
+      "post_full": "开学 week9 #日常#日常这周格外爱胶片风！",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 24,
+      "keywords": [
+        "日常",
+        "爱"
+      ],
+      "translations": [
+        "daily",
+        "love"
+      ],
+      "raw_response_exp2": "\n日常, 爱  \ndaily, love",
+      "error_exp2": null
+    },
+    {
+      "index": 6,
+      "post_preview": "二八原则 有的人注定就是拿来当炮灰的",
+      "post_full": "二八原则 有的人注定就是拿来当炮灰的",
+      "ground_truth": "depressed",
+      "prediction": "not depressed",
+      "raw_response": "\n**Not Depressed**\n\n(Using the \"80/20 Principle\" to metaphorically discuss perceived value in social contexts — conceptual commentary on human dynamics, not personal distress. No clinical self-disclosure or helplessness signals present.)",
+      "error": null,
+      "word_count": 18,
+      "keywords": [
+        "二八原则",
+        "爆款"
+      ],
+      "translations": [
+        "principle of 80/20",
+        "hot topic"
+      ],
+      "raw_response_exp2": "\n二八原则, 爆款  \nprinciple of 80/20, hot topic",
+      "error_exp2": null
+    },
+    {
+      "index": 7,
+      "post_preview": "在与粉刺斗争的道路上一去不复返简单总结下就是Dr.wu杏仁酸与理肤泉k乳都能让闭口变成痘爆出来，有用是有用但忍不住去挤会留下无数痘印，城野水珍贵水还有医院的药水等等等对我无效…如果要详细阐述估计可以写...",
+      "post_full": "在与粉刺斗争的道路上一去不复返简单总结下就是Dr.wu杏仁酸与理肤泉k乳都能让闭口变成痘爆出来，有用是有用但忍不住去挤会留下无数痘印，城野水珍贵水还有医院的药水等等等对我无效…如果要详细阐述估计可以写出一篇论文…下一步：菌菇水！期待烂脸恢复的那天呐",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 124,
+      "keywords": [],
+      "translations": [],
+      "raw_response_exp2": "",
+      "error_exp2": null
+    },
+    {
+      "index": 8,
+      "post_preview": "左眼泪流复发，or可能只是累了break",
+      "post_full": "左眼泪流复发，or可能只是累了break",
+      "ground_truth": "depressed",
+      "prediction": "depressed",
+      "raw_response": "\nDepressed",
+      "error": null,
+      "word_count": 20,
+      "keywords": [
+        "复发",
+        "泪流"
+      ],
+      "translations": [
+        "relapse",
+        "tearing"
+      ],
+      "raw_response_exp2": "\n复发, 泪流  \nrelapse, tearing",
+      "error_exp2": null
+    },
+    {
+      "index": 9,
+      "post_preview": "流水不争先  争的是滔滔不绝好喜欢这句话",
+      "post_full": "流水不争先  争的是滔滔不绝好喜欢这句话",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 20,
+      "keywords": [],
+      "translations": [],
+      "raw_response_exp2": "",
+      "error_exp2": null
+    },
+    {
+      "index": 10,
+      "post_preview": "讲真我挺喜欢儿童画的【幼儿园一哥(⊙_⊙;)",
+      "post_full": "讲真我挺喜欢儿童画的【幼儿园一哥(⊙_⊙;)",
+      "ground_truth": "not depressed",
+      "prediction": "not depressed",
+      "raw_response": "\nNot Depressed",
+      "error": null,
+      "word_count": 22,
+      "keywords": [],
+      "translations": [],
+      "raw_response_exp2": "",
+      "error_exp2": null
+    }
+  ]
+}
