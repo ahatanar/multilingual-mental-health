@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(py|md|json\\)$\")",
+      "Bash(xargs ls:*)",
+      "Bash(grep -E \"\\\\.json$\")",
+      "Bash(cat)",
+      "Read(//tmp/**)"
+    ]
+  }
+}
