@@ -3,7 +3,7 @@
     "model": "llama",
     "language": "arabic",
     "experiment": 3,
-    "timestamp": "20260407_052523",
+    "timestamp": "20260405_052523",
     "sample_size": 5000
   },
   "metrics": {
