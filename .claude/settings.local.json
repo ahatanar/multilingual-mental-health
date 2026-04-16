@@ -5,7 +5,9 @@
       "Bash(xargs ls:*)",
       "Bash(grep -E \"\\\\.json$\")",
       "Bash(cat)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(python -c ':*)",
+      "Bash(python -c ':*2)"
     ]
   }
 }
