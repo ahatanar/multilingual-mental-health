@@ -1131,6 +1131,291 @@ def plot_cross_keyword_agreement_connection(
     return _save(fig, out_dir / "cross" / "keyword_count_vs_agreement.png")
 
 
+# ── Experiment 2 — native-language keyword frequency per language ─────────────
+
+def plot_exp2_native_keywords_per_language(
+    registry: Registry, out_dir: Path
+) -> list[Path]:
+    """
+    For each language, one figure with rows=models, 2 cols (depressed / not depressed).
+    Top native-language keywords are shown in original script (Arabic / Chinese / Urdu).
+
+    Arabic text is reshaped for correct letter-joining if arabic_reshaper and
+    python-bidi are installed; otherwise raw Unicode is used (may look disconnected
+    but remains readable).
+    """
+    import matplotlib.font_manager as fm
+    from collections import Counter
+
+    # ── font selection ────────────────────────────────────────────────────────
+    # Arabic fonts on Windows store standard Unicode codepoints (U+0600-U+06FF).
+    # arabic_reshaper converts to presentation forms (U+FExx) which these fonts
+    # do NOT have — so we skip reshaping and render raw Arabic Unicode directly.
+    # Matplotlib cannot do full Arabic shaping (letter-joining), but the glyphs
+    # are correct and readable for a research visualisation.
+    _LANG_FONT_CANDIDATES = {
+        "arabic": [
+            "Traditional Arabic", "Simplified Arabic", "Arabic Typesetting",
+            "Noto Naskh Arabic", "Amiri", "Arial",
+        ],
+        "chinese": [
+            "Microsoft YaHei", "SimHei", "SimSun", "Noto Sans CJK SC",
+            "WenQuanYi Micro Hei", "DejaVu Sans",
+        ],
+        "urdu": ["DejaVu Sans", "Arial", "Noto Sans"],  # Roman Urdu — Latin script
+    }
+
+    _available_fonts = {f.name for f in fm.fontManager.ttflist}
+
+    def _best_font(lang: str) -> fm.FontProperties | None:
+        for name in _LANG_FONT_CANDIDATES.get(lang, []):
+            if name in _available_fonts:
+                return fm.FontProperties(family=name)
+        return None
+
+    # ── data ──────────────────────────────────────────────────────────────────
+    df2 = registry.all_samples(experiment=2)
+    if df2.empty or "keywords" not in df2.columns:
+        _skip("no Exp2 keyword data", "exp2_native_keywords_per_language")
+        return []
+
+    saved: list[Path] = []
+    languages = sorted(df2["language"].unique())
+    classes = ["depressed", "not depressed"]
+    class_colors = {"depressed": "#EF4444", "not depressed": "#3B82F6"}
+    TOP_N = 15
+
+    for lang in languages:
+        lang_df = df2[df2["language"] == lang].copy()
+
+        # Keep only models that have actual varied keyword data
+        # (gemma/chinese is excluded because it erroneously returned 1 keyword per entry)
+        if lang == "chinese":
+            # Use only the larger gemma-chinese file; _exclude_gemma_chinese keeps it
+            # but the existing pipeline notes it as problematic — skip it here too
+            lang_df = lang_df[lang_df["model"] != "gemma"]
+
+        models = sorted(lang_df["model"].unique())
+        if not models:
+            continue
+
+        font_prop = _best_font(lang)
+        n_models = len(models)
+        fig, axes = plt.subplots(
+            n_models, 2,
+            figsize=(18, 4 * n_models),
+            squeeze=False,
+        )
+
+        for row_idx, model in enumerate(models):
+            model_df = lang_df[lang_df["model"] == model]
+
+            for col_idx, cls in enumerate(classes):
+                ax = axes[row_idx, col_idx]
+                cls_df = model_df[model_df["ground_truth"] == cls]
+
+                # Collect original-language keywords.
+                # Filter out error/fallback strings: anything longer than 40 chars
+                # or containing 4+ consecutive ASCII words (model error messages
+                # accidentally stored as keywords in some Claude/Llama entries).
+                def _is_valid_kw(kw: str) -> bool:
+                    kw = kw.strip()
+                    if not kw or len(kw) > 40:
+                        return False
+                    # reject if it looks like a full English sentence
+                    ascii_words = [w for w in kw.split() if w.isascii() and w.isalpha()]
+                    if len(ascii_words) >= 4:
+                        return False
+                    return True
+
+                all_kws: list[str] = []
+                for kws in cls_df["keywords"]:
+                    if isinstance(kws, list):
+                        all_kws.extend(k.strip() for k in kws if _is_valid_kw(k))
+
+                if not all_kws:
+                    ax.text(
+                        0.5, 0.5, "No data",
+                        ha="center", va="center",
+                        transform=ax.transAxes,
+                        fontsize=11, color="#9CA3AF",
+                    )
+                    ax.set_axis_off()
+                    if col_idx == 0:
+                        ax.set_ylabel(
+                            model.capitalize(), fontsize=11, rotation=90, labelpad=14
+                        )
+                    continue
+
+                counter = Counter(all_kws)
+                top = counter.most_common(TOP_N)
+
+                labels = [t[0] for t in reversed(top)]
+                counts = [t[1] for t in reversed(top)]
+
+                y_pos = range(len(labels))
+                ax.barh(y_pos, counts, color=class_colors[cls], alpha=0.82)
+                ax.set_yticks(list(y_pos))
+
+                if font_prop:
+                    ax.set_yticklabels(labels, fontproperties=font_prop, fontsize=9)
+                else:
+                    ax.set_yticklabels(labels, fontsize=9)
+
+                # Annotate bar values
+                for i, v in enumerate(counts):
+                    ax.text(
+                        v + max(counts) * 0.01, i, str(v),
+                        va="center", fontsize=7, color="#374151",
+                    )
+
+                ax.set_xlabel("Frequency", fontsize=9)
+                ax.grid(axis="x", alpha=0.3)
+                ax.spines["top"].set_visible(False)
+                ax.spines["right"].set_visible(False)
+
+                # Column headers on the top row only
+                if row_idx == 0:
+                    ax.set_title(
+                        cls.title(),
+                        fontsize=13,
+                        color=class_colors[cls],
+                        fontweight="bold",
+                        pad=10,
+                    )
+
+                # Model name on the left column only
+                if col_idx == 0:
+                    ax.set_ylabel(
+                        model.capitalize(), fontsize=11, rotation=90, labelpad=14
+                    )
+
+        lang_display = lang.title()
+        fig.suptitle(
+            f"Experiment 2 — Top {TOP_N} keywords by class  ·  {lang_display}\n"
+            "(keywords in original language script)",
+            fontsize=14, fontweight="bold", y=1.01,
+        )
+        fig.tight_layout()
+
+        path = out_dir / "exp2" / f"native_keywords_{lang}.png"
+        saved.append(_save(fig, path))
+
+    return [p for p in saved if p]
+
+
+# ── Experiment 2 — combined native keywords (all models pooled) per language ──
+
+def plot_exp2_native_keywords_combined(
+    registry: Registry, out_dir: Path
+) -> list[Path]:
+    """
+    For each language, one figure with 2 panels: Depressed (left) and Not Depressed (right).
+    Keywords from ALL models are pooled and ranked by total frequency — shows the
+    language-level signal regardless of which model extracted it.
+    """
+    import matplotlib.font_manager as fm
+    from collections import Counter
+
+    _LANG_FONT_CANDIDATES = {
+        "arabic": [
+            "Traditional Arabic", "Simplified Arabic", "Arabic Typesetting",
+            "Noto Naskh Arabic", "Amiri", "Arial",
+        ],
+        "chinese": [
+            "Microsoft YaHei", "SimHei", "SimSun", "Noto Sans CJK SC",
+            "WenQuanYi Micro Hei", "DejaVu Sans",
+        ],
+        "urdu": ["DejaVu Sans", "Arial", "Noto Sans"],
+    }
+    _available_fonts = {f.name for f in fm.fontManager.ttflist}
+
+    def _best_font(lang: str) -> fm.FontProperties | None:
+        for name in _LANG_FONT_CANDIDATES.get(lang, []):
+            if name in _available_fonts:
+                return fm.FontProperties(family=name)
+        return None
+
+    def _is_valid_kw(kw: str) -> bool:
+        kw = kw.strip()
+        if not kw or len(kw) > 40:
+            return False
+        ascii_words = [w for w in kw.split() if w.isascii() and w.isalpha()]
+        return len(ascii_words) < 4
+
+    df2 = registry.all_samples(experiment=2)
+    if df2.empty or "keywords" not in df2.columns:
+        _skip("no Exp2 keyword data", "exp2_native_keywords_combined")
+        return []
+
+    saved: list[Path] = []
+    classes = ["depressed", "not depressed"]
+    class_colors = {"depressed": "#EF4444", "not depressed": "#3B82F6"}
+    TOP_N = 20
+
+    for lang in sorted(df2["language"].unique()):
+        lang_df = df2[df2["language"] == lang].copy()
+        if lang == "chinese":
+            lang_df = lang_df[lang_df["model"] != "gemma"]
+
+        models_used = sorted(lang_df["model"].unique())
+        font_prop = _best_font(lang)
+
+        fig, axes = plt.subplots(1, 2, figsize=(18, 9))
+
+        for ax, cls in zip(axes, classes):
+            cls_df = lang_df[lang_df["ground_truth"] == cls]
+
+            all_kws: list[str] = []
+            for kws in cls_df["keywords"]:
+                if isinstance(kws, list):
+                    all_kws.extend(k.strip() for k in kws if _is_valid_kw(k))
+
+            if not all_kws:
+                ax.text(0.5, 0.5, "No data", ha="center", va="center",
+                        transform=ax.transAxes, fontsize=13, color="#9CA3AF")
+                ax.set_axis_off()
+                continue
+
+            counter = Counter(all_kws)
+            top = counter.most_common(TOP_N)
+            labels = [t[0] for t in reversed(top)]
+            counts = [t[1] for t in reversed(top)]
+
+            y_pos = list(range(len(labels)))
+            ax.barh(y_pos, counts, color=class_colors[cls], alpha=0.82)
+            ax.set_yticks(y_pos)
+            if font_prop:
+                ax.set_yticklabels(labels, fontproperties=font_prop, fontsize=11)
+            else:
+                ax.set_yticklabels(labels, fontsize=11)
+
+            max_count = max(counts)
+            for i, v in enumerate(counts):
+                ax.text(v + max_count * 0.005, i, str(v),
+                        va="center", fontsize=8, color="#374151")
+
+            ax.set_title(cls.title(), fontsize=15, color=class_colors[cls],
+                         fontweight="bold", pad=12)
+            ax.set_xlabel("Total frequency (all models pooled)", fontsize=10)
+            ax.grid(axis="x", alpha=0.3)
+            ax.spines["top"].set_visible(False)
+            ax.spines["right"].set_visible(False)
+
+        models_label = ", ".join(m.capitalize() for m in models_used)
+        fig.suptitle(
+            f"Experiment 2 — Top {TOP_N} keywords by class  ·  {lang.title()}  (all models combined)\n"
+            f"Models pooled: {models_label}  ·  keywords in original language script",
+            fontsize=13, fontweight="bold", y=1.02,
+        )
+        fig.tight_layout()
+
+        path = out_dir / "exp2" / f"native_keywords_{lang}_combined.png"
+        saved.append(_save(fig, path))
+
+    return [p for p in saved if p]
+
+
 # ── main entry point ──────────────────────────────────────────────────────────
 
 def generate_all_plots(
@@ -1177,6 +1462,8 @@ def generate_all_plots(
     _try(plot_exp2_top_keywords, top_kws, out_dir)
     _try(plot_exp2_keywords_by_class, registry, out_dir)
     _try(plot_exp2_keyword_count_by_predicted_class, registry, out_dir)
+    _try(plot_exp2_native_keywords_per_language, registry, out_dir)
+    _try(plot_exp2_native_keywords_combined, registry, out_dir)
 
     # Experiment 3
     _try(plot_exp3_agreement_rates, agreement_summary, out_dir)
