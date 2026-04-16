@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "model": "llama",
+    "model": "gemma",
     "language": "chinese",
     "experiment": 3,
     "timestamp": "20260408_102405",
