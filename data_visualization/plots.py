@@ -87,8 +87,9 @@ _COL_KEYWORDS_EXP3     = "keywords_exp3_exp3"
 # ── shared micro-helpers ──────────────────────────────────────────────────────
 
 def _exclude_gemma_chinese(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop gemma/chinese rows — that run returned constant 1 keyword (experiment error)."""
-    return df[~((df["model"] == "gemma") & (df["language"] == "chinese"))].copy()
+    """No-op kept for API compatibility. The gemma/chinese run previously returned
+    constant 1 keyword (experiment error) but the completed run now has valid data."""
+    return df.copy()
 
 
 def _ensure_axes_list(axes) -> list:
@@ -409,8 +410,7 @@ def plot_exp2_keyword_count_dist(registry: Registry, out_dir: Path) -> Path | No
         ax.grid(axis="y", alpha=0.3)
 
     fig.suptitle(
-        "Experiment 2 — Keyword count distribution by model per language\n"
-        "(gemma/chinese excluded: experiment error — all entries returned 1 keyword)",
+        "Experiment 2 — Keyword count distribution by model per language",
         fontsize=11,
     )
     return _save(fig, out_dir / "exp2" / "keyword_count_distribution.png")
@@ -1188,13 +1188,6 @@ def plot_exp2_native_keywords_per_language(
     for lang in languages:
         lang_df = df2[df2["language"] == lang].copy()
 
-        # Keep only models that have actual varied keyword data
-        # (gemma/chinese is excluded because it erroneously returned 1 keyword per entry)
-        if lang == "chinese":
-            # Use only the larger gemma-chinese file; _exclude_gemma_chinese keeps it
-            # but the existing pipeline notes it as problematic — skip it here too
-            lang_df = lang_df[lang_df["model"] != "gemma"]
-
         models = sorted(lang_df["model"].unique())
         if not models:
             continue
@@ -1355,9 +1348,6 @@ def plot_exp2_native_keywords_combined(
 
     for lang in sorted(df2["language"].unique()):
         lang_df = df2[df2["language"] == lang].copy()
-        if lang == "chinese":
-            lang_df = lang_df[lang_df["model"] != "gemma"]
-
         models_used = sorted(lang_df["model"].unique())
         font_prop = _best_font(lang)
 

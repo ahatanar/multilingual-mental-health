@@ -173,10 +173,8 @@ def discover(results_root: Path) -> list[ResultFileMeta]:
             print(f"[discovery] Skipping unknown dir: {exp_dir.name}")
             continue
 
-        if exp_num in (1, 2):
+        if exp_num in (1, 2, 3):
             found.extend(_iter_exp1_exp2(exp_dir, exp_num))
-        elif exp_num == 3:
-            found.extend(_iter_exp3(exp_dir))
         else:
             print(f"[discovery] Unknown experiment number {exp_num}, skipping.")
 
