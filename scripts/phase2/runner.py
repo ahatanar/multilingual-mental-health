@@ -816,9 +816,14 @@ def load_translations_for_exp3(lang: str) -> Dict[str, str]:
             return lookup
 
     # Fallback 1: translated/ subdirectory
+    # Sort by file size DESC so the largest (i.e. real 5000/6000-sample) file wins;
+    # alphabetical sort previously picked up a 10-sample dev fixture first.
     translated_dir = PHASE2_DATA_DIR / "translated"
     if translated_dir.exists():
-        for p in sorted(translated_dir.glob(f"{lang}_*samples_seed42_translated.json")):
+        for p in sorted(
+            translated_dir.glob(f"{lang}_*samples_seed42_translated.json"),
+            key=lambda x: x.stat().st_size, reverse=True,
+        ):
             with open(p, encoding="utf-8") as f:
                 td = json.load(f)
             for s in td.get("samples", []):
@@ -828,10 +833,13 @@ def load_translations_for_exp3(lang: str) -> Dict[str, str]:
                 logger.info(f"[{lang}] {len(lookup)} translations loaded from {p.name}")
                 return lookup
 
-    # Fallback 2: translation_progress checkpoint
+    # Fallback 2: translation_progress checkpoint (largest file first)
     progress_dir = PHASE2_DATA_DIR / "translation_progress"
     if progress_dir.exists():
-        for p in sorted(progress_dir.glob(f"{lang}_translation_*s_seed42.json"), reverse=True):
+        for p in sorted(
+            progress_dir.glob(f"{lang}_translation_*s_seed42.json"),
+            key=lambda x: x.stat().st_size, reverse=True,
+        ):
             with open(p, encoding="utf-8") as f:
                 td = json.load(f)
             for s in td.get("items", []):
