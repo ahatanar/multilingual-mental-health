@@ -79,6 +79,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger(__name__)
 
 PHASE2_DATA_DIR = PROJECT_ROOT / "data" / "phase2"
+EXP3_RESULTS_DIR = PROJECT_ROOT / "results" / "phase2" / "experiment3"
 
 _LANG_DISPLAY = {
     "arabic":  "Arabic (Egyptian dialect)",
@@ -238,25 +239,66 @@ def _recompute_metrics(results: List[dict]) -> dict:
     }
 
 
-# ── main ──────────────────────────────────────────────────────────────────────
+# ── candidate discovery ───────────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Backfill Exp3 entries that were wrongly marked 'no_translation'."
-    )
-    parser.add_argument("--file", type=Path, required=True,
-                        help="Path to the exp3 result JSON to repair.")
-    parser.add_argument("--delay", type=float, default=0.0,
-                        help="Seconds to sleep between model calls (default: 0).")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Report what would change, but don't call the model or write anything.")
-    args = parser.parse_args()
+def _audit_file(path: Path) -> dict | None:
+    """
+    Peek at an exp3 result file and summarise how broken it is.
+    Returns None for files that can't be read.
+    """
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
 
-    if not args.file.exists():
-        print(f"  File not found: {args.file}")
-        sys.exit(1)
+    meta = data.get("metadata", {})
+    results = data.get("results", [])
+    if not results:
+        return None
 
-    with open(args.file, encoding="utf-8") as f:
+    no_trans = [r for r in results if r.get("agreement") == "no_translation"]
+    return {
+        "path":      path,
+        "model":     meta.get("model", ""),
+        "language":  meta.get("language", ""),
+        "total":     len(results),
+        "no_trans":  len(no_trans),
+    }
+
+
+def find_candidate_files(model_filter: str | None = None) -> list[dict]:
+    """
+    Scan the exp3 results tree for files with any 'no_translation' rows.
+    Optionally filter to a single model key (e.g. 'gemma', 'deepseek-local').
+    """
+    if not EXP3_RESULTS_DIR.exists():
+        return []
+
+    candidates = []
+    for p in EXP3_RESULTS_DIR.rglob("*.json"):
+        if p.name.endswith(".partial.json"):
+            continue
+        audit = _audit_file(p)
+        if audit is None or audit["no_trans"] == 0:
+            continue
+        if model_filter and audit["model"] != model_filter:
+            continue
+        candidates.append(audit)
+
+    # Newest first (by mtime) so we prefer the most recent result per model/lang
+    candidates.sort(key=lambda a: a["path"].stat().st_mtime, reverse=True)
+    return candidates
+
+
+# ── per-file repair ───────────────────────────────────────────────────────────
+
+def repair_file(path: Path, delay_override: float, dry_run: bool) -> bool:
+    """
+    Repair a single exp3 result file. Returns True if something was done
+    (or dry-run reported fixable rows), False if nothing to do / skipped.
+    """
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
 
     metadata  = data.get("metadata", {})
@@ -264,59 +306,56 @@ def main():
     model_key = metadata.get("model", "")
     language  = metadata.get("language", "")
 
-    # Count broken rows
     no_trans_rows = [r for r in results if r.get("agreement") == "no_translation"]
 
-    print(f"\n  File:              {args.file.name}")
+    print(f"\n  File:              {path.name}")
     print(f"  Model:             {model_key}  |  Language: {language}")
     print(f"  Total rows:        {len(results)}")
     print(f"  'no_translation':  {len(no_trans_rows)}")
 
     if not no_trans_rows:
-        print("\n  Nothing to repair.")
-        sys.exit(0)
+        print("  Nothing to repair.")
+        return False
 
-    # Build the correct translation lookup
     lookup = load_translations_for_exp3(language)
     if not lookup:
-        print(f"\n  No translations found on disk for '{language}'. Cannot repair.")
-        sys.exit(1)
+        print(f"  No translations found on disk for '{language}'. Cannot repair.")
+        return False
 
-    # Separate actually-fixable vs real gaps
-    fixable = [r for r in no_trans_rows if r.get("post_full", "") in lookup]
+    fixable  = [r for r in no_trans_rows if r.get("post_full", "") in lookup]
     real_gap = [r for r in no_trans_rows if r.get("post_full", "") not in lookup]
 
     print(f"  Fixable (in lookup): {len(fixable)}")
-    print(f"  Real gap (missing) : {len(real_gap)}  (will be left as 'no_translation')")
+    print(f"  Real gap (missing) : {len(real_gap)}  (left as 'no_translation')")
 
     if not fixable:
-        print("\n  Nothing fixable — all 'no_translation' rows are real gaps.")
-        sys.exit(0)
+        print("  Nothing fixable — all 'no_translation' rows are real gaps.")
+        return False
 
-    if args.dry_run:
-        print("\n  --dry-run set. No model calls made, no file written.")
-        sys.exit(0)
+    if dry_run:
+        print("  --dry-run set. No model calls, no file written.")
+        return True
 
     try:
         provider_cls, default_model, display_name, provider_delay = _load_provider(model_key)
     except (ValueError, ImportError) as e:
-        print(f"\n  Cannot load provider for '{model_key}': {e}")
-        sys.exit(1)
+        print(f"  Cannot load provider for '{model_key}': {e}")
+        return False
 
-    delay = max(args.delay, provider_delay)
+    delay = max(delay_override, provider_delay)
 
     try:
         api_key = get_api_key(model_key)
     except EnvironmentError as e:
-        print(f"\n  {e}")
-        sys.exit(1)
+        print(f"  {e}")
+        return False
 
     provider = provider_cls(api_key=api_key, model_name=default_model)
 
-    confirm = input(f"\n  Repair {len(fixable)} entries with {display_name}? (Y/n): ").strip().lower()
+    confirm = input(f"  Repair {len(fixable)} entries with {display_name}? (Y/n): ").strip().lower()
     if confirm == "n":
-        print("  Aborted.")
-        sys.exit(0)
+        print("  Skipped.")
+        return False
 
     # Build new records for the fixable rows
     lang_display = _LANG_DISPLAY.get(language, language.capitalize())
@@ -329,7 +368,6 @@ def main():
             **r,
             "translation":       lookup[post_full],
             "original_language": r.get("original_language") or lang_display,
-            # Clear the stale error state before the retry
             "error_exp3":        "",
         }
         logger.info(f"[{model_key}][{language}] Repairing {i}/{len(fixable)} (index={idx})...")
@@ -367,7 +405,7 @@ def main():
     # Save timestamped output next to original
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe_name = model_key.replace("/", "_").replace(":", "_")
-    out_dir   = args.file.parent
+    out_dir   = path.parent
     out_path  = out_dir / f"{safe_name}_{language}_{timestamp}.json"
 
     payload = {
@@ -377,7 +415,7 @@ def main():
             "experiment":    3,
             "timestamp":     timestamp,
             "sample_size":   len(merged),
-            "repair_source": args.file.name,
+            "repair_source": path.name,
             "repaired_rows": len(repaired_by_idx),
         },
         "metrics": new_metrics,
@@ -387,7 +425,62 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    print(f"\n  Saved: {out_path.relative_to(PROJECT_ROOT)}")
+    print(f"  Saved: {out_path.relative_to(PROJECT_ROOT)}")
+    return True
+
+
+# ── main ──────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Backfill Exp3 entries that were wrongly marked 'no_translation'."
+    )
+    parser.add_argument("--file",  type=Path, default=None,
+                        help="Specific exp3 result JSON to repair. If omitted, the script "
+                             "scans results/phase2/experiment3/ and repairs every file it finds "
+                             "with fixable 'no_translation' rows.")
+    parser.add_argument("--model", type=str, default=None,
+                        help="When auto-scanning, only repair files for this model key "
+                             "(e.g. 'gemma', 'deepseek-local', 'llama').")
+    parser.add_argument("--delay", type=float, default=0.0,
+                        help="Seconds to sleep between model calls (default: 0).")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Report what would change, but don't call the model or write anything.")
+    args = parser.parse_args()
+
+    if args.file is not None:
+        # Explicit single-file mode
+        if not args.file.exists():
+            print(f"  File not found: {args.file}")
+            sys.exit(1)
+        repair_file(args.file, args.delay, args.dry_run)
+        return
+
+    # Auto-scan mode
+    candidates = find_candidate_files(model_filter=args.model)
+    if not candidates:
+        suffix = f" for model '{args.model}'" if args.model else ""
+        print(f"\n  No exp3 files with 'no_translation' rows found{suffix}.")
+        return
+
+    print(f"\n  Found {len(candidates)} candidate file(s) with 'no_translation' rows:")
+    for i, c in enumerate(candidates, 1):
+        rel = c["path"].relative_to(PROJECT_ROOT)
+        print(f"    [{i}] {c['model']:15} / {c['language']:8} — "
+              f"{c['no_trans']:>4}/{c['total']} broken   ({rel})")
+
+    confirm = input(f"\n  Repair all {len(candidates)}? (Y/n): ").strip().lower()
+    if confirm == "n":
+        print("  Aborted.")
+        return
+
+    repaired_files = 0
+    for c in candidates:
+        did_work = repair_file(c["path"], args.delay, args.dry_run)
+        if did_work:
+            repaired_files += 1
+
+    print(f"\n  Done. Processed {repaired_files}/{len(candidates)} file(s).")
 
 
 if __name__ == "__main__":
