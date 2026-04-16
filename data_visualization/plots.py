@@ -1096,6 +1096,404 @@ def plot_exp2_exp3_multidimensional(
     return saved
 
 
+# ── Figure 1: headline plot ───────────────────────────────────────────────────
+
+def plot_figure1_reliability_gap(
+    summary: pd.DataFrame,
+    merged_13: pd.DataFrame,
+    out_dir: Path,
+) -> Path | None:
+    """
+    Figure 1 — "The Reliability Gap" dumbbell plot.
+
+    For each (model, language) combo, shows two points:
+      • Accuracy from Exp1  — the conventional benchmark metric
+      • Reliability score   — P(Exp1 correct AND Exp3 agrees with own reasoning
+                              when shown the English translation)
+
+    The horizontal segment between them is the paper's central empirical claim:
+    headline accuracy overstates how reliable the model actually is once its
+    own reasoning is stress-tested via cross-lingual consistency. Using
+    accuracy (not F1) guarantees gap ≥ 0 and a clean interpretation.
+
+    Rows are grouped by language and sorted within each group by reliability
+    (descending) — so the top of each language band is the most trustworthy
+    model for that language, not merely the most accurate.
+    """
+    if summary.empty or merged_13.empty:
+        _skip("need both summary and merged_13 data", "figure1_reliability_gap"); return None
+
+    exp1 = summary[summary["experiment"] == 1][["model", "language", "accuracy"]].copy()
+    if exp1.empty:
+        _skip("no Exp1 accuracy data", "figure1_reliability_gap"); return None
+
+    correct_col = _COL_CORRECT_EXP1
+    agree_col = _COL_AGREEMENT_EXP3
+    if correct_col not in merged_13.columns or agree_col not in merged_13.columns:
+        _skip("missing correct_exp1/agreement_exp3 columns", "figure1_reliability_gap"); return None
+
+    # Compute reliability = P(correct AND agrees) on classified samples.
+    # Using accuracy (not F1) on the X-axis means reliability ≤ accuracy always,
+    # so the gap between the two is always ≥ 0 and has a clean interpretation:
+    # "fraction of correct classifications whose reasoning fails under translation."
+    rel_rows = []
+    for (model, lang), grp in merged_13.groupby(["model", "language"]):
+        classified = grp[grp[agree_col].isin(["yes", "no"])]
+        if classified.empty:
+            continue
+        reliable = ((classified[correct_col] == True) & (classified[agree_col] == "yes")).sum()
+        total = len(classified)
+        rel_rows.append({
+            "model": model,
+            "language": lang,
+            "reliability": reliable / total if total else 0.0,
+            "n": int(total),
+        })
+
+    if not rel_rows:
+        _skip("no reliability rows computed", "figure1_reliability_gap"); return None
+
+    rel_df = pd.DataFrame(rel_rows)
+    merged = exp1.merge(rel_df, on=["model", "language"], how="inner").dropna(subset=["accuracy"])
+    if merged.empty:
+        _skip("no (model, language) overlap between accuracy and reliability", "figure1_reliability_gap"); return None
+
+    # Clip tiny numerical noise so gap is strictly ≥ 0
+    merged["gap"] = (merged["accuracy"] - merged["reliability"]).clip(lower=0)
+
+    # Language order: arabic, chinese, urdu (alphabetical stable)
+    langs_order = sorted(merged["language"].unique())
+
+    # Within each language, sort by reliability descending
+    merged = (
+        pd.concat([
+            merged[merged["language"] == lang].sort_values("reliability", ascending=False)
+            for lang in langs_order
+        ])
+        .reset_index(drop=True)
+    )
+
+    # Compute y positions with language group spacing
+    y_positions = []
+    lang_bands: dict[str, tuple[float, float]] = {}
+    cur_y = 0.0
+    gap_between_langs = 0.9
+    for lang in langs_order:
+        sub = merged[merged["language"] == lang]
+        y_start = cur_y
+        for _ in range(len(sub)):
+            y_positions.append(cur_y)
+            cur_y += 1.0
+        lang_bands[lang] = (y_start - 0.45, cur_y - 0.55)
+        cur_y += gap_between_langs
+
+    merged["y"] = y_positions
+
+    # Figure sizing — scale height with number of rows
+    n_rows = len(merged)
+    fig_h = max(7.5, n_rows * 0.48 + 2.5)
+    fig, ax = plt.subplots(figsize=(12, fig_h))
+
+    # Language background bands
+    for lang, (y0, y1) in lang_bands.items():
+        ax.axhspan(y0, y1, color=_lang_color(lang), alpha=0.09, zorder=0)
+        y_mid = (y0 + y1) / 2
+        ax.text(
+            0.21, y_mid, lang.upper(),
+            ha="right", va="center", fontsize=11, fontweight="bold",
+            color=_lang_color(lang), rotation=90,
+        )
+
+    # Gap color thresholds (pp)
+    def _gap_color(gap_pp: float) -> str:
+        if gap_pp > 15:
+            return "#DC2626"  # red — large inflation
+        elif gap_pp > 8:
+            return "#F59E0B"  # amber — moderate
+        else:
+            return "#10B981"  # green — tight
+
+    # Draw each dumbbell
+    for _, row in merged.iterrows():
+        y = row["y"]
+        acc = float(row["accuracy"])
+        rel = float(row["reliability"])
+        gap_pp = row["gap"] * 100.0
+        seg_color = _gap_color(gap_pp)
+
+        ax.plot([rel, acc], [y, y], color=seg_color, linewidth=4, alpha=0.70,
+                zorder=2, solid_capstyle="round")
+
+        # Reliability dot (left, light blue)
+        ax.scatter([rel], [y], s=170, color="#60A5FA",
+                   edgecolor="black", linewidth=0.9, zorder=4)
+        # Accuracy dot (right, model color)
+        ax.scatter([acc], [y], s=170, color=_model_color(row["model"]),
+                   edgecolor="black", linewidth=0.9, zorder=4)
+
+        # Inline numeric labels on the dots
+        ax.text(rel - 0.012, y, f"{rel:.2f}", ha="right", va="center",
+                fontsize=8.5, color="#1F2937")
+        ax.text(acc + 0.012, y, f"{acc:.2f}", ha="left", va="center",
+                fontsize=8.5, color="#1F2937", fontweight="bold")
+
+        # Gap annotation on the far right
+        ax.text(1.015, y, f"Δ = {gap_pp:.0f} pp", ha="left", va="center",
+                fontsize=9, color=seg_color, fontweight="bold",
+                transform=ax.get_yaxis_transform())
+
+    # Y-axis: model names
+    ax.set_yticks(merged["y"].tolist())
+    ax.set_yticklabels([m.capitalize() for m in merged["model"]], fontsize=10.5)
+    ax.invert_yaxis()
+
+    # X-axis
+    ax.set_xlim(0.25, 1.0)
+    ax.set_xlabel("Score  (Accuracy  /  Reliability)", fontsize=11)
+    ax.xaxis.set_major_formatter(mticker.PercentFormatter(xmax=1, decimals=0))
+
+    # Reference lines (thresholds) — full height, labels at TOP (readable)
+    for x_ref, label in [(0.70, "70% — screening floor"),
+                         (0.90, "90% — clinical-adjacent")]:
+        ax.axvline(x_ref, color="gray", linestyle="--", alpha=0.45, linewidth=1)
+        ax.text(x_ref, 1.01, label, transform=ax.get_xaxis_transform(),
+                ha="center", va="bottom", fontsize=8.5, color="gray", style="italic")
+
+    # Legend
+    from matplotlib.lines import Line2D
+    legend_elems = [
+        Line2D([0], [0], marker="o", color="w",
+               label="Accuracy  (Exp1 benchmark)",
+               markerfacecolor="#6B7280", markeredgecolor="black", markersize=11),
+        Line2D([0], [0], marker="o", color="w",
+               label="Reliability  (Exp1 correct ∩ Exp3 agrees)",
+               markerfacecolor="#60A5FA", markeredgecolor="black", markersize=11),
+        Line2D([0], [0], color="#10B981", lw=4, label="Gap ≤ 8 pp"),
+        Line2D([0], [0], color="#F59E0B", lw=4, label="Gap 8 – 15 pp"),
+        Line2D([0], [0], color="#DC2626", lw=4, label="Gap > 15 pp"),
+    ]
+    ax.legend(handles=legend_elems, loc="lower left",
+              fontsize=9, framealpha=0.95, ncol=1, title="Legend")
+
+    # Title + subtitle (fig-level so they don't collide with the axes)
+    max_gap_pp = merged["gap"].max() * 100
+    med_gap_pp = merged["gap"].median() * 100
+    n_big_gap = (merged["gap"] > 0.15).sum()
+    subtitle = (
+        f"Median reasoning gap: {med_gap_pp:.0f} pp  ·  "
+        f"max: {max_gap_pp:.0f} pp  ·  "
+        f"{n_big_gap} / {len(merged)} combos have > 15 pp gap"
+    )
+    fig.suptitle(
+        "Figure 1 — The Reliability Gap\n"
+        "Accuracy vs. cross-lingual reasoning consistency, per model × language",
+        fontsize=13, fontweight="bold", y=0.985,
+    )
+    fig.text(0.5, 0.945, subtitle, ha="center", va="top",
+             fontsize=10.5, color="#374151", style="italic")
+
+    ax.grid(axis="x", alpha=0.3)
+    ax.set_axisbelow(True)
+    # Leave room at top for title + threshold labels; at bottom no extra need
+    fig.subplots_adjust(top=0.89, bottom=0.08)
+
+    return _save(fig, out_dir / "figure1_reliability_gap.png")
+
+
+def plot_figure1_trust_quadrant(
+    summary: pd.DataFrame,
+    merged_13: pd.DataFrame,
+    out_dir: Path,
+) -> Path | None:
+    """
+    Figure 1 (v2) — "The Trust Quadrant".
+
+    A scatter plot with colored good/bad zones where each point is a
+    (model, language) combo:
+
+      X-axis = Accuracy (Exp1)                    — "how often right?"
+      Y-axis = Reliability = P(correct ∩ agrees)  — "how often right for
+                                                     the right reason?"
+
+    Four shaded quadrants with explicit labels:
+      • Top-right  (green)  — TRUSTWORTHY
+      • Bottom-right (red)  — INFLATED  (accurate but reasoning breaks)
+      • Top-left   (blue)   — CAUTIOUS  (rarely right but honest)
+      • Bottom-left (gray)  — WEAK
+    The diagonal y=x marks perfect alignment; distance below it = reasoning gap.
+    """
+    if summary.empty or merged_13.empty:
+        _skip("need summary + merged_13", "figure1_trust_quadrant"); return None
+
+    exp1 = summary[summary["experiment"] == 1][["model", "language", "accuracy"]].copy()
+    if exp1.empty:
+        _skip("no Exp1 accuracy data", "figure1_trust_quadrant"); return None
+
+    correct_col = _COL_CORRECT_EXP1
+    agree_col = _COL_AGREEMENT_EXP3
+    if correct_col not in merged_13.columns or agree_col not in merged_13.columns:
+        _skip("missing correct/agreement columns", "figure1_trust_quadrant"); return None
+
+    rel_rows = []
+    for (model, lang), grp in merged_13.groupby(["model", "language"]):
+        classified = grp[grp[agree_col].isin(["yes", "no"])]
+        if classified.empty:
+            continue
+        reliable = ((classified[correct_col] == True) & (classified[agree_col] == "yes")).sum()
+        total = len(classified)
+        rel_rows.append({
+            "model": model, "language": lang,
+            "reliability": reliable / total if total else 0.0,
+        })
+
+    if not rel_rows:
+        _skip("no reliability rows", "figure1_trust_quadrant"); return None
+
+    rel_df = pd.DataFrame(rel_rows)
+    merged = exp1.merge(rel_df, on=["model", "language"], how="inner").dropna()
+    if merged.empty:
+        _skip("no overlap", "figure1_trust_quadrant"); return None
+
+    # ── thresholds ─────────────────────────────────────────────────────────
+    # Tightened so "trustworthy" is a genuinely demanding bar:
+    #   accuracy ≥ 80%  AND  reliability ≥ 75%
+    # i.e. correct on 4-of-5 posts, AND ¾ of those correct predictions
+    # survive a fresh-translation stress test.
+    ACC_THRESH = 0.80
+    REL_THRESH = 0.75
+
+    # ── figure ─────────────────────────────────────────────────────────────
+    fig, ax = plt.subplots(figsize=(11, 9))
+
+    X_LO, X_HI = 0.30, 1.00
+    Y_LO, Y_HI = 0.20, 1.00
+
+    # Quadrant backgrounds (drawn first, behind everything)
+    q_colors = {
+        "trust":    ("#86EFAC", "TRUSTWORTHY\naccurate &\nreasoning holds"),
+        "inflated": ("#FCA5A5", "INFLATED\naccurate but\nreasoning breaks"),
+        "cautious": ("#BFDBFE", "CAUTIOUS\nrarely right\n(honest)"),
+        "weak":     ("#E5E7EB", "WEAK\nneither accurate\nnor consistent"),
+    }
+    # top-right = trustworthy
+    ax.axhspan(REL_THRESH, Y_HI, xmin=(ACC_THRESH - X_LO) / (X_HI - X_LO), xmax=1.0,
+               facecolor=q_colors["trust"][0], alpha=0.35, zorder=0)
+    # bottom-right = inflated
+    ax.axhspan(Y_LO, REL_THRESH, xmin=(ACC_THRESH - X_LO) / (X_HI - X_LO), xmax=1.0,
+               facecolor=q_colors["inflated"][0], alpha=0.35, zorder=0)
+    # top-left = cautious
+    ax.axhspan(REL_THRESH, Y_HI, xmin=0.0, xmax=(ACC_THRESH - X_LO) / (X_HI - X_LO),
+               facecolor=q_colors["cautious"][0], alpha=0.35, zorder=0)
+    # bottom-left = weak
+    ax.axhspan(Y_LO, REL_THRESH, xmin=0.0, xmax=(ACC_THRESH - X_LO) / (X_HI - X_LO),
+               facecolor=q_colors["weak"][0], alpha=0.40, zorder=0)
+
+    # Quadrant corner labels
+    ax.text(0.985, 0.985, q_colors["trust"][1], transform=ax.transAxes,
+            ha="right", va="top", fontsize=10.5, fontweight="bold",
+            color="#166534", linespacing=1.3,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="white", alpha=0.75, edgecolor="#166534"))
+    ax.text(0.985, 0.015, q_colors["inflated"][1], transform=ax.transAxes,
+            ha="right", va="bottom", fontsize=10.5, fontweight="bold",
+            color="#991B1B", linespacing=1.3,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="white", alpha=0.75, edgecolor="#991B1B"))
+    ax.text(0.015, 0.985, q_colors["cautious"][1], transform=ax.transAxes,
+            ha="left", va="top", fontsize=9.5, fontweight="bold",
+            color="#1E40AF", linespacing=1.3,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="white", alpha=0.70, edgecolor="#1E40AF"))
+    ax.text(0.015, 0.015, q_colors["weak"][1], transform=ax.transAxes,
+            ha="left", va="bottom", fontsize=9.5, fontweight="bold",
+            color="#374151", linespacing=1.3,
+            bbox=dict(boxstyle="round,pad=0.4", facecolor="white", alpha=0.70, edgecolor="#374151"))
+
+    # Threshold lines
+    ax.axvline(ACC_THRESH, color="#4B5563", linestyle="--", linewidth=1.2, alpha=0.7, zorder=1)
+    ax.axhline(REL_THRESH, color="#4B5563", linestyle="--", linewidth=1.2, alpha=0.7, zorder=1)
+
+    # Diagonal y=x reference
+    ax.plot([X_LO, X_HI], [X_LO, X_HI], color="#9CA3AF",
+            linestyle=":", linewidth=1.2, zorder=1, label="_")
+    ax.text(0.96, 0.93, "y = x\n(perfect alignment)",
+            transform=ax.transAxes, fontsize=8, color="#6B7280",
+            style="italic", ha="right", rotation=0)
+
+    # ── plot points ────────────────────────────────────────────────────────
+    model_markers = {
+        "gemini": "o", "openai": "s", "claude": "^",
+        "llama": "D", "deepseek": "v", "gemma": "P",
+    }
+
+    for _, row in merged.iterrows():
+        model, lang = row["model"], row["language"]
+        x, y = float(row["accuracy"]), float(row["reliability"])
+        marker = model_markers.get(model, "o")
+        color = _lang_color(lang)
+        ax.scatter(x, y, s=280, marker=marker,
+                   facecolor=color, edgecolor="black", linewidth=1.3,
+                   alpha=0.92, zorder=5)
+        # Smart label placement — offset to avoid overlap with marker
+        ax.annotate(
+            f"{model}",
+            (x, y),
+            xytext=(8, 8), textcoords="offset points",
+            fontsize=9, fontweight="bold", color="#111827",
+            bbox=dict(boxstyle="round,pad=0.2", facecolor="white",
+                      edgecolor=color, alpha=0.85, linewidth=0.8),
+        )
+
+    # ── axes ───────────────────────────────────────────────────────────────
+    ax.set_xlim(X_LO, X_HI)
+    ax.set_ylim(Y_LO, Y_HI)
+    ax.set_xlabel("Accuracy  (fraction of posts classified correctly in Exp1)", fontsize=11.5)
+    ax.set_ylabel("Reliability  (fraction correct ∩ reasoning survives translation)", fontsize=11.5)
+    ax.xaxis.set_major_formatter(mticker.PercentFormatter(xmax=1, decimals=0))
+    ax.yaxis.set_major_formatter(mticker.PercentFormatter(xmax=1, decimals=0))
+    ax.grid(True, alpha=0.25, zorder=0)
+    ax.set_axisbelow(True)
+
+    # ── legends ────────────────────────────────────────────────────────────
+    from matplotlib.lines import Line2D
+    # Language color legend
+    lang_handles = [
+        Line2D([0], [0], marker="o", color="w", label=lang.capitalize(),
+               markerfacecolor=_lang_color(lang), markeredgecolor="black", markersize=13)
+        for lang in sorted(merged["language"].unique())
+    ]
+    # Model shape legend
+    model_handles = [
+        Line2D([0], [0], marker=model_markers.get(m, "o"), color="w",
+               label=m.capitalize(),
+               markerfacecolor="#D1D5DB", markeredgecolor="black", markersize=12)
+        for m in sorted(merged["model"].unique())
+    ]
+
+    leg1 = ax.legend(handles=lang_handles, title="Language (color)",
+                     loc="lower left", fontsize=9, title_fontsize=9.5,
+                     framealpha=0.95, bbox_to_anchor=(0.0, 0.20))
+    ax.add_artist(leg1)
+    ax.legend(handles=model_handles, title="Model (shape)",
+              loc="lower left", fontsize=9, title_fontsize=9.5,
+              framealpha=0.95, bbox_to_anchor=(0.155, 0.20), ncol=2)
+
+    # ── title + subtitle ───────────────────────────────────────────────────
+    n_trust = ((merged["accuracy"] >= ACC_THRESH) & (merged["reliability"] >= REL_THRESH)).sum()
+    n_inflated = ((merged["accuracy"] >= ACC_THRESH) & (merged["reliability"] < REL_THRESH)).sum()
+    n_total = len(merged)
+
+    ax.set_title(
+        "Figure 1 — The Trust Quadrant\n"
+        "Accurate on paper vs. actually trustworthy when reasoning is stress-tested",
+        fontsize=13.5, pad=18, fontweight="bold",
+    )
+    fig.text(0.5, 0.935,
+             f"Of {n_total} (model × language) combos tested:  "
+             f"{n_trust} trustworthy  ·  {n_inflated} inflated  ·  "
+             f"{n_total - n_trust - n_inflated} weak",
+             ha="center", va="top", fontsize=10.5, color="#374151", style="italic")
+
+    return _save(fig, out_dir / "figure1_trust_quadrant.png")
+
+
 def plot_cross_keyword_agreement_connection(
     merged_23: pd.DataFrame, out_dir: Path
 ) -> Path | None:
@@ -1148,6 +1546,19 @@ def generate_all_plots(
     """
     print("\n[plots] Generating visualizations...")
     saved: list[Path] = []
+
+    # ── Figure 1 (headline) — both variants ───────────────────────────────
+    def _try_fig1():
+        for fn in (plot_figure1_trust_quadrant, plot_figure1_reliability_gap):
+            try:
+                p = fn(summary, merges.get("exp1_exp3", pd.DataFrame()), out_dir)
+                if p:
+                    saved.append(p)
+            except Exception as e:
+                import traceback
+                print(f"  [plot] ERROR in {fn.__name__}: {e}")
+                traceback.print_exc()
+    _try_fig1()
 
     def _try(fn, *args, **kwargs):
         try:

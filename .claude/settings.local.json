@@ -7,7 +7,9 @@
       "Bash(cat)",
       "Read(//tmp/**)",
       "Bash(python -c ':*)",
-      "Bash(python -c ':*2)"
+      "Bash(python -c ':*2)",
+      "Bash(/Users/taha/Documents/GitHub/multilingual-mental-health/.venv/bin/python:*)",
+      "Bash(ls:*)"
     ]
   }
 }

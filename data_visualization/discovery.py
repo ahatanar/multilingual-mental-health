@@ -130,14 +130,17 @@ def _iter_exp1_exp2(exp_dir: Path, experiment: int) -> Iterator[ResultFileMeta]:
 
 
 def _iter_exp3(exp_dir: Path) -> Iterator[ResultFileMeta]:
-    """Walk experiment3/ which is flat (no model sub-dirs)."""
+    """
+    Walk experiment3/ — supports either flat layout or Online/Local Models
+    sub-directory layout (same as experiment1/2).
+    """
+    # First, any flat files at the experiment3 root
     for json_file in exp_dir.glob("*.json"):
         parsed = _parse_filename(json_file.name)
         if parsed is None:
             continue
         raw_prefix, lang, ts = parsed
         canonical = _normalise_model(raw_prefix)
-
         yield ResultFileMeta(
             path=json_file,
             experiment=3,
@@ -147,6 +150,39 @@ def _iter_exp3(exp_dir: Path) -> Iterator[ResultFileMeta]:
             timestamp=ts,
             model_folder="",
         )
+
+    # Then, files nested in Online Models/ and Local Models/ sub-dirs
+    for type_dir in exp_dir.iterdir():
+        if not type_dir.is_dir():
+            continue
+        type_lower = type_dir.name.lower()
+        if "online" in type_lower:
+            declared_type = "online"
+        elif "local" in type_lower:
+            declared_type = "local"
+        else:
+            continue  # not a recognised layer
+
+        for model_dir in type_dir.iterdir():
+            if not model_dir.is_dir():
+                continue
+            folder_canonical = _normalise_model(model_dir.name)
+            for json_file in model_dir.glob("*.json"):
+                parsed = _parse_filename(json_file.name)
+                if parsed is None:
+                    continue
+                raw_prefix, lang, ts = parsed
+                prefix_canonical = _normalise_model(raw_prefix)
+                canonical = folder_canonical if folder_canonical != raw_prefix.lower() else prefix_canonical
+                yield ResultFileMeta(
+                    path=json_file,
+                    experiment=3,
+                    model=canonical,
+                    model_type=declared_type,
+                    language=lang,
+                    timestamp=ts,
+                    model_folder=model_dir.name,
+                )
 
 
 # ── public API ───────────────────────────────────────────────────────────────
