@@ -13,7 +13,9 @@
       "Bash(for f in \"/Users/taha/Documents/GitHub/multilingual-mental-health/results/phase2/experiment3/Local Models/deepseek-r1-0528-qwen3-8b\"/*.json \"/Users/taha/Documents/GitHub/multilingual-mental-health/results/phase2/experiment3/Local Models/gemma\"/*.json)",
       "Bash(do)",
       "Bash(echo:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git check-ignore:*)",
+      "Bash(python:*)"
     ]
   }
 }
