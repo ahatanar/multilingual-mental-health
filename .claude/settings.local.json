@@ -15,7 +15,12 @@
       "Bash(echo:*)",
       "Bash(done)",
       "Bash(git check-ignore:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(xargs -I {} sh -c \"echo ''=== {} ==='' && head -80 {} | tail -30\")",
+      "Bash(pip3 install:*)",
+      "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health status -u)",
+      "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health diff --name-only HEAD)",
+      "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health log --oneline -5)"
     ]
   }
 }

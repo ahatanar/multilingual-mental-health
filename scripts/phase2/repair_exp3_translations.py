@@ -768,14 +768,41 @@ def main():
                         help="Process only shard N/M of the fixable rows (e.g. --shard 1/3). "
                              "Writes a shard-specific output file that --merge-shards can stitch. "
                              "Use the SAME --file path on every PC so shard boundaries match.")
-    parser.add_argument("--merge-shards", dest="merge_shards", type=Path, default=None,
-                        help="Path to the ORIGINAL broken source file. Stitches every shard "
-                             "output next to it into one canonical repaired file.")
+    parser.add_argument("--merge-shards", dest="merge_shards", nargs="?", const="AUTO",
+                        default=None,
+                        help="Stitch shard outputs into one canonical file. Pass a path to the "
+                             "original broken source file, OR omit the path and use --model to "
+                             "auto-find it (e.g. --merge-shards --model deepseek-local).")
     args = parser.parse_args()
 
     # Merge mode short-circuits everything else
     if args.merge_shards is not None:
-        merge_shards(args.merge_shards)
+        if args.merge_shards == "AUTO":
+            # Auto-find the source file using --model filter
+            candidates = find_candidate_files(model_filter=args.model)
+            if not candidates:
+                suffix = f" for model '{args.model}'" if args.model else ""
+                print(f"  No exp3 files with 'no_translation' rows found{suffix}.")
+                return
+            if len(candidates) == 1:
+                source = candidates[0]["path"]
+            else:
+                print(f"\n  Found {len(candidates)} candidate(s):")
+                for i, c in enumerate(candidates, 1):
+                    rel = c["path"].relative_to(PROJECT_ROOT)
+                    print(f"    [{i}] {c['model']:15} / {c['language']:8}  ({rel})")
+                choice = input(f"\n  Pick file to merge (1-{len(candidates)}): ").strip()
+                try:
+                    n = int(choice)
+                    if not 1 <= n <= len(candidates):
+                        raise ValueError
+                    source = candidates[n - 1]["path"]
+                except ValueError:
+                    print(f"  Invalid choice. Aborted.")
+                    return
+            merge_shards(source)
+        else:
+            merge_shards(Path(args.merge_shards))
         return
 
     try:
