@@ -291,6 +291,50 @@ def find_candidate_files(model_filter: str | None = None) -> list[dict]:
     return candidates
 
 
+# ── checkpoint (resume) helpers ───────────────────────────────────────────────
+
+CHECKPOINT_EVERY = 50  # save progress every N repaired entries
+
+
+def _checkpoint_path(original: Path) -> Path:
+    return original.with_suffix(original.suffix + ".repair_checkpoint.json")
+
+
+def _load_checkpoint(original: Path) -> Dict[int, dict]:
+    """Return {index: repaired_entry} from an existing checkpoint, or {}."""
+    cp = _checkpoint_path(original)
+    if not cp.exists():
+        return {}
+    try:
+        with open(cp, encoding="utf-8") as f:
+            data = json.load(f)
+        return {int(k): v for k, v in data.get("repaired", {}).items()}
+    except (json.JSONDecodeError, OSError) as e:
+        logger.warning(f"  Could not read checkpoint {cp.name}: {e} — starting fresh.")
+        return {}
+
+
+def _save_checkpoint(original: Path, repaired_by_idx: Dict[int, dict]) -> None:
+    cp = _checkpoint_path(original)
+    tmp = cp.with_suffix(cp.suffix + ".tmp")
+    payload = {
+        "source_file":    original.name,
+        "last_updated":   datetime.now().isoformat(timespec="seconds"),
+        "repaired_count": len(repaired_by_idx),
+        # keys must be strings for JSON
+        "repaired":       {str(k): v for k, v in repaired_by_idx.items()},
+    }
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False)
+    tmp.replace(cp)  # atomic
+
+
+def _clear_checkpoint(original: Path) -> None:
+    cp = _checkpoint_path(original)
+    if cp.exists():
+        cp.unlink()
+
+
 # ── per-file repair ───────────────────────────────────────────────────────────
 
 def repair_file(path: Path, delay_override: float, dry_run: bool) -> bool:
@@ -328,9 +372,24 @@ def repair_file(path: Path, delay_override: float, dry_run: bool) -> bool:
     print(f"  Fixable (in lookup): {len(fixable)}")
     print(f"  Real gap (missing) : {len(real_gap)}  (left as 'no_translation')")
 
+    # Load checkpoint (if the script was previously interrupted)
+    already_repaired = _load_checkpoint(path)
+    if already_repaired:
+        print(f"  Resume: found checkpoint with {len(already_repaired)} entries already "
+              f"done — those will be skipped.")
+        remaining = [r for r in fixable if r.get("index") not in already_repaired]
+    else:
+        remaining = fixable
+
+    print(f"  To process this run : {len(remaining)}")
+
     if not fixable:
         print("  Nothing fixable — all 'no_translation' rows are real gaps.")
         return False
+
+    if not remaining:
+        print("  Nothing left to do — checkpoint already covers all fixable rows.")
+        print("  Finalising merge and writing output...")
 
     if dry_run:
         print("  --dry-run set. No model calls, no file written.")
@@ -352,37 +411,64 @@ def repair_file(path: Path, delay_override: float, dry_run: bool) -> bool:
 
     provider = provider_cls(api_key=api_key, model_name=default_model)
 
-    confirm = input(f"  Repair {len(fixable)} entries with {display_name}? (Y/n): ").strip().lower()
+    prompt_label = f"Repair {len(remaining)} entries"
+    if already_repaired:
+        prompt_label += f" (resuming; {len(already_repaired)} already done)"
+    confirm = input(f"  {prompt_label} with {display_name}? (Y/n): ").strip().lower()
     if confirm == "n":
         print("  Skipped.")
         return False
 
-    # Build new records for the fixable rows
+    # Seed with anything already on the checkpoint, then process remaining
     lang_display = _LANG_DISPLAY.get(language, language.capitalize())
-    repaired_by_idx: Dict[int, dict] = {}
+    repaired_by_idx: Dict[int, dict] = dict(already_repaired)
 
-    for i, r in enumerate(fixable, 1):
-        idx = r.get("index")
-        post_full = r.get("post_full", "")
-        entry = {
-            **r,
-            "translation":       lookup[post_full],
-            "original_language": r.get("original_language") or lang_display,
-            "error_exp3":        "",
-        }
-        logger.info(f"[{model_key}][{language}] Repairing {i}/{len(fixable)} (index={idx})...")
+    total_new = len(remaining)
+    try:
+        for i, r in enumerate(remaining, 1):
+            idx = r.get("index")
+            post_full = r.get("post_full", "")
+            entry = {
+                **r,
+                "translation":       lookup[post_full],
+                "original_language": r.get("original_language") or lang_display,
+                "error_exp3":        "",
+            }
+            overall = len(already_repaired) + i
+            logger.info(
+                f"[{model_key}][{language}] Repairing {i}/{total_new} this run "
+                f"({overall}/{len(fixable)} overall, index={idx})..."
+            )
 
-        try:
-            repaired = _classify_one(provider, entry, language)
-        except Exception as e:
-            logger.error(f"  failed on index={idx}: {e}")
-            repaired = {**entry, "keywords_exp3": [], "agreement": "no_translation",
-                        "raw_response_exp3": "", "error_exp3": f"repair_failed: {e}"}
+            try:
+                repaired = _classify_one(provider, entry, language)
+            except Exception as e:
+                logger.error(f"  failed on index={idx}: {e}")
+                repaired = {**entry, "keywords_exp3": [], "agreement": "no_translation",
+                            "raw_response_exp3": "", "error_exp3": f"repair_failed: {e}"}
 
-        repaired_by_idx[idx] = repaired
+            repaired_by_idx[idx] = repaired
 
-        if i < len(fixable) and delay > 0:
-            time.sleep(delay)
+            # Periodic checkpoint
+            if i % CHECKPOINT_EVERY == 0:
+                _save_checkpoint(path, repaired_by_idx)
+
+            if i < total_new and delay > 0:
+                time.sleep(delay)
+    except KeyboardInterrupt:
+        print("\n  Interrupted. Saving checkpoint so you can resume later...")
+        _save_checkpoint(path, repaired_by_idx)
+        print(f"  Checkpoint saved: {_checkpoint_path(path).name}  "
+              f"({len(repaired_by_idx)} / {len(fixable)} done)")
+        print("  Re-run the same command to pick up where you left off.")
+        return False
+    except Exception:
+        # Any unexpected crash — still save progress
+        _save_checkpoint(path, repaired_by_idx)
+        raise
+
+    # Full run succeeded — no need to keep checkpoint
+    _save_checkpoint(path, repaired_by_idx)
 
     # Merge back — only repaired rows overwrite
     merged_by_idx = {r.get("index"): r for r in results}
@@ -426,6 +512,9 @@ def repair_file(path: Path, delay_override: float, dry_run: bool) -> bool:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
     print(f"  Saved: {out_path.relative_to(PROJECT_ROOT)}")
+
+    # Final output is committed — clean up the checkpoint
+    _clear_checkpoint(path)
     return True
 
 
@@ -469,18 +558,33 @@ def main():
         print(f"    [{i}] {c['model']:15} / {c['language']:8} — "
               f"{c['no_trans']:>4}/{c['total']} broken   ({rel})")
 
-    confirm = input(f"\n  Repair all {len(candidates)}? (Y/n): ").strip().lower()
-    if confirm == "n":
+    choice = input(
+        f"\n  Enter file number (1-{len(candidates)}), 'a' for all, or 'q' to quit: "
+    ).strip().lower()
+
+    if choice in ("q", "n", ""):
         print("  Aborted.")
         return
 
+    if choice in ("a", "all"):
+        selected = candidates
+    else:
+        try:
+            n = int(choice)
+            if not 1 <= n <= len(candidates):
+                raise ValueError
+            selected = [candidates[n - 1]]
+        except ValueError:
+            print(f"  Invalid choice: {choice!r}. Aborted.")
+            return
+
     repaired_files = 0
-    for c in candidates:
+    for c in selected:
         did_work = repair_file(c["path"], args.delay, args.dry_run)
         if did_work:
             repaired_files += 1
 
-    print(f"\n  Done. Processed {repaired_files}/{len(candidates)} file(s).")
+    print(f"\n  Done. Processed {repaired_files}/{len(selected)} file(s).")
 
 
 if __name__ == "__main__":
