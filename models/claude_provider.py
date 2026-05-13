@@ -18,7 +18,7 @@ class ClaudeProvider(ModelProvider):
     def _call_api(self, prompt: str) -> str:
         response = self.client.messages.create(
             model=self.model_name,
-            max_tokens=50,
+            max_tokens=self.max_tokens,
             messages=[
                 {"role": "user", "content": prompt},
             ],

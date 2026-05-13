@@ -508,6 +508,94 @@ Translation:
 Response:"""
 
 
+# ── V3 — Experiment 4: Fresh classification + justification ─────────────────
+# Asks the model to RE-CLASSIFY the post from scratch (no prior label or
+# keywords primed in), then justify in 2-4 sentences (max 300 characters).
+# Two extra examples (7 & 8) target the symmetric failure modes:
+#   - taking a surface denial at face value while ignoring severe content
+#   - taking a sad-sounding fragment at face value while ignoring a reframing context
+#
+# One placeholder:
+#   {post_text} — the original-language post (filled by provider.classify())
+
+JUSTIFICATION_PROMPT_V3_EXP4 = """You are a mental health text classifier analyzing social media posts for signs of depression.
+
+Read the FULL post before deciding. A post may open with a denial ("I'm not depressed…") or a sad-sounding phrase ("I'm so sad…") that gets reframed by what follows. Always weigh the post as a whole, not any single phrase.
+
+Consider these indicators of depression:
+- Expressions of hopelessness, worthlessness, or emptiness
+- Social withdrawal or isolation ("no one cares", "always alone")
+- Loss of interest or pleasure in activities
+- Sleep disturbances, fatigue, or low energy
+- Negative self-talk or self-harm references
+- Persistent sadness beyond normal situational reactions
+- Behavioral symptoms: lethargy, neglecting self-care, appetite/sleep changes — even without explicitly sad language
+
+Do NOT classify as depressed:
+- Sarcasm or dark humor without genuine distress
+- Temporary frustration or complaining about a specific event
+- Song lyrics, quotes, poetry, or reposted content
+- Using emotional words casually ("this weather is depressing")
+- Political/societal commentary that uses intense emotional language but is not self-directed
+- Third-person references to someone else's suffering
+
+Context cautions (read the whole post):
+- A surface denial followed by self-harm or hopelessness language is DEPRESSED — the rest of the post overrides the opening denial.
+- A sad-sounding phrase followed by a reframing conjunction ("but", "though", "at least") may be NOT DEPRESSED — the rest of the post reverses the sad-sounding phrase.
+
+Here are examples to guide your classification:
+
+Example 1:
+Post: "aj mujhe bahut susti mehsos rahi kuch krne bilkul mod nahy"
+Classification: Depressed
+Justification: Describes lethargy and complete lack of motivation. These are behavioral indicators of depression even without explicitly sad language.
+
+Example 2:
+Post: "lakh g lanat hoggahi bilawal pehingi siasat j lahi wrri sindh khe mqm khe wikro krahi dio paya lanat hojahi tohinjahi taqder te begherat insan"
+Classification: Not Depressed
+Justification: Political commentary expressing frustration about politicians. Uses strong emotional language but targets societal issues, not personal mental health.
+
+Example 3:
+Post: "mera hr din teri hr rat acha hoga meri hr bat teri shayri achi hohi dekh lena gamgen ankho ek din mera janaza teri brat acha hoga"
+Classification: Not Depressed
+Justification: Ghazal/shayri-style romantic poetry. Despite "gamgen ankho" (sorrowful eyes) and "janaza" (funeral), this is literary register using conventional poetic vocabulary, not personal distress.
+
+Example 4:
+Post: "hr pal hr sans mayosii andheron mahinn doba hahi mera dil"
+Classification: Depressed
+Justification: Every moment, every breath, the heart drowning in despair and darkness. Although poetic in register, this expresses persistent personal hopelessness — a genuine expression of suffering, not a literary exercise.
+
+Example 5:
+Post: "koyi hahi mere sath"
+Classification: Not Depressed
+Justification: A short, ambiguous post meaning "is anyone with me" — a casual social query, not an expression of isolation or distress.
+
+Example 6:
+Post: "mayosion saya meri zindagi hahi hr kadam thokr khata hon"
+Classification: Depressed
+Justification: The shadow of hopelessness over my life, stumbling at every step. Expresses persistent despair and helplessness about one's own life.
+
+Example 7 (a surface denial doesn't override severe content):
+Post: "I'm fine, honestly. I just don't see a reason to wake up tomorrow."
+Classification: Depressed
+Justification: The opening "I'm fine, honestly" is a surface denial, but the second clause expresses loss of purpose and possible suicidal ideation. Severe content like "no reason to wake up" outweighs the denial framing.
+
+Example 8 (an event-specific sad phrase reframed by context):
+Post: "Devastated my flight got cancelled, but at least I get an extra night with my family."
+Classification: Not Depressed
+Justification: "Devastated" is tied to a specific event and is immediately reframed by "but at least I get an extra night with my family." The post resolves into a silver-lining frame — situational disappointment, not clinical depression.
+
+Now classify the following post. Output EXACTLY this format:
+
+Classification: Depressed OR Not Depressed
+Justification: 2-4 sentences explaining your reasoning, max 300 characters. Reference specific words or phrases from the post AND the overall context. Do not invent content that is not in the post.
+
+Post:
+\"\"\"{post_text}\"\"\"
+
+Response:"""
+
+
 # ── Prompt registry ─────────────────────────────────────────────────────────
 
 PROMPTS = {
@@ -520,6 +608,7 @@ PROMPTS = {
     "v3_arabic_exp2":  ATTRIBUTION_PROMPT_V3_ARABIC_EXP2,   # Arabic — attribution
     "v3_chinese_exp2": ATTRIBUTION_PROMPT_V3_CHINESE_EXP2,  # Chinese — attribution
     "v3_exp3":         CONSISTENCY_PROMPT_EXP3,             # Exp 3 — cross-lingual consistency (all languages)
+    "v3_exp4":         JUSTIFICATION_PROMPT_V3_EXP4,        # Exp 4 — fresh classification + justification
 }
 
 # ── Language → default prompt mapping ───────────────────────────────────────

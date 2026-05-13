@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "model": "gemini",
+    "language": "urdu",
+    "experiment": 4,
+    "prompt": "v3_exp4",
+    "model_id": "gemini-2.0-flash",
+    "n": 1,
+    "ok": 1,
+    "unclear": 0,
+    "error": 0,
+    "elapsed_sec": 1.0,
+    "timestamp": "20260513_120242"
+  },
+  "results": [
+    {
+      "index": 841,
+      "post_full": "naye project mahinn kam krne pehle mere team mahinn dilchaspi kamy",
+      "translation": "\"Before starting work on the new project, my team lost interest.\"",
+      "ground_truth": "depressed",
+      "prior_prediction": "not depressed",
+      "exp4_classification": "depressed",
+      "exp4_justification": "Expresses a lack of interest (\"dilchaspi kamy\") in working on a new project within the team. This suggests a loss of pleasure in activities, a potential indicator of depression.",
+      "raw_response": "Classification: Depressed\nJustification: Expresses a lack of interest (\"dilchaspi kamy\") in working on a new project within the team. This suggests a loss of pleasure in activities, a potential indicator of depression.\n",
+      "error": null,
+      "parse_note": ""
+    }
+  ]
+}

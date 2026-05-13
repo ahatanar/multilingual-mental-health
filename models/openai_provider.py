@@ -23,6 +23,6 @@ class OpenAIProvider(ModelProvider):
                 {"role": "user", "content": prompt},
             ],
             temperature=0.0,
-            max_tokens=50,
+            max_tokens=self.max_tokens,
         )
         return response.choices[0].message.content

@@ -17,6 +17,7 @@ class LMStudioProvider(ModelProvider):
 
     def __init__(self, api_key: str = "lm-studio", model_name: str = "local-model",
                  base_url: str = "http://localhost:1234/v1", **kwargs):
+        kwargs.setdefault("max_tokens", 1000)
         super().__init__(api_key=api_key, model_name=model_name, **kwargs)
         self.client = OpenAI(
             api_key=self.api_key,
@@ -31,6 +32,6 @@ class LMStudioProvider(ModelProvider):
                 {"role": "user", "content": prompt},
             ],
             temperature=0.0,
-            max_tokens=1000,
+            max_tokens=self.max_tokens,
         )
         return response.choices[0].message.content

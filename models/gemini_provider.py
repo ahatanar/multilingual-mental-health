@@ -22,7 +22,7 @@ class GeminiProvider(ModelProvider):
             prompt,
             generation_config=genai.types.GenerationConfig(
                 temperature=0.0,
-                max_output_tokens=50,
+                max_output_tokens=self.max_tokens,
             ),
         )
         return response.text

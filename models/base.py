@@ -15,11 +15,12 @@ class ModelProvider(ABC):
     and exposes a consistent classify() interface.
     """
 
-    def __init__(self, api_key: str, model_name: str, max_retries: int = 3, retry_delay: float = 2.0):
+    def __init__(self, api_key: str, model_name: str, max_retries: int = 3, retry_delay: float = 2.0, max_tokens: int = 50):
         self.api_key = api_key
         self.model_name = model_name
         self.max_retries = max_retries
         self.retry_delay = retry_delay
+        self.max_tokens = max_tokens
 
     @property
     def name(self) -> str:

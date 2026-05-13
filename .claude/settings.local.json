@@ -7,7 +7,6 @@
       "Bash(cat)",
       "Read(//tmp/**)",
       "Bash(python -c ':*)",
-      "Bash(python -c ':*2)",
       "Bash(/Users/taha/Documents/GitHub/multilingual-mental-health/.venv/bin/python:*)",
       "Bash(ls:*)",
       "Bash(for f in \"/Users/taha/Documents/GitHub/multilingual-mental-health/results/phase2/experiment3/Local Models/deepseek-r1-0528-qwen3-8b\"/*.json \"/Users/taha/Documents/GitHub/multilingual-mental-health/results/phase2/experiment3/Local Models/gemma\"/*.json)",
@@ -20,7 +19,13 @@
       "Bash(pip3 install:*)",
       "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health status -u)",
       "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health diff --name-only HEAD)",
-      "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health log --oneline -5)"
+      "Bash(git -C /Users/taha/Documents/GitHub/multilingual-mental-health log --oneline -5)",
+      "Bash(.venv/bin/python --version)",
+      "Bash(.venv/bin/python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(.venv/bin/python scripts/phase2/run_exp4.py --model gemini --language urdu --limit 1)",
+      "Bash(.venv/bin/python *)"
     ]
   }
 }
