@@ -54,13 +54,13 @@ MAX_TOKENS = 500  # ~enough for 4 sentences of justification + the classificatio
 # Model registry mirrors scripts/phase2/runner.py but adds an explicit api_key
 # (online) / lm_studio (local) flag plus the max_workers we'll run with here.
 MODELS = {
-    "gemini":         {"class": GeminiProvider,   "default_model": "gemini-2.0-flash",                    "online": True,  "workers": 5,  "delay": 0.0},
-    "openai":         {"class": OpenAIProvider,   "default_model": "gpt-4o-mini",                         "online": True,  "workers": 5,  "delay": 0.0},
-    "claude":         {"class": ClaudeProvider,   "default_model": "claude-haiku-4-5",                    "online": True,  "workers": 1,  "delay": 1.5},
-    "deepseek":       {"class": DeepSeekProvider, "default_model": "deepseek-chat",                       "online": True,  "workers": 3,  "delay": 0.5},
-    "llama":          {"class": LMStudioProvider, "default_model": "meta-llama-3.1-8b-instruct",          "online": False, "workers": 1,  "delay": 0.0},
-    "gemma":          {"class": LMStudioProvider, "default_model": "google/gemma-3-9b-it",                "online": False, "workers": 1,  "delay": 0.0},
-    "deepseek-local": {"class": LMStudioProvider, "default_model": "deepseek/deepseek-r1-0528-qwen3-8b",  "online": False, "workers": 1,  "delay": 0.0},
+    "gemini":   {"class": GeminiProvider,   "default_model": "gemini-2.0-flash",                    "online": True,  "workers": 5,  "delay": 0.0},
+    "openai":   {"class": OpenAIProvider,   "default_model": "gpt-4o-mini",                         "online": True,  "workers": 5,  "delay": 0.0},
+    "claude":   {"class": ClaudeProvider,   "default_model": "claude-haiku-4-5",                    "online": True,  "workers": 1,  "delay": 1.5},
+    # `deepseek` here is the LOCAL DeepSeek-R1 served by LM Studio — matches Exp2 baseline.
+    "deepseek": {"class": LMStudioProvider, "default_model": "deepseek/deepseek-r1-0528-qwen3-8b",  "online": False, "workers": 1,  "delay": 0.0},
+    "llama":    {"class": LMStudioProvider, "default_model": "meta-llama-3.1-8b-instruct",          "online": False, "workers": 1,  "delay": 0.0},
+    "gemma":    {"class": LMStudioProvider, "default_model": "google/gemma-3-9b-it",                "online": False, "workers": 1,  "delay": 0.0},
 }
 
 

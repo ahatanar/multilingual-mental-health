@@ -12,11 +12,8 @@ For each language:
 Run anytime after Exp4 has produced at least one JSON. Missing models leave their
 new columns blank. Re-running picks up newer JSONs automatically.
 
-Mapping notes:
-    - exp4 model key "deepseek-local" -> CSV column "deepseek"
-      (matches the Exp2 baseline which also used local DeepSeek-R1)
-    - exp4 model key "deepseek"        -> also CSV column "deepseek"
-      (if you ran the online API; it will overwrite the local one)
+Note: `deepseek` here refers to the LOCAL DeepSeek-R1 model served by LM Studio,
+matching the Exp2 baseline. (run_exp4.py uses the same convention.)
 """
 
 import csv
@@ -33,22 +30,11 @@ LANGUAGES = ["arabic", "chinese", "urdu"]
 # CSV column prefixes that exist in {language}_all_wrong.csv
 CSV_MODELS = ["claude", "openai", "gemini", "gemma", "llama", "deepseek"]
 
-# Map exp4 model key -> CSV column prefix.
-EXP4_TO_CSV = {
-    "claude":         "claude",
-    "openai":         "openai",
-    "gemini":         "gemini",
-    "gemma":          "gemma",
-    "llama":          "llama",
-    "deepseek-local": "deepseek",  # local DeepSeek-R1 (matches Exp2 baseline)
-    "deepseek":       "deepseek",  # online API — overrides local if both ran
-}
-
-# Order in which to apply exp4-model -> CSV-column mappings. If multiple exp4
-# models target the same CSV column, the LAST one wins. We list deepseek (online)
-# BEFORE deepseek-local so that, if both are present, the local result wins (it's
-# what Exp2 used). Reverse the two entries if you'd rather keep the online one.
-EXP4_KEY_ORDER = ["claude", "openai", "gemini", "gemma", "llama", "deepseek", "deepseek-local"]
+# Map exp4 model key -> CSV column prefix. The Exp4 runner uses the same keys
+# as the CSV column prefixes, so this is now a straight 1:1 mapping. `deepseek`
+# in both places refers to the LOCAL DeepSeek-R1 model (LM Studio), matching Exp2.
+EXP4_TO_CSV = {m: m for m in ("claude", "openai", "gemini", "gemma", "llama", "deepseek")}
+EXP4_KEY_ORDER = list(EXP4_TO_CSV)
 
 
 def newest_json(model_key: str, language: str) -> Optional[Path]:
