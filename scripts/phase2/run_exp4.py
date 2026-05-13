@@ -206,8 +206,7 @@ def parse_args():
 
 
 def resolve_models(args) -> list[str]:
-    if args.model: return [args.model]
-    raw = (args.models or "all").lower()
+    raw = (args.model or args.models or "all").lower()
     if raw == "all":    return list(MODELS)
     if raw == "online": return [m for m, s in MODELS.items() if s["online"]]
     if raw == "local":  return [m for m, s in MODELS.items() if not s["online"]]
@@ -215,8 +214,7 @@ def resolve_models(args) -> list[str]:
 
 
 def resolve_languages(args) -> list[str]:
-    if args.language: return [args.language]
-    raw = (args.languages or "all").lower()
+    raw = (args.language or args.languages or "all").lower()
     if raw == "all": return LANGUAGES
     return [l.strip() for l in raw.split(",") if l.strip()]
 
