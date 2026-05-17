@@ -28,6 +28,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+REPO = PROJECT_ROOT  # alias used by run_experiment4 for display
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import get_api_key, DEFAULT_MODELS
@@ -361,13 +362,15 @@ def select_experiment() -> int:
     print("       (explain Exp 1 labels: which words drove each prediction?)")
     print("  [3]  Experiment 3 — Cross-lingual consistency")
     print("       (re-evaluate Exp 1 labels using English translations: does the model still agree?)")
+    print("  [4]  Experiment 4 — Fresh classification + justification")
+    print("       (reclassify posts with few-shot or zero-shot prompts; produces a written justification)")
     print()
 
     while True:
         choice = input("  Enter experiment number: ").strip()
-        if choice in ("1", "2", "3"):
+        if choice in ("1", "2", "3", "4"):
             return int(choice)
-        print("  Please enter 1, 2, or 3.")
+        print("  Please enter 1, 2, 3, or 4.")
 
 
 def select_models() -> List[str]:
@@ -1075,6 +1078,150 @@ def run_experiment3(args) -> None:
     print()
 
 
+# ── Experiment 4 ─────────────────────────────────────────────────────────────
+
+def run_experiment4(args) -> None:
+    """Experiment 4 — Fresh classification + justification.
+
+    Delegates to run_exp4.run_for() which handles resumability, checkpointing,
+    and per-model concurrency settings.
+    """
+    import run_exp4  # same directory; on sys.path when runner.py is the entry point
+
+    model_keys = list(run_exp4.MODELS.keys())
+
+    # ── Model selection ──────────────────────────────────────────────────────
+    print("\n  Available Models (Experiment 4):")
+    print("  " + "-" * 52)
+    for i, key in enumerate(model_keys, 1):
+        info = run_exp4.MODELS[key]
+        kind = "online" if info["online"] else "local"
+        print(f"  [{i}] {key:<14}  ({info['default_model']}, {kind})")
+    print(f"  [{len(model_keys) + 1}] All models")
+    print()
+
+    selected_models: list[str] = []
+    while not selected_models:
+        choice = input("  Select model(s) (comma-separated, e.g. 1,3): ").strip()
+        if not choice:
+            continue
+        if choice == str(len(model_keys) + 1):
+            selected_models = model_keys
+            break
+        try:
+            indices = [int(x.strip()) for x in choice.split(",")]
+            sel = []
+            for idx in indices:
+                if 1 <= idx <= len(model_keys):
+                    sel.append(model_keys[idx - 1])
+                else:
+                    print(f"  Invalid number: {idx}")
+                    sel = []
+                    break
+            if sel:
+                selected_models = sel
+        except ValueError:
+            print("  Please enter numbers separated by commas.")
+
+    # ── Language selection ───────────────────────────────────────────────────
+    langs = run_exp4.LANGUAGES
+    print(f"\n  Languages:")
+    for i, lang in enumerate(langs, 1):
+        print(f"  [{i}] {lang.capitalize()}")
+    print(f"  [{len(langs) + 1}] All")
+    print()
+
+    selected_languages: list[str] = []
+    while not selected_languages:
+        choice = input("  Select language(s): ").strip()
+        if not choice:
+            continue
+        if choice == str(len(langs) + 1):
+            selected_languages = list(langs)
+            break
+        try:
+            indices = [int(x.strip()) for x in choice.split(",")]
+            sel = []
+            for idx in indices:
+                if 1 <= idx <= len(langs):
+                    sel.append(langs[idx - 1])
+                else:
+                    print(f"  Invalid number: {idx}")
+                    sel = []
+                    break
+            if sel:
+                selected_languages = sel
+        except ValueError:
+            print("  Please enter numbers separated by commas.")
+
+    # ── Mode selection ───────────────────────────────────────────────────────
+    print("\n  Prompt mode:")
+    print("  [1] Few-shot  (language-specific in-context examples)")
+    print("  [2] Zero-shot (universal minimal prompt, no examples)")
+    zeroshot = None
+    while zeroshot is None:
+        choice = input("  Select mode: ").strip()
+        if choice == "1":
+            zeroshot = False
+        elif choice == "2":
+            zeroshot = True
+        else:
+            print("  Please enter 1 or 2.")
+
+    print("\n  Dataset:")
+    print("  [1] Full 5 000-sample dataset  (data/phase2/)  ← recommended")
+    print("  [2] 15-row error-analysis CSVs (all_models_wrong/)")
+    full = None
+    while full is None:
+        choice = input("  Select dataset: ").strip()
+        if choice == "1":
+            full = True
+        elif choice == "2":
+            full = False
+        else:
+            print("  Please enter 1 or 2.")
+
+    # ── Confirm ──────────────────────────────────────────────────────────────
+    mode_label = "zero-shot" if zeroshot else "few-shot"
+    data_label = "5k full dataset" if full else "15-row error-analysis CSVs"
+    out_dir    = (run_exp4.FULL_OUT_DIR_ZS if zeroshot else run_exp4.FULL_OUT_DIR) if full \
+                 else (run_exp4.OUT_DIR_ZS  if zeroshot else run_exp4.OUT_DIR)
+    print(f"\n{'='*58}")
+    print(f"  Experiment 4 — Plan:")
+    print(f"  Models:    {', '.join(selected_models)}")
+    print(f"  Languages: {', '.join(l.capitalize() for l in selected_languages)}")
+    print(f"  Mode:      {mode_label}")
+    print(f"  Dataset:   {data_label}")
+    if args.limit:
+        print(f"  Limit:     first {args.limit} rows only")
+    if args.fresh:
+        print(f"  Fresh:     yes — ignoring existing results")
+    print(f"  Results:   {out_dir.relative_to(REPO)}/")
+    print(f"{'='*58}")
+
+    confirm = input("\n  Proceed? (Y/n): ").strip().lower()
+    if confirm == "n":
+        print("  Aborted.")
+        return
+
+    for m in selected_models:
+        for lang in selected_languages:
+            try:
+                run_exp4.run_for(
+                    m, lang,
+                    zeroshot=zeroshot,
+                    full=full,
+                    fresh=args.fresh,
+                    limit=args.limit,
+                )
+            except Exception as e:
+                logger.error(f"[{m}/{lang}] FAILED: {e}")
+
+    print(f"\n{'='*58}")
+    print("  Experiment 4 complete!")
+    print(f"{'='*58}\n")
+
+
 # ── Shared job dispatcher ─────────────────────────────────────────────────────
 
 def _run_jobs(selected_models, selected_languages, run_one_fn,
@@ -1132,9 +1279,9 @@ def _run_jobs(selected_models, selected_languages, run_one_fn,
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Phase 2 evaluation runner — Experiments 1/2/3"
+        description="Phase 2 evaluation runner — Experiments 1/2/3/4"
     )
-    parser.add_argument("--fresh",   action="store_true", help="Ignore partial results")
+    parser.add_argument("--fresh",   action="store_true", help="Ignore partial results / checkpoints")
     parser.add_argument("--delay",   type=float, default=1.0, help="Seconds between API calls")
     parser.add_argument("--workers", type=int,   default=1,   help="Parallel requests per model")
     parser.add_argument("--prompt",  type=str,   default=None, choices=list(PROMPTS.keys()),
@@ -1156,6 +1303,9 @@ def main() -> None:
             break
         elif exp == 3:
             run_experiment3(args)
+            break
+        elif exp == 4:
+            run_experiment4(args)
             break
 
 

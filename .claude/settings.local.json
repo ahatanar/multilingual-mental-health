@@ -25,7 +25,18 @@
       "Bash(.venv/bin/pip list *)",
       "Bash(.venv/bin/pip install *)",
       "Bash(.venv/bin/python scripts/phase2/run_exp4.py --model gemini --language urdu --limit 1)",
-      "Bash(.venv/bin/python *)"
+      "Bash(.venv/bin/python *)",
+      "Bash(grep -E \"\\\\.py$\")",
+      "WebSearch",
+      "Bash(xargs grep *)",
+      "Bash(python3 -c ' *)",
+      "Bash(xargs wc *)",
+      "Bash(git *)",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\phase2\\\\experiment4\")",
+      "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\phase2\\\\experiment4_zeroshot\")",
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\arabic_zeroshot.csv\")",
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\chinese_zeroshot.csv\")",
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\urdu_zeroshot.csv\")"
     ]
   }
 }
