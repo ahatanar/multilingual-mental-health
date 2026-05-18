@@ -4,11 +4,197 @@ Research project evaluating how well large language models detect depression in 
 
 ---
 
+## Quickstart
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Add API keys to .env (copy .env.example if present)
+#    GEMINI_API_KEY, OPENAI_API_KEY, DEEPSEEK_API_KEY, CLAUDE_API_KEY
+
+# 3. Prepare the 5 000-post evaluation files
+python scripts/prepare_data.py
+
+# 4. Run any experiment interactively
+python scripts/runner.py
+```
+
+---
+
+## How to Run Each Experiment
+
+All experiments are launched through `scripts/runner.py` (interactive menu) or directly via their dedicated scripts. Every run is **resumable** — if a run is interrupted, restart the same command and it picks up where it left off.
+
+### Experiment 1 — Monolingual Classification
+
+```bash
+# Interactive (recommended)
+python scripts/runner.py
+# -> Select [1] Experiment 1
+# -> Select model(s) from the menu
+# -> Select language(s): Arabic, Urdu, Chinese
+
+# Quick smoke test (first 5 posts only)
+python scripts/runner.py --limit 5
+
+# Ignore a previous partial run, start fresh
+python scripts/runner.py --fresh
+
+# Slower rate for rate-limited APIs
+python scripts/runner.py --delay 2.0
+```
+
+Results are saved to `results/phase2/experiment1/<model>_<language>_<timestamp>.json`.
+
+### Experiment 2 — Keyword Attribution
+
+```bash
+# Must run Experiment 1 first for the model+language pair you want
+python scripts/runner.py
+# -> Select [2] Experiment 2
+# -> Pick which Experiment 1 result file(s) to explain
+```
+
+Results are saved to `results/phase2/experiment2/`.
+
+### Experiment 3 — Cross-Lingual Consistency
+
+```bash
+# Must run Experiment 1 first
+python scripts/runner.py
+# -> Select [3] Experiment 3
+# -> Pick which Experiment 1 result file(s) to re-evaluate
+```
+
+Results are saved to `results/phase2/experiment3/`.
+
+### Experiment 4 — Fresh Classification + Justification
+
+**Via the interactive runner (recommended):**
+
+```bash
+python scripts/runner.py
+# -> Select [4] Experiment 4
+# -> Select model(s)
+# -> Select language(s)
+# -> Select mode: [1] Few-shot  or  [2] Zero-shot
+# -> Select dataset: [1] Full 5k  or  [2] 15-row error-analysis CSVs
+```
+
+**Via the dedicated CLI (more control, scriptable):**
+
+```bash
+# Few-shot, all online models, all languages (15-row error-analysis mode)
+python scripts/run_exp4.py --models claude,openai,gemini --languages all
+
+# Full 5k dataset, one model at a time (checkpoints every 50 rows)
+python scripts/run_exp4.py --model claude --language arabic --full
+python scripts/run_exp4.py --model openai --language arabic --full
+
+# Zero-shot, full dataset
+python scripts/run_exp4.py --model claude --language arabic --full --zeroshot
+
+# Smoke test: run first 3 rows only, write nothing to disk for 1 row
+python scripts/run_exp4.py --model claude --language urdu --limit 3
+python scripts/run_exp4.py --model claude --language arabic --debug 42
+
+# Discard existing results and start over
+python scripts/run_exp4.py --model claude --language arabic --full --fresh
+```
+
+**`run_exp4.py` flag reference:**
+
+| Flag | Description |
+|------|-------------|
+| `--model <key>` | Single model key (e.g. `claude`, `openai`, `gemini`, `llama`, `gemma`, `qwen`) |
+| `--models <keys>` | Comma-separated keys, or `online` / `local` / `all` |
+| `--language <lang>` | Single language: `arabic`, `chinese`, `urdu` |
+| `--languages <langs>` | Comma-separated, or `all` |
+| `--full` | Use the 5 000-sample dataset instead of the 15-row error-analysis CSVs |
+| `--zeroshot` | Use the universal zero-shot prompt (saves to `experiment4[_full]_zeroshot/`) |
+| `--fresh` | Discard existing results / partial checkpoints and start from scratch |
+| `--limit N` | Only process the first N rows (smoke-test) |
+| `--debug INDEX` | Run one row by index, print full response, write nothing |
+
+Results are saved to:
+
+| Mode | Directory |
+|------|-----------|
+| Few-shot, 15-row CSVs | `results/phase2/experiment4/<model>/` |
+| Zero-shot, 15-row CSVs | `results/phase2/experiment4_zeroshot/<model>/` |
+| Few-shot, full 5k | `results/phase2/experiment4_full/<model>/` |
+| Zero-shot, full 5k | `results/phase2/experiment4_full_zeroshot/<model>/` |
+
+**Resumability:** Full 5k runs write a `.partial.json` checkpoint every 50 rows. If the run crashes, restarting the same command resumes automatically from the checkpoint. On successful completion the partial file is deleted and a clean timestamped JSON is written.
+
+---
+
+**`runner.py` flag reference (applies to all experiments):**
+
+| Flag | Effect |
+|------|--------|
+| `--fresh` | Ignore partial checkpoints, start from scratch |
+| `--delay N` | Seconds between API calls (default: 1.0) |
+| `--workers N` | Parallel requests per model (default: 1) |
+| `--prompt <key>` | Override the language-specific prompt (see Prompt Versions below) |
+| `--limit N` | Only process the first N samples (quick sanity check) |
+
+---
+
+### Rerunning Failed Entries
+
+If a run completes but some entries were classified as `error` or `unclear` (e.g. due to a transient API failure), you can rerun only those entries:
+
+```bash
+# Experiment 1 / 2 failures
+python scripts/rerun_failed.py
+# -> interactive file picker, or:
+python scripts/rerun_failed.py --file results/phase2/experiment1/claude_arabic_20260501_120000.json
+python scripts/rerun_failed.py --file <path> --errors    # errors only
+python scripts/rerun_failed.py --file <path> --unclear   # unclear only
+
+# Experiment 3 failures (LM Studio transient errors only — data gaps are left alone)
+python scripts/rerun_failed_exp3.py --file results/phase2/experiment3/gemma/gemma_chinese_20260413_120000.json
+python scripts/rerun_failed_exp3.py --file <path> --delay 0.5
+```
+
+---
+
+### Merging Experiment 4 Results into Error-Analysis CSVs
+
+After running Experiment 4 in few-shot or zero-shot mode, merge the results into the per-language error-analysis CSVs (`results/all_models_wrong/`):
+
+```bash
+# Few-shot results → {language}_all_wrong.csv (in place)
+python scripts/merge_exp4.py
+
+# Zero-shot results → {language}_zeroshot.csv
+python scripts/merge_exp4.py --zeroshot
+```
+
+---
+
+### Exporting Experiment 1 Metrics to CSV
+
+```bash
+# Writes results/phase2/experiment1/exp1_metrics_summary.csv
+python scripts/export_metrics.py
+
+# Custom output path
+python scripts/export_metrics.py --out results/exp1_summary.csv
+
+# Filter to specific models
+python scripts/export_metrics.py --models gemini,claude,openai
+```
+
+---
+
 ## Research Experiments
 
-### Experiment 1 — Monolingual Classification *(active)*
+### Experiment 1 — Monolingual Classification
 
-Each LLM is evaluated on 5 000 posts per language, presented in the language's **native script** (no translation). The model must classify each post as **Depressed** or **Not Depressed** without seeing the ground-truth label. Performance is measured with accuracy, precision, recall, and F1.
+Each LLM is evaluated on 5 000 posts per language, presented in the language's **native script** (no translation). The model must classify each post as **Depressed** or **Not Depressed**. Performance is measured with accuracy, precision, recall, and F1.
 
 **Languages:**
 
@@ -18,113 +204,68 @@ Each LLM is evaluated on 5 000 posts per language, presented in the language's *
 | Urdu | Urdu Depression Dataset | Roman Urdu (transliterated) | 5 000 | 2 500 dep + 2 500 normal |
 | Chinese | Weibo Depression Dataset | Simplified Chinese | 5 000 | 2 500 dep + 2 500 normal |
 
-**Why native script?** The research goal is to test true multilingual capability — not how well models handle translated content. Arabic posts are sourced from Egyptian social media; Urdu from Pakistani Roman-script social media; Chinese from Weibo. Each has distinct cultural patterns that challenge generic models.
+**Why native script?** The research goal is to test true multilingual capability — not how well models handle translated content.
 
-**Arabic pre-processing pipeline:** The Arabic dataset required an additional ethics step. Raw CairoDep posts were translated to English (Cohere `command-r-08-2024`) so the research team could screen for inappropriate content before evaluation. 42 posts were removed (translation failures, explicit sexual content, graphic violence, PII). The final evaluation uses the **original Arabic text**, not the translations.
+**Arabic pre-processing:** Raw CairoDep posts were translated to English (Cohere `command-r-08-2024`) for ethics screening before evaluation. 42 posts were removed (translation failures, explicit sexual content, graphic violence, PII). The final evaluation uses the **original Arabic text**, not the translations.
 
-**Urdu labels:** The raw Urdu dataset has four severity levels (`mild`, `moderate`, `severe`, `non-depression`). For binary classification these are collapsed: `mild/moderate/severe → depressed`, `non-depression → not depressed`. The original severity label is preserved in the data for analysis.
+**Urdu labels:** Four severity levels collapsed to binary: `mild/moderate/severe → depressed`, `non-depression → not depressed`.
 
-**Chinese dataset:** Sourced from Weibo (Chinese microblogging platform). Posts are in Simplified Chinese; some contain code-switched English, emoji, and Weibo-specific emoticons (e.g. `[挖鼻屎]`). The dataset was pre-processed and translated for internal review before the 5 000-sample eval file was created.
-
-**Models evaluated:** Gemini 2.0 Flash, DeepSeek Chat, ChatGPT (GPT-4o-mini), Claude Haiku 4.5
-
-**Prompts:** Each language uses a language-specific few-shot V3 prompt with culturally-relevant examples (e.g. Arabic V3 addresses religious phrases, Egyptian dialect slang, and hashtag patterns that commonly cause false positives). The Urdu V3 prompt addresses Roman Urdu political commentary and Urdu poetry.
-
-**Results location:** `results/phase2/experiment1/`
+**Models evaluated:** Gemini 2.0 Flash, GPT-4o-mini, DeepSeek Chat, Claude Haiku 4.5, Llama 3.1 8B (local), Qwen 3.5 9B (local), Gemma 9B (local)
 
 ---
 
-### Experiment 2 — Keyword Attribution *(active)*
+### Experiment 2 — Keyword Attribution
 
-Builds directly on Experiment 1. Rather than asking the model to classify **and** explain simultaneously (which risks post-hoc rationalization), Experiment 2 feeds each model its **own Experiment 1 predictions** and asks: *"Given that you labelled this post as X, which specific words drove that decision?"*
+Builds on Experiment 1. Each model is given its **own Experiment 1 prediction** and asked: *"Given that you labelled this post as X, which specific words drove that decision?"*
 
-**Design rationale:** Combining classification and keyword extraction in one prompt conflates the two tasks — the model may choose words to justify a label it has already settled on, rather than surfacing the evidence it actually used. By separating the steps, Experiment 2 captures true attribution: the model explains a prediction it has already committed to.
+**Design rationale:** Combining classification and keyword extraction in one prompt risks post-hoc rationalization. By separating the steps, Experiment 2 captures true attribution.
 
-**Input per post (from Experiment 1 result files):**
-- The original post text (Arabic script / Roman Urdu / Simplified Chinese)
-- The model's own predicted label (`Depressed` or `Not Depressed`)
-
-**Output format — 2 lines per post (nothing else):**
-
+**Output format — 2 lines per post:**
 ```
 الحزن, الوحدة, الخوف
 sadness, loneliness, fear
 ```
 
-| Line | Content |
-|------|---------|
-| 1 | Key word(s) from the post in the **original language** (Arabic / Roman Urdu / Chinese), comma-separated |
-| 2 | One-word English translation of each keyword, in the same order, comma-separated |
-
-**Why keyword attribution?**
-Surfacing the words that drove each classification enables post-hoc analysis:
-- Which Arabic/Urdu terms are most predictive of depression across models?
-- Where do models diverge — and which words explain the disagreement?
-- Do models latch onto genuine clinical signals or spurious surface features (e.g. religious phrases, common interjections)?
-
-**Prompts:** Language-specific attribution V3 prompts (`v3_arabic_exp2`, `v3_exp2`, `v3_chinese_exp2`) — 6 cultural few-shot examples each showing a post, its label, and the correct 2-line attribution response.
-
-**Each result entry includes:**
-```json
-{
-  "index": 42,
-  "post_full": "...",
-  "ground_truth": "depressed",
-  "prediction": "depressed",
-  "keywords": ["الحزن", "الوحدة", "الخوف"],
-  "translations": ["sadness", "loneliness", "fear"],
-  "raw_response_exp2": "الحزن, الوحدة, الخوف\nsadness, loneliness, fear"
-}
-```
-
-**Results location:** `results/phase2/experiment2/`
+Line 1: keywords in the original language. Line 2: one-word English translation of each, same order.
 
 ---
 
-### Experiment 3 — Cross-Lingual Label Consistency *(active)*
+### Experiment 3 — Cross-Lingual Label Consistency
 
-Builds on Experiment 1. Each model is given the **English translation** of a post it already classified, together with its original label. The model is asked: *does the English translation still support your earlier classification?*
+Builds on Experiment 1. Each model is given the **English translation** of a post it already classified and asked: *does the English translation still support your earlier classification?*
 
-**Design rationale:** A classification driven by genuine clinical content should hold regardless of the language it is expressed in. If a model changes its label when shown the translated version of a post it previously classified, it is exhibiting cross-lingual inconsistency — suggesting the original decision was influenced by language-specific surface cues rather than the underlying meaning. The combination of original label, re-evaluation response, and translated text also creates a rich dataset for human annotation and ground-truth validation.
+**Design rationale:** A classification driven by genuine clinical content should hold regardless of language. Label flips when shown the translation indicate the original decision was influenced by language-specific surface cues.
 
-**Input per post (from Experiment 1 result files + English translations):**
-- The English translation of the post (produced by Cohere during data preparation)
-- The model's own predicted label from Experiment 1 (`Depressed` or `Not Depressed`)
-- The original language name (used as a hint in the prompt)
-
-**Output format — 2 lines per post (nothing else):**
-
+**Output format — 2 lines per post:**
 ```
 hopelessness, alone
 yes
 ```
 
-| Line | Content |
-|------|---------|
-| 1 | 1-2 key **English** words from the translation that are central to the decision, comma-separated |
-| 2 | `yes` (model still agrees with its Exp 1 label) or `no` (model disagrees) |
+Line 1: 1-2 key English words from the translation. Line 2: `yes` (model still agrees) or `no` (model disagrees).
 
-**Prompt:** One universal prompt (`v3_exp3`) for all three languages. Two variable placeholders are filled at runtime: `{prediction}` (the Exp 1 label) and `{original_language}` (e.g. "Roman Urdu", "Arabic (Egyptian dialect)").
+---
 
-**Translation sources:**
-- Arabic / Chinese: `translation` field already present in `data/phase2/*_5000samples_seed42.json`
-- Urdu: loaded from `data/phase2/translated/urdu_5000samples_seed42_translated.json` (or the in-progress checkpoint)
+### Experiment 4 — Fresh Classification + Justification
 
-**Each result entry includes:**
+Each model reclassifies posts from scratch using a structured prompt, producing both a binary classification and a written justification. Two modes:
+
+- **Few-shot:** language-specific prompts with in-context examples
+- **Zero-shot:** universal minimal prompt with no examples
+
+Two dataset sizes:
+- **15-row error-analysis mode:** posts where all models were wrong in Experiments 1–3 (fast iteration / qualitative analysis)
+- **Full 5k mode:** the complete 5 000-sample evaluation dataset (comparable to Experiment 1)
+
+**Output per entry:**
 ```json
 {
   "index": 42,
-  "post_full": "...",
-  "ground_truth": "depressed",
-  "prediction": "Depressed",
-  "translation": "I feel hopeless and completely alone...",
-  "keywords_exp3": ["hopelessness", "alone"],
-  "agreement": "yes",
-  "raw_response_exp3": "hopelessness, alone\nyes"
+  "exp4_classification": "depressed",
+  "exp4_justification": "The post describes persistent hopelessness and inability to function...",
+  "ground_truth": "depressed"
 }
 ```
-
-**Results location:** `results/phase2/experiment3/`
 
 ---
 
@@ -132,11 +273,25 @@ yes
 
 | Language | Dataset | Source |
 |----------|---------|--------|
-| Arabic | [CairoDep](https://github.com/) | Egyptian Arabic social media (Twitter, Reddit, Facebook, crowdsourcing) |
-| English | Sentiment Tweets | Kaggle |
-| Spanish | [Spanish Depression Tweets](https://www.kaggle.com/datasets/francescoronzano/spanish-tweets-suggesting-depression) | Kaggle |
+| Arabic | CairoDep | Egyptian Arabic social media (Twitter, Reddit, Facebook, crowdsourcing) |
 | Urdu | Urdu Depression Dataset | Roman Urdu social media, academically curated |
 | Chinese | Weibo Depression Dataset | Weibo (Chinese microblogging), Simplified Chinese |
+
+---
+
+## Prompt Versions
+
+| Key | Description | Default for |
+|-----|-------------|-------------|
+| `v1` | Zero-shot, minimal instructions | — |
+| `v2` | Enhanced clinical framework, handles sarcasm + edge cases | — |
+| `v3` | Few-shot, 6 Roman Urdu examples, political/poetry false-positive guards | Urdu Exp 1 |
+| `v3_arabic` | Few-shot, 6 Arabic-script examples, religious/hashtag false-positive guards | Arabic Exp 1 |
+| `v3_chinese` | Few-shot, 6 Chinese Weibo examples, illness/fandom/lifestyle false-positive guards | Chinese Exp 1 |
+| `v3_exp2` | Urdu attribution: given a label, identify the words that drove it | Urdu Exp 2 |
+| `v3_arabic_exp2` | Arabic attribution | Arabic Exp 2 |
+| `v3_chinese_exp2` | Chinese attribution | Chinese Exp 2 |
+| `v3_exp3` | Cross-lingual consistency: English translation + Exp 1 label → keywords + yes/no | All languages Exp 3 |
 
 ---
 
@@ -147,91 +302,74 @@ multilingual-mental-health/
 │
 ├── data/
 │   ├── raw/                         # Original unmodified datasets
-│   │   ├── arabic/
-│   │   │   └── CairoDep_Datasets.csv        # 7 000 posts: post, label, dialect, source
-│   │   ├── english/
-│   │   │   └── sentiment_tweets3.csv
-│   │   ├── spanish/
-│   │   │   └── spanish_tweets_suggesting_signs_of_depression_v1.csv
-│   │   └── urdu/
-│   │       └── Depression.csv               # 25 004 posts: Text, Label (4-class severity)
+│   │   ├── arabic/CairoDep_Datasets.csv
+│   │   └── urdu/Depression.csv
 │   │
 │   ├── cleaned/                     # Parsed + normalised full datasets (cached)
-│   │   ├── arabic.json              # 7 000 posts, binary labels only (dialect/source dropped)
-│   │   └── urdu.json                # 25 002 posts, binary labels + severity preserved
+│   │   ├── arabic.json
+│   │   └── urdu.json
 │   │
 │   ├── phase1/                      # Phase 1 (exploratory) data
-│   │   ├── sampled/                 # 500-post stratified samples used in Phase 1
-│   │   │   ├── arabic.json          #   500 posts (250+250), seed=42
-│   │   │   ├── chinese.json         #   500 posts (silver-labelled via consensus)
-│   │   │   ├── english.json
-│   │   │   ├── spanish.json         #   500 posts (silver-labelled via consensus)
-│   │   │   ├── urdu.json            #   500 posts (250+250), seed=42
-│   │   │   └── urdu_english.json    #   Urdu posts machine-translated to English (analysis)
-│   │   └── labeler_progress/        # Checkpoints from silver-label consensus pipeline
+│   │   └── sampled/                 # 500-post stratified samples
 │   │
-│   └── phase2/                      # Phase 2 (Experiment 1) data
-│       ├── arabic_6000samples_seed42.json       # Intermediate: 6 000 raw Arabic posts for translation
-│       ├── arabic_5000samples_seed42.json       # EXPERIMENT INPUT: 5 000 Arabic posts (original script)
-│       ├── urdu_5000samples_seed42.json         # EXPERIMENT INPUT: 5 000 Urdu posts (Roman script)
-│       ├── chinese_5000samples_seed42.json      # EXPERIMENT INPUT: 5 000 Chinese posts (Simplified)
-│       ├── translated/
-│       │   ├── arabic_6000samples_seed42_translated.json   # Cohere translations (ethics review)
-│       │   ├── chinese_6000samples_seed42_translated.json  # Chinese translations (internal review)
-│       │   └── filtered/
-│       │       └── arabic_6000samples_seed42_filtered.json # 5 958 posts after removing 42 flagged
-│       └── translation_progress/    # Checkpoints from translation pipeline
+│   └── phase2/                      # Phase 2 evaluation data
+│       ├── arabic_5000samples_seed42.json       # EXPERIMENT INPUT — 5k Arabic posts
+│       ├── urdu_5000samples_seed42.json         # EXPERIMENT INPUT — 5k Urdu posts
+│       ├── chinese_5000samples_seed42.json      # EXPERIMENT INPUT — 5k Chinese posts
+│       ├── translated/              # Cohere translations (ethics review + Exp 3)
+│       └── translation_progress/   # Translation checkpoints
 │
-├── evaluation/                      # Shared evaluation library (used by all phases)
-│   ├── prompts.py                   # Classification prompts (V1/V2/V3 per language + attribution V3 per language)
-│   ├── parsers.py                   # Language-specific dataset parsers (one class per language)
+├── evaluation/                      # Shared evaluation library
+│   ├── prompts.py                   # All prompt versions (V1/V2/V3 + Exp 2/3/4 variants)
+│   ├── parsers.py                   # Dataset parsers (one class per language)
 │   ├── metrics.py                   # EvaluationMetrics: accuracy, precision, recall, F1
-│   ├── sampler.py                   # DatasetSampler: stratified sampling utility
-│   └── cross_lingual.py             # Cross-lingual evaluation helpers (Phase 1)
+│   └── sampler.py                   # Stratified sampling utility
 │
-├── models/                          # LLM provider wrappers (one file per provider)
+├── models/                          # LLM provider wrappers
 │   ├── base.py                      # Abstract ModelProvider base class
 │   ├── gemini_provider.py
 │   ├── openai_provider.py
 │   ├── deepseek_provider.py
-│   └── claude_provider.py
+│   ├── claude_provider.py
+│   └── lm_studio_provider.py        # Local models via LM Studio (Llama, Gemma, Qwen)
 │
-├── labeler/                         # Silver-label consensus pipeline (Chinese + Spanish)
-│   ├── label_posts.py               # Main pipeline: XLM-RoBERTa + Grok consensus
-│   ├── checkpoint.py                # Resume-safe progress tracking
-│   ├── translator.py                # Cached Google Translate helper
-│   └── classifiers/
-│       ├── base.py                  # Abstract LabelerClassifier interface
-│       ├── xlm_roberta.py           # HuggingFace multilingual depression classifier
-│       └── grok.py                  # xAI Grok classifier
+├── scripts/                         # All active research scripts
+│   ├── runner.py                    # Main interactive runner — Experiments 1/2/3/4
+│   ├── run_exp4.py                  # Experiment 4 standalone CLI (more control than runner.py)
+│   ├── prepare_data.py              # Prepare 5 000-post eval files for Arabic, Urdu, Chinese
+│   ├── merge_exp4.py                # Merge Exp 4 results into error-analysis CSVs
+│   ├── export_metrics.py            # Export Exp 1 metrics to CSV
+│   ├── rerun_failed.py              # Rerun error/unclear entries from an Exp 1 result file
+│   └── rerun_failed_exp3.py         # Rerun transient-error entries from an Exp 3 result file
 │
-├── scripts/
-│   ├── phase1/                      # Phase 1 exploratory scripts (archived, do not modify)
-│   │   ├── prepare_data.py          # Parse raw data + create 500-post samples
-│   │   ├── runner.py                # Phase 1 interactive evaluation runner
-│   │   ├── smoke_test.py            # Quick API sanity check (10 posts)
-│   │   ├── translate_urdu.py        # Machine-translate Urdu samples to English
-│   │   ├── analyze_urdu_errors.py   # Deep-dive Urdu classification error analysis
-│   │   └── verify_labels.py         # Verify silver-label quality
-│   │
-│   └── phase2/                      # Phase 2 scripts (active)
-│       ├── prepare_arabic.py         # Step 1a: sample 6 000 Arabic posts from CairoDep
-│       ├── translate_arabic.py       # Step 1b: translate with Cohere (ethics review)
-│       ├── prepare_experiment1.py    # Step 2: create 5 000-post eval files for Arabic + Urdu
-│       └── runner.py                 # Step 3: main Phase 2 evaluation runner (Experiments 1/2/3)
-│
-├── experiments/
-│   └── phase1/                      # All Phase 1 results and analysis (read-only archive)
-│       ├── ANALYSIS_GUIDE.md        # How to interpret Phase 1 results
-│       └── results/                 # Phase 1 JSON result files
-│           └── urdu_comprehensive_analysis.md
+├── archive/                         # Completed one-time scripts (do not modify)
+│   ├── phase1/                      # Phase 1 exploratory scripts
+│   └── phase2/                      # Phase 2 data-prep scripts (Arabic translation pipeline, etc.)
 │
 ├── results/
+│   ├── all_models_wrong/            # 15-row error-analysis CSVs (Exp 4 input)
+│   │   ├── arabic_all_wrong.csv
+│   │   ├── chinese_all_wrong.csv
+│   │   ├── urdu_all_wrong.csv
+│   │   ├── arabic_zeroshot.csv      # After merge_exp4.py --zeroshot
+│   │   ├── chinese_zeroshot.csv
+│   │   └── urdu_zeroshot.csv
+│   │
 │   └── phase2/
-│       ├── experiment1/             # Experiment 1 output files
-│       │   │                        #   <model>_<language>_<timestamp>.json
-│       │   └── README.md            #   comparison_<timestamp>.json
-│       └── experiment2/             # Experiment 2 output files (+ keywords/translations fields)
+│       ├── experiment1/             # <model>_<language>_<timestamp>.json
+│       ├── experiment2/
+│       ├── experiment3/
+│       ├── experiment4/             # Few-shot 15-row results, per model subfolder
+│       ├── experiment4_zeroshot/
+│       ├── experiment4_full/        # Few-shot 5k results
+│       └── experiment4_full_zeroshot/
+│
+├── visualization/                   # Analysis plots and word clouds
+│   ├── main.py
+│   ├── discovery.py
+│   ├── generate_keyword_analysis.py
+│   ├── generate_wordclouds.py
+│   └── outputs/plots/
 │
 ├── config.py                        # API key loader (reads from .env)
 ├── requirements.txt
@@ -240,66 +378,30 @@ multilingual-mental-health/
 
 ---
 
-## Quickstart — Phase 2 Experiment 1
+## Local Models (LM Studio)
 
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+Llama, Gemma, and Qwen run locally via [LM Studio](https://lmstudio.ai/). To use them:
 
-# 2. Add API keys to .env
-#    GEMINI_API_KEY, OPENAI_API_KEY, DEEPSEEK_API_KEY, CLAUDE_API_KEY, COHERE_API_KEY
-
-# 3. Prepare experiment data (Arabic + Urdu 5 000-post files)
-#    Chinese is already prepared at data/phase2/chinese_5000samples_seed42.json
-python scripts/phase2/prepare_experiment1.py
-
-# 4. Run evaluation (interactive menu)
-python scripts/phase2/runner.py
-#    -> Select [1] Experiment 1
-#    -> Select model(s)
-#    -> Select language(s): Arabic, Urdu, Chinese
-```
-
-**CLI flags for the runner:**
-
-| Flag | Effect |
-|------|--------|
-| `--fresh` | Ignore partial results, start from scratch |
-| `--delay N` | Seconds between API calls (default: 1.0) |
-| `--workers N` | Parallel requests per model (default: 1) |
-| `--prompt v2` | Override language-specific prompt (choices: v1, v2, v3, v3_arabic, v3_chinese, v3_exp2, v3_arabic_exp2, v3_chinese_exp2, v3_exp3) |
-
----
-
-## Prompt Versions
-
-| Key | Description | Best for |
-|-----|-------------|----------|
-| `v1` | Zero-shot, minimal instructions | Baseline comparison |
-| `v2` | Enhanced clinical framework, handles sarcasm + edge cases | General use |
-| `v3` | Few-shot with 6 Roman Urdu examples, political/poetry FP guards | Urdu Exp 1 (default) |
-| `v3_arabic` | Few-shot with 6 Arabic-script examples, religious/hashtag FP guards | Arabic Exp 1 (default) |
-| `v3_chinese` | Few-shot with 6 Chinese Weibo examples, illness/fandom/lifestyle FP guards | Chinese Exp 1 (default) |
-| `v3_exp2` | Urdu attribution: given a label, identify the words that drove it (2-line output) | Urdu Exp 2 (default) |
-| `v3_arabic_exp2` | Arabic attribution: same design for Arabic/Egyptian dialect | Arabic Exp 2 (default) |
-| `v3_chinese_exp2` | Chinese attribution: same design for Chinese Weibo posts | Chinese Exp 2 (default) |
-| `v3_exp3` | Cross-lingual consistency: given English translation + Exp 1 label, output 1-2 keywords + yes/no | All languages Exp 3 (universal) |
+1. Download the model in LM Studio and start the local server (default: `localhost:1234`).
+2. Copy the model identifier from LM Studio's **Local Server** tab.
+3. Update the `"default_model"` value for the relevant key in the `MODELS` dict in `scripts/runner.py` or `scripts/run_exp4.py`.
+4. Run as usual — no API key required.
 
 ---
 
 ## Arabic Translation Pipeline (Ethics Pre-processing)
 
-The Arabic evaluation required a content screening step before the dataset could be used in research. The pipeline is documented here for reproducibility.
+The Arabic evaluation required a content screening step before the dataset could be used in research.
 
 ```
 CairoDep_Datasets.csv (7 000 posts)
-    ↓  scripts/phase2/prepare_arabic.py
+    ↓  archive/phase2/prepare_arabic.py
 arabic_6000samples_seed42.json  (stratified 6 000, seed=42)
-    ↓  scripts/phase2/translate_arabic.py  (Cohere command-r-08-2024, ~1.7h)
+    ↓  archive/phase2/translate_arabic.py  (Cohere command-r-08-2024, ~1.7h)
 arabic_6000samples_seed42_translated.json  (6 000 English translations)
     ↓  Manual content review (42 posts removed)
 translated/filtered/arabic_6000samples_seed42_filtered.json  (5 958 posts)
-    ↓  scripts/phase2/prepare_experiment1.py
+    ↓  scripts/prepare_data.py
 arabic_5000samples_seed42.json  (5 000 posts, original Arabic script, eval-ready)
 ```
 
@@ -309,4 +411,4 @@ Posts removed: 18 translation failures, 20 explicit sexual content, 2 graphic vi
 
 ## Phase 1 Archive
 
-All exploratory Phase 1 work (500-sample pilots across Arabic, English, Spanish, Urdu) is archived in `experiments/phase1/`. See `experiments/phase1/ANALYSIS_GUIDE.md` for a guide to interpreting those results. Phase 1 scripts are preserved in `scripts/phase1/` and should not be modified.
+All Phase 1 exploratory work (500-sample pilots across Arabic, English, Spanish, Urdu) is archived in `archive/phase1/`. Phase 1 scripts are preserved for reproducibility and should not be modified.

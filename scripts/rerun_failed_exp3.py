@@ -5,8 +5,8 @@ Entries with "no English translation available" or "skipped" are intentionally
 left alone — those are data gaps, not transient errors.
 
 Usage:
-    python scripts/phase2/rerun_failed_exp3.py --file results/phase2/experiment3/Local Models/gemma/gemma_chinese_20260413_120000.json
-    python scripts/phase2/rerun_failed_exp3.py --file <path> --delay 0.5
+    python scripts/rerun_failed_exp3.py --file results/phase2/experiment3/Local Models/gemma/gemma_chinese_20260413_120000.json
+    python scripts/rerun_failed_exp3.py --file <path> --delay 0.5
 """
 
 import argparse
@@ -17,7 +17,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from config import get_api_key
@@ -50,7 +50,6 @@ _SKIP_ERRORS = {"no English translation available", "skipped", "skipped (no vali
 
 
 def _is_retryable(entry: dict) -> bool:
-    """True if the entry failed due to a transient error (e.g. LM Studio dropped)."""
     err = entry.get("error_exp3")
     if not err:
         return False
@@ -71,10 +70,7 @@ def _parse_exp3_response(raw_response: str) -> dict:
 
 
 def rerun_entries(provider, failed: list, language: str, delay: float) -> dict:
-    """
-    Retry each failed exp3 entry. Returns {index: updated_entry}.
-    The translation and prediction are already embedded in each entry.
-    """
+    """Retry each failed exp3 entry. Returns {index: updated_entry}."""
     prompt_template = PROMPTS["v3_exp3"]
     total = len(failed)
     new_results = {}
@@ -85,7 +81,7 @@ def rerun_entries(provider, failed: list, language: str, delay: float) -> dict:
         prediction  = entry.get("prediction", "")
         orig_lang   = entry.get("original_language", language)
 
-        logger.info(f"[gemma][{language}] Retrying index {idx} ({i}/{total})...")
+        logger.info(f"[{language}] Retrying index {idx} ({i}/{total})...")
 
         if not translation:
             new_results[idx] = {**entry, "keywords_exp3": [], "agreement": "no_translation",
@@ -120,12 +116,12 @@ def compute_consistency_stats(results: list) -> dict:
     skipped     = sum(1 for r in results if r.get("agreement") in ("skipped", ""))
     total_valid = agreed + disagreed
     return {
-        "agreed":        agreed,
-        "disagreed":     disagreed,
+        "agreed":         agreed,
+        "disagreed":      disagreed,
         "no_translation": no_trans,
-        "skipped":       skipped,
-        "total_valid":   total_valid,
-        "agreement_pct": round(agreed / total_valid * 100, 2) if total_valid else 0.0,
+        "skipped":        skipped,
+        "total_valid":    total_valid,
+        "agreement_pct":  round(agreed / total_valid * 100, 2) if total_valid else 0.0,
     }
 
 
@@ -142,8 +138,8 @@ def main():
     with open(args.file, encoding="utf-8") as f:
         data = json.load(f)
 
-    metadata = data.get("metadata", {})
-    results  = data.get("results", [])
+    metadata  = data.get("metadata", {})
+    results   = data.get("results", [])
     model_key = metadata.get("model", "")
     language  = metadata.get("language", "")
 
@@ -166,7 +162,7 @@ def main():
         print(f"\n  Unknown model key '{model_key}'. Add it to MODELS dict in this script.")
         sys.exit(1)
 
-    info = MODELS[model_key]
+    info  = MODELS[model_key]
     delay = max(args.delay, info.get("delay", 0))
 
     try:
@@ -177,34 +173,29 @@ def main():
 
     provider = info["class"](api_key=api_key, model_name=info["default_model"])
 
-    confirm = input(f"\n  Retry {len(failed)} entries with {info['name']}? (Y/n): ").strip().lower()
-    if confirm == "n":
+    if input(f"\n  Retry {len(failed)} entries with {info['name']}? (Y/n): ").strip().lower() == "n":
         print("  Aborted.")
         sys.exit(0)
 
-    new_results = rerun_entries(provider, failed, language, delay)
-
+    new_results  = rerun_entries(provider, failed, language, delay)
     still_failed = sum(1 for r in new_results.values() if _is_retryable(r))
     resolved     = len(new_results) - still_failed
     print(f"\n  Resolved:      {resolved}/{len(new_results)}")
     print(f"  Still failed:  {still_failed}/{len(new_results)}")
 
-    # Merge back
     idx_map = {r["index"]: r for r in results}
     idx_map.update(new_results)
     merged = sorted(idx_map.values(), key=lambda x: x.get("index", 0))
 
     stats = compute_consistency_stats(merged)
     print(f"\n  Consistency after retry:")
-    print(f"    Agreed:      {stats['agreed']} / {stats['total_valid']}  ({stats['agreement_pct']}%)")
-    print(f"    Disagreed:   {stats['disagreed']}")
+    print(f"    Agreed:         {stats['agreed']} / {stats['total_valid']}  ({stats['agreement_pct']}%)")
+    print(f"    Disagreed:      {stats['disagreed']}")
     print(f"    No translation: {stats['no_translation']}")
 
-    # Save as new timestamped file next to the original
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe_name = model_key.replace("/", "_").replace(":", "_")
-    out_dir   = args.file.parent
-    out_path  = out_dir / f"{safe_name}_{language}_{timestamp}.json"
+    out_path  = args.file.parent / f"{safe_name}_{language}_{timestamp}.json"
 
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump({

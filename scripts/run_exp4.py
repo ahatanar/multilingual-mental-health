@@ -5,20 +5,20 @@ Full mode (--full): 5 000-sample phase2 JSONs per language.
 
 Examples:
     # Smoke test (15-row mode)
-    python scripts/phase2/run_exp4.py --model claude --language urdu --limit 1
+    python scripts/run_exp4.py --model claude --language urdu --limit 1
 
     # All online models, all languages (15-row few-shot)
-    python scripts/phase2/run_exp4.py --models claude,openai,gemini --languages all
+    python scripts/run_exp4.py --models claude,openai,gemini --languages all
 
     # Full 5k dataset, one model at a time (resumes automatically)
-    python scripts/phase2/run_exp4.py --model claude --language arabic --full
-    python scripts/phase2/run_exp4.py --model openai --language arabic --full
+    python scripts/run_exp4.py --model claude --language arabic --full
+    python scripts/run_exp4.py --model openai --language arabic --full
 
     # Full 5k zero-shot
-    python scripts/phase2/run_exp4.py --model claude --language arabic --full --zeroshot
+    python scripts/run_exp4.py --model claude --language arabic --full --zeroshot
 
     # Debug: print one row's full response, write nothing
-    python scripts/phase2/run_exp4.py --model claude --language arabic --debug 42
+    python scripts/run_exp4.py --model claude --language arabic --debug 42
 """
 
 import argparse
@@ -32,7 +32,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
 from config import get_api_key  # noqa: E402
@@ -255,7 +255,6 @@ def run_for(
     spec = MODELS[model_key]
     prefix = f"[{model_key}/{language}]"
 
-    # Pick data source and output directory
     if full:
         rows    = load_rows_full(language)
         out_dir = FULL_OUT_DIR_ZS if zeroshot else FULL_OUT_DIR
@@ -271,7 +270,6 @@ def run_for(
 
     prompt_map = LANGUAGE_DEFAULT_PROMPTS_EXP4_ZEROSHOT if zeroshot else LANGUAGE_DEFAULT_PROMPTS_EXP4
 
-    # Resumability: load what's already done (partial checkpoint or newest file)
     done_indices, existing_results, existing_path = load_done(model_key, language, out_dir)
     if fresh:
         if done_indices:
@@ -366,7 +364,6 @@ def run_for(
             fh, ensure_ascii=False, indent=2,
         )
 
-    # Remove partial checkpoint now that we have a clean final file
     partial = _partial_path(model_key, language, out_dir)
     if partial.exists():
         partial.unlink()

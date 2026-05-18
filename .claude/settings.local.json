@@ -36,7 +36,9 @@
       "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\phase2\\\\experiment4_zeroshot\")",
       "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\arabic_zeroshot.csv\")",
       "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\chinese_zeroshot.csv\")",
-      "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\urdu_zeroshot.csv\")"
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\Taha\\\\Desktop\\\\multilingual-mental-health\\\\results\\\\all_models_wrong\\\\urdu_zeroshot.csv\")",
+      "Bash(ls -la *.py *.md)",
+      "Bash(ls *.py *.md)"
     ]
   }
 }
