@@ -33,7 +33,7 @@ from datetime import datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO))
+sys.path.insert(0, str(REPO / "src"))
 
 from config import get_api_key  # noqa: E402
 from evaluation.prompts import LANGUAGE_DEFAULT_PROMPTS_EXP4, LANGUAGE_DEFAULT_PROMPTS_EXP4_ZEROSHOT, PROMPTS  # noqa: E402
