@@ -9,6 +9,7 @@ Evaluates LLM depression detection across Arabic, Urdu, and Chinese social media
 ```bash
 pip install -r requirements.txt
 cp .env.example .env
+#ignore unless specified tor un
 python scripts/prepare_data.py   # creates the 5 000-post eval files
 ```
 
@@ -111,9 +112,19 @@ python scripts/export_metrics.py --out results/summary.csv --models gemini,claud
 | `gemma` | Gemma 4 E2B | Local (LM Studio) |
 | `qwen` | Qwen 3.5 9B | Local (LM Studio) |
 
-**Adding a model:** Create a provider class in `models/`, add the API key to `config.py` and `.env`, then add an entry to the `MODELS` dict in `scripts/runner.py` and `scripts/run_exp4.py`.
+**Adding a model:** Create a provider class in `src/models/`, add the API key mapping to `src/config.py` and `.env`, then add an entry to the `MODELS` dict in `scripts/runner.py` and `scripts/run_exp4.py`.
 
-**Local models (LM Studio):** Start the LM Studio local server, copy the model ID from the Local Server tab, and update `"default_model"` for the relevant key in the `MODELS` dict.
+**Local models:** Any OpenAI-compatible local inference server works — LM Studio, Ollama, vLLM, llama.cpp, etc. Start the server, then update `"default_model"` for the relevant key in the `MODELS` dict. If the server runs on a different port, add a `"base_url"` field to the entry:
+
+```python
+# in scripts/runner.py and scripts/run_exp4.py MODELS dict:
+"llama": {"class": LMStudioProvider, "name": "Llama 3.3 8B (Local)",
+          "default_model": "llama3.3:8b",          # model ID as the server reports it
+          "base_url": "http://localhost:11434/v1",  # Ollama default; omit for LM Studio
+          "max_workers": 1, "delay": 0},
+```
+
+Default ports: LM Studio → `1234`, Ollama → `11434`, vLLM → `8000`, llama.cpp → `8080`.
 
 ---
 

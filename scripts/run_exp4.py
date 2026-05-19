@@ -189,11 +189,13 @@ def parse_exp4(raw: str) -> dict:
 def init_provider(model_key: str):
     spec = MODELS[model_key]
     api_key = "lm-studio" if not spec["online"] else get_api_key(model_key)
+    kw = {"base_url": spec["base_url"]} if "base_url" in spec else {}
     return spec["class"](
         api_key=api_key,
         model_name=spec["default_model"],
         max_tokens=spec.get("max_tokens", MAX_TOKENS),
         **({} if spec["online"] else {"no_think": spec.get("no_think", False)}),
+        **kw,
     )
 
 

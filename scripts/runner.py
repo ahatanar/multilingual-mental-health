@@ -528,7 +528,8 @@ def run_experiment1(args) -> None:
                 print(f"  [{info['name']}] {e} — skipping")
             return
 
-        provider = info["class"](api_key=api_key, model_name=info["default_model"])
+        kw = {"base_url": info["base_url"]} if "base_url" in info else {}
+        provider = info["class"](api_key=api_key, model_name=info["default_model"], **kw)
 
         try:
             samples = load_samples(lang)
@@ -695,7 +696,8 @@ def run_experiment2(args) -> None:
                 print(f"  [{info['name']}] {e} — skipping")
             return
 
-        provider = info["class"](api_key=api_key, model_name=info["default_model"])
+        kw = {"base_url": info["base_url"]} if "base_url" in info else {}
+        provider = info["class"](api_key=api_key, model_name=info["default_model"], **kw)
 
         with print_lock:
             print(f"\n  Started attribution: {info['name']} x {lang.capitalize()} ({len(entries)} entries)")
@@ -919,7 +921,8 @@ def run_experiment3(args) -> None:
                 print(f"  [{info['name']}] {e} — skipping")
             return
 
-        provider = info["class"](api_key=api_key, model_name=info["default_model"])
+        kw = {"base_url": info["base_url"]} if "base_url" in info else {}
+        provider = info["class"](api_key=api_key, model_name=info["default_model"], **kw)
 
         with print_lock:
             print(f"\n  Started consistency check: {info['name']} x {lang.capitalize()} "
